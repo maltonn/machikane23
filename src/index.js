@@ -4,6 +4,14 @@ import { BrowserRouter } from 'react-router-dom'
 import './css/App.css';
 import App from './App';
 
+// Google Analytics
+import ReactGA from "react-ga4";
+
+// Google Analytics 測定 ID を入力して設定
+ReactGA.initialize("G-JV6FFSP99P");
+// ページビューイベントを処理
+ReactGA.send("pageview");
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter basename={process.env.REACT_APP_BASENAME}> 
