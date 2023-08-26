@@ -1,24 +1,28 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import "../../css/Project.css"
 import { Helmet } from "react-helmet";
 export default function Project() {
-    const [inputValue, setInputValue] = useState("")
 
+    const projectLst = useRef([])
+    const [displayLst, setDisplayLst] = useState([])
+
+
+
+    const [inputValue, setInputValue] = useState("")
     const [nowBuildingFilterCheck, setNowBuildingFilterCheck] = useState(false)
     const [forChildFilterCheck, setForChildFilterCheck] = useState(false)
     const [avoidCrowdFilterCheck, setAvoidCrowdFilterCheck] = useState(false)
 
-    const [projectLst, setProjectLst] = useState([])
-    const [filterBoolLst, setFilterBoolLst] = useState([])
+
     useEffect(() => {
         fetch("https://app.tyuujitu-system.net/api/machikane23/website/pr.json").then((res) => {
             return res.json()
         }
         ).then((res) => {
-            console.log(res)
-            const lst=Array.from(res)
-            setProjectLst(lst)
-            setFilterBoolLst(lst.map(() => true))
+            const lst = Object.values(res)
+            console.log(lst)
+            projectLst.current = lst
+            setDisplayLst(lst)
         })
     }, [])
 
@@ -29,6 +33,14 @@ export default function Project() {
 
     const onPickupKeywordClick = (keyword) => {
         setInputValue(keyword)
+    }
+
+    // 検索ボタンが押された時の処理
+    const onClickSearchBtn = () => {
+        const addedLst=[]
+
+        // フリーワード検索
+
     }
 
     return (
@@ -83,18 +95,26 @@ export default function Project() {
                         <span>混雑している企画を除く</span>
                     </label>
                 </div>
-
             </div>
+            <button onClick={onClickSearchBtn}>検索</button>
 
-            <button>検索</button>
+            {/* 検索結果 */}
             <div>
-
-
+                {displayLst.map((project) => {
+                    if(!project){
+                        return null
+                    }
+                    return (
+                        <div key={project.id} className="project-container">
+                            <div>{project.projectName}</div>
+                            <div>{project.groupName}</div>
+                            <div>{project.pamphletText}</div>
+                            <img src={project.icon} className="project-card-icon"></img>
+                            <div>{project.eventPlace}</div>
+                        </div>
+                    )
+                })}
             </div>
-
-
-
-
             <a href="./">トップページへ戻る</a>
         </div>
     )
