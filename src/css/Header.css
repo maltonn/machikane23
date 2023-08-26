@@ -4,6 +4,7 @@ header{
     width: 100%;
     margin: 0;
     background-color: var(--blue2);
+    z-index: 600;
 }
 header > h1{
     margin: 0;
