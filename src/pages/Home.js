@@ -13,7 +13,7 @@ import timetable from "../imgs/pickup_icon/icon_stage.png"
 import { Helmet } from "react-helmet";
 export default function Home() {
     return(
-        <div className="main">
+        <div className="top-main">
         <Helmet>
           <title>トップページ|まちかね祭2023</title>
         </Helmet>

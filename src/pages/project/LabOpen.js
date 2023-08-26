@@ -1,7 +1,8 @@
 import { Helmet } from "react-helmet";
+import "../../css/Common.css"
 export default function LabOpen() {
     return(
-        <div>
+        <div className="main">
         <Helmet>
           <title>研究室紹介|まちかね祭2023</title>
         </Helmet>
