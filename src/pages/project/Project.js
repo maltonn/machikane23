@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../../css/Project.css"
+import "../../css/Common.css"
 import { Helmet } from "react-helmet";
 export default function Project() {
 
@@ -19,7 +20,7 @@ export default function Project() {
     }
 
     return (
-        <div style={{ marginTop: "100px" }}>
+        <div className="main">
             <Helmet>
                 <title>企画検索|まちかね祭2023</title>
             </Helmet>

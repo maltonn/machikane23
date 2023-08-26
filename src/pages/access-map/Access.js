@@ -1,7 +1,8 @@
 import { Helmet } from "react-helmet";
+import "../../css/Common.css"
 export default function Access() {
     return(
-        <div>
+        <div className="main">
         <Helmet>
           <title>アクセス|まちかね祭2023</title>
         </Helmet>
