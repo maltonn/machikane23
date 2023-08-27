@@ -9,7 +9,6 @@ import recommend from "../imgs/pickup_icon/icon_recommend.png"
 import access from "../imgs/pickup_icon/icon_access.png"
 import map from "../imgs/pickup_icon/icon_map.png"
 import timetable from "../imgs/pickup_icon/icon_stage.png"
-
 import { Helmet } from "react-helmet";
 export default function Home() {
     return(
@@ -124,3 +123,12 @@ export default function Home() {
         </div>
     )
 }
+var move = document.getElementById('move');
+var loader = document.getElementById('loader');
+const loading = document.getElementById('loader');
+    window.addEventListener('load', () => {
+          setTimeout(function() {
+    move.classList.add('loaded');
+    loader.classList.add('loaded');
+  }, 1000);
+});
