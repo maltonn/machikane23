@@ -1,14 +1,11 @@
 /*test用*/
-.footer{
-  height: 30px;
-  background-color:#233192;
-  z-index: 1000;
-  opacity: 1;
-}
+
 
 body{
-    font-family: serif;
-    margin:0;
+  font-family: "fot-tsukuardgothic-std", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin:0;
 }
 .main{
   position: relative;
@@ -23,7 +20,7 @@ body{
 #loader{
   width: 100%;
   height: 100vh;
-  background-image:url("../imgs/mainview/cloud_pc.png"),linear-gradient(#fff 10%, #00B2E9 100%);
+  background-image:url("../imgs/mainview/cloud_pc.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%);
   background-repeat: no-repeat, no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -117,22 +114,22 @@ loader 雲のアニメション
 }
 
 #move img:nth-child(1){
+  position: relative;
   display: block;
-  position: absolute;
-  width: 200%;
+  width: 150%;
   /*height: 100vh;*/
-  bottom:30vw;
-  left:-13vw;
+  bottom:60vw;
+  left:-25vw;
   animation: kame 10s forwards;
   margin: auto;
 }
 #move img:nth-child(2){
+  position: relative;
   display: block;
-  position: absolute;
-  width: 200%;
+  width: 150%;
   /*height: 100vh;*/
-  bottom:-15vw;
-  right:-10vw;
+  bottom:120vw;
+  right:18vw;
   animation: kame 10s forwards;
   margin: auto;
 }
@@ -153,7 +150,6 @@ loader 雲のアニメション
     transform: translateX(170vw);
   }
 }
-
 /*======================
 loader 特にメインビューの雲の配置、アニメーション
 ======================*/
@@ -293,7 +289,6 @@ schedule,stage,lab
 .ocean span{
   display: inline-block;
   font-size: 37px;
-  font-family: serif;
   color: #fff;
   position: relative;
   right: 26px;
@@ -636,7 +631,8 @@ schedule,stage,lab
     #loader{
       width: 100%;
       height: 100vh;
-      background-image:url("../imgs/mainview/cloud_phone.png"),linear-gradient(#fff 10%, #00B2E9 100%);
+      background-image:url("../imgs/mainview/cloud_phone.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%)
+      ;
       background-repeat: no-repeat, no-repeat;
       background-size: 100% auto;
       background-position: center;
@@ -749,7 +745,7 @@ schedule,stage,lab
   #loader{
     width: 100%;
     height: 100vh;
-    background-image:url("../imgs/mainview/cloud_ipad.png"),linear-gradient(#fff 10%, #00B2E9 100%);
+    background-image:url("../imgs/mainview/cloud_ipad.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%);
     background-repeat: no-repeat, no-repeat;
     background-size: 100% auto;
     background-position: center;
