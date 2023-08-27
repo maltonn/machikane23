@@ -22,8 +22,9 @@ export default function Project() {
         ).then((res) => {
             const lst = Object.values(res)
             console.log(lst)
-            projectLst.current = lst
-            setDisplayLst(lst)
+
+            projectLst.current = lst // こっちにはすべてのプロジェクトが入る
+            setDisplayLst(lst) // 表示するプロジェクト（検索ボタンを押したときにこっちだけ書き換わる）
         })
     }, [])
 
