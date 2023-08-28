@@ -1,8 +1,8 @@
-import "../../css/About.css"
 import { Helmet } from "react-helmet";
+import "../../css/Common.css"
 export default function About() {
     return(
-    <div>
+        <div className="main">
         <Helmet>
           <title>まちかね祭とは|まちかね祭2023</title>
         </Helmet>

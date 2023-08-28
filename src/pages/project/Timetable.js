@@ -1,7 +1,8 @@
 import { Helmet } from "react-helmet";
+import "../../css/Common.css"
 export default function Timetable() {
     return(
-        <div>
+        <div className="main">
         <Helmet>
           <title>ステージタイムテーブル|まちかね祭2023</title>
         </Helmet>

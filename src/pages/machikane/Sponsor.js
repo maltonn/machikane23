@@ -1,7 +1,8 @@
 import { Helmet } from "react-helmet";
+import "../../css/Common.css"
 export default function Sponsor() {
     return(
-        <div>
+        <div className="main">
         <Helmet>
           <title>ご協賛|まちかね祭2023</title>
         </Helmet>

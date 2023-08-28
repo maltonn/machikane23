@@ -1,17 +1,14 @@
-/*test用*/
-
-
 body{
   font-family: "fot-tsukuardgothic-std", sans-serif;
   font-weight: 400;
   font-style: normal;
   margin:0;
 }
-.main{
+.top-main{
   position: relative;
   width: 100%;
   overflow: hidden;
-
+  margin-top: 0px;
 }
 
 /*======================
@@ -95,9 +92,7 @@ body{
   height:300px;
 }
 
-footer{
-  background-color:#2E3192;
-}
+
 /*======================
 一個小さい枠組の設定
 ======================*/
@@ -106,10 +101,10 @@ footer{
 loader 雲のアニメション
 亀がサイズによって変わるから変えたいところ
 ======================*/
-#move.loaded img:nth-child(1){
+#move img.loaded:nth-child(1){
   animation: cloud1 3s forwards;
 }
-#move.loaded img:nth-child(2){
+#move img.loaded:nth-child(2){
   animation: cloud2 3s forwards;
 }
 

@@ -1,5 +1,7 @@
 import './css/App.css';
-import { Routes, Route } from "react-router-dom"; // 追加
+import { Routes, Route, useLocation } from "react-router-dom"; // 追加
+import ReactGA from "react-ga4";
+
 
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -26,30 +28,42 @@ import Access from './pages/access-map/Access';
 import Map from './pages/access-map/Map';
 
 export default function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Google Analytics 測定 ID を入力して設定
+    ReactGA.initialize("G-XXXXXXXXXX");
+    ReactGA.send({
+      hitType: "pageview",
+      // アクセスしたパス (pathname) とクエリ文字列 (search) を送付する (必要に応じて編集する)
+      page: location.pathname + location.search,
+    });
+  }, [location]);
+
   return (
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/" element={ <Home /> } />
-        <Route path="/about/" element={ <About /> } />
-        <Route path="/theme/" element={ <Theme /> } />
-        <Route path="/goods/" element={ <Goods /> } />
-        <Route path="/sponsor/" element={ <Sponsor /> } />
+        <Route path="/" element={<Home />} />
+        <Route path="/about/" element={<About />} />
+        <Route path="/theme/" element={<Theme />} />
+        <Route path="/goods/" element={<Goods />} />
+        <Route path="/sponsor/" element={<Sponsor />} />
 
-        <Route path="/sections/" element={ <Sections /> } />
-        <Route path="/project-search/" element={ <Project /> } />
-        <Route path="/timetable/" element={ <Timetable /> } />
-        <Route path="/ralley/" element={ <Ralley /> } />
-        <Route path="/official-project/" element={ <OfficialProject /> } />
-        <Route path="/lab-open/" element={ <LabOpen /> } />
+        <Route path="/sections/" element={<Sections />} />
+        <Route path="/project-search/" element={<Project />} />
+        <Route path="/timetable/" element={<Timetable />} />
+        <Route path="/ralley/" element={<Ralley />} />
+        <Route path="/official-project/" element={<OfficialProject />} />
+        <Route path="/lab-open/" element={<LabOpen />} />
 
-        <Route path="/notes/" element={ <Notes /> } />
-        <Route path="/pamphlet/" element={ <Pamphlet /> } />
-        <Route path="/FAQ/" element={ <FAQ /> } />
-        <Route path="/inquiry/" element={ <Inquiry /> } />
+        <Route path="/notes/" element={<Notes />} />
+        <Route path="/pamphlet/" element={<Pamphlet />} />
+        <Route path="/FAQ/" element={<FAQ />} />
+        <Route path="/inquiry/" element={<Inquiry />} />
 
-        <Route path="/access/" element={ <Access /> } />
-        <Route path="/map/" element={ <Map /> } />
+        <Route path="/access/" element={<Access />} />
+        <Route path="/map/" element={<Map />} />
 
       </Routes>
       <Footer />
