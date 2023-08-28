@@ -101,10 +101,10 @@ body{
 loader 雲のアニメション
 亀がサイズによって変わるから変えたいところ
 ======================*/
-#move.loaded img:nth-child(1){
+#move img.loaded:nth-child(1){
   animation: cloud1 3s forwards;
 }
-#move.loaded img:nth-child(2){
+#move img.loaded:nth-child(2){
   animation: cloud2 3s forwards;
 }
 
