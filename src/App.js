@@ -32,7 +32,7 @@ export default function App() {
 
   useEffect(() => {
     // Google Analytics 測定 ID を入力して設定
-    ReactGA.initialize("G-XXXXXXXXXX");
+    ReactGA.initialize("G-JV6FFSP99P");
     ReactGA.send({
       hitType: "pageview",
       // アクセスしたパス (pathname) とクエリ文字列 (search) を送付する (必要に応じて編集する)
