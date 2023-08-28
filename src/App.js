@@ -1,7 +1,7 @@
 import './css/App.css';
-import { Routes, Route, useLocation } from "react-router-dom"; // 追加
+import { Routes, Route, useLocation } from "react-router-dom"; 
+import { useEffect } from "react"; //ここを追加
 import ReactGA from "react-ga4";
-
 
 import Header from './components/Header';
 import Footer from './components/Footer';
