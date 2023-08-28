@@ -9,11 +9,21 @@ import recommend from "../imgs/pickup_icon/icon_recommend.png"
 import access from "../imgs/pickup_icon/icon_access.png"
 import map from "../imgs/pickup_icon/icon_map.png"
 import timetable from "../imgs/pickup_icon/icon_stage.png"
-
 import { Helmet } from "react-helmet";
+// const loading = document.getElementById('loader');
+window.addEventListener('load', () => {
+  var move = document.getElementById('move').children;
+  // var loader = document.getElementById('loader');
+  setTimeout(function() {
+    for(var i=0; i<move.length;i++){
+      move[i].classList.add('loaded');
+    }
+    // loader.classList.add('loaded');
+}, 1000);
+});
 export default function Home() {
     return(
-        <div className="top-main">
+  <div className="top-main">
         <Helmet>
           <title>トップページ|まちかね祭2023</title>
         </Helmet>
@@ -121,6 +131,6 @@ export default function Home() {
 
       </div>
 
-        </div>
+  </div>
     )
 }
