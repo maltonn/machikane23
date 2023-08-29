@@ -2,9 +2,20 @@ import "../css/Footer.css";
 import insta from "../imgs/insta.svg"
 import machikane_logo from "../imgs/machikane_logo.png"
 
+window.addEventListener('load', () => {
+    var getFooter=document.getElementById('footer');
+    var footerPosition=document.getElementById('footer').getBoundingClientRect().top;
+    var windowHeight=window.innerHeight;
+    if(footerPosition<windowHeight){
+        getFooter.style.position='absolute';
+    }else{
+        getFooter.style.position='relative';
+    }
+});
+
 export default function Footer() {
     return(
-        <footer className="footer">
+        <footer id="footer">
             <div className="logo"><a href="./" className="top-link"><img className="machikane_logo" src={machikane_logo} alt="まちかね祭ロゴ"></img></a></div>
             <div className="sns">
                     <a className="snsLink" href="https://twitter.com/machikanesai" target="_blank" rel="noreferrer"><span className="X"><span>𝕏</span></span></a>
