@@ -73,7 +73,26 @@ export default function Home() {
             <div className="subtitle">
               <nobr><p className="item1">●</p><span id="schedule-title">企画時間</span><p className="item2">●</p><p className="item3">●</p></nobr>
             </div>
-            <div className="pre-ocean">現在準備中</div>
+            <table className="section-schedule">
+              <tbody>
+                    <tr>
+                        <td className="section">館内</td>
+                        <td className="section-time">10:00〜18:20</td>
+                    </tr>
+                    <tr>
+                        <td className="section">屋外</td>
+                        <td className="section-time">10:00〜18:00</td>
+                    </tr>
+                    <tr>
+                        <td className="section">ステージ</td>
+                        <td className="section-time">10:00〜19:00</td>
+                    </tr>
+                    <tr>
+                        <td className="section">模擬店</td>
+                        <td className="section-time">10:00〜18:00</td>
+                    </tr>
+                </tbody>
+            </table>
           </div>
 
           <div className="stage">
@@ -96,8 +115,8 @@ export default function Home() {
                   <div className="pickup-title">企画検索</div>
                 </div>
                 <div className="pickup-button">
-                <div className="pickup-icon"><img src={goods}></img></div>  
-                <div className="pickup-title">グッズ</div>
+                  <div className="pickup-icon"><img src={goods}></img></div>  
+                  <div className="pickup-title">グッズ</div>
                 </div>
               </div>
               <div className="pickup-subbox2">

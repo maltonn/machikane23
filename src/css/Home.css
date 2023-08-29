@@ -255,6 +255,15 @@ schedule,stage,lab
   /*border: solid 1px #fff;
   border-radius: 50px;*/
 }
+.section-schedule{
+  font-size: 2rem;
+  margin: 0px auto 80px;
+}
+.section, .section-time{
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 25px;
+}
 .subtitle{
   display: flex;
   justify-content: center;
@@ -291,6 +300,7 @@ schedule,stage,lab
   position: relative;
   top:9px;
   left:14px;
+  margin: 50px 0px 50px 0px;
 }
 .item2{
   display: inline-block;
@@ -359,19 +369,16 @@ schedule,stage,lab
 .pickup-button{
   color:#fff;
   position: relative;
-  display: flex;
+  display: inline-flex;
   align-items: baseline;
   justify-content: center;
-}
-.pickup-icon{
-  font-size: 24px;
-  display: inline;
-  width:20px;
-  padding-right: 7px;
-  margin: 0 5px 60px;
+  margin-bottom: 40px;
 }
 .pickup-title{
-  display: inline;
+  font-size: 1.5rem;
+  margin-left: 15px;
+  position: relative;
+  bottom: 15px;
 }
 .pickup-title:hover{
   color:#233192;
@@ -380,7 +387,7 @@ schedule,stage,lab
 
   }
 .pickup-icon img{
-  width:100%;
+  width: 60px;
 }
 /*.pickup-icon:hover{
   color:#233192;
@@ -508,10 +515,10 @@ schedule,stage,lab
 /*======================
 海底の生成される泡の表示のためのもの
 ======================*/
-.ocean img{
+/* .ocean img{
   display: block;
   width: 100%;
-}
+} */
 
 .bubble {
     position: absolute;
@@ -610,13 +617,20 @@ schedule,stage,lab
   スマホ用
 ======================*/
   @media  (max-width:490px){
+    /*title修正*/
+    .item1{
+      margin: 20px 0px 20px 0px
+    }
     .news, .notes{
       box-sizing: content-box;
       width: 80%;
       font-size: 16px;
     }
     .news-date, .news-content{
-      padding: 5px 8px;
+      padding: 5px 3px;
+    }
+    .section-schedule{
+      font-size: 1rem;
     }
     #loader{
       width: 100%;
@@ -707,6 +721,15 @@ schedule,stage,lab
       margin: auto;
   }
   */
+  /*pickup*/
+  .pickup-title{
+    font-size: 1rem;
+    margin-left: 15px;
+    bottom: 8px;
+  }
+  .pickup-icon img{
+    width: 30px;
+  }
 /*pickup-bubble*/
   .search{
     display: inline-block;
@@ -750,7 +773,6 @@ schedule,stage,lab
   .schedule, .stage, .lab, #pickup, .about {
     box-sizing: content-box;
     width: 80%;
-    font-size: 19px;
   }
 }
 @media(max-width:360px){
