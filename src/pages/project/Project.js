@@ -77,7 +77,7 @@ export default function Project() {
             project.additionalKeyword+={//模擬店　みたいな検索にたいしてキーワード検索が引っかかるように
                 "kannai":"、館内",
                 "mogiten":"、模擬店、屋台、昼食、お昼ごはん、eat",
-                "kouen":"、ステージ、stage",
+                "stage":"、ステージ、stage",
                 "okugai":"、屋外",
             }[project.section]
 
