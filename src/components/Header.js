@@ -49,7 +49,7 @@ export default function Header() {
                                 <li><a href="./project-search">企画検索</a></li>
                                 <li><a href="./timetable">ステージタイムテーブル</a></li>
                                 <li><a href="./ralley">ラリー企画一覧</a></li>
-                                <li><a href="./official-project">委員会企画</a></li>
+                                <li><a href="./official-project">実行委員会企画</a></li>
                                 <li><a href="./lab-open">研究室紹介</a></li>
                             </ul>
                         </li>
