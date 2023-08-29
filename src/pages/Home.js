@@ -10,22 +10,26 @@ import access from "../imgs/pickup_icon/icon_access.png"
 import map from "../imgs/pickup_icon/icon_map.png"
 import timetable from "../imgs/pickup_icon/icon_stage.png"
 import { Helmet } from "react-helmet";
-window.addEventListener('load', () => {
-  var move = document.getElementById('move').children;
-  setTimeout(function() {
-    for(var i=0; i<move.length;i++){
-      move[i].classList.add('loaded');
-    }
-}, 1000);
-});
-
-const $ = el => document.querySelector(el);
-window.addEventListener('load', () => {
-  var surfaceHeight=document.getElementById('surface').getBoundingClientRect().bottom-document.getElementById('surface').getBoundingClientRect().top;
-  $(':root').style.setProperty('--base-height', `${surfaceHeight}px`);
-});
+import { useEffect } from "react"
 
 export default function Home() {
+  useEffect(() => {
+    window.addEventListener('load', () => {
+      var move = document.getElementById('move').children;
+      // var loader = document.getElementById('loader');
+      setTimeout(function () {
+        for (var i = 0; i < move.length; i++) {
+          move[i].classList.add('loaded');
+        }
+        // loader.classList.add('loaded');
+      }, 1000);
+    });
+    const $ = el => document.querySelector(el);
+    window.addEventListener('load', () => {
+      var surfaceHeight=document.getElementById('surface').getBoundingClientRect().bottom-document.getElementById('surface').getBoundingClientRect().top;
+      $(':root').style.setProperty('--base-height', `${surfaceHeight}px`);
+    });
+  },[])
     return(
   <div className="top-main">
         <Helmet>
@@ -135,7 +139,7 @@ export default function Home() {
                 </div></a>
             </div>
           </div>
-
+  
           <div className ="about">
             <div className="titles"><nobr><p className="item1">●</p><span id="title">テーマ</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
           </div>
