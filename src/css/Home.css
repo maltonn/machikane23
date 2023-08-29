@@ -224,22 +224,12 @@ sky2 お知らせ欄(news)、来場者の方へ(notes)内部
   border-radius: 50px;
   text-align: center;
   box-sizing: border-box;
-  width: 82%;
+  width: 80%;
 }
-table.renew-table{
-  margin: 20px auto;
-  width: 90%;
-}
-tr{
-  position: relative;
-}
-td:first-child{
+.news-date, .news-content{
+  text-align: left;
   vertical-align: top;
-  width: 20%;
-}
-td.renew:nth-child(2){
-  width: 60%;
-  padding-bottom: 10px;
+  padding: 10px 25px;
 }
 /*空の小見出しのスタイル*/
 .sky2 span{
@@ -625,6 +615,9 @@ schedule,stage,lab
       width: 80%;
       font-size: 16px;
     }
+    .news-date, .news-content{
+      padding: 5px 8px;
+    }
     #loader{
       width: 100%;
       height: 100vh;
@@ -736,6 +729,9 @@ schedule,stage,lab
     box-sizing: content-box;
     width: 80%;
     font-size: 19px;
+  }
+  .news-date, .news-content{
+    padding: 10px 25px;
   }
   #loader{
     width: 100%;

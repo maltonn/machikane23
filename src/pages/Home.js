@@ -45,15 +45,15 @@ export default function Home() {
       <div className="mainpage1">
         <div className="news">
           <span id="news-title">お知らせ</span>
-            <table className="renew-table">
+            <table className="news-table">
               <tbody>
                     <tr>
-                        <td className="renew">9/16(土)</td>
-                        <td className="renew">トップページを更新しました。</td>
+                        <td className="news-date">9/16(土)</td>
+                        <td className="news-content">トップページを更新しました。</td>
                     </tr>
                     <tr>
-                        <td className="renew">9/1(金)</td>
-                        <td className="renew">まちかね祭2023公式サイトが完成しました。</td>
+                        <td className="news-date">9/1(金)</td>
+                        <td className="news-content">まちかね祭2023公式サイトが完成しました。</td>
                     </tr>
                 </tbody>
             </table>
