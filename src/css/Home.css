@@ -413,6 +413,10 @@ schedule,stage,lab
 .pickup-subbox2 .pickup-button{
   flex-basis: 50%;
 }
+.pickup-box{
+  display: inline-block;
+  width: calc(100% / 1.2);
+}
 /*.search .bubble-before{
   position: relative;
   width: 60%;

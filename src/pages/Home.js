@@ -109,7 +109,7 @@ export default function Home() {
           <div id="pickup">
             <nobr><p className="item1">●</p><span id="pickup-title">PICKUP</span><p className="item2">●</p><p className="item3">●</p></nobr>
             <div className="pickup-box">
-              <div className="pickup-subbox1">  
+              {/* <div className="pickup-subbox1">   */}
                 <div className="pickup-button">
                   <div className="pickup-icon"><img src={search}></img></div>
                   <div className="pickup-title">企画検索</div>
@@ -118,12 +118,12 @@ export default function Home() {
                   <div className="pickup-icon"><img src={goods}></img></div>  
                   <div className="pickup-title">グッズ</div>
                 </div>
-              </div>
-              <div className="pickup-subbox2">
+              {/* </div>
+              <div className="pickup-subbox2"> */}
                 <div className="pickup-button" id="recommend">
                   <div className="pickup-icon"><img src={recommend}></img></div>  
                   <div className="pickup-title">実行委員企画</div>
-                </div>
+                </div><br/>
                 <div className="pickup-button">
                   <div className="pickup-icon"><img src={access}></img></div>
                   <div className="pickup-title">アクセス</div>
@@ -137,7 +137,7 @@ export default function Home() {
                   <div className="pickup-icon"><img src={timetable}></img></div> 
                   <div className="pickup-title">ステージタイムテーブル</div>
                 </div>
-            </div>
+            {/* </div> */}
           </div>
 
           <div className ="about">
