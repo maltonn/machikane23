@@ -22,7 +22,6 @@ window.addEventListener('load', () => {
 const $ = el => document.querySelector(el);
 window.addEventListener('load', () => {
   $(':root').style.setProperty('--base-height', `${document.getElementById('surface').getBoundingClientRect().bottom}px`);
-  console.log(document.getElementById('surface').getBoundingClientRect().bottom)
 });
 
 export default function Home() {
