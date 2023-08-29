@@ -1,7 +1,8 @@
 import { Helmet } from "react-helmet";
+import "../../css/Common.css"
 export default function Inquiry() {
     return(
-        <div>
+        <div className="main">
         <Helmet>
           <title>お問い合わせ|まちかね祭2023</title>
         </Helmet>
