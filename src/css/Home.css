@@ -363,8 +363,20 @@ schedule,stage,lab
   color: #fff;
 }
 
+.titles{
+  position: relative;
+  left: 10px;
+}
+
+#title{
+  font-size: 4rem;
+}
 .pickup-box{
   margin-top: 40px;
+  display: inline-block;
+  width: calc((100% - 100px) / 1.5);
+  position: relative;
+  right: 40px;
 }
 .pickup-button{
   color:#fff;
@@ -373,10 +385,11 @@ schedule,stage,lab
   align-items: baseline;
   justify-content: center;
   margin-bottom: 40px;
+  margin-left: 80px;
 }
 .pickup-title{
-  font-size: 1.5rem;
-  margin-left: 15px;
+  font-size: 2.5rem;
+  margin-left: 20px;
   position: relative;
   bottom: 15px;
 }
@@ -384,8 +397,7 @@ schedule,stage,lab
   color:#233192;
   background-color: rgba(255,255,255,0.38);
   border-bottom: solid 1px #fff;
-
-  }
+}
 .pickup-icon img{
   width: 60px;
 }
@@ -394,29 +406,25 @@ schedule,stage,lab
   background-color: rgba(255,255,255,0.38);
   border-bottom: solid 1px #fff;
 }*/
-.pickup-subbox1{
+/* .pickup-subbox1{
   display: flex;
   justify-content: space-around;
 }
 .pickup-subbox2{
   display: flex;
   flex-wrap: wrap;
-}
+} */
 /*.pickup-subbox2:nth-child(1){
   flex-basis: 100%;
 }なんで適応されないねん*/
-#recommend{
+/* #recommend{
   flex-basis: 100%;
   position: relative;
 }
 
 .pickup-subbox2 .pickup-button{
   flex-basis: 50%;
-}
-.pickup-box{
-  display: inline-block;
-  width: calc(100% / 1.2);
-}
+} */
 /*.search .bubble-before{
   position: relative;
   width: 60%;
@@ -625,13 +633,17 @@ schedule,stage,lab
     .item1{
       margin: 20px 0px 20px 0px
     }
+    .titles{
+      position: relative;
+      left: 10px;
+    }
     .news, .notes{
       box-sizing: content-box;
       width: 80%;
       font-size: 16px;
     }
     .news-date, .news-content{
-      padding: 5px 3px;
+      padding: 7px 5px;
     }
     .section-schedule{
       font-size: 1rem;
@@ -726,9 +738,22 @@ schedule,stage,lab
   }
   */
   /*pickup*/
+  .pickup-box{
+    display: inline-block;
+    width: 100%;
+    right: 20px;
+    bottom: 40px;
+  }
+  #title{
+    font-size: 1.3rem;
+  }
+  .pickup-button{
+    margin-bottom: 40px;
+    margin-left: 65px;
+  }
   .pickup-title{
     font-size: 1rem;
-    margin-left: 15px;
+    margin-left: 5px;
     bottom: 8px;
   }
   .pickup-icon img{
@@ -752,10 +777,14 @@ schedule,stage,lab
   タブレット用
 ======================*/
 @media (min-width:490px) and (max-width: 990px){
+  .titles{
+    position: relative;
+    left: 20px;
+  }
   .news, .notes{
     box-sizing: content-box;
     width: 80%;
-    font-size: 19px;
+    font-size: 1.8rem;
   }
   .news-date, .news-content{
     padding: 10px 25px;
@@ -777,6 +806,26 @@ schedule,stage,lab
   .schedule, .stage, .lab, #pickup, .about {
     box-sizing: content-box;
     width: 80%;
+  }
+  .pickup-box{
+    display: inline-block;
+    width: 100%;
+    right: 10px;
+  }
+  #title{
+    font-size: 3rem;
+  }
+  .pickup-button{
+    margin-bottom: 60px;
+    margin-left: 65px;
+  }
+  .pickup-title{
+    font-size: 2rem;
+    margin-left: 10px;
+    bottom: 15px;
+  }
+  .pickup-icon img{
+    width: 60px;
   }
 }
 @media(max-width:360px){
