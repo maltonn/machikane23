@@ -2,7 +2,7 @@ header{
     z-index: 1005;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     margin: 0;
     background-color: var(--blue2);
     z-index: 600;
