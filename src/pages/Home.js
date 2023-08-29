@@ -44,7 +44,7 @@ export default function Home() {
     <div className="sky2">
       <div className="mainpage1">
         <div className="news">
-          <span id="news-title">お知らせ</span>
+          <span id="title">お知らせ</span>
             <table className="news-table">
               <tbody>
                     <tr>
@@ -59,7 +59,7 @@ export default function Home() {
             </table>
         </div>
         <div className="notes">
-          <span id="notes-title">来場者の方へ</span>
+          <span id="title">来場者の方へ</span>
           <div className="pre-sky">まちかね祭に車でご来場いただくことはできません。<br/>ご来場の際は公共交通機関をご利用ください。</div>
         </div>
       </div>
@@ -71,7 +71,7 @@ export default function Home() {
 
           <div className="schedule">
             <div className="subtitle">
-              <nobr><p className="item1">●</p><span id="schedule-title">企画時間</span><p className="item2">●</p><p className="item3">●</p></nobr>
+              <div className="titles"><nobr><p className="item1">●</p><span id="title">企画時間</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
             </div>
             <table className="section-schedule">
               <tbody>
@@ -96,52 +96,48 @@ export default function Home() {
           </div>
 
           <div className="stage">
-            <nobr><p className="item1">●</p><span id="stage-title">現在のステージ企画</span><p className="item2">●</p><p className="item3">●</p></nobr>
+            <div className="titles"><nobr><p className="item1">●</p><span id="title">現在のステージ企画</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
             <div className="pre-ocean">現在準備中</div>
             <div className="machikani1"><img src={machikani} alt="まちかに"></img></div>
           </div>
 
           <div className="lab">
-            <nobr><p className="item1">●</p><span id="lab-title">研究室紹介</span><p className="item2">●</p><p className="item3">●</p></nobr>
+            <div className="titles"><nobr><p className="item1">●</p><span id="title">研究室紹介</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
             <div className="pre-ocean">現在準備中</div>
           </div>
 
           <div id="pickup">
-            <nobr><p className="item1">●</p><span id="pickup-title">PICKUP</span><p className="item2">●</p><p className="item3">●</p></nobr>
+            <div className="titles"><nobr><p className="item1">●</p><span id="title">PICKUP</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
             <div className="pickup-box">
-              {/* <div className="pickup-subbox1">   */}
-                <div className="pickup-button">
+                <a href="./project-search"><div className="pickup-button">
                   <div className="pickup-icon"><img src={search}></img></div>
                   <div className="pickup-title">企画検索</div>
-                </div>
-                <div className="pickup-button">
+                </div></a>
+                <a href="./goods"><div className="pickup-button">
                   <div className="pickup-icon"><img src={goods}></img></div>  
                   <div className="pickup-title">グッズ</div>
-                </div>
-              {/* </div>
-              <div className="pickup-subbox2"> */}
-                <div className="pickup-button" id="recommend">
+                </div></a>
+                <a href="./official-project"><div className="pickup-button">
                   <div className="pickup-icon"><img src={recommend}></img></div>  
-                  <div className="pickup-title">実行委員企画</div>
-                </div><br/>
-                <div className="pickup-button">
+                  <div className="pickup-title">委員会企画</div>
+                </div></a><br/>
+                <a href="./access"><div className="pickup-button">
                   <div className="pickup-icon"><img src={access}></img></div>
                   <div className="pickup-title">アクセス</div>
-                </div>
-                <div className="pickup-button">
+                </div></a>
+                <a href="./map"><div className="pickup-button">
                   <div className="pickup-icon"><img src={map}></img></div>  
                   <div className="pickup-title">マップ</div>
-                </div>
-              </div>
-                <div className="pickup-button">
+                </div></a>
+                <a href="./timetable"><div className="pickup-button">
                   <div className="pickup-icon"><img src={timetable}></img></div> 
                   <div className="pickup-title">ステージタイムテーブル</div>
-                </div>
-            {/* </div> */}
+                </div></a>
+            </div>
           </div>
 
           <div className ="about">
-            <nobr><p className="item1">●</p><span id="about-title"><a href="./theme">テーマ</a></span><p className="item2">●</p><p className="item3">●</p></nobr>
+            <div className="titles"><nobr><p className="item1">●</p><span id="title">テーマ</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
           </div>
         </div>
 
