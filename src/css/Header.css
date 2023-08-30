@@ -1,15 +1,14 @@
 header{
+    z-index: 1005;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     margin: 0;
     background-color: var(--blue2);
+    z-index: 600;
 }
 header > h1{
     margin: 0;
-}
-.main{
-    margin-top: 80px;
 }
 .machikane_logo-pc{
     display: block;
@@ -71,9 +70,6 @@ header > h1{
 
 /*以下スマホ用*/
 @media screen and (max-width:490px){
-    .main{
-        margin-top: 80px;
-    }
     .machikane_logo-sp.menu-closed{
         opacity: 0;
     }

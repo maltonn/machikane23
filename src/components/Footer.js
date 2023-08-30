@@ -7,7 +7,7 @@ export default function Footer() {
         <footer className="footer">
             <div className="logo"><a href="./" className="top-link"><img className="machikane_logo" src={machikane_logo} alt="まちかね祭ロゴ"></img></a></div>
             <div className="sns">
-                    <a className="snsLink" href="https://twitter.com/machikanesai" target="_blank" rel="noreferrer"><span className="X">𝕏</span></a>
+                    <a className="snsLink" href="https://twitter.com/machikanesai" target="_blank" rel="noreferrer"><span className="X"><span>𝕏</span></span></a>
                     <a href="https://www.instagram.com/ou_machikanesai/" target="_blank" rel="noreferrer"><img className="insta" src={insta} alt="instaIcon"></img></a>
             </div>
             <div className="external-site">
