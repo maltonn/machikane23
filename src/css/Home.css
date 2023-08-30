@@ -401,57 +401,6 @@ schedule,stage,lab
 .pickup-icon img{
   width: 60px;
 }
-/*.pickup-icon:hover{
-  color:#233192;
-  background-color: rgba(255,255,255,0.38);
-  border-bottom: solid 1px #fff;
-}*/
-/* .pickup-subbox1{
-  display: flex;
-  justify-content: space-around;
-}
-.pickup-subbox2{
-  display: flex;
-  flex-wrap: wrap;
-} */
-/*.pickup-subbox2:nth-child(1){
-  flex-basis: 100%;
-}なんで適応されないねん*/
-/* #recommend{
-  flex-basis: 100%;
-  position: relative;
-}
-
-.pickup-subbox2 .pickup-button{
-  flex-basis: 50%;
-} */
-/*.search .bubble-before{
-  position: relative;
-  width: 60%;
-  display: block;
-}
-.search .bubble-after{
-  position: relative;
-  width: 60%;
-  display: none;
-}
-.search:hover .bubble-before{
-  position: relative;
-  width: 60%;
-  display: none;
-}
-.search:hover .bubble-after{
-  position: relative;
-  width: 60%;
-  display: block;
-}
-.search:nth-child(3), .search:nth-child(4){
-  margin-left: inherit;
-}
-.search:nth-child(4), .search:nth-child(5), .search:nth-child(6){
-  margin-left: 20px;
-}
-*/
 
 /*======================
 かめのアニメション
@@ -511,27 +460,10 @@ schedule,stage,lab
     transform: translate(0,0);
   }
 }
-/*
-これ何に使ってたっけ
-@keyframes kame{
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-*/
 
 /*======================
 海底の生成される泡の表示のためのもの
 ======================*/
-/* .ocean img{
-  display: block;
-  width: 100%;
-} */
-
 .bubble {
     position: absolute;
     bottom: 0;
@@ -674,12 +606,6 @@ schedule,stage,lab
     #move img:nth-child(1){
       width:100%;
     }
-    /*.ocean span{
-      background-color:rgba(255,255,255,0.20);
-      border:solid 1px #fff;
-      padding:2px 12px;
-      border-radius: 14px;
-    }*/
     .schedule, .stage, .lab, #pickup, .about {
       box-sizing: content-box;
       font-size: 16px;

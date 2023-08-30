@@ -16,12 +16,10 @@ export default function Home() {
   useEffect(() => {
     window.addEventListener('load', () => {
       var move = document.getElementById('move').children;
-      // var loader = document.getElementById('loader');
       setTimeout(function () {
         for (var i = 0; i < move.length; i++) {
           move[i].classList.add('loaded');
         }
-        // loader.classList.add('loaded');
       }, 1000);
     });
     const $ = el => document.querySelector(el);
