@@ -1,5 +1,5 @@
 footer{
-    position: absolute;
+    position: relative;
     margin-top: auto;
     bottom: 0;
     height: auto;
@@ -30,6 +30,10 @@ footer{
     width: 2.3rem;
     border-radius: 5px;
     margin-top: 5px;
+}
+.X span{
+    position: relative;
+    bottom: 12px;
 }
 .insta{
     width: 3rem;

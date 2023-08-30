@@ -1,3 +1,524 @@
-h2{
-    color: red;
-}
+body{
+    font-family: "fot-tsukuardgothic-std", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin:0;
+  }
+  .main{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .title{
+    text-align: center;
+  }
+  h1{
+    max-width: 65%;
+    font-size: 45px;
+    /* text-align: center;*/
+    padding: 10px 40px;
+    background-color: rgba(255,255,255,0.38);
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 150px;
+  }
+  
+  /*======================
+  大きな枠組みの部分
+  ======================*/
+  
+  .sky2{
+      color: #233192;
+      width:100%;
+      background: linear-gradient( #b5e5f4 50%, #fff 100%)
+  }
+  
+  .mainpage1{
+    width: 92%;
+    padding-top:280px;
+    padding-bottom: 80px;
+    margin:0 auto;
+  }
+  .ocean{
+      width:100%;
+      background-image: url("../imgs/inthesea/surface1.png"), linear-gradient( #fff 0%, #01579E 15%, #2E3192 100%);
+      background-repeat: no-repeat, no-repeat;
+      background-size: contain;
+      color:#fff;
+  }
+  .mainpage2{
+    width: 92%;
+    margin:0 auto;
+    padding-top: 280px;
+    }
+  .schedule,.stage,.lab,#pickup,.about{
+    box-sizing: border-box;
+  }
+  .machikani{
+    margin: 0px -22px -71px;
+    display: inline-block;
+    width: 130px;
+  }
+  .machikani img{
+    width: 100%;
+  }
+  .machikani1{
+    /*margin: 0px -22px -71px;*/
+    width: 150px;
+    rotate: -6deg;
+    position: relative;
+    bottom:2px;
+    right: 0px;
+  }
+  .machikani1 img{
+    width: 100%;
+  }
+  
+  .bottom{
+    bottom:0px;
+    width:100%;
+    height:300px;
+  }
+  
+  footer{
+    background-color:#2E3192;
+  }
+  /*======================
+  一個小さい枠組の設定
+  ======================*/
+
+  /*======================
+  sky2 お知らせ欄(news)、来場者の方へ(notes)内部
+  竹内くん的に背景が透明が良いそうだったので、半透明にしてます
+  位置は要調節
+  文章どうしたらいいかわからんからとりあえず準備中にしてます
+  ======================*/
+  
+  .news,.notes{
+    font-size: 22px;
+    margin: 20px auto 80px;
+    display:block;
+    background-color: rgba(255,255,255,0.38);
+    border-radius: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 82%;
+  }
+
+ 
+  /*空の小見出しのスタイル*/
+  .sky2 span{
+    max-width: 90%;
+    display: inline-block;
+    font-size: 37px;
+    padding-top: 8px;
+  }
+  
+  /*======================
+  oceanの中　企画時間、ステタイ、研究室紹介
+  schedule,stage,lab
+  枠のサイズがわかりやすいように線で囲ってます
+  実際は枠線なしやったはず
+  ちっちゃめのイラストか、マーク入れた方が統一感でそう
+  ======================*/
+  
+  .schedule,.stage,.lab,.about{
+    font-size: 22px;
+    margin: 10px auto 180px;
+    display:block;
+    text-align: center;
+  }
+  .subtitle{
+    display: flex;
+    justify-content: center;
+  }
+  .pre-ocean, .pre-sky{
+    padding: 20px 10px 30px;
+    text-align: center;/*タイトル中央ぞろえにするならいらん*/
+    width:80%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  /*海の中の小見出しのスタイル*/
+  .ocean span{
+    display: inline-block;
+    font-size: 37px;
+    color: #fff;
+    position: relative;
+    right: 26px;
+    /*background-color:rgba(255,255,255,0.20);
+    border:solid 1px #fff;
+    padding:2px 12px;
+    border-radius: 14px;*/
+  }
+  .item1{
+    display: inline-block;
+    font-size: 93px;
+    opacity: 0.30;
+    position: relative;
+    top:9px;
+    left:14px;
+  }
+  .item2{
+    display: inline-block;
+    font-size: 28px;
+    opacity: 0.30;
+    position: relative;
+    top:9px;
+    right:26px
+  }
+  .item3{
+    display: inline-block;
+    font-size: 15px;
+    opacity: 0.30;
+    position: relative;
+    top:9px;
+    right:26px;
+  }
+  #pickup{
+    font-size: 22px;
+    text-align: center;
+    margin: 0 auto 180px;
+  }
+  /*pickupの文字の色を変化させる*/
+  .ocean a{
+    color: #fff;
+  }
+  
+  .pickup-box{
+    margin-top: 40px;
+  }
+  .pickup-button{
+    color:#fff;
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+  .pickup-icon{
+    font-size: 24px;
+    display: inline;
+    width:20px;
+    padding-right: 7px;
+    margin: 0 5px 60px;
+  }
+  .pickup-title{
+    display: inline;
+  }
+  .pickup-title:hover{
+    color:#233192;
+    background-color: rgba(255,255,255,0.38);
+    border-bottom: solid 1px #fff;
+  
+    }
+  .pickup-icon img{
+    width:100%;
+  }
+  /*.pickup-icon:hover{
+    color:#233192;
+    background-color: rgba(255,255,255,0.38);
+    border-bottom: solid 1px #fff;
+  }*/
+  .pickup-subbox1{
+    display: flex;
+    justify-content: space-around;
+  }
+  .pickup-subbox2{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /*.pickup-subbox2:nth-child(1){
+    flex-basis: 100%;
+  }なんで適応されないねん*/
+  #recommend{
+    flex-basis: 100%;
+    position: relative;
+  }
+  
+  .pickup-subbox2 .pickup-button{
+    flex-basis: 50%;
+  }
+  
+  /*======================
+  かめのアニメション
+  ======================*/
+  .machikame1{
+    width: 10vw;
+    position: relative;
+    bottom: -30vh;
+    left:7%;
+  }
+  .machikame1 img{
+    width: 100%;
+    animation:flying 10s ease-in-out infinite;
+  }
+  @keyframes flying {
+    0% {
+      transform: translate(0,0);
+    }
+    25% {
+      transform: translate(30px,15px);
+    }
+    50% {
+      transform: translate(0,0);
+    }
+    75% {
+      transform: translate(-30px,15px);
+    }
+    100% {
+      transform: translate(0,0);
+    }
+  }
+  
+  .machikame2{
+    width: 78px;
+    position: relative;
+    bottom: -300px;
+    left:26px;
+  }
+  .machikame2 img{
+    width: 100%;
+    animation: swimming 10s ease-in-out infinite;
+  }
+  @keyframes swimming {
+    0% {
+      transform: translate(0,0);
+    }
+    25% {
+      transform: translate(30px,15px);
+    }
+    50% {
+      transform: translate(0,0);
+    }
+    75% {
+      transform: translate(-30px,15px);
+    }
+    100% {
+      transform: translate(0,0);
+    }
+  }
+  /*
+  これ何に使ってたっけ
+  @keyframes kame{
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  */
+  
+  /*======================
+  海底の生成される泡の表示のためのもの
+  ======================*/
+  .ocean img{
+    display: block;
+    width: 100%;
+  }
+  
+  .bubble {
+      position: absolute;
+      bottom: 0;
+      background-color: #fff;
+      opacity: 60%;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      animation: bubble 10s ease-in infinite;
+    }
+  
+  .bubble:nth-child(1) {
+      width: 5px;
+      height: 5px;
+      left: -10%;
+      animation-duration: 10s;
+    }
+    
+    .bubble:nth-child(2) {
+      width: 7px;
+      height: 7px;
+      left: 0%;
+      animation-duration: 14s;
+    }
+    
+    .bubble:nth-child(3) {
+      width: 10px;
+      height: 10px;
+      left: 10%;
+      animation-duration: 11s;
+    }
+    
+    .bubble:nth-child(4) {
+      width: 15px;
+      height: 15px;
+      left: 25%;
+      animation-duration: 8s;
+    }
+    
+    .bubble:nth-child(5) {
+      width: 8px;
+      height: 8px;
+      left: 40%;
+      animation-duration: 13s;
+    }
+    
+    .bubble:nth-child(6) {
+      width: 12px;
+      height: 12px;
+      left: 50%;
+      animation-duration: 13.5s;
+    }
+    
+    .bubble:nth-child(7) {
+      width: 17px;
+      height: 17px;
+      left: 60%;
+      animation-duration: 9s;
+    }
+    .bubble:nth-child(8) {
+      width: 10px;
+      height: 10px;
+      left: 70%;
+      animation-duration: 12s;
+    }
+    .bubble:nth-child(7) {
+      width: 13px;
+      height: 13px;
+      left: 80%;
+      animation-duration:10s;
+    }
+    @keyframes bubble {
+      0% {
+        bottom: 0px;
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(100px);
+      }
+      100% {
+        bottom: 2300px;
+      }
+    }
+    /**/
+    .pickup-button,.pre-sky,.pre-ocean{
+      transition: 0.8s ease-in-out;
+      transform: translateY(15px);
+      opacity: 1.0;
+    }
+    .pickup-button.on,.pre-sky.on,.pre-ocean .on {
+      transform: translateY(0);
+      opacity: 0;
+    }
+  
+  /*======================
+    スマホ用
+  ======================*/
+    @media  (max-width:490px){
+        h1{
+            font-size: 25px;
+            margin-bottom: 100px;
+        }
+      .news, .notes{
+        box-sizing: content-box;
+        width: 80%;
+        font-size: 16px;
+      }
+      #loader{
+        width: 100%;
+        height: 100vh;
+        background-image:url("../imgs/mainview/cloud_phone.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%)
+        ;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 100% auto;
+        background-position: center;
+      }
+      .ocean{
+        display: block;
+      }
+      .ocean span, .sky2 span{
+        font-size: 22px;
+      }
+      /*------------------------
+      イラストの位置調整
+      ------------------------*/
+      .machikame1{
+        width:20%;
+        left:9%;
+        bottom:-50vh;
+      }
+      #move img:nth-child(1){
+        width:100%;
+      }
+      /*.ocean span{
+        background-color:rgba(255,255,255,0.20);
+        border:solid 1px #fff;
+        padding:2px 12px;
+        border-radius: 14px;
+      }*/
+      .schedule, .stage, .lab, #pickup, .about {
+        box-sizing: content-box;
+        font-size: 16px;
+      }
+      #move img:nth-child(1){
+        display: block;
+        position: absolute;
+        width: auto;
+        height: 100vh;
+        bottom:42%;
+        left:-30%;
+        animation: kame 10s forwards;
+        margin: auto;
+      }
+      #move img:nth-child(2){
+        display: block;
+        position: absolute;
+        width: auto;
+        height: 105vh;
+        bottom:-10%;
+        right:-50%;
+        animation: kame 10s forwards;
+        margin: auto;
+      }
+      @keyframes cloud1{
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-90vh);
+        }
+      }
+      @keyframes cloud2{
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(92vh);
+        }
+    }}
+  
+  /*======================
+    タブレット用
+  ======================*/
+  @media (min-width:490px) and (max-width: 990px){
+    h1{
+        font-size: 35px;
+    }
+    .news, .notes{
+      box-sizing: content-box;
+      width: 80%;
+      font-size: 19px;
+    }
+   
+    .ocean{
+      display: block;
+    }
+    .ocean span,.sky2 span{
+      font-size:30px;
+    }
+    .schedule, .stage, .lab, #pickup, .about {
+      box-sizing: content-box;
+      width: 80%;
+      font-size: 19px;
+    }
+  }
