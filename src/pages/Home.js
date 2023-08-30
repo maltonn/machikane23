@@ -62,7 +62,7 @@ export default function Home() {
         </div>
         <div className="notes">
           <span id="title">来場者の方へ</span>
-          <div className="pre-sky">まちかね祭に車でご来場いただくことはできません。<br/>ご来場の際は公共交通機関をご利用ください。</div>
+          <div className="content">まちかね祭に車でご来場いただくことはできません。<br/>ご来場の際は公共交通機関をご利用ください。</div>
         </div>
       </div>
     </div>
@@ -86,7 +86,7 @@ export default function Home() {
                         <td className="section-time">10:00〜18:00</td>
                     </tr>
                     <tr>
-                        <td className="section">ステージ</td>
+                        <td className="section"><nobr>ステージ</nobr></td>
                         <td className="section-time">10:00〜19:00</td>
                     </tr>
                     <tr>
@@ -98,7 +98,7 @@ export default function Home() {
           </div>
 
           <div className="stage">
-            <div className="titles"><nobr><p className="item1">●</p><span id="title">現在のステージ企画</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
+            <div className="titles" id="stage-title"><nobr><p className="item1">●</p><span id="title">現在のステージ企画</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
             <div className="pre-ocean">現在準備中</div>
             <div className="machikani1"><img src={machikani} alt="まちかに"></img></div>
           </div>
