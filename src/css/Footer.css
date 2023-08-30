@@ -1,10 +1,10 @@
 footer{
-    position: relative;
+    position: absolute;
     margin-top: auto;
-    bottom: 0;
+   /* bottom: 0;*/
     height: auto;
     width: 100%;
-    background-color: var(--blue2);/* 各変数はApp.css を参照　もちろん普通にカラーコード書いてもOK*/
+    background-color: #2E3192;/* 各変数はApp.css を参照　もちろん普通にカラーコード書いてもOK*/
 }
 .logo{
     text-align: center;
