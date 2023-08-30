@@ -13,6 +13,20 @@ body{
   .title{
     text-align: center;
   }
+  .cloud1{
+    position: fixed;
+    width: 100%;
+    bottom:320px;
+  }
+  .cloud2{
+    position:fixed;
+    width:50%;
+    left:24%;
+    bottom:76%;
+  }
+  .cloud1 img, .cloud2 img{
+    width:100%;
+  }
   h1{
     max-width: 65%;
     font-size: 45px;
@@ -21,9 +35,140 @@ body{
     background-color: rgba(255,255,255,0.38);
     border-radius: 50px;
     display: inline-block;
-    margin-bottom: 150px;
+    /*margin-bottom: 150px;*/
   }
-  
+  .circlecloud1{
+    width: 450px;
+    position: relative;
+    bottom: 200px;
+    left:50px;
+  }
+  .circlecloud2{
+    width: 350px;
+    position:relative;
+    left:60%;
+    bottom:110px;
+  }
+  .circlecloud3{
+    width: 180px;
+    position:relative;
+    bottom:520px;
+    left:600px;
+  }
+  .sub-pictures img{
+    width:100%;
+  }
+  .sub-pictures{
+    height:400px;
+  }
+  .subcloud{
+    height:260px;
+  }
+  .subcloud0 img{
+    position: relative;
+    bottom:120px;
+    left:700px;
+    width:30%;
+    opacity: 0.6;
+  }
+  .subcloud1 img{
+    position: relative;
+    bottom:250px;
+    width:50%;
+    opacity: 0.6;
+  }
+  .subcloud2 img{
+    position: relative;
+    left:800px;
+    bottom:320px;
+    width:42%;
+    opacity: 0.6;
+  }
+  /*.sub-images {
+    margin:0;
+  }
+  .sub-images p{
+    margin:0;
+  }
+  .subitem1{
+    position:relative;
+    bottom:300px;
+    left:400px;
+    color:#fff;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .subitem2{
+    position:relative;
+    bottom:100px;
+    left:100px;
+    color:#fff;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .subitem3{
+    position:relative;
+    bottom:510px;
+    left:220px;
+    color:#fff;
+    font-size: 80px;
+    font-weight: 100;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .subitem4{
+    position:relative;
+    bottom:740px;
+    left:160px;
+    color:#fff;
+    font-size: 110px;
+    font-weight: 100;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .subitem5{
+    position:relative;
+    bottom:980px;
+    left:240px;
+    color:#fff;
+    font-size: 60px;
+    font-weight: 100;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .subitem6{
+    position:relative;
+    bottom:1120px;
+    left:270px;
+    color:#fff;
+    font-size: 60px;
+    font-weight: 100;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .subitem8{
+    position:relative;
+    bottom:1170px;
+    left:300px;
+    color:#fff;
+    font-size: 20px;
+    font-weight: 100;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .subitem7{
+    position:relative;
+    bottom:1400px;
+    left:100px;
+    color:#fff;
+    font-size: 20px;
+    font-weight: 100;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+    .subitem9{
+    position:relative;
+    bottom:1250px;
+    left:180px;
+    color:#fff;
+    font-size: 20px;
+    font-weight: 100;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }*/
   /*======================
   大きな枠組みの部分
   ======================*/
@@ -348,6 +493,7 @@ body{
       height: 10px;
       left: 10%;
       animation-duration: 11s;
+      animation-delay:-3s;
     }
     
     .bubble:nth-child(4) {
@@ -355,6 +501,7 @@ body{
       height: 15px;
       left: 25%;
       animation-duration: 8s;
+      animation-delay: -1s;
     }
     
     .bubble:nth-child(5) {
@@ -368,7 +515,7 @@ body{
       width: 12px;
       height: 12px;
       left: 50%;
-      animation-duration: 13.5s;
+      animation-duration: 14s;
     }
     
     .bubble:nth-child(7) {
@@ -389,6 +536,24 @@ body{
       left: 80%;
       animation-duration:10s;
     }
+    .bubble:nth-child(8) {
+      width: 15px;
+      height: 15px;
+      left: 90%;
+      animation-duration:8.5s;
+    }
+    .bubble:nth-child(9) {
+      width: 9px;
+      height: 9px;
+      left: 100%;
+      animation-duration:9.5s;
+    }
+    .bubble:nth-child(10) {
+      width: 11.5px;
+      height: 11.5px;
+      left: 80%;
+      animation-duration:11s;
+    }
     @keyframes bubble {
       0% {
         bottom: 0px;
@@ -396,6 +561,21 @@ body{
       }
       50% {
         transform: translateX(100px);
+      }
+      100% {
+        bottom: 2300px;
+      }
+    }
+    @keyframes bubble {
+      0% {
+        bottom: 0px;
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(100px);
+      }
+      75% {
+        transform: translateX(50px);
       }
       100% {
         bottom: 2300px;
@@ -418,12 +598,17 @@ body{
     @media  (max-width:490px){
         h1{
             font-size: 25px;
-            margin-bottom: 100px;
+            /*margin-bottom: 100px;*/
         }
       .news, .notes{
         box-sizing: content-box;
         width: 80%;
         font-size: 16px;
+      }
+      .sub-pictures{
+        margin: 0 auto;
+        width:102%;
+        position:relative;
       }
       #loader{
         width: 100%;
