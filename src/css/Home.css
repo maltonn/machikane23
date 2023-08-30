@@ -62,14 +62,7 @@ body{
 .schedule,.stage,.lab,#pickup,.about{
   box-sizing: border-box;
 }
-.machikani{
-  margin: 0px -22px -71px;
-  display: inline-block;
-  width: 130px;
-}
-.machikani img{
-  width: 100%;
-}
+
 .machikani1{
   /*margin: 0px -22px -71px;*/
   width: 150px;
@@ -151,21 +144,7 @@ loader 雲のアニメション
 loader 特にメインビューの雲の配置、アニメーション
 ======================*/
 /*
-.stay img:nth-child(1){
-  position: absolute;
-  display: block;
-  width:100%;
-  bottom:0;
-  margin: auto;
-}
-.stay img:nth-child(2){
-  position: absolute;
-  display: block;
-  width:100%;
-  text-align: center;
-  bottom:-33vw;
-  margin: auto;
-}
+
 /*
 /*ほんまにいらん方
 いるかわからんかった　nth-child(1)と同じ
@@ -173,41 +152,8 @@ loader 特にメインビューの雲の配置、アニメーション
   width:100%;
   height:auto;
 }
-*/
-/*ほんまにいらん方
-.stay img:nth-child(3){
-  position: absolute;
-  display: block;
-  width:70%;
-  left:-41%;
-  bottom: 53%;
-  margin: auto;
-}
-.stay img:nth-child(4){
-  position: absolute;
-  display: block;
-  width:65%;
-  right: -38%;
-  bottom: 27%;
-  margin: auto;
-}*/
-/*
-.stay img:nth-child(3){
-  position: absolute;
-  display: block;
-  width:70%;
-  left:-37vw;
-  bottom: -12vw;
-  margin: auto;
-}
-.stay img:nth-child(4){
-  position: absolute;
-  display: block;
-  width:65%;
-  right: -37vw;
-  bottom:-15vw;
-  margin: auto;
-}
+
+
 */
 /*======================
 sky2 お知らせ欄(news)、来場者の方へ(notes)内部
@@ -217,7 +163,7 @@ sky2 お知らせ欄(news)、来場者の方へ(notes)内部
 ======================*/
 
 .news,.notes{
-  font-size: 22px;
+  font-size: 1.7rem;
   margin: 20px auto 80px;
   display:block;
   background-color: rgba(255,255,255,0.38);
@@ -248,7 +194,7 @@ schedule,stage,lab
 ======================*/
 
 .schedule,.stage,.lab,.about{
-  font-size: 22px;
+  font-size:1.7rem;
   margin: 10px auto 180px;
   display:block;
   text-align: center;
@@ -280,6 +226,10 @@ schedule,stage,lab
   width:80%;
   max-width: 1200px;
   margin: 0 auto;
+  font-size: 2.2rem;
+}
+.content{
+  padding: 20px 10px 30px;
 }
 /*海の中の小見出しのスタイル*/
 .ocean span{
@@ -287,7 +237,7 @@ schedule,stage,lab
   font-size: 37px;
   color: #fff;
   position: relative;
-  right: 26px;
+  right: 30px;
   /*background-color:rgba(255,255,255,0.20);
   border:solid 1px #fff;
   padding:2px 12px;
@@ -295,53 +245,29 @@ schedule,stage,lab
 }
 .item1{
   display: inline-block;
-  font-size: 93px;
+  font-size: 120;px;
   opacity: 0.30;
   position: relative;
   top:9px;
-  left:14px;
+  left:10px;
   margin: 50px 0px 50px 0px;
 }
 .item2{
   display: inline-block;
-  font-size: 28px;
+  font-size: 42px;
   opacity: 0.30;
   position: relative;
   top:9px;
-  right:26px
+  right:30px
 }
 .item3{
   display: inline-block;
-  font-size: 15px;
+  font-size: 20px;
   opacity: 0.30;
   position: relative;
   top:9px;
-  right:26px;
+  right:30px;
 }
-/*.ocean span::before{
-  content: "●";
-  font-size: 93px;
-  opacity: 0.30;
-  position: relative;
-  top:9px;
-  left:50px;
-}
-.ocean span:first-letter::after{
-  content: "●";
-  font-size: 40px;
-  opacity: 0.30;
-  position: relative;
-  top:9px;
-  left:50px;
-}
-.ocean span::after{
-  content: "●";
-  font-size: 30px;
-  opacity: 0.30;
-  position: relative;
-  top:9px;
-  right:5px;
-}*/
 
 #pickup{
   font-size: 22px;
@@ -349,15 +275,6 @@ schedule,stage,lab
   margin: 0 auto 180px;
 }
 
-/*.search-title{
-  position: relative;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 125%;
-  margin-bottom: 20%;
-}
 /*pickupの文字の色を変化させる*/
 .ocean a{
   color: #fff;
@@ -369,7 +286,7 @@ schedule,stage,lab
 }
 
 #title{
-  font-size: 4rem;
+  font-size: 3.1rem;
 }
 .pickup-box{
   margin-top: 40px;
@@ -388,7 +305,7 @@ schedule,stage,lab
   margin-left: 80px;
 }
 .pickup-title{
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   margin-left: 20px;
   position: relative;
   bottom: 15px;
@@ -571,7 +488,7 @@ schedule,stage,lab
     }
     .news, .notes{
       box-sizing: content-box;
-      width: 80%;
+      width: 90%;
       font-size: 16px;
     }
     .news-date, .news-content{
@@ -592,8 +509,11 @@ schedule,stage,lab
     .ocean{
       display: block;
     }
-    .ocean span, .sky2 span{
-      font-size: 22px;
+    .pre-ocean, .pre-sky{
+      font-size: 1rem;
+    }
+    .machikani1{
+      width:85px;
     }
     /*------------------------
     イラストの位置調整
@@ -644,24 +564,6 @@ schedule,stage,lab
         transform: translateX(92vh);
       }
     }
-
-/*
-    .stay img:nth-child(1) {
-      position: absolute;
-      display: block;
-      width: 148%;
-      left: -20%;
-      bottom: 0;
-      margin: auto;
-  }
-  .stay img:nth-child(2) {
-      position: absolute;
-      display: block;
-      width: 110%;
-      text-align: center;
-      bottom: -37vw;
-      margin: auto;
-  }
   */
   /*pickup*/
   .pickup-box{
@@ -671,7 +573,7 @@ schedule,stage,lab
     bottom: 40px;
   }
   #title{
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
   .pickup-button{
     margin-bottom: 40px;
@@ -710,7 +612,7 @@ schedule,stage,lab
   .news, .notes{
     box-sizing: content-box;
     width: 80%;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
   .news-date, .news-content{
     padding: 10px 25px;
@@ -723,15 +625,28 @@ schedule,stage,lab
     background-size: 100% auto;
     background-position: center;
   }
+  .pre-sky,.pre-ocean{
+    font-size: 1.6rem;
+  }
   .ocean{
     display: block;
   }
-  .ocean span,.sky2 span{
-    font-size:30px;
+  
+  .section-schedule {
+    font-size: 1.8rem;
+    margin: 0px auto 80px;
   }
-  .schedule, .stage, .lab, #pickup, .about {
+  .schedule, .lab, #pickup, .about {
     box-sizing: content-box;
     width: 80%;
+    font-size:1.4rem;
+  }
+  .stage{
+    box-sizing: content-box;
+    font-size:1.4rem;
+  }
+  .machikani1{
+    width:110px;
   }
   .pickup-box{
     display: inline-block;
@@ -739,24 +654,68 @@ schedule,stage,lab
     right: 10px;
   }
   #title{
-    font-size: 3rem;
+    font-size: 2.4rem;
+    position:relative;
+    right:35px;
   }
+  .item1{
+    display: inline-block;
+    font-size: 100px;
+    opacity: 0.30;
+    position: relative;
+    top:9px;
+    left:0px;
+    margin: 50px 0px 50px 0px;
+  }
+  .item2{
+    display: inline-block;
+    font-size: 34px;
+    opacity: 0.30;
+    position: relative;
+    top:9px;
+    right:40px
+  }
+  .item3{
+    display: inline-block;
+    font-size: 21px;
+    opacity: 0.30;
+    position: relative;
+    top:9px;
+    right:40px;
+  }
+ 
   .pickup-button{
     margin-bottom: 60px;
     margin-left: 65px;
   }
   .pickup-title{
-    font-size: 2rem;
     margin-left: 10px;
     bottom: 15px;
+    font-size: 1.7rem;
   }
   .pickup-icon img{
     width: 60px;
   }
 }
-@media(max-width:360px){
-  #stage-title{
-    font-size: 20px;
+@media(max-width:550px){
+  #stage-title span{
+    font-size: 2rem;
+  }
+  #stage-title .item1{
+    font-size: 90px;
+    margin-right:-12px ;
+    margin-left: 4px;
+  }
+  #stage-title .item2{
+    font-size: 27px;
+  }
+  #stage-title .item3{
+    font-size: 12px;
+  } 
+}
+@media(max-width:400px){
+  #stage-title span{
+    font-size: 1.4rem;
   }
   #stage-title .item1{
     font-size: 90px;
