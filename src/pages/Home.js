@@ -123,13 +123,3 @@ export default function Home() {
         </div>
     )
 }
-const loading = document.getElementById('loader');
-window.addEventListener('load', () => {
-  var move = document.getElementById('move');
-var loader = document.getElementById('loader');
-console.log(move)
-      setTimeout(function() {
-move.classList.add('loaded');
-loader.classList.add('loaded');
-}, 1000);
-});
