@@ -1,13 +1,10 @@
 import { Helmet } from "react-helmet";
-<<<<<<< HEAD
 import circlecloud1 from "../../imgs/circlecloud1.png"
 import circlecloud2 from "../../imgs/circlecloud2.png"
 import circlecloud3 from "../../imgs/circlecloud3.png"
 import cloud1 from "../../imgs/mainview/cloud_ipad.png"
 import cloud2 from "../../imgs/cloud/right_cloud.png"
-=======
 import "../../css/Common.css"
->>>>>>> 7bc1efd27447c3cce98726b514f7d5553019d7ba
 export default function About() {
     return(
         <div className="main">
