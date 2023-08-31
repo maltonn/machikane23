@@ -55,6 +55,63 @@ header > h1{
 	border-width : 1px;
     animation: FadeIn 0.8s;
 }
+.toggle-button {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 5em;
+    top: 0.75em;
+    width: 70px;
+    height: 25px;
+    border-radius: 50px;
+    box-sizing: content-box;
+    background-color: #ff8d8d33;
+    cursor: pointer;
+    transition: background-color .4s;
+}
+
+.toggle-button:has(:checked) {
+    background-color: #75bbff33;
+}
+
+.toggle-button::before {
+    position: absolute;
+    left: -7px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #ff8d8d;
+    content: '';
+    transition: left .4s;
+}
+
+.toggle-button:has(:checked)::before {
+    left: 43px;
+    background-color: #75bbff;
+}
+
+.toggle-button::after {
+    position: absolute;
+    left: 15px;
+    transform: translateX(-50%);
+    color: #fff;
+    font-weight: 600;
+    font-size: .9em;
+    content: 'Jap';
+    transition: left .4s;
+}
+
+.toggle-button:has(:checked)::after {
+    left: 66px;
+    content: 'Eng';
+}
+
+.toggle-button input {
+    display: none;
+}
+.toggle .menu-parent {
+    width: 100px;
+}
 @keyframes FadeIn {
     0% {
       opacity: 0;
@@ -205,6 +262,9 @@ header > h1{
           transform: translateX(0);
         }
     }
+    .toggle-button {
+        display: none;
+    }
 }
 
 /*iPadとか*/
@@ -310,6 +370,9 @@ header > h1{
         background-color: transparent;
         border: none;
         animation: SlideIn 0.8s;
+    }
+    .toggle-button {
+        display: none;
     }
     @keyframes SlideIn {
         0% {
