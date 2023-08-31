@@ -28,6 +28,7 @@ export default function Home() {
       $(':root').style.setProperty('--base-height', `${surfaceHeight}px`);
     });
   },[])
+
     return(
   <div className="top-main">
         <Helmet>
@@ -62,7 +63,7 @@ export default function Home() {
         </div>
         <div className="notes">
           <span id="title">来場者の方へ</span>
-          <div className="pre-sky">まちかね祭に車でご来場いただくことはできません。<br/>ご来場の際は公共交通機関をご利用ください。</div>
+          <div className="content">まちかね祭に車でご来場いただくことはできません。<br/>ご来場の際は公共交通機関をご利用ください。</div>
         </div>
       </div>
     </div>
@@ -86,7 +87,7 @@ export default function Home() {
                         <td className="section-time">10:00〜18:00</td>
                     </tr>
                     <tr>
-                        <td className="section">ステージ</td>
+                        <td className="section"><nobr>ステージ</nobr></td>
                         <td className="section-time">10:00〜19:00</td>
                     </tr>
                     <tr>
@@ -98,7 +99,7 @@ export default function Home() {
           </div>
 
           <div className="stage">
-            <div className="titles"><nobr><p className="item1">●</p><span id="title">現在のステージ企画</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
+            <div className="titles" id="stage-title"><nobr><p className="item1">●</p><span id="title">現在のステージ企画</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
             <div className="pre-ocean">現在準備中</div>
             <div className="machikani1"><img src={machikani} alt="まちかに"></img></div>
           </div>
@@ -112,27 +113,27 @@ export default function Home() {
             <div className="titles"><nobr><p className="item1">●</p><span id="title">PICKUP</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
             <div className="pickup-box">
                 <a href="./project-search"><div className="pickup-button">
-                  <div className="pickup-icon"><img src={search}></img></div>
+                  <div className="pickup-icon"><img src={search} alt="search"></img></div>
                   <div className="pickup-title">企画検索</div>
                 </div></a>
                 <a href="./goods"><div className="pickup-button">
-                  <div className="pickup-icon"><img src={goods}></img></div>  
+                  <div className="pickup-icon"><img src={goods} alt="goods"></img></div>  
                   <div className="pickup-title">グッズ</div>
                 </div></a>
                 <a href="./official-project"><div className="pickup-button">
-                  <div className="pickup-icon"><img src={recommend}></img></div>  
+                  <div className="pickup-icon"><img src={recommend} alt="recommend"></img></div>  
                   <div className="pickup-title">委員会企画</div>
                 </div></a><br/>
                 <a href="./access"><div className="pickup-button">
-                  <div className="pickup-icon"><img src={access}></img></div>
+                  <div className="pickup-icon"><img src={access} alt="access"></img></div>
                   <div className="pickup-title">アクセス</div>
                 </div></a>
                 <a href="./map"><div className="pickup-button">
-                  <div className="pickup-icon"><img src={map}></img></div>  
+                  <div className="pickup-icon"><img src={map} alt="map"></img></div>  
                   <div className="pickup-title">マップ</div>
                 </div></a>
                 <a href="./timetable"><div className="pickup-button">
-                  <div className="pickup-icon"><img src={timetable}></img></div> 
+                  <div className="pickup-icon"><img src={timetable} alt="timetable"></img></div> 
                   <div className="pickup-title">ステージタイムテーブル</div>
                 </div></a>
             </div>
@@ -145,12 +146,17 @@ export default function Home() {
 
           <div className="bottom">
             <div className="bubble"></div>
+            <div className="bubble1"></div>
             <div className="bubble"></div>
+            <div className="bubble1"></div>
             <div className="bubble"></div>
+            <div className="bubble1"></div>
             <div className="bubble"></div>
+            <div className="bubble1"></div>
             <div className="bubble"></div>
+            <div className="bubble1"></div>
             <div className="bubble"></div>
-            <div className="bubble"></div>
+            <div className="bubble1"></div>
           </div>
 
       </div>
