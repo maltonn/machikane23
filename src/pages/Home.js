@@ -10,6 +10,7 @@ import access from "../imgs/pickup_icon/icon_access.png"
 import map from "../imgs/pickup_icon/icon_map.png"
 import timetable from "../imgs/pickup_icon/icon_stage.png"
 import { Helmet } from "react-helmet";
+// import logo from "../imgs/logo.png"
 import { useEffect } from "react"
 
 export default function Home() {
@@ -28,12 +29,20 @@ export default function Home() {
       $(':root').style.setProperty('--base-height', `${surfaceHeight}px`);
     });
   },[])
+ /* var topOfTop=document.getElementById('loader').getBoundingClientRect().top
+
+if(topOfTop===0){
+  document.header. style.backgroundColor='transparent';
+}else{
+  document.header. style.backgroundColor='#fff';
+}*/
     return(
   <div className="top-main">
         <Helmet>
           <title>トップページ|まちかね祭2023</title>
         </Helmet>
         <div id="loader">
+          {/* <div className="logo"><img src={logo} alt="ロゴ"></img></div> */}
           <div className="machikame1"> 
             <img src={machikame} alt="まちかめ1"></img>
           </div>
