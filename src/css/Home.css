@@ -21,10 +21,10 @@ body{
 #loader{
   width: 100%;
   height: 120vh;
-  background-image:url("../imgs/mainview/cloud_pc.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%);
+  background-image:url("../imgs/logo.png"),url("../imgs/mainview/cloud_pc.png"),linear-gradient(#fff 10%, #00B2E9 50%,#b5e5f4 90%);
   background-repeat: no-repeat, no-repeat;
-  background-size: 100% 120%;
-  background-position: center;
+  background-size:30%,100% auto,100% auto;
+  background-position: center 42%,center;
 }
 
 .sky2{
@@ -477,7 +477,7 @@ schedule,stage,lab
 /*======================
   スマホ用
 ======================*/
-  @media  (max-width:490px){
+  @media  (max-width: 490px){
     /*title修正*/
     .item1{
       margin: 20px 0px 20px 0px
@@ -499,12 +499,11 @@ schedule,stage,lab
     }
     #loader{
       width: 100%;
-      height: 100vh;
-      background-image:url("../imgs/mainview/cloud_phone.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%)
+      height: 120vh;
+      background-image:url("../imgs/logo.png"),url("../imgs/mainview/cloud_phone.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%)
       ;
       background-repeat: no-repeat, no-repeat;
-      background-size: 100% auto;
-      background-position: center;
+      background-size:60% auto,100% auto,100% auto;
     }
     .ocean{
       display: block;
@@ -519,9 +518,9 @@ schedule,stage,lab
     イラストの位置調整
     ------------------------*/
     .machikame1{
-      width:20%;
-      left:9%;
-      bottom:-50vh;
+      width: 20%;
+      left: 71%;
+      bottom: -20vh;
     }
     #move img:nth-child(1){
       width:100%;
@@ -629,10 +628,21 @@ schedule,stage,lab
 /*======================
   タブレット用
 ======================*/
-@media (min-width:490px) and (max-width: 990px){
+@media (min-width: 490px) and (max-width: 990px){
+  #loader{
+    width: 100%;
+    height: 120vh;
+    background-image:url("../imgs/logo.png"),url("../imgs/mainview/cloud_ipad.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 40% auto,100% auto,100%;
+    background-position:center,center;
+  }
   .titles{
     position: relative;
     left: 20px;
+  }
+  .machikame1{
+    width:14vw;
   }
   .news, .notes{
     box-sizing: content-box;
@@ -642,14 +652,14 @@ schedule,stage,lab
   .news-date, .news-content{
     padding: 10px 25px;
   }
-  #loader{
+  /* #loader{
     width: 100%;
-    height: 100vh;
-    background-image:url("../imgs/mainview/cloud_ipad.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%);
+    height: 120vh;
+    background-image:url("../imgs/logo.png"),url("../imgs/mainview/cloud_ipad.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%);
     background-repeat: no-repeat, no-repeat;
-    background-size: 100% auto;
-    background-position: center;
-  }
+    background-size: 40% auto,100% auto,100%;
+    background-position:center,center;
+  } */
   .pre-sky,.pre-ocean{
     font-size: 1.6rem;
   }
@@ -722,7 +732,25 @@ schedule,stage,lab
     width: 60px;
   }
 }
-@media(max-width:550px){
+
+@media (min-width: 600px) and (max-width: 990px){
+  #loader{
+    width: 100%;
+    height: 180vh;
+    background-image:url("../imgs/logo.png"),url("../imgs/mainview/cloud_ipad.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 40% auto,100% auto,100%;
+    background-position:center,center;
+    margin-top:-35vh;
+  }
+  .machikame1{
+    width: 14vw;
+    position: relative;
+    bottom: -50vh;
+    left:12%;
+  }
+}
+@media screen and (max-width: 550px){
   #stage-title span{
     font-size: 2rem;
   }
