@@ -110,6 +110,8 @@ a:visited{
     .hamburger svg{
         width: 45px;
         /*background-color: var(--blue2);*/
+        background-color: rgba(255, 255, 255, 0.92); 
+        border-radius: 5px;
     }
     .hamburger svg.ham-opend .first{
         transform: translate(15px, 1px) rotate(45deg);
@@ -252,6 +254,8 @@ a:visited{
     .hamburger svg{
         width: 45px;
         /*background-color: var(--blue2);*/
+        background-color: rgba(255, 255, 255, 0.92); 
+        border-radius: 5px;
     }
     .menu{
         position: fixed;
