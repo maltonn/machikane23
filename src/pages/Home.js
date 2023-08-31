@@ -10,7 +10,6 @@ import access from "../imgs/pickup_icon/icon_access.png"
 import map from "../imgs/pickup_icon/icon_map.png"
 import timetable from "../imgs/pickup_icon/icon_stage.png"
 import { Helmet } from "react-helmet";
-// import logo from "../imgs/logo.png"
 import { useEffect } from "react"
 
 export default function Home() {
@@ -36,7 +35,6 @@ export default function Home() {
           <title>トップページ|まちかね祭2023</title>
         </Helmet>
         <div id="loader">
-          {/* <div className="logo"><img src={logo} alt="ロゴ"></img></div> */}
           <div className="machikame1"> 
             <img src={machikame} alt="まちかめ1"></img>
           </div>
@@ -115,27 +113,27 @@ export default function Home() {
             <div className="titles"><nobr><p className="item1">●</p><span id="title">PICKUP</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
             <div className="pickup-box">
                 <a href="./project-search"><div className="pickup-button">
-                  <div className="pickup-icon"><img src={search}></img></div>
+                  <div className="pickup-icon"><img src={search} alt="search"></img></div>
                   <div className="pickup-title">企画検索</div>
                 </div></a>
                 <a href="./goods"><div className="pickup-button">
-                  <div className="pickup-icon"><img src={goods}></img></div>  
+                  <div className="pickup-icon"><img src={goods} alt="goods"></img></div>  
                   <div className="pickup-title">グッズ</div>
                 </div></a>
                 <a href="./official-project"><div className="pickup-button">
-                  <div className="pickup-icon"><img src={recommend}></img></div>  
+                  <div className="pickup-icon"><img src={recommend} alt="recommend"></img></div>  
                   <div className="pickup-title">委員会企画</div>
                 </div></a><br/>
                 <a href="./access"><div className="pickup-button">
-                  <div className="pickup-icon"><img src={access}></img></div>
+                  <div className="pickup-icon"><img src={access} alt="access"></img></div>
                   <div className="pickup-title">アクセス</div>
                 </div></a>
                 <a href="./map"><div className="pickup-button">
-                  <div className="pickup-icon"><img src={map}></img></div>  
+                  <div className="pickup-icon"><img src={map} alt="map"></img></div>  
                   <div className="pickup-title">マップ</div>
                 </div></a>
                 <a href="./timetable"><div className="pickup-button">
-                  <div className="pickup-icon"><img src={timetable}></img></div> 
+                  <div className="pickup-icon"><img src={timetable} alt="timetable"></img></div> 
                   <div className="pickup-title">ステージタイムテーブル</div>
                 </div></a>
             </div>
