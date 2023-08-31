@@ -148,12 +148,17 @@ export default function Home() {
 
           <div className="bottom">
             <div className="bubble"></div>
+            <div className="bubble1"></div>
             <div className="bubble"></div>
+            <div className="bubble1"></div>
             <div className="bubble"></div>
+            <div className="bubble1"></div>
             <div className="bubble"></div>
+            <div className="bubble1"></div>
             <div className="bubble"></div>
+            <div className="bubble1"></div>
             <div className="bubble"></div>
-            <div className="bubble"></div>
+            <div className="bubble1"></div>
           </div>
 
       </div>
