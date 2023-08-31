@@ -34,30 +34,22 @@ body{
 }
 
 .mainpage1{
-  /*display: flex;
-  flex-wrap: wrap;*/
   width: 92%;
-  padding-top:280px;
+  padding-top:60px;
   padding-bottom: 80px;
-  /*position: relative;
-  top:160px;*/
   margin:0 auto;
 }
 .ocean{
     width:100%;
-    background-image: url("../imgs/inthesea/surface1.png"), linear-gradient( #fff 0%, #01579E 15%, #2E3192 100%);
+    background-image: url("../imgs/inthesea/surface1.png"), linear-gradient( #fff 0%, #01579E 6%, #2E3192 100%);
     background-repeat: no-repeat, no-repeat;
     background-size: contain;
     color:#fff;
 }
 .mainpage2{
-  /*display: flex;
-  flex-wrap: wrap;*/
   width: 92%;
-  /*position: relative;
-  top:160px;*/
   margin:0 auto;
-  padding-top: 280px;
+  padding-top: 100px;
   }
 .schedule,.stage,.lab,#pickup,.about{
   box-sizing: border-box;
@@ -500,8 +492,7 @@ schedule,stage,lab
     #loader{
       width: 100%;
       height: 120vh;
-      background-image:url("../imgs/logo.png"),url("../imgs/mainview/cloud_phone.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%)
-      ;
+      background-image:url("../imgs/logo.png"),url("../imgs/mainview/cloud_phone.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%);
       background-repeat: no-repeat, no-repeat;
       background-size:60% auto,100% auto,100% auto;
     }
@@ -734,10 +725,28 @@ schedule,stage,lab
 }
 
 @media (min-width: 600px) and (max-width: 990px){
+  #move img:nth-child(1){
+    position: relative;
+    display: block;
+    width: 150%;
+    /*height: 100vh;*/
+    bottom:24vw;
+    left:-25vw;
+    margin: auto;
+  }
+  #move img:nth-child(2){
+    position: relative;
+    display: block;
+    width: 150%;
+    /*height: 100vh;*/
+    bottom:75vw;
+    right:18vw;
+    margin: auto;
+  }
   #loader{
     width: 100%;
     height: 180vh;
-    background-image:url("../imgs/logo.png"),url("../imgs/mainview/cloud_ipad.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%);
+    background-image:url("../imgs/logo.png"),url("../imgs/mainview/cloud_ipad.png"),linear-gradient(#fff 26%, #00B2E9 60%,#b5e5f4 100%);
     background-repeat: no-repeat, no-repeat;
     background-size: 40% auto,100% auto,100%;
     background-position:center,center;
@@ -766,7 +775,7 @@ schedule,stage,lab
     font-size: 12px;
   } 
 }
-@media(max-width:400px){
+@media screen and (max-width:400px){
   #stage-title span{
     font-size: 1.4rem;
   }
