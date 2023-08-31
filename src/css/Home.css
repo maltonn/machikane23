@@ -696,14 +696,6 @@ schedule,stage,lab
   .news-date, .news-content{
     padding: 10px 25px;
   }
-  /* #loader{
-    width: 100%;
-    height: 120vh;
-    background-image:url("../imgs/logo.png"),url("../imgs/mainview/cloud_ipad.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%);
-    background-repeat: no-repeat, no-repeat;
-    background-size: 40% auto,100% auto,100%;
-    background-position:center,center;
-  } */
   .pre-sky,.pre-ocean{
     font-size: 1.6rem;
   }
@@ -735,7 +727,6 @@ schedule,stage,lab
   #title{
     font-size: 2.4rem;
     position:relative;
-    right:35px;
   }
   .item1{
     display: inline-block;
