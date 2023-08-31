@@ -60,8 +60,8 @@ body{
   width: 150px;
   rotate: -6deg;
   position: relative;
-  bottom:2px;
-  right: 0px;
+  bottom:-95px;
+  right: -10%;
 }
 .machikani1 img{
   width: 100%;
@@ -556,7 +556,12 @@ schedule,stage,lab
       font-size: 1rem;
     }
     .machikani1{
-      width:85px;
+      /*margin: 0px -22px -71px;*/
+      width: 85px;
+      rotate: -6deg;
+      position: relative;
+      bottom:-60px;
+      right: 0px;
     }
     /*------------------------
     イラストの位置調整
@@ -716,7 +721,12 @@ schedule,stage,lab
     font-size:1.4rem;
   }
   .machikani1{
-    width:110px;
+    /*margin: 0px -22px -71px;*/
+    width: 110px;
+    rotate: -6deg;
+    position: relative;
+    bottom:-95px;
+    right: -10%;
   }
   .pickup-box{
     display: inline-block;
