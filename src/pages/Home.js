@@ -29,13 +29,7 @@ export default function Home() {
       $(':root').style.setProperty('--base-height', `${surfaceHeight}px`);
     });
   },[])
- /* var topOfTop=document.getElementById('loader').getBoundingClientRect().top
 
-if(topOfTop===0){
-  document.header. style.backgroundColor='transparent';
-}else{
-  document.header. style.backgroundColor='#fff';
-}*/
     return(
   <div className="top-main">
         <Helmet>
