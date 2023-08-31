@@ -34,12 +34,12 @@ export default function Header() {
                 <div className="header ja-menu">
                 <a href="./" className="top-link"><img className="machikane_logo-pc" src={machikane_logo} alt="まちかね祭ロゴ"></img></a>
                 <div className="toggle">
-                        <li className={`${isHamburgerOpen?"":"menu-parent"}`}>
-                            <label className="toggle-button">
-                                <input type="checkbox"/>
-                            </label>
-                        </li>
-                    </div>
+                    <li className={`${isHamburgerOpen?"":"menu-parent"}`}>
+                        <label className="toggle-button">
+                            <input type="checkbox"/>
+                        </label>
+                    </li>
+                </div>
                     <ul className="menu-grandparent">
                         <li className="menu-parent"><span className={`menu-title ${isMenuOpenA?"is-opend":"is-closed"}`} onClick={menuOpenA}>まちかね祭について</span>
                             <ul className={`menu-child ${isMenuOpenA?"is-opend":"is-closed"}`}>
