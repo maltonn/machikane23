@@ -4,8 +4,7 @@ header{
     top: 0;
     width: 100vw;
     margin: 0;
-    /*background-color: var(--blue2);*/
-    background-color: rgba(255, 255, 255, 0.92); 
+    background-color: rgba(255, 255, 255, 1); 
     z-index: 600;
 }
 header > h1{
@@ -29,9 +28,11 @@ header > h1{
 .menu{
     position: fixed;
     width: 100%;
-    /*height: 7.5%;
-    /*background-color:  var(--blue2);*/
-    background-color: rgba(255, 255, 255, 1); 
+    height: 9.5%; /*メニューバーの高さ調節はこれ*/
+    background: linear-gradient(
+        rgba(255, 255, 255, 1) 85%,
+        rgba(255, 255, 255, 0) 100%
+        ); 
 }
 .menu li, .menu ul{
     list-style: none;
@@ -63,6 +64,63 @@ header > h1{
 .menu-child a:visited{
     color:black;
 }
+.toggle-button {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 5em;
+    top: 0.75em;
+    width: 70px;
+    height: 25px;
+    border-radius: 50px;
+    box-sizing: content-box;
+    background-color: #ff8d8d33;
+    cursor: pointer;
+    transition: background-color .4s;
+}
+
+.toggle-button:has(:checked) {
+    background-color: #75bbff33;
+}
+
+.toggle-button::before {
+    position: absolute;
+    left: -7px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #ff8d8d;
+    content: '';
+    transition: left .4s;
+}
+
+.toggle-button:has(:checked)::before {
+    left: 43px;
+    background-color: #75bbff;
+}
+
+.toggle-button::after {
+    position: absolute;
+    left: 15px;
+    transform: translateX(-50%);
+    color: #fff;
+    font-weight: 600;
+    font-size: .9em;
+    content: 'Jap';
+    transition: left .4s;
+}
+
+.toggle-button:has(:checked)::after {
+    left: 66px;
+    content: 'Eng';
+}
+
+.toggle-button input {
+    display: none;
+}
+.toggle .menu-parent {
+    width: 100px;
+}
 @keyframes FadeIn {
     0% {
       opacity: 0;
@@ -78,6 +136,9 @@ header > h1{
 
 /*以下スマホ用*/
 @media screen and (max-width:490px){
+    .toggle{
+        display: none;
+    }
     .machikane_logo-sp.menu-closed{
         opacity: 0;
     }
@@ -109,7 +170,6 @@ header > h1{
     }
     .hamburger svg{
         width: 45px;
-        /*background-color: var(--blue2);*/
         background-color: rgba(255, 255, 255, 0.92); 
         border-radius: 5px;
     }
@@ -215,10 +275,16 @@ header > h1{
           transform: translateX(0);
         }
     }
+    .toggle-button {
+        display: none;
+    }
 }
 
 /*iPadとか*/
 @media screen and (min-width:490px) and (max-width: 990px){
+    .toggle{
+        display: none;
+    }
     .main{
         margin-top: 80px;
     }
@@ -253,7 +319,6 @@ header > h1{
     }
     .hamburger svg{
         width: 45px;
-        /*background-color: var(--blue2);*/
         background-color: rgba(255, 255, 255, 0.92); 
         border-radius: 5px;
     }
@@ -261,7 +326,6 @@ header > h1{
         position: fixed;
         width: 100%;
         height: 40%;
-        /*background-color:  var(--blue2);*/
         background-color: rgba(255, 255, 255, 0.92); 
         transform-origin: top right;
         transition-duration: 500ms;
@@ -323,6 +387,9 @@ header > h1{
         background-color: transparent;
         border: none;
         animation: SlideIn 0.8s;
+    }
+    .toggle-button {
+        display: none;
     }
     @keyframes SlideIn {
         0% {
