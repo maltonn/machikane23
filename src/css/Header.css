@@ -28,7 +28,7 @@ header > h1{
 .menu{
     position: fixed;
     width: 100%;
-    height: 7.5%;
+    height: 9.5%; /*メニューバーの高さ調節はこれ*/
     background: linear-gradient(
         rgba(255, 255, 255, 1) 85%,
         rgba(255, 255, 255, 0) 100%
@@ -136,6 +136,9 @@ a:visited{
 
 /*以下スマホ用*/
 @media screen and (max-width:490px){
+    .toggle{
+        display: none;
+    }
     .machikane_logo-sp.menu-closed{
         opacity: 0;
     }
@@ -279,6 +282,9 @@ a:visited{
 
 /*iPadとか*/
 @media screen and (min-width:490px) and (max-width: 990px){
+    .toggle{
+        display: none;
+    }
     .main{
         margin-top: 80px;
     }
