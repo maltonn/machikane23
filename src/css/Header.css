@@ -53,7 +53,7 @@ header > h1{
 
 .menu-parent:hover .menu-child{
     display: block;
-    background : rgba(179, 229, 237, 0.92);
+    background : rgba(179, 229, 237, 1);
 	border-color : #72c3f8;
     animation: FadeIn 0.8s;
     border-radius: 20px;
