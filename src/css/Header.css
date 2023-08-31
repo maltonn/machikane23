@@ -57,10 +57,10 @@ header > h1{
     animation: FadeIn 0.8s;
     border-radius: 20px;
 }
-a {
+.menu-child a{
     color:black;
 }
-a:visited{
+.menu-child a:visited{
     color:black;
 }
 @keyframes FadeIn {
