@@ -9,6 +9,7 @@ body{
   width: 100%;
   overflow: hidden;
   margin-top: 0px;
+  z-index: 1000;
 }
 
 :root{
@@ -21,10 +22,10 @@ body{
 #loader{
   width: 100%;
   height: 120vh;
-  background-image:url("../imgs/mainview/cloud_pc.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%);
+  background-image:url("../imgs/logo.png"),url("../imgs/mainview/cloud_pc.png"),linear-gradient(#fff 10%, #00B2E9 50%,#b5e5f4 90%);
   background-repeat: no-repeat, no-repeat;
-  background-size: 100% 120%;
-  background-position: center;
+  background-size:30%,100% auto,100% auto;
+  background-position: center 42%,center;
 }
 
 .sky2{
@@ -34,68 +35,51 @@ body{
 }
 
 .mainpage1{
-  /*display: flex;
-  flex-wrap: wrap;*/
   width: 92%;
-  padding-top:280px;
+  padding-top:60px;
   padding-bottom: 80px;
-  /*position: relative;
-  top:160px;*/
   margin:0 auto;
 }
 .ocean{
     width:100%;
-    background-image: url("../imgs/inthesea/surface1.png"), linear-gradient( #fff 0%, #01579E 15%, #2E3192 100%);
+    background-image: url("../imgs/inthesea/surface1.png"), linear-gradient( #fff 0%, #01579E 6%, #2E3192 100%);
     background-repeat: no-repeat, no-repeat;
     background-size: contain;
     color:#fff;
 }
 .mainpage2{
-  /*display: flex;
-  flex-wrap: wrap;*/
   width: 92%;
-  /*position: relative;
-  top:160px;*/
   margin:0 auto;
-  padding-top: 280px;
+  padding-top: 100px;
   }
 .schedule,.stage,.lab,#pickup,.about{
   box-sizing: border-box;
 }
-.machikani{
-  margin: 0px -22px -71px;
-  display: inline-block;
-  width: 130px;
-}
-.machikani img{
-  width: 100%;
-}
+
 .machikani1{
-  /*margin: 0px -22px -71px;*/
   width: 150px;
   rotate: -6deg;
   position: relative;
-  bottom:2px;
-  right: 0px;
+  bottom:-95px;
+  right: -10%;
 }
 .machikani1 img{
   width: 100%;
 }
-/*.ocean2{
-  width:100%;
-  height:500px;
-  background: #2E3192 100%;
-}*/
-
 
 /*pickup-bubble*/
-
 .bottom{
   bottom:0px;
   width:100%;
   height:300px;
 }
 
+.theme-title{
+  font-size: 8rem;
+}
+.theme-title rt{
+  font-size: 2rem;
+}
 
 /*======================
 一個小さい枠組の設定
@@ -115,19 +99,17 @@ loader 雲のアニメション
 #move img:nth-child(1){
   position: relative;
   display: block;
-  width: 150%;
-  /*height: 100vh;*/
-  bottom:60vw;
-  left:-25vw;
+  width: 160%;
+  bottom:40vw;
+  left:-24vw;
   margin: auto;
 }
 #move img:nth-child(2){
   position: relative;
   display: block;
-  width: 150%;
-  /*height: 100vh;*/
-  bottom:120vw;
-  right:18vw;
+  width: 160%;
+  bottom:166vw;
+  right:22vw;
   margin: auto;
 }
 
@@ -147,77 +129,15 @@ loader 雲のアニメション
     transform: translateX(170vw);
   }
 }
-/*======================
-loader 特にメインビューの雲の配置、アニメーション
-======================*/
-/*
-.stay img:nth-child(1){
-  position: absolute;
-  display: block;
-  width:100%;
-  bottom:0;
-  margin: auto;
-}
-.stay img:nth-child(2){
-  position: absolute;
-  display: block;
-  width:100%;
-  text-align: center;
-  bottom:-33vw;
-  margin: auto;
-}
-/*
-/*ほんまにいらん方
-いるかわからんかった　nth-child(1)と同じ
-.main_cloud img{
-  width:100%;
-  height:auto;
-}
-*/
-/*ほんまにいらん方
-.stay img:nth-child(3){
-  position: absolute;
-  display: block;
-  width:70%;
-  left:-41%;
-  bottom: 53%;
-  margin: auto;
-}
-.stay img:nth-child(4){
-  position: absolute;
-  display: block;
-  width:65%;
-  right: -38%;
-  bottom: 27%;
-  margin: auto;
-}*/
-/*
-.stay img:nth-child(3){
-  position: absolute;
-  display: block;
-  width:70%;
-  left:-37vw;
-  bottom: -12vw;
-  margin: auto;
-}
-.stay img:nth-child(4){
-  position: absolute;
-  display: block;
-  width:65%;
-  right: -37vw;
-  bottom:-15vw;
-  margin: auto;
-}
-*/
+
 /*======================
 sky2 お知らせ欄(news)、来場者の方へ(notes)内部
-竹内くん的に背景が透明が良いそうだったので、半透明にしてます
+背景が透明が良いそうだったので、半透明
 位置は要調節
-文章どうしたらいいかわからんからとりあえず準備中にしてます
 ======================*/
 
 .news,.notes{
-  font-size: 22px;
+  font-size: 1.7rem;
   margin: 20px auto 80px;
   display:block;
   background-color: rgba(255,255,255,0.38);
@@ -248,12 +168,10 @@ schedule,stage,lab
 ======================*/
 
 .schedule,.stage,.lab,.about{
-  font-size: 22px;
+  font-size:1.7rem;
   margin: 10px auto 180px;
   display:block;
   text-align: center;
-  /*border: solid 1px #fff;
-  border-radius: 50px;*/
 }
 .section-schedule{
   font-size: 2rem;
@@ -280,6 +198,10 @@ schedule,stage,lab
   width:80%;
   max-width: 1200px;
   margin: 0 auto;
+  font-size: 2.2rem;
+}
+.content{
+  padding: 20px 10px 30px;
 }
 /*海の中の小見出しのスタイル*/
 .ocean span{
@@ -287,61 +209,33 @@ schedule,stage,lab
   font-size: 37px;
   color: #fff;
   position: relative;
-  right: 26px;
-  /*background-color:rgba(255,255,255,0.20);
-  border:solid 1px #fff;
-  padding:2px 12px;
-  border-radius: 14px;*/
+  right: 30px;
 }
 .item1{
   display: inline-block;
-  font-size: 93px;
+  font-size: 120px;
   opacity: 0.30;
   position: relative;
   top:9px;
-  left:14px;
+  left:10px;
   margin: 50px 0px 50px 0px;
 }
 .item2{
   display: inline-block;
-  font-size: 28px;
+  font-size: 42px;
   opacity: 0.30;
   position: relative;
   top:9px;
-  right:26px
+  right:30px
 }
 .item3{
   display: inline-block;
-  font-size: 15px;
+  font-size: 20px;
   opacity: 0.30;
   position: relative;
   top:9px;
-  right:26px;
+  right:30px;
 }
-/*.ocean span::before{
-  content: "●";
-  font-size: 93px;
-  opacity: 0.30;
-  position: relative;
-  top:9px;
-  left:50px;
-}
-.ocean span:first-letter::after{
-  content: "●";
-  font-size: 40px;
-  opacity: 0.30;
-  position: relative;
-  top:9px;
-  left:50px;
-}
-.ocean span::after{
-  content: "●";
-  font-size: 30px;
-  opacity: 0.30;
-  position: relative;
-  top:9px;
-  right:5px;
-}*/
 
 #pickup{
   font-size: 22px;
@@ -349,34 +243,25 @@ schedule,stage,lab
   margin: 0 auto 180px;
 }
 
-/*.search-title{
-  position: relative;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 125%;
-  margin-bottom: 20%;
-}
 /*pickupの文字の色を変化させる*/
 .ocean a{
   color: #fff;
 }
 
-.titles{
+.pickup-titles{
   position: relative;
   left: 10px;
 }
 
 #title{
-  font-size: 4rem;
+  font-size: 3.1rem;
 }
 .pickup-box{
   margin-top: 40px;
   display: inline-block;
-  width: calc((100% - 100px) / 1.5);
+  width: calc((100% - 60px) / 1.5);
   position: relative;
-  right: 40px;
+  right: 15px;
 }
 .pickup-button{
   color:#fff;
@@ -385,10 +270,12 @@ schedule,stage,lab
   align-items: baseline;
   justify-content: center;
   margin-bottom: 40px;
-  margin-left: 80px;
+  margin-left: 40px;
+  border-radius: 20px;
+  padding: 15px 20px 0;
 }
 .pickup-title{
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   margin-left: 20px;
   position: relative;
   bottom: 15px;
@@ -401,57 +288,6 @@ schedule,stage,lab
 .pickup-icon img{
   width: 60px;
 }
-/*.pickup-icon:hover{
-  color:#233192;
-  background-color: rgba(255,255,255,0.38);
-  border-bottom: solid 1px #fff;
-}*/
-/* .pickup-subbox1{
-  display: flex;
-  justify-content: space-around;
-}
-.pickup-subbox2{
-  display: flex;
-  flex-wrap: wrap;
-} */
-/*.pickup-subbox2:nth-child(1){
-  flex-basis: 100%;
-}なんで適応されないねん*/
-/* #recommend{
-  flex-basis: 100%;
-  position: relative;
-}
-
-.pickup-subbox2 .pickup-button{
-  flex-basis: 50%;
-} */
-/*.search .bubble-before{
-  position: relative;
-  width: 60%;
-  display: block;
-}
-.search .bubble-after{
-  position: relative;
-  width: 60%;
-  display: none;
-}
-.search:hover .bubble-before{
-  position: relative;
-  width: 60%;
-  display: none;
-}
-.search:hover .bubble-after{
-  position: relative;
-  width: 60%;
-  display: block;
-}
-.search:nth-child(3), .search:nth-child(4){
-  margin-left: inherit;
-}
-.search:nth-child(4), .search:nth-child(5), .search:nth-child(6){
-  margin-left: 20px;
-}
-*/
 
 /*======================
 かめのアニメション
@@ -511,27 +347,10 @@ schedule,stage,lab
     transform: translate(0,0);
   }
 }
-/*
-これ何に使ってたっけ
-@keyframes kame{
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-*/
 
 /*======================
 海底の生成される泡の表示のためのもの
 ======================*/
-/* .ocean img{
-  display: block;
-  width: 100%;
-} */
-
 .bubble {
     position: absolute;
     bottom: 0;
@@ -539,76 +358,131 @@ schedule,stage,lab
     opacity: 60%;
     border: 1px solid #fff;
     border-radius: 50%;
-    animation: bubble 10s ease-in infinite;
+    animation: bubble 10s linear infinite;
+    z-index: 0;
+  }
+  .bubble1 {
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    opacity: 60%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    animation: bubble1 10s linear infinite;
+    animation-delay:5s;
+    z-index: 0;
   }
 
 .bubble:nth-child(1) {
-    width: 5px;
-    height: 5px;
+    width: 8px;
+    height: 8px;
     left: -10%;
-    animation-duration: 10s;
-  }
-  
-  .bubble:nth-child(2) {
-    width: 7px;
-    height: 7px;
-    left: 0%;
     animation-duration: 14s;
   }
   
-  .bubble:nth-child(3) {
+  .bubble1:nth-child(1) {
+    width: 7px;
+    height: 7px;
+    left: 0%;
+    animation-duration: 17s;
+  }
+  
+  .bubble:nth-child(2) {
     width: 10px;
     height: 10px;
     left: 10%;
-    animation-duration: 11s;
-  }
-  
-  .bubble:nth-child(4) {
-    width: 15px;
-    height: 15px;
-    left: 25%;
-    animation-duration: 8s;
-  }
-  
-  .bubble:nth-child(5) {
-    width: 8px;
-    height: 8px;
-    left: 40%;
     animation-duration: 13s;
   }
   
-  .bubble:nth-child(6) {
-    width: 12px;
-    height: 12px;
-    left: 50%;
-    animation-duration: 13.5s;
+  .bubble1:nth-child(2) {
+    width: 15px;
+    height: 15px;
+    left: 20%;
+    animation-duration: 18s;
   }
   
-  .bubble:nth-child(7) {
+  .bubble:nth-child(3) {
+    width: 8px;
+    height: 8px;
+    left: 30%;
+    animation-duration: 13s;
+  }
+  
+  .bubble1:nth-child(3) {
+    width: 12px;
+    height: 12px;
+    left: 35%;
+    animation-duration: 15.5s;
+  }
+  
+  .bubble:nth-child(4) {
     width: 17px;
     height: 17px;
-    left: 60%;
-    animation-duration: 9s;
+    left: 42%;
+    animation-duration: 11s;
   }
-  .bubble:nth-child(8) {
+  .bubble1:nth-child(4) {
     width: 10px;
     height: 10px;
+    left: 50%;
+    animation-duration: 11.5s;
+  }
+  .bubble:nth-child(5) {
+    width: 13px;
+    height: 13px;
+    left: 60%;
+    animation-duration:14s;
+  }
+  .bubble1:nth-child(5) {
+    width: 12px;
+    height: 12px;
     left: 70%;
-    animation-duration: 12s;
+    animation-duration:12s;
+  }
+  .bubble:nth-child(6) {
+    width: 14px;
+    height: 14px;
+    left: 78%;
+    animation-duration:17s;
+  }
+  .bubble1:nth-child(6) {
+    width: 9.5px;
+    height: 9.5px;
+    left: 85%;
+    animation-duration:11s;
   }
   .bubble:nth-child(7) {
     width: 13px;
     height: 13px;
-    left: 80%;
+    left: 92%;
+    animation-duration:12.5s;
+  }
+  .bubble1:nth-child(7) {
+    width: 10px;
+    height: 10px;
+    left: 98%;
     animation-duration:10s;
   }
+  
   @keyframes bubble {
     0% {
-      bottom: 0px;
+      bottom: -15px;
       transform: translateX(0);
     }
     50% {
       transform: translateX(100px);
+    }
+    100% {
+      bottom: var(--base-height);
+    }
+  }
+  @keyframes bubble1 {
+    0% {
+      bottom: -15px;
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-100px);
     }
     100% {
       bottom: var(--base-height);
@@ -628,18 +502,18 @@ schedule,stage,lab
 /*======================
   スマホ用
 ======================*/
-  @media  (max-width:490px){
+  @media  (max-width: 490px){
     /*title修正*/
     .item1{
       margin: 20px 0px 20px 0px
     }
-    .titles{
+    .pickup-titles{
       position: relative;
       left: 10px;
     }
     .news, .notes{
       box-sizing: content-box;
-      width: 80%;
+      width: 90%;
       font-size: 16px;
     }
     .news-date, .news-content{
@@ -650,57 +524,73 @@ schedule,stage,lab
     }
     #loader{
       width: 100%;
-      height: 100vh;
-      background-image:url("../imgs/mainview/cloud_phone.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%)
-      ;
+      height: 120vh;
+      background-image:url("../imgs/logo.png"),url("../imgs/mainview/cloud_phone.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%);
       background-repeat: no-repeat, no-repeat;
-      background-size: 100% auto;
-      background-position: center;
+      background-size:60% auto,100% auto,100% auto;
     }
     .ocean{
       display: block;
     }
-    .ocean span, .sky2 span{
-      font-size: 22px;
+    .pre-ocean, .pre-sky{
+      font-size: 1rem;
+    }
+    .machikani1{
+      width: 85px;
+      rotate: -6deg;
+      position: relative;
+      bottom:-60px;
+      right: 0px;
     }
     /*------------------------
     イラストの位置調整
     ------------------------*/
     .machikame1{
-      width:20%;
-      left:9%;
-      bottom:-50vh;
+      width: 20%;
+      left: 71%;
+      bottom: -20vh;
     }
     #move img:nth-child(1){
       width:100%;
     }
-    /*.ocean span{
-      background-color:rgba(255,255,255,0.20);
-      border:solid 1px #fff;
-      padding:2px 12px;
-      border-radius: 14px;
-    }*/
     .schedule, .stage, .lab, #pickup, .about {
       box-sizing: content-box;
       font-size: 16px;
     }
-    #move img:nth-child(1){
-      display: block;
+    .item1{
+      display: inline-block;
+      font-size: 93px;
+      opacity: 0.30;
       position: relative;
-      width: auto;
-      height: 100vh;
-      bottom:60px;
-      left:-30px;
-      margin: auto;
+      top:9px;
+      left:10px;
+      margin: 50px 0px 50px 0px;
+    }
+    .item2{
+      display: inline-block;
+      font-size: 28px;
+      opacity: 0.30;
+      position: relative;
+      top:9px;
+      right:30px
+    }
+    .item3{
+      display: inline-block;
+      font-size: 15px;
+      opacity: 0.30;
+      position: relative;
+      top:9px;
+      right:30px;
+    }
+    #move img:nth-child(1){
+      width: 200%;
+      bottom:52vw;
+      left:-37vw;
     }
     #move img:nth-child(2){
-      display: block;
-      position: relative;
-      width: 160%;
-      height: 105vh;
-      bottom:58rem;
-      right:100px;
-      margin: auto;
+      width: 200%;
+      bottom:126vw;
+      right:40vw;
     }
     @keyframes cloud1{
       0% {
@@ -718,38 +608,20 @@ schedule,stage,lab
         transform: translateX(92vh);
       }
     }
-
-/*
-    .stay img:nth-child(1) {
-      position: absolute;
-      display: block;
-      width: 148%;
-      left: -20%;
-      bottom: 0;
-      margin: auto;
-  }
-  .stay img:nth-child(2) {
-      position: absolute;
-      display: block;
-      width: 110%;
-      text-align: center;
-      bottom: -37vw;
-      margin: auto;
-  }
-  */
   /*pickup*/
   .pickup-box{
     display: inline-block;
     width: 100%;
-    right: 20px;
-    bottom: 40px;
+    right: 15px;
+    bottom: 60px;
   }
   #title{
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
   .pickup-button{
+    padding: 5px 10px 0;
     margin-bottom: 40px;
-    margin-left: 65px;
+    margin-left: 35px;
   }
   .pickup-title{
     font-size: 1rem;
@@ -771,66 +643,215 @@ schedule,stage,lab
   .search:nth-child(4), .search:nth-child(5), .search:nth-child(6){
     margin-left: inherit;
   }
+  .theme-title{
+    font-size: 4rem;
+  }
+  .theme-title rt{
+    font-size: 1rem;
+  }
 }
 
 /*======================
   タブレット用
 ======================*/
-@media (min-width:490px) and (max-width: 990px){
-  .titles{
+@media (min-width: 490px) and (max-width: 990px){
+  #loader{
+    width: 100%;
+    height: 120vh;
+    background-image:url("../imgs/logo.png"),url("../imgs/mainview/cloud_ipad.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 40% auto,100% auto,100%;
+    background-position:center,center;
+  }
+  .pickup-titles{
     position: relative;
     left: 20px;
+  }
+  .machikame1{
+    width:14vw;
   }
   .news, .notes{
     box-sizing: content-box;
     width: 80%;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
   .news-date, .news-content{
     padding: 10px 25px;
   }
-  #loader{
-    width: 100%;
-    height: 100vh;
-    background-image:url("../imgs/mainview/cloud_ipad.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%);
-    background-repeat: no-repeat, no-repeat;
-    background-size: 100% auto;
-    background-position: center;
+  .pre-sky,.pre-ocean{
+    font-size: 1.6rem;
   }
   .ocean{
     display: block;
   }
-  .ocean span,.sky2 span{
-    font-size:30px;
+  
+  .section-schedule {
+    font-size: 1.8rem;
+    margin: 0px auto 80px;
   }
-  .schedule, .stage, .lab, #pickup, .about {
+  .schedule, .lab, #pickup, .about {
     box-sizing: content-box;
-    width: 80%;
+    width: 100%;
+    font-size:1.4rem;
+  }
+  .stage{
+    box-sizing: content-box;
+    font-size:1.4rem;
+  }
+  .machikani1{
+    /*margin: 0px -22px -71px;*/
+    width: 110px;
+    rotate: -6deg;
+    position: relative;
+    bottom:-95px;
+    right: -10%;
   }
   .pickup-box{
     display: inline-block;
-    width: 100%;
-    right: 10px;
+    width: calc((100% - 30px) / 1.3);
+    right: 0px;
+    bottom: 60px;
   }
   #title{
-    font-size: 3rem;
+    font-size: 2.4rem;
+    position:relative;
   }
+  .item1{
+    display: inline-block;
+    font-size: 100px;
+    opacity: 0.30;
+    position: relative;
+    top:9px;
+    left:0px;
+    margin: 50px 0px 50px 0px;
+  }
+  .item2{
+    display: inline-block;
+    font-size: 34px;
+    opacity: 0.30;
+    position: relative;
+    top:9px;
+    right:40px
+  }
+  .item3{
+    display: inline-block;
+    font-size: 21px;
+    opacity: 0.30;
+    position: relative;
+    top:9px;
+    right:40px;
+  }
+ 
   .pickup-button{
+    padding: 10px 20px 0;
     margin-bottom: 60px;
-    margin-left: 65px;
+    margin-left: 25px;
   }
   .pickup-title{
-    font-size: 2rem;
     margin-left: 10px;
     bottom: 15px;
+    font-size: 1.7rem;
   }
   .pickup-icon img{
     width: 60px;
   }
 }
-@media(max-width:360px){
-  #stage-title{
-    font-size: 20px;
+@media (min-width:800px) and (max-width:990px){
+  #move img:nth-child(1){
+    width: 170%;
+    bottom:-6vw;
+    left:-30vw;
+  }
+  #move img:nth-child(2){
+    width: 170%;
+    bottom:70vw;
+    right:30vw;
+  }
+}
+@media (min-width:600px) and (max-width:800px){
+  #move img:nth-child(1){
+    width: 170%;
+    bottom:15vw;
+    left:-27vw;
+  }
+  #move img:nth-child(2){
+    width: 170%;
+    bottom:94vw;
+    right:30vw;
+  }
+}
+@media (min-width:490px) and (max-width:600px){
+  #move img:nth-child(1){
+    width: 170%;
+    bottom:45vw;
+    left:-27vw;
+  }
+  #move img:nth-child(2){
+    width: 170%;
+    bottom:116vw;
+    right:30vw;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 990px){
+  #loader{
+    width: 100%;
+    height: 180vh;
+    background-image:url("../imgs/logo.png"),url("../imgs/mainview/cloud_ipad.png"),linear-gradient(#fff 26%, #00B2E9 60%,#b5e5f4 100%);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 40% auto,100% auto,100%;
+    background-position:center,center;
+    margin-top:-35vh;
+  }
+  .machikame1{
+    width: 14vw;
+    position: relative;
+    bottom: -50vh;
+    left:12%;
+  }
+}
+@media (min-width: 490px) and (max-width: 680px){
+  #title{
+    font-size: 2.2rem;
+  }
+  .pickup-box{
+    width: calc((100% - 30px) / 1.1);
+    right: 10px;
+    bottom: 60px;
+  }
+  .pickup-button{
+    padding: 10px 20px 0;
+    margin-bottom: 45px;
+    margin-left: 25px;
+  }
+  .pickup-title{
+    margin-left: 8px;
+    bottom: 12px;
+    font-size: 1.3rem;
+  }
+  .pickup-icon img{
+    width: 45px;
+  }
+}
+@media screen and (max-width: 550px){
+  #stage-title span{
+    font-size: 2rem;
+  }
+  #stage-title .item1{
+    font-size: 90px;
+    margin-right:-12px ;
+    margin-left: 4px;
+  }
+  #stage-title .item2{
+    font-size: 27px;
+  }
+  #stage-title .item3{
+    font-size: 12px;
+  } 
+}
+@media screen and (max-width:420px){
+  #stage-title span{
+    font-size: 1.4rem;
   }
   #stage-title .item1{
     font-size: 90px;

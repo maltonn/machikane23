@@ -1,16 +1,15 @@
 footer{
-    position: relative;
     margin-top: auto;
-    bottom: 0;
     height: auto;
     width: 100%;
-    background-color: var(--blue2);/* 各変数はApp.css を参照　もちろん普通にカラーコード書いてもOK*/
+    background-color: #2E3192;/* 各変数はApp.css を参照　もちろん普通にカラーコード書いてもOK*/
+    z-index: 5000;
 }
 .logo{
     text-align: center;
 }
 .machikane_logo{
-    height: 50px;
+    height: 80px;
     margin: 5px;
 }
 .sns{
@@ -40,7 +39,15 @@ footer{
 }
 .external-site{
     text-align: center;
+    color:#fff;
+}
+.external-site a{
+    color:#fff;
+}
+.external-site a:hover{
+    color:#f1d18c;
 }
 .tyuujitu{
     text-align: center;
+    color:#fff;
 }
