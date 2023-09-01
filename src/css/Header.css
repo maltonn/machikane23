@@ -63,9 +63,6 @@ header > h1{
     display: block;
     width: 100%;
 }
-.menu-child a:visited{
-    color:black;
-}
 .menu-child li:hover a{
     color: #75bbff;
 }
