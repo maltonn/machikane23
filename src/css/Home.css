@@ -73,6 +73,13 @@ body{
   height:300px;
 }
 
+.theme-title{
+  font-size: 8rem;
+}
+.theme-title rt{
+  font-size: 2rem;
+}
+
 /*======================
 一個小さい枠組の設定
 ======================*/
@@ -240,7 +247,7 @@ schedule,stage,lab
   color: #fff;
 }
 
-.titles{
+.pickup-titles{
   position: relative;
   left: 10px;
 }
@@ -497,7 +504,7 @@ schedule,stage,lab
     .item1{
       margin: 20px 0px 20px 0px
     }
-    .titles{
+    .pickup-titles{
       position: relative;
       left: 10px;
     }
@@ -633,6 +640,12 @@ schedule,stage,lab
   .search:nth-child(4), .search:nth-child(5), .search:nth-child(6){
     margin-left: inherit;
   }
+  .theme-title{
+    font-size: 4rem;
+  }
+  .theme-title rt{
+    font-size: 1rem;
+  }
 }
 
 /*======================
@@ -647,7 +660,7 @@ schedule,stage,lab
     background-size: 40% auto,100% auto,100%;
     background-position:center,center;
   }
-  .titles{
+  .pickup-titles{
     position: relative;
     left: 20px;
   }
