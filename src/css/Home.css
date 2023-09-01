@@ -9,6 +9,7 @@ body{
   width: 100%;
   overflow: hidden;
   margin-top: 0px;
+  z-index: 1000;
 }
 
 :root{
@@ -358,6 +359,7 @@ schedule,stage,lab
     border: 1px solid #fff;
     border-radius: 50%;
     animation: bubble 10s linear infinite;
+    z-index: 0;
   }
   .bubble1 {
     position: absolute;
@@ -368,6 +370,7 @@ schedule,stage,lab
     border-radius: 50%;
     animation: bubble1 10s linear infinite;
     animation-delay:5s;
+    z-index: 0;
   }
 
 .bubble:nth-child(1) {
