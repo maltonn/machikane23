@@ -60,9 +60,19 @@ header > h1{
 }
 .menu-child a{
     color:black;
+    display: block;
+    width: 100%;
 }
 .menu-child a:visited{
     color:black;
+}
+.menu-child li:hover a{
+    color: #75bbff;
+}
+.menu-child li:hover{
+    background-color: #FFE4BB;
+    border-radius: 10px 20px 20px 10px;
+    width: 100%;
 }
 .toggle-button {
     display: flex;
