@@ -29,6 +29,10 @@ export default function Project() {
     const [loadingNum, setLoadingNum] = useState(20)
 
     useEffect(() => {
+        window.addEventListener('load', () => {
+            var getFooter=document.getElementById('footer');
+            getFooter.style.position='relative';
+        });
         fetch("https://app.tyuujitu-system.net/api/machikane23/website/pr.json").then((res) => {
             return res.json()
         }
