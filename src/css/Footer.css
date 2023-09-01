@@ -40,6 +40,9 @@ footer{
     text-align: center;
     color:#fff;
 }
+.external-site a{
+    color:#fff;
+}
 .external-site a:visited{
     color:#fff;
 }
