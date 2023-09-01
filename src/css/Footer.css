@@ -1,7 +1,5 @@
 footer{
-    position: absolute;
     margin-top: auto;
-   /* bottom: 0;*/
     height: auto;
     width: 100%;
     background-color: #2E3192;/* 各変数はApp.css を参照　もちろん普通にカラーコード書いてもOK*/

@@ -4,10 +4,11 @@ import machikane_logo from "../imgs/machikane_logo.png"
 
 window.addEventListener('load', () => {
     var getFooter=document.getElementById('footer');
-    var footerPosition=document.getElementById('footer').getBoundingClientRect().top;
+    var footerPosition=getFooter.getBoundingClientRect().top;
     var windowHeight=window.innerHeight;
     if(footerPosition<windowHeight){
         getFooter.style.position='absolute';
+        getFooter.style.bottom=0;
     }else{
         getFooter.style.position='relative';
     }
