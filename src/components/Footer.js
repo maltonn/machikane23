@@ -1,6 +1,6 @@
 import "../css/Footer.css";
 import insta from "../imgs/insta.svg"
-import machikane_logo from "../imgs/machikane_logo.png"
+import machikane_logo from "../imgs/main-visual-title.svg"
 
 window.addEventListener('load', () => {
     var getFooter=document.getElementById('footer');

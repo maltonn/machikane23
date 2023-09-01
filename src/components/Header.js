@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 import "../css/Header.css"
-import machikane_logo from "../imgs/machikane_logo.png"
+import machikane_logo from "../imgs/main-visual-title.svg"
 
 export default function Header() {
     const [isHamburgerOpen, setIsHamburgerOpen] = useState(false)
