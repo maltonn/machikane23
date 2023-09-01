@@ -1,0 +1,60 @@
+/*準備中のページ用*/
+.preparation{
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+    height: 120vh;
+    background-image:url("../imgs/logo.png"),url("../imgs/mainview/cloud_pc.png"),linear-gradient(#fff 10%, #00B2E9 50%,#b5e5f4 90%);
+    background-repeat: no-repeat, no-repeat;
+    background-size:30%,100% auto,100% auto;
+    background-position: center 42%,center;
+}
+.preparation p{
+    margin: 0;
+    padding-top: 80px;
+}
+@media  (max-width: 490px){
+    .preparation{
+      font-size: 1rem;
+      width: 100%;
+      height: 120vh;
+      background-image:url("../imgs/logo.png"),url("../imgs/mainview/cloud_phone.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%);
+      background-repeat: no-repeat, no-repeat;
+      background-size:60% auto,100% auto,100% auto;
+    }
+    .preparation p{
+        margin: 0;
+        padding-top: 10rem;
+    }
+}
+@media (min-width: 490px) and (max-width: 990px){
+    .preparation{
+      font-size: 1rem;
+      width: 100%;
+      height: 120vh;
+      background-image:url("../imgs/logo.png"),url("../imgs/mainview/cloud_ipad.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%);
+      background-repeat: no-repeat, no-repeat;
+      background-size: 40% auto,100% auto,100%;
+      background-position:center,center;
+    }
+    .preparation p{
+        margin: 0;
+        padding-top: 12rem;
+    }
+}
+@media (min-width: 600px) and (max-width: 990px){
+    .preparation{
+      font-size: 1.2rem;
+      width: 100%;
+      height: 180vh;
+      background-image:url("../imgs/logo.png"),url("../imgs/mainview/cloud_ipad.png"),linear-gradient(#fff 26%, #00B2E9 60%,#b5e5f4 100%);
+      background-repeat: no-repeat, no-repeat;
+      background-size: 40% auto,100% auto,100%;
+      background-position:center,center;
+      margin-top:-35vh;
+    }
+    .preparation p{
+        margin: 0;
+        padding-top: 27rem;
+    }
+}
