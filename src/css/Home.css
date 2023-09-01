@@ -56,7 +56,6 @@ body{
 }
 
 .machikani1{
-  /*margin: 0px -22px -71px;*/
   width: 150px;
   rotate: -6deg;
   position: relative;
@@ -66,21 +65,13 @@ body{
 .machikani1 img{
   width: 100%;
 }
-/*.ocean2{
-  width:100%;
-  height:500px;
-  background: #2E3192 100%;
-}*/
-
 
 /*pickup-bubble*/
-
 .bottom{
   bottom:0px;
   width:100%;
   height:300px;
 }
-
 
 /*======================
 一個小さい枠組の設定
@@ -100,19 +91,17 @@ loader 雲のアニメション
 #move img:nth-child(1){
   position: relative;
   display: block;
-  width: 150%;
-  /*height: 100vh;*/
-  bottom:60vw;
-  left:-25vw;
+  width: 160%;
+  bottom:40vw;
+  left:-24vw;
   margin: auto;
 }
 #move img:nth-child(2){
   position: relative;
   display: block;
-  width: 150%;
-  /*height: 100vh;*/
-  bottom:120vw;
-  right:18vw;
+  width: 160%;
+  bottom:166vw;
+  right:22vw;
   margin: auto;
 }
 
@@ -132,26 +121,11 @@ loader 雲のアニメション
     transform: translateX(170vw);
   }
 }
-/*======================
-loader 特にメインビューの雲の配置、アニメーション
-======================*/
-/*
 
-/*
-/*ほんまにいらん方
-いるかわからんかった　nth-child(1)と同じ
-.main_cloud img{
-  width:100%;
-  height:auto;
-}
-
-
-*/
 /*======================
 sky2 お知らせ欄(news)、来場者の方へ(notes)内部
-竹内くん的に背景が透明が良いそうだったので、半透明にしてます
+背景が透明が良いそうだったので、半透明
 位置は要調節
-文章どうしたらいいかわからんからとりあえず準備中にしてます
 ======================*/
 
 .news,.notes{
@@ -190,8 +164,6 @@ schedule,stage,lab
   margin: 10px auto 180px;
   display:block;
   text-align: center;
-  /*border: solid 1px #fff;
-  border-radius: 50px;*/
 }
 .section-schedule{
   font-size: 2rem;
@@ -230,10 +202,6 @@ schedule,stage,lab
   color: #fff;
   position: relative;
   right: 30px;
-  /*background-color:rgba(255,255,255,0.20);
-  border:solid 1px #fff;
-  padding:2px 12px;
-  border-radius: 14px;*/
 }
 .item1{
   display: inline-block;
@@ -558,7 +526,6 @@ schedule,stage,lab
       font-size: 1rem;
     }
     .machikani1{
-      /*margin: 0px -22px -71px;*/
       width: 85px;
       rotate: -6deg;
       position: relative;
@@ -606,22 +573,14 @@ schedule,stage,lab
       right:30px;
     }
     #move img:nth-child(1){
-      display: block;
-      position: relative;
-      width: auto;
-      height: 100vh;
-      bottom:60px;
-      left:-30px;
-      margin: auto;
+      width: 200%;
+      bottom:52vw;
+      left:-37vw;
     }
     #move img:nth-child(2){
-      display: block;
-      position: relative;
-      width: 160%;
-      height: 105vh;
-      bottom:58rem;
-      right:100px;
-      margin: auto;
+      width: 200%;
+      bottom:126vw;
+      right:40vw;
     }
     @keyframes cloud1{
       0% {
@@ -781,26 +740,44 @@ schedule,stage,lab
     width: 60px;
   }
 }
-
-@media (min-width: 600px) and (max-width: 990px){
+@media (min-width:800px) and (max-width:990px){
   #move img:nth-child(1){
-    position: relative;
-    display: block;
-    width: 150%;
-    /*height: 100vh;*/
-    bottom:24vw;
-    left:-25vw;
-    margin: auto;
+    width: 170%;
+    bottom:-6vw;
+    left:-30vw;
   }
   #move img:nth-child(2){
-    position: relative;
-    display: block;
-    width: 150%;
-    /*height: 100vh;*/
-    bottom:75vw;
-    right:18vw;
-    margin: auto;
+    width: 170%;
+    bottom:70vw;
+    right:30vw;
   }
+}
+@media (min-width:600px) and (max-width:800px){
+  #move img:nth-child(1){
+    width: 170%;
+    bottom:15vw;
+    left:-27vw;
+  }
+  #move img:nth-child(2){
+    width: 170%;
+    bottom:94vw;
+    right:30vw;
+  }
+}
+@media (min-width:490px) and (max-width:600px){
+  #move img:nth-child(1){
+    width: 170%;
+    bottom:45vw;
+    left:-27vw;
+  }
+  #move img:nth-child(2){
+    width: 170%;
+    bottom:116vw;
+    right:30vw;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 990px){
   #loader{
     width: 100%;
     height: 180vh;
