@@ -110,8 +110,8 @@ export default function Home() {
 
           <div className="lab">
             <div className="titles"><nobr><p className="item1">●</p><span id="title">研究室紹介</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
-            <p>研究室の企画は、以下のリンクからご覧ください</p>
-            <a href="./lab-open">詳細はこちら</a>
+            <p>研究室の企画は、以下のリンクからご覧ください。</p>
+            <a href="./lab-open">現在準備中</a>
           </div>
 
           <div id="pickup">
