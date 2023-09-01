@@ -1,5 +1,6 @@
 import "../css/Home.css"
-import machikame from "../imgs/animal/machikame1.png"
+import machikame1 from "../imgs/animal/machikame1.png"
+import machikame2 from "../imgs/animal/machikame2.png"
 import left_cloud from "../imgs/cloud/left_cloud.png"
 import right_cloud from "../imgs/cloud/right_cloud.png"
 import machikani from "../imgs/animal/machikani.png"
@@ -36,7 +37,7 @@ export default function Home() {
         </Helmet>
         <div id="loader">
           <div className="machikame1"> 
-            <img src={machikame} alt="まちかめ1"></img>
+            <img src={machikame1} alt="まちかめ1"></img>
           </div>
           <div id="move">
             <img src={left_cloud} alt="左雲"></img>
@@ -97,6 +98,9 @@ export default function Home() {
                 </tbody>
             </table>
           </div>
+          <div className="machikame1"> 
+            <img src={machikame2} alt="まちかめ2"></img>
+          </div>
 
           <div className="stage">
             <div className="titles" id="stage-title"><nobr><p className="item1">●</p><span id="title">現在のステージ企画</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
@@ -106,7 +110,8 @@ export default function Home() {
 
           <div className="lab">
             <div className="titles"><nobr><p className="item1">●</p><span id="title">研究室紹介</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
-            <div className="pre-ocean">現在準備中</div>
+            <p>研究室の企画は、以下のリンクからご覧ください</p>
+            <a href="./lab-open">詳細はこちら</a>
           </div>
 
           <div id="pickup">
