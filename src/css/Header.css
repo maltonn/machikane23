@@ -292,9 +292,6 @@ header > h1{
     .toggle{
         display: none;
     }
-    .main{
-        margin-top: 80px;
-    }
     .machikane_logo-sp.menu-closed{
         opacity: 0;
     }
