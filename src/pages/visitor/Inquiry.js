@@ -8,6 +8,7 @@ export default function Inquiry() {
             </Helmet>
             <div className="preparation">
                 <p>ただいまページ作成中です。しばらくお待ちください。</p>
+                <span>現在のページ：お問い合わせ</span><br></br>
                 <a href="./">トップページへ戻る</a>
             </div>
         </div>
