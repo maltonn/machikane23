@@ -27,6 +27,9 @@ import Inquiry from './pages/visitor/Inquiry';
 import Access from './pages/access-map/Access';
 import Map from './pages/access-map/Map';
 
+import HomeEn from './pages/En-pages/HomeEn';
+
+
 import Error404 from './pages/Error404';
 
 /*作成中のページ用　完成したら消す*/
@@ -72,6 +75,8 @@ export default function App() {
 
         <Route path="/access/" element={<Access />} />
         <Route path="/map/" element={<Map />} />
+
+        <Route path="/en" element={<HomeEn />} />
 
         <Route path="*" element={<Error404 />} />
 
