@@ -66,6 +66,7 @@ export default function Home() {
           <span id="title">来場者の方へ</span>
           <div className="content">まちかね祭に車でご来場いただくことはできません。<br/>ご来場の際は公共交通機関をご利用ください。</div>
         </div>
+        <div className="machikani1"><img src={machikani} alt="まちかに"></img></div>
       </div>
     </div>
 
@@ -129,7 +130,6 @@ export default function Home() {
           <div className="ocean-card stage">
             <div className="titles" id="stage-title"><nobr><p className="item1">●</p><span id="title">現在のステージ企画</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
             <div className="pre-ocean">まちかね祭当日までお待ちください</div>
-            <div className="machikani1"><img src={machikani} alt="まちかに"></img></div>
           </div>
 
           <div className="ocean-card lab">
