@@ -7,15 +7,15 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 import Home from "./pages/Home";
-import About from "./pages/machikane/About";
+// import About from "./pages/machikane/About";
 import Theme from './pages/machikane/Theme';
 import Goods from './pages/machikane/Goods';
 import Sponsor from './pages/machikane/Sponsor';
 
 import Sections from './pages/project/Sections';
-import Project from './pages/project/Project';
+// import Project from './pages/project/Project';
 import Timetable from './pages/project/Timetable';
-import Ralley from './pages/project/ralley';
+import Ralley from './pages/project/Ralley';
 import OfficialProject from './pages/project/OfficialProject';
 import LabOpen from './pages/project/LabOpen';
 
@@ -28,6 +28,10 @@ import Access from './pages/access-map/Access';
 import Map from './pages/access-map/Map';
 
 import Error404 from './pages/Error404';
+
+/*作成中のページ用　完成したら消す*/
+import AboutTmp from './pages/tmp/AboutTmp';
+import ProjectTmp from './pages/tmp/ProjectTmp';
 
 export default function App() {
   const location = useLocation();
@@ -47,13 +51,15 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about/" element={<About />} />
+        {/* <Route path="/about/" element={<About />} /> */}
+        <Route path="/about/" element={<AboutTmp />} />
         <Route path="/theme/" element={<Theme />} />
         <Route path="/goods/" element={<Goods />} />
         <Route path="/sponsor/" element={<Sponsor />} />
 
         <Route path="/sections/" element={<Sections />} />
-        <Route path="/project-search/" element={<Project />} />
+        {/* <Route path="/project-search/" element={<Project />} /> */}
+        <Route path="/project-search/" element={<ProjectTmp />} />
         <Route path="/timetable/" element={<Timetable />} />
         <Route path="/ralley/" element={<Ralley />} />
         <Route path="/official-project/" element={<OfficialProject />} />
