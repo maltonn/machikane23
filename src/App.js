@@ -27,6 +27,8 @@ import Inquiry from './pages/visitor/Inquiry';
 import Access from './pages/access-map/Access';
 import Map from './pages/access-map/Map';
 
+import Error404 from './pages/Error404';
+
 export default function App() {
   const location = useLocation();
 
@@ -64,6 +66,8 @@ export default function App() {
 
         <Route path="/access/" element={<Access />} />
         <Route path="/map/" element={<Map />} />
+
+        <Route path="*" element={<Error404 />} />
 
       </Routes>
       <Footer />
