@@ -52,7 +52,7 @@ body{
   margin:0 auto;
   padding-top: 100px;
   }
-.schedule,.stage,.lab,#pickup,.about{
+.ocean-card{
   box-sizing: border-box;
 }
 
@@ -167,7 +167,7 @@ schedule,stage,lab
 ちっちゃめのイラストか、マーク入れた方が統一感でそう
 ======================*/
 
-.schedule,.stage,.lab,.about{
+.ocean-card{
   font-size:1.7rem;
   margin: 10px auto 180px;
   display:block;
@@ -553,7 +553,7 @@ schedule,stage,lab
     #move img:nth-child(1){
       width:100%;
     }
-    .schedule, .stage, .lab, #pickup, .about {
+    .ocean-card{
       box-sizing: content-box;
       font-size: 16px;
     }
@@ -689,7 +689,7 @@ schedule,stage,lab
     font-size: 1.8rem;
     margin: 0px auto 80px;
   }
-  .schedule, .lab, #pickup, .about {
+  .ocean-card{
     box-sizing: content-box;
     width: 100%;
     font-size:1.4rem;
