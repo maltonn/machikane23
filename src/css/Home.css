@@ -138,13 +138,13 @@ sky2 お知らせ欄(news)、来場者の方へ(notes)内部
 
 .news,.notes{
   font-size: 1.7rem;
-  margin: 20px auto 80px;
+  margin: 20px 0px 80px;
   display:block;
   background-color: rgba(255,255,255,0.38);
   border-radius: 50px;
   text-align: center;
   box-sizing: border-box;
-  width: 80%;
+  width: 100%;
 }
 .news-date, .news-content{
   text-align: left;
@@ -201,7 +201,7 @@ schedule,stage,lab
   font-size: 2.2rem;
 }
 .content{
-  padding: 20px 10px 30px;
+  padding: 20px 5px 30px;
 }
 /*海の中の小見出しのスタイル*/
 .ocean span{
@@ -513,11 +513,14 @@ schedule,stage,lab
     }
     .news, .notes{
       box-sizing: content-box;
-      width: 90%;
-      font-size: 16px;
+      width: 100%;
+      font-size: 0.8rem;
     }
-    .news-date, .news-content{
-      padding: 7px 5px;
+    .news-date{
+      padding: 5px 5px 10px 15px;
+    }
+    .news-content{
+      padding: 5px 5px 5px 0px;
     }
     .section-schedule{
       font-size: 1rem;
@@ -672,8 +675,8 @@ schedule,stage,lab
   }
   .news, .notes{
     box-sizing: content-box;
-    width: 80%;
-    font-size: 1.4rem;
+    width: 100%;
+    font-size: 1.1rem;
   }
   .news-date, .news-content{
     padding: 10px 25px;
