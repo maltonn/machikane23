@@ -8,6 +8,7 @@ export default function Pamphlet() {
             </Helmet>
             <div className="preparation">
                 <p>ただいまページ作成中です。しばらくお待ちください。</p>
+                <span>現在のページ：公式パンフレット</span><br></br>
                 <a href="./">トップページへ戻る</a>
             </div>
         </div>

@@ -8,6 +8,7 @@ export default function Sponsor() {
             </Helmet>
             <div className="preparation">
                 <p>ただいまページ作成中です。しばらくお待ちください。</p>
+                <span>現在のページ：ご協賛</span><br></br>
                 <a href="./">トップページへ戻る</a>
             </div>
         </div>

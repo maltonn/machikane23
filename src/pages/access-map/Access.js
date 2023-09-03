@@ -8,6 +8,7 @@ export default function Access() {
             </Helmet>
             <div className="preparation">
                 <p>ただいまページ作成中です。しばらくお待ちください。</p>
+                <span>現在のページ：アクセス</span><br></br>
                 <a href="./">トップページへ戻る</a>
             </div>
         </div>
