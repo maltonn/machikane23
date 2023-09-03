@@ -11,7 +11,7 @@
 }
 .preparation p{
     margin: 0;
-    padding-top: 80px;
+    padding-top: 110px;
 }
 @media  (max-width: 490px){
     .preparation{
@@ -24,7 +24,10 @@
     }
     .preparation p{
         margin: 0;
-        padding-top: 10rem;
+        padding-top: 7rem;
+    }
+    .preparation p,.preparation span{
+        font-size: 0.8rem;
     }
 }
 @media (min-width: 490px) and (max-width: 990px){
@@ -55,6 +58,6 @@
     }
     .preparation p{
         margin: 0;
-        padding-top: 27rem;
+        padding-top: 25rem;
     }
 }
