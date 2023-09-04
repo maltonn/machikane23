@@ -3,12 +3,14 @@ import "../../css/Common.css"
 export default function Sponsor() {
     return(
         <div className="main">
-        <Helmet>
-          <title>ご協賛|まちかね祭2023</title>
-        </Helmet>
-            <h2>ここにsponsorページ</h2>
-            <p>pages/Sponsor.jsとcss/~.cssを編集</p>
-            <a href="./">トップページへ戻る</a>
+            <Helmet>
+            <title>ご協賛|まちかね祭2023</title>
+            </Helmet>
+            <div className="preparation">
+                <p>ただいまページ作成中です。しばらくお待ちください。</p>
+                <span>現在のページ：ご協賛</span><br></br>
+                <a href="./">トップページへ戻る</a>
+            </div>
         </div>
     )
 }

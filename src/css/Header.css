@@ -5,7 +5,7 @@ header{
     width: 100vw;
     margin: 0;
     background-color: rgba(255, 255, 255, 1); 
-    z-index: 600;
+    z-index: 5000;
 }
 header > h1{
     margin: 0;
@@ -62,9 +62,6 @@ header > h1{
     color:black;
     display: block;
     width: 100%;
-}
-.menu-child a:visited{
-    color:black;
 }
 .menu-child li:hover a{
     color: #75bbff;
@@ -294,9 +291,6 @@ header > h1{
 @media screen and (min-width:490px) and (max-width: 990px){
     .toggle{
         display: none;
-    }
-    .main{
-        margin-top: 80px;
     }
     .machikane_logo-sp.menu-closed{
         opacity: 0;

@@ -9,6 +9,7 @@ body{
   width: 100%;
   overflow: hidden;
   margin-top: 0px;
+  z-index: 1000;
 }
 
 :root{
@@ -51,7 +52,7 @@ body{
   margin:0 auto;
   padding-top: 100px;
   }
-.schedule,.stage,.lab,#pickup,.about{
+.ocean-card{
   box-sizing: border-box;
 }
 
@@ -137,13 +138,13 @@ sky2 お知らせ欄(news)、来場者の方へ(notes)内部
 
 .news,.notes{
   font-size: 1.7rem;
-  margin: 20px auto 80px;
+  margin: 20px 0px 80px;
   display:block;
   background-color: rgba(255,255,255,0.38);
   border-radius: 50px;
   text-align: center;
   box-sizing: border-box;
-  width: 80%;
+  width: 100%;
 }
 .news-date, .news-content{
   text-align: left;
@@ -166,7 +167,7 @@ schedule,stage,lab
 ちっちゃめのイラストか、マーク入れた方が統一感でそう
 ======================*/
 
-.schedule,.stage,.lab,.about{
+.ocean-card{
   font-size:1.7rem;
   margin: 10px auto 180px;
   display:block;
@@ -200,7 +201,7 @@ schedule,stage,lab
   font-size: 2.2rem;
 }
 .content{
-  padding: 20px 10px 30px;
+  padding: 20px 5px 30px;
 }
 /*海の中の小見出しのスタイル*/
 .ocean span{
@@ -358,6 +359,7 @@ schedule,stage,lab
     border: 1px solid #fff;
     border-radius: 50%;
     animation: bubble 10s linear infinite;
+    z-index: 0;
   }
   .bubble1 {
     position: absolute;
@@ -368,6 +370,7 @@ schedule,stage,lab
     border-radius: 50%;
     animation: bubble1 10s linear infinite;
     animation-delay:5s;
+    z-index: 0;
   }
 
 .bubble:nth-child(1) {
@@ -510,11 +513,14 @@ schedule,stage,lab
     }
     .news, .notes{
       box-sizing: content-box;
-      width: 90%;
-      font-size: 16px;
+      width: 100%;
+      font-size: 0.8rem;
     }
-    .news-date, .news-content{
-      padding: 7px 5px;
+    .news-date{
+      padding: 5px 5px 10px 15px;
+    }
+    .news-content{
+      padding: 5px 5px 5px 0px;
     }
     .section-schedule{
       font-size: 1rem;
@@ -550,7 +556,7 @@ schedule,stage,lab
     #move img:nth-child(1){
       width:100%;
     }
-    .schedule, .stage, .lab, #pickup, .about {
+    .ocean-card{
       box-sizing: content-box;
       font-size: 16px;
     }
@@ -669,8 +675,8 @@ schedule,stage,lab
   }
   .news, .notes{
     box-sizing: content-box;
-    width: 80%;
-    font-size: 1.4rem;
+    width: 100%;
+    font-size: 1.1rem;
   }
   .news-date, .news-content{
     padding: 10px 25px;
@@ -686,7 +692,7 @@ schedule,stage,lab
     font-size: 1.8rem;
     margin: 0px auto 80px;
   }
-  .schedule, .lab, #pickup, .about {
+  .ocean-card{
     box-sizing: content-box;
     width: 100%;
     font-size:1.4rem;

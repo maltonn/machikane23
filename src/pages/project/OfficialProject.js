@@ -3,12 +3,14 @@ import "../../css/Common.css"
 export default function OfficialProject() {
     return(
         <div className="main">
-        <Helmet>
-          <title>委員会企画|まちかね祭2023</title>
-        </Helmet>
-            <h2>ここにofficial-projectページ</h2>
-            <p>pages/OfficialProject.jsとcss/~.cssを編集</p>
-            <a href="./">トップページへ戻る</a>
+            <Helmet>
+            <title>委員会企画|まちかね祭2023</title>
+            </Helmet>
+            <div className="preparation">
+                <p>ただいまページ作成中です。しばらくお待ちください。</p>
+                <span>現在のページ：委員会企画</span><br></br>
+                <a href="./">トップページへ戻る</a>
+            </div>
         </div>
     )
 }
