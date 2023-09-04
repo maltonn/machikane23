@@ -70,7 +70,7 @@ header > h1{
     color: #75bbff;
 }
 .menu-child li:hover{
-    background-color: #FFE4BB;
+    background-color: #ffff;
     border-radius: 10px 20px 20px 10px;
     width: 100%;
 }
