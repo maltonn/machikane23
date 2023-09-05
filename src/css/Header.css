@@ -38,21 +38,27 @@ header > h1{
     list-style: none;
 }
 .menu-title{
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 .menu-grandparent{
     display: flex;
     
 }
+.menu-grandparent{
+    margin-right: 5px;
+}
+.menu-grandparent li:first-child{
+    margin-right: 65px;
+}
 .menu-grandparent li{
-    margin-right: 55px;
+    margin-right: 20px;
 }
 .menu-child{
     display: none;
     width: 250px;
 }
 .menu-parent{
-    width: 150px;
+    width: 200px;
 }
 .menu-parent:hover .menu-child{
     display: block;
@@ -60,19 +66,21 @@ header > h1{
 	border-color : #72c3f8;
     animation: FadeIn 0.8s;
     border-radius: 20px;
+    width: 90%;
 }
 .menu-child a{
     color:black;
     display: block;
-    width: 100%;
+    width: 120%;
 }
 .menu-child li:hover a{
     color: #75bbff;
 }
 .menu-child li:hover{
     background-color: #ffff;
-    border-radius: 5px;
-    width: 100%;
+    border: 0.5px solid rgba(179, 229, 237, 1);
+    border-radius: 5px 20px 20px 5px;
+    width: 99%;
 }
 .toggle-button {
     display: flex;
@@ -149,7 +157,7 @@ header > h1{
 .hamburger{
     display: none;
 }
-@media screen and (min-width:990px){
+@media screen and (min-width:1090px){
     .toggle-hm{
         display: none;
     }
@@ -227,6 +235,13 @@ header > h1{
         transform-origin: top right;
         transition-duration: 500ms;
         overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .menu-title{
+        font-size: 1rem;
+    }
+    .menu-grandparent li{
+        margin-right: 0px;
     }
     .menu-opend{
         transform: scaleY(1);
@@ -305,7 +320,7 @@ header > h1{
 }
 
 /*iPadとか*/
-@media screen and (min-width:490px) and (max-width: 990px){
+@media screen and (min-width:490px) and (max-width: 1090px){
     .toggle-pc{
         display: none;
     }
@@ -354,6 +369,13 @@ header > h1{
         transform-origin: top right;
         transition-duration: 500ms;
         overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .menu-title{
+        font-size: 1.3rem;
+    }
+    .menu-grandparent li{
+        margin-right: 0px;
     }
     .menu-opend{
         transform: scaleY(1);

@@ -70,13 +70,13 @@ export default function Header() {
     return (
         <header>
             <a href="./" className={`top-link ${isHamburgerOpen?"menu-opend":"menu-closed"}`}><img className={`machikane_logo-sp ${isHamburgerOpen?"menu-opend":"menu-closed"}`} src={machikane_logo} alt="まちかね祭ロゴ"></img></a>
-            <a className={`toplink ${isHamburgerOpen?"menu-opend":"menu-closed"}`}>
+            <div className={`toplink ${isHamburgerOpen?"menu-opend":"menu-closed"}`}>
                 <li className={`toggle-hm`}>
                     <label className="toggle-button">
                             <input type="checkbox" id="toggle-hm"/>
                     </label>
                 </li>
-            </a>
+            </div>
             
             <div className={`menu ${isHamburgerOpen?"menu-opend":"menu-closed"}`}>
                 <div className="header" id="ja-menu">
