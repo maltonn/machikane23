@@ -25,19 +25,45 @@ export default function Header() {
     function menuOpenD(){
         setIsMenuOpenD(prev => !prev)
     }
-    const [isEnglish, setIsEnglish] =useState(false)
-    function clickEnglish(){
-        setIsEnglish(prev => !prev)
-    } 
+    
     useEffect(() =>{
-        let language = false;
-        window.addEventListener('load',()=>{
-            language=document.getElementById('toggle').checked;
-        });
-        if (language){
-            document.getElementById('toggle').defaulChecked='checked';
-        } else {
-            document.getElementById('toggle').defaulChecked=false;
+        document.getElementById('toggle-hm').onclick = function(){
+            localStorage.setItem('lang',document.getElementById('toggle-hm').checked);
+            document.getElementById('toggle-pc').checked=!document.getElementById('toggle-pc').checked;
+        }
+        window.onload = function(){
+            if(localStorage.getItem('lang')==='true'){
+                document.getElementById('toggle-hm').checked=!document.getElementById('toggle-hm').checked
+                document.getElementById('toggle-pc').checked=!document.getElementById('toggle-pc').checked
+            }
+        }
+        document.getElementById('toggle-pc').onclick = function(){
+            localStorage.setItem('lang',document.getElementById('toggle-pc').checked);
+            document.getElementById('toggle-hm').checked=!document.getElementById('toggle-hm').checked;
+        }
+        window.onload = function(){
+            if(localStorage.getItem('lang')==='true'){
+                document.getElementById('toggle-hm').checked=!document.getElementById('toggle-hm').checked
+                document.getElementById('toggle-pc').checked=!document.getElementById('toggle-pc').checked
+            }
+        }
+        document.getElementById('toggle-hm').onchange = function(){
+            if(localStorage.getItem('lang')==='true'){
+                document.getElementById('ja-menu').style.display="none";
+                document.getElementById('en-menu').style.display="block";
+            } else {
+                document.getElementById('ja-menu').style.display="block";
+                document.getElementById('en-menu').style.display="none";
+            }
+        }
+        document.getElementById('toggle-pc').onchange = function(){
+            if(localStorage.getItem('lang')==='true'){
+                document.getElementById('ja-menu').style.display="none";
+                document.getElementById('en-menu').style.display="flex";
+            } else {
+                document.getElementById('ja-menu').style.display="flex";
+                document.getElementById('en-menu').style.display="none";
+            }
         }
     })
 
@@ -47,13 +73,58 @@ export default function Header() {
             <a className={`toplink ${isHamburgerOpen?"menu-opend":"menu-closed"}`}>
                 <li className={`toggle-hm`}>
                     <label className="toggle-button">
-                            <input type="checkbox" id="toggle" defaultChecked={`${isEnglish?"unchecked":"checked"}`}/>
+                            <input type="checkbox" id="toggle-hm"/>
                     </label>
                 </li>
             </a>
             
             <div className={`menu ${isHamburgerOpen?"menu-opend":"menu-closed"}`}>
-                <div className="header ja-menu">
+                <div className="header" id="ja-menu">
+                <a href="./" className="top-link"><img className="machikane_logo-pc" src={machikane_logo} alt="まちかね祭ロゴ"></img></a>
+                <div className="toggle-pc">
+                    <li className="menu-parent toggle-menu">
+                        <label className="toggle-button">
+                            <input type="checkbox" id="toggle-pc"/>
+                        </label>
+                    </li>
+                </div>
+                    <ul className="menu-grandparent">
+                        <li className="menu-parent"><span className={`menu-title ${isMenuOpenA?"is-opend":"is-closed"}`} onClick={menuOpenA}>まちかね祭について</span>
+                            <ul className={`menu-child ${isMenuOpenA?"is-opend":"is-closed"}`}>
+                                <li><a href="./about">まちかね祭とは</a></li>
+                                <li><a href="./theme">テーマ</a></li>
+                                <li><a href="./goods">グッズ</a></li>
+                                <li><a href="./greeting">ご挨拶</a></li>
+                                <li><a href="./sponsor">ご協賛</a></li>
+                            </ul>
+                        </li>
+                        <li className="menu-parent"><span className={`menu-title ${isMenuOpenB?"is-opend":"is-closed"}`} onClick={menuOpenB}>企画について</span>
+                            <ul className={`menu-child ${isMenuOpenB?"is-opend":"is-closed"}`}>
+                                <li><a href="./sections">企画区分について</a></li>
+                                <li><a href="./project-search">企画検索</a></li>
+                                <li><a href="./timetable">ステージタイムテーブル</a></li>
+                                <li><a href="./ralley">ラリー企画一覧</a></li>
+                                <li><a href="./official-project">実行委員会企画</a></li>
+                                <li><a href="./lab-open">研究室紹介</a></li>
+                            </ul>
+                        </li>
+                        <li className="menu-parent"><span className={`menu-title ${isMenuOpenC?"is-opend":"is-closed"}`} onClick={menuOpenC}>来場者の方へ</span>
+                            <ul className={`menu-child ${isMenuOpenC?"is-opend":"is-closed"}`}>
+                                <li><a href="./notes">注意事項</a></li>
+                                <li><a href="./pamphlet">公式パンフレット</a></li>
+                                <li><a href="./FAQ">よくあるご質問</a></li>
+                                <li><a href="./inquiry">お問い合わせ</a></li>
+                            </ul>
+                        </li>
+                        <li className="menu-parent"><span className={`menu-title ${isMenuOpenD?"is-opend":"is-closed"}`} onClick={menuOpenD}>アクセス・マップ</span>
+                            <ul className={`menu-child ${isMenuOpenD?"is-opend":"is-closed"}`}>
+                                <li><a href="./access">アクセス</a></li>
+                                <li><a href="./map">マップ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div className="header" id="en-menu">
                 <a href="./" className="top-link"><img className="machikane_logo-pc" src={machikane_logo} alt="まちかね祭ロゴ"></img></a>
                 <div className="toggle-pc">
                     <li className="menu-parent">
@@ -63,7 +134,7 @@ export default function Header() {
                     </li>
                 </div>
                     <ul className="menu-grandparent">
-                        <li className="menu-parent"><span className={`menu-title ${isMenuOpenA?"is-opend":"is-closed"}`} onClick={menuOpenA}>まちかね祭について</span>
+                        <li className="menu-parent"><span className={`menu-title ${isMenuOpenA?"is-opend":"is-closed"}`} onClick={menuOpenA}>machikane祭について</span>
                             <ul className={`menu-child ${isMenuOpenA?"is-opend":"is-closed"}`}>
                                 <li><a href="./about">まちかね祭とは</a></li>
                                 <li><a href="./theme">テーマ</a></li>

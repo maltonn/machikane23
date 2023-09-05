@@ -49,78 +49,40 @@ export default function App() {
     });
   }, [location]);
 
-  if(1){
-    return (
-      <div className="App">
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about/" element={<About />} />
-          {/* <Route path="/about/" element={<AboutTmp />} /> */}
-          <Route path="/theme/" element={<Theme />} />
-          <Route path="/goods/" element={<Goods />} />
-          <Route path="/sponsor/" element={<Sponsor />} />
-  
-          <Route path="/sections/" element={<Sections />} />
-          <Route path="/project-search/" element={<Project />} />
-          {/* <Route path="/project-search/" element={<ProjectTmp />} /> */}
-          <Route path="/timetable/" element={<Timetable />} />
-          <Route path="/ralley/" element={<Ralley />} />
-          <Route path="/official-project/" element={<OfficialProject />} />
-          <Route path="/lab-open/" element={<LabOpen />} />
-  
-          <Route path="/notes/" element={<Notes />} />
-          <Route path="/pamphlet/" element={<Pamphlet />} />
-          <Route path="/FAQ/" element={<FAQ />} />
-          <Route path="/inquiry/" element={<Inquiry />} />
-  
-          <Route path="/access/" element={<Access />} />
-          <Route path="/map/" element={<Map />} />
-  
-          <Route path="/en" element={<HomeEn />} />
-  
-          <Route path="*" element={<Error404 />} />
-  
-        </Routes>
-        <Footer />
-      </div>
-    );
-  } else {
-    return (
-      <div className="App">
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about/" element={<About />} />
-          {/* <Route path="/about/" element={<AboutTmp />} /> */}
-          <Route path="/theme/" element={<Theme />} />
-          <Route path="/goods/" element={<Goods />} />
-          <Route path="/sponsor/" element={<Sponsor />} />
-  
-          <Route path="/sections/" element={<Sections />} />
-          <Route path="/project-search/" element={<Project />} />
-          {/* <Route path="/project-search/" element={<ProjectTmp />} /> */}
-          <Route path="/timetable/" element={<Timetable />} />
-          <Route path="/ralley/" element={<Ralley />} />
-          <Route path="/official-project/" element={<OfficialProject />} />
-          <Route path="/lab-open/" element={<LabOpen />} />
-  
-          <Route path="/notes/" element={<Notes />} />
-          <Route path="/pamphlet/" element={<Pamphlet />} />
-          <Route path="/FAQ/" element={<FAQ />} />
-          <Route path="/inquiry/" element={<Inquiry />} />
-  
-          <Route path="/access/" element={<Access />} />
-          <Route path="/map/" element={<Map />} />
-  
-          <Route path="/en" element={<HomeEn />} />
-  
-          <Route path="*" element={<Error404 />} />
-  
-        </Routes>
-        <Footer />
-      </div>
-    );
-  }
+  return (
+    <div className="App">
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about/" element={<About />} />
+        {/* <Route path="/about/" element={<AboutTmp />} /> */}
+        <Route path="/theme/" element={<Theme />} />
+        <Route path="/goods/" element={<Goods />} />
+        <Route path="/sponsor/" element={<Sponsor />} />
+
+        <Route path="/sections/" element={<Sections />} />
+        <Route path="/project-search/" element={<Project />} />
+        {/* <Route path="/project-search/" element={<ProjectTmp />} /> */}
+        <Route path="/timetable/" element={<Timetable />} />
+        <Route path="/ralley/" element={<Ralley />} />
+        <Route path="/official-project/" element={<OfficialProject />} />
+        <Route path="/lab-open/" element={<LabOpen />} />
+
+        <Route path="/notes/" element={<Notes />} />
+        <Route path="/pamphlet/" element={<Pamphlet />} />
+        <Route path="/FAQ/" element={<FAQ />} />
+        <Route path="/inquiry/" element={<Inquiry />} />
+
+        <Route path="/access/" element={<Access />} />
+        <Route path="/map/" element={<Map />} />
+
+        <Route path="/en" element={<HomeEn />} />
+
+        <Route path="*" element={<Error404 />} />
+
+      </Routes>
+      <Footer />
+    </div>
+  );
 }
 

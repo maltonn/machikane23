@@ -131,6 +131,9 @@ header > h1{
 .toggle-hm .menu-parent {
     width: 100px;
 }
+#en-menu{
+    display: none;
+}
 @keyframes FadeIn {
     0% {
       opacity: 0;
