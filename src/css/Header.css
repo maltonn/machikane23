@@ -42,14 +42,18 @@ header > h1{
 }
 .menu-grandparent{
     display: flex;
+    
 }
 .menu-grandparent li{
-    margin-right: 60px;
+    margin-right: 55px;
 }
 .menu-child{
     display: none;
+    width: 250px;
 }
-
+.menu-parent{
+    width: 150px;
+}
 .menu-parent:hover .menu-child{
     display: block;
     background : rgba(179, 229, 237, 1);
