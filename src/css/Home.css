@@ -347,7 +347,16 @@ schedule,stage,lab
     transform: translate(0,0);
   }
 }
-
+.swimkame1{
+  width: 10vw;
+  position: relative;
+  bottom: -30vh;
+  left:7%;
+}
+.swimkame1 img{
+  width: 100%;
+  animation:flying 10s ease-in-out infinite;
+}
 /*======================
 海底の生成される泡の表示のためのもの
 ======================*/
