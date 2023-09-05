@@ -9,7 +9,7 @@ export default function AccessEn() {
             <div className="preparation">
                 <p>Coming soon! Now preparing.</p>
                 <span>Current page：Access</span><br></br>
-                <a href="./en">Back to the TOP</a>
+                <a href="./">Back to the TOP</a>
             </div>
         </div>
     )

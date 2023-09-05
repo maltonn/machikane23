@@ -9,7 +9,7 @@ export default function MapEn() {
             <div className="preparation">
                 <p>Coming soon! Now preparing.</p>
                 <span>Current page：Map</span><br></br>
-                <a href="./en">Back to the TOP</a>
+                <a href="./">Back to the TOP</a>
             </div>
         </div>
     )

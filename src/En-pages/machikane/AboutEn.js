@@ -9,7 +9,7 @@ export default function AboutEn() {
             <div className="preparation">
                 <p>Coming soon! Now preparing.</p>
                 <span>Current page：About Machikanesai</span><br></br>
-                <a href="./en">Back to the TOP</a>
+                <a href="./">Back to the TOP</a>
             </div>
         </div>
     )
