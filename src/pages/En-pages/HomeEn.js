@@ -134,7 +134,7 @@ export default function Home() {
   
             <div className="ocean-card lab">
               <div className="titles"><nobr><p className="item1">●</p><span id="title">Invite to Lab</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
-              <p>研究室の企画は、以下のリンクからご覧ください。</p>
+              <p>Please click the link below.</p>
               <a href="./lab-open">詳細はこちら</a>
             </div>
   
@@ -147,29 +147,29 @@ export default function Home() {
                   </div></a>
                   <a href="./goods"><div className="pickup-button">
                     <div className="pickup-icon"><img src={goods} alt="goods"></img></div>  
-                    <div className="pickup-title">グッズ</div>
+                    <div className="pickup-title">Official Goods</div>
                   </div></a>
                   <a href="./official-project"><div className="pickup-button">
                     <div className="pickup-icon"><img src={recommend} alt="recommend"></img></div>  
-                    <div className="pickup-title">委員会企画</div>
+                    <div className="pickup-title">Projects by Festival Committee</div>
                   </div></a><br/>
                   <a href="./access"><div className="pickup-button">
                     <div className="pickup-icon"><img src={access} alt="access"></img></div>
-                    <div className="pickup-title">アクセス</div>
+                    <div className="pickup-title">Access</div>
                   </div></a>
                   <a href="./map"><div className="pickup-button">
                     <div className="pickup-icon"><img src={map} alt="map"></img></div>  
-                    <div className="pickup-title">マップ</div>
+                    <div className="pickup-title">Map</div>
                   </div></a>
                   <a href="./timetable"><div className="pickup-button">
                     <div className="pickup-icon"><img src={timetable} alt="timetable"></img></div> 
-                    <div className="pickup-title">ステージタイムテーブル</div>
+                    <div className="pickup-title">Stage Performance Schedule</div>
                   </div></a>
               </div>
             </div>
     
             <div className ="ocean-card about">
-              <div className="titles"><nobr><p className="item1">●</p><span id="title">テーマ</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
+              <div className="titles"><nobr><p className="item1">●</p><span id="title">Theme</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
               <div className="theme-title">"<ruby>阪燦々<rt>はんさんさん</rt></ruby>"</div>
               <div className="theme-context">
                 <p>2023年度まちかね祭のテーマは「阪燦々」（はんさんさん）に決定いたしました。</p>
