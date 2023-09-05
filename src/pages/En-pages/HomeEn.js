@@ -56,7 +56,7 @@ export default function Home() {
                           <td className="news-content">We've updated the top page.</td>
                       </tr>
                       <tr>
-                          <td className="news-date">Sep.1(Fri.)The official website is now open!</td>
+                          <td className="news-date">Sep.1(Fri.)</td>
                           <td className="news-content">The official website is now open!</td>
                       </tr>
                   </tbody>
@@ -128,8 +128,8 @@ export default function Home() {
             </div>
   
             <div className="ocean-card stage">
-              <div className="titles" id="stage-title"><p className="item1">●</p><span id="title"><nobr>Stage Performances</nobr> Coming soon!</span><p className="item2">●</p><p className="item3">●</p></div>
-              <div className="pre-ocean">まちかね祭当日までお待ちください</div>
+              <div className="titles" id="stage-title"><p className="item1">●</p><span id="title"><nobr>Stage Performances</nobr> now ongoing</span><p className="item2">●</p><p className="item3">●</p></div>
+              <div className="pre-ocean">Coming soon!</div>
             </div>
   
             <div className="ocean-card lab">
