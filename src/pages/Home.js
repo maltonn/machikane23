@@ -123,7 +123,7 @@ export default function Home() {
             </table>
           </div>
 
-          <div className="machikame1"> 
+          <div className="swimkame1"> 
             <img src={machikame2} alt="まちかめ2"></img>
           </div>
 
