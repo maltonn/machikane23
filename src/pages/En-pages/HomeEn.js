@@ -75,7 +75,7 @@ export default function Home() {
           <div className="mainpage2">
   
             <div className="ocean-card">
-              <div className="titles"><nobr><p className="item1">●</p><span id="title">企画区分について</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
+              <div className="titles"><nobr><p className="item1">●</p><span id="title">About Projects</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
               <div className="sections">
                 <span style={{right:0, color:'#F4E511'}}>館内区分</span>
                 <p>館内区分では、様々なサークル、部活による個性豊かな演奏、販売、体験、展示などの企画が行われます。これらはその名の通り、全学教育共通棟、文法経講義棟、法経講義棟、学生会館の教室内で実施されております。ぜひお立ち寄りください。</p>
@@ -128,7 +128,7 @@ export default function Home() {
             </div>
   
             <div className="ocean-card stage">
-              <div className="titles" id="stage-title"><p className="item1">●</p><span id="title"><nobr>Stage Performances</nobr> now ongoing</span><p className="item2">●</p><p className="item3">●</p></div>
+              <div className="titles" id="stage-title"><p className="item1">●</p><span id="title"><nobr>Stage Performances</nobr> Coming soon!</span><p className="item2">●</p><p className="item3">●</p></div>
               <div className="pre-ocean">まちかね祭当日までお待ちください</div>
             </div>
   
