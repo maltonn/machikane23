@@ -350,11 +350,11 @@ schedule,stage,lab
 .swimkame1{
   width: 10vw;
   position: relative;
-  bottom: -30vh;
-  left:7%;
+  bottom: 0vh;
+  right: -70%;
 }
 .swimkame1 img{
-  width: 100%;
+  width: 200%;
   animation:flying 10s ease-in-out infinite;
 }
 /*======================
