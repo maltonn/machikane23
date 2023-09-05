@@ -218,7 +218,7 @@ schedule,stage,lab
   position: relative;
   top:9px;
   left:4vw;
-  margin: 50px 0px 50px 0px;
+  margin: 50px 0px 0px 0px;
 }
 .item2{
   display: inline-block;
@@ -227,6 +227,7 @@ schedule,stage,lab
   position: relative;
   top:9px;
   right:1vw;
+  margin: 0;
 }
 .item3{
   display: inline-block;
@@ -235,6 +236,7 @@ schedule,stage,lab
   position: relative;
   top:9px;
   right:1vw;
+  margin-bottom: 1.2vw;
 }
 
 #pickup{
@@ -245,6 +247,8 @@ schedule,stage,lab
 .titles{
    display:flex;
   justify-content: center; 
+  align-items: flex-end;
+  margin-bottom: 50px;
 }
 /*pickupの文字の色を変化させる*/
 .ocean a{
@@ -511,9 +515,6 @@ schedule,stage,lab
 ======================*/
   @media  (max-width: 490px){
     /*title修正*/
-    .item1{
-      margin: 20px 0px 20px 0px
-    }
     .news, .notes{
       box-sizing: content-box;
       width: 100%;
@@ -573,7 +574,7 @@ schedule,stage,lab
       position: relative; 
       top:9px;
       left:3vw;
-      margin: 50px 0px 50px 0px;
+      margin: 50px 0px 0px 0px;
     }
     .item2{
       display: inline-block;
@@ -731,7 +732,7 @@ schedule,stage,lab
     position: relative;
     top:9px;
     left:5vw;
-    margin: 50px 0px 50px 0px;
+    margin: 50px 0px 0px 0px;
   }
   .item2{
     display: inline-block;
