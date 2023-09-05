@@ -35,6 +35,8 @@ export default function Header() {
             if(localStorage.getItem('lang')==='true'){
                 document.getElementById('toggle-hm').checked=!document.getElementById('toggle-hm').checked
                 document.getElementById('toggle-pc').checked=!document.getElementById('toggle-pc').checked
+                document.getElementById('ja-menu').style.display="none";
+                document.getElementById('en-menu').style.display="block";
             }
         }
         document.getElementById('toggle-pc').onclick = function(){
@@ -45,6 +47,8 @@ export default function Header() {
             if(localStorage.getItem('lang')==='true'){
                 document.getElementById('toggle-hm').checked=!document.getElementById('toggle-hm').checked
                 document.getElementById('toggle-pc').checked=!document.getElementById('toggle-pc').checked
+                document.getElementById('ja-menu').style.display="none";
+                document.getElementById('en-menu').style.display="block";
             }
         }
         document.getElementById('toggle-hm').onchange = function(){
@@ -59,9 +63,9 @@ export default function Header() {
         document.getElementById('toggle-pc').onchange = function(){
             if(localStorage.getItem('lang')==='true'){
                 document.getElementById('ja-menu').style.display="none";
-                document.getElementById('en-menu').style.display="flex";
+                document.getElementById('en-menu').style.display="";
             } else {
-                document.getElementById('ja-menu').style.display="flex";
+                document.getElementById('ja-menu').style.display="";
                 document.getElementById('en-menu').style.display="none";
             }
         }
@@ -125,7 +129,7 @@ export default function Header() {
                     </ul>
                 </div>
                 <div className="header" id="en-menu">
-                <a href="./" className="top-link"><img className="machikane_logo-pc" src={machikane_logo} alt="まちかね祭ロゴ"></img></a>
+                <a href="./en" className="top-link"><img className="machikane_logo-pc" src={machikane_logo} alt="まちかね祭ロゴ"></img></a>
                 <div className="toggle-pc">
                     <li className="menu-parent">
                         <label className="toggle-button">
