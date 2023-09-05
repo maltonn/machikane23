@@ -36,7 +36,6 @@ header > h1{
 }
 .menu li, .menu ul{
     list-style: none;
-    margin-right: 10px;
 }
 .menu-title{
     font-size: 1rem;
@@ -44,8 +43,8 @@ header > h1{
 .menu-grandparent{
     display: flex;
 }
-.menu-parent{
-    width: 250px;
+.menu-grandparent li{
+    margin-right: 60px;
 }
 .menu-child{
     display: none;
@@ -67,18 +66,18 @@ header > h1{
     color: #75bbff;
 }
 .menu-child li:hover{
-    background-color: #FFE4BB;
-    border-radius: 10px 20px 20px 10px;
+    background-color: #ffff;
+    border-radius: 5px;
     width: 100%;
 }
 .toggle-button {
     display: flex;
     align-items: center;
     position: absolute;
-    left: 5em;
-    top: 0.75em;
-    width: 70px;
-    height: 25px;
+    left: 6em;
+    top: 1.3em;
+    width: 40px;
+    height: 18px;
     border-radius: 50px;
     box-sizing: content-box;
     background-color: #ff8d8d33;
@@ -92,9 +91,9 @@ header > h1{
 
 .toggle-button::before {
     position: absolute;
-    left: -7px;
-    width: 42px;
-    height: 42px;
+    left: -13px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: #ff8d8d;
     content: '';
@@ -102,30 +101,33 @@ header > h1{
 }
 
 .toggle-button:has(:checked)::before {
-    left: 43px;
+    left: 25px;
     background-color: #75bbff;
 }
 
 .toggle-button::after {
     position: absolute;
-    left: 15px;
+    left: 3px;
     transform: translateX(-50%);
     color: #fff;
     font-weight: 600;
-    font-size: .9em;
-    content: 'Jap';
+    font-size: 0.8em;
+    content: 'Jp';
     transition: left .4s;
 }
 
 .toggle-button:has(:checked)::after {
-    left: 66px;
-    content: 'Eng';
+    left: 42px;
+    content: 'En';
 }
 
 .toggle-button input {
     display: none;
 }
-.toggle .menu-parent {
+.toggle-pc .menu-parent {
+    width: 100px;
+}
+.toggle-hm .menu-parent {
     width: 100px;
 }
 @keyframes FadeIn {
@@ -140,11 +142,19 @@ header > h1{
 .hamburger{
     display: none;
 }
+@media screen and (min-width:990px){
+    .toggle-hm{
+        display: none;
+    }
+}
 
 /*以下スマホ用*/
 @media screen and (max-width:490px){
-    .toggle{
+    .toggle-pc{
         display: none;
+    }
+    .toggle-hm{
+        list-style-type: none;
     }
     .machikane_logo-sp.menu-closed{
         opacity: 0;
@@ -282,15 +292,18 @@ header > h1{
           transform: translateX(0);
         }
     }
-    .toggle-button {
+    /* .toggle-button {
         display: none;
-    }
+    } */
 }
 
 /*iPadとか*/
 @media screen and (min-width:490px) and (max-width: 990px){
-    .toggle{
+    .toggle-pc{
         display: none;
+    }
+    .toggle-hm{
+        list-style-type: none;
     }
     .machikane_logo-sp.menu-closed{
         opacity: 0;
@@ -392,9 +405,9 @@ header > h1{
         border: none;
         animation: SlideIn 0.8s;
     }
-    .toggle-button {
+    /* .toggle-button {
         display: none;
-    }
+    } */
     @keyframes SlideIn {
         0% {
           opacity: 0;/*初期状態では透明に*/

@@ -12,7 +12,6 @@ export default function About() {
           <title>まちかね祭とは|まちかね祭2023</title>
         </Helmet>
         <div className="sky2">
-          <div className="cloud1"><img src={cloud1} alt="雲"></img></div>
           <div className="cloud2"><img src={cloud2} alt="雲"></img></div>
           
             <div className="mainpage1">

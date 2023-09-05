@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 import "../css/Header.css"
 import machikane_logo from "../imgs/main-visual-title.svg"
@@ -25,18 +25,40 @@ export default function Header() {
     function menuOpenD(){
         setIsMenuOpenD(prev => !prev)
     }
+    const [isEnglish, setIsEnglish] =useState(false)
+    function clickEnglish(){
+        setIsEnglish(prev => !prev)
+    } 
+    useEffect(() =>{
+        let language = false;
+        window.addEventListener('load',()=>{
+            language=document.getElementById('toggle').checked;
+        });
+        if (language){
+            document.getElementById('toggle').defaulChecked='checked';
+        } else {
+            document.getElementById('toggle').defaulChecked=false;
+        }
+    })
 
     return (
         <header>
             <a href="./" className={`top-link ${isHamburgerOpen?"menu-opend":"menu-closed"}`}><img className={`machikane_logo-sp ${isHamburgerOpen?"menu-opend":"menu-closed"}`} src={machikane_logo} alt="まちかね祭ロゴ"></img></a>
+            <a className={`toplink ${isHamburgerOpen?"menu-opend":"menu-closed"}`}>
+                <li className={`toggle-hm`}>
+                    <label className="toggle-button">
+                            <input type="checkbox" id="toggle" defaultChecked={`${isEnglish?"unchecked":"checked"}`}/>
+                    </label>
+                </li>
+            </a>
             
             <div className={`menu ${isHamburgerOpen?"menu-opend":"menu-closed"}`}>
                 <div className="header ja-menu">
                 <a href="./" className="top-link"><img className="machikane_logo-pc" src={machikane_logo} alt="まちかね祭ロゴ"></img></a>
-                <div className="toggle">
-                    <li className={`${isHamburgerOpen?"":"menu-parent"}`}>
+                <div className="toggle-pc">
+                    <li className="menu-parent">
                         <label className="toggle-button">
-                            <input type="checkbox"/>
+                            <input type="checkbox" id="toggle"/>
                         </label>
                     </li>
                 </div>
