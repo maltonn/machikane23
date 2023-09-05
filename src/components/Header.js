@@ -129,7 +129,7 @@ export default function Header() {
                     </ul>
                 </div>
                 <div className="header" id="en-menu">
-                <a href="./" className="top-link"><img className="machikane_logo-pc" src={machikane_logo} alt="まちかね祭ロゴ"></img></a>
+                <a href="./en" className="top-link"><img className="machikane_logo-pc" src={machikane_logo} alt="まちかね祭ロゴ"></img></a>
                 <div className="toggle-pc">
                     <li className="menu-parent">
                         <label className="toggle-button">
