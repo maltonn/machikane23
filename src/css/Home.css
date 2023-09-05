@@ -209,7 +209,7 @@ schedule,stage,lab
   font-size: 37px;
   color: #fff;
   position: relative;
-  right: 22px;
+  right: 0vw;
 }
 .item1{
   display: inline-block;
@@ -217,7 +217,7 @@ schedule,stage,lab
   opacity: 0.30;
   position: relative;
   top:9px;
-  left:10px;
+  left:4vw;
   margin: 50px 0px 50px 0px;
 }
 .item2{
@@ -226,7 +226,7 @@ schedule,stage,lab
   opacity: 0.30;
   position: relative;
   top:9px;
-  right:30px
+  right:1vw;
 }
 .item3{
   display: inline-block;
@@ -234,7 +234,7 @@ schedule,stage,lab
   opacity: 0.30;
   position: relative;
   top:9px;
-  right:30px;
+  right:1vw;
 }
 
 #pickup{
@@ -249,11 +249,6 @@ schedule,stage,lab
 /*pickupの文字の色を変化させる*/
 .ocean a{
   color: #fff;
-}
-
-.pickup-titles{
-  position: relative;
-  left: 10px;
 }
 
 #title{
@@ -519,10 +514,6 @@ schedule,stage,lab
     .item1{
       margin: 20px 0px 20px 0px
     }
-    .pickup-titles{
-      position: relative;
-      left: 10px;
-    }
     .news, .notes{
       box-sizing: content-box;
       width: 100%;
@@ -573,7 +564,7 @@ schedule,stage,lab
       font-size: 16px;
     }
     .ocean span{
-      right:3vw;
+      right:7vw;
     }
     .item1{
       display: inline-block;
@@ -581,7 +572,7 @@ schedule,stage,lab
       opacity: 0.30;
       position: relative; 
       top:9px;
-      left:22px;
+      left:3vw;
       margin: 50px 0px 50px 0px;
     }
     .item2{
@@ -590,7 +581,7 @@ schedule,stage,lab
       opacity: 0.30;
       position: relative;
       top:9px;
-      right:16px
+      right:9vw;
     }
     .item3{
       display: inline-block;
@@ -598,7 +589,7 @@ schedule,stage,lab
       opacity: 0.30;
       position: relative; 
       top:9px;
-      right:16px;
+      right:9vw;
     }
     #move img:nth-child(1){
       width: 200%;
@@ -681,10 +672,6 @@ schedule,stage,lab
     background-size: 40% auto,100% auto,100%;
     background-position:center,center;
   }
-  .pickup-titles{
-    position: relative;
-    left: 20px;
-  }
   .machikame1{
     width:14vw;
   }
@@ -734,13 +721,16 @@ schedule,stage,lab
     font-size: 2.4rem;
     position:relative;
   }
+  .ocean span{
+    right: 0vw;
+  }
   .item1{
     display: inline-block;
     font-size: 100px;
     opacity: 0.30;
     position: relative;
     top:9px;
-    left:0px;
+    left:5vw;
     margin: 50px 0px 50px 0px;
   }
   .item2{
@@ -749,7 +739,7 @@ schedule,stage,lab
     opacity: 0.30;
     position: relative;
     top:9px;
-    right:40px
+    right:1vw;
   }
   .item3{
     display: inline-block;
@@ -757,7 +747,7 @@ schedule,stage,lab
     opacity: 0.30;
     position: relative;
     top:9px;
-    right:40px;
+    right:1vw;
   }
  
   .pickup-button{
@@ -765,7 +755,7 @@ schedule,stage,lab
     margin-bottom: 60px;
     margin-left: 25px;
   }
-  .pickup-title{
+  .pickup-titles{
     margin-left: 10px;
     bottom: 15px;
     font-size: 1.7rem;
