@@ -27,48 +27,6 @@ export default function Header() {
     }
     
     useEffect(() =>{
-        // document.getElementById('toggle-sp').onclick = function(){
-        //     localStorage.setItem('lang',document.getElementById('toggle-sp').checked);
-        //     document.getElementById('toggle-pc').checked=!document.getElementById('toggle-pc').checked;
-        // }
-        // window.onload = function(){
-        //     if(localStorage.getItem('lang')==='true'){
-        //         document.getElementById('toggle-sp').checked=!document.getElementById('toggle-sp').checked
-        //         document.getElementById('toggle-pc').checked=!document.getElementById('toggle-pc').checked
-        //         document.getElementById('ja-menu').style.display="none";
-        //         document.getElementById('en-menu').style.display="block";
-        //     }
-        // }
-        // document.getElementById('toggle-pc').onclick = function(){
-        //     localStorage.setItem('lang',document.getElementById('toggle-pc').checked);
-        //     document.getElementById('toggle-sp').checked=!document.getElementById('toggle-sp').checked;
-        // }
-        // window.onload = function(){
-        //     if(localStorage.getItem('lang')==='true'){
-        //         document.getElementById('toggle-sp').checked=!document.getElementById('toggle-sp').checked
-        //         document.getElementById('toggle-pc').checked=!document.getElementById('toggle-pc').checked
-        //         document.getElementById('ja-menu').style.display="none";
-        //         document.getElementById('en-menu').style.display="block";
-        //     }
-        // }
-        // document.getElementById('toggle-sp').onchange = function(){
-        //     if(localStorage.getItem('lang')==='true'){
-        //         document.getElementById('ja-menu').style.display="none";
-        //         document.getElementById('en-menu').style.display="block";
-        //     } else {
-        //         document.getElementById('ja-menu').style.display="block";
-        //         document.getElementById('en-menu').style.display="none";
-        //     }
-        // }
-        // document.getElementById('toggle-pc').onchange = function(){
-        //     if(localStorage.getItem('lang')==='true'){
-        //         document.getElementById('ja-menu').style.display="none";
-        //         document.getElementById('en-menu').style.display="";
-        //     } else {
-        //         document.getElementById('ja-menu').style.display="";
-        //         document.getElementById('en-menu').style.display="none";
-        //     }
-        // }
         window.onload = function(){
             var path = window.location.pathname;
             let urlArray=path.split("/");
