@@ -52,11 +52,11 @@ export default function Home() {
               <table className="news-table">
                 <tbody>
                       <tr>
-                          <td className="news-date">9/16(土)</td>
-                          <td className="news-content">トップページを更新しました。</td>
+                          <td className="news-date">Sep.16(Sat.)</td>
+                          <td className="news-content">We've updated the top page.</td>
                       </tr>
                       <tr>
-                          <td className="news-date">9/8(金)</td>
+                          <td className="news-date">Sep.1(Fri.)The official website is now open!</td>
                           <td className="news-content">The official website is now open!</td>
                       </tr>
                   </tbody>
