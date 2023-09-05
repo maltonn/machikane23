@@ -1,17 +1,17 @@
 import { Helmet } from "react-helmet";
-import "../../css/Common.css"
-import"../../css/Home.css"
-import machikame1 from "../../imgs/animal/machikame1.png"
-import machikame2 from "../../imgs/animal/machikame2.png"
-import left_cloud from "../../imgs/cloud/left_cloud.png"
-import right_cloud from "../../imgs/cloud/right_cloud.png"
-import machikani from "../../imgs/animal/machikani.png"
-import search from "../../imgs/pickup_icon/icon_search.png"
-import goods from "../../imgs/pickup_icon/icon_goods.png"
-import recommend from "../../imgs/pickup_icon/icon_recommend.png"
-import access from "../../imgs/pickup_icon/icon_access.png"
-import map from "../../imgs/pickup_icon/icon_map.png"
-import timetable from "../../imgs/pickup_icon/icon_stage.png"
+import "../css/Common.css"
+import"../css/Home.css"
+import machikame1 from "../imgs/animal/machikame1.png"
+import machikame2 from "../imgs/animal/machikame2.png"
+import left_cloud from "../imgs/cloud/left_cloud.png"
+import right_cloud from "../imgs/cloud/right_cloud.png"
+import machikani from "../imgs/animal/machikani.png"
+import search from "../imgs/pickup_icon/icon_search.png"
+import goods from "../imgs/pickup_icon/icon_goods.png"
+import recommend from "../imgs/pickup_icon/icon_recommend.png"
+import access from "../imgs/pickup_icon/icon_access.png"
+import map from "../imgs/pickup_icon/icon_map.png"
+import timetable from "../imgs/pickup_icon/icon_stage.png"
 import { useEffect } from "react"
 export default function Home() {
     useEffect(() => {
@@ -33,7 +33,7 @@ export default function Home() {
       return(
     <div className="top-main">
           <Helmet>
-            <title>トップページ|まちかね祭2023</title>
+            <title>TopPage|Machikane2023</title>
           </Helmet>
           <div id="loader">
             <div className="machikame1"> 
