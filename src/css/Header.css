@@ -10,6 +10,10 @@ header{
 header > h1{
     margin: 0;
 }
+.top-link{
+    display: block;
+    width: 50px;
+}
 .machikane_logo-pc{
     display: block;
     height: 50px;
@@ -41,8 +45,7 @@ header > h1{
     font-size: 1.2rem;
 }
 .menu-grandparent{
-    display: flex;
-    
+    display: flex;   
 }
 .menu-grandparent{
     margin-right: 5px;
@@ -139,11 +142,17 @@ header > h1{
 .toggle-pc .menu-parent {
     width: 100px;
 }
-.toggle-hm .menu-parent {
+.toggle-sp .menu-parent {
     width: 100px;
 }
 #en-menu{
     display: none;
+}
+.toggle-sp{
+    display: none;
+}
+.toggle-pc{
+    display: block;
 }
 @keyframes FadeIn {
     0% {
@@ -157,18 +166,23 @@ header > h1{
 .hamburger{
     display: none;
 }
-@media screen and (min-width:1090px){
-    .toggle-hm{
-        display: none;
-    }
-}
 
 /*以下スマホ用*/
 @media screen and (max-width:490px){
+    .toggle-sp.menu-opend{
+        display: block;
+        z-index: 1;
+        position: absolute;
+        top:3px;
+        animation: FadeIn 1.0s;
+    }
+    .toggle-sp.menu-closed{
+        opacity: 0;
+    }
     .toggle-pc{
         display: none;
     }
-    .toggle-hm{
+    .toggle-sp{
         list-style-type: none;
     }
     .machikane_logo-sp.menu-closed{
@@ -185,6 +199,7 @@ header > h1{
     }
     .header>a.top-link{
         margin-right: 0px;
+        width: 0;
     }
     /* ハンバーガーメニュー */
     .menu-grandparent{
@@ -239,6 +254,9 @@ header > h1{
     }
     .menu-title{
         font-size: 1rem;
+    }
+    .menu-grandparent li:first-child{
+        margin-right: 0px;
     }
     .menu-grandparent li{
         margin-right: 0px;
@@ -324,9 +342,6 @@ header > h1{
     .toggle-pc{
         display: none;
     }
-    .toggle-hm{
-        list-style-type: none;
-    }
     .machikane_logo-sp.menu-closed{
         opacity: 0;
     }
@@ -341,6 +356,7 @@ header > h1{
     }
     .header>a.top-link{
         margin-right: 0px;
+        width: 0;
     }
     /* ハンバーガーメニュー */
     .menu-grandparent{
@@ -373,6 +389,9 @@ header > h1{
     }
     .menu-title{
         font-size: 1.3rem;
+    }
+    .menu-grandparent li:first-child{
+        margin-right: 0px;
     }
     .menu-grandparent li{
         margin-right: 0px;
