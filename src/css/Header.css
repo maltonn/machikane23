@@ -36,7 +36,6 @@ header > h1{
 }
 .menu li, .menu ul{
     list-style: none;
-    margin-right: 58px;
 }
 .menu-title{
     font-size: 1rem;
@@ -44,9 +43,9 @@ header > h1{
 .menu-grandparent{
     display: flex;
 }
-/* .menu-parent{
-    width: 250px;
-} */
+.menu-grandparent li{
+    margin-right: 60px;
+}
 .menu-child{
     display: none;
 }
