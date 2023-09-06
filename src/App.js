@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 
 import Home from "./pages/Home";
 import About from "./pages/machikane/About";
+import Adresses from './pages/machikane/Adresses';
 import Theme from './pages/machikane/Theme';
 import Goods from './pages/machikane/Goods';
 import Sponsor from './pages/machikane/Sponsor';
@@ -29,6 +30,7 @@ import Map from './pages/access-map/Map';
 
 import HomeEn from './En-pages/HomeEn';
 import AboutEn from './En-pages/machikane/AboutEn';
+import AdressesEn from './En-pages/machikane/AdressesEn';
 import ThemeEn from './En-pages/machikane/ThemeEn';
 import GoodsEn from './En-pages/machikane/GoodsEn';
 import SponsorEn from './En-pages/machikane/SponsorEn';
@@ -75,6 +77,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about/" element={<About />} />
         {/* <Route path="/about/" element={<AboutTmp />} /> */}
+        <Route path="/adresses/" element={<Adresses />} />
         <Route path="/theme/" element={<Theme />} />
         <Route path="/goods/" element={<Goods />} />
         <Route path="/sponsor/" element={<Sponsor />} />
@@ -97,6 +100,7 @@ export default function App() {
 
         <Route path="/en" element={<HomeEn />} />
         <Route path="/en/about/" element={<AboutEn />} />
+        <Route path="/adresses/" element={<AdressesEn />} />
         <Route path="/en/theme/" element={<ThemeEn />} />
         <Route path="/en/goods/" element={<GoodsEn />} />
         <Route path="/en/sponsor/" element={<SponsorEn />} />
