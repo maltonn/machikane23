@@ -342,6 +342,13 @@ header > h1{
     .toggle-pc{
         display: none;
     }
+    .toggle-sp.menu-opend {
+        display: block;
+        z-index: 1;
+        position: absolute;
+        top: 3px;
+        animation: FadeIn 1.0s;
+    }
     .machikane_logo-sp.menu-closed{
         opacity: 0;
     }
