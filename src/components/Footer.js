@@ -18,7 +18,7 @@ window.addEventListener('load', () => {
 export default function Footer() {
     return(
         <footer id="footer">
-            <div className="logo"><a href="./" className="top-link"><img className="machikane_logo" src={machikane_logo} alt="まちかね祭ロゴ"></img></a></div>
+            <div className="logo"><a href="./"><img className="machikane_logo" src={machikane_logo} alt="まちかね祭ロゴ"></img></a></div>
             <div className="sns">
                     <a href="https://twitter.com/machikanesai" target="_blank" rel="noreferrer"><img className="X" src={X} alt="xIcon"></img></a>
                     <a href="https://www.instagram.com/ou_machikanesai/" target="_blank" rel="noreferrer"><img className="insta" src={insta} alt="instaIcon"></img></a>
