@@ -134,7 +134,7 @@ export default function Header() {
                         </li>
                         <li className="menu-parent"><span className={`menu-title ${isMenuOpenB?"is-opend":"is-closed"}`} onClick={menuOpenB}>Projects</span>
                             <ul className={`menu-child ${isMenuOpenB?"is-opend":"is-closed"}`}>
-                                <li><a href="./sections">About</a></li>
+                                <li><a href="./sections">About Projects</a></li>
                                 <li><a href="./project-search">Project Search</a></li>
                                 <li><a href="./timetable">Stage Performance Schedule</a></li>
                                 <li><a href="./ralley">Rally Projects</a></li>
