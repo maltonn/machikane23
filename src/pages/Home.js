@@ -21,7 +21,7 @@ export default function Home() {
         for (var i = 0; i < move.length; i++) {
           move[i].classList.add('loaded');
         }
-      }, 1000);
+      }, 0);
     });
     const $ = el => document.querySelector(el);
     window.addEventListener('load', () => {
@@ -85,11 +85,11 @@ export default function Home() {
             </div>
             <div className="okugai">
               <span style={{right:0, color:'#F4E511'}}>屋外区分</span>
-              <p>屋外区分では、パフォーマンスを中心として、展示など多様な企画が行われます。2023年度まちかね祭では、学生交流棟・学生会館横・c棟前・文学研究棟前・サイバーメディアセンター横など建物外かつ模擬店のテント以外の場所で行われます。ぜひお越しください。</p>
+              <p>屋外区分では、パフォーマンスを中心として、展示など多様な企画が行われます。2023年度まちかね祭では、学生交流棟・学生会館横・C棟前・文学研究棟前・サイバーメディアセンター横など建物外かつ模擬店のテント以外の場所で行われます。ぜひお越しください。</p>
             </div>
             <div className="stage">
               <span style={{right:0, color:'#F4E511'}}>ステージ区分</span>
-              <p>ステージ区分では、カルチェ前のステージ奏とかさね前のステージ宙の2つのステージで様々な企画が行われます。バンド演奏からダンスパフォーマンスまで、迫力あるステージをぜひ楽しんでください！</p>
+              <p>ステージ区分では、カルチエ前のステージ奏とかさね前のステージ宙の2つのステージで様々な企画が行われます。バンド演奏からダンスパフォーマンスまで、迫力あるステージをぜひ楽しんでください！</p>
             </div>
             <div className="mogiten">
               <span style={{right:0, color:'#F4E511'}}>模擬店区分</span>

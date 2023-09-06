@@ -90,9 +90,9 @@ export default function Header() {
                         <li className="menu-parent"><span className={`menu-title ${isMenuOpenA?"is-opend":"is-closed"}`} onClick={menuOpenA}>まちかね祭について</span>
                             <ul className={`menu-child ${isMenuOpenA?"is-opend":"is-closed"}`}>
                                 <li><a href="./about">まちかね祭とは</a></li>
+                                <li><a href="./adresses">ご挨拶</a></li>
                                 <li><a href="./theme">テーマ</a></li>
                                 <li><a href="./goods">グッズ</a></li>
-                                <li><a href="./greeting">ご挨拶</a></li>
                                 <li><a href="./sponsor">ご協賛</a></li>
                             </ul>
                         </li>
@@ -123,37 +123,37 @@ export default function Header() {
                     </ul>
 
                     <ul className="menu-grandparent" id="en-menu">
-                        <li className="menu-parent"><span className={`menu-title ${isMenuOpenA?"is-opend":"is-closed"}`} onClick={menuOpenA}>about Machikanesai</span>
+                        <li className="menu-parent"><span className={`menu-title ${isMenuOpenA?"is-opend":"is-closed"}`} onClick={menuOpenA}>About</span>
                             <ul className={`menu-child ${isMenuOpenA?"is-opend":"is-closed"}`}>
-                                <li><a href="./about">What machikane</a></li>
-                                <li><a href="./theme">theme</a></li>
-                                <li><a href="./goods">goods</a></li>
-                                <li><a href="./greeting">greeting</a></li>
-                                <li><a href="./sponsor">sponsor</a></li>
+                                <li><a href="./about">What is Machikane Festival?</a></li>
+                                <li><a href="./adresses">Adresses</a></li>
+                                <li><a href="./theme">Theme</a></li>
+                                <li><a href="./goods">Official Goods</a></li>
+                                <li><a href="./sponsor">Our Sponsors</a></li>
                             </ul>
                         </li>
-                        <li className="menu-parent"><span className={`menu-title ${isMenuOpenB?"is-opend":"is-closed"}`} onClick={menuOpenB}>about project</span>
+                        <li className="menu-parent"><span className={`menu-title ${isMenuOpenB?"is-opend":"is-closed"}`} onClick={menuOpenB}>Projects</span>
                             <ul className={`menu-child ${isMenuOpenB?"is-opend":"is-closed"}`}>
-                                <li><a href="./sections">sections</a></li>
-                                <li><a href="./project-search">project</a></li>
-                                <li><a href="./timetable">timetable</a></li>
-                                <li><a href="./ralley">ralley</a></li>
-                                <li><a href="./official-project">official project</a></li>
-                                <li><a href="./lab-open">lab open</a></li>
+                                <li><a href="./sections">About</a></li>
+                                <li><a href="./project-search">Project Search</a></li>
+                                <li><a href="./timetable">Stage Performance Schedule</a></li>
+                                <li><a href="./ralley">Rally Projects</a></li>
+                                <li><a href="./official-project">Projects by Festival Committee</a></li>
+                                <li><a href="./lab-open">Introduce Our Lab</a></li>
                             </ul>
                         </li>
-                        <li className="menu-parent"><span className={`menu-title ${isMenuOpenC?"is-opend":"is-closed"}`} onClick={menuOpenC}>for visitor</span>
-                            <ul className={`menu-child ${isMenuOpenC?"is-opend":"is-closed"}`}>
-                                <li><a href="./notes">notes</a></li>
-                                <li><a href="./pamphlet">pamplet</a></li>
-                                <li><a href="./FAQ">FAQ</a></li>
-                                <li><a href="./inquiry">inquiry</a></li>
+                        <li className="menu-parent"><span className={`menu-title ${isMenuOpenC?"is-opend":"is-closed"}`} onClick={menuOpenC}>To the visitors</span>
+                            <ul className={`menu-child short ${isMenuOpenC?"is-opend":"is-closed"}`}>
+                                <li><a href="./notes">Notes</a></li>
+                                <li><a href="./pamphlet">Official Pamphlet</a></li>
+                                <li><a href="./FAQ">FAQs</a></li>
+                                <li><a href="./inquiry">Inquiry</a></li>
                             </ul>
                         </li>
-                        <li className="menu-parent"><span className={`menu-title ${isMenuOpenD?"is-opend":"is-closed"}`} onClick={menuOpenD}>access/map</span>
-                            <ul className={`menu-child ${isMenuOpenD?"is-opend":"is-closed"}`}>
-                                <li><a href="./access">access</a></li>
-                                <li><a href="./map">map</a></li>
+                        <li className="menu-parent"><span className={`menu-title ${isMenuOpenD?"is-opend":"is-closed"}`} onClick={menuOpenD}>Information</span>
+                            <ul className={`menu-child short ${isMenuOpenD?"is-opend":"is-closed"}`}>
+                                <li><a href="./access">Access</a></li>
+                                <li><a href="./map">Map</a></li>
                             </ul>
                         </li>
                     </ul>
