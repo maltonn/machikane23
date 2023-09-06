@@ -25,44 +25,65 @@ export default function Header() {
     function menuOpenD(){
         setIsMenuOpenD(prev => !prev)
     }
-    const [isEnglish, setIsEnglish] =useState(false)
-    function clickEnglish(){
-        setIsEnglish(prev => !prev)
-    } 
+    
     useEffect(() =>{
-        let language = false;
-        window.addEventListener('load',()=>{
-            language=document.getElementById('toggle').checked;
-        });
-        if (language){
-            document.getElementById('toggle').defaulChecked='checked';
-        } else {
-            document.getElementById('toggle').defaulChecked=false;
+        window.onload = function(){
+            var path = window.location.pathname;
+            var urlArray=path.split("/");
+            var ja = document.getElementById('ja-menu');
+            var en = document.getElementById('en-menu');
+            if(urlArray.includes('en')){
+                document.getElementById('toggle-pc').checked=!document.getElementById('toggle-pc').checked;
+                document.getElementById('toggle-sp').checked=!document.getElementById('toggle-sp').checked;
+                ja.style.display='none';     
+            }
+            else{
+                en.style.display='none';
+            }
+        }
+        document.getElementById('toggle-pc').onclick=function(){
+            var path = window.location.pathname;
+            var baseURL=window.location.origin;
+            var langChangePc=document.getElementById('toggle-pc').checked;
+            if(langChangePc){
+                var pathArray=path.split('/');
+                var lastPath=pathArray[pathArray.length-1];
+                var homePath=path.replace('/'+lastPath,'');
+                window.location.href=baseURL+homePath+'/en/'+lastPath;
+            }else{
+                window.location.href=baseURL+path.replace('/en','');
+            }
+        }
+        document.getElementById('toggle-sp').onclick=function(){
+            var path = window.location.pathname;
+            var baseURL=window.location.origin;
+            var langChangeSp=document.getElementById('toggle-sp').checked;
+            if(langChangeSp){
+                window.location.href=baseURL+'/en'+path;
+            }else{
+                window.location.href=baseURL+path.replace('/en','');
+            }
         }
     })
 
     return (
         <header>
             <a href="./" className={`top-link ${isHamburgerOpen?"menu-opend":"menu-closed"}`}><img className={`machikane_logo-sp ${isHamburgerOpen?"menu-opend":"menu-closed"}`} src={machikane_logo} alt="まちかね祭ロゴ"></img></a>
-            <a className={`toplink ${isHamburgerOpen?"menu-opend":"menu-closed"}`}>
-                <li className={`toggle-hm`}>
-                    <label className="toggle-button">
-                            <input type="checkbox" id="toggle" defaultChecked={`${isEnglish?"unchecked":"checked"}`}/>
-                    </label>
-                </li>
-            </a>
+            <div className={`toggle-sp ${isHamburgerOpen?"menu-opend":"menu-closed"}`}>
+                <label className="toggle-button">
+                    <input type="checkbox" id="toggle-sp"/>
+                </label>
+            </div>
             
             <div className={`menu ${isHamburgerOpen?"menu-opend":"menu-closed"}`}>
-                <div className="header ja-menu">
-                <a href="./" className="top-link"><img className="machikane_logo-pc" src={machikane_logo} alt="まちかね祭ロゴ"></img></a>
-                <div className="toggle-pc">
-                    <li className="menu-parent">
+                <div className="header">
+                    <a href="./" className="top-link"><img className="machikane_logo-pc" src={machikane_logo} alt="まちかね祭ロゴ"></img></a>
+                    <div className="toggle-pc">
                         <label className="toggle-button">
-                            <input type="checkbox" id="toggle"/>
+                            <input type="checkbox" id="toggle-pc"/>
                         </label>
-                    </li>
-                </div>
-                    <ul className="menu-grandparent">
+                    </div>
+                    <ul className="menu-grandparent" id="ja-menu">
                         <li className="menu-parent"><span className={`menu-title ${isMenuOpenA?"is-opend":"is-closed"}`} onClick={menuOpenA}>まちかね祭について</span>
                             <ul className={`menu-child ${isMenuOpenA?"is-opend":"is-closed"}`}>
                                 <li><a href="./about">まちかね祭とは</a></li>
@@ -94,6 +115,42 @@ export default function Header() {
                             <ul className={`menu-child ${isMenuOpenD?"is-opend":"is-closed"}`}>
                                 <li><a href="./access">アクセス</a></li>
                                 <li><a href="./map">マップ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul className="menu-grandparent" id="en-menu">
+                        <li className="menu-parent"><span className={`menu-title ${isMenuOpenA?"is-opend":"is-closed"}`} onClick={menuOpenA}>about Machikanesai</span>
+                            <ul className={`menu-child ${isMenuOpenA?"is-opend":"is-closed"}`}>
+                                <li><a href="./about">What machikane</a></li>
+                                <li><a href="./theme">theme</a></li>
+                                <li><a href="./goods">goods</a></li>
+                                <li><a href="./greeting">greeting</a></li>
+                                <li><a href="./sponsor">sponsor</a></li>
+                            </ul>
+                        </li>
+                        <li className="menu-parent"><span className={`menu-title ${isMenuOpenB?"is-opend":"is-closed"}`} onClick={menuOpenB}>about project</span>
+                            <ul className={`menu-child ${isMenuOpenB?"is-opend":"is-closed"}`}>
+                                <li><a href="./sections">sections</a></li>
+                                <li><a href="./project-search">project</a></li>
+                                <li><a href="./timetable">timetable</a></li>
+                                <li><a href="./ralley">ralley</a></li>
+                                <li><a href="./official-project">official project</a></li>
+                                <li><a href="./lab-open">lab open</a></li>
+                            </ul>
+                        </li>
+                        <li className="menu-parent"><span className={`menu-title ${isMenuOpenC?"is-opend":"is-closed"}`} onClick={menuOpenC}>for visitor</span>
+                            <ul className={`menu-child ${isMenuOpenC?"is-opend":"is-closed"}`}>
+                                <li><a href="./notes">notes</a></li>
+                                <li><a href="./pamphlet">pamplet</a></li>
+                                <li><a href="./FAQ">FAQ</a></li>
+                                <li><a href="./inquiry">inquiry</a></li>
+                            </ul>
+                        </li>
+                        <li className="menu-parent"><span className={`menu-title ${isMenuOpenD?"is-opend":"is-closed"}`} onClick={menuOpenD}>access/map</span>
+                            <ul className={`menu-child ${isMenuOpenD?"is-opend":"is-closed"}`}>
+                                <li><a href="./access">access</a></li>
+                                <li><a href="./map">map</a></li>
                             </ul>
                         </li>
                     </ul>
