@@ -21,7 +21,7 @@ export default function Home() {
           for (var i = 0; i < move.length; i++) {
             move[i].classList.add('loaded');
           }
-        }, 1000);
+        }, 0);
       });
       const $ = el => document.querySelector(el);
       window.addEventListener('load', () => {
