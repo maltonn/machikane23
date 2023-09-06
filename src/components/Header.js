@@ -49,7 +49,7 @@ export default function Header() {
                 var pathArray=path.split('/');
                 var lastPath=pathArray[pathArray.length-1];
                 var homePath=path.replace('/'+lastPath,'');
-                window.location.href=baseURL+homePath+'/en/'+lastPath;
+                window.location.href=baseURL+homePath+'en/'+lastPath;
             }else{
                 window.location.href=baseURL+path.replace('/en','');
             }
