@@ -59,7 +59,10 @@ export default function Header() {
             var baseURL=window.location.origin;
             var langChangeSp=document.getElementById('toggle-sp').checked;
             if(langChangeSp){
-                window.location.href=baseURL+'/en'+path;
+                var pathArray=path.split('/');
+                var lastPath=pathArray[pathArray.length-1];
+                var homePath=path.replace('/'+lastPath,'');
+                window.location.href=baseURL+homePath+'/en/'+lastPath;
             }else{
                 window.location.href=baseURL+path.replace('/en','');
             }
