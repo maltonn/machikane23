@@ -29,27 +29,16 @@ export default function Header() {
     useEffect(() =>{
         window.onload = function(){
             var path = window.location.pathname;
-            let urlArray=path.split("/");
+            var urlArray=path.split("/");
             var ja = document.getElementById('ja-menu');
             var en = document.getElementById('en-menu');
-            var screenWidth=window.screen.width;
             if(urlArray.includes('en')){
                 document.getElementById('toggle-pc').checked=!document.getElementById('toggle-pc').checked;
                 document.getElementById('toggle-sp').checked=!document.getElementById('toggle-sp').checked;
-                ja.style.display='none';
-                if(screenWidth<=1090){
-                    en.style.display='block';
-                }else{
-                    en.style.display='flex';
-                }        
+                ja.style.display='none';     
             }
             else{
                 en.style.display='none';
-                if(screenWidth<=1090){
-                    ja.style.display='block';
-                }else{
-                    ja.style.display='flex';
-                }  
             }
         }
         document.getElementById('toggle-pc').onclick=function(){
@@ -57,7 +46,10 @@ export default function Header() {
             var baseURL=window.location.origin;
             var langChangePc=document.getElementById('toggle-pc').checked;
             if(langChangePc){
-                window.location.href=baseURL+'/en'+path;
+                var pathArray=path.split('/');
+                var lastPath=pathArray[pathArray.length-1];
+                var homePath=path.replace('/'+lastPath,'');
+                window.location.href=baseURL+homePath+'/en/'+lastPath;
             }else{
                 window.location.href=baseURL+path.replace('/en','');
             }
