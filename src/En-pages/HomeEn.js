@@ -75,7 +75,7 @@ export default function Home() {
           <div className="mainpage2">
   
             <div className="ocean-card">
-              <div className="titles"><nobr><p className="item1">●</p><span id="title">About Projects</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
+              <div className="titles"><nobr><p className="item1">●</p><span id="title">Project Category</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
               <div className="sections">
                 <span style={{right:0, color:'#F4E511'}}>
 In-Facility Projects</span>
