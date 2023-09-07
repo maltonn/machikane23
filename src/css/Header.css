@@ -10,6 +10,10 @@ header{
 header > h1{
     margin: 0;
 }
+.top-link{
+    display: block;
+    width: 50px;
+}
 .machikane_logo-pc{
     display: block;
     height: 50px;
@@ -38,21 +42,29 @@ header > h1{
     list-style: none;
 }
 .menu-title{
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 .menu-grandparent{
-    display: flex;
-    
+    display: flex;   
 }
-.menu-grandparent li{
-    margin-right: 55px;
+.menu-grandparent{
+    margin-right: 5px;
+}
+.menu-grandparent li:first-child:not(#en-menu li:first-child){
+    margin-right: 65px;
+}
+.menu-grandparent li:not(#en-menu li){
+    margin-right: 20px;
+}
+#en-menu li:nth-child(3){
+    margin-right: 40px;
 }
 .menu-child{
     display: none;
     width: 250px;
 }
 .menu-parent{
-    width: 150px;
+    width: 200px;
 }
 .menu-parent:hover .menu-child{
     display: block;
@@ -60,19 +72,27 @@ header > h1{
 	border-color : #72c3f8;
     animation: FadeIn 0.8s;
     border-radius: 20px;
+    width: 90%;
+}
+#en-menu .menu-parent:hover .menu-child{
+    width: 115%;
+}
+#en-menu .menu-parent:hover .menu-child.short{
+    width: 80%;
 }
 .menu-child a{
     color:black;
     display: block;
-    width: 100%;
+    width: 120%;
 }
 .menu-child li:hover a{
     color: #75bbff;
 }
 .menu-child li:hover{
     background-color: #ffff;
-    border-radius: 5px;
-    width: 100%;
+    border: 0.5px solid rgba(179, 229, 237, 1);
+    border-radius: 5px 20px 20px 5px;
+    width: 99%;
 }
 .toggle-button {
     display: flex;
@@ -131,8 +151,14 @@ header > h1{
 .toggle-pc .menu-parent {
     width: 100px;
 }
-.toggle-hm .menu-parent {
+.toggle-sp .menu-parent {
     width: 100px;
+}
+.toggle-sp{
+    display: none;
+}
+.toggle-pc{
+    display: block;
 }
 @keyframes FadeIn {
     0% {
@@ -146,18 +172,23 @@ header > h1{
 .hamburger{
     display: none;
 }
-@media screen and (min-width:990px){
-    .toggle-hm{
-        display: none;
-    }
-}
 
 /*以下スマホ用*/
 @media screen and (max-width:490px){
+    .toggle-sp.menu-opend{
+        display: block;
+        z-index: 1;
+        position: absolute;
+        top:3px;
+        animation: FadeIn 1.0s;
+    }
+    .toggle-sp.menu-closed{
+        opacity: 0;
+    }
     .toggle-pc{
         display: none;
     }
-    .toggle-hm{
+    .toggle-sp{
         list-style-type: none;
     }
     .machikane_logo-sp.menu-closed{
@@ -174,6 +205,7 @@ header > h1{
     }
     .header>a.top-link{
         margin-right: 0px;
+        width: 0;
     }
     /* ハンバーガーメニュー */
     .menu-grandparent{
@@ -224,6 +256,16 @@ header > h1{
         transform-origin: top right;
         transition-duration: 500ms;
         overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .menu-title{
+        font-size: 1rem;
+    }
+    .menu-grandparent li:first-child{
+        margin-right: 0px;
+    }
+    .menu-grandparent li{
+        margin-right: 0px;
     }
     .menu-opend{
         transform: scaleY(1);
@@ -302,12 +344,16 @@ header > h1{
 }
 
 /*iPadとか*/
-@media screen and (min-width:490px) and (max-width: 990px){
+@media screen and (min-width:490px) and (max-width: 1090px){
     .toggle-pc{
         display: none;
     }
-    .toggle-hm{
-        list-style-type: none;
+    .toggle-sp.menu-opend {
+        display: block;
+        z-index: 1;
+        position: absolute;
+        top: 3px;
+        animation: FadeIn 1.0s;
     }
     .machikane_logo-sp.menu-closed{
         opacity: 0;
@@ -323,6 +369,7 @@ header > h1{
     }
     .header>a.top-link{
         margin-right: 0px;
+        width: 0;
     }
     /* ハンバーガーメニュー */
     .menu-grandparent{
@@ -351,6 +398,16 @@ header > h1{
         transform-origin: top right;
         transition-duration: 500ms;
         overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .menu-title{
+        font-size: 1.3rem;
+    }
+    .menu-grandparent li:first-child{
+        margin-right: 0px;
+    }
+    .menu-grandparent li{
+        margin-right: 0px;
     }
     .menu-opend{
         transform: scaleY(1);
