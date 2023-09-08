@@ -3,17 +3,17 @@ import insta from "../imgs/insta.svg"
 import X from "../imgs/X.svg"
 import machikane_logo from "../imgs/main-visual-title.svg"
 
-window.addEventListener('load', () => {
-    var getFooter=document.getElementById('footer');
-    var footerPosition=getFooter.getBoundingClientRect().top;
-    var windowHeight=window.innerHeight;
-    if(footerPosition<windowHeight){
-        getFooter.style.position='absolute';
-        getFooter.style.bottom=0;
-    }else{
-        getFooter.style.position='relative';
-    }
-});
+// window.addEventListener('load', () => {
+//     var getFooter=document.getElementById('footer');
+//     var footerPosition=getFooter.getBoundingClientRect().top;
+//     var windowHeight=window.innerHeight;
+//     if(footerPosition<windowHeight){
+//         getFooter.style.position='absolute';
+//         getFooter.style.bottom=0;
+//     }else{
+//         getFooter.style.position='relative';
+//     }
+// });
 
 export default function Footer() {
     return(

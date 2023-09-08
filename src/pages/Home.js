@@ -43,6 +43,13 @@ export default function Home() {
             <img src={left_cloud} alt="左雲"></img>
             <img src={right_cloud} alt="右雲"></img>
           </div>
+          <div className="holding">
+            <p className="holding-title">☆開催場所</p>
+            <p className="holding-content">大阪大学 豊中キャンパス</p>
+            <p className="holding-title">☆開催日程</p>
+            <p className="holding-content">11/3(金),4(土),5(日)</p>
+          </div>
+
         </div>  
 
     <div className="sky2">
@@ -126,18 +133,18 @@ export default function Home() {
             <img src={machikame2} alt="まちかめ2"></img>
           </div>
 
-          <div className="ocean-card stage">
+          {/* <div className="ocean-card stage">
             <div className="titles" id="stage-title"><nobr><p className="item1">●</p><span id="title">現在のステージ企画</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
             <div className="pre-ocean">まちかね祭当日までお待ちください</div>
-          </div>
+          </div> */}
 
-          <div className="ocean-card lab">
+          {/* <div className="ocean-card lab">
             <div className="titles"><nobr><p className="item1">●</p><span id="title">研究室紹介</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
             <p>研究室の企画は、以下のリンクからご覧ください。</p>
             <a href="./lab-open">詳細はこちら</a>
-          </div>
+          </div> */}
 
-          <div className="ocean-card" id="pickup">
+          {/* <div className="ocean-card" id="pickup">
             <div className="pickup-titles"><nobr><p className="item1">●</p><span id="title">PICKUP</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
             <div className="pickup-box">
                 <a href="./project-search"><div className="pickup-button">
@@ -165,7 +172,7 @@ export default function Home() {
                   <div className="pickup-title">ステージタイムテーブル</div>
                 </div></a>
             </div>
-          </div>
+          </div> */}
   
           <div className ="ocean-card about">
             <div className="titles"><nobr><p className="item1">●</p><span id="title">テーマ</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
