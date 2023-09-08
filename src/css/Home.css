@@ -130,6 +130,24 @@ loader 雲のアニメション
   }
 }
 
+.holding{
+  position: relative;
+  left: 70vw;
+  top: -342vh;
+  width: 30%;
+  height: 80%;
+  background-image:url("../imgs/cloud/right_cloud.png");
+  background-repeat: no-repeat;
+  background-size:100% auto;
+}
+.holding-title, .holding-content{
+  margin: 0;
+  position: relative;
+  top: 12vh;
+  left: 7vw;
+  -webkit-text-stroke: 0.5px #233192;
+}
+
 /*======================
 sky2 お知らせ欄(news)、来場者の方へ(notes)内部
 背景が透明が良いそうだったので、半透明
@@ -602,6 +620,18 @@ schedule,stage,lab
       bottom:126vw;
       right:40vw;
     }
+    .holding{
+      left: 55vw;
+      top: 80vh;
+      width: 45%;
+      height: 80%;
+    }
+    .holding-title, .holding-content{
+      position: relative;
+      top: 10vh;
+      left: 9vw;
+      -webkit-text-stroke: 0.5px #233192;
+    }
     @keyframes cloud1{
       0% {
         transform: translateX(0);
@@ -672,6 +702,18 @@ schedule,stage,lab
     background-repeat: no-repeat, no-repeat;
     background-size: 40% auto,100% auto,100%;
     background-position:center,center;
+  }
+  .holding{
+    left: 55vw;
+    top: 80vh;
+    width: 45%;
+    height: 80%;
+  }
+  .holding-title, .holding-content{
+    position: relative;
+    top: 10vh;
+    left: 9vw;
+    -webkit-text-stroke: 0.5px #233192;
   }
   .machikame1{
     width:14vw;
