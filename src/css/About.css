@@ -28,29 +28,17 @@ body{
     bottom:4vw;
   }
   .top{
-    /* background:repeating-linear-gradient(
-      45deg,
-      rgba(255, 255, 255, 0.6),
-      rgba(255, 255, 255, 0.6) 2px,
-      transparent 0,
-      transparent 50px
-); */
-    /* background-image:url(../imgs/cloud/center_cloud.png), url("../imgs/circlecloud1.png");
-    background-size: 70%,50%;
-    background-repeat: no-repeat,no-repeat;
-    background-position:-20vw 0vw,56% 10vw; */
-
-    background-image:url("../imgs/cloud/right_cloud.png"),url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
-    background-size: 0%,39%,33%,16%;
-    background-repeat: no-repeat, no-repeat,no-repeat,no-repeat;
-    background-position: 34vw 16vh,98% 7vh,40% 19vw,15% 40vh;
-    height: 56vh;
+    background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
+    background-size: 435px,408px,119px;
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-position: 90% 8vh,290px bottom,4% bottom;
+    height: 427px;
   }
-  /* .title{
-    text-align: center;
-  } */
+   .title{
+    position: absolute;
+    top:200px;
+  } 
   h1{
-    max-width: 65%;
     font-size: 32px;
     padding: 10px 40px;
     background-color: rgba(255,255,255,0.5);
@@ -184,7 +172,7 @@ body{
   }
   /*海の中の小見出しのスタイル*/
 
-  .item1{
+  /* .item1{
     display: inline-block;
     font-size: 93px;
     opacity: 0.30;
@@ -207,7 +195,7 @@ body{
     position: relative;
     top:9px;
     right:26px;
-  }
+  } */
   
   /*pickupの文字の色を変化させる*/
   .ocean a{
@@ -217,7 +205,7 @@ body{
   かめのアニメション
   ======================*/
   .machikame1{
-    width: 10vw;
+    width: 170;
     position: relative;
     bottom: -44vh;
     left:80%;
@@ -411,10 +399,22 @@ body{
   /*======================
     スマホ用
   ======================*/
-    @media  (max-width:490px){
+
+    @media (max-width:767px){
         h1{
-            font-size: 25px;
+            font-size: 26px;
             /*margin-bottom: 100px;*/
+        }
+        .title{
+          position: relative;
+          top:0px;
+        } 
+        .top{
+          background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
+          background-size: 35%,calc(258px + 7vw),15%;
+          background-repeat: no-repeat,no-repeat,no-repeat;
+          background-position: 100% 4vh,calc(92px + 15vw) bottom,4% bottom;
+          height: calc(340px + 2vw);
         }
       .news, .notes{
         box-sizing: content-box;
@@ -433,16 +433,6 @@ body{
       }
       #move img:nth-child(1){
         width:100%;
-      }
-      /*.ocean span{
-        background-color:rgba(255,255,255,0.20);
-        border:solid 1px #fff;
-        padding:2px 12px;
-        border-radius: 14px;
-      }*/
-      .schedule, .stage, .lab, #pickup, .about {
-        box-sizing: content-box;
-        font-size: 16px;
       }
       #move img:nth-child(1){
         display: block;
@@ -480,14 +470,42 @@ body{
           transform: translateX(92vh);
         }
     }}
+    @media screen and (max-width: 490px) {
+      .title{
+        position: absolute;
+        top:80px;
+      } 
+      h1{
+        font-size: 24px;
+        /*margin-bottom: 100px;*/
+    }
+    .top{
+      background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
+      background-size: 0%,calc(200px + 8vw),80px;
+      background-repeat: no-repeat,no-repeat,no-repeat;
+      background-position: 100% 4vh,right bottom,4% 220px;
+      height: 300px;
+    }   
+    .machikame1 {
+      width: 70px;
+      position: relative;
+      bottom: -44vh;
+      left: 70%;
+  }
+    }
+
   
   /*======================
     タブレット用
   ======================*/
-  @media (min-width:490px) and (max-width: 990px){
+  @media (min-width:1090px) and (max-width: 1280px){
     h1{
-        font-size: 35px;
+        font-size: 30px;
     }
+    .title{
+      position: relative;
+      top:0px;
+    } 
     .news, .notes{
       box-sizing: content-box;
       width: 80%;
@@ -496,5 +514,37 @@ body{
    
     .ocean{
       display: block;
+    }
+    .top{
+      background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
+      background-size: 370px,370px,111px;
+      background-repeat: no-repeat,no-repeat,no-repeat;
+      background-position: 96% 8vh,289px bottom,4% bottom;
+      height: 396px;
+    }
+  }
+  @media (min-width:768px) and (max-width: 1090px){
+    h1{
+        font-size: 30px;
+    }
+    .title{
+      position: relative;
+      top:0px;
+    } 
+    .news, .notes{
+      box-sizing: content-box;
+      width: 80%;
+      font-size: 19px;
+    }
+   
+    .ocean{
+      display: block;
+    }
+    .top{
+      background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
+      background-size: 35%,calc(50px + 35vw),15%;
+      background-repeat: no-repeat,no-repeat,no-repeat;
+      background-position: 100% 4vh,40% bottom,4% bottom;
+      height: 400px;
     }
   }

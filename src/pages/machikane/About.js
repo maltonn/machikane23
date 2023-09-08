@@ -9,7 +9,7 @@ import "../../css/Common.css"
 import "../../css/About.css"
 export default function About() {
     return(
-        <div className="main">
+      <div className="main">
         <Helmet>
           <title>まちかね祭とは|まちかね祭2023</title>
         </Helmet>
