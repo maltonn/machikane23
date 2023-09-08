@@ -43,12 +43,14 @@ export default function Home() {
             <img src={left_cloud} alt="左雲"></img>
             <img src={right_cloud} alt="右雲"></img>
           </div>
-          <div className="holding">
-            <p className="holding-title">☆開催場所</p>
-            <p className="holding-content">大阪大学 豊中キャンパス</p>
-            <p className="holding-title">☆開催日程</p>
-            <p className="holding-content">11/3(金),4(土),5(日)</p>
-          </div>
+          {/* <div className="holding">
+            <div className="sub-holding">
+              <p className="holding-title">☆開催場所</p>
+              <p className="holding-content">大阪大学 豊中キャンパス</p>
+              <p className="holding-title">☆開催日程</p>
+              <p className="holding-content">11/3(金),4(土),5(日)</p>
+            </div>
+          </div> */}
 
         </div>  
 
