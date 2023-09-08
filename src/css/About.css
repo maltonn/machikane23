@@ -162,7 +162,7 @@ body{
     font-size: 37px;
     padding-top: 8px;
   }
-  .content{
+  .contents{
     font-size: 20px;
     padding: 20px 10px 30px;
     text-align: center;/*タイトル中央ぞろえにするならいらん*/
@@ -386,12 +386,12 @@ body{
       }
     }
     /**/
-    .content{
+    .contents{
       transition: 0.8s ease-in-out;
       transform: translateY(15px);
       opacity: 1.0;
     }
-    .content.on {
+    .contents.on {
       transform: translateY(0);
       opacity: 0;
     }
@@ -417,7 +417,7 @@ body{
           height: calc(340px + 2vw);
         }
       .news, .notes{
-        box-sizing: content-box;
+        box-sizing: contents-box;
         width: 80%;
         font-size: 16px;
       }
@@ -485,7 +485,7 @@ body{
       top:0px;
     } 
     .news, .notes{
-      box-sizing: content-box;
+      box-sizing: contents-box;
       width: 80%;
       font-size: 19px;
     }
@@ -510,7 +510,7 @@ body{
       top:0px;
     } 
     .news, .notes{
-      box-sizing: content-box;
+      box-sizing: contents-box;
       width: 80%;
       font-size: 19px;
     }

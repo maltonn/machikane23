@@ -131,7 +131,7 @@ export default function Home() {
             </table>
           </div>
 
-          <div className="swimkame1"> 
+          <div className="swim-kame1"> 
             <img src={machikame2} alt="まちかめ2"></img>
           </div>
 
