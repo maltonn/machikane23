@@ -4,12 +4,12 @@ import machikame2 from "../imgs/animal/machikame2.png"
 import left_cloud from "../imgs/cloud/left_cloud.png"
 import right_cloud from "../imgs/cloud/right_cloud.png"
 import machikani from "../imgs/animal/machikani.png"
-import search from "../imgs/pickup_icon/icon_search.png"
-import goods from "../imgs/pickup_icon/icon_goods.png"
-import recommend from "../imgs/pickup_icon/icon_recommend.png"
-import access from "../imgs/pickup_icon/icon_access.png"
-import map from "../imgs/pickup_icon/icon_map.png"
-import timetable from "../imgs/pickup_icon/icon_stage.png"
+// import search from "../imgs/pickup_icon/icon_search.png"
+// import goods from "../imgs/pickup_icon/icon_goods.png"
+// import recommend from "../imgs/pickup_icon/icon_recommend.png"
+// import access from "../imgs/pickup_icon/icon_access.png"
+// import map from "../imgs/pickup_icon/icon_map.png"
+// import timetable from "../imgs/pickup_icon/icon_stage.png"
 import { Helmet } from "react-helmet";
 import { useEffect } from "react"
 
@@ -39,19 +39,20 @@ export default function Home() {
           <div className="machikame1"> 
             <img src={machikame1} alt="まちかめ1"></img>
           </div>
+          <div className="holding-parent">
+          <div className="holding">
+            <div className="sub-holding">
+              <p className="holding-title">開催場所</p>
+              <p className="holding-content">大阪大学 豊中キャンパス</p>
+              <p className="holding-title">開催日程</p>
+              <p className="holding-content">11/3(金),4(土),5(日)</p>
+            </div>
+          </div>
+          </div>
           <div id="move">
             <img src={left_cloud} alt="左雲"></img>
             <img src={right_cloud} alt="右雲"></img>
           </div>
-          {/* <div className="holding">
-            <div className="sub-holding">
-              <p className="holding-title">☆開催場所</p>
-              <p className="holding-content">大阪大学 豊中キャンパス</p>
-              <p className="holding-title">☆開催日程</p>
-              <p className="holding-content">11/3(金),4(土),5(日)</p>
-            </div>
-          </div> */}
-
         </div>  
 
     <div className="sky2">
