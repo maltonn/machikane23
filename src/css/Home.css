@@ -24,8 +24,8 @@ body{
 }
 .holding{
   position: absolute;
-  top: 20rem;
-  left: 28rem;
+  top: 18rem;
+  left: 34rem;
   background-image:url("../imgs/cloud/right_cloud.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -37,8 +37,8 @@ body{
   text-align: center;
   position: relative;
   width: 100%;
-  top: 5.5rem;
-  right: 1.5rem
+  top: 7rem;
+  right: 2rem
 }
 .holding-title, .holding-content{
   margin: 0;
