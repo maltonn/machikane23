@@ -22,10 +22,10 @@ body{
 #loader{
   width: 100%;
   height: 120vh;
-  background-image:url("../imgs/logo.png"),url("../imgs/mainview/cloud_pc.png"),linear-gradient(#fff 10%, #00B2E9 50%,#b5e5f4 90%);
-  background-repeat: no-repeat, no-repeat;
-  background-size:30%,100% auto,100% auto;
-  background-position: center 42%,center;
+  background-image:url(../imgs/cloud/holding.png),url("../imgs/logo.png"),url("../imgs/mainview/cloud_pc.png"),linear-gradient(#fff 10%, #00B2E9 50%,#b5e5f4 90%);
+  background-repeat: no-repeat,no-repeat, no-repeat;
+  background-size: 42%,30%,100% auto,100% auto;
+  background-position: 100% 63%, center 42%,center;
 }
 
 .sky2{
@@ -129,22 +129,25 @@ loader 雲のアニメション
     transform: translateX(170vw);
   }
 }
-
+.sub-holding{
+  position: absolute;
+  top:56%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
 .holding{
   position: relative;
-  left: 70vw;
-  top: -342vh;
-  width: 30%;
-  height: 80%;
+  left: 12vw;
+  bottom: 210vw;
   background-image:url("../imgs/cloud/right_cloud.png");
   background-repeat: no-repeat;
-  background-size:100% auto;
+  background-size: contain;
+  background-position: center;
+  text-align: center;
+  height: 295px;
+  align-items: center;
 }
 .holding-title, .holding-content{
-  margin: 0;
-  position: relative;
-  top: 12vh;
-  left: 7vw;
   -webkit-text-stroke: 0.5px #233192;
 }
 
@@ -550,9 +553,10 @@ schedule,stage,lab
     #loader{
       width: 100%;
       height: 120vh;
-      background-image:url("../imgs/logo.png"),url("../imgs/mainview/cloud_phone.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%);
-      background-repeat: no-repeat, no-repeat;
-      background-size:60% auto,100% auto,100% auto;
+      background-image:url(../imgs/cloud/holding.png),url("../imgs/logo.png"),url("../imgs/mainview/cloud_phone.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%);
+      background-repeat: no-repeat,no-repeat, no-repeat;
+      background-size:68%,60% auto,100% auto,100% auto;
+      background-position:110% 75%, center 42%,center;
     }
     .ocean{
       display: block;
@@ -620,16 +624,16 @@ schedule,stage,lab
       bottom:126vw;
       right:40vw;
     }
-    .holding{
+    /* .holding{
       left: 55vw;
       top: 80vh;
       width: 45%;
       height: 80%;
-    }
+    } */
     .holding-title, .holding-content{
-      position: relative;
+      /* position: relative;
       top: 10vh;
-      left: 9vw;
+      left: 9vw; */
       -webkit-text-stroke: 0.5px #233192;
     }
     @keyframes cloud1{
@@ -698,21 +702,21 @@ schedule,stage,lab
   #loader{
     width: 100%;
     height: 120vh;
-    background-image:url("../imgs/logo.png"),url("../imgs/mainview/cloud_ipad.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%);
+    background-image:url(../imgs/cloud/holding.png),url("../imgs/logo.png"),url("../imgs/mainview/cloud_ipad.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%);
     background-repeat: no-repeat, no-repeat;
-    background-size: 40% auto,100% auto,100%;
-    background-position:center,center;
+    background-size: 42%,40% auto,100% auto,100%;
+    background-position:106% 63%,center,center;
   }
-  .holding{
+  /* .holding{
     left: 55vw;
     top: 80vh;
     width: 45%;
     height: 80%;
-  }
+  } */
   .holding-title, .holding-content{
-    position: relative;
+    /* position: relative;
     top: 10vh;
-    left: 9vw;
+    left: 9vw; */
     -webkit-text-stroke: 0.5px #233192;
   }
   .machikame1{
@@ -848,10 +852,10 @@ schedule,stage,lab
   #loader{
     width: 100%;
     height: 180vh;
-    background-image:url("../imgs/logo.png"),url("../imgs/mainview/cloud_ipad.png"),linear-gradient(#fff 26%, #00B2E9 60%,#b5e5f4 100%);
-    background-repeat: no-repeat, no-repeat;
-    background-size: 40% auto,100% auto,100%;
-    background-position:center,center;
+    background-image:url(../imgs/cloud/holding.png),url("../imgs/logo.png"),url("../imgs/mainview/cloud_ipad.png"),linear-gradient(#fff 26%, #00B2E9 60%,#b5e5f4 100%);
+    background-repeat: no-repeat,no-repeat, no-repeat;
+    background-size: 48%,40% auto,100% auto,100%;
+    background-position:100% 63%,center,center;
     margin-top:-35vh;
   }
   .machikame1{
