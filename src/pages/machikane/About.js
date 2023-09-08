@@ -13,7 +13,7 @@ export default function About() {
         <Helmet>
           <title>まちかね祭とは|まちかね祭2023</title>
         </Helmet>
-        <div className="sky2">
+        <div className="sky">
           <div className="top">
             <div className="machikame1"> 
               <img src={machikame1} alt="まちかめ1"></img>
@@ -27,7 +27,7 @@ export default function About() {
           </div>
           {/* <div className="circlecloud2"><img src={circlecloud2} alt="くも"></img></div>
           <div className="circlecloud3"><img src={circlecloud3} alt="くも"></img></div> */}
-            <div className="mainpage1"> 
+            <div className="mainpage"> 
               <div className="notes">
                 {/* <span id="notes-title">来場者の方へ</span> */}
                 <div className="content">「まちかね祭」は、11月に開催される大阪大学の大学祭です。

@@ -79,14 +79,14 @@ body{
   大きな枠組みの部分
   ======================*/
   
-  .sky2{
+  .sky{
       color: #233192;
       width:100%;
       background: linear-gradient( #15c1f6 0%,#b5e5f4 40%, #fff 100%)
 
   }
   
-  .mainpage1{
+  .mainpage{
     width: 92%;
     padding-bottom: 80px;
     margin:0 auto;
@@ -156,7 +156,7 @@ body{
 
  
   /*空の小見出しのスタイル*/
-  .sky2 span{
+  .sky span{
     max-width: 90%;
     display: inline-block;
     font-size: 37px;
@@ -431,29 +431,7 @@ body{
         left:9%;
         bottom:-50vh;
       }
-      #move img:nth-child(1){
-        width:100%;
-      }
-      #move img:nth-child(1){
-        display: block;
-        position: absolute;
-        width: auto;
-        height: 100vh;
-        bottom:42%;
-        left:-30%;
-        animation: kame 10s forwards;
-        margin: auto;
-      }
-      #move img:nth-child(2){
-        display: block;
-        position: absolute;
-        width: auto;
-        height: 105vh;
-        bottom:-10%;
-        right:-50%;
-        animation: kame 10s forwards;
-        margin: auto;
-      }
+      
       @keyframes cloud1{
         0% {
           transform: translateX(0);
