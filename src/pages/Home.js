@@ -165,7 +165,7 @@ export default function Home() {
                         <td className="news-content">トップページを更新しました。</td>
                     </tr> */}
                     <tr>
-                        <td className="news-date">9/9(土)</td>
+                        <td className="news-date">9/10(日)</td>
                         <td className="news-content">まちかね祭2023公式サイトが完成しました。</td>
                     </tr>
                 </tbody>
