@@ -8,7 +8,7 @@ export default function Adresses() {
             </Helmet>
             <div className="preparation">
                 <p>ページ作成中です。しばらくお待ちください。</p>
-                <span>現在のページ：ご挨拶</span><br></br>
+                <span>現在のページ：</span><br></br>
                 <a href="./">トップページへ戻る</a>
             </div>
         </div>
