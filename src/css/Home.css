@@ -24,28 +24,28 @@ body{
 }
 .holding{
   position: absolute;
-  top: 18rem;
-  left: 34rem;
+  top: 23rem;
+  left: 42rem;
   background-image:url("../imgs/cloud/right_cloud.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   width: 100%;
-  height: 20rem;
+  height: 24rem;
 }
 .sub-holding{
   text-align: center;
   position: relative;
   width: 100%;
-  top: 7rem;
-  right: 2rem
+  top: 7.5rem;
+  right: 2.5rem
 }
 .holding-title, .holding-content{
   margin: 0;
   -webkit-text-stroke: 0.5px #233192;
 }
 .holding-title{
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 .holding-title::before{
   content: "";
@@ -60,12 +60,182 @@ body{
   top: 4px;
 }
 .holding-content{
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
-
+@media (min-width: 1800px) and (max-width: 1900px){
+  .holding{
+    top: 23rem;
+    left: 40rem;
+    width: 100%;
+    height: 22rem;
+  }
+  .sub-holding{
+    width: 100%;
+    top: 7rem;
+    right: 2rem
+  }
+  .holding-title{
+    font-size: 1.6rem;
+  }
+  .holding-content{
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1700px) and (max-width: 1800px){
+  .holding{
+    top: 21rem;
+    left: 38rem;
+    width: 100%;
+    height: 22rem;
+  }
+  .sub-holding{
+    width: 100%;
+    top: 7rem;
+    right: 2rem
+  }
+  .holding-title{
+    font-size: 1.6rem;
+  }
+  .holding-content{
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1600px) and (max-width: 1700px){
+  .holding{
+    top: 20rem;
+    left: 35rem;
+    width: 100%;
+    height: 22rem;
+  }
+  .sub-holding{
+    width: 100%;
+    top: 7rem;
+    right: 2rem
+  }
+  .holding-title{
+    font-size: 1.6rem;
+  }
+  .holding-content{
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1600px){
+  .holding{
+    top: 16rem;
+    left: 35rem;
+    width: 100%;
+    height: 22rem;
+  }
+  .sub-holding{
+    width: 100%;
+    top: 8rem;
+    right: 2rem
+  }
+  .holding-title{
+    font-size: 1.6rem;
+  }
+  .holding-content{
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1500px){
+  .holding{
+    top: 18rem;
+    left: 33rem;
+    width: 100%;
+    height: 20rem;
+  }
+  .sub-holding{
+    width: 100%;
+    top: 6rem;
+    right: 2rem
+  }
+  .holding-title{
+    font-size: 1.4rem;
+  }
+  .holding-content{
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px){
+  .holding{
+    top: 16rem;
+    left: 31rem;
+    width: 100%;
+    height: 20rem;
+  }
+  .sub-holding{
+    width: 100%;
+    top: 6rem;
+    right: 2rem
+  }
+  .holding-title{
+    font-size: 1.4rem;
+  }
+  .holding-content{
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px){
+  .holding{
+    top: 16rem;
+    left: 26rem;
+    width: 100%;
+    height: 17rem;
+  }
+  .sub-holding{
+    width: 100%;
+    top: 5rem;
+    right: 1rem
+  }
+  .holding-title{
+    font-size: 1.4rem;
+  }
+  .holding-content{
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1110px) and (max-width: 1200px){
+  .holding{
+    top: 14rem;
+    left: 24rem;
+    width: 100%;
+    height: 15rem;
+  }
+  .sub-holding{
+    width: 100%;
+    top: 5rem;
+    right: 1rem
+  }
+  .holding-title{
+    font-size: 1rem;
+  }
+  .holding-content{
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1090px) and (max-width: 1100px){
+  .holding{
+    top: 14rem;
+    left: 22rem;
+    width: 100%;
+    height: 15rem;
+  }
+  .sub-holding{
+    width: 100%;
+    top: 5rem;
+    right: 1rem
+  }
+  .holding-title{
+    font-size: 1rem;
+  }
+  .holding-content{
+    font-size: 1rem;
+  }
+}
 @media (min-width: 990px) and (max-width: 1090px){
   .holding{
-    top: 10rem;
+    top: 14rem;
     left: 23rem;
     width: 100%;
     height: 15rem;
