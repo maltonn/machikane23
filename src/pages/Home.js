@@ -15,7 +15,7 @@ import { useEffect, useState } from "react"
 
 
 export default function Home() {
-  const [isThemeOpen, setIsThemeOpen] = useState(false)
+  const [isThemeOpen, setIsThemeOpen] = useState(true)
   function onThemeClick(){
       setIsThemeOpen(prev => !prev)
       var themeHidden=document.getElementById('theme-hidden');
@@ -32,7 +32,7 @@ export default function Home() {
       } 
   }
   /* sectionについてのところ */
-  const [isSectionOpenA, setIsSectionOpenA] = useState(false)
+  const [isSectionOpenA, setIsSectionOpenA] = useState(true)
   function onSectionClickA(){
       setIsSectionOpenA(prev => !prev)
       var sectionHidden=document.getElementById('section-hiddenA');
@@ -48,7 +48,7 @@ export default function Home() {
         buttonClose.style.display='none';
       } 
   }
-  const [isSectionOpenB, setIsSectionOpenB] = useState(false)
+  const [isSectionOpenB, setIsSectionOpenB] = useState(true)
   function onSectionClickB(){
       setIsSectionOpenB(prev => !prev)
       var sectionHidden=document.getElementById('section-hiddenB');
@@ -64,7 +64,7 @@ export default function Home() {
         buttonClose.style.display='none';
       } 
   }
-  const [isSectionOpenC, setIsSectionOpenC] = useState(false)
+  const [isSectionOpenC, setIsSectionOpenC] = useState(true)
   function onSectionClickC(){
       setIsSectionOpenC(prev => !prev)
       var sectionHidden=document.getElementById('section-hiddenC');
@@ -80,7 +80,7 @@ export default function Home() {
         buttonClose.style.display='none';
       } 
   }
-  const [isSectionOpenD, setIsSectionOpenD] = useState(false)
+  const [isSectionOpenD, setIsSectionOpenD] = useState(true)
   function onSectionClickD(){
       setIsSectionOpenD(prev => !prev)
       var sectionHidden=document.getElementById('section-hiddenD');
@@ -96,7 +96,7 @@ export default function Home() {
         buttonClose.style.display='none';
       } 
   }
-  const [isSectionOpenE, setIsSectionOpenE] = useState(false)
+  const [isSectionOpenE, setIsSectionOpenE] = useState(true)
   function onSectionClickE(){
       setIsSectionOpenE(prev => !prev)
       var sectionHidden=document.getElementById('section-hiddenE');
@@ -189,51 +189,51 @@ export default function Home() {
             <div className="sections">
             <div className="section-item">
               <span style={{right:0, color:'#F4E511'}}>館内企画</span>
-              <div className="button-parent"><div onClick={onSectionClickA} id="section-button-openA" className={`section-button section-button-open ${isSectionOpenA?"section-closed":"section-opend"}`}>Show All</div></div>
+              <div className="button-parent"><div onClick={onSectionClickA} id="section-button-openA" className={`section-button section-button-open ${isSectionOpenA?"section-closed":"section-opend"}`}>もっと見る</div></div>
 
               <p id='section-hiddenA' className={`section-hidden ${isSectionOpenA?"section-closed":"section-opend"}`}>館内区分では、様々なサークル、部活による個性豊かな演奏、販売、体験、展示などの企画が行われます。これらはその名の通り、全学教育共通棟、文法経講義棟、法経講義棟、学生会館の教室内で実施されております。ぜひお立ち寄りください。</p>
 
-              <div className="button-parent"><div onClick={onSectionClickA} id="section-button-closeA" className={`section-button section-button-close ${isSectionOpenA?"section-closed":"section-opend"}`}>Close content</div></div>
+              <div className="button-parent"><div onClick={onSectionClickA} id="section-button-closeA" className={`section-button section-button-close ${isSectionOpenA?"section-closed":"section-opend"}`}>閉じる</div></div>
             </div>
 
 
             <div className="section-item">
               <span style={{right:0, color:'#F4E511'}}>ラリー企画</span>
-              <div className="button-parent"><div onClick={onSectionClickB} id="section-button-openB" className={`section-button section-button-open ${isSectionOpenB?"section-closed":"section-opend"}`}>Show All</div></div>
+              <div className="button-parent"><div onClick={onSectionClickB} id="section-button-openB" className={`section-button section-button-open ${isSectionOpenB?"section-closed":"section-opend"}`}>もっと見る</div></div>
 
               <p id='section-hiddenB' className={`section-hidden ${isSectionOpenB?"section-closed":"section-opend"}`}>ラリー企画では、来場者の皆さん自身が大学構内を移動しながら楽しんでいただけます。企画を楽しみながら、まちかね祭全体をぐるっと回る事ができます。メインストリート上、ピロティ付近のテントがスタートです。ぜひお越しください。</p>
 
-              <div className="button-parent"><div onClick={onSectionClickB} id="section-button-closeB" className={`section-button section-button-close ${isSectionOpenB?"section-closed":"section-opend"}`}>Close content</div></div>
+              <div className="button-parent"><div onClick={onSectionClickB} id="section-button-closeB" className={`section-button section-button-close ${isSectionOpenB?"section-closed":"section-opend"}`}>閉じる</div></div>
             </div>
 
 
             <div className="section-item">
               <span style={{right:0, color:'#F4E511'}}>屋外企画</span>
-              <div className="button-parent"><div onClick={onSectionClickC} id="section-button-openC" className={`section-button section-button-open ${isSectionOpenC?"section-closed":"section-opend"}`}>Show All</div></div>
+              <div className="button-parent"><div onClick={onSectionClickC} id="section-button-openC" className={`section-button section-button-open ${isSectionOpenC?"section-closed":"section-opend"}`}>もっと見る</div></div>
 
               <p id='section-hiddenC' className={`section-hidden ${isSectionOpenC?"section-closed":"section-opend"}`}>屋外区分では、パフォーマンスを中心として、展示など多様な企画が行われます。2023年度まちかね祭では、学生交流棟・学生会館横・C棟前・文学研究棟前・サイバーメディアセンター横など建物外かつ模擬店のテント以外の場所で行われます。ぜひお越しください。</p>
 
-              <div className="button-parent"><div onClick={onSectionClickC} id="section-button-closeC" className={`section-button section-button-close ${isSectionOpenC?"section-closed":"section-opend"}`}>Close content</div></div>
+              <div className="button-parent"><div onClick={onSectionClickC} id="section-button-closeC" className={`section-button section-button-close ${isSectionOpenC?"section-closed":"section-opend"}`}>閉じる</div></div>
             </div>
 
 
             <div className="section-item">
               <span style={{right:0, color:'#F4E511'}}>ステージ企画</span>
-              <div className="button-parent"><div onClick={onSectionClickD} id="section-button-openD" className={`section-button section-button-open ${isSectionOpenD?"section-closed":"section-opend"}`}>Show All</div></div>
+              <div className="button-parent"><div onClick={onSectionClickD} id="section-button-openD" className={`section-button section-button-open ${isSectionOpenD?"section-closed":"section-opend"}`}>もっと見る</div></div>
 
               <p id='section-hiddenD' className={`section-hidden ${isSectionOpenD?"section-closed":"section-opend"}`}>ステージ区分では、カルチエ前のステージ<ruby>奏<rt>かなで</rt></ruby>とかさね前のステージ<ruby>宙<rt>そら</rt></ruby>の2つのステージで様々な企画が行われます。バンド演奏からダンスパフォーマンスまで、迫力あるステージをぜひお楽しみください。</p>
 
-              <div className="button-parent"><div onClick={onSectionClickD} id="section-button-closeD" className={`section-button section-button-close ${isSectionOpenD?"section-closed":"section-opend"}`}>Close content</div></div>
+              <div className="button-parent"><div onClick={onSectionClickD} id="section-button-closeD" className={`section-button section-button-close ${isSectionOpenD?"section-closed":"section-opend"}`}>閉じる</div></div>
             </div>
 
 
             <div className="section-item">
               <span style={{right:0, color:'#F4E511'}}>模擬店企画</span>
-              <div className="button-parent"><div onClick={onSectionClickE} id="section-button-openE" className={`section-button section-button-open ${isSectionOpenE?"section-closed":"section-opend"}`}>Show All</div></div>
+              <div className="button-parent"><div onClick={onSectionClickE} id="section-button-openE" className={`section-button section-button-open ${isSectionOpenE?"section-closed":"section-opend"}`}>もっと見る</div></div>
 
               <p id='section-hiddenE' className={`section-hidden ${isSectionOpenE?"section-closed":"section-opend"}`}>模擬店区分では、食品の提供などが行われます。食事席もご用意しております。2023年度まちかね祭では、大阪大学会館(旧イ号館)前及びメインストリート南側(<ruby>浪高庭園<rt>なみこうていえん</rt></ruby>側)のテントで行われます。ぜひお越しください。</p>
 
-              <div className="button-parent"><div onClick={onSectionClickE} id="section-button-closeE" className={`section-button section-button-close ${isSectionOpenE?"section-closed":"section-opend"}`}>Close content</div></div>
+              <div className="button-parent"><div onClick={onSectionClickE} id="section-button-closeE" className={`section-button section-button-close ${isSectionOpenE?"section-closed":"section-opend"}`}>閉じる</div></div>
             </div>
             </div>
             </div>
@@ -316,14 +316,14 @@ export default function Home() {
             <div className="theme-context">
               <p>2023年度まちかね祭のテーマは「阪燦々」（はんさんさん）に決定いたしました。</p>
               <p>このテーマには、まちかね祭において阪大生の個性が燦々と輝きますように、との思いが込められています。</p>
-              <div className="button-parent"><div onClick={onThemeClick} id="theme-button-open" className={`theme-button ${isThemeOpen?"theme-closed":"theme-opend"}`}>Show All</div></div>
+              <div className="button-parent"><div onClick={onThemeClick} id="theme-button-open" className={`theme-button ${isThemeOpen?"theme-closed":"theme-opend"}`}>もっと見る</div></div>
               <div id="theme-hidden" className={`${isThemeOpen?"theme-closed":"theme-opend"}`}>
                 <p>まちかね祭は、学生たちが日々の研鑽の成果を世に示す場です。</p>
                 <p>緑に覆われた待兼山で努力する学生の成果が日の目を浴びる機会は多くはありません。世の人々の目に触れることによって初めて、学生の努力は光を放ちます。</p>
                 <p>秋の陽光によって銀杏並木が光り輝くように、外部との交流によって学生の個性は光り輝きます。紅葉した銀杏の鮮やかな色彩が歩行者の目を楽しませるように、学生が放つ個性の輝きは来場者の感性を刺激します。暗い社会情勢、鬱屈した世相の中、若い世代の輝きは明るい光となるでしょう。</p>
                 <p>来場者との関わりの中で、また阪大生同士の交わりのなかで、阪大生の個性が燦々と輝き、阪大全体が明るい光に包まれますようにとの思いを込めて「阪燦々」のテーマを決定いたしました。</p>
               </div>
-              <div className="button-parent"><div onClick={onThemeClick} id="theme-button-close" className={`theme-button ${isThemeOpen?"theme-closed":"theme-opend"}`}>Close content</div></div>
+              <div className="button-parent"><div onClick={onThemeClick} id="theme-button-close" className={`theme-button ${isThemeOpen?"theme-closed":"theme-opend"}`}>閉じる</div></div>
             </div>
           </div>
         </div>
