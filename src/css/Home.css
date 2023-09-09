@@ -397,6 +397,9 @@ sky2 お知らせ欄(news)、来場者の方へ(notes)内部
   font-size: 37px;
   padding-top: 8px;
 }
+.supplement{
+  margin:0px;
+}
 
 /*======================
 oceanの中　企画時間、ステタイ、研究室紹介
