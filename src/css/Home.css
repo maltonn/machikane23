@@ -477,7 +477,25 @@ body{
   transform: rotate(45deg) translateY(-10px);
   position: relative;
   right: 0px;
-  top: 10px;
+  top: 6px;
+}
+@media  (max-width: 490px){
+  #theme-button-open::after,.section-button-open::after{ /*下向き矢印*/
+    border-top: 1.5px solid #FFF;
+    border-left: 1.5px solid #FFF;
+    width: 6px;
+    height: 6px;
+    right: 2px;
+    top: 3px;
+  }
+  #theme-button-close::after,.section-button-close::after{ /*上向き矢印*/
+    border-top: 1.5px solid #FFF;
+    border-left: 1.5px solid #FFF;
+    width: 6px;
+    height: 6px;
+    right: 2px;
+    top: 7px;
+  }
 }
 
 /*======================
