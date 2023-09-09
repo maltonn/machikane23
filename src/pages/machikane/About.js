@@ -15,7 +15,7 @@ export default function About() {
         </Helmet>
         <div className="sky">
           <div className="top">
-            <div className="machikame1"> 
+            <div className="machikame"> 
               <img src={machikame1} alt="まちかめ1"></img>
             </div>
             {/* <div className="circlecloud1"><img src={circlecloud1} alt="くも"></img></div> */}
