@@ -741,7 +741,6 @@ schedule,stage,lab
       bottom: var(--base-height);
     }
   }
-  /**/
   .pre-sky,.pre-ocean{
     transition: 0.8s ease-in-out;
     transform: translateY(15px);
