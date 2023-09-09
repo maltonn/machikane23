@@ -16,18 +16,255 @@ body{
   --base-height: 2300px;
 }
 
+/* トップページ　開催日程など */
+.holding-parent{
+  position: relative;
+  z-index: 0;
+  height: 0vh;
+}
+.holding{
+  position: absolute;
+  top: 18rem;
+  left: 34rem;
+  background-image:url("../imgs/cloud/right_cloud.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 20rem;
+}
+.sub-holding{
+  text-align: center;
+  position: relative;
+  width: 100%;
+  top: 7rem;
+  right: 2rem
+}
+.holding-title, .holding-content{
+  margin: 0;
+  -webkit-text-stroke: 0.5px #233192;
+}
+.holding-title{
+  font-size: 1.5rem;
+}
+.holding-title::before{
+  content: "";
+  border-top: 2px solid #233192;
+  border-left: 2px solid #233192;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  transform: rotate(135deg) translateY(9px);
+  position: relative;
+  right: -1px;
+  top: 4px;
+}
+.holding-content{
+  font-size: 1.2rem;
+}
+
+@media (min-width: 990px) and (max-width: 1090px){
+  .holding{
+    top: 10rem;
+    left: 23rem;
+    width: 100%;
+    height: 15rem;
+  }
+  .sub-holding{
+    width: 100%;
+    top: 5rem;
+    right: 1rem
+  }
+  .holding-title{
+    font-size: 1rem;
+  }
+  .holding-content{
+    font-size: 1rem;
+  }
+}
+@media (min-width: 900px) and (max-width: 990px){
+  .holding{
+    top: 72rem;
+    left: 18rem;
+    width: 100%;
+    height: 20rem;
+  }
+  .sub-holding{
+    width: 100%;
+    top: 5.5rem;
+    right: 1.5rem
+  }
+  .holding-title{
+    font-size: 1.5rem;
+  }
+  .holding-content{
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 800px) and (max-width: 900px){
+  .holding{
+    top: 60rem;
+    left: 15rem;
+    width: 100%;
+    height: 20rem;
+  }
+  .sub-holding{
+    width: 100%;
+    top: 5.5rem;
+    right: 1.5rem
+  }
+  .holding-title{
+    font-size: 1.5rem;
+  }
+  .holding-content{
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 690px) and (max-width: 800px){
+  .holding{
+    top: 53rem;
+    left: 15rem;
+    width: 100%;
+    height: 20rem;
+  }
+  .sub-holding{
+    width: 100%;
+    top: 5.5rem;
+    right: 1.5rem
+  }
+  .holding-title{
+    font-size: 1.5rem;
+  }
+  .holding-content{
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 690px){
+  .holding{
+    top: 60rem;
+    left: 12rem;
+    width: 100%;
+    height: 18rem;
+  }
+  .sub-holding{
+    width: 100%;
+    top: 5.5rem;
+    right: 1.5rem
+  }
+  .holding-title{
+    font-size: 1.2rem;
+  }
+  .holding-content{
+    font-size: 1rem;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px){
+  .holding{
+    top: 20rem;
+    left: 12.5rem;
+    width: 100%;
+    height: 16rem;
+  }
+  .sub-holding{
+    width: 100%;
+    top: 5rem;
+    right: 2rem
+  }
+  .holding-title{
+    font-size: 1rem;
+  }
+  .holding-content{
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px){
+  .holding{
+    top: 27rem;
+    left: 11rem;
+    width: 100%;
+    height: 16rem;
+  }
+  .sub-holding{
+    width: 100%;
+    top: 5.5rem;
+    right: 3.5rem
+  }
+  .holding-title{
+    font-size: 0.9rem;
+  }
+  .holding-content{
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 385px) and (max-width: 400px){
+  .holding{
+    top: 25rem;
+    left: 10rem;
+    width: 100%;
+    height: 16rem;
+  }
+  .sub-holding{
+    width: 100%;
+    top: 5.5rem;
+    right: 3.5rem
+  }
+  .holding-title{
+    font-size: 0.9rem;
+  }
+  .holding-content{
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 350px) and (max-width: 385px){
+  .holding{
+    top: 19rem;
+    left: 10rem;
+    width: 100%;
+    height: 16rem;
+  }
+  .sub-holding{
+    width: 100%;
+    top: 5.5rem;
+    right: 3.5rem
+  }
+  .holding-title{
+    font-size: 0.9rem;
+  }
+  .holding-content{
+    font-size: 0.7rem;
+  }
+}
+@media  (max-width: 350px){
+  .holding{
+    top: 15rem;
+    left: 7rem;
+    width: 100%;
+    height: 16rem;
+  }
+  .sub-holding{
+    width: 100%;
+    top: 5.8rem;
+    right: 2.5rem
+  }
+  .holding-title{
+    font-size: 0.7rem;
+  }
+  .holding-content{
+    font-size: 0.5rem;
+  }
+}
+
 /*======================
 大きな枠組みの部分
 ======================*/
 #loader{
   width: 100%;
   height: 120vh;
-  background-image:url(../imgs/cloud/holding.png),url("../imgs/logo.png"),url("../imgs/mainview/cloud_pc.png"),linear-gradient(#fff 10%, #00B2E9 50%,#b5e5f4 90%);
-  background-repeat: no-repeat,no-repeat, no-repeat;
-  background-size: 42%,30%,100% auto,100% auto;
-  background-position: 100% 63%, center 42%,center;
+  background-image:url("../imgs/logo.png"),url("../imgs/mainview/cloud_pc.png"),linear-gradient(#fff 10%, #00B2E9 50%,#b5e5f4 90%);
+  background-repeat: no-repeat, no-repeat;
+  background-size:30%,100% auto,100% auto;
+  background-position: center 42%,center;
 }
-
 .sky2{
     color: #233192;
     width:100%;
@@ -91,9 +328,11 @@ loader 雲のアニメション
 ======================*/
 #move img.loaded:nth-child(1){
   animation: cloud1 3s forwards;
+  z-index: 5;
 }
 #move img.loaded:nth-child(2){
   animation: cloud2 3s forwards;
+  z-index: 5;
 }
 
 #move img:nth-child(1){
@@ -128,27 +367,6 @@ loader 雲のアニメション
   100% {
     transform: translateX(170vw);
   }
-}
-.sub-holding{
-  position: absolute;
-  top:56%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-.holding{
-  position: relative;
-  left: 12vw;
-  bottom: 210vw;
-  background-image:url("../imgs/cloud/right_cloud.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  text-align: center;
-  height: 295px;
-  align-items: center;
-}
-.holding-title, .holding-content{
-  -webkit-text-stroke: 0.5px #233192;
 }
 
 /*======================
@@ -370,14 +588,14 @@ schedule,stage,lab
     transform: translate(0,0);
   }
 }
-.swimkame1{
+.swim-kame1{
   width: 10vw;
   position: relative;
   bottom: 0vh;
   right: -70%;
 }
-.swimkame1 img{
-  width: 200%;
+.swim-kame1 img{
+  width: 150%;
   animation:flying 10s ease-in-out infinite;
 }
 /*======================
@@ -582,6 +800,9 @@ schedule,stage,lab
     #move img:nth-child(1){
       width:100%;
     }
+    .swim-kame1 img{
+      width: 280%;
+    }
     .ocean-card{
       box-sizing: content-box;
       font-size: 16px;
@@ -623,18 +844,6 @@ schedule,stage,lab
       width: 200%;
       bottom:126vw;
       right:40vw;
-    }
-    /* .holding{
-      left: 55vw;
-      top: 80vh;
-      width: 45%;
-      height: 80%;
-    } */
-    .holding-title, .holding-content{
-      /* position: relative;
-      top: 10vh;
-      left: 9vw; */
-      -webkit-text-stroke: 0.5px #233192;
     }
     @keyframes cloud1{
       0% {
@@ -702,25 +911,16 @@ schedule,stage,lab
   #loader{
     width: 100%;
     height: 120vh;
-    background-image:url(../imgs/cloud/holding.png),url("../imgs/logo.png"),url("../imgs/mainview/cloud_ipad.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%);
+    background-image:url("../imgs/logo.png"),url("../imgs/mainview/cloud_ipad.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%);
     background-repeat: no-repeat, no-repeat;
-    background-size: 42%,40% auto,100% auto,100%;
-    background-position:106% 63%,center,center;
-  }
-  /* .holding{
-    left: 55vw;
-    top: 80vh;
-    width: 45%;
-    height: 80%;
-  } */
-  .holding-title, .holding-content{
-    /* position: relative;
-    top: 10vh;
-    left: 9vw; */
-    -webkit-text-stroke: 0.5px #233192;
+    background-size: 40% auto,100% auto,100%;
+    background-position:center,center;
   }
   .machikame1{
     width:14vw;
+  }
+  .swim-kame1 img{
+    width: 250%;
   }
   .news, .notes{
     box-sizing: content-box;
@@ -852,10 +1052,10 @@ schedule,stage,lab
   #loader{
     width: 100%;
     height: 180vh;
-    background-image:url(../imgs/cloud/holding.png),url("../imgs/logo.png"),url("../imgs/mainview/cloud_ipad.png"),linear-gradient(#fff 26%, #00B2E9 60%,#b5e5f4 100%);
-    background-repeat: no-repeat,no-repeat, no-repeat;
-    background-size: 48%,40% auto,100% auto,100%;
-    background-position:100% 63%,center,center;
+    background-image:url("../imgs/logo.png"),url("../imgs/mainview/cloud_ipad.png"),linear-gradient(#fff 26%, #00B2E9 60%,#b5e5f4 100%);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 40% auto,100% auto,100%;
+    background-position:center,center;
     margin-top:-35vh;
   }
   .machikame1{
