@@ -7,7 +7,7 @@ export default function Adresses() {
             <title>ご挨拶|まちかね祭2023</title>
             </Helmet>
             <div className="preparation">
-                <p>ただいまページ作成中です。しばらくお待ちください。</p>
+                <p>ページ作成中です。しばらくお待ちください。</p>
                 <span>現在のページ：ご挨拶</span><br></br>
                 <a href="./">トップページへ戻る</a>
             </div>
