@@ -1,0 +1,33 @@
+.greeting{
+    margin-top: 50px;
+    padding: 32px;
+}
+
+.greeting-title{
+    font-size: 37px;
+}
+
+.president img, .chairperson img{
+    width: 20%;
+    height: 20%;
+}
+
+.position{
+    font-size: 30px;
+}
+
+.greeting-card{
+    display: inline-flex;
+}
+
+.sentences{
+    padding-left: 38px;
+}
+
+.sentences>p{
+    margin: 0px;
+}
+
+.name{
+    text-align: right;
+}
