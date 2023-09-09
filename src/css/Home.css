@@ -455,6 +455,30 @@ body{
 
   }
 }
+#theme-button-open::after,.section-button-open::after{ /*下向き矢印*/
+  content: "";
+  border-top: 2px solid #FFF;
+  border-left: 2px solid #FFF;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  transform: rotate(-135deg) translateY(9px);
+  position: relative;
+  right: -1px;
+  top: 0px;
+}
+#theme-button-close::after,.section-button-close::after{ /*上向き矢印*/
+  content: "";
+  border-top: 2px solid #FFF;
+  border-left: 2px solid #FFF;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg) translateY(-10px);
+  position: relative;
+  right: 0px;
+  top: 10px;
+}
 
 /*======================
 大きな枠組みの部分
