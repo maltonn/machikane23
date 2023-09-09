@@ -254,6 +254,38 @@ body{
   }
 }
 
+/*theme-hidden*/
+#theme-hidden, #theme-button-close,.section-hidden, .section-button-close{
+  display: none;
+}
+.theme-button,.section-button{
+  color: #FFF;
+  border-radius: 5px;
+  width: 35%;
+}
+#theme-button-open,.section-button-open{
+  background-color: #00B2E9;
+}
+#theme-button-close,.section-button-close{
+  background-color: #e8bf6e;
+}
+#theme-hidden.theme-opend,.section-hidden.section-opend{
+  animation: FadeIn 0.8s;
+}
+.button-parent{
+  justify-content: center;
+  display: flex;
+}
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+
+  }
+}
+
 /*======================
 大きな枠組みの部分
 ======================*/
@@ -293,22 +325,22 @@ body{
   box-sizing: border-box;
 }
 
-.machikani1{
+.machikani-1{
   width: 150px;
   rotate: -6deg;
   position: relative;
   bottom:-95px;
   right: -10%;
 }
-.machikani1 img{
-  width: 100%;
+.machikani-1 img{
+  width: 80%;
 }
 
 /*pickup-bubble*/
-.bottom{
+.bottoms{
   bottom:0px;
   width:100%;
-  height:300px;
+  height:10px;
 }
 
 .theme-title{
@@ -374,7 +406,18 @@ sky2 お知らせ欄(news)、来場者の方へ(notes)内部
 背景が透明が良いそうだったので、半透明
 位置は要調節
 ======================*/
-
+/* .sections{
+  display: inline-flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section-item{
+  width: 50%;
+} */
+.section-item span{
+  font-size: 1.5rem;
+}
 .news,.notes{
   font-size: 1.7rem;
   margin: 20px 0px 80px;
@@ -446,12 +489,12 @@ schedule,stage,lab
   padding: 20px 5px 30px;
 }
 /*海の中の小見出しのスタイル*/
-.ocean span{
+.ocean span#title{
   display: inline-block;
-  font-size: 37px;
+  /* font-size: 37px; */
   color: #fff;
   position: relative;
-  right: 0vw;
+  /* right: 0vw; */
 }
 .item1{
   display: inline-block;
@@ -784,7 +827,7 @@ schedule,stage,lab
     .pre-ocean, .pre-sky{
       font-size: 1rem;
     }
-    .machikani1{
+    .machikani-1{
       width: 85px;
       rotate: -6deg;
       position: relative;
@@ -952,7 +995,7 @@ schedule,stage,lab
     box-sizing: content-box;
     font-size:1.4rem;
   }
-  .machikani1{
+  .machikani-1{
     /*margin: 0px -22px -71px;*/
     width: 110px;
     rotate: -6deg;

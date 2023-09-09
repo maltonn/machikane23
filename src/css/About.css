@@ -263,10 +263,10 @@ body{
   /*======================
   海底の生成される泡の表示のためのもの
   ======================*/
-  .ocean img{
+  /* .ocean img{
     display: block;
     width: 100%;
-  }
+  } */
   
   .bubble {
       position: absolute;
