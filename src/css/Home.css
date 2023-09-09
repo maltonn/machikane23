@@ -260,10 +260,10 @@ body{
 #loader{
   width: 100%;
   height: 120vh;
-  background-image:url("../imgs/logo.png"),url("../imgs/mainview/cloud_pc.png"),linear-gradient(#fff 10%, #00B2E9 50%,#b5e5f4 90%);
-  background-repeat: no-repeat, no-repeat;
-  background-size:30%,100% auto,100% auto;
-  background-position: center 42%,center;
+  background-image:url(../imgs/cloud/holding.png),url("../imgs/logo.png"),url("../imgs/mainview/cloud_pc.png"),linear-gradient(#fff 10%, #00B2E9 50%,#b5e5f4 90%);
+  background-repeat:no-repeat, no-repeat, no-repeat;
+  background-size:42%,30%,100% auto,100% auto;
+  background-position: 100% 65%,center 42%,center;
 }
 .sky2{
     color: #233192;
@@ -911,10 +911,10 @@ schedule,stage,lab
   #loader{
     width: 100%;
     height: 120vh;
-    background-image:url("../imgs/logo.png"),url("../imgs/mainview/cloud_ipad.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%);
-    background-repeat: no-repeat, no-repeat;
-    background-size: 40% auto,100% auto,100%;
-    background-position:center,center;
+    background-image:url(../imgs/cloud/holding.png),url("../imgs/logo.png"),url("../imgs/mainview/cloud_ipad.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%);
+    background-repeat: no-repeat,no-repeat, no-repeat;
+    background-size:48%, 40% auto,100% auto,100%;
+    background-position:100% 63%,center,center;
   }
   .machikame1{
     width:14vw;
@@ -1052,10 +1052,10 @@ schedule,stage,lab
   #loader{
     width: 100%;
     height: 180vh;
-    background-image:url("../imgs/logo.png"),url("../imgs/mainview/cloud_ipad.png"),linear-gradient(#fff 26%, #00B2E9 60%,#b5e5f4 100%);
-    background-repeat: no-repeat, no-repeat;
-    background-size: 40% auto,100% auto,100%;
-    background-position:center,center;
+    background-image:url(../imgs/cloud/holding.png),url("../imgs/logo.png"),url("../imgs/mainview/cloud_ipad.png"),linear-gradient(#fff 26%, #00B2E9 60%,#b5e5f4 100%);
+    background-repeat: no-repeat,no-repeat, no-repeat;
+    background-size: 48%,40% auto,100% auto,100%;
+    background-position:100% 63%,center,center;
     margin-top:-35vh;
   }
   .machikame1{
