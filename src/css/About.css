@@ -385,7 +385,6 @@ body{
         bottom: 2300px;
       }
     }
-    /**/
     .contents{
       transition: 0.8s ease-in-out;
       transform: translateY(15px);
@@ -423,7 +422,8 @@ body{
       }
       .ocean{
         display: block;
-      }-------------------
+      }
+      /*-------------------
       イラストの位置調整
       ------------------------*/
       .machikame{
