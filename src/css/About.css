@@ -204,13 +204,13 @@ body{
   /*======================
   かめのアニメション
   ======================*/
-  .machikame1{
+  .machikame{
     width: 170;
     position: relative;
     bottom: -44vh;
     left:80%;
   }
-  .machikame1 img{
+  .machikame img{
     width: 100%;
     animation:flying 10s ease-in-out infinite;
   }
@@ -232,7 +232,7 @@ body{
     }
   }
   
-  .machikame2{
+  /* .machikame2{
     width: 78px;
     position: relative;
     bottom: -300px;
@@ -241,7 +241,7 @@ body{
   .machikame2 img{
     width: 100%;
     animation: swimming 10s ease-in-out infinite;
-  }
+  } */
   @keyframes swimming {
     0% {
       transform: translate(0,0);
@@ -426,7 +426,7 @@ body{
       }-------------------
       イラストの位置調整
       ------------------------*/
-      .machikame1{
+      .machikame{
         width:20%;
         left:9%;
         bottom:-50vh;
@@ -464,7 +464,7 @@ body{
       background-position: 100% 4vh,right bottom,4% 220px;
       height: 300px;
     }   
-    .machikame1 {
+    .machikame {
       width: 70px;
       position: relative;
       bottom: -44vh;
