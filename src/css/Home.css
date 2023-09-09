@@ -556,7 +556,7 @@ schedule,stage,lab
       background-image:url(../imgs/cloud/holding.png),url("../imgs/logo.png"),url("../imgs/mainview/cloud_phone.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%);
       background-repeat: no-repeat,no-repeat, no-repeat;
       background-size:68%,60% auto,100% auto,100% auto;
-      background-position:110% 75%, center 42%,center;
+      background-position:110% 74%, center 42%,center;
     }
     .ocean{
       display: block;
