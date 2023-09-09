@@ -4,12 +4,12 @@ import machikame2 from "../imgs/animal/machikame2.png"
 import left_cloud from "../imgs/cloud/left_cloud.png"
 import right_cloud from "../imgs/cloud/right_cloud.png"
 import machikani from "../imgs/animal/machikani.png"
-import search from "../imgs/pickup_icon/icon_search.png"
-import goods from "../imgs/pickup_icon/icon_goods.png"
-import recommend from "../imgs/pickup_icon/icon_recommend.png"
-import access from "../imgs/pickup_icon/icon_access.png"
-import map from "../imgs/pickup_icon/icon_map.png"
-import timetable from "../imgs/pickup_icon/icon_stage.png"
+// import search from "../imgs/pickup_icon/icon_search.png"
+// import goods from "../imgs/pickup_icon/icon_goods.png"
+// import recommend from "../imgs/pickup_icon/icon_recommend.png"
+// import access from "../imgs/pickup_icon/icon_access.png"
+// import map from "../imgs/pickup_icon/icon_map.png"
+// import timetable from "../imgs/pickup_icon/icon_stage.png"
 import { Helmet } from "react-helmet";
 import { useEffect } from "react"
 
@@ -39,6 +39,16 @@ export default function Home() {
           <div className="machikame1"> 
             <img src={machikame1} alt="まちかめ1"></img>
           </div>
+          <div className="holding-parent">
+          <div className="holding">
+            <div className="sub-holding">
+              <p className="holding-title">開催場所</p>
+              <p className="holding-content">大阪大学 豊中キャンパス</p>
+              <p className="holding-title">開催日程</p>
+              <p className="holding-content">11/3(金),4(土),5(日)</p>
+            </div>
+          </div>
+          </div>
           <div id="move">
             <img src={left_cloud} alt="左雲"></img>
             <img src={right_cloud} alt="右雲"></img>
@@ -51,19 +61,19 @@ export default function Home() {
           <span id="title">お知らせ</span>
             <table className="news-table">
               <tbody>
-                    <tr>
+                    {/* <tr>
                         <td className="news-date">9/16(土)</td>
                         <td className="news-content">トップページを更新しました。</td>
-                    </tr>
+                    </tr> */}
                     <tr>
-                        <td className="news-date">9/8(金)</td>
+                        <td className="news-date">9/9(土)</td>
                         <td className="news-content">まちかね祭2023公式サイトが完成しました。</td>
                     </tr>
                 </tbody>
             </table>
         </div>
         <div className="notes">
-          <span id="title">来場者の方へ</span>
+          <span id="title">ご来場の皆様へ</span>
           <div className="content">まちかね祭に車でご来場いただくことはできません。<br/>ご来場の際は公共交通機関をご利用ください。</div>
         </div>
         <div className="machikani1"><img src={machikani} alt="まちかに"></img></div>
@@ -77,23 +87,23 @@ export default function Home() {
           <div className="ocean-card">
             <div className="titles"><nobr><p className="item1">●</p><span id="title">企画区分について</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
             <div className="sections">
-              <span style={{right:0, color:'#F4E511'}}>館内区分</span>
+              <span style={{right:0, color:'#F4E511'}}>館内企画</span>
               <p>館内区分では、様々なサークル、部活による個性豊かな演奏、販売、体験、展示などの企画が行われます。これらはその名の通り、全学教育共通棟、文法経講義棟、法経講義棟、学生会館の教室内で実施されております。ぜひお立ち寄りください。</p>
               <span style={{right:0, color:'#F4E511'}}>ラリー企画</span>
-              <p>※館内区分内で実施</p>
-              <p>ラリー企画では、来場者の皆さん自身が大学構内を移動しながら楽しんでいただけます。企画を楽しみながら、まちかね祭全体をぐるっと回る事ができます。メインストリート上、ピロティ付近のテントがスタートです。是非お越しください！！</p>
+              <p className="supplement" style={{right:0, color:'#F4E511'}}>※館内で実施しております</p>
+              <p>ラリー企画では、来場者の皆さん自身が大学構内を移動しながら楽しんでいただけます。企画を楽しみながら、まちかね祭全体をぐるっと回る事ができます。メインストリート上、ピロティ付近のテントがスタートです。ぜひお越しください。</p>
             </div>
             <div className="okugai">
-              <span style={{right:0, color:'#F4E511'}}>屋外区分</span>
+              <span style={{right:0, color:'#F4E511'}}>屋外企画</span>
               <p>屋外区分では、パフォーマンスを中心として、展示など多様な企画が行われます。2023年度まちかね祭では、学生交流棟・学生会館横・C棟前・文学研究棟前・サイバーメディアセンター横など建物外かつ模擬店のテント以外の場所で行われます。ぜひお越しください。</p>
             </div>
             <div className="stage">
-              <span style={{right:0, color:'#F4E511'}}>ステージ区分</span>
-              <p>ステージ区分では、カルチエ前のステージ奏とかさね前のステージ宙の2つのステージで様々な企画が行われます。バンド演奏からダンスパフォーマンスまで、迫力あるステージをぜひ楽しんでください！</p>
+              <span style={{right:0, color:'#F4E511'}}>ステージ企画</span>
+              <p>ステージ区分では、カルチエ前のステージ<ruby>奏<rt>かなで</rt></ruby>とかさね前のステージ<ruby>宙<rt>そら</rt></ruby>の2つのステージで様々な企画が行われます。バンド演奏からダンスパフォーマンスまで、迫力あるステージをぜひお楽しみください。</p>
             </div>
             <div className="mogiten">
-              <span style={{right:0, color:'#F4E511'}}>模擬店区分</span>
-              <p>模擬店区分では、食品の提供などが行われます。食事席もご用意しております。2023年度まちかね祭では、大阪大学会館(旧イ号館)前及びメインストリート南側(浪高庭園側)のテントで行われます。ぜひお越しください。</p>
+              <span style={{right:0, color:'#F4E511'}}>模擬店企画</span>
+              <p>模擬店区分では、食品の提供などが行われます。食事席もご用意しております。2023年度まちかね祭では、大阪大学会館(旧イ号館)前及びメインストリート南側(<ruby>浪高庭園<rt>なみこうていえん</rt></ruby>側)のテントで行われます。ぜひお越しください。</p>
             </div>
           </div>
 
@@ -123,22 +133,22 @@ export default function Home() {
             </table>
           </div>
 
-          <div className="swimkame1"> 
+          <div className="swim-kame1"> 
             <img src={machikame2} alt="まちかめ2"></img>
           </div>
 
-          <div className="ocean-card stage">
+          {/* <div className="ocean-card stage">
             <div className="titles" id="stage-title"><nobr><p className="item1">●</p><span id="title">現在のステージ企画</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
             <div className="pre-ocean">まちかね祭当日までお待ちください</div>
-          </div>
+          </div> */}
 
-          <div className="ocean-card lab">
+          {/* <div className="ocean-card lab">
             <div className="titles"><nobr><p className="item1">●</p><span id="title">研究室紹介</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
             <p>研究室の企画は、以下のリンクからご覧ください。</p>
             <a href="./lab-open">詳細はこちら</a>
-          </div>
+          </div> */}
 
-          <div className="ocean-card" id="pickup">
+          {/* <div className="ocean-card" id="pickup">
             <div className="pickup-titles"><nobr><p className="item1">●</p><span id="title">PICKUP</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
             <div className="pickup-box">
                 <a href="./project-search"><div className="pickup-button">
@@ -166,7 +176,7 @@ export default function Home() {
                   <div className="pickup-title">ステージタイムテーブル</div>
                 </div></a>
             </div>
-          </div>
+          </div> */}
   
           <div className ="ocean-card about">
             <div className="titles"><nobr><p className="item1">●</p><span id="title">テーマ</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
