@@ -1,15 +1,43 @@
 import { Helmet } from "react-helmet";
 import "../../css/Common.css"
+import "../../css/OfficialProject.css"
+
 export default function OfficialProject() {
     return(
         <div className="main">
             <Helmet>
             <title>委員会企画|まちかね祭2023</title>
             </Helmet>
-            <div className="preparation">
-                <p>ただいまページ作成中です。しばらくお待ちください。</p>
-                <span>現在のページ：委員会企画</span><br></br>
-                <a href="./">トップページへ戻る</a>
+            <h1 className="pageTitle">委員会企画|まちかね祭2023</h1>
+            <div className="officialProAll">
+                <div class="offiProCard">
+                    <div class="offiProCard-title">タイトル</div>
+                    企画内容ここに書く。企画内容ここに書く。企画内容ここに書く。企画内容ここに書く。企画内容ここに書く。企画内容ここに書く。企画内容ここに書く。
+                </div> 
+                <div class="offiProCard">
+                    <div class="offiProCard-title">タイトル</div>
+                    企画内容ここに書く。企画内容ここに書く。企画内容ここに書く。企画内容ここに書く。企画内容ここに書く。企画内容ここに書く。企画内容ここに書く。
+                </div> 
+                <div class="offiProCard">
+                    <div class="offiProCard-title">タイトル</div>
+                    企画内容ここに書く。企画内容ここに書く。企画内容ここに書く。企画内容ここに書く。企画内容ここに書く。企画内容ここに書く。企画内容ここに書く。
+                </div> 
+                <div class="offiProCard">
+                    <div class="offiProCard-title">タイトル</div>
+                    企画内容ここに書く。企画内容ここに書く。企画内容ここに書く。企画内容ここに書く。企画内容ここに書く。企画内容ここに書く。企画内容ここに書く。
+                </div> 
+                <div className="machikaneForest">
+
+                </div>
+                <div className="pancake">
+
+                </div>
+                <div className="NepLeague">
+
+                </div>
+                <div className="O-1">
+
+                </div>
             </div>
         </div>
     )
