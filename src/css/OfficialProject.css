@@ -2,8 +2,10 @@
     margin-top: 3em;
 }
 .offiProCard {
+    display: flexbox;
+    width: 46vw;
     position: relative;
-    margin: 3em 0 1em 0;
+    margin: 3em 1vw 1em 1vw;
     background: #fff6e6;
     box-shadow: 0 2px 3px rgba(0,0,0,.22);
     padding: 22px 8px 22px 8px;
@@ -42,7 +44,38 @@
   }
   .officialProAll{
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
   }
+  .inforAll{
+    display: flex;
+  }
+  .information{
+    margin-left: 2vw;
+  }
+  .officialIcon{
+    width: 15vw;
+  }
+
+@media screen and (max-width:490px){
+  .officialProAll{
+    align-items: center;
+  }
+
   .offiProCard{
-    display: flexbox;
+    width: 75vw;
   }
+  .inforAll{
+    display: block;
+  }
+  .officialIcon{
+    width:87%;
+    height: auto;
+    margin: 0 1em;
+  }
+}
+
+@media screen and (min-width:490px) and (max-width: 1090px){
+
+}
