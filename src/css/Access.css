@@ -396,13 +396,14 @@ body{
     }
     /* 駐輪場画像 */
     .guide{
-      padding: 20px 10px 30px;
-      text-align: center;/*タイトル中央ぞろえにするならいらん*/
-      width:80%;
-      max-width: 1200px;
-      margin: 0 auto;
+        width:5000px;
+        max-width: 100%;
+        border-style: none;
     }
-
+    .guide img{
+        width: 100%;
+        margin:50px 0px 0px;
+    } 
   /*======================
     スマホ用
   ======================*/
