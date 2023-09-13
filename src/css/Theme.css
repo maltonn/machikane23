@@ -1,0 +1,32 @@
+body{
+    font-family: "fot-tsukuardgothic-std", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin:0;
+  }
+  .mmtheme-mainpage{
+    width: 92%;
+    padding-bottom: 80px;
+    margin:0 auto;
+    text-align: center;
+  }
+  .mmtheme-title{
+    margin-bottom: 15px;
+    padding: 20px;
+    display: inline-block;
+    font-size: 70px;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.38);
+    border-radius: 50px;
+  }
+  .mmtheme-context{
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.38);
+    border-radius: 50px;
+  }
