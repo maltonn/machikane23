@@ -6,10 +6,34 @@ export default function Inquiry() {
             <Helmet>
             <title>お問い合わせ|まちかね祭2023</title>
             </Helmet>
-            <div className="preparation">
-                <p>ただいまページ作成中です。しばらくお待ちください。</p>
-                <span>現在のページ：お問い合わせ</span><br></br>
-                <a href="./">トップページへ戻る</a>
+            <div className="main">
+                <div className="sky">
+                <div className="top">                
+                    <div className="title">
+                        <h1>お問い合わせ</h1>
+                    </div>
+                </div>
+                    <div className="mainpage">
+                    <form>
+                        <textarea />
+                        <input type='submit' />
+                    </form>
+                    </div>
+                </div>
+                <div className="ocean">
+                    <div className="bottom">
+                        <div className="bubble"></div>
+                        <div className="bubble"></div>
+                        <div className="bubble"></div>
+                        <div className="bubble"></div>
+                        <div className="bubble"></div>
+                        <div className="bubble"></div>
+                        <div className="bubble"></div>
+                        <div className="bubble"></div>
+                        <div className="bubble"></div>
+                        <div className="bubble"></div>
+                    </div>
+                </div>
             </div>
         </div>
     )
