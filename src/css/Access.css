@@ -396,10 +396,11 @@ body{
     }
     /* 駐輪場画像 */
     .guide{
-        width: 170;
-        position: relative;
-        bottom: -44vh;
-        left:80%;
+      padding: 20px 10px 30px;
+      text-align: center;/*タイトル中央ぞろえにするならいらん*/
+      width:80%;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
   /*======================

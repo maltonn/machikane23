@@ -7,7 +7,7 @@ import cloud2 from "../../imgs/cloud/right_cloud.png" */
 import machikame1 from "../../imgs/animal/machikame1.png"
 import "../../css/Common.css"
 import "../../css/Access.css"
-/* import guide from "machikane23/src/imgs/map/2023年度まちかね祭駐輪場案内.png" */
+import guide from "../../imgs/map/2023年度まちかね祭駐輪場案内.png"
 export default function Access() {
     return(
         <div className="main">
@@ -31,7 +31,7 @@ export default function Access() {
                 </div>
                 <div className="top">
                     <div className="machikame"> 
-                    {/* <img src={machikame1} alt="まちかめ1"></img> */}
+                    <img src={machikame1} alt="まちかめ1"></img>
                     </div>
                     <div className="title">
                         <h1>アクセス</h1>
@@ -50,9 +50,9 @@ export default function Access() {
                     </div>
                 </div>
                 <div className="top">
-                    {/* <div className="machikame"> 
+                    <div className="machikame"> 
                     <img src={machikame1} alt="まちかめ1"></img>
-                    </div> */}
+                    </div>
                     <div className="title">
                         <h1>注意</h1>
                     </div>
@@ -69,9 +69,9 @@ export default function Access() {
                         </li>
                         <li>駐輪されている場合、サイバーメディアセンター北側の駐輪場へ移動させることがあります。
                         </li>
-                            {/* <div className="guide"> 
-                                <img src={guide} alt="2023年度まちかね祭駐輪場案内"></img>
-                            </div> */}
+                        <div className="guide"> 
+                            <img src={guide} alt="2023年度まちかね祭駐輪場案内"></img>
+                        </div>
                         </div>
                     </div>
                 </div>
