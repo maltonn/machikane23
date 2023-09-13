@@ -1,86 +1,99 @@
 import { Helmet } from "react-helmet";
+/* import circlecloud1 from "../../imgs/circlecloud1.png"
+import circlecloud2 from "../../imgs/circlecloud2.png"
+import circlecloud3 from "../../imgs/circlecloud3.png"
+import cloud1 from "../../imgs/cloud/left_cloud.png"
+import cloud2 from "../../imgs/cloud/right_cloud.png" */
+import machikame1 from "../../imgs/animal/machikame1.png"
 import "../../css/Common.css"
 import "../../css/Access.css"
-/* import guide from "../imgs/map/2023年度まちかね祭駐輪場案内.png" */
+/* import guide from "machikane23/src/imgs/map/2023年度まちかね祭駐輪場案内.png" */
 export default function Access() {
     return(
         <div className="main">
             <Helmet>
             <title>アクセス|まちかね祭2023</title>
             </Helmet>
-            {/* <div className="preparation"> */}
-               {/*  <p>ただいまページ作成中です。しばらくお待ちください。</p>
-                <span>現在のページ：マップ</span><br></br> */}
-                <p><b>開催場所</b></p>
-                大阪大学豊中キャンパス
-                <br></br>
-                <a href="./">トップページへ戻る</a>
-                <p><b>アクセス</b></p>
-                <li>阪急電車宝塚線　石橋阪大前駅より徒歩約15分<br></br>
-                    阪大坂を上り、総合案内所までお越しください
-                </li>
-                <li>大阪モノレール　柴原阪大前駅より徒歩約15分<br></br>
-                正門を通ってまっすぐ進み、総合案内所までお越しください
-                </li>
-                <p><b>注意</b></p>
-                <li>まちかね祭会場及び会場付近に駐車場はありませんので、公共交通機関をご利用ください。
-                                 ただし、歩行が困難であるなどやむを得ない事情をお持ちの方は、事前に当委員会までご連絡ください。{/* お問い合わせはこちらで飛べるようにする */}
-                </li>
-                <li>自転車でお越しの方は図に記載の駐輪場をご利用くださいますようお願いいたします。
-                </li>
-                <li>まちかね祭期間中、メインストリート及びグラウンド付近の一部は駐輪禁止となっております。
-                </li>
-                <li>駐輪されている場合、サイバーメディアセンター北側の駐輪場へ移動させることがあります。
-                </li>
-                {/* 駐輪場案内入れる */}
-{/*             </div> */}
-            {/* <div class="content"> */}
-                {/* <div class="content_title">開催場所</div> */}
-                
-                    {/* <div class="sub_content"> */}
-                        {/* <div class="box1"> */}
-                        {/* </div> */}
-                        {/* <div class="box2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.9961035925603!2d135.45196971519707!3d34.80603988507688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000fa8756800633%3A0x1140196a12668a41!2z5aSn6Ziq5aSn5a2mIOixiuS4reOCreODo-ODs-ODkeOCuQ!5e0!3m2!1sja!2sjp!4v1679931384942!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div> */}
-                    {/* </div> */}
-          {/*   </div>
-            <div class="content">
-                <div class="content_title">アクセス</div>
-                    <div class="sub_content">
-                        <div class="box1">
-                            <ul>
-                                <li>阪急電車宝塚線　石橋阪大前駅より徒歩約15分
-                                    <br>阪大坂を上り、総合案内所までお越しください</br>
-                                </li>
-                                <li>大阪モノレール　柴原阪大前駅より徒歩約15分
-                                    <br>正門を通ってまっすぐ進み、総合案内所までお越しください</br>
-                                </li>
-                            </ul>
-                        </div>
+            <div className="sky">
+                <div className="top">
+                    <div className="machikame"> 
+                    <img src={machikame1} alt="まちかめ1"></img>
                     </div>
-            </div>
-            <div class="content">
-            <div class="content_title">注意</div>
-                <div class="sub_content">
-                    <div class="box1">
-                        <ul>
-                            <li>まちかね祭会場及び会場付近に駐車場はありませんので、公共交通機関をご利用ください。
-                                 ただし、歩行が困難であるなどやむを得ない事情をお持ちの方は、事前に当委員会までご連絡ください。{/* お問い合わせはこちらで飛べるようにする */}
-                            {/* </li>
-                            <li>自転車でお越しの方は図に記載の駐輪場をご利用くださいますようお願いいたします。
-                            </li>
-                            <li>まちかね祭期間中、メインストリート及びグラウンド付近の一部は駐輪禁止となっております。
-                            </li>
-                            <li>駐輪されている場合、サイバーメディアセンター北側の駐輪場へ移動させることがあります。
-                            </li>
-                        </ul>
+                    <div className="title">
+                        <h1>開催場所</h1>
                     </div>
                 </div>
-                <div class="box2"><img src={guide} alt="案内"></img></div>
-            </div> */}
-
-
-
-            <a href="./">トップページへ戻る</a>
-        </div> 
+                <div className="mainpage"> 
+                    <div className="notes">
+                        <div className="contents">大阪大学豊中キャンパス
+                        </div>
+                    </div>
+                </div>
+                <div className="top">
+                    <div className="machikame"> 
+                    {/* <img src={machikame1} alt="まちかめ1"></img> */}
+                    </div>
+                    <div className="title">
+                        <h1>アクセス</h1>
+                    </div>
+                </div>
+                <div className="mainpage"> 
+                    <div className="notes">
+                        <div className="contents">
+                            <li>阪急電車宝塚線　石橋阪大前駅より徒歩約15分<br></br>
+                                阪大坂を上り、総合案内所までお越しください
+                            </li>
+                            <li>大阪モノレール　柴原阪大前駅より徒歩約15分<br></br>
+                                正門を通ってまっすぐ進み、総合案内所までお越しください
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div className="top">
+                    {/* <div className="machikame"> 
+                    <img src={machikame1} alt="まちかめ1"></img>
+                    </div> */}
+                    <div className="title">
+                        <h1>注意</h1>
+                    </div>
+                </div>
+                <div className="mainpage"> 
+                    <div className="notes">
+                        <div className="contents">
+                        <li>まちかね祭会場及び会場付近に駐車場はありませんので、公共交通機関をご利用ください。
+                            ただし、歩行が困難であるなどやむを得ない事情をお持ちの方は、事前に当委員会までご連絡ください。{/* お問い合わせはこちらで飛べるようにする */}
+                        </li>
+                        <li>自転車でお越しの方は図に記載の駐輪場をご利用くださいますようお願いいたします。
+                        </li>
+                        <li>まちかね祭期間中、メインストリート及びグラウンド付近の一部は駐輪禁止となっております。
+                        </li>
+                        <li>駐輪されている場合、サイバーメディアセンター北側の駐輪場へ移動させることがあります。
+                        </li>
+                            {/* <div className="guide"> 
+                                <img src={guide} alt="2023年度まちかね祭駐輪場案内"></img>
+                            </div> */}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="ocean">
+                <div className="bottom">
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                </div>
+            </div>
+        </div>
     )
 }
+/*             <a href="./">トップページへ戻る</a>
+        </div> 
+    )
+} */
