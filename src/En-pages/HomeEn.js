@@ -33,7 +33,7 @@ export default function Home() {
       return(
     <div className="top-main">
           <Helmet>
-            <title>TopPage|Machikane2023</title>
+            <title>Top|Machikane2023</title>
           </Helmet>
           <div id="loader">
             <div className="machikame1"> 
@@ -64,7 +64,7 @@ export default function Home() {
           </div>
           <div className="notes">
             <span id="title">To all the visitors</span>
-            <div className="content">Cars are not allowed on campus.<br/>Please use public transportation when you come to the Toyonaka Campus</div>
+            <div className="content">Cars are not allowed on campus.<br/>Please use public transportation when you come to the Toyonaka Campus.</div>
           </div>
           <div className="machikani1"><img src={machikani} alt="まちかに"></img></div>
         </div>
@@ -75,25 +75,26 @@ export default function Home() {
           <div className="mainpage2">
   
             <div className="ocean-card">
-              <div className="titles"><nobr><p className="item1">●</p><span id="title">About Projects</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
+              <div className="titles"><nobr><p className="item1">●</p><span id="title">Project Category</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
               <div className="sections">
-                <span style={{right:0, color:'#F4E511'}}>館内区分</span>
-                <p>館内区分では、様々なサークル、部活による個性豊かな演奏、販売、体験、展示などの企画が行われます。これらはその名の通り、全学教育共通棟、文法経講義棟、法経講義棟、学生会館の教室内で実施されております。ぜひお立ち寄りください。</p>
-                <span style={{right:0, color:'#F4E511'}}>ラリー企画</span>
-                <p>※館内区分内で実施</p>
-                <p>ラリー企画では、来場者の皆さん自身が大学構内を移動しながら楽しんでいただけます。企画を楽しみながら、まちかね祭全体をぐるっと回る事ができます。メインストリート上、ピロティ付近のテントがスタートです。是非お越しください！！</p>
+                <span style={{right:0, color:'#F4E511'}}>
+In-Facility Projects</span>
+                <p>You will enjoy attractive music performances, workshops and exhibitions, and also can purchase some original goods offered by various clubs.  These projects are held at each classroom of CELAS buildings, lecture buildings(Let.Law.Econ, Law.Econ) and Student Union. Please come by and have fun!</p>
+                <span style={{right:0, color:'#F4E511'}}>Rally Projects</span>
+                <p>※Included in In-Facility Projects</p>
+                <p>All the visitors can enjoy several projects walking around the campus and look around other projects. The starting point is the tent on the mainstreet, near piloti. We hope you enjoy!</p>
               </div>
               <div className="okugai">
-                <span style={{right:0, color:'#F4E511'}}>屋外区分</span>
-                <p>屋外区分では、パフォーマンスを中心として、展示など多様な企画が行われます。2023年度まちかね祭では、学生交流棟・学生会館横・c棟前・文学研究棟前・サイバーメディアセンター横など建物外かつ模擬店のテント以外の場所で行われます。ぜひお越しください。</p>
+                <span style={{right:0, color:'#F4E511'}}>Outdoor Projects</span>
+                <p>Street performances and exhibitionswill be held outside the buildings. You can find them around the Student Service Center(Kasane), Student Union and Cybermedia Center or in front of CELAS building C and graduate school of language. Walk around the campus and enjoy the show!</p>
               </div>
               <div className="stage">
-                <span style={{right:0, color:'#F4E511'}}>ステージ区分</span>
-                <p>ステージ区分では、カルチェ前のステージ奏とかさね前のステージ宙の2つのステージで様々な企画が行われます。バンド演奏からダンスパフォーマンスまで、迫力あるステージをぜひ楽しんでください！</p>
+                <span style={{right:0, color:'#F4E511'}}>Stage Performances</span>
+                <p> We have two stages, “Kanade” which is in front of cafeteria Quartier and “Sora” which is in front of cafeteria Kasane. You will be impressed by powerful dance and band performances! Please come and let’s share the passion!</p>
               </div>
               <div className="mogiten">
-                <span style={{right:0, color:'#F4E511'}}>模擬店区分</span>
-                <p>模擬店区分では、食品の提供などが行われます。食事席もご用意しております。2023年度まちかね祭では、大阪大学会館(旧イ号館)前及びメインストリート南側(浪高庭園側)のテントで行われます。ぜひお越しください。</p>
+                <span style={{right:0, color:'#F4E511'}}>Food Stalls</span>
+                <p>At this 2023 Machikane Festial, we set up food stalls on Main street and in front of Osaka University Hall. We expect more liveliness than during the covid. We also prepare seats and tents to eat in. Come by and enjoy our food!</p>
               </div>
             </div>
   
@@ -104,19 +105,19 @@ export default function Home() {
               <table className="section-schedule">
                 <tbody>
                       <tr>
-                          <td className="section">館内</td>
+                          <td className="section">In-Facility</td>
                           <td className="section-time">10:00〜18:20</td>
                       </tr>
                       <tr>
-                          <td className="section">屋外</td>
+                          <td className="section">Outdoor</td>
                           <td className="section-time">10:00〜18:00</td>
                       </tr>
                       <tr>
-                          <td className="section"><nobr>ステージ</nobr></td>
+                          <td className="section"><nobr>Stage</nobr></td>
                           <td className="section-time">10:00〜19:00</td>
                       </tr>
                       <tr>
-                          <td className="section">模擬店</td>
+                          <td className="section">Food Stalls</td>
                           <td className="section-time">10:00〜18:00</td>
                       </tr>
                   </tbody>
@@ -135,7 +136,7 @@ export default function Home() {
             <div className="ocean-card lab">
               <div className="titles"><nobr><p className="item1">●</p><span id="title">Invite to Lab</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
               <p>Please click the link below.</p>
-              <a href="./lab-open">詳細はこちら</a>
+              <a href="./lab-open">Click here</a>
             </div>
   
             <div className="ocean-card" id="pickup">
@@ -169,15 +170,15 @@ export default function Home() {
             </div>
     
             <div className ="ocean-card about">
-              <div className="titles"><nobr><p className="item1">●</p><span id="title">Theme</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
-              <div className="theme-title">"<ruby>阪燦々<rt>はんさんさん</rt></ruby>"</div>
+              <div className="titles"><nobr><p className="item1">●</p><span id="title">- Theme -<br></br>~The message behind the theme~</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
+              <div className="theme-title">"Han-Sun-Sun"</div>
               <div className="theme-context">
-                <p>2023年度まちかね祭のテーマは「阪燦々」（はんさんさん）に決定いたしました。</p>
-                <p>このテーマには、まちかね祭において阪大生の個性が燦々と輝きますように、との思いが込められています。</p>
-                <p>まちかね祭は、学生たちが日々の研鑽の成果を世に示す場です。</p>
-                <p>緑に覆われた待兼山で努力する学生の成果が日の目を浴びる機会は多くはありません。世の人々の目に触れることによって初めて、学生の努力は光を放ちます。</p>
-                <p>秋の陽光によって銀杏並木が光り輝くように、外部との交流によって学生の個性は光り輝きます。紅葉した銀杏の鮮やかな色彩が歩行者の目を楽しませるように、学生が放つ個性の輝きは来場者の感性を刺激します。暗い社会情勢、鬱屈した世相の中、若い世代の輝きは明るい光となるでしょう。</p>
-                <p>来場者との関わりの中で、また阪大生同士の交わりのなかで、阪大生の個性が燦々と輝き、阪大全体が明るい光に包まれますようにとの思いを込めて「阪燦々」のテーマを決定いたしました。</p>
+                <p>The theme for Machikane Festival 2023 is ─── "Han-Sun-Sun. "</p>
+                <p>We hope that every student of Osaka University will shine their characteristics as brightly as the sunlight.</p>
+                <p>Machikane Festival is the place where students can show off their accomplishments through everyday studies.</p>
+                <p>And those outcomes don’t have so many opportunities that can see the light of day.  Their efforts will be recognized only by being shown to the world.</p>
+                <p> Interactions with foreigners will make students’ characteristics more bright —- as the golden ginkgo trees glow under the autumn sunshine.  The brightness of students’ characteristics will inspire others —- as the ginkgo leaves turn to bright yellow pleasing people’s eyes.  In this unstable society and depressing world, young generations will surely be the light of hope for the future.</p>
+                <p>Through the theme “Han-Sun-Sun,” we sincerely hope all the Osaka University students show their characteristics by interacting with visitors and enlighten the whole campus with their brightness.</p>
               </div>
             </div>
           </div>
