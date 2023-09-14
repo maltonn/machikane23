@@ -87,7 +87,7 @@ body{
   }
   
   .mainpage{
-    width: 92%;
+    width: 100%;
     padding-bottom: 80px;
     margin:0 auto;
   }
@@ -145,13 +145,13 @@ body{
   
   .news,.notes{
     font-size: 22px;
-    margin: 20px auto 80px;
+    margin: 60px auto 30px;
     display:block;
     background-color: rgba(255,255,255,0.38);
     border-radius: 50px;
     text-align: center;
     box-sizing: border-box;
-    width: 82%;
+    width: 500%;
   }
 
  
@@ -164,9 +164,9 @@ body{
   }
   .contents{
     font-size: 20px;
-    padding: 20px 10px 30px;
+    padding: 10px 0px 30px;
     text-align: center;/*タイトル中央ぞろえにするならいらん*/
-    width:80%;
+    width:90%;
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -434,9 +434,10 @@ body{
           background-position: 100% 4vh,calc(92px + 15vw) bottom,4% bottom;
           height: calc(340px + 2vw);
         }
+      /* 四角の大きさ調整 */
       .news, .notes{
         box-sizing: contents-box;
-        width: 80%;
+        width: 90%;
         font-size: 16px;
       }
       .ocean{
