@@ -20,11 +20,15 @@ export default function Map() {
                 </div>
                 <div className="notes">
                         <div className="contents">
+                            <div className="ul">
                             <li>全体マップ</li>
+                            </div>
                             <div className="map"> 
                             <   img src={map} alt="全体マップ"></img>
                             </div>
-                            <li>学内店舗の営業時間</li>
+                            <div className="ul">
+                            <li>学内店舗の営業時間</li><br></br>
+                            </div>
                             <div className="time">
                                 <div className="table">
                                     <tr>
