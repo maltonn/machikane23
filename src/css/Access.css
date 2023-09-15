@@ -404,7 +404,7 @@ body{
         width: 100%;
         margin:50px 0px 0px;
     } 
-
+    /* 全体マップ */
     .map{
       width:5000px;
       max-width: 100%;
@@ -414,6 +414,26 @@ body{
       width: 100%;
       margin:50px 0px 0px;
     } 
+    /* 生協営業時間 */
+    .time{
+      font-size: 12pt
+    }
+    .table {
+      border-collapse: collapse;
+      text-align: center;
+      position: relative;
+    }
+    .table th, table td {
+      border: solid  1px #adb3c1;
+      padding: 10px;
+    }
+    .table td {
+      border: solid  1px #adb3c1;
+      padding:1px 8px;
+      text-align: center;
+      position: relative;
+      vertical-align: middle;
+    }
   /*======================
     スマホ用
   ======================*/
@@ -448,7 +468,7 @@ body{
       ------------------------*/
       .machikame{
         width:20%;
-        left:9%;
+        left:4%;
         bottom:-50vh;
       }
       
