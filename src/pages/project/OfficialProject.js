@@ -72,17 +72,38 @@ export default function OfficialProject() {
                     企画内容ここに書く。企画内容ここに書く。企画内容ここに書く。企画内容ここに書く。企画内容ここに書く。企画内容ここに書く。企画内容ここに書く。
                 </div>
             </div>
-            <div className="machikaneForest">
+            <div className="officialProDetail">
+                <div className="detailCard">
+                    <div className="machikaneForest">
+                        <span>ぱんけえき焼きた亭</span>
+                        <span class="rate rate4-5"></span>
+                        <a>
+                            <span>焼きた亭のパンケーキはいつでも「焼きたて」を提供!</span>
+                            注文を受けてから作るのでパンケーキはいつでも焼きたて! 好きなトッピングをかけてできあがったホクホクパンケーキはうまいこと間違いなし!
+                        </a>
+                        <a>
+                            <span>パンケーキ以外のメニューも豊富</span>
+                            焼きた亭ではドリンクも提供しています。みんなだいすきラムネジュース! 学祭で飲むラムネは青春の味! シュワっとはじけてさらにまちかね祭へのモチベを上げちゃいませんか?!
+                        </a>
+                        <a>
+                            <span>おいしいパンケーキに種類豊富なトッピング</span>
+                            選べるトッピングは、①パンケーキの王道！「メイプルシロップ」②甘党さんにおすすめ！「塩キャラメル」③深みのある味！「黒蜜きなこ」④食べたことない組み合わせ？！「はちみつレモン」皆さんの推しトッピングを見つけてくださいね
+                        </a>
+                        <a>
+                            <span>甘いもの苦手さんにはこちら</span>
+                            パンケーキに何かトッピングはしたいけど、甘いものは苦手だなあという方には「ベーコンケチャップ」がおすすめ！他のお店ではあまり見ないパンケーキとベーコンのコラボ！ぜひご賞味あれ～
+                        </a>
+                    </div>
+                    <div className="pancake">
 
-            </div>
-            <div className="pancake">
+                    </div>
+                    <div className="NepLeague">
 
-            </div>
-            <div className="NepLeague">
+                    </div>
+                    <div className="O-1">
 
-            </div>
-            <div className="O-1">
-
+                    </div>
+                </div>
             </div>
         </div>
     )

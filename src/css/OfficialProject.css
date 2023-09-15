@@ -47,6 +47,9 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    color: #233192;
+    width:100%;
+    background: linear-gradient( #b5e5f4 50%, #fff 100%)
   }
   .inforAll{
     display: flex;
@@ -57,6 +60,52 @@
   .officialIcon{
     width: 15vw;
   }
+  .officialProDeatil{
+    width:100%;
+    background-image: url("../imgs/inthesea/surface1.png"), linear-gradient( #fff 0%, #01579E 6%, #2E3192 100%);
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain;
+    color:#fff;
+  }
+  .detailCard{
+    width: 92%;
+    margin:0 auto;
+    padding-top: 100px;
+  }
+
+  /*パンケーキの☆の部分*/
+.rate {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 16px;
+    font-size: 16px;
+}
+.rate:before, .rate:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '★★★★★';
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+}
+.rate:before {
+    color: #ddd;
+}
+.rate:after {
+    color: #ffa500;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.rate4-5:after {
+    width: 72px;
+}
+.wrap {
+    width: 80px;
+    margin: 0 auto;
+}
+
 
 @media screen and (max-width:490px){
   .officialProAll{
