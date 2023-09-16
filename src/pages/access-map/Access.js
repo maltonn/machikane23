@@ -1,9 +1,4 @@
 import { Helmet } from "react-helmet";
-/* import circlecloud1 from "../../imgs/circlecloud1.png"
-import circlecloud2 from "../../imgs/circlecloud2.png"
-import circlecloud3 from "../../imgs/circlecloud3.png"
-import cloud1 from "../../imgs/cloud/left_cloud.png"
-import cloud2 from "../../imgs/cloud/right_cloud.png" */
 import machikame1 from "../../imgs/animal/machikame1.png"
 import "../../css/Common.css"
 import "../../css/Access.css"
@@ -59,7 +54,7 @@ export default function Access() {
                 </div>
                 <div className="mainpage"> 
                     <div className="notes">
-                        <div className="contents">
+                        <div className="content">
                         <li>まちかね祭会場及び会場付近に駐車場はありませんので、公共交通機関をご利用ください。
                             ただし、歩行が困難であるなどやむを得ない事情をお持ちの方は、事前に当委員会までご連絡ください。{/* お問い合わせはこちらで飛べるようにする */}
                         </li>

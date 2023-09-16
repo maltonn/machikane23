@@ -9,34 +9,17 @@ body{
     width: 100%;
     overflow: hidden;
   }
-  .cloud2{
-    position: relative;
-    width:65%;
-    left:60%;
-    bottom:6vw;
-  }
-  .cloud1{
-    position: relative;
-    width:55%;
-    left:10%;
-    bottom:90vw;
-    opacity: 0.8;
-  }
-  .cloud1 img, .cloud2 img{
-    width:100%;
-    position: relative;
-    bottom:4vw;
-  }
+  
   .top{
     background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
     background-size: 435px,408px,119px;
     background-repeat: no-repeat,no-repeat,no-repeat;
-    background-position: 90% 8vh,290px bottom,4% bottom;
-    height: 427px;
+    background-position: 90% 8vh,100px bottom,50% bottom;
+    height: 60px;
   }
    .title{
     position: absolute;
-    top:200px;
+    top:500px;
   } 
   h1{
     font-size: 32px;
@@ -50,31 +33,7 @@ body{
     position: relative;
     top:0vh;
   }
-  .circlecloud1 img{
-    width: 100%;
-  }
-  .circlecloud1{
-    width: 450px;
-    position: relative;
-    top:60vw;
-    left:50px;
-  }
-  .circlecloud2{
-    width: 350px;
-    position:relative;
-    left:37%;
-    bottom:60vw;
-  }
-  .circlecloud3{
-    width: 180px;
-    position:relative;
-    bottom:70vw;
-    left:10vw;
-    rotate:30deg;
-  }
- 
 
-  
   /*======================
   大きな枠組みの部分
   ======================*/
@@ -162,10 +121,18 @@ body{
     font-size: 37px;
     padding-top: 8px;
   }
+  .content{
+    font-size: 20px;
+    padding: 10px 0px 30px;
+    text-align: left;/*文字左揃え*/
+    width:90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
   .contents{
     font-size: 20px;
     padding: 10px 0px 30px;
-    text-align: center;/*タイトル中央ぞろえにするならいらん*/
+    text-align: center;/*文字中央*/
     width:90%;
     max-width: 1200px;
     margin: 0 auto;
@@ -205,10 +172,10 @@ body{
   かめのアニメション
   ======================*/
   .machikame{
-    width: 170;
+    width: 12%;
     position: relative;
-    bottom: -44vh;
-    left:80%;
+    bottom: -50vh;
+    left:11%;
   }
   .machikame img{
     width: 100%;
@@ -394,49 +361,17 @@ body{
       transform: translateY(0);
       opacity: 0;
     }
-    /* 駐輪場画像 */
-    .guide{
-        width:5000px;
-        max-width: 100%;
-        border-style: none;
+
+    .content{
+      transition: 0.8s ease-in-out;
+      transform: translateY(15px);
+      opacity: 1.0;
     }
-    .guide img{
-        width: 100%;
-        margin:50px 0px 0px;
-    } 
-    /* 全体マップ */
-    .map{
-      width:5000px;
-      max-width: 100%;
-      border-style: none;
+    .content.on {
+      transform: translateY(0);
+      opacity: 0;
     }
-    .map img{
-      width: 100%;
-      margin:50px 0px 0px;
-    } 
-    /* 生協営業時間 */
-    .time{
-      font-size: 12pt
-    }
-    .table {
-      border-collapse: collapse;
-      text-align: center;
-      position: relative;
-    }
-    .table th, table td {
-      border: solid  1px #adb3c1;
-      padding: 10px;
-    }
-    .table td {
-      border: solid  1px #adb3c1;
-      padding:1px 8px;
-      text-align: center;
-      position: relative;
-      vertical-align: middle;
-    }
-    .ul{
-      list-style-type: none;
-    }
+    
   /*======================
     スマホ用
   ======================*/
@@ -514,6 +449,49 @@ body{
       left: 70%;
   }
     }
+    /* 駐輪場画像 */
+    .guide{
+      width:5000px;
+      max-width: 100%;
+      border-style: none;
+  }
+  .guide img{
+      width: 100%;
+      margin:50px 0px 0px;
+  } 
+  /* 全体マップ */
+  .map{
+    width:5000px;
+    max-width: 100%;
+    border-style: none;
+  }
+  .map img{
+    width: 100%;
+    margin:50px 0px 0px;
+  } 
+  /* 生協営業時間 */
+  .time{
+    font-size: 12pt
+  }
+  .table {
+    border-collapse: collapse;
+    text-align: center;
+    position: relative;
+  }
+  .table th, table td {
+    border: solid  1px #adb3c1;
+    padding: 10px;
+  }
+  .table td {
+    border: solid  1px #adb3c1;
+    padding:1px 8px;
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+  }
+  .ul{
+    list-style-type: none;
+  }
 
   
   /*======================
