@@ -173,7 +173,7 @@ export default function Home() {
         </div>
         <div className="notes">
           <span id="title">ご来場の皆様へ</span>
-          <div className="content">まちかね祭に車でご来場いただくことはできません。<br/>ご来場の際は公共交通機関をご利用ください。</div>
+          <div className="content">まちかね祭に車でご来場いただくことはできません。<br/>ご来場の際は公共交通機関をご利用ください。<br/>来場予約は不要です。</div>
         </div>
         <div className="machikani-1"><img src={machikani} alt="まちかに"></img></div>
       </div>
