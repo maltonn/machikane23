@@ -1,19 +1,21 @@
-.greeting{
-    margin-top: 50px;
-    padding: 32px;
+.greeting-contents{
+    margin-top: 40px;    
 }
 
 .greeting-title{
+    padding-left: 32px;
     font-size: 37px;
 }
 
-.president img, .chairperson img{
-    width: 20%;
-    height: 20%;
+.position{
+    padding-left: 32px;
+    font-size: 30px;
 }
 
-.position{
-    font-size: 30px;
+.president img, .chairperson img{
+    padding-left: 32px;
+    width: 20%;
+    height: 20%;
 }
 
 .greeting-card{
@@ -22,6 +24,7 @@
 
 .sentences{
     padding-left: 38px;
+    padding-right: 35px;
 }
 
 .sentences>p{
@@ -30,4 +33,18 @@
 
 .name{
     text-align: right;
+}
+
+.president{
+    width:100%;
+    background: linear-gradient( #15c1f6 0%,#b5e5f4 40%, #fff 100%)
+
+}
+
+.chairperson{
+    width:100%;
+    background-image: url("../imgs/inthesea/surface1.png"), linear-gradient( #fff 0%, #01579E 15%, #2E3192 100%);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100%,contain;
+    color:#fff;
 }
