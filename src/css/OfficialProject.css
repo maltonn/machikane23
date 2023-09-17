@@ -72,7 +72,15 @@
     margin:0 auto;
     padding-top: 100px;
   }
-
+  .detail{
+    padding: 0.7em;
+    border: solid 2px #000000;
+    border-radius: 7px;
+    background: #fefdfc;
+    /* color: #fcb1b1; */
+    /* margin: 2em 0; */
+    font-weight: bold;
+  }
   /*パンケーキの☆の部分*/
 .rate {
     position: relative;
