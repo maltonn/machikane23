@@ -36,12 +36,16 @@ body{
   /* お問い合わせボタン */
   .button{
     background: #fff;
-    border: 1px solid #000000;
+    border: 1px solid #2E3192;
+    border: double 3px;
     width: 15%;
     justify-content: center;
     display: flex;
     border-radius: 5px;
     font-size: 16px;
+  }
+  .inquiry{
+    text-decoration: none;
   }
 
   /*======================
@@ -121,6 +125,7 @@ body{
     text-align: center;
     box-sizing: border-box;
     width: 500%;
+    text-decoration: none;
   }
 
  
@@ -138,6 +143,7 @@ body{
     width:90%;
     max-width: 1200px;
     margin: 0 auto;
+    text-decoration: none;
   }
   .contents{
     font-size: 20px;
@@ -376,12 +382,13 @@ body{
       transition: 0.8s ease-in-out;
       transform: translateY(15px);
       opacity: 1.0;
+      text-decoration: none;
     }
     .content.on {
       transform: translateY(0);
       opacity: 0;
+      text-decoration: none;
     }
-    
   /*======================
     スマホ用
   ======================*/
@@ -407,6 +414,7 @@ body{
         box-sizing: contents-box;
         width: 90%;
         font-size: 16px;
+        text-decoration: none;
       }
       .ocean{
         display: block;
@@ -435,7 +443,21 @@ body{
         100% {
           transform: translateX(92vh);
         }
-    }}
+      }
+      /* お問い合わせボタン */
+  .button{
+    background: #fff;
+    border: 1px solid #2E3192;
+    border: double 3px;
+    width: 30%;
+    justify-content: center;
+    display: flex;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .inquiry{
+    text-decoration: none;
+  }}
     @media screen and (max-width: 490px) {
       .title{
         position: absolute;
@@ -519,6 +541,7 @@ body{
       box-sizing: contents-box;
       width: 80%;
       font-size: 19px;
+      text-decoration: none;
     }
    
     .ocean{
@@ -544,6 +567,7 @@ body{
       box-sizing: contents-box;
       width: 80%;
       font-size: 19px;
+      text-decoration: none;
     }
    
     .ocean{
