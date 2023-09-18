@@ -1,0 +1,30 @@
+.goods-mainpage{
+    width: 92%;
+    padding-bottom: 80px;
+    margin:0 auto;
+}
+.goods-intro{
+    background-color: rgb(255, 255, 255, 0.38);
+    font-size: 22px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 0 50px;
+    width: 82%;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.goods-name{
+    background-color: rgb(255, 255, 255, 0.38);
+    font-size: 30px;
+    display: inline-block;
+    padding: 0 20px 0 15px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+.goods-content{
+    background-color: rgb(255, 255, 255, 0.38);
+    font-size: 22px;
+    display: block;
+    padding: 15px 20px;
+    border-radius: 20px;
+}
