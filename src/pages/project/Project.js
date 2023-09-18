@@ -1,4 +1,6 @@
 import { useEffect, useState, useRef } from "react";
+import {Link} from "react-router-dom";
+
 import "../../css/Project.css"
 import "../../css/Common.css"
 import { Helmet } from "react-helmet";
@@ -203,7 +205,7 @@ export default function Project() {
                     <button onClick={()=>setLoadingNum(loadingNum+20)}>もっと見る</button>
                 }
             </div>
-            <a href="./">トップページへ戻る</a>
+            <Link to="/" >トップページへ戻る</Link>
         </div>
     )
 }

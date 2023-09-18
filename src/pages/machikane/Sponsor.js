@@ -1,4 +1,6 @@
 import { Helmet } from "react-helmet";
+import {Link} from "react-router-dom";
+
 import "../../css/Common.css"
 export default function Sponsor() {
     return(
@@ -9,7 +11,7 @@ export default function Sponsor() {
             <div className="preparation">
                 <p>ただいまページ作成中です。しばらくお待ちください。</p>
                 <span>現在のページ：ご協賛</span><br></br>
-                <a href="./">トップページへ戻る</a>
+                <Link to="/" >トップページへ戻る</Link>
             </div>
         </div>
     )
