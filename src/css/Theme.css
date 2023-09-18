@@ -1,9 +1,3 @@
-body{
-    font-family: "fot-tsukuardgothic-std", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin:0;
-  }
   .mmtheme-mainpage{
     width: 92%;
     padding-bottom: 80px;
@@ -18,17 +12,18 @@ body{
     text-align: center;
     background-color: rgb(255, 255, 255, 0.38);
     border-radius: 50px;
-    box-sizing: border-box;
+    box-sizing: content-box;
   }
   .mmtheme-context{
     margin: 0px;
     padding: 10px 20px;
+    width: 82%;
     display: inline-block;
     font-size: 22px;
     text-align: center;
     background-color: rgb(255, 255, 255, 0.38);
     border-radius: 50px;
-    box-sizing: border-box;
+    box-sizing: content-box;
   }
 
     /*======================
@@ -37,11 +32,11 @@ body{
 
   @media (max-width:767px){
     .mmtheme-title{
-      width: 50%;
+      width: auto;
       font-size: 50px;
     }
     .mmtheme-context{
-      width: 90%;
+      width: 80%;
       font-size: 16px;
     }
   }
