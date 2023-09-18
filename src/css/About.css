@@ -263,10 +263,10 @@ body{
   /*======================
   海底の生成される泡の表示のためのもの
   ======================*/
-  .ocean img{
+  /* .ocean img{
     display: block;
     width: 100%;
-  }
+  } */
   
   .bubble {
       position: absolute;
@@ -385,7 +385,6 @@ body{
         bottom: 2300px;
       }
     }
-    /**/
     .contents{
       transition: 0.8s ease-in-out;
       transform: translateY(15px);
@@ -423,7 +422,8 @@ body{
       }
       .ocean{
         display: block;
-      }-------------------
+      }
+      /*-------------------
       イラストの位置調整
       ------------------------*/
       .machikame{

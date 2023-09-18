@@ -25,8 +25,9 @@ export default function Footer() {
             </div>
             <div className="external-site">
                 <a href="./">トップ</a>|
-                <a href="https://tyuujitu.com/privacy-policy.html">プライバシーポリシー</a>|
-                <a href="./inquiry">お問い合わせ</a>
+                <a href="https://tyuujitu.com/privacy-policy.html">プライバシーポリシー</a>
+                {/* |
+                <a href="./inquiry">お問い合わせ</a> */}
             </div>
             <div className="tyuujitu">
                 <span>&copy;大阪大学大学祭中央実行委員会</span>
