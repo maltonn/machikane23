@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import "../../css/Common.css"
 import "../../css/Theme.css"
+import "../../css/About.css"
 import machikame1 from "../../imgs/animal/machikame1.png"
 export default function Theme() {
     return(
