@@ -1,16 +1,55 @@
 import { Helmet } from "react-helmet";
 import "../../css/Common.css"
+import "../../css/About.css"
+import "../../css/Goods.css"
+import machikame1 from "../../imgs/animal/machikame1.png"
 export default function Goods() {
     return(
         <div className="main">
             <Helmet>
             <title>グッズ|まちかね祭2023</title>
             </Helmet>
-            <div className="preparation">
-                <p>ただいまページ作成中です。しばらくお待ちください。</p>
-                <span>現在のページ：グッズ</span><br></br>
-                <a href="./">トップページへ戻る</a>
+            <div className="sky">
+          <div className="top">
+            <div className="machikame"> 
+             <img src={machikame1} alt="まちかめ1"></img>
             </div>
+            <div className="title">
+                <h1>グッズ</h1>
+            </div>
+          </div>
+          <div className="goods-mainpage">
+            <div className="goods-intro">
+                ここに『グッズ販売をすること』を書く。
+                <p>ここに『グッズ販売をすること』を書く。</p>
+            </div>
+            <div className="goods-box">
+                <div className="goods-name">
+                    ・グッズ名
+                </div>
+                <div className="goods-content">
+                    グッズ紹介を入れる
+                    <p>グッズ紹介を入れる</p>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="ocean">      
+            <div className="bottom">
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+            </div>
+        </div>
+
         </div>
     )
 }
