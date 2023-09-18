@@ -14,19 +14,44 @@ body{
     margin-bottom: 15px;
     padding: 20px;
     display: inline-block;
-    font-size: 70px;
+    font-size: 65px;
     text-align: center;
     background-color: rgb(255, 255, 255, 0.38);
     border-radius: 50px;
+    box-sizing: border-box;
   }
   .mmtheme-context{
     margin: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 20px;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 22px;
     text-align: center;
     background-color: rgb(255, 255, 255, 0.38);
     border-radius: 50px;
+    box-sizing: border-box;
+  }
+
+    /*======================
+    スマホ用
+  ======================*/
+
+  @media (max-width:767px){
+    .mmtheme-title{
+      width: 50%;
+      font-size: 50px;
+    }
+    .mmtheme-context{
+      width: 90%;
+      font-size: 16px;
+    }
+  }
+    /*======================
+    タブレット用
+  ======================*/
+  @media (min-width:1090px) and (max-width: 1280px){
+    .mmtheme-context{
+      width: 90%;
+      font-size: 19px;
+      box-sizing: content-box;
+    }
   }
