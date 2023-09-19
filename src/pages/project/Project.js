@@ -124,6 +124,11 @@ export default function Project() {
         
     }
 
+    const onClickClearBtn = () => {
+        document.getElementById("serch_word").value=""
+        setInputValue("")
+    }
+
     return (
         <div className="main">
             <Helmet>
@@ -135,6 +140,7 @@ export default function Project() {
                 <input
                     placeholder="フリーワード"
                     value={inputValue}
+                    id="serch_word"
                     onChange={onChangeInputValue}
                 ></input>
             </div>
@@ -178,6 +184,7 @@ export default function Project() {
                 </div>
             </div>
             <button onClick={onClickSearchBtn}>検索</button>
+            <button onClick={onClickClearBtn}>クリア</button>
 
             {/* 検索結果 */}
             <div>
