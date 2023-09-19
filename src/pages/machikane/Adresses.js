@@ -12,6 +12,7 @@ export default function Adresses() {
             <div className="greeting">
                     <div className="greeting-contents">
                         <div className="president">
+                            <br></br>
                             <span className="greeting-title">ご挨拶</span>
                             <div className="position">総長挨拶</div>
                             <div className="greeting-card">
