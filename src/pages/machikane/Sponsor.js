@@ -6,7 +6,7 @@ import jankara from "../../imgs/sponsor/jankara.jpg"
 import kawashofoods from "../../imgs/sponsor/kawasho-foods.png"
 import senrihankyuhotel from "../../imgs/sponsor/senri-hankyu-hotel.png"
 import solaniwaonsen from "../../imgs/sponsor/solaniwa-onsen.jpg"
-import sorakakeru from "../../imgs/sponsor/sorakakeru.jpg"
+import sorakakeru from "../../imgs/sponsor/sorakakeru.png"
 import sudio from "../../imgs/sponsor/sudio.png"
 export default function Sponsor() {
     return(
@@ -15,20 +15,37 @@ export default function Sponsor() {
             <title>ご協賛|まちかね祭2023</title>
             </Helmet>
             <div className="sponsor-contents">
-                <br></br>
-                <span className="title">ご協賛</span>
-                <br></br>
-                <div className="companies">
-                    <img src={solaniwaonsen}></img>
-                    <div className="1">
-                        <img src={bigecho}></img>
-                        <img src={jankara}></img>
+                <div className="sky">
+                    <br></br>
+                    <span className="title">ご協賛</span>
+                    <br></br>
+                    <div className="companies">
+                        <div className="left">
+                            <div className="solaniwaonsen"><img src={solaniwaonsen}></img></div>
+                            <div className="sudio"><img src={sudio}></img></div>
+                        </div>
+                        <div className="center">
+                            <div className="sorakakeru"><img src={sorakakeru}></img></div>
+                            <div className="jankara"><img src={jankara}></img></div>
+                            <div className="bigecho"><img src={bigecho}></img></div>
+                        </div>
+                        <div className="right">
+                            <div className="kawashofoods"><img src={kawashofoods}></img></div>
+                            <div className="senrihankyuhotel"><img src={senrihankyuhotel}></img></div>
+                        </div>
+                    </div> 
+                    <br></br>
+                </div>
+                <div className="ocean">
+                    <div className="cooperation">
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <div className="???"><p>ホームカミングデイとか旧帝大交流会はどうなったんだろう</p></div>
                     </div>
-                    <img src={kawashofoods}></img>
-                    <img src={senrihankyuhotel}></img>
-                    <img src={sorakakeru}></img>
-                    <img src={sudio}></img>
-                </div>                    
+                </div>             
             </div>
         </div>
     )

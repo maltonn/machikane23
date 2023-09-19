@@ -1,0 +1,50 @@
+.sponsor-contents{
+    margin-top: 40px;    
+}
+
+.title{
+    padding-left: 32px;
+    font-size: 37px;
+    text-align: left;
+}
+
+.companies{
+    text-align: center;
+    width: 100%;
+}
+
+.left,.center,.right{
+    display: inline-block;
+}
+
+.left{
+    height: 100%;
+}
+
+.center{
+    height: 100%;
+    padding-left: 1%;
+}
+
+.right{
+    height: 100%;
+    padding-left: 1%;
+}
+
+.solaniwaonsen img,.sudio img,.sorakakeru img,.jankara img,.bigecho img,.kawashofoods img,.senrihankyuhotel img{
+    width: 100%;
+}
+
+.sky{
+    width:100%;
+    background: linear-gradient( #15c1f6 0%,#b5e5f4 40%, #fff 100%)
+
+}
+
+.ocean{
+    width:100%;
+    background-image: url("../imgs/inthesea/surface1.png"), linear-gradient( #fff 0%, #01579E 15%, #2E3192 100%);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100%,contain;
+    color:#fff;
+}
