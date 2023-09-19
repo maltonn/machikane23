@@ -416,8 +416,107 @@ body{
     list-style-type: none;
     font-size: 30px;
   }
-
-  
+  /* AB棟マップ */
+  .item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .AB1{
+    width:425px;
+    max-width: 100%;
+    border-style: none;
+    box-sizing: border-box;
+  }
+  .AB1 img{
+    width: 100%;
+    margin:50px 0px 0px;
+  }
+  .AB2{
+    width:425px;
+    max-width: 100%;
+    border-style: none;
+  }
+  .AB2 img{
+    width: 100%;
+    margin:50px 0px 0px;
+  }
+  .AB3{
+    width:425px;
+    max-width: 100%;
+    border-style: none;
+  }
+  .AB3 img{
+    width: 100%;
+    margin:50px 0px 0px;
+  }
+  /* C棟 */
+  .C1{
+    width:425px;
+    max-width: 100%;
+    border-style: none;
+  }
+  .C2{
+    width:425px;
+    max-width: 100%;
+    border-style: none;
+  }
+  .C3{
+    width:425px;
+    max-width: 100%;
+    border-style: none;
+  }
+  .C4{
+    width:425px;
+    max-width: 100%;
+    border-style: none;
+  }
+  .C1 img{
+    width: 80%;
+    margin:50px 0px 0px;
+  }
+  .C2 img{
+    width: 80%;
+    margin:50px 0px 0px;
+  }
+  .C3 img{
+    width: 80%;
+    margin:50px 0px 0px;
+  }
+  .C4 img{
+    width: 80%;
+    margin:50px 0px 0px;
+  }
+  /* 法経 */
+  .H1{
+    width:425px;
+    max-width: 100%;
+    border-style: none;
+    box-sizing: border-box;
+  }
+  .H1 img{
+    width: 70%;
+    margin:50px 0px 0px;
+  }
+  .H2{
+    width:425px;
+    max-width: 100%;
+    border-style: none;
+  }
+  .H2 img{
+    width: 70%;
+    margin:50px 0px 0px;
+  }
+  .H3{
+    width:425px;
+    max-width: 100%;
+    border-style: none;
+  }
+  .H3 img{
+    width: 70%;
+    margin:50px 0px 0px;
+  }
   /*======================
     スマホ用
   ======================*/
@@ -530,8 +629,8 @@ body{
   .map img{
     width: 100%;
     margin:50px 0px 0px;
-  } 
-  
+  }
+
   .ul{
     list-style-type: none;
   }
