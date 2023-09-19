@@ -8,7 +8,7 @@
     font-size: 22px;
     display: inline-block;
     padding: 10px 20px;
-    margin: 0 0 50px;
+    margin: 0 auto 50px;
     width: 82%;
     border-radius: 20px;
     box-sizing: border-box;
@@ -16,7 +16,8 @@
 .goods-name{
     background-color: rgb(255, 255, 255, 0.38);
     font-size: 30px;
-    display: inline-block;
+    display: block;
+    width: fit-content;
     padding: 0 20px 0 15px;
     margin-bottom: 10px;
     border-radius: 50px;
@@ -27,4 +28,26 @@
     display: block;
     padding: 15px 20px;
     border-radius: 20px;
+    margin-bottom: 50px;
+}
+.goods-accesstitle{
+    background-color: rgb(255, 255, 255, 0.38);
+    font-size: 40px;
+    display: block;
+    padding: 10px 25px;
+    margin: 15px 0;
+    border-radius: 50px;
+    width: fit-content;
+}
+  /*======================
+    スマホ用
+  ======================*/
+
+@media (max-width:767px){
+    .goods-name{
+        font-size: 25px;
+    }
+    .goods-content{
+        font-size: 18px;
+    }
 }
