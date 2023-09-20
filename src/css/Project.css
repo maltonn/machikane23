@@ -9,12 +9,71 @@
     width: 80px;
 }
 
+/* カード */
 .project-container{
     border: 1px solid black;
     margin: 10px;
+    display: flex;
+}
+.project-card-icon{
+    width: auto;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+    margin: 5px;
+}
+.card-content{
+    margin-left: 5px;
 }
 
+/* タグ設定 */
+.card-tags{
+    display: flex;
+}
+.card-tags div{
+    margin-right: 5px;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+.card-tags div:nth-child(1){
+    background-color: #7BCDBA;
+    color: #FFFFFF;
+}
+.card-tags div:nth-child(2){
+    background-color: #B877C7;
+    color: #FFFFFF;
+}
+.card-tags div:nth-child(3){
+    background-color: rgb(248,183,0);
+    color: #FFFFFF;
+}
+.card-tags div:nth-child(4){
+    background-color: #FF6961;
+    color: #FFFFFF;
+}
 
-.project-card-icon{
-    width: 200px;
+/*色のテンプレート*/
+.green{
+    background-color: #7BCDBA;
+    color: #FFFFFF;
+}
+.blue {
+    background-color: #6096D9;
+    color: #FFFFFF;
+}
+.yellow {
+    background-color: #FFC947;
+    color: #FFFFFF;
+}
+.red {
+    background-color: #FF6961;
+    color: #FFFFFF;
+}
+.purple {
+    background-color: #B877C7;
+    color: #FFFFFF;
+}
+.orange {
+    background-color: rgb(248,183,0);
+    color: #FFFFFF;
 }

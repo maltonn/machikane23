@@ -13,33 +13,28 @@ export default function Project() {
 
     //フォームのデータが入る変数
     const [inputValue, setInputValue] = useState("")
-    const [nowBuildingFilterCheck, setNowBuildingFilterCheck] = useState(false)
+    // const [nowBuildingFilterCheck, setNowBuildingFilterCheck] = useState(false)
     const [forChildFilterCheck, setForChildFilterCheck] = useState(false)
     const [avoidCrowdFilterCheck, setAvoidCrowdFilterCheck] = useState(false)
 
     //今いる建物の名前
-    const [nowStayingBuilding, setNowStayingBuilding] = useState("all")
-    const GetNowStayingBuilding = () => {
-        // TODO 位置情報から現在の建物を取得
-        setNowStayingBuilding("all")
-    }
+    // const [nowStayingBuilding, setNowStayingBuilding] = useState("all")
+    // const GetNowStayingBuilding = () => {
+    //     // TODO 位置情報から現在の建物を取得
+    //     setNowStayingBuilding("all")
+    // }
 
 
 
     const [loadingNum, setLoadingNum] = useState(20)
 
     useEffect(() => {
-        window.addEventListener('load', () => {
-            var getFooter=document.getElementById('footer');
-            getFooter.style.position='relative';
-        });
         fetch("https://app.tyuujitu-system.net/api/machikane23/website/pr.json").then((res) => {
             return res.json()
         }
         ).then((res) => {
             let lst = Object.values(res)
             lst=lst.filter((project)=>project!=null)
-            console.log(lst)
             projectLst.current = lst 
             setDisplayLst(shuffleArray(lst)) 
         })
@@ -79,21 +74,19 @@ export default function Project() {
             project.additionalKeyword=""
 
             project.additionalKeyword+={//模擬店　みたいな検索にたいしてキーワード検索が引っかかるように
-                "kannai":"、館内",
-                "mogiten":"、模擬店、屋台、昼食、お昼ごはん、eat",
-                "stage":"、ステージ、stage",
-                "okugai":"、屋外",
+                "kannai":"館内",
+                "mogiten":"模擬店、屋台、昼食、お昼ごはん、eat",
+                "stage":"ステージ、stage",
+                "okugai":"屋外",
             }[project.section]
 
-
-
-            if(nowBuildingFilterCheck && nowStayingBuilding !== project.building && nowStayingBuilding!=="all"){
-                return -1
-            }
+            // if(nowBuildingFilterCheck && nowStayingBuilding !== project.building && nowStayingBuilding!=="all"){
+            //     return -1
+            // }
             if(forChildFilterCheck && !project.age){
                 return -1
             }
-            if(avoidCrowdFilterCheck && project.congestion=="混雑"){
+            if(avoidCrowdFilterCheck && project.congestion==="混雑"){
                 return -1
             }
             let score=0
@@ -107,8 +100,6 @@ export default function Project() {
             }
             return score
         })
-
-        console.log(scoreLst)
         scoreLst=scoreLst.map((score)=>score>0?score+Math.random()*5:score)//ランダム要素を強めに入れたい
 
         const dic={}
@@ -129,13 +120,27 @@ export default function Project() {
         setInputValue("")
     }
 
+    function visitorPhoto(project){
+        if(project.visitorPhoto){
+            return "撮影可"
+        }else{
+            return "撮影禁止"
+        }
+    }
+
+    function children(project){
+        if(project.age){
+            return <div>子ども向け</div>
+        }else{
+            return null
+        }
+    }
+
     return (
         <div className="main">
             <Helmet>
                 <title>企画検索|まちかね祭2023</title>
             </Helmet>
-            <h2>ここにproject-searchページ</h2>
-
             <div>
                 <input
                     placeholder="フリーワード"
@@ -195,12 +200,19 @@ export default function Project() {
                     return (
                         // ここにカードの内容（適宜変更してください）
                         <div key={project.id} className="project-container">
-                            <div>{project.id}</div>
-                            <div>{project.projectName}</div>
-                            <div>{project.groupName}</div>
-                            <div>{project.pamphletText}</div>
-                            <img src={project.icon} className="project-card-icon"></img>
-                            <div>{project.eventPlace}</div>
+                            <img src={project.icon} className="project-card-icon" alt="icon"></img>
+                            <div className="card-content">
+                                <div>{project.projectName}</div>
+                                <div>{project.groupName}</div>
+                                <div>▷{project.eventPlace}</div>
+                                <div className="card-tags">
+                                    <div>{project.projectGenre}</div>
+                                    <div>{project.cost}</div>
+                                    <div>{visitorPhoto(project)}</div>
+                                    {children(project)}
+                                </div>
+                                <div>▷Show more</div>
+                            </div>
                         </div>
                     )
                 })}
