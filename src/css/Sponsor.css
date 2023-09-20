@@ -35,6 +35,21 @@
     width: 100%;
 }
 
+.solaniwaonsen img,.sudio img{
+    width: 330px;
+    max-width: 100%;
+}
+
+.sorakakeru img,.jankara img,.bigecho img{
+    width: 417px;
+    max-width: 100%;
+}
+
+.kawashofoods img,.senrihankyuhotel img{
+    width: 416px;
+    max-width: 100%;
+}
+
 .sky{
     width:100%;
     background: linear-gradient( #15c1f6 0%,#b5e5f4 40%, #fff 100%)
@@ -49,13 +64,13 @@
     color:#fff;
 }
 
-@media (min-width: 767px) and (max-width: 1260px){
+@media (min-width: 816px) and (max-width: 1260px){
     .title{
         padding-left: 32px;
         font-size: 40px;
         text-align: left;
     }
-    
+
     .left,.center{
         display: inline-block;
     }
