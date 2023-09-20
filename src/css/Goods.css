@@ -50,4 +50,18 @@
     .goods-content{
         font-size: 18px;
     }
+    .goods-accesstitle{
+        font-size: 35px;
+    }
+}
+  /*======================
+    タブレット用
+  ======================*/
+@media (min-width:1090px) and (max-width: 1280px){
+    .goods-name{
+        font-size: 35px;
+    }
+    .goods-content{
+        font-size: 23px;
+    }
 }
