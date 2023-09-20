@@ -12,6 +12,15 @@ import C4 from "../../imgs/map/C棟4階.png"
 import H1 from "../../imgs/map/法経1階.png"
 import H2 from "../../imgs/map/法経2階.png"
 import H3 from "../../imgs/map/法経3階.png"
+import B1 from "../../imgs/map/文法経1階.png"
+import B2 from "../../imgs/map/文法経2階.png"
+import B3 from "../../imgs/map/文法経3階.png"
+import B4 from "../../imgs/map/文法経4階.png"
+import G2 from "../../imgs/map/学生会館2階.png"
+import G3 from "../../imgs/map/学生会館3階.png"
+import M from "../../imgs/map/屋外メインストリート.png"
+import kanade from "../../imgs/map/ステージ奏.png"
+import sora from "../../imgs/map/ステージ宙.png"
 import "../../css/Access.css"
 export default function Map() {
     return(
@@ -68,27 +77,29 @@ export default function Map() {
                     <h1>館内マップ</h1>
                     </div>
                 </div>
+                {/* AB棟マップ */}
                 <div className="notes">
                     <div className="contents">
                         <div className="ul">
                             <li>AB棟</li>
                         </div>
                         <div className="item">
-                                <div className="AB1"> 
+                                <div className="AB"> 
                                     <p>1階</p>
                                     <img src={AB1} alt="AB棟1階"></img>
                                 </div>
-                                <div className="AB2">
+                                <div className="AB">
                                     <p>2階</p>
                                     <img src={AB2} alt="AB棟2階"></img>
                                 </div>
-                                <div className="AB3">
+                                <div className="AB">
                                         <p>3階</p>
                                         <img src={AB3} alt="AB棟3階"></img>
                                 </div>
                         </div>
                     </div>
                 </div>
+                {/* C棟マップ */}
                 <div className="top">
                     <div className="machikame"> 
                         <img src={machikame1} alt="まちかめ1"></img>
@@ -100,25 +111,26 @@ export default function Map() {
                             <li>C棟</li>
                         </div>
                         <div className="item">
-                                <div className="C1"> 
+                                <div className="C"> 
                                     <p>1階</p>
                                     <img src={C1} alt="C棟1階"></img>
                                 </div>
-                                <div className="C2">
+                                <div className="C">
                                     <p>2階</p>
                                     <img src={C2} alt="C棟2階"></img>
                                 </div>
-                                <div className="C3">
+                                <div className="C">
                                         <p>3階</p>
                                         <img src={C3} alt="C棟3階"></img>
                                 </div>
-                                <div className="C4">
+                                <div className="C">
                                         <p>4階</p>
                                         <img src={C4} alt="C棟4階"></img>
                                 </div>
                         </div>
                     </div>
                 </div>
+                {/* 法経マップ */}
                 <div className="top">
                     <div className="machikame"> 
                         <img src={machikame1} alt="まちかめ1"></img>
@@ -130,17 +142,112 @@ export default function Map() {
                             <li>法経講義棟</li>
                         </div>
                         <div className="item">
-                                <div className="H1"> 
+                                <div className="H"> 
                                     <p>1階</p>
                                     <img src={H1} alt="法経1階"></img>
                                 </div>
-                                <div className="H2">
+                                <div className="H">
                                     <p>2階</p>
                                     <img src={H2} alt="法経2階"></img>
                                 </div>
-                                <div className="H3">
+                                <div className="H">
                                         <p>3階</p>
                                         <img src={H3} alt="法経3階"></img>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                {/* 文法経マップ */}
+                <div className="top">
+                    <div className="machikame"> 
+                        <img src={machikame1} alt="まちかめ1"></img>
+                    </div>
+                </div>
+                <div className="notes">
+                    <div className="contents">
+                        <div className="ul">
+                            <li>文法経講義棟</li>
+                        </div>
+                        <div className="item">
+                                <div className="B"> 
+                                    <p>1階</p>
+                                    <img src={B1} alt="文法経1階"></img>
+                                </div>
+                                <div className="B">
+                                    <p>2階</p>
+                                    <img src={B2} alt="文法経2階"></img>
+                                </div>
+                                <div className="B">
+                                        <p>3階</p>
+                                        <img src={B3} alt="文法経3階"></img>
+                                </div>
+                                <div className="B">
+                                        <p>4階</p>
+                                        <img src={B4} alt="文法経4階"></img>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                {/* 学生会館 */}
+                <div className="top">
+                    <div className="machikame"> 
+                        <img src={machikame1} alt="まちかめ1"></img>
+                    </div>
+                </div>
+                <div className="notes">
+                    <div className="contents">
+                        <div className="ul">
+                            <li>学生会館</li>
+                        </div>
+                        <div className="item">
+                                <div className="G"> 
+                                    <p>2階</p>
+                                    <img src={G2} alt="学生会館2階"></img>
+                                </div>
+                                <div className="G">
+                                    <p>3階</p>
+                                    <img src={G3} alt="学生会館3階"></img>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                {/* 屋外模擬店 */}
+                <div className="top">
+                    <div className="machikame"> 
+                    <img src={machikame1} alt="まちかめ1"></img>
+                    </div>
+                        <div className="title">
+                        <h1>模擬店・屋外マップ</h1>
+                        </div>
+                </div>
+                <div className="notes">
+                    <div className="contents">
+                        <div className="item">
+                                <div className="M">
+                                    <img src={M} alt="屋外模擬店"></img>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                {/* ステージ */}
+                <div className="top">
+                    <div className="machikame"> 
+                    <img src={machikame1} alt="まちかめ1"></img>
+                    </div>
+                        <div className="title">
+                        <h1>ステージマップ</h1>
+                        </div>
+                </div>
+                <div className="notes">
+                    <div className="contents">
+                        <div className="item">
+                                <div className="stage">
+                                    <p>ステージ奏</p>
+                                    <img src={kanade} alt="ステージ奏"></img>
+                                </div>
+                                <div className="stage">
+                                    <p>ステージ宙</p>
+                                    <img src={sora} alt="ステージ宙"></img>
                                 </div>
                         </div>
                     </div>

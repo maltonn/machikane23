@@ -105,17 +105,7 @@ body{
   footer{
     background-color:#2E3192;
   }
-  /*======================
-  一個小さい枠組の設定
-  ======================*/
 
-  /*======================
-  sky2 お知らせ欄(news)、来場者の方へ(notes)内部
-  竹内くん的に背景が透明が良いそうだったので、半透明にしてます
-  位置は要調節
-  文章どうしたらいいかわからんからとりあえず準備中にしてます
-  ======================*/
-  
   .news,.notes{
     font-size: 22px;
     margin: 60px auto 30px;
@@ -153,32 +143,7 @@ body{
     max-width: 1200px;
     margin: 0 auto;
   }
-  /*海の中の小見出しのスタイル*/
 
-  /* .item1{
-    display: inline-block;
-    font-size: 93px;
-    opacity: 0.30;
-    position: relative;
-    top:9px;
-    left:14px;
-  }
-  .item2{
-    display: inline-block;
-    font-size: 28px;
-    opacity: 0.30;
-    position: relative;
-    top:9px;
-    right:26px
-  }
-  .item3{
-    display: inline-block;
-    font-size: 15px;
-    opacity: 0.30;
-    position: relative;
-    top:9px;
-    right:26px;
-  } */
   
   /*pickupの文字の色を変化させる*/
   .ocean a{
@@ -423,100 +388,93 @@ body{
     justify-content: center;
     align-items: center;
   }
-  .AB1{
+  .AB{
+    font-size: 18pt;
     width:425px;
     max-width: 100%;
     border-style: none;
     box-sizing: border-box;
   }
-  .AB1 img{
+  .AB img{
     width: 100%;
     margin:50px 0px 0px;
   }
-  .AB2{
-    width:425px;
-    max-width: 100%;
-    border-style: none;
-  }
-  .AB2 img{
-    width: 100%;
-    margin:50px 0px 0px;
-  }
-  .AB3{
-    width:425px;
-    max-width: 100%;
-    border-style: none;
-  }
-  .AB3 img{
-    width: 100%;
-    margin:50px 0px 0px;
-  }
+
   /* C棟 */
-  .C1{
+  .C{
+    font-size: 18pt;
     width:425px;
     max-width: 100%;
     border-style: none;
   }
-  .C2{
-    width:425px;
-    max-width: 100%;
-    border-style: none;
-  }
-  .C3{
-    width:425px;
-    max-width: 100%;
-    border-style: none;
-  }
-  .C4{
-    width:425px;
-    max-width: 100%;
-    border-style: none;
-  }
-  .C1 img{
+  .C img{
     width: 80%;
     margin:50px 0px 0px;
   }
-  .C2 img{
-    width: 80%;
-    margin:50px 0px 0px;
-  }
-  .C3 img{
-    width: 80%;
-    margin:50px 0px 0px;
-  }
-  .C4 img{
-    width: 80%;
-    margin:50px 0px 0px;
-  }
+
   /* 法経 */
-  .H1{
+  .H{
+    font-size: 18pt;
     width:425px;
     max-width: 100%;
     border-style: none;
     box-sizing: border-box;
   }
-  .H1 img{
+  .H img{
     width: 70%;
     margin:50px 0px 0px;
   }
-  .H2{
+
+  /* 文法経 */
+  .B{
+    font-size: 18pt;
     width:425px;
     max-width: 100%;
     border-style: none;
+    box-sizing: border-box;
   }
-  .H2 img{
-    width: 70%;
+  .B img{
+    width: 55%;
     margin:50px 0px 0px;
   }
-  .H3{
+
+  /* 学生会館 */
+  .G{
+    font-size: 18pt;
     width:425px;
     max-width: 100%;
     border-style: none;
+    box-sizing: border-box;
   }
-  .H3 img{
-    width: 70%;
+  .G img{
+    width: 80%;
     margin:50px 0px 0px;
   }
+  /* 屋外メインストリート */
+  .M{
+    font-size: 18pt;
+    width:800px;
+    max-width: 100%;
+    border-style: none;
+    box-sizing: border-box;
+  }
+  .M img{
+    width: 100%;
+    margin:50px 0px 0px;
+  }
+  /* ステージ */
+  .stage{
+    font-size: 18pt;
+    width:800px;
+    max-width: 100%;
+    border-style: none;
+    box-sizing: border-box;
+  }
+  .stage img{
+    width: 100%;
+    margin:50px 0px 0px;
+  }
+
   /*======================
     スマホ用
   ======================*/
@@ -573,19 +531,19 @@ body{
         }
       }
       /* お問い合わせボタン */
-  .button{
-    background: #fff;
-    border: 1px solid #2E3192;
-    border: double 3px;
-    width: 30%;
-    justify-content: center;
-    display: flex;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  .inquiry{
-    text-decoration: none;
-  }}
+      .button{
+        background: #fff;
+        border: 1px solid #2E3192;
+        border: double 3px;
+        width: 30%;
+        justify-content: center;
+        display: flex;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      .inquiry{
+        text-decoration: none;
+      }}
     @media screen and (max-width: 490px) {
       .title{
         position: absolute;
@@ -594,20 +552,20 @@ body{
       h1{
         font-size: 24px;
         /*margin-bottom: 100px;*/
-    }
-    .top{
-      background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
-      background-size: 0%,calc(200px + 8vw),80px;
-      background-repeat: no-repeat,no-repeat,no-repeat;
-      background-position: 100% 4vh,right bottom,4% 220px;
-      height: 300px;
-    }   
+      }
+      .top{
+        background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
+        background-size: 0%,calc(200px + 8vw),80px;
+        background-repeat: no-repeat,no-repeat,no-repeat;
+        background-position: 100% 4vh,right bottom,4% 220px;
+        height: 300px;
+      }   
     .machikame {
       width: 70px;
       position: relative;
       bottom: -44vh;
       left: 70%;
-  }
+    }
 
     }
     /* 駐輪場画像 */
@@ -615,25 +573,25 @@ body{
       width:5000px;
       max-width: 100%;
       border-style: none;
-  }
-  .guide img{
+    }
+    .guide img{
       width: 100%;
       margin:50px 0px 0px;
-  } 
+    } 
   /* 全体マップ */
-  .map{
-    width:5000px;
-    max-width: 100%;
-    border-style: none;
-  }
-  .map img{
-    width: 100%;
-    margin:50px 0px 0px;
-  }
+    .map{
+      width:5000px;
+      max-width: 100%;
+      border-style: none;
+    }
+    .map img{
+      width: 100%;
+      margin:50px 0px 0px;
+    }
 
-  .ul{
-    list-style-type: none;
-  }
+    .ul{
+      list-style-type: none;
+    }
   @media (max-width:767px){
     /* 生協営業時間 */
     .time{
