@@ -21,17 +21,17 @@ export default function Sponsor() {
                     <br></br>
                     <div className="companies">
                         <div className="left">
-                            <div className="solaniwaonsen"><img src={solaniwaonsen}></img></div>
-                            <div className="sudio"><img src={sudio}></img></div>
+                            <div className="solaniwaonsen"><a href="https://solaniwa.com/"><img src={solaniwaonsen}></img></a></div>
+                            <div className="sudio"><a href="https://www.sudio.com/jp/"><img src={sudio}></img></a></div>
                         </div>
                         <div className="center">
-                            <div className="sorakakeru"><img src={sorakakeru}></img></div>
-                            <div className="jankara"><img src={jankara}></img></div>
-                            <div className="bigecho"><img src={bigecho}></img></div>
+                            <div className="sorakakeru"><a href="https://www.sorakakeru.com/"><img src={sorakakeru}></img></a></div>
+                            <div className="jankara"><a href="https://jankara.ne.jp/index.html"><img src={jankara}></img></a></div>
+                            <div className="bigecho"><a href="https://big-echo.jp/"><img src={bigecho}></img></a></div>
                         </div>
                         <div className="right">
-                            <div className="kawashofoods"><img src={kawashofoods}></img></div>
-                            <div className="senrihankyuhotel"><img src={senrihankyuhotel}></img></div>
+                            <div className="kawashofoods"><a href="https://www.cornedbeef.jp/"><img src={kawashofoods}></img></a></div>
+                            <div className="senrihankyuhotel"><a href="https://www.hankyu-hotel.com/hotel/hh/senrihh"><img src={senrihankyuhotel}></img></a></div>
                         </div>
                     </div> 
                     <br></br>
