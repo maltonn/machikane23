@@ -367,11 +367,11 @@ body{
     font-size: 20px;
   }
   .table th, table td {
-    border: solid  1px #adb3c1;
+    border: solid  1.5px #adb3c1;
     padding: 10px;
   }
   .table td {
-    border: solid  1px #adb3c1;
+    border: solid  1.5px #adb3c1;
     padding:1px 8px;
     text-align: center;
     position: relative;
@@ -604,11 +604,11 @@ body{
       font-size: 15px;
     }
     .table th, table td {
-      border: solid  1px #adb3c1;
+      border: solid  1.5px #adb3c1;
       padding: 10px;
     }
     .table td {
-      border: solid  1px #adb3c1;
+      border: solid  1.5px #adb3c1;
       padding:1px 8px;
       text-align: center;
       position: relative;
