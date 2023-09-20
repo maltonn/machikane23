@@ -3,23 +3,47 @@
     padding-bottom: 80px;
     margin:0 auto;
 }
+.goodsp-top{
+    background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
+    background-size: 435px,408px,119px;
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-position: 90% 8vh,290px bottom,4% bottom;
+    height: 427px;
+    position: relative;
+  }
+.goodsp-title{
+    top: 45%;
+    position: absolute;
+}
+h1{
+    font-size: 32px;
+    padding: 10px 40px;
+    background-color: rgba(255,255,255,0.75);
+     border-radius: 0px 50px 50px 0px; 
+    /* border-radius: 50px; */
+    /* border:solid 1.2px rgba(30, 187, 255, 0.8); */
+    display: inline-block ;
+    /*margin-bottom: 150px;*/
+    position: relative;
+    top:0vh;
+  }
 .goods-intro{
     background-color: rgb(255, 255, 255, 0.38);
     font-size: 22px;
-    display: inline-block;
+    display: block;
     padding: 10px 20px;
-    margin: 0 auto 50px;
-    width: 82%;
+    width: 100%;
     border-radius: 20px;
     box-sizing: border-box;
+    margin-bottom: 0 auto 10px;
 }
 .goods-name{
-    background-color: rgb(255, 255, 255, 0.38);
-    font-size: 30px;
+    background-color: rgb(255, 255, 255, 0.7);
+    font-size: 40px;
     display: block;
     width: fit-content;
     padding: 0 20px 0 15px;
-    margin-bottom: 10px;
+    margin: 50px 0 20px;
     border-radius: 50px;
 }
 .goods-content{
@@ -28,7 +52,45 @@
     display: block;
     padding: 15px 20px;
     border-radius: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+}
+.goods-images1{
+    display: block;
+    padding: 10px;
+    background-color: rgb(255, 255, 255, 0.38);
+    margin: 0 10px 15px;
+    width: 45%;
+}
+.goods-images1 img{
+    width: 100%;
+    height: auto;
+}
+.goods-images2{
+    display: block;
+    padding: 10px;
+    background-color: rgb(255, 255, 255, 0.38);
+    width: 37%;
+    margin: 0 10px 10px;
+}
+.goods-images2 img{
+    width: 100%;
+    height: auto;
+}
+.goods-box{
+    width: 100%;
+}
+.goods-images3{
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(255, 255, 255, 0.38);
+    width: 45%;
+    margin: 0 10px 10px;
+    vertical-align: middle;
+}
+.goods-images3 img{
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
 }
 .goods-accesstitle{
     background-color: rgb(255, 255, 255, 0.38);
@@ -44,19 +106,31 @@
   ======================*/
 
 @media (max-width:767px){
-    .goods-name{
-        font-size: 25px;
-    }
-    .goods-content{
+    .goods-intro{
         font-size: 18px;
     }
+    .goods-name{
+        font-size: 20px;
+        border-radius: 30px;
+    }
+    .goods-content{
+        font-size: 16px;
+    }
     .goods-accesstitle{
-        font-size: 35px;
+        font-size: 30px;
     }
 }
   /*======================
     タブレット用
   ======================*/
+@media (min-width:768px) and (max-width: 1090px){
+    .goods-name{
+        font-size: 35px;
+    }
+    .goods-content{
+        font-size: 23px;
+    }
+}
 @media (min-width:1090px) and (max-width: 1280px){
     .goods-name{
         font-size: 35px;
