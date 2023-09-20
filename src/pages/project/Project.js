@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 
 const shuffleArray = (array) => {
     return array.slice().sort(() => Math.random() - Math.random())
-  }
+}
 
 export default function Project() {
     const projectLst = useRef([]) // こっちにはすべてのプロジェクトが入る
