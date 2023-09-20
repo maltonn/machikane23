@@ -8,6 +8,7 @@ import senrihankyuhotel from "../../imgs/sponsor/senri-hankyu-hotel.png"
 import solaniwaonsen from "../../imgs/sponsor/solaniwa-onsen.jpg"
 import sorakakeru from "../../imgs/sponsor/sorakakeru.png"
 import sudio from "../../imgs/sponsor/sudio.png"
+import homecomingday from "../../imgs/sponsor/home-coming-day.jpg"
 export default function Sponsor() {
     return(
         <div className="main">
@@ -43,7 +44,10 @@ export default function Sponsor() {
                         <br></br>
                         <br></br>
                         <br></br>
-                        <div className="???"><p>ホームカミングデイとか旧帝大交流会はどうなったんだろう</p></div>
+                        <br></br>
+                        <div className="homecomingday"><a href="https://ou2023hcd.alumni.osaka-u.ac.jp/"><img src={homecomingday}></img></a></div>
+                        <br></br>
+                        <br></br>
                     </div>
                 </div>             
             </div>

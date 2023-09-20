@@ -56,6 +56,14 @@
 
 }
 
+.homecomingday{
+    text-align: center;
+}
+
+.homecomingday img{
+    width: 600px;
+}
+
 .ocean{
     width:100%;
     background-image: url("../imgs/inthesea/surface1.png"), linear-gradient( #fff 0%, #01579E 15%, #2E3192 100%);
@@ -82,12 +90,40 @@
         width: 755px;
         margin-bottom: 8px;
     }
+
+    .homecomingday img{
+        width: 755px;
+    }
 }
 
-@media only screen and (max-width: 767px){
+@media (min-width: 549px) and (max-width: 816px){
     .title{
-        padding-left: 32px;
+        padding-left: 40px;
         font-size: 40px;
+    }
+
+    .left,.center,.right{
+        display: block;
+        width: 60%;
+        margin-left: 20%;
+        padding-left: 0%;
+    }
+
+    .homecomingday{
+        width: 60%;
+        margin-left: 20%;
+        padding-left: 0%;
+    }
+
+    .solaniwaonsen img,.sudio img,.sorakakeru img,.jankara img,.bigecho img,.kawashofoods img,.senrihankyuhotel img,.homecomingday img{
+        max-width: 330px;
+    }
+}
+
+@media only screen and (max-width: 549px){
+    .title{
+        padding-left: 40px;
+        font-size: 40px;;
         text-align: left;
     }
 
@@ -95,5 +131,15 @@
         display: block;
         width: 60%;
         margin-left: 20%;
+        padding-left: 0%;
+    }
+
+    .homecomingday{
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .solaniwaonsen img,.sudio img,.sorakakeru img,.jankara img,.bigecho img,.kawashofoods img,.senrihankyuhotel img,.homecomingday img{
+        max-width: 60%;
     }
 }
