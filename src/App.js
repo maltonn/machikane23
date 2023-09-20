@@ -15,6 +15,7 @@ import Sponsor from './pages/machikane/Sponsor';
 
 import Sections from './pages/project/Sections';
 import Project from './pages/project/Project';
+import Detail from './pages/project/Detail';
 import Timetable from './pages/project/Timetable';
 import Ralley from './pages/project/Ralley';
 import OfficialProject from './pages/project/OfficialProject';
@@ -84,6 +85,7 @@ export default function App() {
 
         <Route path="/sections/" element={<Sections />} />
         <Route path="/project-search/" element={<Project />} />
+        <Route path="/project-search/:id" element={<Detail />} />
         {/* <Route path="/project-search/" element={<ProjectTmp />} /> */}
         <Route path="/timetable/" element={<Timetable />} />
         <Route path="/ralley/" element={<Ralley />} />
