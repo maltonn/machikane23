@@ -20,7 +20,7 @@ export default function Access() {
                 </div>
                 <div className="mainpage"> 
                     <div className="notes">
-                        <div className="contents">大阪大学豊中キャンパス
+                        <div className="content">大阪大学豊中キャンパス
                         </div>
                     </div>
                 </div>
@@ -34,7 +34,7 @@ export default function Access() {
                 </div>
                 <div className="mainpage"> 
                     <div className="notes">
-                        <div className="contents">
+                        <div className="content">
                             <li>阪急電車宝塚線　石橋阪大前駅より徒歩約15分<br></br>
                                 阪大坂を上り、総合案内所までお越しください
                             </li>
@@ -54,7 +54,7 @@ export default function Access() {
                 </div>
                 <div className="mainpage"> 
                     <div className="notes">
-                        <div className="content">
+                        <div className="naiyou">
                         <li>まちかね祭会場及び会場付近に駐車場はありませんので、公共交通機関をご利用ください。
                             ただし、歩行が困難であるなどやむを得ない事情をお持ちの方は、事前に当委員会までご連絡ください。
                             <div className="button"><a className="inquiry" href="./inquiry">お問い合わせ</a>
