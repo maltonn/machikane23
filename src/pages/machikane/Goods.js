@@ -3,6 +3,15 @@ import "../../css/Common.css"
 import "../../css/About.css"
 import "../../css/Goods.css"
 import machikame1 from "../../imgs/animal/machikame1.png"
+import sticker1 from "../../imgs/goods/sticker1.jpg"
+import sticker2 from "../../imgs/goods/sticker2.jpg"
+import sticker3 from "../../imgs/goods/sticker3.jpg"
+import sticker4 from "../../imgs/goods/sticker4.jpg"
+import sticker5 from "../../imgs/goods/sticker5.png"
+import pen1 from "../../imgs/goods/pen1.jpg"
+import pen2 from "../../imgs/goods/pen2.png"
+import pen3 from "../../imgs/goods/pen3.png"
+import totebag from "../../imgs/goods/totebag.png"
 export default function Goods() {
     return(
         <div className="main">
@@ -10,11 +19,8 @@ export default function Goods() {
             <title>グッズ|まちかね祭2023</title>
             </Helmet>
             <div className="sky">
-                <div className="top">
-                    <div className="machikame"> 
-                        <img src={machikame1} alt="まちかめ1"></img>
-                    </div>
-                    <div className="title">
+                <div className="goodsp-top">
+                    <div className="goodsp-title">
                         <h1>グッズ</h1>
                     </div>
                 </div>
@@ -24,18 +30,52 @@ export default function Goods() {
                         <p>ここに『グッズ販売をすること』を書く。</p>
                     </div>
                     <div className="goods-name">
-                        ・グッズ名
+                        ・ステッカー　200円（二枚セット）
                     </div>
                     <div className="goods-content">                    
                         グッズ紹介を入れる
                         <p>グッズ紹介を入れる</p>
                     </div>
+                    <div className="goods-images1">
+                        <img src={sticker1} alt="ステッカー1"></img>
+                    </div>
+                    <div className="goods-images1">
+                        <img src={sticker2} alt="ステッカー2"></img>
+                    </div>
+                    <div className="goods-images1">
+                        <img src={sticker3} alt="ステッカー3"></img>
+                    </div>
+                    <div className="goods-images1">
+                        <img src={sticker4} alt="ステッカー4"></img>
+                    </div>
+                    <div className="goods-images2">
+                        <img src={sticker5} alt="ステッカー5"></img>
+                    </div>
+
                     <div className="goods-name">
-                        ・グッズ名あいうえ
+                        ・ボールペン　200円
                     </div>
                     <div className="goods-content">                    
-                        グッズ紹介を入れるグッズ紹介を入れるグッズ紹介を入れるグッズ紹介を入れるグッズ紹介を入れるあいうえお
-                        <p>グッズ紹介を入れるグッズ紹介を入れるグッズ紹介を入れる</p>
+                        グッズ紹介を入れる
+                        <p>グッズ紹介を入れる</p>
+                    </div>
+                    <div className="goods-box">
+                        <div className="goods-images3">
+                            <img src={pen1} alt="ボールペン1"></img>
+                        </div>
+                        <div className="goods-images3">
+                            <img src={pen2} alt="ボールペン2"></img>
+                        </div>
+                    </div>
+                    <div className="goods-name">
+                        ・トートバッグ　500円
+                    </div>
+                    <div className="goods-content">                    
+                        グッズ紹介を入れる
+                        <p>グッズ紹介を入れる</p>
+                    </div>
+                    <div className="goods-images1">
+                        <img src={totebag} alt="トートバッグ"></img>
                     </div>
                     <div className="goods-accesstitle">
                         販売場所
