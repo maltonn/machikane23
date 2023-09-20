@@ -38,7 +38,7 @@ export default function Map() {
                         </div>
                 </div>
                 <div className="notes">
-                        <div className="contents">
+                        <div className="content">
                             <div className="ul">
                             <li>全体マップ</li>
                             </div>
@@ -49,7 +49,7 @@ export default function Map() {
                             <li>学内店舗の営業時間</li><br></br>
                             </div>
                             <div className="time">
-                                <div className="table">
+                                <div className="tables">
                                     <tr>
                                         <th>店舗名</th> <th>11/3(金)</th> <th>11/4(土)</th> <th>11/5(日)</th>
                                     </tr>
@@ -79,7 +79,7 @@ export default function Map() {
                 </div>
                 {/* AB棟マップ */}
                 <div className="notes">
-                    <div className="contents">
+                    <div className="content">
                         <div className="ul">
                             <li>AB棟</li>
                         </div>
@@ -106,7 +106,7 @@ export default function Map() {
                     </div>
                 </div>
                 <div className="notes">
-                    <div className="contents">
+                    <div className="content">
                         <div className="ul">
                             <li>C棟</li>
                         </div>
@@ -137,7 +137,7 @@ export default function Map() {
                     </div>
                 </div>
                 <div className="notes">
-                    <div className="contents">
+                    <div className="content">
                         <div className="ul">
                             <li>法経講義棟</li>
                         </div>
@@ -164,7 +164,7 @@ export default function Map() {
                     </div>
                 </div>
                 <div className="notes">
-                    <div className="contents">
+                    <div className="content">
                         <div className="ul">
                             <li>文法経講義棟</li>
                         </div>
@@ -195,7 +195,7 @@ export default function Map() {
                     </div>
                 </div>
                 <div className="notes">
-                    <div className="contents">
+                    <div className="content">
                         <div className="ul">
                             <li>学生会館</li>
                         </div>
@@ -221,7 +221,7 @@ export default function Map() {
                         </div>
                 </div>
                 <div className="notes">
-                    <div className="contents">
+                    <div className="content">
                         <div className="item">
                                 <div className="M">
                                     <img src={M} alt="屋外模擬店"></img>
@@ -239,7 +239,7 @@ export default function Map() {
                         </div>
                 </div>
                 <div className="notes">
-                    <div className="contents">
+                    <div className="content">
                         <div className="item">
                                 <div className="stage">
                                     <p>ステージ奏</p>

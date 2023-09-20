@@ -126,7 +126,7 @@ body{
     font-size: 37px;
     padding-top: 8px;
   }
-  .content{
+  .naiyou{
     font-size: 20px;
     padding: 10px 0px 30px;
     text-align: left;/*文字左揃え*/
@@ -135,7 +135,7 @@ body{
     margin: 0 auto;
     text-decoration: none;
   }
-  .contents{
+  .content{
     font-size: 20px;
     padding: 10px 0px 30px;
     text-align: center;/*文字中央*/
@@ -360,17 +360,17 @@ body{
     margin: 10px auto;
     display: inline-block;
   }
-  .table {
+  .tables {
     border-collapse: collapse;
     text-align: center;
     position: relative;
     font-size: 20px;
   }
-  .table th, table td {
+  .tables th, tables td {
     border: solid  1px #adb3c1;
     padding: 10px;
   }
-  .table td {
+  .tables td {
     border: solid  1px #adb3c1;
     padding:1px 8px;
     text-align: center;
@@ -597,17 +597,17 @@ body{
     .time{
       font-size: 3pt;
     }
-    .table {
+    .tables {
       border-collapse: collapse;
       text-align: center;
       position: relative;
       font-size: 15px;
     }
-    .table th, table td {
+    .tables th, .tables td {
       border: solid  1px #adb3c1;
       padding: 10px;
     }
-    .table td {
+    .tables td {
       border: solid  1px #adb3c1;
       padding:1px 8px;
       text-align: center;
