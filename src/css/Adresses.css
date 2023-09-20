@@ -48,3 +48,28 @@
     background-size: 100%,contain;
     color:#fff;
 }
+
+@media only screen and (max-width: 767px){
+    .greeting-card{
+        display: block;
+    }
+    
+    .greeting-title{
+        padding-left: 32px;
+        font-size: 40px;
+    }
+    
+    .position{
+        padding-left: 32px;
+        font-size: 35px;
+    }
+
+    .president img, .chairperson img{
+        width: 40%;
+        padding-left: 30%;
+    }
+
+    .sentences{
+        font-size: 25px;
+    }
+}
