@@ -25,17 +25,17 @@ export default function Goods() {
                     </div>
                 </div>
                 <div className="goods-mainpage">
-                    <div className="goods-intro">
+                    {/* <div className="goods-intro">
                         ここに『グッズ販売をすること』を書く。
                         <p>ここに『グッズ販売をすること』を書く。</p>
-                    </div>
+                    </div> */}
                     <div className="goods-name">
-                        ・ステッカー　200円（二枚セット）
+                        ・ステッカー　300円（二枚セット）
                     </div>
-                    <div className="goods-content">                    
+                    {/* <div className="goods-content">                    
                         グッズ紹介を入れる
                         <p>グッズ紹介を入れる</p>
-                    </div>
+                    </div> */}
                     <div className="goods-images1">
                         <img src={sticker1} alt="ステッカー1"></img>
                     </div>
@@ -53,12 +53,12 @@ export default function Goods() {
                     </div>
 
                     <div className="goods-name">
-                        ・ボールペン　200円
+                        ・ボールペン　300円
                     </div>
-                    <div className="goods-content">                    
+                    {/* <div className="goods-content">                    
                         グッズ紹介を入れる
                         <p>グッズ紹介を入れる</p>
-                    </div>
+                    </div> */}
                     <div className="goods-box">
                         <div className="goods-images3">
                             <img src={pen1} alt="ボールペン1"></img>
@@ -70,16 +70,16 @@ export default function Goods() {
                     <div className="goods-name">
                         ・トートバッグ　500円
                     </div>
-                    <div className="goods-content">                    
+                    {/* <div className="goods-content">                    
                         グッズ紹介を入れる
                         <p>グッズ紹介を入れる</p>
-                    </div>
+                    </div> */}
                     <div className="goods-images1">
                         <img src={totebag} alt="トートバッグ"></img>
                     </div>
-                    <div className="goods-accesstitle">
+                    {/* <div className="goods-accesstitle">
                         販売場所
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
