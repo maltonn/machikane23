@@ -55,22 +55,28 @@
   ======================*/
 
   @media (max-width:767px){
-    .mmtheme-title{
+    .themep-title{
       width: auto;
       font-size: 50px;
     }
-    .mmtheme-context{
-      width: 80%;
-      font-size: 16px;
+    .themep-context{
+      width: 85%;
+      font-size: 17px;
     }
   }
     /*======================
     タブレット用
   ======================*/
   @media (min-width:1090px) and (max-width: 1280px){
-    .mmtheme-context{
+    .themep-context{
       width: 90%;
       font-size: 19px;
       box-sizing: content-box;
+    }
+  }
+  @media (min-width:768px) and (max-width: 1090px){
+    .themep-context{
+      width: 90%;
+      font-size: 19px;
     }
   }
