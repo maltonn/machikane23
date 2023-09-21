@@ -19,6 +19,15 @@ export default function Detail() {
             setProject(res)
         })
     }, [])
+    function eventPlace(project){
+        if(project.section==="mogiten"){
+            return "テント" + project.eventPlace
+        }else if(project.section==="stage"){
+            return "ステージ" + project.eventPlace
+        }else{
+            return project.eventPlace
+        }
+    }
     function visitorPhoto(project){
         if(project.visitorPhoto){
             return "撮影可"
@@ -43,17 +52,25 @@ export default function Detail() {
             <h2>詳細ページ</h2>
             {
                 project ?(
-                    <div style={{border:"3px solid black",margin:"100px"}}>
-                        <h3>{project.groupName}</h3>
-                        <p>{project.projectName}</p>
-                        <img src={project.icon} alt="" />
+                    <div key={project.id} className="project-container">
+                    <img src={project.icon} className="project-card-icon" alt="icon"></img>
+                    <div className="card-content">
+                        <div className="projectName">{project.projectName}</div>
+                        <div>{project.groupName}</div>
+                        <div>▷{eventPlace(project)}</div>
+                        <div className="card-tags">
+                            <div>{project.projectGenre}</div>
+                            <div>{project.cost}</div>
+                            <div>{visitorPhoto(project)}</div>
+                            {children(project)}
+                        </div>
                     </div>
+                </div>
                 ):(
                     <p>読み込み中</p>
                 )
             }
-
-            <Link to="/" >トップページへ戻る</Link>
+            <Link className="toTheTop" to="/" >トップページへ戻る</Link>
         </div>
     )
 }
