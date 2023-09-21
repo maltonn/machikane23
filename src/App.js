@@ -7,7 +7,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 import Home from "./pages/Home";
-// import About from "./pages/machikane/About";
+import About from "./pages/machikane/About";
 import Adresses from './pages/machikane/Adresses';
 import Theme from './pages/machikane/Theme';
 import Goods from './pages/machikane/Goods';
@@ -54,7 +54,7 @@ import MapEn from './En-pages/access-map/MapEn';
 import Error404 from './pages/Error404';
 
 /*作成中のページ用　完成したら消す*/
-import AboutTmp from './pages/tmp/AboutTmp';
+// import AboutTmp from './pages/tmp/AboutTmp';
 import ProjectTmp from './pages/tmp/ProjectTmp';
 
 export default function App() {
@@ -75,8 +75,8 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/about/" element={<About />} /> */}
-        <Route path="/about/" element={<AboutTmp />} />
+        <Route path="/about/" element={<About />} />
+        {/* <Route path="/about/" element={<AboutTmp />} /> */}
         <Route path="/adresses/" element={<Adresses />} />
         <Route path="/theme/" element={<Theme />} />
         <Route path="/goods/" element={<Goods />} />
