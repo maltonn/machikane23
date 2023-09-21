@@ -28,7 +28,7 @@ export default function Project() {
 
 
 
-    const [loadingNum, setLoadingNum] = useState(20)
+    const [loadingNum, setLoadingNum] = useState(10)
 
     useEffect(() => {
         fetch("https://app.tyuujitu-system.net/api/machikane23/website/pr.json").then((res) => {
@@ -258,16 +258,6 @@ export default function Project() {
             </div>
             <div className="ocean">
                 <div className="bottom">
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
                 </div>
             </div>
         </div>
