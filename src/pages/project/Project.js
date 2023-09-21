@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from "react";
+import { Link } from "react-router-dom";
 import "../../css/Project.css"
 import "../../css/About.css"
 import "../../css/Common.css"
@@ -119,11 +120,23 @@ export default function Project() {
     const onClickClearBtn = () => {
         document.getElementById("serch_word").value=""
         setInputValue("")
+        var children=document.getElementById("checkbox2").checked
+        if(children){
+            children=!children
+            setForChildFilterCheck(prev => !prev)
+        }
+        var crowd=document.getElementById("checkbox3").checked
+        if(crowd){
+            crowd=!crowd
+            setAvoidCrowdFilterCheck(prev => !prev)
+        }
     }
 
     function eventPlace(project){
         if(project.section==="mogiten"){
             return "テント" + project.eventPlace
+        }else if(project.section==="stage"){
+            return "ステージ" + project.eventPlace
         }else{
             return project.eventPlace
         }
@@ -146,7 +159,7 @@ export default function Project() {
     }
 
     function detail(project){
-        return <a className="toDetail" href={project.id}>▷Show more</a>
+        return <Link className="toDetail" to={"/project-search/"+project.id}>▷Show more</Link>
     }
 
     return (
@@ -155,9 +168,9 @@ export default function Project() {
                 <title>企画検索|まちかね祭2023</title>
             </Helmet>
             <div className="sky-project">
-                <div className="serch-header top">
+                <div className="search-header">
                     <h1>企画検索</h1> 
-                    <div className="mainpage"> 
+                    <div className="search-mainpage"> 
                         <div>
                             <input
                                 placeholder="フリーワード"
@@ -195,7 +208,7 @@ export default function Project() {
                             <div>
                                 <label htmlFor="checkbox2">
                                     <input type="checkbox" id="checkbox2" checked={forChildFilterCheck} onChange={() => setForChildFilterCheck(prev => !prev)} />
-                                    <span>子供向け</span>
+                                    <span>子ども向け</span>
                                 </label>
                             </div>
                             <div>
@@ -211,17 +224,17 @@ export default function Project() {
                 </div>
 
                 {/* 検索結果 */}
+                <div className="search-result">{displayLst.length}件 ヒットしました。</div>
                 <div>
                     {displayLst.slice(0,loadingNum).map((project) => {
                         if(!project){
                             return null
                         }
                         return (
-                            // ここにカードの内容（適宜変更してください）
                             <div key={project.id} className="project-container">
                                 <img src={project.icon} className="project-card-icon" alt="icon"></img>
                                 <div className="card-content">
-                                    <div>{project.projectName}</div>
+                                    <div className="projectName">{project.projectName}</div>
                                     <div>{project.groupName}</div>
                                     <div>▷{eventPlace(project)}</div>
                                     <div className="card-tags">
@@ -236,12 +249,12 @@ export default function Project() {
                         )
                     })}
                 </div>
-                <div>
+                <div className="more-load">
                     {loadingNum<displayLst.length&& 
                         <button onClick={()=>setLoadingNum(loadingNum+20)}>もっと見る</button>
                     }
                 </div>
-                <a href="./">トップページへ戻る</a>
+                <Link className="toTheTop" to="/" >トップページへ戻る</Link>
             </div>
             <div className="ocean">
                 <div className="bottom">
