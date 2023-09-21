@@ -38,7 +38,7 @@ export default function Detail() {
     return (
         <div className="main">
             <Helmet>
-                <title>{project.groupName}|まちかね祭2023</title>
+            <title>{project?project.groupName:"企画詳細"}|まちかね祭2023</title>
             </Helmet>
             <h2>詳細ページ</h2>
             {
