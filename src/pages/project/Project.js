@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import "../../css/Project.css"
+import "../../css/About.css"
 import "../../css/Common.css"
 import { Helmet } from "react-helmet";
 
@@ -120,6 +121,14 @@ export default function Project() {
         setInputValue("")
     }
 
+    function eventPlace(project){
+        if(project.section==="mogiten"){
+            return "テント" + project.eventPlace
+        }else{
+            return project.eventPlace
+        }
+    }
+
     function visitorPhoto(project){
         if(project.visitorPhoto){
             return "撮影可"
@@ -136,93 +145,118 @@ export default function Project() {
         }
     }
 
+    function detail(project){
+        return <a className="toDetail" href={project.id}>▷Show more</a>
+    }
+
     return (
         <div className="main">
             <Helmet>
                 <title>企画検索|まちかね祭2023</title>
             </Helmet>
-            <div>
-                <input
-                    placeholder="フリーワード"
-                    value={inputValue}
-                    id="serch_word"
-                    onChange={onChangeInputValue}
-                ></input>
-            </div>
+            <div className="sky-project">
+                <div className="serch-header top">
+                    <h1>企画検索</h1> 
+                    <div className="mainpage"> 
+                        <div>
+                            <input
+                                placeholder="フリーワード"
+                                value={inputValue}
+                                id="serch_word"
+                                onChange={onChangeInputValue}
+                            ></input>
+                        </div>
 
-            {/* おすすめキーワード */}
-            <div className="pickup-keyword-container">
-                {
-                    ["ダンス", "ライブ", "お昼ごはん"].map((keyword) => {
-                        return (
-                            <div
-                                onClick={() => onPickupKeywordClick(keyword)}
-                                key={keyword}
-                                className="pickup-keyword"
-                            >
-                                {keyword}
+                        {/* おすすめキーワード */}
+                        <div className="pickup-keyword-container">
+                            {
+                                ["ダンス", "ライブ", "お昼ごはん"].map((keyword) => {
+                                    return (
+                                        <div
+                                            onClick={() => onPickupKeywordClick(keyword)}
+                                            key={keyword}
+                                            className="pickup-keyword"
+                                        >
+                                            {keyword}
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
+
+                        {/* チェックボックス */}
+                        <div>
+                            {/* <div>
+                                <label htmlFor="checkbox1">
+                                    <input type="checkbox" id="checkbox1" checked={nowBuildingFilterCheck} onChange={() => setNowBuildingFilterCheck(prevState => !prevState)} />
+                                    <span>今いる建物内で検索</span>
+                                </label>
+                            </div> */}
+                            <div>
+                                <label htmlFor="checkbox2">
+                                    <input type="checkbox" id="checkbox2" checked={forChildFilterCheck} onChange={() => setForChildFilterCheck(prev => !prev)} />
+                                    <span>子供向け</span>
+                                </label>
                             </div>
-                        )
-                    })
-                }
-            </div>
-
-            {/* チェックボックス */}
-            <div>
-                {/* <div>
-                    <label htmlFor="checkbox1">
-                        <input type="checkbox" id="checkbox1" checked={nowBuildingFilterCheck} onChange={() => setNowBuildingFilterCheck(prevState => !prevState)} />
-                        <span>今いる建物内で検索</span>
-                    </label>
-                </div> */}
-                <div>
-                    <label htmlFor="checkbox2">
-                        <input type="checkbox" id="checkbox2" checked={forChildFilterCheck} onChange={() => setForChildFilterCheck(prev => !prev)} />
-                        <span>子供向け</span>
-                    </label>
-                </div>
-                <div>
-                    <label htmlFor="checkbox3">
-                        <input type="checkbox" id="checkbox3" checked={avoidCrowdFilterCheck} onChange={() => setAvoidCrowdFilterCheck(prev => !prev)} />
-                        <span>混雑している企画を除く</span>
-                    </label>
-                </div>
-            </div>
-            <button onClick={onClickSearchBtn}>検索</button>
-            <button onClick={onClickClearBtn}>クリア</button>
-
-            {/* 検索結果 */}
-            <div>
-                {displayLst.slice(0,loadingNum).map((project) => {
-                    if(!project){
-                        return null
-                    }
-                    return (
-                        // ここにカードの内容（適宜変更してください）
-                        <div key={project.id} className="project-container">
-                            <img src={project.icon} className="project-card-icon" alt="icon"></img>
-                            <div className="card-content">
-                                <div>{project.projectName}</div>
-                                <div>{project.groupName}</div>
-                                <div>▷{project.eventPlace}</div>
-                                <div className="card-tags">
-                                    <div>{project.projectGenre}</div>
-                                    <div>{project.cost}</div>
-                                    <div>{visitorPhoto(project)}</div>
-                                    {children(project)}
-                                </div>
-                                <div>▷Show more</div>
+                            <div>
+                                <label htmlFor="checkbox3">
+                                    <input type="checkbox" id="checkbox3" checked={avoidCrowdFilterCheck} onChange={() => setAvoidCrowdFilterCheck(prev => !prev)} />
+                                    <span>混雑している企画を除く</span>
+                                </label>
                             </div>
                         </div>
-                    )
-                })}
+                        <button onClick={onClickSearchBtn}>検索</button>
+                        <button onClick={onClickClearBtn}>クリア</button>
+                    </div>
+                </div>
+
+                {/* 検索結果 */}
+                <div>
+                    {displayLst.slice(0,loadingNum).map((project) => {
+                        if(!project){
+                            return null
+                        }
+                        return (
+                            // ここにカードの内容（適宜変更してください）
+                            <div key={project.id} className="project-container">
+                                <img src={project.icon} className="project-card-icon" alt="icon"></img>
+                                <div className="card-content">
+                                    <div>{project.projectName}</div>
+                                    <div>{project.groupName}</div>
+                                    <div>▷{eventPlace(project)}</div>
+                                    <div className="card-tags">
+                                        <div>{project.projectGenre}</div>
+                                        <div>{project.cost}</div>
+                                        <div>{visitorPhoto(project)}</div>
+                                        {children(project)}
+                                    </div>
+                                    <div className="toDetailParent">{detail(project)}</div>
+                                </div>
+                            </div>
+                        )
+                    })}
+                </div>
+                <div>
+                    {loadingNum<displayLst.length&& 
+                        <button onClick={()=>setLoadingNum(loadingNum+20)}>もっと見る</button>
+                    }
+                </div>
+                <a href="./">トップページへ戻る</a>
             </div>
-            <div>
-                {loadingNum<displayLst.length&& 
-                    <button onClick={()=>setLoadingNum(loadingNum+20)}>もっと見る</button>
-                }
+            <div className="ocean">
+                <div className="bottom">
+                    <div className="bubble"></div>
+                    <div className="bubble"></div>
+                    <div className="bubble"></div>
+                    <div className="bubble"></div>
+                    <div className="bubble"></div>
+                    <div className="bubble"></div>
+                    <div className="bubble"></div>
+                    <div className="bubble"></div>
+                    <div className="bubble"></div>
+                    <div className="bubble"></div>
+                </div>
             </div>
-            <a href="./">トップページへ戻る</a>
         </div>
     )
 }
