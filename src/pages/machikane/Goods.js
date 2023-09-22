@@ -20,6 +20,9 @@ export default function Goods() {
             </Helmet>
             <div className="sky">
                 <div className="goodsp-top">
+                    <div className="machikame"> 
+                        <img src={machikame1} alt="まちかめ1"></img>
+                    </div>
                     <div className="goodsp-title">
                         <h1>グッズ</h1>
                     </div>
@@ -32,10 +35,9 @@ export default function Goods() {
                     <div className="goods-name">
                         ・ステッカー　300円（二枚セット）
                     </div>
-                    {/* <div className="goods-content">                    
-                        グッズ紹介を入れる
-                        <p>グッズ紹介を入れる</p>
-                    </div> */}
+                    <div className="goods-content">                    
+                        前回好評いただいたステッカーが今回も登場。かわいいものからかっこいいものまでデザイン様々取り揃えています。
+                    </div>
                     <div className="goods-images1">
                         <img src={sticker1} alt="ステッカー1"></img>
                     </div>
@@ -55,10 +57,9 @@ export default function Goods() {
                     <div className="goods-name">
                         ・ボールペン　300円
                     </div>
-                    {/* <div className="goods-content">                    
-                        グッズ紹介を入れる
-                        <p>グッズ紹介を入れる</p>
-                    </div> */}
+                    <div className="goods-content">                    
+                        メタリックでかっこいいデザイン。書かれたロゴ「阪燦々」は今回のまちかね祭のメインテーマです。
+                    </div>
                     <div className="goods-box">
                         <div className="goods-images3">
                             <img src={pen1} alt="ボールペン1"></img>
@@ -70,10 +71,9 @@ export default function Goods() {
                     <div className="goods-name">
                         ・トートバッグ　500円
                     </div>
-                    {/* <div className="goods-content">                    
-                        グッズ紹介を入れる
-                        <p>グッズ紹介を入れる</p>
-                    </div> */}
+                    <div className="goods-content">                    
+                        A4サイズがしっかり入る便利なトートバッグ。学祭を回るときのお供にぜひ。
+                    </div>
                     <div className="goods-images1">
                         <img src={totebag} alt="トートバッグ"></img>
                     </div>
