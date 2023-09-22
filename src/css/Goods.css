@@ -8,13 +8,13 @@
     background-size: 435px,408px,119px;
     background-repeat: no-repeat,no-repeat,no-repeat;
     background-position: 90% 8vh,290px bottom,4% bottom;
-    height: 427px;
+    height: 340px;
     position: relative;
   }
 .goodsp-title{
-    top: 45%;
-    position: absolute;
-}
+  position: absolute;
+  top:200px;
+  } 
 h1{
     font-size: 32px;
     padding: 10px 40px;
@@ -114,11 +114,22 @@ h1{
         border-radius: 30px;
     }
     .goods-content{
-        font-size: 16px;
+        font-size: 20px;
     }
     .goods-accesstitle{
         font-size: 30px;
     }
+    .goodsp-top{
+            background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
+            background-size: 35%,calc(258px + 7vw),15%;
+            background-repeat: no-repeat,no-repeat,no-repeat;
+            background-position: 100% 4vh,calc(92px + 15vw) bottom,4% bottom;
+            height: calc(340px + 2vw);
+    }
+    .goodsp-title{
+        position: relative;
+        top:0px;
+    } 
 }
   /*======================
     タブレット用
@@ -130,6 +141,13 @@ h1{
     .goods-content{
         font-size: 23px;
     }
+    .goodsp-top{
+        background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
+        background-size: 35%,calc(50px + 35vw),15%;
+        background-repeat: no-repeat,no-repeat,no-repeat;
+        background-position: 100% 4vh,40% bottom,4% bottom;
+        height: 340px;
+      }
 }
 @media (min-width:1090px) and (max-width: 1280px){
     .goods-name{
@@ -138,4 +156,16 @@ h1{
     .goods-content{
         font-size: 23px;
     }
+    .goodsp-top{
+        background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
+        background-size: 370px,370px,111px;
+        background-repeat: no-repeat,no-repeat,no-repeat;
+        background-position: 96% 8vh,289px bottom,4% bottom;
+        height: 396px;
+      }
+    .goodsp-title{
+        position: relative;
+        top:0px;
+    } 
+  
 }
