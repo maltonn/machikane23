@@ -79,7 +79,7 @@ export default function Detail() {
                                 <div>混雑状況：{project.congestion}</div>
                             </div>
                         </div>
-                        <div className="card-tags">
+                        <div className="card-tags detail-tags">
                             <div>{project.projectGenre}</div>
                             <div>{project.cost}</div>
                             <div>{visitorPhoto(project)}</div>
