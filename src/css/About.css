@@ -9,178 +9,85 @@ body{
     width: 100%;
     overflow: hidden;
   }
-  .title{
-    text-align: center;
+  .cloud2{
+    position: relative;
+    width:65%;
+    left:60%;
+    bottom:6vw;
   }
   .cloud1{
-    position: fixed;
-    width: 100%;
-    bottom:320px;
-  }
-  .cloud2{
-    position:fixed;
-    width:50%;
-    left:24%;
-    bottom:76%;
+    position: relative;
+    width:55%;
+    left:10%;
+    bottom:90vw;
+    opacity: 0.8;
   }
   .cloud1 img, .cloud2 img{
     width:100%;
+    position: relative;
+    bottom:4vw;
   }
+  .top{
+    background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
+    background-size: 435px,408px,119px;
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-position: 90% 8vh,290px bottom,4% bottom;
+    height: 427px;
+  }
+   .title{
+    position: absolute;
+    top:200px;
+  } 
   h1{
-    max-width: 65%;
-    font-size: 45px;
-    /* text-align: center;*/
+    font-size: 32px;
     padding: 10px 40px;
-    background-color: rgba(255,255,255,0.38);
-    border-radius: 50px;
-    display: inline-block;
+    background-color: rgba(255,255,255,0.75);
+     border-radius: 0px 50px 50px 0px; 
+    /* border-radius: 50px; */
+    /* border:solid 1.2px rgba(30, 187, 255, 0.8); */
+    display: inline-block ;
     /*margin-bottom: 150px;*/
+    position: relative;
+    top:0vh;
+  }
+  .circlecloud1 img{
+    width: 100%;
   }
   .circlecloud1{
     width: 450px;
     position: relative;
-    bottom: 200px;
+    top:60vw;
     left:50px;
   }
   .circlecloud2{
     width: 350px;
     position:relative;
-    left:60%;
-    bottom:110px;
+    left:37%;
+    bottom:60vw;
   }
   .circlecloud3{
     width: 180px;
     position:relative;
-    bottom:520px;
-    left:600px;
+    bottom:70vw;
+    left:10vw;
+    rotate:30deg;
   }
-  .sub-pictures img{
-    width:100%;
-  }
-  .sub-pictures{
-    height:400px;
-  }
-  .subcloud{
-    height:260px;
-  }
-  .subcloud0 img{
-    position: relative;
-    bottom:120px;
-    left:700px;
-    width:30%;
-    opacity: 0.6;
-  }
-  .subcloud1 img{
-    position: relative;
-    bottom:250px;
-    width:50%;
-    opacity: 0.6;
-  }
-  .subcloud2 img{
-    position: relative;
-    left:800px;
-    bottom:320px;
-    width:42%;
-    opacity: 0.6;
-  }
-  /*.sub-images {
-    margin:0;
-  }
-  .sub-images p{
-    margin:0;
-  }
-  .subitem1{
-    position:relative;
-    bottom:300px;
-    left:400px;
-    color:#fff;
-    font-size: 25px;
-    font-weight: 600;
-  }
-  .subitem2{
-    position:relative;
-    bottom:100px;
-    left:100px;
-    color:#fff;
-    font-size: 25px;
-    font-weight: 600;
-  }
-  .subitem3{
-    position:relative;
-    bottom:510px;
-    left:220px;
-    color:#fff;
-    font-size: 80px;
-    font-weight: 100;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
-  .subitem4{
-    position:relative;
-    bottom:740px;
-    left:160px;
-    color:#fff;
-    font-size: 110px;
-    font-weight: 100;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
-  .subitem5{
-    position:relative;
-    bottom:980px;
-    left:240px;
-    color:#fff;
-    font-size: 60px;
-    font-weight: 100;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
-  .subitem6{
-    position:relative;
-    bottom:1120px;
-    left:270px;
-    color:#fff;
-    font-size: 60px;
-    font-weight: 100;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
-  .subitem8{
-    position:relative;
-    bottom:1170px;
-    left:300px;
-    color:#fff;
-    font-size: 20px;
-    font-weight: 100;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
-  .subitem7{
-    position:relative;
-    bottom:1400px;
-    left:100px;
-    color:#fff;
-    font-size: 20px;
-    font-weight: 100;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
-    .subitem9{
-    position:relative;
-    bottom:1250px;
-    left:180px;
-    color:#fff;
-    font-size: 20px;
-    font-weight: 100;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }*/
+ 
+
+  
   /*======================
   大きな枠組みの部分
   ======================*/
   
-  .sky2{
+  .sky{
       color: #233192;
       width:100%;
-      background: linear-gradient( #b5e5f4 50%, #fff 100%)
+      background: linear-gradient( #15c1f6 0%,#b5e5f4 40%, #fff 100%)
+
   }
   
-  .mainpage1{
+  .mainpage{
     width: 92%;
-    padding-top:280px;
     padding-bottom: 80px;
     margin:0 auto;
   }
@@ -188,7 +95,7 @@ body{
       width:100%;
       background-image: url("../imgs/inthesea/surface1.png"), linear-gradient( #fff 0%, #01579E 15%, #2E3192 100%);
       background-repeat: no-repeat, no-repeat;
-      background-size: contain;
+      background-size: 100%,contain;
       color:#fff;
   }
   .mainpage2{
@@ -196,9 +103,6 @@ body{
     margin:0 auto;
     padding-top: 280px;
     }
-  .schedule,.stage,.lab,#pickup,.about{
-    box-sizing: border-box;
-  }
   .machikani{
     margin: 0px -22px -71px;
     display: inline-block;
@@ -252,32 +156,14 @@ body{
 
  
   /*空の小見出しのスタイル*/
-  .sky2 span{
+  .sky span{
     max-width: 90%;
     display: inline-block;
     font-size: 37px;
     padding-top: 8px;
   }
-  
-  /*======================
-  oceanの中　企画時間、ステタイ、研究室紹介
-  schedule,stage,lab
-  枠のサイズがわかりやすいように線で囲ってます
-  実際は枠線なしやったはず
-  ちっちゃめのイラストか、マーク入れた方が統一感でそう
-  ======================*/
-  
-  .schedule,.stage,.lab,.about{
-    font-size: 22px;
-    margin: 10px auto 180px;
-    display:block;
-    text-align: center;
-  }
-  .subtitle{
-    display: flex;
-    justify-content: center;
-  }
-  .pre-ocean, .pre-sky{
+  .contents{
+    font-size: 20px;
     padding: 20px 10px 30px;
     text-align: center;/*タイトル中央ぞろえにするならいらん*/
     width:80%;
@@ -285,18 +171,8 @@ body{
     margin: 0 auto;
   }
   /*海の中の小見出しのスタイル*/
-  .ocean span{
-    display: inline-block;
-    font-size: 37px;
-    color: #fff;
-    position: relative;
-    right: 26px;
-    /*background-color:rgba(255,255,255,0.20);
-    border:solid 1px #fff;
-    padding:2px 12px;
-    border-radius: 14px;*/
-  }
-  .item1{
+
+  /* .item1{
     display: inline-block;
     font-size: 93px;
     opacity: 0.30;
@@ -319,81 +195,22 @@ body{
     position: relative;
     top:9px;
     right:26px;
-  }
-  #pickup{
-    font-size: 22px;
-    text-align: center;
-    margin: 0 auto 180px;
-  }
+  } */
+  
   /*pickupの文字の色を変化させる*/
   .ocean a{
     color: #fff;
   }
-  
-  .pickup-box{
-    margin-top: 40px;
-  }
-  .pickup-button{
-    color:#fff;
-    position: relative;
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-  }
-  .pickup-icon{
-    font-size: 24px;
-    display: inline;
-    width:20px;
-    padding-right: 7px;
-    margin: 0 5px 60px;
-  }
-  .pickup-title{
-    display: inline;
-  }
-  .pickup-title:hover{
-    color:#233192;
-    background-color: rgba(255,255,255,0.38);
-    border-bottom: solid 1px #fff;
-  
-    }
-  .pickup-icon img{
-    width:100%;
-  }
-  /*.pickup-icon:hover{
-    color:#233192;
-    background-color: rgba(255,255,255,0.38);
-    border-bottom: solid 1px #fff;
-  }*/
-  .pickup-subbox1{
-    display: flex;
-    justify-content: space-around;
-  }
-  .pickup-subbox2{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  /*.pickup-subbox2:nth-child(1){
-    flex-basis: 100%;
-  }なんで適応されないねん*/
-  #recommend{
-    flex-basis: 100%;
-    position: relative;
-  }
-  
-  .pickup-subbox2 .pickup-button{
-    flex-basis: 50%;
-  }
-  
   /*======================
   かめのアニメション
   ======================*/
-  .machikame1{
-    width: 10vw;
+  .machikame{
+    width: 170;
     position: relative;
-    bottom: -30vh;
-    left:7%;
+    bottom: -44vh;
+    left:80%;
   }
-  .machikame1 img{
+  .machikame img{
     width: 100%;
     animation:flying 10s ease-in-out infinite;
   }
@@ -415,7 +232,7 @@ body{
     }
   }
   
-  .machikame2{
+  /* .machikame2{
     width: 78px;
     position: relative;
     bottom: -300px;
@@ -424,7 +241,7 @@ body{
   .machikame2 img{
     width: 100%;
     animation: swimming 10s ease-in-out infinite;
-  }
+  } */
   @keyframes swimming {
     0% {
       transform: translate(0,0);
@@ -442,26 +259,14 @@ body{
       transform: translate(0,0);
     }
   }
-  /*
-  これ何に使ってたっけ
-  @keyframes kame{
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
-  }
-  */
   
   /*======================
   海底の生成される泡の表示のためのもの
   ======================*/
-  .ocean img{
+  /* .ocean img{
     display: block;
     width: 100%;
-  }
+  } */
   
   .bubble {
       position: absolute;
@@ -580,13 +385,12 @@ body{
         bottom: 2300px;
       }
     }
-    /**/
-    .pickup-button,.pre-sky,.pre-ocean{
+    .contents{
       transition: 0.8s ease-in-out;
       transform: translateY(15px);
       opacity: 1.0;
     }
-    .pickup-button.on,.pre-sky.on,.pre-ocean .on {
+    .contents.on {
       transform: translateY(0);
       opacity: 0;
     }
@@ -594,77 +398,40 @@ body{
   /*======================
     スマホ用
   ======================*/
-    @media  (max-width:490px){
+
+    @media (max-width:767px){
         h1{
-            font-size: 25px;
+            font-size: 26px;
             /*margin-bottom: 100px;*/
         }
+        .title{
+          position: relative;
+          top:0px;
+        } 
+        .top{
+          background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
+          background-size: 35%,calc(258px + 7vw),15%;
+          background-repeat: no-repeat,no-repeat,no-repeat;
+          background-position: 100% 4vh,calc(92px + 15vw) bottom,4% bottom;
+          height: calc(340px + 2vw);
+        }
       .news, .notes{
-        box-sizing: content-box;
+        box-sizing: contents-box;
         width: 80%;
         font-size: 16px;
-      }
-      .sub-pictures{
-        margin: 0 auto;
-        width:102%;
-        position:relative;
-      }
-      #loader{
-        width: 100%;
-        height: 100vh;
-        background-image:url("../imgs/mainview/cloud_phone.png"),linear-gradient(#fff 10%, #00B2E9 60%,#b5e5f4 100%)
-        ;
-        background-repeat: no-repeat, no-repeat;
-        background-size: 100% auto;
-        background-position: center;
       }
       .ocean{
         display: block;
       }
-      .ocean span, .sky2 span{
-        font-size: 22px;
-      }
-      /*------------------------
+      /*-------------------
       イラストの位置調整
       ------------------------*/
-      .machikame1{
+      .machikame{
         width:20%;
         left:9%;
         bottom:-50vh;
       }
-      #move img:nth-child(1){
-        width:100%;
-      }
-      /*.ocean span{
-        background-color:rgba(255,255,255,0.20);
-        border:solid 1px #fff;
-        padding:2px 12px;
-        border-radius: 14px;
-      }*/
-      .schedule, .stage, .lab, #pickup, .about {
-        box-sizing: content-box;
-        font-size: 16px;
-      }
-      #move img:nth-child(1){
-        display: block;
-        position: absolute;
-        width: auto;
-        height: 100vh;
-        bottom:42%;
-        left:-30%;
-        animation: kame 10s forwards;
-        margin: auto;
-      }
-      #move img:nth-child(2){
-        display: block;
-        position: absolute;
-        width: auto;
-        height: 105vh;
-        bottom:-10%;
-        right:-50%;
-        animation: kame 10s forwards;
-        margin: auto;
-      }
+      
       @keyframes cloud1{
         0% {
           transform: translateX(0);
@@ -681,16 +448,44 @@ body{
           transform: translateX(92vh);
         }
     }}
+    @media screen and (max-width: 490px) {
+      .title{
+        position: absolute;
+        top:80px;
+      } 
+      h1{
+        font-size: 24px;
+        /*margin-bottom: 100px;*/
+    }
+    .top{
+      background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
+      background-size: 0%,calc(200px + 8vw),80px;
+      background-repeat: no-repeat,no-repeat,no-repeat;
+      background-position: 100% 4vh,right bottom,4% 220px;
+      height: 300px;
+    }   
+    .machikame {
+      width: 70px;
+      position: relative;
+      bottom: -44vh;
+      left: 70%;
+  }
+    }
+
   
   /*======================
     タブレット用
   ======================*/
-  @media (min-width:490px) and (max-width: 990px){
+  @media (min-width:1090px) and (max-width: 1280px){
     h1{
-        font-size: 35px;
+        font-size: 30px;
     }
+    .title{
+      position: relative;
+      top:0px;
+    } 
     .news, .notes{
-      box-sizing: content-box;
+      box-sizing: contents-box;
       width: 80%;
       font-size: 19px;
     }
@@ -698,12 +493,36 @@ body{
     .ocean{
       display: block;
     }
-    .ocean span,.sky2 span{
-      font-size:30px;
+    .top{
+      background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
+      background-size: 370px,370px,111px;
+      background-repeat: no-repeat,no-repeat,no-repeat;
+      background-position: 96% 8vh,289px bottom,4% bottom;
+      height: 396px;
     }
-    .schedule, .stage, .lab, #pickup, .about {
-      box-sizing: content-box;
+  }
+  @media (min-width:768px) and (max-width: 1090px){
+    h1{
+        font-size: 30px;
+    }
+    .title{
+      position: relative;
+      top:0px;
+    } 
+    .news, .notes{
+      box-sizing: contents-box;
       width: 80%;
       font-size: 19px;
+    }
+   
+    .ocean{
+      display: block;
+    }
+    .top{
+      background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
+      background-size: 35%,calc(50px + 35vw),15%;
+      background-repeat: no-repeat,no-repeat,no-repeat;
+      background-position: 100% 4vh,40% bottom,4% bottom;
+      height: 400px;
     }
   }
