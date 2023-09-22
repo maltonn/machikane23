@@ -1,0 +1,75 @@
+.greeting-contents{
+    margin-top: 40px;    
+}
+
+.greeting-title{
+    padding-left: 32px;
+    font-size: 37px;
+}
+
+.position{
+    padding-left: 32px;
+    font-size: 30px;
+}
+
+.president img, .chairperson img{
+    padding-left: 32px;
+    width: 20%;
+    height: 20%;
+}
+
+.greeting-card{
+    display: inline-flex;
+}
+
+.sentences{
+    padding-left: 38px;
+    padding-right: 35px;
+}
+
+.sentences>p{
+    margin: 0px;
+}
+
+.name{
+    text-align: right;
+}
+
+.president{
+    width:100%;
+    background: linear-gradient( #15c1f6 0%,#b5e5f4 40%, #fff 100%)
+
+}
+
+.chairperson{
+    width:100%;
+    background-image: url("../imgs/inthesea/surface1.png"), linear-gradient( #fff 0%, #01579E 15%, #2E3192 100%);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100%,contain;
+    color:#fff;
+}
+
+@media only screen and (max-width: 767px){
+    .greeting-card{
+        display: block;
+    }
+    
+    .greeting-title{
+        padding-left: 32px;
+        font-size: 40px;
+    }
+    
+    .position{
+        padding-left: 32px;
+        font-size: 35px;
+    }
+
+    .president img, .chairperson img{
+        width: 40%;
+        padding-left: 30%;
+    }
+
+    .sentences{
+        font-size: 25px;
+    }
+}
