@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import machikame1 from "../../imgs/animal/machikame1.png"
+import {Link} from "react-router-dom";
 import "../../css/Common.css"
 import "../../css/Notes.css"
 export default function Notes() {

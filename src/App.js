@@ -1,7 +1,8 @@
 import './css/App.css';
-import { Routes, Route, useLocation } from "react-router-dom"; 
+import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react"; //ここを追加
 import ReactGA from "react-ga4";
+import { useGlobalContext, GlobalContextProvider } from './contexts/globalContext'
 
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -55,7 +56,9 @@ import MapEn from './En-pages/access-map/MapEn';
 
 import Error404 from './pages/Error404';
 
-export default function App() {
+
+
+function AppContents() {
   const location = useLocation();
 
   useEffect(() => {
@@ -68,61 +71,80 @@ export default function App() {
     });
   }, [location]);
 
+  const { lang } = useGlobalContext()
   return (
-    <div className="App">
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about/" element={<About />} />
-        <Route path="/adresses/" element={<Adresses />} />
-        <Route path="/theme/" element={<Theme />} />
-        <Route path="/goods/" element={<Goods />} />
-        <Route path="/sponsor/" element={<Sponsor />} />
+      <div className="App">
+        <Header />
 
-        <Route path="/sections/" element={<Sections />} />
-        <Route path="/project-search/" element={<Project />} />
-        <Route path="/project-search/:id" element={<Detail />} />
-        <Route path="/timetable/" element={<Timetable />} />
-        <Route path="/ralley/" element={<Ralley />} />
-        <Route path="/official-project/" element={<OfficialProject />} />
-        <Route path="/talent-project/" element={<TalentProject />} />
-        <Route path="/lab-open/" element={<LabOpen />} />
+          {lang === "en" &&
+            <Routes>
+              <Route path="/" element={<HomeEn />} />
+              <Route path="/about/" element={<AboutEn />} />
+              <Route path="/adresses/" element={<AdressesEn />} />
+              <Route path="/theme/" element={<ThemeEn />} />
+              <Route path="/goods/" element={<GoodsEn />} />
+              <Route path="/sponsor/" element={<SponsorEn />} />
 
-        <Route path="/notes/" element={<Notes />} />
-        <Route path="/pamphlet/" element={<Pamphlet />} />
-        <Route path="/FAQ/" element={<FAQ />} />
-        <Route path="/inquiry/" element={<Inquiry />} />
+              <Route path="/sections/" element={<SectionsEn />} />
+              <Route path="/project-search/" element={<ProjectEn />} />
+              <Route path="/timetable/" element={<TimetableEn />} />
+              <Route path="/ralley/" element={<RalleyEn />} />
+              <Route path="/official-project/" element={<OfficialProjectEn />} />
+              <Route path="/lab-open/" element={<LabOpenEn />} />
 
-        <Route path="/access/" element={<Access />} />
-        <Route path="/map/" element={<Map />} />
+              <Route path="/notes/" element={<NotesEn />} />
+              <Route path="/pamphlet/" element={<PamphletEn />} />
+              <Route path="/FAQ/" element={<FAQEn />} />
+              <Route path="/inquiry/" element={<InquiryEn />} />
 
-        <Route path="/en" element={<HomeEn />} />
-        <Route path="/en/about/" element={<AboutEn />} />
-        <Route path="/adresses/" element={<AdressesEn />} />
-        <Route path="/en/theme/" element={<ThemeEn />} />
-        <Route path="/en/goods/" element={<GoodsEn />} />
-        <Route path="/en/sponsor/" element={<SponsorEn />} />
+              <Route path="/access/" element={<AccessEn />} />
+              <Route path="/map/" element={<MapEn />} />
 
-        <Route path="/en/sections/" element={<SectionsEn />} />
-        <Route path="/en/project-search/" element={<ProjectEn />} />
-        <Route path="/en/timetable/" element={<TimetableEn />} />
-        <Route path="/en/ralley/" element={<RalleyEn />} />
-        <Route path="/en/official-project/" element={<OfficialProjectEn />} />
-        <Route path="/en/lab-open/" element={<LabOpenEn />} />
+              <Route path="*" element={<Error404 />} />
 
-        <Route path="/en/notes/" element={<NotesEn />} />
-        <Route path="/en/pamphlet/" element={<PamphletEn />} />
-        <Route path="/en/FAQ/" element={<FAQEn />} />
-        <Route path="/en/inquiry/" element={<InquiryEn />} />
+            </Routes>
+          }
+          {
+            lang === "ja" && (
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about/" element={<About />} />
+                <Route path="/adresses/" element={<Adresses />} />
+                <Route path="/theme/" element={<Theme />} />
+                <Route path="/goods/" element={<Goods />} />
+                <Route path="/sponsor/" element={<Sponsor />} />
 
-        <Route path="/en/access/" element={<AccessEn />} />
-        <Route path="/en/map/" element={<MapEn />} />
+                <Route path="/sections/" element={<Sections />} />
+                <Route path="/project-search/" element={<Project />} />
+                <Route path="/project-search/:id" element={<Detail />} />
+                <Route path="/timetable/" element={<Timetable />} />
+                <Route path="/ralley/" element={<Ralley />} />
+                <Route path="/official-project/" element={<OfficialProject />} />
+                <Route path="/lab-open/" element={<LabOpen />} />
 
-        <Route path="*" element={<Error404 />} />
+                <Route path="/notes/" element={<Notes />} />
+                <Route path="/pamphlet/" element={<Pamphlet />} />
+                <Route path="/FAQ/" element={<FAQ />} />
+                <Route path="/inquiry/" element={<Inquiry />} />
 
-      </Routes>
-      <Footer />
-    </div>
+                <Route path="/access/" element={<Access />} />
+                <Route path="/map/" element={<Map />} />
+
+                <Route path="*" element={<Error404 />} />
+
+              </Routes>
+            )
+          }
+          
+        <Footer />
+      </div>
   );
 }
 
+export default function App(){
+  return(
+    <GlobalContextProvider>
+      <AppContents />
+    </GlobalContextProvider>
+  )
+}

@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import {Link} from "react-router-dom";
 import "../../css/Common.css"
 export default function FAQ() {
     return(
@@ -9,7 +10,7 @@ export default function FAQ() {
             <div className="preparation">
                 <p>ただいまページ作成中です。しばらくお待ちください。</p>
                 <span>現在のページ：よくあるご質問</span><br></br>
-                <a href="./">トップページへ戻る</a>
+                <Link to="/" >トップページへ戻る</Link>
             </div>
         </div>
     )
