@@ -20,7 +20,7 @@ export default function Sponsor() {
             <div className="sponsor-contents">
                 <div className="sky">
                     <br></br>
-                    <span className="title">ご協賛</span>
+                    <span className="sponsor-title">ご協賛</span>
                     <br></br>
                     <div className="companies">
                         <div className="left">
