@@ -1,0 +1,48 @@
+.detail-card{
+    margin-top: 50px;
+    margin-left: 5px;
+}
+.detail-title{
+    font-size: 3rem;
+    text-align: center;
+}
+.detail-head{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.detail-head-content{
+    margin: auto;
+    margin-left: 5px;
+}
+.detail-icon{
+    width: 80px;
+    height: 80px;
+}
+.detail-content{
+    margin: 0;
+}
+.detail-content-kind{
+    margin: 15px 0;
+}
+.pr{
+    border: thick double #32a1ce;
+    padding: 3px;
+}
+.pr p{
+    margin: 0;
+}
+.sns-imgs{
+    display: inline-flex;
+}
+.sns-imgs a{
+    margin-right: 5px;
+}
+/*======================
+  スマホ用
+======================*/
+@media  (max-width: 500px){}
+
+/*======================
+タブレット用
+======================*/
+@media (min-width: 500px) and (max-width: 1070px){}
