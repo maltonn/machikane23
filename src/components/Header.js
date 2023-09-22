@@ -3,7 +3,6 @@ import { Link } from "react-router-dom"
 
 import "../css/Header.css"
 import machikane_logo from "../imgs/main-visual-title.svg"
-import { Link } from "react-router-dom";
 import { useGlobalContext } from "../contexts/globalContext";
 
 export default function Header() {
@@ -40,6 +39,8 @@ export default function Header() {
 
     })
 
+    const { lang } = useGlobalContext()
+    const { setLang } =useGlobalContext()
     return (
         <header>
             <Link to="/" className={`top-link ${isHamburgerOpen ? "menu-opend" : "menu-closed"}`} >

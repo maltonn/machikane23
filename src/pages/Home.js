@@ -12,7 +12,7 @@ import machikani from "../imgs/animal/machikani.png"
 // import timetable from "../imgs/pickup_icon/icon_stage.png"
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react"
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 
 export default function Home() {
