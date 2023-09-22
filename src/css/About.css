@@ -277,27 +277,28 @@
     スマホ用
   ======================*/
 
-    @media (max-width:767px){
+   @media (max-width:767px){
  
-        .top{
-          background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
-          background-size: 35%,calc(258px + 7vw),15%;
-          background-repeat: no-repeat,no-repeat,no-repeat;
-          background-position: 100% 4vh,calc(92px + 15vw) bottom,4% bottom;
-          height: calc(340px + 2vw);
+    .top{
+      background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
+      background-size: 35%,calc(258px + 7vw),15%;
+      background-repeat: no-repeat,no-repeat,no-repeat;
+      background-position: 100% 4vh,calc(92px + 15vw) bottom,4% bottom;
+      height: calc(340px + 2vw);
         }
 
-      .ocean{
-        display: block;
+    .ocean{
+      display: block;
       }
-      /*-------------------
-      イラストの位置調整
-      ------------------------*/
-      .about-machikame{
+    .about-sky{
+      font-size: 20px;
+      height:125vh;
+    }
+    .about-machikame{
         width:20%;
         left:9%;
         bottom:-50vh;
-      }
+    }
       
       @keyframes cloud1{
         0% {
@@ -314,8 +315,9 @@
         100% {
           transform: translateX(92vh);
         }
-    }}
-    @media screen and (max-width: 490px) {
+    }
+  }
+  @media screen and (max-width: 490px) {
     .top{
       background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
       background-size: 0%,calc(200px + 8vw),80px;
@@ -328,8 +330,8 @@
       position: relative;
       bottom: -44vh;
       left: 70%;
-  }
     }
+  }
 
   
   /*======================
@@ -361,32 +363,3 @@
     }
   }
 
-/*about-contentsのサイズ調整*/
-@media (min-width:600px) and (max-width: 880px){
-  .ocean{
-    display: block;
-  }
-  .top{
-    background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
-    background-size: 35%,calc(50px + 35vw),15%;
-    background-repeat: no-repeat,no-repeat,no-repeat;
-    background-position: 100% 4vh,40% bottom,4% bottom;
-    height: 400px;
-  }
-  .about-sky{
-    color: #233192;
-    height:150vh;
-    width:100%;
-    background: linear-gradient( #15c1f6 0%,#b5e5f4 40%, #fff 100%)
-  }
-  .about-contents{
-  position: absolute;
-  top: 30%;
-  left: 8%;
-  font-size: 20px;
-  padding: 20px 10px 30px;
-  width:80%;
-  max-width: 1200px;
-  margin: 0 auto;
-  }
-}
