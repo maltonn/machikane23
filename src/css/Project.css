@@ -6,15 +6,181 @@
     cursor: pointer;
     margin: 3px;
     height: 30px;
-    width: 80px;
+    width: min(calc((100% - 20px)/3),150px);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#serch_word{
+    width: 45%;
+    height: 20px;
 }
 
+/* ページ構成 */
+.search-mainpage {
+    font-size: 1.2rem;
+    width: 92%;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+.sky-project{
+    color: #233192;
+    width:100%;
+}
+.search-header{
+    padding-top: 200px;
+}
+.search-mainpage button{
+    margin-right: 5px;
+}
+.search-result, .more-load, .toTheTop{
+    margin-left: 10px;
+}
+
+/* カード */
 .project-container{
     border: 1px solid black;
     margin: 10px;
+    width: 48%;
+    display: inline-flex;
+}
+.project-card-icon{
+    width: auto;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+    margin: 5px;
+}
+.card-content{
+    margin-left: 5px;
+    width: calc(100% - 150px);
+}
+.projectName{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.toDetailParent{
+    display: flex;
+    justify-content: flex-end;
+}
+.toDetail{
+    background-color: #6096D9;
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding: 0 3px;
+    text-decoration: none;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+/* タグ設定 */
+.card-tags{
+    display: inline-flex;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+}
+.card-tags div{
+    margin-right: 5px;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+.card-tags div:nth-child(1){
+    background-color: #7BCDBA;
+    color: #FFFFFF;
+}
+.card-tags div:nth-child(2){
+    background-color: #B877C7;
+    color: #FFFFFF;
+}
+.card-tags div:nth-child(3){
+    background-color: rgb(248,183,0);
+    color: #FFFFFF;
+}
+.card-tags div:nth-child(4){
+    background-color: #FF6961;
+    color: #FFFFFF;
+}
+
+/*色のテンプレート*/
+.green{
+    background-color: #7BCDBA;
+    color: #FFFFFF;
+}
+.blue {
+    background-color: #6096D9;
+    color: #FFFFFF;
+}
+.yellow {
+    background-color: #FFC947;
+    color: #FFFFFF;
+}
+.red {
+    background-color: #FF6961;
+    color: #FFFFFF;
+}
+.purple {
+    background-color: #B877C7;
+    color: #FFFFFF;
+}
+.orange {
+    background-color: rgb(248,183,0);
+    color: #FFFFFF;
+}
+
+/*======================
+  スマホ用
+======================*/
+@media  (max-width: 500px){
+/* ページ構成 */
+.search-header{
+    padding-top: 50px;
+}
+/* カード */
+.project-container{
+    font-size: 0.7rem;
+}
+.project-card-icon{
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    max-height: 100px;
+    margin: 5px;
+}
+.card-content{
+    margin-left: 5px;
+    width: 100%;
+}
+.projectName{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.project-container{
+    width: 95%;
+}
+/* タグ設定 */
+.card-tags{
+    display: flex;
+    margin-bottom: 5px;
+}
 }
 
 
-.project-card-icon{
-    width: 200px;
+/*======================
+  タブレット用
+======================*/
+@media (min-width: 500px) and (max-width: 1070px){
+/* ページ構成 */
+.search-header{
+    padding-top: 50px;
+}
+/* カード */
+.project-container{
+    width: 95%;
+}
+/* タグ設定 */
+.card-tags{
+    display: flex;
+    margin-bottom: 5px;
+}
 }

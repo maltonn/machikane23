@@ -14,7 +14,8 @@ import Goods from './pages/machikane/Goods';
 import Sponsor from './pages/machikane/Sponsor';
 
 import Sections from './pages/project/Sections';
-// import Project from './pages/project/Project';
+import Project from './pages/project/Project';
+import Detail from './pages/project/Detail';
 import Timetable from './pages/project/Timetable';
 import Ralley from './pages/project/Ralley';
 import OfficialProject from './pages/project/OfficialProject';
@@ -54,10 +55,6 @@ import MapEn from './En-pages/access-map/MapEn';
 
 import Error404 from './pages/Error404';
 
-/*作成中のページ用　完成したら消す*/
-// import AboutTmp from './pages/tmp/AboutTmp';
-import ProjectTmp from './pages/tmp/ProjectTmp';
-
 export default function App() {
   const location = useLocation();
 
@@ -77,15 +74,14 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about/" element={<About />} />
-        {/* <Route path="/about/" element={<AboutTmp />} /> */}
         <Route path="/adresses/" element={<Adresses />} />
         <Route path="/theme/" element={<Theme />} />
         <Route path="/goods/" element={<Goods />} />
         <Route path="/sponsor/" element={<Sponsor />} />
 
         <Route path="/sections/" element={<Sections />} />
-        {/* <Route path="/project-search/" element={<Project />} /> */}
-        <Route path="/project-search/" element={<ProjectTmp />} />
+        <Route path="/project-search/" element={<Project />} />
+        <Route path="/project-search/:id" element={<Detail />} />
         <Route path="/timetable/" element={<Timetable />} />
         <Route path="/ralley/" element={<Ralley />} />
         <Route path="/official-project/" element={<OfficialProject />} />

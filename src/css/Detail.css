@@ -1,0 +1,80 @@
+.detail-card{
+    margin: 100px 15px 0px;
+    font-size: 1.2rem;
+}
+.detail-title{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.detail-head{
+    display: flex;
+    flex-wrap: wrap;
+}
+.detail-tags{
+    margin-top: 20px;
+}
+.detail-head-content{
+    margin: auto;
+    margin-left: 5px;
+}
+.detail-icon{
+    width: 80px;
+    height: 80px;
+}
+.detail-content{
+    margin: 0;
+}
+.detail-content-kind{
+    margin: 15px 0;
+}
+.pr{
+    border: thick double #32a1ce;
+    padding: 3px;
+}
+.pr p{
+    margin: 0;
+}
+.sns-imgs{
+    display: inline-flex;
+}
+.sns-imgs a{
+    margin-right: 5px;
+}
+.adPhoto-content{
+    text-align: center;
+}
+.adPhoto{
+    width: min(80%,auto);
+    height: 500px;
+}
+/*======================
+  スマホ用
+======================*/
+@media  (max-width: 500px){
+    .detail-card{
+        margin: 80px 15px 0;
+        font-size: 1rem;
+    }
+    .detail-title{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .detail-tags div{
+        margin-top: 5px;
+    }
+    .adPhoto{
+        width: min(80%,auto);
+        height: 200px;
+    }
+}
+
+/*======================
+タブレット用
+======================*/
+@media (min-width: 500px) and (max-width: 1070px){
+    .adPhoto{
+        width: min(80%,auto);
+        height: 400px;
+    }
+}
