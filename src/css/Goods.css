@@ -131,6 +131,23 @@ h1{
         top:0px;
     } 
 }
+@media screen and (max-width: 490px) {
+    .goodsp-top{
+        background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
+        background-size: 0%,calc(200px + 8vw),80px;
+        background-repeat: no-repeat,no-repeat,no-repeat;
+        background-position: 100% 4vh,right bottom,4% 220px;
+        height: 200px;
+      }   
+    .goodsp-title{
+        position: absolute;
+        top:80px;
+    } 
+    h1{
+        font-size: 24px;
+    }
+
+}
   /*======================
     タブレット用
   ======================*/
