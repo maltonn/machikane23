@@ -18,7 +18,7 @@ export default function TalentProject(){
                 <div className="tombrown"><img src={tombrown} className="tombrownImg"></img></div>
                 <div className="autographBlock">
                     <div className="machikani1"><img src={machikani}></img></div>
-                    <p className="autograph">サインがもらえるかも</p>
+                    <p className="autograph">サインがもらえるかも!?</p>
                     <div className="machikani2"><img src={machikani}></img></div>
                 </div>
                 <div className="talentInfor">
