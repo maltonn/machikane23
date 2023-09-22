@@ -34,22 +34,11 @@ body{
     background-position: 90% 8vh,290px bottom,4% bottom;
     height: 427px;
   }
-   .title{
+   .about-title{
     position: absolute;
     top:200px;
   } 
-  h1{
-    font-size: 32px;
-    padding: 10px 40px;
-    background-color: rgba(255,255,255,0.75);
-     border-radius: 0px 50px 50px 0px; 
-    /* border-radius: 50px; */
-    /* border:solid 1.2px rgba(30, 187, 255, 0.8); */
-    display: inline-block ;
-    /*margin-bottom: 150px;*/
-    position: relative;
-    top:0vh;
-  }
+
   .circlecloud1 img{
     width: 100%;
   }

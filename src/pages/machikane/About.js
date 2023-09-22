@@ -18,7 +18,7 @@ export default function About() {
             <div className="machikame"> 
              <img src={machikame1} alt="まちかめ1"></img>
             </div>
-            <div className="title">
+            <div className="about-title">
                 <h1>まちかね祭に<nobr>ついて</nobr></h1>
             </div>
           </div>
