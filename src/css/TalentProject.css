@@ -107,6 +107,32 @@
         font-size: 3.5vw;
         padding: 0;
     }
+    .tombrown{
+        margin-top: 5vh;
+    }
+    .autographBlock{
+        left: 40vw;
+        top: -20vh;
+        font-size: 4vw;
+    }
+    .talent .machikame1{
+        position: relative;
+        left: 70vw;
+        top: 30vh;
+    }
+    .talentInfor{
+        font-size: 3.5vw;
+    }
+    .caution{
+        font-size: 5vw;
+        position: relative;
+        top: -13vh;
+    }
+    .cautionAll{
+        margin-left: 2vw;
+        position: relative;
+        top: -13vh;
+    }
 }
 
 @media (min-width: 490px) and (max-width: 990px){
@@ -118,6 +144,19 @@
         top: -13vh;
     }
     .autographBlock{
+        top: -10vh;
+    }
+    .talent .machikame1{
+        position: relative;
+        left: 70vw;
+        top: 40vh;
+    }
+    .caution{
+        position: relative;
+        top: -10vh;
+    }
+    .cautionAll{
+        position: relative;
         top: -10vh;
     }
 }
