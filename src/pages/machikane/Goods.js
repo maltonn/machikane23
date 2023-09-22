@@ -38,17 +38,17 @@ export default function Goods() {
                     <div className="goods-content">                    
                         前回好評いただいたステッカーが今回も登場。かわいいものから<nobr>かっ</nobr>こいいものまでデザイン様々取り揃えています。
                     </div>
-                    <div className="goods-images1">
+                    <div className="goods-images3">
                         <img src={sticker1} alt="ステッカー1"></img>
                     </div>
-                    <div className="goods-images1">
+                    <div className="goods-images3">
                         <img src={sticker2} alt="ステッカー2"></img>
                     </div>
-                    <div className="goods-images1">
-                        <img src={sticker3} alt="ステッカー3"></img>
+                    <div className="goods-images3">
+                        <img src={sticker4} alt="ステッカー3"></img>
                     </div>
-                    <div className="goods-images1">
-                        <img src={sticker4} alt="ステッカー4"></img>
+                    <div className="goods-images3">
+                        <img src={sticker3} alt="ステッカー4"></img>
                     </div>
                     <div className="goods-images2">
                         <img src={sticker5} alt="ステッカー5"></img>
