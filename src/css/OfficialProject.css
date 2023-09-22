@@ -1,6 +1,34 @@
 .pageTitle{
     margin-top: 3em;
+    position: relative;
+    display: inline-block;
+    height: 64px;
+    margin-left: 30px;
+    padding: 1rem 2rem 1rem 3rem;
+    color: #fff;
+    background: #fa4141;
+    font-size: 5vw;
 }
+.pageTitle::before{
+  position: absolute;
+  top: 0;
+  left: -30px;
+  content: '';
+  border-width: 32px 30px 32px 0;
+  border-style: solid;
+  border-color: transparent #fa4141 transparent transparent;
+}
+.pageTitle::after{
+  position: absolute;
+  top: calc(50% - 7px);
+  left: -10px;
+  width: 14px;
+  height: 14px;
+  content: '';
+  border-radius: 50%;
+  background: #fff;
+}
+
 .offiProCard {
     display: flexbox;
     width: 46vw;
@@ -74,12 +102,17 @@
   }
   .detail{
     padding: 0.7em;
+    margin-bottom: 2em;
     border: solid 2px #000000;
     border-radius: 7px;
     background: #fefdfc;
     /* color: #fcb1b1; */
     /* margin: 2em 0; */
     font-weight: bold;
+  }
+
+  .grade{
+    display: flex;
   }
   /*パンケーキの☆の部分*/
 .rate {
@@ -106,14 +139,28 @@
     overflow: hidden;
     white-space: nowrap;
 }
-.rate4-5:after {
-    width: 72px;
+.rate4-5 :after {
+  width: 80px;
 }
 .wrap {
     width: 80px;
     margin: 0 auto;
 }
 
+.pancakeInfor{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.pancakePlace,.pancakeGenre,.pancakeMoney,.pancakeTime{
+  display: flexbox;
+  margin: 0 4vw;
+}
+
+.detailIcon{
+  width: 30%;
+}
 
 @media screen and (max-width:490px){
   .officialProAll{
