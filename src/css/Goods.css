@@ -84,7 +84,7 @@ h1{
     padding: 10px;
     background-color: rgb(255, 255, 255, 0.38);
     width: 45%;
-    margin: 0 10px 10px;
+    margin: 0 15px 10px;
     vertical-align: middle;
 }
 .goods-images3 img{
@@ -130,6 +130,15 @@ h1{
         position: relative;
         top:0px;
     } 
+    .goods-images1{
+        width: 55%;
+    }
+    .goods-images2{
+        width: 50%;
+    }
+    .goods-images3{
+        width: 55%;
+    }
 }
 @media screen and (max-width: 490px) {
     .goodsp-top{
@@ -146,7 +155,15 @@ h1{
     h1{
         font-size: 24px;
     }
-
+    .goods-images1{
+        width: 60%;
+    }
+    .goods-images2{
+        width: 55%;
+    }
+    .goods-images3{
+        width: 60%;
+    }
 }
   /*======================
     タブレット用
@@ -164,7 +181,17 @@ h1{
         background-repeat: no-repeat,no-repeat,no-repeat;
         background-position: 100% 4vh,40% bottom,4% bottom;
         height: 340px;
-      }
+    }
+    .goods-images1{
+        width: 55%;
+    }
+    .goods-images2{
+        width: 50%;
+    }
+    .goods-images3{
+        width: 55%;
+    }
+
 }
 @media (min-width:1090px) and (max-width: 1280px){
     .goods-name{
