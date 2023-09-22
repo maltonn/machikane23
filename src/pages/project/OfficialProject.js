@@ -77,26 +77,32 @@ export default function OfficialProject() {
                     <div className="detailCard">
                         <div className="detail">
                             <h2 className="projectTitle">ぱんけえき焼きた亭</h2>
-                            <div className="rate rate4-5"></div>
-                            <img className="detailIcon" src={pancakeLogo} alt="ぱんけえき焼きた亭のアイコン"></img>
-                            <div className="projectPlace">場所：メインストリート テント40</div>
-                            <div className="projectGenre">ジャンル：パンケーキ</div>
-                            <div className="projectMoney">予算：300－350</div>
-                            <div className="">営業時間：11月3、4、5日10:00～18:00</div>
-                            <p className="projectBox">
-                                <div>焼きた亭のパンケーキはいつでも「焼きたて」を提供!</div>
+                            <div className="grade">
+                                <div className="rate rate4-5">
+                                </div>
+                                <div className="rateNumber">5.0</div>
+                            </div>
+                            <div className="pancakeInfor">
+                                <div className="pancakePlace">場所：メインストリート テント40</div>
+                                <div className="pancakeGenre">ジャンル：パンケーキ</div>
+                                <div className="pancakeMoney">予算：300－350</div>
+                                <div className="pancakeTime">営業時間：11月3、4、5日 10:00～18:00</div>
+                            </div>
+                            <div className="iconAround"><img className="detailIcon" src={pancakeLogo} alt="ぱんけえき焼きた亭のアイコン"></img></div>
+                            <p className="pancakeBox">
+                                <div>1．焼きた亭のパンケーキはいつでも「焼きたて」を提供!</div>
                                 注文を受けてから作るのでパンケーキはいつでも焼きたて! 好きなトッピングをかけてできあがったホクホクパンケーキはうまいこと間違いなし!
                             </p>
-                            <p className="projectBox">
-                                <div className="projectBoxTitle">パンケーキ以外のメニューも豊富</div>
+                            <p className="pancakeBox">
+                                <div className="pancakeBoxTitle">2．パンケーキ以外のメニューも豊富</div>
                                 焼きた亭ではドリンクも提供しています。みんなだいすきラムネジュース! 学祭で飲むラムネは青春の味! シュワっとはじけてさらにまちかね祭へのモチベを上げちゃいませんか?!
                             </p>
-                            <p className="projectBox">
-                                <div className="projectBoxTitle">おいしいパンケーキに種類豊富なトッピング</div>
+                            <p className="pancakeBox">
+                                <div className="pancakeBoxTitle">3．おいしいパンケーキに種類豊富なトッピング</div>
                                 選べるトッピングは、①パンケーキの王道！「メイプルシロップ」②甘党さんにおすすめ！「塩キャラメル」③深みのある味！「黒蜜きなこ」④食べたことない組み合わせ？！「はちみつレモン」皆さんの推しトッピングを見つけてくださいね
                             </p>
                             <p className="projectBox">
-                                <div className="projectBoxTitle">甘いもの苦手さんにはこちら</div>
+                                <div className="pancakeBoxTitle">4．甘いもの苦手さんにはこちら</div>
                                 パンケーキに何かトッピングはしたいけど、甘いものは苦手だなあという方には「ベーコンケチャップ」がおすすめ！他のお店ではあまり見ないパンケーキとベーコンのコラボ！ぜひご賞味あれ～
                             </p>
                         </div>
