@@ -37,6 +37,12 @@
 .sns-imgs a{
     margin-right: 5px;
 }
+.adPhoto-content{
+    text-align: center;
+}
+.adPhoto{
+    width: 80%;
+}
 /*======================
   スマホ用
 ======================*/

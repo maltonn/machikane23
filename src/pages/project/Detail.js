@@ -8,6 +8,12 @@ import Xicon from "../../imgs/X.svg"
 import link from "../../imgs/link.svg"
 import { Helmet } from "react-helmet";
 import { useParams } from "react-router-dom";
+//swiper
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 export default function Detail() {
     const { id } = useParams();
@@ -116,6 +122,13 @@ export default function Detail() {
                             <div className="detail-content-kind">
                                 <div>▷企画紹介</div>
                                 <div className="pr" dangerouslySetInnerHTML={{ __html: project.webText }}></div>
+                            </div>
+                            <div className="adPhoto-content">
+                            {project.adPhoto.map((value) => 
+                            <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+                                <SwiperSlide><img className="adPhoto" src={value} alt="adPhoto"></img></SwiperSlide>
+                            </Swiper>
+                            )}
                             </div>
                         </div>
                     </div>
