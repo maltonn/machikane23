@@ -1,4 +1,6 @@
 import { Helmet } from "react-helmet";
+import {Link} from "react-router-dom";
+
 import "../css/Common.css"
 export default function Error404() {
     return(
@@ -9,7 +11,7 @@ export default function Error404() {
             <div className="preparation">
                 <p>404<br/>Not Found</p>
                 <span>お探しのページは見つかりませんでした。</span><br/>
-                <a href="./">トップページへ戻る</a>
+                <Link to="/" >トップページへ戻る</Link>
             </div>
         </div>
     )

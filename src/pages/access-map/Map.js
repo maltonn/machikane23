@@ -1,4 +1,6 @@
 import { Helmet } from "react-helmet";
+import {Link} from "react-router-dom";
+
 import "../../css/Common.css"
 import machikame1 from "../../imgs/animal/machikame1.png"
 import map from "../../imgs/map/全体マップ.png"

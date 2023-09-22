@@ -1,5 +1,7 @@
 import { Helmet } from "react-helmet";
 import machikame1 from "../../imgs/animal/machikame1.png"
+import {Link} from "react-router-dom";
+
 import "../../css/Common.css"
 import "../../css/Access.css"
 import guide from "../../imgs/map/2023年度まちかね祭駐輪場案内.png"
