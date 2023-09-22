@@ -36,7 +36,7 @@ export default function Goods() {
                         ・ステッカー　300円（二枚セット）
                     </div>
                     <div className="goods-content">                    
-                        前回好評いただいたステッカーが今回も登場。かわいいものからかっこいいものまでデザイン様々取り揃えています。
+                        前回好評いただいたステッカーが今回も登場。かわいいものから<nobr>かっ</nobr>こいいものまでデザイン様々取り揃えています。
                     </div>
                     <div className="goods-images1">
                         <img src={sticker1} alt="ステッカー1"></img>
