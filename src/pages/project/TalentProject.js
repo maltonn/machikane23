@@ -13,9 +13,7 @@ export default function TalentProject(){
                 <title>タレント企画|まちかね祭2023</title>
             </Helmet>
             <div className="talentTop">
-                <div className="aroundTitle">
-                    <h1 className="talentTitle">阪大にトムブラウンがやってくる！</h1>
-                </div>
+                <h1 className="talentTitle"><span className="ribon">阪大にトム・ブラウンがやってくる！</span></h1>
                 <div className="machikame1"><img src={machikame1}></img></div>
                 <div className="tombrown"><img src={tombrown} className="tombrownImg"></img></div>
                 <div className="autographBlock">
@@ -25,7 +23,7 @@ export default function TalentProject(){
                 </div>
                 <div className="talentInfor">
                     <p className="talentDay">日時：11月4日(土) 14:00～15:00</p>
-                    <p className="talentPlace">場所：大学会館</p>
+                    <p className="talentPlace">場所：大学会館 講堂</p>
                     <p className="startCaution">開場は13時からです。早めにお越しください。</p>
                 </div>
                 <h2 className="caution">注意事項</h2>
