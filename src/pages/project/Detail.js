@@ -8,11 +8,11 @@ import Xicon from "../../imgs/X.svg"
 import link from "../../imgs/link.svg"
 import { Helmet } from "react-helmet";
 import { useParams } from "react-router-dom";
-//swiper
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 // Import Swiper styles
 import 'swiper/css';
+import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 export default function Detail() {
@@ -124,11 +124,16 @@ export default function Detail() {
                                 <div className="pr" dangerouslySetInnerHTML={{ __html: project.webText }}></div>
                             </div>
                             <div className="adPhoto-content">
+                            <Swiper 
+                                pagination={true}
+                                navigation={true}
+                                modules={[Pagination, Navigation]} 
+                                className="mySwiper"
+                            >
                             {project.adPhoto.map((value) => 
-                            <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
                                 <SwiperSlide><img className="adPhoto" src={value} alt="adPhoto"></img></SwiperSlide>
-                            </Swiper>
                             )}
+                            </Swiper>
                             </div>
                         </div>
                     </div>
