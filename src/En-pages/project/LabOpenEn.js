@@ -1,4 +1,6 @@
 import { Helmet } from "react-helmet";
+import {Link} from "react-router-dom";
+
 import "../../css/Common.css"
 export default function LabOpenEn() {
     return(
@@ -9,7 +11,7 @@ export default function LabOpenEn() {
             <div className="preparation">
                 <p>Coming soon! Now preparing.</p>
                 <span>Current page：LabOpen</span><br></br>
-                <a href="./">Back to the TOP</a>
+                <Link to="/" >Back to the TOP</Link>
             </div>
         </div>
     )

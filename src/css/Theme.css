@@ -1,0 +1,71 @@
+  .themep-mainpage{
+    width: 92%;
+    padding-bottom: 80px;
+    margin:0 auto;
+    text-align: center;
+  }
+  .themep-top{
+    background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
+    background-size: 435px,408px,119px;
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-position: 90% 8vh,290px bottom,4% bottom;
+    height: 427px;
+    position: relative;
+  }
+  .themep-title{
+    top: 45%;
+    position: absolute;
+  }
+
+  .themep-name{
+    margin-bottom: 15px;
+    padding: 20px;
+    display: inline-block;
+    font-size: 65px;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.38);
+    border-radius: 50px;
+    box-sizing: content-box;
+  }
+  .themep-context{
+    margin: 0px;
+    padding: 10px 20px;
+    width: 82%;
+    display: inline-block;
+    font-size: 22px;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.38);
+    border-radius: 50px;
+    box-sizing: content-box;
+  }
+
+    /*======================
+    スマホ用
+  ======================*/
+
+  @media (max-width:767px){
+    .themep-title{
+      width: auto;
+      font-size: 50px;
+    }
+    .themep-context{
+      width: 85%;
+      font-size: 17px;
+    }
+  }
+    /*======================
+    タブレット用
+  ======================*/
+  @media (min-width:1090px) and (max-width: 1280px){
+    .themep-context{
+      width: 90%;
+      font-size: 19px;
+      box-sizing: content-box;
+    }
+  }
+  @media (min-width:768px) and (max-width: 1090px){
+    .themep-context{
+      width: 90%;
+      font-size: 19px;
+    }
+  }

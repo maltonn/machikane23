@@ -1,4 +1,6 @@
 import { Helmet } from "react-helmet";
+import {Link} from "react-router-dom";
+
 import "../css/Common.css"
 import"../css/Home.css"
 import machikame1 from "../imgs/animal/machikame1.png"
@@ -14,21 +16,18 @@ import map from "../imgs/pickup_icon/icon_map.png"
 import timetable from "../imgs/pickup_icon/icon_stage.png"
 import { useEffect } from "react"
 export default function Home() {
-    useEffect(() => {
-      window.addEventListener('load', () => {
-        var move = document.getElementById('move').children;
-        setTimeout(function () {
-          for (var i = 0; i < move.length; i++) {
-            move[i].classList.add('loaded');
-          }
-        }, 0);
-      });
-      const $ = el => document.querySelector(el);
-      window.addEventListener('load', () => {
-        var surfaceHeight=document.getElementById('surface').getBoundingClientRect().bottom-document.getElementById('surface').getBoundingClientRect().top;
-        $(':root').style.setProperty('--base-height', `${surfaceHeight}px`);
-      });
-    },[])
+  useEffect(() => {
+    var move = document.getElementById('move').children;
+    setTimeout(function () {
+      for (var i = 0; i < move.length; i++) {
+        move[i].classList.add('loaded');
+      }
+    }, 0);
+
+    const $ = el => document.querySelector(el);
+    var surfaceHeight = document.getElementById('surface').getBoundingClientRect().bottom - document.getElementById('surface').getBoundingClientRect().top;
+    $(':root').style.setProperty('--base-height', `${surfaceHeight}px`);
+  }, [])
   
       return(
     <div className="top-main">
@@ -136,36 +135,36 @@ In-Facility Projects</span>
             <div className="ocean-card lab">
               <div className="titles"><nobr><p className="item1">●</p><span id="title">Invite to Lab</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
               <p>Please click the link below.</p>
-              <a href="./lab-open">Click here</a>
+              <Link to="/lab-open" >Click here</Link>
             </div>
   
             <div className="ocean-card" id="pickup">
               <div className="pickup-titles"><nobr><p className="item1">●</p><span id="title">PICKUP</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
               <div className="pickup-box">
-                  <a href="./project-search"><div className="pickup-button">
+                  <Link to="/project-search" ><div className="pickup-button">
                     <div className="pickup-icon"><img src={search} alt="search"></img></div>
                     <div className="pickup-title">Project Search</div>
-                  </div></a>
-                  <a href="./goods"><div className="pickup-button">
+                  </div></Link>
+                  <Link to="/goods" ><div className="pickup-button">
                     <div className="pickup-icon"><img src={goods} alt="goods"></img></div>  
                     <div className="pickup-title">Official Goods</div>
-                  </div></a>
-                  <a href="./official-project"><div className="pickup-button">
+                  </div></Link>
+                  <Link to="/official-project" ><div className="pickup-button">
                     <div className="pickup-icon"><img src={recommend} alt="recommend"></img></div>  
                     <div className="pickup-title">Projects by Festival Committee</div>
-                  </div></a><br/>
-                  <a href="./access"><div className="pickup-button">
+                  </div></Link><br/>
+                  <Link to="/access" ><div className="pickup-button">
                     <div className="pickup-icon"><img src={access} alt="access"></img></div>
                     <div className="pickup-title">Access</div>
-                  </div></a>
-                  <a href="./map"><div className="pickup-button">
+                  </div></Link>
+                  <Link to="/map" ><div className="pickup-button">
                     <div className="pickup-icon"><img src={map} alt="map"></img></div>  
                     <div className="pickup-title">Map</div>
-                  </div></a>
-                  <a href="./timetable"><div className="pickup-button">
+                  </div></Link>
+                  <Link to="/timetable" ><div className="pickup-button">
                     <div className="pickup-icon"><img src={timetable} alt="timetable"></img></div> 
                     <div className="pickup-title">Stage Performance Schedule</div>
-                  </div></a>
+                  </div></Link>
               </div>
             </div>
     

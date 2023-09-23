@@ -24,28 +24,28 @@ body{
 }
 .holding{
   position: absolute;
-  top: 18rem;
-  left: 34rem;
+  top: 23rem;
+  left: 42rem;
   background-image:url("../imgs/cloud/right_cloud.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   width: 100%;
-  height: 20rem;
+  height: 24rem;
 }
 .sub-holding{
   text-align: center;
   position: relative;
   width: 100%;
-  top: 7rem;
-  right: 2rem
+  top: 7.5rem;
+  right: 2.5rem
 }
 .holding-title, .holding-content{
   margin: 0;
   -webkit-text-stroke: 0.5px #233192;
 }
 .holding-title{
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 .holding-title::before{
   content: "";
@@ -60,12 +60,182 @@ body{
   top: 4px;
 }
 .holding-content{
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
-
+@media (min-width: 1800px) and (max-width: 1900px){
+  .holding{
+    top: 23rem;
+    left: 40rem;
+    width: 100%;
+    height: 22rem;
+  }
+  .sub-holding{
+    width: 100%;
+    top: 7rem;
+    right: 2rem
+  }
+  .holding-title{
+    font-size: 1.6rem;
+  }
+  .holding-content{
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1700px) and (max-width: 1800px){
+  .holding{
+    top: 21rem;
+    left: 38rem;
+    width: 100%;
+    height: 22rem;
+  }
+  .sub-holding{
+    width: 100%;
+    top: 7rem;
+    right: 2rem
+  }
+  .holding-title{
+    font-size: 1.6rem;
+  }
+  .holding-content{
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1600px) and (max-width: 1700px){
+  .holding{
+    top: 20rem;
+    left: 35rem;
+    width: 100%;
+    height: 22rem;
+  }
+  .sub-holding{
+    width: 100%;
+    top: 7rem;
+    right: 2rem
+  }
+  .holding-title{
+    font-size: 1.6rem;
+  }
+  .holding-content{
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1600px){
+  .holding{
+    top: 16rem;
+    left: 35rem;
+    width: 100%;
+    height: 22rem;
+  }
+  .sub-holding{
+    width: 100%;
+    top: 8rem;
+    right: 2rem
+  }
+  .holding-title{
+    font-size: 1.6rem;
+  }
+  .holding-content{
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1500px){
+  .holding{
+    top: 18rem;
+    left: 33rem;
+    width: 100%;
+    height: 20rem;
+  }
+  .sub-holding{
+    width: 100%;
+    top: 6rem;
+    right: 2rem
+  }
+  .holding-title{
+    font-size: 1.4rem;
+  }
+  .holding-content{
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px){
+  .holding{
+    top: 16rem;
+    left: 31rem;
+    width: 100%;
+    height: 20rem;
+  }
+  .sub-holding{
+    width: 100%;
+    top: 6rem;
+    right: 2rem
+  }
+  .holding-title{
+    font-size: 1.4rem;
+  }
+  .holding-content{
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px){
+  .holding{
+    top: 16rem;
+    left: 26rem;
+    width: 100%;
+    height: 17rem;
+  }
+  .sub-holding{
+    width: 100%;
+    top: 5rem;
+    right: 1rem
+  }
+  .holding-title{
+    font-size: 1.4rem;
+  }
+  .holding-content{
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1110px) and (max-width: 1200px){
+  .holding{
+    top: 14rem;
+    left: 24rem;
+    width: 100%;
+    height: 15rem;
+  }
+  .sub-holding{
+    width: 100%;
+    top: 5rem;
+    right: 1rem
+  }
+  .holding-title{
+    font-size: 1rem;
+  }
+  .holding-content{
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1090px) and (max-width: 1100px){
+  .holding{
+    top: 14rem;
+    left: 22rem;
+    width: 100%;
+    height: 15rem;
+  }
+  .sub-holding{
+    width: 100%;
+    top: 5rem;
+    right: 1rem
+  }
+  .holding-title{
+    font-size: 1rem;
+  }
+  .holding-content{
+    font-size: 1rem;
+  }
+}
 @media (min-width: 990px) and (max-width: 1090px){
   .holding{
-    top: 10rem;
+    top: 14rem;
     left: 23rem;
     width: 100%;
     height: 15rem;
@@ -254,6 +424,80 @@ body{
   }
 }
 
+/*theme-hidden*/
+#theme-hidden, #theme-button-close,.section-hidden, .section-button-close{
+  display: none;
+}
+.theme-button,.section-button{
+  color: #FFF;
+  border-radius: 5px;
+  width: 35%;
+}
+#theme-button-open,.section-button-open{
+  background-color: #00B2E9;
+}
+#theme-button-close,.section-button-close{
+  background-color: #e8bf6e;
+}
+#theme-hidden.theme-opend,.section-hidden.section-opend{
+  animation: FadeIn 0.8s;
+}
+.button-parent{
+  justify-content: center;
+  display: flex;
+}
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+
+  }
+}
+#theme-button-open::after,.section-button-open::after{ /*下向き矢印*/
+  content: "";
+  border-top: 2px solid #FFF;
+  border-left: 2px solid #FFF;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  transform: rotate(-135deg) translateY(9px);
+  position: relative;
+  right: -1px;
+  top: 0px;
+}
+#theme-button-close::after,.section-button-close::after{ /*上向き矢印*/
+  content: "";
+  border-top: 2px solid #FFF;
+  border-left: 2px solid #FFF;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg) translateY(-10px);
+  position: relative;
+  right: 0px;
+  top: 6px;
+}
+@media  (max-width: 490px){
+  #theme-button-open::after,.section-button-open::after{ /*下向き矢印*/
+    border-top: 1.5px solid #FFF;
+    border-left: 1.5px solid #FFF;
+    width: 6px;
+    height: 6px;
+    right: 2px;
+    top: 3px;
+  }
+  #theme-button-close::after,.section-button-close::after{ /*上向き矢印*/
+    border-top: 1.5px solid #FFF;
+    border-left: 1.5px solid #FFF;
+    width: 6px;
+    height: 6px;
+    right: 2px;
+    top: 7px;
+  }
+}
+
 /*======================
 大きな枠組みの部分
 ======================*/
@@ -293,22 +537,22 @@ body{
   box-sizing: border-box;
 }
 
-.machikani1{
+.machikani-1{
   width: 150px;
   rotate: -6deg;
   position: relative;
   bottom:-95px;
   right: -10%;
 }
-.machikani1 img{
-  width: 100%;
+.machikani-1 img{
+  width: 80%;
 }
 
 /*pickup-bubble*/
-.bottom{
+.bottoms{
   bottom:0px;
   width:100%;
-  height:300px;
+  height:10px;
 }
 
 .theme-title{
@@ -374,7 +618,18 @@ sky2 お知らせ欄(news)、来場者の方へ(notes)内部
 背景が透明が良いそうだったので、半透明
 位置は要調節
 ======================*/
-
+/* .sections{
+  display: inline-flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section-item{
+  width: 50%;
+} */
+.section-item span{
+  font-size: 1.5rem;
+}
 .news,.notes{
   font-size: 1.7rem;
   margin: 20px 0px 80px;
@@ -446,12 +701,12 @@ schedule,stage,lab
   padding: 20px 5px 30px;
 }
 /*海の中の小見出しのスタイル*/
-.ocean span{
+.ocean span#title{
   display: inline-block;
-  font-size: 37px;
+  /* font-size: 37px; */
   color: #fff;
   position: relative;
-  right: 0vw;
+  /* right: 0vw; */
 }
 .item1{
   display: inline-block;
@@ -741,7 +996,6 @@ schedule,stage,lab
       bottom: var(--base-height);
     }
   }
-  /**/
   .pre-sky,.pre-ocean{
     transition: 0.8s ease-in-out;
     transform: translateY(15px);
@@ -785,7 +1039,7 @@ schedule,stage,lab
     .pre-ocean, .pre-sky{
       font-size: 1rem;
     }
-    .machikani1{
+    .machikani-1{
       width: 85px;
       rotate: -6deg;
       position: relative;
@@ -953,7 +1207,7 @@ schedule,stage,lab
     box-sizing: content-box;
     font-size:1.4rem;
   }
-  .machikani1{
+  .machikani-1{
     /*margin: 0px -22px -71px;*/
     width: 110px;
     rotate: -6deg;

@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom'
 import './css/App.css';
 import App from './App';
-
 // Google Analytics
 import ReactGA from "react-ga4";
 
@@ -14,6 +13,7 @@ ReactGA.send("pageview");
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  
   <BrowserRouter basename={process.env.REACT_APP_BASENAME}> 
     <React.StrictMode>
       <App />

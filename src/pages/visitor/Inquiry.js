@@ -1,15 +1,36 @@
 import { Helmet } from "react-helmet";
 import "../../css/Common.css"
+import "../../css/About.css"
+import ContactForm from "../../components/ContactForm";
 export default function Inquiry() {
     return(
         <div className="main">
             <Helmet>
             <title>お問い合わせ|まちかね祭2023</title>
             </Helmet>
-            <div className="preparation">
-                <p>ただいまページ作成中です。しばらくお待ちください。</p>
-                <span>現在のページ：お問い合わせ</span><br></br>
-                <a href="./">トップページへ戻る</a>
+            <div className="sky">
+                <div className="top">            
+                    <div className="title">
+                        <h1>お問い合わせ</h1>
+                    </div>
+                </div>
+                <div className="mainpage">
+                    <ContactForm></ContactForm>
+                </div>
+            </div>
+            <div className="ocean">
+                <div className="bottom">
+                    <div className="bubble"></div>
+                    <div className="bubble"></div>
+                    <div className="bubble"></div>
+                    <div className="bubble"></div>
+                    <div className="bubble"></div>
+                    <div className="bubble"></div>
+                    <div className="bubble"></div>
+                    <div className="bubble"></div>
+                    <div className="bubble"></div>
+                    <div className="bubble"></div>
+                </div>
             </div>
         </div>
     )
