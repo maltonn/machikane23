@@ -1,204 +1,186 @@
+.goods-sky {
+  color: #233192;
+  width: 100%;
+  background: linear-gradient( 
+    #15c1f6 0%,
+    #b5e5f4 80%, 
+    #fff 100%);
+}
 .goods-mainpage{
-    width: 92%;
-    padding-bottom: 80px;
-    margin:0 auto;
-}
-.goodsp-top{
-    background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
-    background-size: 435px,408px,119px;
-    background-repeat: no-repeat,no-repeat,no-repeat;
-    background-position: 90% 8vh,290px bottom,4% bottom;
-    height: 340px;
     position: relative;
-  }
-.goodsp-title{
-  position: absolute;
-  top:200px;
-  }
-
-.goods-intro{
-    background-color: rgb(255, 255, 255, 0.38);
-    font-size: 22px;
-    display: block;
-    padding: 10px 20px;
-    width: 100%;
-    border-radius: 20px;
+}
+.goods-back-card{
+    font-size: 1.3rem;
+    margin: 2rem auto 80px;
+    display:block;
+    background-color: rgba(255,255,255,0.58);
+    border-radius: 50px;
+    text-align: center;
     box-sizing: border-box;
-    margin-bottom: 0 auto 10px;
+    width: 90%;
+    padding: 25px;
+    position:relative;
+    top:50%;
 }
-.goods-name{
-    background-color: rgb(255, 255, 255, 0.7);
-    font-size: 40px;
-    display: block;
-    width: fit-content;
-    padding: 0 20px 0 15px;
-    margin: 50px 0 20px;
-    border-radius: 50px;
+.goods-image{
+    display:flex;
+    width:90%;
+    right:20%;
 }
-.goods-content{
-    background-color: rgb(255, 255, 255, 0.38);
-    font-size: 22px;
-    display: block;
-    padding: 15px 20px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-}
-.goods-images1{
-    display: block;
-    padding: 10px;
-    background-color: rgb(255, 255, 255, 0.38);
-    margin: 0 10px 15px;
-    width: 45%;
-}
-.goods-images1 img{
-    width: 100%;
+.goods-back-card img:nth-child(1){
+    max-width: 100%;
+    margin-right: 10px;
     height: auto;
 }
-.goods-images2{
-    display: block;
-    padding: 10px;
-    background-color: rgb(255, 255, 255, 0.38);
-    width: 37%;
-    margin: 0 10px 10px;
-}
-.goods-images2 img{
-    width: 100%;
+.goods-back-card img:nth-child(2){
+    max-width: 20%;
     height: auto;
 }
-.goods-box{
-    width: 100%;
-}
-.goods-images3{
-    display: inline-block;
-    padding: 10px;
-    background-color: rgb(255, 255, 255, 0.38);
-    width: 45%;
-    margin: 0 15px 10px;
-    vertical-align: middle;
-}
-.goods-images3 img{
-    width: 100%;
+.goods-back-card img:nth-child(3){
+    max-width: 100%;
     height: auto;
-    vertical-align: middle;
 }
-.goods-accesstitle{
-    background-color: rgb(255, 255, 255, 0.38);
-    font-size: 40px;
-    display: block;
-    padding: 10px 25px;
-    margin: 15px 0;
-    border-radius: 50px;
-    width: fit-content;
+.goods-detail{
+    padding-bottom: 10px;
 }
-  /*======================
-    スマホ用
-  ======================*/
+.goods-title{
+    font-size:2rem;
+    display:block;
+    text-align: center;
+}
 
-@media (max-width:767px){
-    .goods-intro{
-        font-size: 18px;
-    }
-    .goods-name{
-        font-size: 28px;
-        border-radius: 30px;
-    }
-    .goods-content{
-        font-size: 20px;
-    }
-    .goods-accesstitle{
-        font-size: 30px;
-    }
-    .goodsp-top{
-            background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
-            background-size: 35%,calc(258px + 7vw),15%;
-            background-repeat: no-repeat,no-repeat,no-repeat;
-            background-position: 100% 4vh,calc(92px + 15vw) bottom,4% bottom;
-            height: calc(340px + 2vw);
-    }
-    .goodsp-title{
-        position: relative;
-        top:0px;
-    } 
-    .goods-images1{
-        width: 55%;
-    }
-    .goods-images2{
-        width: 50%;
-    }
-    .goods-images3{
-        width: 55%;
-    }
+.goods-subtitle{
+    display:block;
+    font-size: 1.6rem;
 }
-@media screen and (max-width: 490px) {
-    .goodsp-top{
-        background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
-        background-size: 0%,calc(200px + 8vw),80px;
-        background-repeat: no-repeat,no-repeat,no-repeat;
-        background-position: 100% 4vh,right bottom,4% 220px;
-        height: 200px;
-      }   
-    .goodsp-title{
-        position: absolute;
-        top:80px;
-    } 
-    h1{
-        font-size: 24px;
-    }
-    .goods-images1{
-        width: 60%;
-    }
-    .goods-images2{
-        width: 55%;
-    }
-    .goods-images3{
-        width: 60%;
-    }
-}
-  /*======================
-    タブレット用
-  ======================*/
-@media (min-width:768px) and (max-width: 1090px){
-    .goods-name{
-        font-size: 35px;
-    }
-    .goods-content{
-        font-size: 23px;
-    }
-    .goodsp-top{
-        background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
-        background-size: 35%,calc(50px + 35vw),15%;
-        background-repeat: no-repeat,no-repeat,no-repeat;
-        background-position: 100% 4vh,40% bottom,4% bottom;
-        height: 340px;
-    }
-    .goods-images1{
-        width: 55%;
-    }
-    .goods-images2{
-        width: 50%;
-    }
-    .goods-images3{
-        width: 55%;
-    }
 
+.stickers{
+    background-image:url("../imgs/goods/stickers2.png");
+    background-repeat: no-repeat;
+    background-size: 23%;
+    background-position: 80% 50%,right bottom;
+    margin-bottom: 5px;
 }
-@media (min-width:1090px) and (max-width: 1280px){
-    .goods-name{
-        font-size: 35px;
+
+.stickers-content{
+    font-size:1.3rem;
+    padding: 5px 15px;
+    display:block;
+    background-color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    width:30%;
+    position: relative;
+    left: 10%;
+}
+.pen{
+    background-image:url("../imgs/goods/pen-detail.png");
+    background-repeat: no-repeat;
+    background-size: 23%;
+    background-position: 16% 55%, left top;
+    margin: 10px 0px;
+}
+
+.pen-content{
+    font-size:1.3rem;
+    padding: 5px 15px;
+    display:block;
+    background-color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    width:30%;
+    position: relative;
+    left: 60%;
+}
+.totebag{
+    background-image:url("../imgs/goods/tote.png");
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: 85% 50%,right bottom;
+    margin-bottom: 5px;
+    padding-bottom: 20%;
+}
+
+.totebag-content{
+    font-size:1.3rem;
+    padding: 5px 15px;
+    display:block;
+    background-color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    width:30%;
+    position: relative;
+    left: 10%;
+}
+
+/*スマホ用*/
+@media(max-width:500px){
+.goods-back-card{
+    font-size: 0.8rem;
+}
+.goods-title{
+    font-size: 1.6rem;
+}
+.goods-subtitle{
+    font-size: 1rem;
+}
+.stickers{
+    background-size: 43%;
+    background-position: 92% 50%,right bottom;      
+}
+.stickers-content{
+    font-size: 0.8rem;
+    width: 40%;
+}
+.pen{
+    background-size: 40%;
+    background-position: 13% 55%, left top;
+}
+.pen-content{
+    font-size: 0.8rem;
+    width:40%;
+    left: 55%;
+}
+.totebag{
+    background-size: 50%;
+    background-position: 100% 50%,right bottom;      
+}
+.totebag-content{
+    font-size: 0.8rem;
+    width:40%;
+}
+}
+/*タブレット用*/
+@media (min-width: 500px) and (max-width: 1070px){
+    .goods-subtitle{
+        font-size: 1rem;
     }
-    .goods-content{
-        font-size: 23px;
+    .stickers{
+        background-size: 25%;
+        background-position: 83% 50%,right bottom;      
     }
-    .goodsp-top{
-        background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
-        background-size: 370px,370px,111px;
-        background-repeat: no-repeat,no-repeat,no-repeat;
-        background-position: 96% 8vh,289px bottom,4% bottom;
-        height: 396px;
-      }
-    .goodsp-title{
-        position: relative;
-        top:0px;
-    } 
-  
+    .stickers-content{
+        font-size: 1rem;
+        width: 40%;
+    }
+    .pen{
+        background-size: 30%;
+        background-position: 20% 55%, left top;
+    }
+    .pen-content{
+        font-size: 1rem;
+        width:40%;
+        left:55%;
+    }
+    .totebag-content{
+        font-size: 1rem;
+        width:40%;
+    }
+    .totebag{
+        background-size: 35%;
+        background-position: 88% 50%,right bottom;      
+    }
 }

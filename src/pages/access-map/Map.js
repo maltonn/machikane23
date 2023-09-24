@@ -1,8 +1,7 @@
 import { Helmet } from "react-helmet";
-// import {Link} from "react-router-dom";
-
 import "../../css/Common.css"
-import machikame1 from "../../imgs/animal/machikame1.png"
+import "../../css/Map.css"
+import PageTitles from "../../components/PageTitles";
 import map from "../../imgs/map/全体マップ.png"
 import AB1 from "../../imgs/map/AB棟1階.png"
 import AB2 from "../../imgs/map/AB棟2階.png"
@@ -23,35 +22,30 @@ import G3 from "../../imgs/map/学生会館3階.png"
 import M from "../../imgs/map/屋外メインストリート.png"
 import kanade from "../../imgs/map/ステージ奏.png"
 import sora from "../../imgs/map/ステージ宙.png"
-import "../../css/Access.css"
+
 export default function Map() {
     return(
         <div className="main">
             <Helmet>
             <title>マップ|まちかね祭2023</title>
             </Helmet>
-            <div className="sky">
-                <div className="top">
-                    <div className="machikame"> 
-                    <img src={machikame1} alt="まちかめ1"></img>
-                    </div>
-                        <div className="title">
-                        <h1>全体マップ・学内店舗営業時間</h1>
-                        </div>
+            <div className="map-sky">
+                <div className="map-top">
+                <PageTitles titles="全体マップ・学内店舗の営業時間"></PageTitles>
                 </div>
-                <div className="notes">
-                        <div className="content">
-                            <div className="ul">
+                <div className="map-notes">
+                        <div className="map-content">
+                            <div className="map-ul">
                             <li>全体マップ</li>
                             </div>
-                            <div className="map"> 
+                            <div className="map-map"> 
                                 <img src={map} alt="全体マップ"></img>
                             </div>
-                            <div className="ul">
+                            <div className="map-ul">
                             <li>学内店舗の営業時間</li><br></br>
                             </div>
                             <div className="time">
-                                <div className="tables">
+                                <div className="map-tables">
                                     <tr>
                                         <th>店舗名</th> <th>11/3(金)</th> <th>11/4(土)</th> <th>11/5(日)</th>
                                     </tr>
@@ -71,30 +65,23 @@ export default function Map() {
                             </div>
                         </div>
                     </div>
-                <div className="top">
-                    <div className="machikame"> 
-                    <img src={machikame1} alt="まちかめ1"></img>
-                    </div>
-                    <div className="title">
-                    <h1>館内マップ</h1>
-                    </div>
-                </div>
+                <PageTitles titles="館内マップ"></PageTitles>
                 {/* AB棟マップ */}
-                <div className="notes">
-                    <div className="content">
-                        <div className="ul">
+                <div className="map-notes">
+                    <div className="map-content">
+                        <div className="map-ul">
                             <li>AB棟</li>
                         </div>
-                        <div className="item">
-                                <div className="AB"> 
+                        <div className="map-item">
+                                <div className="map-AB"> 
                                     <p>1階</p>
                                     <img src={AB1} alt="AB棟1階"></img>
                                 </div>
-                                <div className="AB">
+                                <div className="map-AB">
                                     <p>2階</p>
                                     <img src={AB2} alt="AB棟2階"></img>
                                 </div>
-                                <div className="AB">
+                                <div className="map-AB">
                                         <p>3階</p>
                                         <img src={AB3} alt="AB棟3階"></img>
                                 </div>
@@ -102,30 +89,25 @@ export default function Map() {
                     </div>
                 </div>
                 {/* C棟マップ */}
-                <div className="top">
-                    <div className="machikame"> 
-                        <img src={machikame1} alt="まちかめ1"></img>
-                    </div>
-                </div>
-                <div className="notes">
-                    <div className="content">
-                        <div className="ul">
+                <div className="map-notes">
+                    <div className="map-content">
+                        <div className="map-ul">
                             <li>C棟</li>
                         </div>
-                        <div className="item">
-                                <div className="C"> 
+                        <div className="map-item">
+                                <div className="map-C"> 
                                     <p>1階</p>
                                     <img src={C1} alt="C棟1階"></img>
                                 </div>
-                                <div className="C">
+                                <div className="map-C">
                                     <p>2階</p>
                                     <img src={C2} alt="C棟2階"></img>
                                 </div>
-                                <div className="C">
+                                <div className="map-C">
                                         <p>3階</p>
                                         <img src={C3} alt="C棟3階"></img>
                                 </div>
-                                <div className="C">
+                                <div className="map-C">
                                         <p>4階</p>
                                         <img src={C4} alt="C棟4階"></img>
                                 </div>
@@ -133,26 +115,21 @@ export default function Map() {
                     </div>
                 </div>
                 {/* 法経マップ */}
-                <div className="top">
-                    <div className="machikame"> 
-                        <img src={machikame1} alt="まちかめ1"></img>
-                    </div>
-                </div>
-                <div className="notes">
-                    <div className="content">
-                        <div className="ul">
+                <div className="map-notes">
+                    <div className="map-content">
+                        <div className="map-ul">
                             <li>法経講義棟</li>
                         </div>
-                        <div className="item">
-                                <div className="H"> 
+                        <div className="map-item">
+                                <div className="map-H"> 
                                     <p>1階</p>
                                     <img src={H1} alt="法経1階"></img>
                                 </div>
-                                <div className="H">
+                                <div className="map-H">
                                     <p>2階</p>
                                     <img src={H2} alt="法経2階"></img>
                                 </div>
-                                <div className="H">
+                                <div className="map-H">
                                         <p>3階</p>
                                         <img src={H3} alt="法経3階"></img>
                                 </div>
@@ -160,30 +137,25 @@ export default function Map() {
                     </div>
                 </div>
                 {/* 文法経マップ */}
-                <div className="top">
-                    <div className="machikame"> 
-                        <img src={machikame1} alt="まちかめ1"></img>
-                    </div>
-                </div>
-                <div className="notes">
-                    <div className="content">
-                        <div className="ul">
+                <div className="map-notes">
+                    <div className="map-content">
+                        <div className="map-ul">
                             <li>文法経講義棟</li>
                         </div>
-                        <div className="item">
-                                <div className="B"> 
+                        <div className="map-item">
+                                <div className="map-B"> 
                                     <p>1階</p>
                                     <img src={B1} alt="文法経1階"></img>
                                 </div>
-                                <div className="B">
+                                <div className="map-B">
                                     <p>2階</p>
                                     <img src={B2} alt="文法経2階"></img>
                                 </div>
-                                <div className="B">
+                                <div className="map-B">
                                         <p>3階</p>
                                         <img src={B3} alt="文法経3階"></img>
                                 </div>
-                                <div className="B">
+                                <div className="map-B">
                                         <p>4階</p>
                                         <img src={B4} alt="文法経4階"></img>
                                 </div>
@@ -191,22 +163,17 @@ export default function Map() {
                     </div>
                 </div>
                 {/* 学生会館 */}
-                <div className="top">
-                    <div className="machikame"> 
-                        <img src={machikame1} alt="まちかめ1"></img>
-                    </div>
-                </div>
-                <div className="notes">
-                    <div className="content">
-                        <div className="ul">
+                <div className="map-notes">
+                    <div className="map-content">
+                        <div className="map-ul">
                             <li>学生会館</li>
                         </div>
-                        <div className="item">
-                                <div className="G"> 
+                        <div className="map-item">
+                                <div className="map-G"> 
                                     <p>2階</p>
                                     <img src={G2} alt="学生会館2階"></img>
                                 </div>
-                                <div className="G">
+                                <div className="map-G">
                                     <p>3階</p>
                                     <img src={G3} alt="学生会館3階"></img>
                                 </div>
@@ -214,40 +181,26 @@ export default function Map() {
                     </div>
                 </div>
                 {/* 屋外模擬店 */}
-                <div className="top">
-                    <div className="machikame"> 
-                    <img src={machikame1} alt="まちかめ1"></img>
-                    </div>
-                        <div className="title">
-                        <h1>模擬店・屋外マップ</h1>
-                        </div>
-                </div>
-                <div className="notes">
-                    <div className="content">
-                        <div className="item">
-                                <div className="M">
+                <PageTitles titles="模擬店・屋外マップ"></PageTitles>
+                <div className="map-notes">
+                    <div className="map-content">
+                        <div className="map-item">
+                                <div className="map-M">
                                     <img src={M} alt="屋外模擬店"></img>
                                 </div>
                         </div>
                     </div>
                 </div>
                 {/* ステージ */}
-                <div className="top">
-                    <div className="machikame"> 
-                    <img src={machikame1} alt="まちかめ1"></img>
-                    </div>
-                        <div className="title">
-                        <h1>ステージマップ</h1>
-                        </div>
-                </div>
-                <div className="notes">
-                    <div className="content">
-                        <div className="item">
-                                <div className="stage">
+                <PageTitles titles="ステージマップ"></PageTitles>
+                <div className="map-notes">
+                    <div className="map-content">
+                        <div className="map-item">
+                                <div className="map-stage">
                                     <p>ステージ奏</p>
                                     <img src={kanade} alt="ステージ奏"></img>
                                 </div>
-                                <div className="stage">
+                                <div className="map-stage">
                                     <p>ステージ宙</p>
                                     <img src={sora} alt="ステージ宙"></img>
                                 </div>

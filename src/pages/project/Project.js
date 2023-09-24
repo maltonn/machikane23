@@ -4,6 +4,7 @@ import "../../css/Project.css"
 import "../../css/About.css"
 import "../../css/Common.css"
 import { Helmet } from "react-helmet";
+import PageTitles from "../../components/PageTitles";
 
 const shuffleArray = (array) => {
     return array.slice().sort(() => Math.random() - Math.random())
@@ -169,7 +170,7 @@ export default function Project() {
             </Helmet>
             <div className="sky-project">
                 <div className="search-header">
-                    <h1>企画検索</h1> 
+                    <PageTitles titles="企画検索"></PageTitles>
                     <div className="search-mainpage"> 
                         <div>
                             <input
