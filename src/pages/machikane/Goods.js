@@ -10,10 +10,13 @@ import sticker2 from "../../imgs/goods/sticker2.jpg"
 import sticker3 from "../../imgs/goods/sticker3.jpg"
 import sticker4 from "../../imgs/goods/sticker4.png"
 import sticker5 from "../../imgs/goods/sticker5.png"
+import stickers from "../../imgs/goods/stickers.png"
 import pen1 from "../../imgs/goods/pen1.jpg"
 import pen2 from "../../imgs/goods/pen2.png"
 import pen3 from "../../imgs/goods/pen3.png"
 import totebag from "../../imgs/goods/totebag.png"
+import tote from "../../imgs/goods/tote.png"
+
 import PageTitles from "../../components/PageTitles";
 import Bubble from "../../components/Bubble";
 export default function Goods() {
@@ -30,8 +33,8 @@ export default function Goods() {
                         <p>今年のまちかね祭では、ステッカー　ボールペン　トートバックを総合案内所にて販売します。</p>
                         <div className="goods-image">
                             <img src={stickers} alt="ステッカー５種"></img>
-                            <img src={pen1} alt="ペン"></img>
-                            <img src={totebag} alt="トートバック"></img>
+                            <img src={stickers} alt="ペン"></img>
+                            <img src={tote} alt="トートバック"></img>
                         </div>
                     </div>
                     <div className="goods-detail">
