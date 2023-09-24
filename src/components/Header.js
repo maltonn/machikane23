@@ -43,7 +43,7 @@ export default function Header() {
     const { setLang } =useGlobalContext()
     return (
         <header>
-            <Link to="/" className={`top-link ${isHamburgerOpen ? "menu-opend" : "menu-closed"}`}>
+            <Link to="/" className={`top-link ${isHamburgerOpen ? "menu-opend" : "menu-closed"}`} onClick={PageChange}>
                 <img className={`machikane_logo-sp ${isHamburgerOpen ? "menu-opend" : "menu-closed"}`} src={machikane_logo} alt="まちかね祭ロゴ"></img>
             </Link>
             <div className={`toggle-sp ${isHamburgerOpen?"menu-opend":"menu-closed"}`}>

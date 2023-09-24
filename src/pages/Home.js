@@ -184,60 +184,9 @@ export default function Home() {
 
             <div className="ocean-card">
               <div className="titles"><nobr><p className="item1">●</p><span id="title">企画区分について</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
-              <div className="sections-parent">
-                <div className="sections">
-                  <div className="section-item">
-                    <span style={{ right: 0, color: '#F4E511' }}>館内区分</span>
-                    <div className="button-parent"><div onClick={onSectionClickA} id="section-button-openA" className={`section-button section-button-open ${isSectionOpenA ? "section-closed" : "section-opend"}`}>もっと見る</div></div>
-
-                    <p id='section-hiddenA' className={`section-hidden ${isSectionOpenA ? "section-closed" : "section-opend"}`}>館内区分では、様々なサークル、部活による個性豊かな演奏、販売、体験、展示などの企画が行われます。これらはその名の通り、全学教育共通棟、文法経講義棟、法経講義棟、学生会館の教室内で実施されております。ぜひお立ち寄りください。</p>
-
-                    <div className="button-parent"><div onClick={onSectionClickA} id="section-button-closeA" className={`section-button section-button-close ${isSectionOpenA ? "section-closed" : "section-opend"}`}>閉じる</div></div>
-                  </div>
-
-
-                  <div className="section-item">
-                    <span style={{ right: 0, color: '#F4E511' }}>ラリー企画</span>
-                    <div className="button-parent"><div onClick={onSectionClickB} id="section-button-openB" className={`section-button section-button-open ${isSectionOpenB ? "section-closed" : "section-opend"}`}>もっと見る</div></div>
-
-                    <p id='section-hiddenB' className={`section-hidden ${isSectionOpenB ? "section-closed" : "section-opend"}`}>ラリー企画では、来場者の皆さん自身が大学構内を移動しながら楽しんでいただけます。企画を楽しみながら、まちかね祭全体をぐるっと回る事ができます。メインストリート上、ピロティ付近のテントがスタートです。ぜひお越しください。</p>
-
-                    <div className="button-parent"><div onClick={onSectionClickB} id="section-button-closeB" className={`section-button section-button-close ${isSectionOpenB ? "section-closed" : "section-opend"}`}>閉じる</div></div>
-                  </div>
-
-
-                  <div className="section-item">
-                    <span style={{ right: 0, color: '#F4E511' }}>屋外区分</span>
-                    <div className="button-parent"><div onClick={onSectionClickC} id="section-button-openC" className={`section-button section-button-open ${isSectionOpenC ? "section-closed" : "section-opend"}`}>もっと見る</div></div>
-
-                    <p id='section-hiddenC' className={`section-hidden ${isSectionOpenC ? "section-closed" : "section-opend"}`}>屋外区分では、パフォーマンスを中心として、展示など多様な企画が行われます。2023年度まちかね祭では、学生交流棟・学生会館横・C棟前・文学研究棟前・サイバーメディアセンター横など建物外かつ模擬店のテント以外の場所で行われます。ぜひお越しください。</p>
-
-                    <div className="button-parent"><div onClick={onSectionClickC} id="section-button-closeC" className={`section-button section-button-close ${isSectionOpenC ? "section-closed" : "section-opend"}`}>閉じる</div></div>
-                  </div>
-
-
-                  <div className="section-item">
-                    <span style={{ right: 0, color: '#F4E511' }}>ステージ区分</span>
-                    <div className="button-parent"><div onClick={onSectionClickD} id="section-button-openD" className={`section-button section-button-open ${isSectionOpenD ? "section-closed" : "section-opend"}`}>もっと見る</div></div>
-
-                    <p id='section-hiddenD' className={`section-hidden ${isSectionOpenD ? "section-closed" : "section-opend"}`}>ステージ区分では、カルチエ前のステージ<ruby>奏<rt>かなで</rt></ruby>とかさね前のステージ<ruby>宙<rt>そら</rt></ruby>の2つのステージで様々な企画が行われます。バンド演奏からダンスパフォーマンスまで、迫力あるステージをぜひお楽しみください。</p>
-
-                    <div className="button-parent"><div onClick={onSectionClickD} id="section-button-closeD" className={`section-button section-button-close ${isSectionOpenD ? "section-closed" : "section-opend"}`}>閉じる</div></div>
-                  </div>
-
-
-                  <div className="section-item">
-                    <span style={{ right: 0, color: '#F4E511' }}>模擬店区分</span>
-                    <div className="button-parent"><div onClick={onSectionClickE} id="section-button-openE" className={`section-button section-button-open ${isSectionOpenE ? "section-closed" : "section-opend"}`}>もっと見る</div></div>
-
-                    <p id='section-hiddenE' className={`section-hidden ${isSectionOpenE ? "section-closed" : "section-opend"}`}>模擬店区分では、食品の提供などが行われます。食事席もご用意しております。2023年度まちかね祭では、大阪大学会館(旧イ号館)前及びメインストリート南側(<ruby>浪高庭園<rt>なみこうていえん</rt></ruby>側)のテントで行われます。ぜひお越しください。</p>
-
-                    <div className="button-parent"><div onClick={onSectionClickE} id="section-button-closeE" className={`section-button section-button-close ${isSectionOpenE ? "section-closed" : "section-opend"}`}>閉じる</div></div>
-                  </div>
-                </div>
-              </div>
+              <p>企画区分の説明は下のボタンから</p>
+              <div className="ocean-link-button"><a href="./sections">企画区分を知る</a></div>
             </div>
-
             <div className="ocean-card schedule">
               <div className="subtitle">
                 <div className="titles"><nobr><p className="item1">●</p><span id="title">企画時間</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
