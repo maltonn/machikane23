@@ -3,31 +3,34 @@ import machikame1 from "../../imgs/animal/machikame1.png"
 // import {Link} from "react-router-dom";
 import "../../css/Common.css"
 import "../../css/Notes.css"
+import PageTitles from "../../components/PageTitles";
+import Bubble from "../../components/Bubble";
 export default function Notes() {
     return(
         <div className="main">
             <Helmet>
             <title>注意事項|まちかね祭2023</title>
             </Helmet>
-            <div className="sky">
-                <div className="top">
-                    <div className="machikame"> 
-                    <img src={machikame1} alt="まちかめ1"></img>
+            <div className="notes-sky">
+                <PageTitles titles="注意事項"></PageTitles>
+                <div className="notes-mainpage">
+                    <div className="notes-naiyou">
+                        <div className="notes-miniTitle">飲食について</div>
+                        <div className="notes-miniContent">
+                            <p>食事（持ち込み含む）は、食事席に限り可能であり、他の場所での飲食は禁止とします。ただし、水分補給はしていただいて構いません。</p>
+                            <p>食事席はメインストリートの周辺に設置してあります。詳しくはマップページをご覧ください。</p>
+                            <div className="link-button notes-linkButton"><a href="./map">マップ</a></div>
+                            <p>お食事の際は、以下のことをお守りください。</p>
+                            <ol>
+                                <li>食事席の椅子を動かした際は元に戻してください。</li>
+                                <li>ごみはごみ箱に分別して捨ててください。</li>
+                                <li>食事席は数が限られています。食事がお済みの方は館内のソファ・椅子（食事は出来ません）に移動するなど、ご協力をお願いします。</li>
+                            </ol>
+                        </div>
                     </div>
-                <div className="title">
-                <h1>注意事項</h1>
-                </div>
-                </div>
-                <div className="mainpage"> 
-                    <div className="notes">
-                        <div className="naiyou"><li>飲食について<br></br>
-                        食事（持ち込み含む）は、食事席に限り可能であり、他の場所での飲食は禁止とします。ただし、水分補給はしていただいて構いません。
-                        食事席はメインストリートの周辺に設置してあります。詳しくはマップページをご覧ください。<br></br>
-                        お食事の際は、以下のことをお守りください。<br></br>
-                        ①食事席の椅子を動かした際は元に戻してください。<br></br>
-                        ②ごみはごみ箱に分別して捨ててください。<br></br>
-                        ③食事席は数が限られています。食事がお済みの方は館内のソファ・椅子（食事は出来ません）に移動するなど、ご協力をお願いします。
-                        </li>
+                    <div className="notes-naiyou">
+                        <div className="notes-miniTitle">飲食について</div>
+                    </div>
                         <li>ごみについて<br></br>
                         まちかね祭期間中は通常のごみ箱が使用できません。ごみは「ゴミステーション」にて分別して捨ててください。
                         ステージ宙付近にも臨時のゴミ箱を設置しておりますが、基本的に「ゴミステーション」にて捨てていただくようにお願いいたします。
@@ -64,24 +67,10 @@ export default function Notes() {
                         <li>お困りの際は<br></br>
                         まちかね祭期間中、何か困ったことがございましたらお近くの実行委員にお声掛けください。
                         実行委員は左腕にオレンジの腕章をつけています。</li>
-                        </div>
-                    </div>
+                        
                 </div>
             </div>
-            <div className="ocean">
-                <div className="bottom">
-                <div className="bubble"></div>
-                <div className="bubble"></div>
-                <div className="bubble"></div>
-                <div className="bubble"></div>
-                <div className="bubble"></div>
-                <div className="bubble"></div>
-                <div className="bubble"></div>
-                <div className="bubble"></div>
-                <div className="bubble"></div>
-                <div className="bubble"></div>
-                </div>
-            </div>
+            <Bubble></Bubble>
         </div>
     )
 }

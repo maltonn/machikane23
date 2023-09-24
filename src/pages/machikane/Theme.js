@@ -1,5 +1,7 @@
 import { Helmet } from "react-helmet";
 // import {Link} from "react-router-dom";
+import PageTitles from "../../components/PageTitles";
+import Bubble from "../../components/Bubble";
 
 import "../../css/Common.css"
 import "../../css/Theme.css"
@@ -11,12 +13,8 @@ export default function Theme() {
             <Helmet>
             <title>テーマ|まちかね祭2023</title>
             </Helmet>
-            <div className ="sky">
-              <div className="themep-top">
-                <div className="themep-title">
-                    <h1>テーマ</h1>
-                </div>
-              </div>
+          <div className ="theme-sky">
+            <PageTitles titles="テーマ"></PageTitles>
               <div className = "themep-mainpage">
                 <div className="themep-name">
                   "<ruby>阪燦々<rt>はんさんさん</rt></ruby>"
@@ -29,20 +27,7 @@ export default function Theme() {
                 </div>
               </div>
             </div>
-            <div className="ocean">
-              <div className="bottom">
-                  <div className="bubble"></div>
-                  <div className="bubble"></div>
-                  <div className="bubble"></div>
-                  <div className="bubble"></div>
-                  <div className="bubble"></div>
-                  <div className="bubble"></div>
-                  <div className="bubble"></div>
-                  <div className="bubble"></div>
-                  <div className="bubble"></div>
-                  <div className="bubble"></div>
-              </div>
-            </div>
+            <Bubble></Bubble>
         </div>
     )
 }
