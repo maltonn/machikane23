@@ -7,9 +7,13 @@
     font-size: 37px;
 }
 
-.position{
+.position1,.position2{
     padding-left: 32px;
     font-size: 30px;
+}
+
+.position2{
+    padding-top: 280px;
 }
 
 .president img, .chairperson img{
@@ -20,6 +24,7 @@
 
 .greeting-card{
     display: inline-flex;
+    padding-bottom: 30px;
 }
 
 .sentences{

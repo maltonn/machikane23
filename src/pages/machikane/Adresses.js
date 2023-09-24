@@ -3,6 +3,8 @@ import { Helmet } from "react-helmet";
 
 import "../../css/Common.css"
 import "../../css/Adresses.css"
+import PagTtitles from "../../components/PageTitles"
+import Bubble from "../../components/Bubble"
 import president from "../../imgs/NISHIO-Shojiro.jpg"
 import chairperson from "../../imgs/chairperson.jpg"
 export default function Adresses() {
@@ -16,7 +18,7 @@ export default function Adresses() {
                         <div className="president">
                             <br></br>
                             <span className="greeting-title">ご挨拶</span>
-                            <div className="position">総長挨拶</div>
+                            <div className="position1">総長挨拶</div>
                             <div className="greeting-card">
                                 <img src={president}></img>
                                 <div className="sentences">
@@ -34,14 +36,7 @@ export default function Adresses() {
                             <br></br>
                         </div>
                         <div className="chairperson">
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <br></br>
-                            <div className="position">委員長挨拶</div>
+                            <div className="position2">委員長挨拶</div>
                             <div className="greeting-card">
                                 <img src={chairperson}></img>
                                 <div className="sentences">
@@ -49,9 +44,6 @@ export default function Adresses() {
                                         ご来場の皆様、本日はまちかね祭にお越しいただきありがとうございます。突然ですが、皆様にとって学祭とはどんなものでしょう。小学生から大学生までの人生を振り返り、皆様の脳裏にはどんな学祭が再生されるでしょうか。一人一人に違った学祭があったのではないかと思います。私は、それぞれ違った学祭にも共通したものがあるとおもいます。それは「一瞬を全力で楽しむこと」です。抱えるものが違っても、学祭期間の一瞬だけは目の前で起こっていることを全力で楽しむことができる。それが学祭だと私は思います。今年のまちかね祭メインテーマは「阪燦々」です。学祭にかかわるすべての人が、笑顔で輝く学祭になるようにという思いが込められています。まちかね祭であふれんばかりの笑顔が咲き誇る光景をみることができれば望外の喜びです。さて、今年はどんなまちかね祭になるのでしょうか。どうか、この一瞬を最高の笑顔で、友達やご家族と楽しんでいただけますと幸いです。最後になりましたが、開催にあたりお力添えいただいた皆様に深く御礼申し上げます。
                                     </p>
                                     <div className="name"><p>大阪大学大学祭中央実行委員会　委員長　　林　祐人</p></div>
-                                    <br></br>
-                                    <br></br>
-                                    <br></br>
                                 </div>
                                 
                             </div>
