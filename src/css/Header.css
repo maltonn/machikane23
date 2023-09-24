@@ -32,7 +32,7 @@ header > h1{
 .menu{
     position: fixed;
     width: 100%;
-    height: 11.5%; /*メニューバーの高さ調節はこれ*/
+    height: 5rem; /*メニューバーの高さ調節はこれ*/
     background: linear-gradient(
         rgba(255, 255, 255, 1) 85%,
         rgba(255, 255, 255, 0) 100%

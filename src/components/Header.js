@@ -43,7 +43,7 @@ export default function Header() {
     const { setLang } =useGlobalContext()
     return (
         <header>
-            <Link to="/" className={`top-link ${isHamburgerOpen ? "menu-opend" : "menu-closed"}`} >
+            <Link to="/" className={`top-link ${isHamburgerOpen ? "menu-opend" : "menu-closed"}`}>
                 <img className={`machikane_logo-sp ${isHamburgerOpen ? "menu-opend" : "menu-closed"}`} src={machikane_logo} alt="まちかね祭ロゴ"></img>
             </Link>
             <div className={`toggle-sp ${isHamburgerOpen?"menu-opend":"menu-closed"}`}>
@@ -54,7 +54,7 @@ export default function Header() {
 
             <div className={`menu ${isHamburgerOpen ? "menu-opend" : "menu-closed"}`}>
                 <div className="header">
-                    <Link to="/" className="top-link" ><img className="machikane_logo-pc" src={machikane_logo} alt="まちかね祭ロゴ"></img></Link>
+                    <Link to="/" className="top-link" onClick={PageChange}><img className="machikane_logo-pc" src={machikane_logo} alt="まちかね祭ロゴ"></img></Link>
                     <div className="toggle-pc">
                         <label className="toggle-button">
                             <input type="checkbox" id="toggle-pc" checked={lang=="en"} onChange={()=>{lang=="en"?setLang("ja"):setLang("en")}} />
@@ -63,9 +63,6 @@ export default function Header() {
                     <ul className="menu-grandparent" id="ja-menu">
                         <li className="menu-parent"><span className={`menu-title ${isMenuOpenA?"is-opend":"is-closed"}`} onClick={menuOpenA}>まちかね祭について</span>
                             <ul className={`menu-child ${isMenuOpenA?"is-opend":"is-closed"}`}>
-                                {/* {{"まちかね祭とは":"./about","ご挨拶":"./adresses","テーマ":"./theme","グッズ":"./goods","ご協賛":"./sponsor"}.map((value(key)) =>
-                                <li><Link to={key} onClick={PageChange}>{value}</Link></li>
-                                )} */}
                                 <li><Link to="./about" onClick={PageChange}>まちかね祭とは</Link></li>
                                 <li><Link to="./adresses" onClick={PageChange}>ご挨拶</Link></li>
                                 <li><Link to="./theme" onClick={PageChange}>テーマ</Link></li>
