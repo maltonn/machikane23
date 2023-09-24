@@ -62,6 +62,16 @@ body{
 .holding-content{
   font-size: 1.5rem;
 }
+.ocean-link-button{
+  background-color: #e8bf6e;
+  border-radius: 50px;
+  width: 30%;
+  margin: 0 auto;
+}
+.ocean-link-button a{
+  text-decoration: none;
+  display: block;
+}
 @media (min-width: 1800px) and (max-width: 1900px){
   .holding{
     top: 23rem;
@@ -1159,6 +1169,10 @@ schedule,stage,lab
   .theme-title rt{
     font-size: 1rem;
   }
+
+  .ocean-link-button{
+    width: 45%;
+  }
 }
 
 /*======================
@@ -1266,6 +1280,9 @@ schedule,stage,lab
   }
   .pickup-icon img{
     width: 60px;
+  }
+  .ocean-link-button{
+    width: 30%;
   }
 }
 @media (min-width:800px) and (max-width:990px){
