@@ -23,7 +23,7 @@ export default function Goods() {
                 <PageTitles titles="グッズ"></PageTitles>
                 <div className="goods-mainpage">
                     <div className="goods-back-card">
-                        <p>今年のまちかね祭では、ステッカー　ボールペン　トートバックを総合案内所にて販売します。</p>
+                        <p>今年のまちかね祭では、ステッカー　ボールペン　トートバッグを総合案内所にて販売します。</p>
                         <div className="goods-image">
                             <img src={stickers} alt="ステッカー５種"></img>
                             <img src={pen1} alt="ペン"></img>
@@ -47,7 +47,7 @@ export default function Goods() {
                             </div>
                             <div className="totebag">
                                 <div className="totebag-content">
-                                    <div className="goods-subtitle">トートバック</div>
+                                    <div className="goods-subtitle">トートバッグ</div>
                                     <p>A4サイズのものがしっかり入る便利な仕様です。学祭を回る際にぜひご活用ください。</p>
                                 </div>
                             </div>
