@@ -36,18 +36,18 @@ export default function Goods() {
                                     <img src={allstickers}></img>
                                 </div>
                                 <div className="stickers-content">
-                                    <div className="goods-subtitle">ステッカー</div>
+                                    <div className="goods-subtitle">ステッカー２枚セット　300円</div>
                                     <p>前回好評いただいたステッカーが今回も登場です。かわいいデザインからカッコイイデザインまで、様々なステッカをご用意しました。</p>
                                 </div>
                                 <div className="pen">
                                     <img src={pendetail}></img>
                                 </div>
                                 <div className="pen-content">
-                                    <div className="goods-subtitle">ボールペン</div>
+                                    <div className="goods-subtitle">ボールペン　300円</div>
                                     <p>メタリックでかっこいいデザインにしました。ロゴの「阪燦々」は今回のまちかね祭のメインテーマです。</p>
                                 </div>
                                 <div className="totebag-content">
-                                    <div className="goods-subtitle">トートバッグ</div>
+                                    <div className="goods-subtitle">トートバッグ　500円</div>
                                     <p>A4サイズのものがしっかり入る便利な仕様です。学祭を回る際にぜひご活用ください。</p>
                                 </div>
                                 <div className="totebag">
