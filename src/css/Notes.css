@@ -1,12 +1,15 @@
 .notes-sky {
   color: #233192;
   width: 100%;
-  background: linear-gradient( #15c1f6 0%,#b5e5f4 40%, #fff 100%);
+  background: linear-gradient( #15c1f6 0%,#b5e5f4 90%, #fff 100%);
 }
 .notes-mainpage{
   width: 100%;
   padding-bottom: 80px;
-  margin:0 auto;
+  margin:0 auto 0;
+}
+.notes-all{
+  margin-bottom: 20vh;
 }
 .notes-naiyou{ /*各カード設定*/
   font-size: 1rem;
