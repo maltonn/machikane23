@@ -1,365 +1,50 @@
-/*======================
-  大きな枠組みの部分
-  ======================*/
-  body{
-    font-family: "fot-tsukuardgothic-std", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin:0;
-  }
-  .main{
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-  .top{
-    background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
-    background-size: 435px,408px,119px;
-    background-repeat: no-repeat,no-repeat,no-repeat;
-    background-position: 90% 8vh,290px bottom,4% bottom;
-    height: 427px;
-  }
 
-  .ocean{
-      width:100%;
-      background-image: url("../imgs/inthesea/surface1.png"), linear-gradient( #fff 0%, #01579E 15%, #2E3192 100%);
-      background-repeat: no-repeat, no-repeat;
-      background-size: 100%,contain;
-      color:#fff;
-  }
- 
-  .bottom{
-    bottom:0px;
-    width:100%;
-    height:300px;
-  }
-  
-  footer{
-    background-color:#2E3192;
-  }
-  /*======================
-  一個小さい枠組の設定
-  ======================*/
-
- 
-  /*top　　共通イラスの部分*/
-  .cloud1{
-    position: relative;
-    width:55%;
-    left:10%;
-    bottom:90vw;
-    opacity: 0.8;
-  }
-
-  .cloud2{
-    position: relative;
-    width:65%;
-    left:60%;
-    bottom:6vw;
-  }
-  .cloud1 img, .cloud2 img{
-    width:100%;
-    position: relative;
-    bottom:4vw;
-  }
-  .circlecloud1{
-    width: 450px;
-    position: relative;
-    top:60vw;
-    left:50px;
-  }
-  .circlecloud2{
-    width: 350px;
-    position:relative;
-    left:37%;
-    bottom:60vw;
-  }
-  .circlecloud3{
-    width: 180px;
-    position:relative;
-    bottom:70vw;
-    left:10vw;
-    rotate:30deg;
-  }
- 
-  .circlecloud1 img{
-    width: 100%;
-  }
-
- /*sky ページ内容の部分*/
-  .about-sky{
-    color: #233192;
-    height:100vh;
-    width:100%;
-    background: linear-gradient( #15c1f6 0%,#b5e5f4 40%, #fff 100%)
+.about-mainpage{
+    width: 92%;
+    padding-bottom: 80px;
+    margin:0 auto;
 }
-.about-title{
-  position: absolute;
-  top: 20%;
-  font-size: 150%;
-} 
 
-  .about-contents{
-    position: absolute;
-    top: 30%;
-    left: 8%;
-    font-size: 25px;
-    padding: 20px 10px 30px;
-    width:80%;
-    max-width: 1200px;
-    margin: 0 auto;
+.about-sky {
+  color: #233192;
+  width: 100%;
+  background: linear-gradient( 
+    #15c1f6 0%,
+    #b5e5f4 80%, 
+    #fff 100%);
+}
+.back-card{
+    font-size: 1.6rem;
+    margin: 2rem auto 80px;
+    display:block;
+    background-color: rgba(255,255,255,0.58);
+    border-radius: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 25px;
+}
+
+/*======================
+  スマホ用
+======================*/
+@media  (max-width: 500px){
+.back-card{
+    font-size: 1rem;
+    margin: 0px auto 3rem;
+    border-radius: 50px;
+    padding: 25px;
   }
+}
   
-  /*======================
-  かめのアニメション
-  ======================*/
-  .about-machikame{
-    position: relative;
-    bottom: -17vh;
-    left: 75%;
+/*======================
+タブレット用
+======================*/
+@media (min-width: 500px) and (max-width: 1070px){
+  .back-card{
+    font-size: 1.4rem;
+    margin: 0px auto 80px;
+    border-radius: 50px;
+    padding: 25px;
   }
-  .about-machikame img{
-    position:relative;
-    bottom:-10%;
-    width: 14%;
-    animation:flying 10s ease-in-out infinite;
-  }
-  @keyframes flying {
-    0% {
-      transform: translate(0,0);
-    }
-    25% {
-      transform: translate(30px,15px);
-    }
-    50% {
-      transform: translate(0,0);
-    }
-    75% {
-      transform: translate(-30px,15px);
-    }
-    100% {
-      transform: translate(0,0);
-    }
-  }
-  
-
-  /*======================
-  海底の生成される泡の表示のためのもの
-  ======================*/
-  .bubble {
-      position: absolute;
-      bottom: 0;
-      background-color: #fff;
-      opacity: 60%;
-      border: 1px solid #fff;
-      border-radius: 50%;
-      animation: bubble 10s ease-in infinite;
-    }
-  
-  .bubble:nth-child(1) {
-      width: 5px;
-      height: 5px;
-      left: -10%;
-      animation-duration: 10s;
-    }
-    
-    .bubble:nth-child(2) {
-      width: 7px;
-      height: 7px;
-      left: 0%;
-      animation-duration: 14s;
-    }
-    
-    .bubble:nth-child(3) {
-      width: 10px;
-      height: 10px;
-      left: 10%;
-      animation-duration: 11s;
-      animation-delay:-3s;
-    }
-    
-    .bubble:nth-child(4) {
-      width: 15px;
-      height: 15px;
-      left: 25%;
-      animation-duration: 8s;
-      animation-delay: -1s;
-    }
-    
-    .bubble:nth-child(5) {
-      width: 8px;
-      height: 8px;
-      left: 40%;
-      animation-duration: 13s;
-    }
-    
-    .bubble:nth-child(6) {
-      width: 12px;
-      height: 12px;
-      left: 50%;
-      animation-duration: 14s;
-    }
-    
-    .bubble:nth-child(7) {
-      width: 17px;
-      height: 17px;
-      left: 60%;
-      animation-duration: 9s;
-    }
-    .bubble:nth-child(8) {
-      width: 10px;
-      height: 10px;
-      left: 70%;
-      animation-duration: 12s;
-    }
-    .bubble:nth-child(7) {
-      width: 13px;
-      height: 13px;
-      left: 80%;
-      animation-duration:10s;
-    }
-    .bubble:nth-child(8) {
-      width: 15px;
-      height: 15px;
-      left: 90%;
-      animation-duration:8.5s;
-    }
-    .bubble:nth-child(9) {
-      width: 9px;
-      height: 9px;
-      left: 100%;
-      animation-duration:9.5s;
-    }
-    .bubble:nth-child(10) {
-      width: 11.5px;
-      height: 11.5px;
-      left: 80%;
-      animation-duration:11s;
-    }
-    @keyframes bubble {
-      0% {
-        bottom: 0px;
-        transform: translateX(0);
-      }
-      50% {
-        transform: translateX(100px);
-      }
-      100% {
-        bottom: 2300px;
-      }
-    }
-    @keyframes bubble {
-      0% {
-        bottom: 0px;
-        transform: translateX(0);
-      }
-      50% {
-        transform: translateX(100px);
-      }
-      75% {
-        transform: translateX(50px);
-      }
-      100% {
-        bottom: 2300px;
-      }
-    }
-    .contents{
-      transition: 0.8s ease-in-out;
-      transform: translateY(15px);
-      opacity: 1.0;
-    }
-    .contents.on {
-      transform: translateY(0);
-      opacity: 0;
-    }
-  
-  /*======================
-    スマホ用
-  ======================*/
-
-   @media (max-width:767px){
- 
-    .top{
-      background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
-      background-size: 35%,calc(258px + 7vw),15%;
-      background-repeat: no-repeat,no-repeat,no-repeat;
-      background-position: 100% 4vh,calc(92px + 15vw) bottom,4% bottom;
-      height: calc(340px + 2vw);
-        }
-
-    .ocean{
-      display: block;
-      }
-    .about-sky{
-      font-size: 20px;
-      height:125vh;
-    }
-    .about-machikame{
-        width:20%;
-        left:9%;
-        bottom:-50vh;
-    }
-      
-      @keyframes cloud1{
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(-90vh);
-        }
-      }
-      @keyframes cloud2{
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(92vh);
-        }
-    }
-  }
-  @media screen and (max-width: 490px) {
-    .top{
-      background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
-      background-size: 0%,calc(200px + 8vw),80px;
-      background-repeat: no-repeat,no-repeat,no-repeat;
-      background-position: 100% 4vh,right bottom,4% 220px;
-      height: 300px;
-    }   
-    .about-machikame {
-      width: 70px;
-      position: relative;
-      bottom: -44vh;
-      left: 70%;
-    }
-  }
-
-  
-  /*======================
-    タブレット用
-  ======================*/
-  @media (min-width:1090px) and (max-width: 1280px){
-
-    .ocean{
-      display: block;
-    }
-    .top{
-      background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
-      background-size: 370px,370px,111px;
-      background-repeat: no-repeat,no-repeat,no-repeat;
-      background-position: 96% 8vh,289px bottom,4% bottom;
-      height: 396px;
-    }
-  }
-  @media (min-width:880px) and (max-width: 1090px){
-    .ocean{
-      display: block;
-    }
-    .top{
-      background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
-      background-size: 35%,calc(50px + 35vw),15%;
-      background-repeat: no-repeat,no-repeat,no-repeat;
-      background-position: 100% 4vh,40% bottom,4% bottom;
-      height: 400px;
-    }
-  }
-
+}

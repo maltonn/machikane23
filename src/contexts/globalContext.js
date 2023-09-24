@@ -8,7 +8,7 @@ export const useGlobalContext = () => {
     return useContext(GlobalContext)
 }
 export const GlobalContextProvider = ({ children }) => {
-    const [lang, setLang] = useState("en")
+    const [lang, setLang] = useState("ja")
 
     const value = {
         lang: lang,
