@@ -20,7 +20,7 @@ export default function Goods() {
             <title>グッズ|まちかね祭2023</title>
             </Helmet>
             <div className="goods-sky">
-                <PageTitles titles="グッズ"></PageTitles>
+                <PageTitles titles="グッズ" kame={false}></PageTitles>
                 <div className="goods-mainpage">
                     <div className="goods-back-card">
                         <p>今年のまちかね祭では、ステッカー　ボールペン　トートバッグを総合案内所にて販売します。</p>
