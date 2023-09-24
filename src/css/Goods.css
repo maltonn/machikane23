@@ -7,64 +7,121 @@
     #fff 100%);
 }
 .goods-mainpage{
-    width: 92%;
-    padding-bottom: 80px;
-    margin:0 auto;
+    position: relative;
 }
 .goods-back-card{
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     margin: 2rem auto 80px;
     display:block;
     background-color: rgba(255,255,255,0.58);
     border-radius: 50px;
     text-align: center;
     box-sizing: border-box;
-    width: 100%;
+    width: 90%;
     padding: 25px;
+    position:relative;
+    top:50%;
 }
-
 .goods-image{
-    display:block;
+    display:flex;
+    width:90%;
+    text-align: center;
+    right:20%;
+}
+.goods-back-card img{
+    max-width: 100%;
+    height: auto;
 }
 
-.detail-title{
-    font-size:1.6rem;
+.goods-title{
+    font-size:2rem;
+    display:block;
+    text-align: center;
+}
+
+.goods-subtitle{
+    display:block;
+    font-size: 1.6rem;
+}
+.goods-stickers{
+    font-size:1.3rem;
+    padding: 5px 15px;
     display:block;
     background-color: #fff;
     border-radius: 50px;
     text-align: center;
     box-sizing: border-box;
-    width:20%;
-}
-
-.goodssubtitle{
-    display:block;
-    font-size: 2.5rem;
-}
-.goods-stikers{
-    font-size:1.6rem;
-    display:block;
-    background-color: #fff;
-    border-radius: 50px;
-    text-align: center;
-    box-sizing: border-box;
-    width:20%;
+    width:30%;
+    position: relative;
+    left: 10%;
 }
 .goods-pen{
-    font-size:1.6rem;
+    font-size:1.3rem;
+    padding: 5px 15px;
     display:block;
     background-color: #fff;
     border-radius: 50px;
     text-align: center;
     box-sizing: border-box;
-    width:20%;
+    width:30%;
+    position: relative;
+    left: 60%;
 }
 .goods-totebag{
-    font-size:1.6rem;
+    font-size:1.3rem;
+    padding: 5px 15px;
     display:block;
     background-color: #fff;
     border-radius: 50px;
     text-align: center;
     box-sizing: border-box;
-    width:20%;
+    width:30%;
+    position: relative;
+    left: 10%;
+}
+
+/*スマホ用*/
+@media(max-width:500px){
+.goods-back-card{
+    font-size: 0.8rem;
+}
+.goods-title{
+    font-size: 1.6rem;
+}
+.goods-subtitle{
+    font-size: 1rem;
+}
+.goods-stickers{
+    font-size: 0.8rem;
+    width: 40%;
+}
+.goods-pen{
+    font-size: 0.8rem;
+    width:40%;
+    left: 55%;
+}
+.goods-totebag{
+    font-size: 0.8rem;
+    width:40%;
+}
+}
+/*タブレット用*/
+@media (min-width: 500px) and (max-width: 1070px){
+    .goods-subtitle{
+        font-size: 1rem;
+    }
+    .goods-stickers{
+        font-size: 1rem;
+        width: 40%;
+    }
+    .goods-pen{
+        font-size: 1rem;
+        width:40%;
+        left:55%;
+    }
+    .goods-totebag{
+        font-size: 1rem;
+        width:40%;
+    }
+
 }
