@@ -9,7 +9,7 @@ export default function PageTitles({titles}){
         $(':root').style.setProperty('--base-pageLength', `${titleLength}rem`);    
       }, [])
     return (
-        <div className="top">
+        <div className="top-component">
             <div className="page-titles" id="pageTitles">{titles}</div>
             <div className="machikame-default">
                 <img src={machikame1} alt="まちかめ1"></img>
