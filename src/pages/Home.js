@@ -4,15 +4,15 @@ import machikame2 from "../imgs/animal/machikame2.png"
 import left_cloud from "../imgs/cloud/left_cloud.png"
 import right_cloud from "../imgs/cloud/right_cloud.png"
 import machikani from "../imgs/animal/machikani.png"
-// import search from "../imgs/pickup_icon/icon_search.png"
-// import goods from "../imgs/pickup_icon/icon_goods.png"
-// import recommend from "../imgs/pickup_icon/icon_recommend.png"
-// import access from "../imgs/pickup_icon/icon_access.png"
-// import map from "../imgs/pickup_icon/icon_map.png"
-// import timetable from "../imgs/pickup_icon/icon_stage.png"
+import search from "../imgs/pickup_icon/icon_search.png"
+import goods from "../imgs/pickup_icon/icon_goods.png"
+import recommend from "../imgs/pickup_icon/icon_recommend.png"
+import access from "../imgs/pickup_icon/icon_access.png"
+import map from "../imgs/pickup_icon/icon_map.png"
+import timetable from "../imgs/pickup_icon/icon_stage.png"
 import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react"
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 export default function Home() {
@@ -268,18 +268,18 @@ export default function Home() {
               <img src={machikame2} alt="まちかめ2"></img>
             </div>
 
-            {/* <div className="ocean-card stage">
+          <div className="ocean-card stage">
             <div className="titles" id="stage-title"><nobr><p className="item1">●</p><span id="title">現在のステージ企画</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
             <div className="pre-ocean">まちかね祭当日までお待ちください</div>
-          </div> */}
+            </div>
 
-            {/* <div className="ocean-card lab">
+          {/* <div className="ocean-card lab">
             <div className="titles"><nobr><p className="item1">●</p><span id="title">研究室紹介</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
             <p>研究室の企画は、以下のリンクからご覧ください。</p>
             <Link to="/lab-open" >詳細はこちら</Link>
-          </div> */}
+                  </div> */}
 
-            {/* <div className="ocean-card" id="pickup">
+          <div className="ocean-card" id="pickup">
             <div className="pickup-titles"><nobr><p className="item1">●</p><span id="title">PICKUP</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
             <div className="pickup-box">
                 <Link to="/project-search" ><div className="pickup-button">
@@ -307,7 +307,7 @@ export default function Home() {
                   <div className="pickup-title">ステージタイムテーブル</div>
                 </div></Link>
             </div>
-          </div> */}
+          </div>
 
             <div className="ocean-card about">
               <div className="titles"><nobr><p className="item1">●</p><span id="title">テーマ</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
