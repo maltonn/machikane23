@@ -1,0 +1,58 @@
+:root{
+    --base-pageLength: 1rem;
+  }
+
+.page-titles{
+    font-size: 2rem;
+    padding: 10px 40px;
+    background-color: rgba(255,255,255,0.75);
+    border-radius: 0px 50px 50px 0px;
+    position: relative;
+    top: 17vh;
+    width: calc(var(--base-pageLength)*2.2);
+}
+.machikame-default{
+    text-align: right;
+}
+.machikame-default img{
+    width: 100px;
+    position: relative;
+    top: 20vh;
+}
+
+/*======================
+  スマホ用
+======================*/
+@media  (max-width: 500px){
+    .page-titles{
+        font-size: 1.4rem;
+        padding: 5px 25px;
+        border-radius: 0px 50px 50px 0px;
+        top: 20vh;
+        width: calc(var(--base-pageLength)*1.5);
+    }
+    .machikame-default img{
+        width: 20%;
+        position: relative;
+        top: 20vh;
+    }
+}
+    
+    
+/*======================
+  タブレット用
+======================*/
+@media (min-width: 500px) and (max-width: 1070px){
+    .page-titles{
+        font-size: 2rem;
+        padding: 5px 30px;
+        border-radius: 0px 50px 50px 0px;
+        top: 20vh;
+        width: calc(var(--base-pageLength)*2.2);
+    }
+    .machikame-default img{
+        width: 15%;
+        position: relative;
+        top: 18vh;
+    }
+}
