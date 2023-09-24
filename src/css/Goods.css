@@ -40,6 +40,9 @@
     max-width: 100%;
     height: auto;
 }
+.goods-detail{
+    padding-bottom: 10px;
+}
 .goods-title{
     font-size:2rem;
     display:block;
@@ -94,9 +97,10 @@
 .totebag{
     background-image:url("../imgs/goods/tote.png");
     background-repeat: no-repeat;
-    background-size: 20%;
-    background-position: 80% 50%,right bottom;
+    background-size: 30%;
+    background-position: 85% 50%,right bottom;
     margin-bottom: 5px;
+    padding-bottom: 20%;
 }
 
 .totebag-content{
@@ -141,8 +145,8 @@
     left: 55%;
 }
 .totebag{
-    background-size: 43%;
-    background-position: 92% 50%,right bottom;      
+    background-size: 50%;
+    background-position: 100% 50%,right bottom;      
 }
 .totebag-content{
     font-size: 0.8rem;
@@ -155,8 +159,8 @@
         font-size: 1rem;
     }
     .stickers{
-        background-size: 35%;
-        background-position: 88% 50%,right bottom;      
+        background-size: 25%;
+        background-position: 83% 50%,right bottom;      
     }
     .stickers-content{
         font-size: 1rem;
