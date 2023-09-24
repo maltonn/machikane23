@@ -21,18 +21,7 @@ body{
     position: absolute;
     top:500px;
   } 
-  h1{
-    font-size: 32px;
-    padding: 10px 40px;
-    background-color: rgba(255,255,255,0.75);
-     border-radius: 0px 50px 50px 0px; 
-    /* border-radius: 50px; */
-    /* border:solid 1.2px rgba(30, 187, 255, 0.8); */
-    display: inline-block ;
-    /*margin-bottom: 150px;*/
-    position: relative;
-    top:0vh;
-  }
+
   /* お問い合わせボタン */
   .button{
     background: #fff;
@@ -114,11 +103,11 @@ body{
     border-radius: 50px;
     text-align: center;
     box-sizing: border-box;
-    width: 500%;
+    width: 100%;
     text-decoration: none;
   }
 
- 
+
   /*空の小見出しのスタイル*/
   .sky span{
     max-width: 90%;

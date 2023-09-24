@@ -23,10 +23,10 @@ export default function About() {
                   メインストリートでの模擬店・屋外企画の復活により、阪大生の活気をより一層感じていただけます。
                   かつての学祭の姿を取り戻し、さらなる進化を見せるまちかね祭にぜひお越しください。
                 </p>
-              </div>
-            </div>
-        </div>
-        <Bubble></Bubble>
-    </div>
+               </div>
+             </div>
+          </div>
+          <Bubble></Bubble>
+      </div>
     )
 }
