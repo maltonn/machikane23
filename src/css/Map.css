@@ -1,0 +1,212 @@
+body{
+    font-family: "fot-tsukuardgothic-std", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin:0;
+  }
+  .map-sky{
+      color: #233192;
+      width:100%;
+      background: linear-gradient( #15c1f6 0%,#b5e5f4 40%, #fff 100%)
+  }
+  .map-mainpage{
+    width: 100%;
+    padding-bottom: 80px;
+    margin:0 auto;
+  }
+  .map-notes{
+    font-size: 22px;
+    margin: 60px auto 30px;
+    display:block;
+    background-color: rgba(255,255,255,0.38);
+    border-radius: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+  }
+.map-content{
+    font-size: 1.6rem;
+    margin: 2rem auto 80px;
+    display:block;
+    background-color: rgba(255,255,255,0.58);
+    border-radius: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 25px;
+  }
+  /* 全体マップ */
+  .map-map{
+    width:5000px;
+    max-width: 100%;
+    border-style: none;
+  }
+  .map-map img{
+    width: 100%;
+    margin:50px 0px 0px;
+  }
+  /* 生協営業時間 */
+  .map-time{
+    font-size: 15pt;
+    margin: 10px auto;
+    display: inline-block;
+  }
+  .map-tables {
+    border-collapse: collapse;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+  }
+  .map-tables th, tables td {
+    border: solid  1px #adb3c1;
+    padding: 10px;
+  }
+  .map-tables td {
+    border: solid  1px #adb3c1;
+    padding:1px 8px;
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+  }
+  .map-ul{
+    list-style-type: none;
+    font-size: 30px;
+  }
+  /* AB棟マップ */
+  .map-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .map-AB{
+    font-size: 18pt;
+    width:425px;
+    max-width: 100%;
+    border-style: none;
+    box-sizing: border-box;
+  }
+  .map-AB img{
+    width: 100%;
+    margin:50px 0px 0px;
+  }
+/* C棟 */
+  .map-C{
+    font-size: 18pt;
+    width:425px;
+    max-width: 100%;
+    border-style: none;
+    box-sizing: border-box;
+  }
+  .map-C img{
+    width: 80%;
+    margin:50px 0px 0px;
+  }
+/* 法経 */
+  .map-H{
+    font-size: 18pt;
+    width:425px;
+    max-width: 100%;
+    border-style: none;
+    box-sizing: border-box;
+  }
+  .map-H img{
+    width: 70%;
+    margin:50px 0px 0px;
+  }
+ /* 文法経 */
+  .map-B{
+    font-size: 18pt;
+    width:425px;
+    max-width: 100%;
+    border-style: none;
+    box-sizing: border-box;
+  }
+  .map-B img{
+    width: 55%;
+    margin:50px 0px 0px;
+  }
+/* 学生会館 */
+  .map-G{
+    font-size: 18pt;
+    width:425px;
+    max-width: 100%;
+    border-style: none;
+    box-sizing: border-box;
+  }
+  .map-G img{
+    width: 80%;
+    margin:50px 0px 0px;
+  }
+  /* 屋外メインストリート */
+  .map-M{
+    font-size: 18pt;
+    width:800px;
+    max-width: 100%;
+    border-style: none;
+    box-sizing: border-box;
+  }
+  .map-M img{
+    width: 100%;
+    margin:50px 0px 0px;
+  }
+  /* ステージ */
+  .map-stage{
+    font-size: 18pt;
+    width:800px;
+    max-width: 100%;
+    border-style: none;
+    box-sizing: border-box;
+  }
+  .map-stage img{
+    width: 100%;
+    margin:50px 0px 0px;
+  }
+
+  /*======================
+    スマホ用
+  ======================*/
+
+  @media (max-width:767px){
+  /* 全体マップ */
+  .map-map{
+    width:5000px;
+    max-width: 100%;
+    border-style: none;
+  }
+  .map-map img{
+    width: 100%;
+    margin:50px 0px 0px;
+  }
+  .map-time{
+    font-size: 3pt;
+  }
+  .map-tables {
+    border-collapse: collapse;
+    text-align: center;
+    position: relative;
+    font-size: 15px;
+  }
+  .map-tables th, .tables td {
+    border: solid  1px #adb3c1;
+    padding: 10px;
+  }
+  .map-tables td {
+    border: solid  1px #adb3c1;
+    padding:1px 8px;
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+  }
+}
+/*======================
+    タブレット用
+  ======================*/
+  @media (min-width:500px) and (max-width: 1070px){
+    .map-notes{
+      box-sizing: contents-box;
+      width: 80%;
+      font-size: 19px;
+      text-decoration: none;
+    }
+  }
