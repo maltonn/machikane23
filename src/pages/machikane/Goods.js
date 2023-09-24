@@ -14,6 +14,8 @@ import pen1 from "../../imgs/goods/pen1.jpg"
 import pen2 from "../../imgs/goods/pen2.png"
 import pen3 from "../../imgs/goods/pen3.png"
 import totebag from "../../imgs/goods/totebag.png"
+import PageTitles from "../../components/PageTitles";
+import Bubble from "../../components/Bubble";
 export default function Goods() {
     return(
 
@@ -50,6 +52,7 @@ export default function Goods() {
 
                 </div>
             </div>
+            <Bubble></Bubble>
         </div>
     )
 
