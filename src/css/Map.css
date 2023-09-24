@@ -4,13 +4,6 @@ body{
     font-style: normal;
     margin:0;
   }
-  .map-top{
-    background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
-    background-size: 435px,408px,119px;
-    background-repeat: no-repeat,no-repeat,no-repeat;
-    background-position: 90% 8vh,100px bottom,50% bottom;
-    height: 500px;
-  }
   .map-sky{
       color: #233192;
       width:100%;
@@ -103,6 +96,7 @@ body{
     width:425px;
     max-width: 100%;
     border-style: none;
+    box-sizing: border-box;
   }
   .map-C img{
     width: 80%;
@@ -214,12 +208,5 @@ body{
       width: 80%;
       font-size: 19px;
       text-decoration: none;
-    }
-    .map-top{
-      background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
-      background-size: 370px,370px,111px;
-      background-repeat: no-repeat,no-repeat,no-repeat;
-      background-position: 96% 8vh,289px bottom,4% bottom;
-      height: 396px;
     }
   }

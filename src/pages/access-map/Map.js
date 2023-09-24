@@ -65,9 +65,7 @@ export default function Map() {
                             </div>
                         </div>
                     </div>
-                <div className="map-top">
                 <PageTitles titles="館内マップ"></PageTitles>
-                </div>
                 {/* AB棟マップ */}
                 <div className="map-notes">
                     <div className="map-content">
@@ -91,14 +89,12 @@ export default function Map() {
                     </div>
                 </div>
                 {/* C棟マップ */}
-                <div className="map-top">
-                </div>
                 <div className="map-notes">
                     <div className="map-content">
                         <div className="map-ul">
                             <li>C棟</li>
                         </div>
-                        <div className="mao-item">
+                        <div className="map-item">
                                 <div className="map-C"> 
                                     <p>1階</p>
                                     <img src={C1} alt="C棟1階"></img>
@@ -119,8 +115,6 @@ export default function Map() {
                     </div>
                 </div>
                 {/* 法経マップ */}
-                <div className="map-top">
-                </div>
                 <div className="map-notes">
                     <div className="map-content">
                         <div className="map-ul">
@@ -143,8 +137,6 @@ export default function Map() {
                     </div>
                 </div>
                 {/* 文法経マップ */}
-                <div className="map-top">
-                </div>
                 <div className="map-notes">
                     <div className="map-content">
                         <div className="map-ul">
@@ -171,8 +163,6 @@ export default function Map() {
                     </div>
                 </div>
                 {/* 学生会館 */}
-                <div className="map-top">
-                </div>
                 <div className="map-notes">
                     <div className="map-content">
                         <div className="map-ul">
@@ -191,9 +181,7 @@ export default function Map() {
                     </div>
                 </div>
                 {/* 屋外模擬店 */}
-                <div className="map-top">
                 <PageTitles titles="模擬店・屋外マップ"></PageTitles>
-                </div>
                 <div className="map-notes">
                     <div className="map-content">
                         <div className="map-item">
@@ -204,9 +192,7 @@ export default function Map() {
                     </div>
                 </div>
                 {/* ステージ */}
-                <div className="map-top">
                 <PageTitles titles="ステージマップ"></PageTitles>
-                </div>
                 <div className="map-notes">
                     <div className="map-content">
                         <div className="map-item">
