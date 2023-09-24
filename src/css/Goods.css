@@ -8,6 +8,7 @@
 }
 .goods-mainpage{
     position: relative;
+    bottom:5rem;
 }
 .goods-back-card{
     font-size: 1.3rem;
@@ -28,7 +29,7 @@
     right:20%;
 }
 .goods-back-card img:nth-child(1){
-    max-width: 100%;
+    width: 100vw;
     margin-right: 10px;
     height: auto;
 }
