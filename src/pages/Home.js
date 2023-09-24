@@ -173,8 +173,9 @@ export default function Home() {
           <div className="top-backCard">
             <span id="title">ご来場の皆様へ</span>
             <div className="content">まちかね祭に車でご来場いただくことはできません。<br/>ご来場の際は公共交通機関をご利用ください。<br/>来場予約は不要です。</div>
-            <p>お笑いライブは、予約必須です。下のボタンから予約サイトへアクセスください。</p>
-            <div className="top-linkButton live-reservation"><a href="./notes">お笑いライブ<br></br>予約サイト</a></div>
+            <p>お笑いライブは予約必須です。下のボタンから予約サイトへアクセスください。</p>
+            <div className="top-linkButton live-reservation"><a href="https://app.tyuujiu-system.net/machikane23/visotor/talent-live/reservation">お笑いライブ<br></br>予約サイト</a></div>
+            <p>お笑いライブ詳細は<Link to="./talent-project">こちら</Link></p>
             <p>その他注意事項がございますので、下のボタンからご覧ください。</p>
             <div className="link-button top-linkButton"><Link to="./notes">注意事項</Link></div>
           </div>
