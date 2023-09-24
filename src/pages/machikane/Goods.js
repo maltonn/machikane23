@@ -33,21 +33,24 @@ export default function Goods() {
                 </div>
                     <div className="goods-detail">
                         <div className="goods-title">グッズ紹介</div>
-                            <div className="goods-stickers">
-                                <div className="goods-subtitle">ステッカー</div>
-                                <p>前回好評いただいたステッカーが今回も登場です。かわいいデザインからカッコイイデザインまで、様々なステッカをご用意しました。</p>
+                            <div className="stickers">
+                                <div className="stickers-content">
+                                    <div className="goods-subtitle">ステッカー</div>
+                                    <p>前回好評いただいたステッカーが今回も登場です。かわいいデザインからカッコイイデザインまで、様々なステッカをご用意しました。</p>
+                                </div>
                             </div>
-                            <img src={stickers2} alt="ステッカー"></img>
-                            <div className="goods-pen">
-                                <div className="goods-subtitle">ボールペン</div>
-                                <p>メタリックでかっこいいデザインにしました。ロゴの「阪燦々」は今回のまちかね祭のメインテーマです。</p>
+                            <div className="pen">
+                                <div className="pen-content">
+                                    <div className="goods-subtitle">ボールペン</div>
+                                    <p>メタリックでかっこいいデザインにしました。ロゴの「阪燦々」は今回のまちかね祭のメインテーマです。</p>
+                                </div>
                             </div>
-                            <img src={pendetail} alt="ペン"></img>
-                            <div className="goods-totebag">
-                                <div className="goods-subtitle">トートバック</div>
-                                <p>A4サイズのものがしっかり入る便利な仕様です。学祭を回る際にぜひご活用ください。</p>
+                            <div className="totebag">
+                                <div className="totebag-content">
+                                    <div className="goods-subtitle">トートバック</div>
+                                    <p>A4サイズのものがしっかり入る便利な仕様です。学祭を回る際にぜひご活用ください。</p>
+                                </div>
                             </div>
-                            <img src={tote} alt="トートバック"></img>
                     </div>
 
                 

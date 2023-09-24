@@ -25,14 +25,21 @@
 .goods-image{
     display:flex;
     width:90%;
-    text-align: center;
     right:20%;
 }
-.goods-back-card img{
+.goods-back-card img:nth-child(1){
+    max-width: 100%;
+    margin-right: 10px;
+    height: auto;
+}
+.goods-back-card img:nth-child(2){
+    max-width: 20%;
+    height: auto;
+}
+.goods-back-card img:nth-child(3){
     max-width: 100%;
     height: auto;
 }
-
 .goods-title{
     font-size:2rem;
     display:block;
@@ -43,7 +50,16 @@
     display:block;
     font-size: 1.6rem;
 }
-.goods-stickers{
+
+.stickers{
+    background-image:url("../imgs/goods/stickers2.png");
+    background-repeat: no-repeat;
+    background-size: 23%;
+    background-position: 80% 50%,right bottom;
+    margin-bottom: 5px;
+}
+
+.stickers-content{
     font-size:1.3rem;
     padding: 5px 15px;
     display:block;
@@ -55,7 +71,15 @@
     position: relative;
     left: 10%;
 }
-.goods-pen{
+.pen{
+    background-image:url("../imgs/goods/pen-detail.png");
+    background-repeat: no-repeat;
+    background-size: 23%;
+    background-position: 16% 55%, left top;
+    margin: 10px 0px;
+}
+
+.pen-content{
     font-size:1.3rem;
     padding: 5px 15px;
     display:block;
@@ -67,7 +91,15 @@
     position: relative;
     left: 60%;
 }
-.goods-totebag{
+.totebag{
+    background-image:url("../imgs/goods/tote.png");
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: 80% 50%,right bottom;
+    margin-bottom: 5px;
+}
+
+.totebag-content{
     font-size:1.3rem;
     padding: 5px 15px;
     display:block;
@@ -91,16 +123,28 @@
 .goods-subtitle{
     font-size: 1rem;
 }
-.goods-stickers{
+.stickers{
+    background-size: 43%;
+    background-position: 92% 50%,right bottom;      
+}
+.stickers-content{
     font-size: 0.8rem;
     width: 40%;
 }
-.goods-pen{
+.pen{
+    background-size: 40%;
+    background-position: 13% 55%, left top;
+}
+.pen-content{
     font-size: 0.8rem;
     width:40%;
     left: 55%;
 }
-.goods-totebag{
+.totebag{
+    background-size: 43%;
+    background-position: 92% 50%,right bottom;      
+}
+.totebag-content{
     font-size: 0.8rem;
     width:40%;
 }
@@ -110,18 +154,29 @@
     .goods-subtitle{
         font-size: 1rem;
     }
-    .goods-stickers{
+    .stickers{
+        background-size: 35%;
+        background-position: 88% 50%,right bottom;      
+    }
+    .stickers-content{
         font-size: 1rem;
         width: 40%;
     }
-    .goods-pen{
+    .pen{
+        background-size: 30%;
+        background-position: 20% 55%, left top;
+    }
+    .pen-content{
         font-size: 1rem;
         width:40%;
         left:55%;
     }
-    .goods-totebag{
+    .totebag-content{
         font-size: 1rem;
         width:40%;
     }
-
+    .totebag{
+        background-size: 35%;
+        background-position: 88% 50%,right bottom;      
+    }
 }
