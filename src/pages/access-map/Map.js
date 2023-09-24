@@ -31,8 +31,9 @@ export default function Map() {
             </Helmet>
             <div className="map-sky">
                 <div className="map-top">
-                <PageTitles titles="全体マップ・学内店舗の営業時間"></PageTitles>
+                <PageTitles titles="マップ"></PageTitles>
                 </div>
+                <h1>全体マップ・学内店舗の営業時間</h1>
                 <div className="map-notes">
                         <div className="map-content">
                             <div className="map-ul">
@@ -65,7 +66,7 @@ export default function Map() {
                             </div>
                         </div>
                     </div>
-                <PageTitles titles="館内マップ"></PageTitles>
+                <h1>館内マップ</h1>
                 {/* AB棟マップ */}
                 <div className="map-notes">
                     <div className="map-content">
@@ -181,7 +182,7 @@ export default function Map() {
                     </div>
                 </div>
                 {/* 屋外模擬店 */}
-                <PageTitles titles="模擬店・屋外マップ"></PageTitles>
+                <h1>模擬店・屋外マップ</h1>
                 <div className="map-notes">
                     <div className="map-content">
                         <div className="map-item">
@@ -192,7 +193,7 @@ export default function Map() {
                     </div>
                 </div>
                 {/* ステージ */}
-                <PageTitles titles="ステージマップ"></PageTitles>
+                <h1>ステージマップ</h1>
                 <div className="map-notes">
                     <div className="map-content">
                         <div className="map-item">

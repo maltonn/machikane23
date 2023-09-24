@@ -14,15 +14,16 @@ export default function Access() {
             </Helmet>
             <div className="access-sky">
                 
-                <PageTitles titles="開催場所"></PageTitles>
+                <PageTitles titles="アクセス"></PageTitles>
                 
+                <h1>開催場所</h1>
                 <div className="access-mainpage"> 
                     <div className="access-notes">
                         <div className="access-content">大阪大学豊中キャンパス
                         </div>
                     </div>
                 </div>
-                <PageTitles titles="アクセス"></PageTitles>
+                <h1>アクセス</h1>
                 <div className="access-mainpage"> 
                     <div className="access-notes">
                         <div className="access-content">
@@ -35,7 +36,7 @@ export default function Access() {
                         </div>
                     </div>
                 </div>
-                <PageTitles titles="注意"></PageTitles>
+                <h1>注意</h1>
                 <div className="access-mainpage"> 
                     <div className="access-notes">
                         <div className="access-naiyou">

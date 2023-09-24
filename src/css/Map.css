@@ -12,7 +12,6 @@ body{
   .map-mainpage{
     width: 100%;
     padding-bottom: 80px;
-    margin:0 auto;
   }
   .map-notes{
     font-size: 22px;
@@ -48,7 +47,7 @@ body{
   /* 生協営業時間 */
   .map-time{
     font-size: 15pt;
-    margin: 10px auto;
+    margin: 0 auto 0;
     display: inline-block;
   }
   .map-tables {
