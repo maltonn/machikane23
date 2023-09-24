@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 import machikame1 from "../../imgs/animal/machikame1.png"
-// import {Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 import "../../css/Common.css"
 import "../../css/Notes.css"
 import PageTitles from "../../components/PageTitles";
@@ -20,7 +20,7 @@ export default function Notes() {
                             <div className="notes-miniContent">
                                 <p>食事（持ち込み含む）は、食事席に限り可能であり、他の場所での飲食は禁止とします。ただし、水分補給はしていただいて構いません。</p>
                                 <p>食事席はメインストリートの周辺に設置してあります。詳しくはマップページをご覧ください。</p>
-                                <div className="link-button notes-linkButton"><a href="./map">マップ</a></div>
+                                <div className="link-button notes-linkButton"><Link to="./map">マップ</Link></div>
                                 <p>お食事の際は、以下のことをお守りください。</p>
                                 <ol>
                                     <li>食事席の椅子を動かした際は元に戻してください。</li>
