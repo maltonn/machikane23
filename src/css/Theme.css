@@ -1,0 +1,63 @@
+  .themep-mainpage{
+    width: 92%;
+    padding-bottom: 80px;
+    margin:0 auto;
+    text-align: center;
+  }
+  .theme-sky {
+    color: #233192;
+    width: 100%;
+    background: linear-gradient( 
+      #15c1f6 0%,
+      #b5e5f4 80%, 
+      #fff 100%);
+  }
+  .themep-name{
+    margin-bottom: 15px;
+    padding: 20px;
+    display: inline-block;
+    font-size: 65px;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.48);
+    border-radius: 50px;
+    box-sizing: content-box;
+    padding: 35px 25px 0;
+  }
+  .themep-context{
+    margin: 0px 0px 60px;
+    padding: 10px 20px;
+    width: 82%;
+    display: inline-block;
+    font-size: 22px;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.48);
+    border-radius: 50px;
+    box-sizing: content-box;
+  }
+
+    /*======================
+    スマホ用
+  ======================*/
+
+  @media (max-width:767px){
+    .themep-context{
+      width: 85%;
+      font-size: 17px;
+    }
+  }
+    /*======================
+    タブレット用
+  ======================*/
+  @media (min-width:1090px) and (max-width: 1280px){
+    .themep-context{
+      width: 90%;
+      font-size: 19px;
+      box-sizing: content-box;
+    }
+  }
+  @media (min-width:768px) and (max-width: 1090px){
+    .themep-context{
+      width: 90%;
+      font-size: 19px;
+    }
+  }

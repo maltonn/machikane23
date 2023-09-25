@@ -1,0 +1,185 @@
+.goods-sky {
+    color: #233192;
+    width: 100%;
+    background: linear-gradient( 
+      #15c1f6 0%,
+      #b5e5f4 80%, 
+      #fff 100%);
+  }
+  .goods-mainpage{
+      position: relative;
+      bottom:5rem;
+  }
+  .goods-back-card{
+      font-size: 1.3rem;
+      margin: 2rem auto 80px;
+      display:block;
+      background-color: rgba(255, 255, 255, 0.58);
+      border-radius: 50px;
+      text-align: center;
+      box-sizing: border-box;
+      width: 90%;
+      padding: 25px;
+      position:relative;
+      top:50%;
+  }
+  .goods-image img{
+      position: relative;
+      width:100%;
+  }
+  
+  .goods-detail{
+      padding-bottom: 10px;
+  }
+  .goods-title{
+      font-size:2rem;
+      display:block;
+      text-align: center;
+      position:relative;
+      top:-5rem;
+  }
+  
+  .goods-subtitle{
+      display:block;
+      font-size: 1.6rem;
+  }
+  .stickers{
+      margin: 0% 5% 5%;
+  }
+  .stickers img{
+      position:relative;
+      width:100%;
+  }
+  .stickers-content{
+      font-size:1.3rem;
+      padding: 5px 15px;
+      display:block;
+      background-color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      box-sizing: border-box;
+      width:40%;
+      position: relative;
+      top:-3rem;
+      left: 55%;
+  }
+  .pen{
+      margin: 3% 10% 5%;
+  }
+  .pen img{
+      position: relative;
+      right:-50%;
+      top:-2rem;
+      left:2%;
+  }
+  .pen-content{
+      font-size:1.3rem;
+      padding: 5px 15px;
+      display:block;
+      background-color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      box-sizing: border-box;
+      width:30%;
+      position: relative;
+      top:-16rem;
+      left: 54%;
+  
+  }
+  
+  .totebag img{
+      position:relative;
+      width:50%;
+      right:-45%;
+      top:-25rem;
+  }
+  .totebag-content{
+      font-size:1.3rem;
+      padding: 5px 15px;
+      display:block;
+      background-color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      box-sizing: border-box;
+      width:45%;
+      position: relative;
+      left: 8%;
+      top:-6rem;
+  }
+  
+  /*スマホ用*/
+  @media(max-width:500px){
+  .goods-back-card{
+      font-size: 1rem;
+  }
+  .goods-title{
+      font-size: 1.6rem;
+  }
+  .goods-subtitle{
+      font-size: 1rem;
+  }
+  
+  .stickers-content{
+      font-size: 1rem;
+      width: 80%;
+      left:10%;
+      top:-1rem;
+  }
+  .pen img{
+      width:50%;
+      top:8rem;
+      left:-3%;
+  }
+  .pen-content{
+      font-size: 1rem;
+      width:40%;
+      left: 53%;
+      top:-4.5rem;
+  }
+  .totebag img{
+      width:70%;
+      top:-13rem;
+      left:37%;
+  }
+  .totebag-content{
+      font-size: 1rem;
+      width:40%;
+      top:2rem;
+  }
+  }
+  /*タブレット用*/
+  @media (min-width: 500px) and (max-width: 1070px){
+      .goods-subtitle{
+          font-size: 1.2rem;
+      }
+      .stickers-content{
+          font-size: 1.2rem;
+          width: 50%;
+          left:46%;
+          top:-2rem;
+      }
+      .pen img{
+          width:60%;
+          top:-0.5rem;
+          left:-10%;
+      }
+      .pen-content{
+          font-size: 1.2rem;
+          width:40%;
+          left:53%;
+          top:-10rem;
+      }
+      .totebag img{
+          width:60%;
+          top:-22rem;
+          left:38%;
+      }
+      .totebag-content{
+          font-size: 1.2rem;
+          width:40%;
+          top:-5rem;
+          left:7%;
+      }
+  
+  }
+  

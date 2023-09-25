@@ -1,0 +1,78 @@
+:root{
+    --base-pageLength: 1rem;
+  }
+.top-component{
+    background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
+    background-size: 150px,250px,100px;
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-position: 25% 8vh,right bottom,5% 30vh;
+    height: 350px;
+}
+.page-titles{
+    font-size: 2rem;
+    padding: 10px 40px;
+    background-color: rgba(255,255,255,0.75);
+    border-radius: 0px 50px 50px 0px;
+    position: relative;
+    top: 17vh;
+    width: calc(var(--base-pageLength)*2.2);
+}
+.machikame-default{
+    text-align: right;
+}
+.machikame-default img{
+    width: 100px;
+    position: relative;
+    top: 20vh;
+}
+
+/*======================
+  スマホ用
+======================*/
+@media  (max-width: 500px){
+    .top-component{
+        background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
+        background-size: 25%,calc(200px + 3vw),80px;
+        background-repeat: no-repeat,no-repeat,no-repeat;
+        background-position: 4vw 3vh,right bottom,6vw 180px;
+        height: 280px;
+    } 
+    .page-titles{
+        font-size: 1.4rem;
+        padding: 5px 25px;
+        border-radius: 0px 50px 50px 0px;
+        top: 12vh;
+        width: calc(var(--base-pageLength)*1.5);
+    }
+    .machikame-default img{
+        width: 20%;
+        position: relative;
+        top: 12vh;
+    }
+}
+    
+    
+/*======================
+  タブレット用
+======================*/
+@media (min-width: 500px) and (max-width: 1070px){
+    .top-component{
+        background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
+        background-size: 17vh,calc(50px + 30vw),20%;
+        background-repeat: no-repeat,no-repeat,no-repeat;
+        background-position: 5% 0vh,right bottom,4% 20vh;
+        height: 360px;
+    }
+    .page-titles{
+        font-size: 2rem;
+        padding: 5px 30px;
+        border-radius: 0px 50px 50px 0px;
+        top: 12vh;
+        width: calc(var(--base-pageLength)*2.2);
+    }
+    .machikame-default img{
+        width: 15%;
+        position: relative;
+        top: 10vh;
+    }
+}

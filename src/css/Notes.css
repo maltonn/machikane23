@@ -1,0 +1,58 @@
+.notes-sky {
+  color: #233192;
+  width: 100%;
+  background: linear-gradient( #15c1f6 0%,#b5e5f4 90%, #fff 100%);
+}
+.notes-mainpage{
+  width: 100%;
+  padding-bottom: 80px;
+  margin:0 auto 0;
+}
+.notes-all{
+  margin-bottom: 20vh;
+}
+.notes-naiyou{ /*各カード設定*/
+  font-size: 1rem;
+  padding: 20px 15px 30px;
+  text-align: left;/*文字左揃え*/
+  margin: 0 auto 20px;
+  display:block;
+  background-color: rgba(255,255,255,0.78);
+  border-radius: 50px;
+  box-sizing: border-box;
+  width: 90%;
+}
+.notes-miniTitle{ /*各ミニタイトル設定*/
+  font-size: 1.2rem;
+  text-align: center;
+}
+.notes-miniContent p{ /*コンテント内のpタグ調整*/
+  margin: 3px 0;
+}
+.notes-linkButton{
+  width: 5rem;
+  margin: 0 auto 0;
+}
+/*======================
+  スマホ用
+======================*/
+@media  (max-width: 500px){
+  .back-card{
+    font-size: 1rem;
+    margin: 0px auto 3rem;
+    border-radius: 50px;
+    padding: 25px;
+    }
+  }
+    
+/*======================
+  タブレット用
+======================*/
+@media (min-width: 500px) and (max-width: 1070px){
+  .back-card{
+    font-size: 1.4rem;
+    margin: 0px auto 80px;
+    border-radius: 50px;
+    padding: 25px;
+  }
+}

@@ -1,0 +1,80 @@
+body{
+    font-family: "fot-tsukuardgothic-std", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin:0;
+  }
+  .access-sky{
+      color: #233192;
+      width:100%;
+      background: linear-gradient( #15c1f6 0%,#b5e5f4 40%, #fff 100%)
+  }
+  .access-mainpage{
+    width: 100%;
+    padding-bottom: 80px;
+    margin:0 auto;
+  }
+  .access-notes{
+    font-size: 22px;
+    margin: 60px auto 30px;
+    display:block;
+    background-color: rgba(255,255,255,0.38);
+    border-radius: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .access-naiyou{
+    font-size: 20px;
+    padding: 10px 0px 30px;
+    text-align: left;/*文字左揃え*/
+    width:90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-decoration: none;
+  }
+  .access-content{
+    font-size: 1.6rem;
+    margin: 2rem auto 80px;
+    display:block;
+    background-color: rgba(255,255,255,0.58);
+    border-radius: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 25px;
+  }
+ /*======================
+    スマホ用
+  ======================*/
+
+    @media (max-width:767px){
+      /* 四角の大きさ調整 */
+      .access-notes{
+        box-sizing: contents-box;
+        width: 90%;
+        font-size: 16px;
+        text-decoration: none;
+      }
+    }
+ /* 駐輪場画像 */
+    .access-guide{
+      width:5000px;
+      max-width: 100%;
+      border-style: none;
+    }
+    .access-guide img{
+      width: 100%;
+      margin:50px 0px 0px;
+    } 
+  /*======================
+    タブレット用
+  ======================*/
+  @media (min-width:500px) and (max-width: 1070px){
+    .access-notes{
+      box-sizing: contents-box;
+      width: 80%;
+      font-size: 19px;
+      text-decoration: none;
+    }
+  }

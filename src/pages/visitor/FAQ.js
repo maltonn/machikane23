@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import {Link} from "react-router-dom";
 import "../../css/Common.css"
 export default function FAQ() {
     return(
