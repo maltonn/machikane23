@@ -16,104 +16,6 @@ import { Link } from "react-router-dom";
 
 
 export default function Home() {
-  const [isThemeOpen, setIsThemeOpen] = useState(true)
-  function onThemeClick() {
-    setIsThemeOpen(prev => !prev)
-    var themeHidden = document.getElementById('theme-hidden');
-    var buttonOpen = document.getElementById('theme-button-open');
-    var buttonClose = document.getElementById('theme-button-close');
-    if (isThemeOpen) {
-      themeHidden.style.display = 'block';
-      buttonOpen.style.display = 'none';
-      buttonClose.style.display = 'block';
-    } else {
-      themeHidden.style.display = 'none';
-      buttonOpen.style.display = 'block';
-      buttonClose.style.display = 'none';
-    }
-  }
-  /* sectionについてのところ */
-  const [isSectionOpenA, setIsSectionOpenA] = useState(true)
-  function onSectionClickA() {
-    setIsSectionOpenA(prev => !prev)
-    var sectionHidden = document.getElementById('section-hiddenA');
-    var buttonOpen = document.getElementById('section-button-openA');
-    var buttonClose = document.getElementById('section-button-closeA');
-    if (isSectionOpenA) {
-      sectionHidden.style.display = 'block';
-      buttonOpen.style.display = 'none';
-      buttonClose.style.display = 'block';
-    } else {
-      sectionHidden.style.display = 'none';
-      buttonOpen.style.display = 'block';
-      buttonClose.style.display = 'none';
-    }
-  }
-  const [isSectionOpenB, setIsSectionOpenB] = useState(true)
-  function onSectionClickB() {
-    setIsSectionOpenB(prev => !prev)
-    var sectionHidden = document.getElementById('section-hiddenB');
-    var buttonOpen = document.getElementById('section-button-openB');
-    var buttonClose = document.getElementById('section-button-closeB');
-    if (isSectionOpenB) {
-      sectionHidden.style.display = 'block';
-      buttonOpen.style.display = 'none';
-      buttonClose.style.display = 'block';
-    } else {
-      sectionHidden.style.display = 'none';
-      buttonOpen.style.display = 'block';
-      buttonClose.style.display = 'none';
-    }
-  }
-  const [isSectionOpenC, setIsSectionOpenC] = useState(true)
-  function onSectionClickC() {
-    setIsSectionOpenC(prev => !prev)
-    var sectionHidden = document.getElementById('section-hiddenC');
-    var buttonOpen = document.getElementById('section-button-openC');
-    var buttonClose = document.getElementById('section-button-closeC');
-    if (isSectionOpenC) {
-      sectionHidden.style.display = 'block';
-      buttonOpen.style.display = 'none';
-      buttonClose.style.display = 'block';
-    } else {
-      sectionHidden.style.display = 'none';
-      buttonOpen.style.display = 'block';
-      buttonClose.style.display = 'none';
-    }
-  }
-  const [isSectionOpenD, setIsSectionOpenD] = useState(true)
-  function onSectionClickD() {
-    setIsSectionOpenD(prev => !prev)
-    var sectionHidden = document.getElementById('section-hiddenD');
-    var buttonOpen = document.getElementById('section-button-openD');
-    var buttonClose = document.getElementById('section-button-closeD');
-    if (isSectionOpenD) {
-      sectionHidden.style.display = 'block';
-      buttonOpen.style.display = 'none';
-      buttonClose.style.display = 'block';
-    } else {
-      sectionHidden.style.display = 'none';
-      buttonOpen.style.display = 'block';
-      buttonClose.style.display = 'none';
-    }
-  }
-  const [isSectionOpenE, setIsSectionOpenE] = useState(true)
-  function onSectionClickE() {
-    setIsSectionOpenE(prev => !prev)
-    var sectionHidden = document.getElementById('section-hiddenE');
-    var buttonOpen = document.getElementById('section-button-openE');
-    var buttonClose = document.getElementById('section-button-closeE');
-    if (isSectionOpenE) {
-      sectionHidden.style.display = 'block';
-      buttonOpen.style.display = 'none';
-      buttonClose.style.display = 'block';
-    } else {
-      sectionHidden.style.display = 'none';
-      buttonOpen.style.display = 'block';
-      buttonClose.style.display = 'none';
-    }
-  }
-
   useEffect(() => {
     var move = document.getElementById('move').children;
     setTimeout(function () {
@@ -127,6 +29,13 @@ export default function Home() {
     $(':root').style.setProperty('--base-height', `${surfaceHeight}px`);
 
   }, [])
+
+  function PageChange(){
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+}
 
   return (
     <div className="top-main">
@@ -155,27 +64,32 @@ export default function Home() {
 
       <div className="sky2">
         <div className="mainpage1">
-          <div className="news">
+          <div className="top-backCard">
             <span id="title">お知らせ</span>
             <table className="news-table">
               <tbody>
-                {/* <tr>
-                        <td className="news-date">9/16(土)</td>
-                        <td className="news-content">トップページを更新しました。</td>
-                    </tr> */}
+                <tr>
+                  <td className="news-date">10/3(火)</td>
+                  <td className="news-content">まちかね祭2023公式サイトが完成しました。</td>
+                </tr>
                 <tr>
                   <td className="news-date">9/10(日)</td>
-                  <td className="news-content">まちかね祭2023公式サイトが完成しました。</td>
+                  <td className="news-content">まちかね祭2023公式サイトのトップページが完成しました。</td>
                 </tr>
               </tbody>
             </table>
+          </div>     
+          <div className="top-backCard">
+            <span id="title">ご来場の皆様へ</span>
+            <div className="content">まちかね祭に車でご来場いただくことはできません。<br/>ご来場の際は公共交通機関をご利用ください。<br/>来場予約は不要です。</div>
+            <p>お笑いライブは予約必須です。下のボタンから予約サイトへアクセスください。</p>
+            <div className="top-linkButton live-reservation"><a href="https://app.tyuujiu-system.net/machikane23/visotor/talent-live/reservation">お笑いライブ<br></br>予約サイト</a></div>
+            <p>お笑いライブ詳細は<Link to="./talent-project" onClick={PageChange}>こちら</Link></p>
+            <p>その他注意事項がございますので、下のボタンからご覧ください。</p>
+            <div className="link-button top-linkButton"><Link to="./notes" onClick={PageChange}>注意事項</Link></div>
           </div>
+          <div className="machikani-1"><img src={machikani} alt="まちかに"></img></div>
         </div>
-        <div className="notes">
-          <span id="title">ご来場の皆様へ</span>
-          <div className="content">まちかね祭に車でご来場いただくことはできません。<br/>ご来場の際は公共交通機関をご利用ください。<br/>来場予約は不要です。</div>
-        </div>
-        <div className="machikani-1"><img src={machikani} alt="まちかに"></img></div>
       </div>
 
       <div id="surface">
@@ -185,7 +99,7 @@ export default function Home() {
             <div className="ocean-card">
               <div className="titles"><nobr><p className="item1">●</p><span id="title">企画区分について</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
               <p>企画区分の説明は下のボタンから</p>
-              <div className="ocean-link-button"><a href="./sections">企画区分を知る</a></div>
+              <div className="ocean-link-button"><Link to="./sections" onClick={PageChange}>企画区分を知る</Link></div>
             </div>
             <div className="ocean-card schedule">
               <div className="subtitle">
@@ -217,61 +131,49 @@ export default function Home() {
               <img src={machikame2} alt="まちかめ2"></img>
             </div>
 
-          <div className="ocean-card stage">
-            <div className="titles" id="stage-title"><nobr><p className="item1">●</p><span id="title">現在のステージ企画</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
-            <div className="pre-ocean">まちかね祭当日までお待ちください</div>
-            </div>
-
-          {/* <div className="ocean-card lab">
+          <div className="ocean-card lab">
             <div className="titles"><nobr><p className="item1">●</p><span id="title">研究室紹介</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
             <p>研究室の企画は、以下のリンクからご覧ください。</p>
-            <Link to="/lab-open" >詳細はこちら</Link>
-                  </div> */}
+            <div className="ocean-link-button"><Link to="/lab-open" onClick={PageChange}>詳細はこちら</Link></div>
+            </div>
 
           <div className="ocean-card" id="pickup">
             <div className="pickup-titles"><nobr><p className="item1">●</p><span id="title">PICKUP</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
             <div className="pickup-box">
-                <Link to="/project-search" ><div className="pickup-button">
+                <Link to="/project-search" onClick={PageChange}><div className="pickup-button">
                   <div className="pickup-icon"><img src={search} alt="search"></img></div>
                   <div className="pickup-title">企画検索</div>
                 </div></Link>
-                <Link to="/goods" ><div className="pickup-button">
+                <Link to="/goods" onClick={PageChange}><div className="pickup-button">
                   <div className="pickup-icon"><img src={goods} alt="goods"></img></div>  
                   <div className="pickup-title">グッズ</div>
                 </div></Link>
-                <Link to="/official-project" ><div className="pickup-button">
+                <Link to="/official-project" onClick={PageChange}><div className="pickup-button">
                   <div className="pickup-icon"><img src={recommend} alt="recommend"></img></div>  
                   <div className="pickup-title">委員会企画</div>
                 </div></Link><br/>
-                <Link to="/access" ><div className="pickup-button">
+                <Link to="/access" onClick={PageChange}><div className="pickup-button">
                   <div className="pickup-icon"><img src={access} alt="access"></img></div>
                   <div className="pickup-title">アクセス</div>
                 </div></Link>
-                <Link to="/map" ><div className="pickup-button">
+                <Link to="/map" onClick={PageChange}><div className="pickup-button">
                   <div className="pickup-icon"><img src={map} alt="map"></img></div>  
                   <div className="pickup-title">マップ</div>
                 </div></Link>
-                <Link to="/timetable" ><div className="pickup-button">
+                <Link to="/timetable" onClick={PageChange}><div className="pickup-button">
                   <div className="pickup-icon"><img src={timetable} alt="timetable"></img></div> 
                   <div className="pickup-title">ステージタイムテーブル</div>
                 </div></Link>
             </div>
           </div>
 
-            <div className="ocean-card about">
+            <div className="ocean-card top-about">
               <div className="titles"><nobr><p className="item1">●</p><span id="title">テーマ</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
               <div className="theme-title">"<ruby>阪燦々<rt>はんさんさん</rt></ruby>"</div>
               <div className="theme-context">
                 <p>2023年度まちかね祭のテーマは「阪燦々」（はんさんさん）に決定いたしました。</p>
                 <p>このテーマには、まちかね祭において阪大生の個性が燦々と輝きますように、との思いが込められています。</p>
-                <div className="button-parent"><div onClick={onThemeClick} id="theme-button-open" className={`theme-button ${isThemeOpen ? "theme-closed" : "theme-opend"}`}>もっと見る</div></div>
-                <div id="theme-hidden" className={`${isThemeOpen ? "theme-closed" : "theme-opend"}`}>
-                  <p>まちかね祭は、学生たちが日々の研鑽の成果を世に示す場です。</p>
-                  <p>緑に覆われた待兼山で努力する学生の成果が日の目を浴びる機会は多くはありません。世の人々の目に触れることによって初めて、学生の努力は光を放ちます。</p>
-                  <p>秋の陽光によって銀杏並木が光り輝くように、外部との交流によって学生の個性は光り輝きます。紅葉した銀杏の鮮やかな色彩が歩行者の目を楽しませるように、学生が放つ個性の輝きは来場者の感性を刺激します。暗い社会情勢、鬱屈した世相の中、若い世代の輝きは明るい光となるでしょう。</p>
-                  <p>来場者との関わりの中で、また阪大生同士の交わりのなかで、阪大生の個性が燦々と輝き、阪大全体が明るい光に包まれますようにとの思いを込めて「阪燦々」のテーマを決定いたしました。</p>
-                </div>
-                <div className="button-parent"><div onClick={onThemeClick} id="theme-button-close" className={`theme-button ${isThemeOpen ? "theme-closed" : "theme-opend"}`}>閉じる</div></div>
+                <div className="ocean-link-button"><Link to="/theme" onClick={PageChange}>もっと見る</Link></div>
               </div>
             </div>
           </div>

@@ -62,6 +62,12 @@ export default function Detail() {
             return null
         }
     }
+    function PageChange(){
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    }
 
     return (
         <div className="main">
@@ -141,7 +147,7 @@ export default function Detail() {
                     <p>読み込み中</p>
                 )
             }
-            <Link className="toTheTop" to="/" >トップページへ戻る</Link>
+            <Link className="toTheTop" to="/" onClick={PageChange}>トップページへ戻る</Link>
         </div>
     )
 }
