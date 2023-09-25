@@ -66,7 +66,7 @@ export default function Header() {
                     </div>
                     <ul className="menu-grandparent" id="ja-menu">
                         <li className="menu-parent"><span className={`menu-title ${isMenuOpenA?"is-opend":"is-closed"}`} onClick={menuOpenA}>{lang=="en"?"About":"まちかね祭について"}</span>
-                            <ul className={`menu-child ${isMenuOpenA?"is-opend":"is-closed"}`}>
+                            <ul className={`menu-child ${lang=="en" && "en-longTitle"} ${isMenuOpenA?"is-opend":"is-closed"}`}>
                                 <li><Link to="./about" onClick={PageChange}>{lang=="en"?"What is Machikane Festival?":"まちかね祭とは"}</Link></li>
                                 <li><Link to="./adresses" onClick={PageChange}>{lang=="en"?"Adresses":"ご挨拶"}</Link></li>
                                 <li><Link to="./theme" onClick={PageChange}>{lang=="en"?"Theme":"テーマ"}</Link></li>
@@ -75,7 +75,7 @@ export default function Header() {
                             </ul>
                         </li>
                         <li className="menu-parent"><span className={`menu-title ${isMenuOpenB?"is-opend":"is-closed"}`} onClick={menuOpenB}>{lang=="en"?"Projects":"企画について"}</span>
-                            <ul className={`menu-child ${isMenuOpenB?"is-opend":"is-closed"}`}>
+                            <ul className={`menu-child ${lang=="en" && "en-longTitle"} ${isMenuOpenB?"is-opend":"is-closed"}`}>
                                 <li><Link to="./sections" onClick={PageChange}>{lang=="en"?"Project Category":"企画区分について"}</Link></li>
                                 <li><Link to="./project-search" onClick={PageChange}>{lang=="en"?"Project Search":"企画検索"}</Link></li>
                                 <li><Link to="./timetable" onClick={PageChange}>{lang=="en"?"Stage Performance Schedule":"ステージタイムテーブル"}</Link></li>
