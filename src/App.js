@@ -57,8 +57,6 @@ import MapEn from './En-pages/access-map/MapEn';
 
 import Error404 from './pages/Error404';
 
-
-
 function AppContents() {
   const location = useLocation();
 
