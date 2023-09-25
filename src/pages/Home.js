@@ -128,6 +128,13 @@ export default function Home() {
 
   }, [])
 
+  function PageChange(){
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+}
+
   return (
     <div className="top-main">
       <Helmet>
@@ -175,9 +182,9 @@ export default function Home() {
             <div className="content">まちかね祭に車でご来場いただくことはできません。<br/>ご来場の際は公共交通機関をご利用ください。<br/>来場予約は不要です。</div>
             <p>お笑いライブは予約必須です。下のボタンから予約サイトへアクセスください。</p>
             <div className="top-linkButton live-reservation"><a href="https://app.tyuujiu-system.net/machikane23/visotor/talent-live/reservation">お笑いライブ<br></br>予約サイト</a></div>
-            <p>お笑いライブ詳細は<Link to="./talent-project">こちら</Link></p>
+            <p>お笑いライブ詳細は<Link to="./talent-project" onClick={PageChange}>こちら</Link></p>
             <p>その他注意事項がございますので、下のボタンからご覧ください。</p>
-            <div className="link-button top-linkButton"><Link to="./notes">注意事項</Link></div>
+            <div className="link-button top-linkButton"><Link to="./notes" onClick={PageChange}>注意事項</Link></div>
           </div>
           <div className="machikani-1"><img src={machikani} alt="まちかに"></img></div>
         </div>
@@ -190,7 +197,7 @@ export default function Home() {
             <div className="ocean-card">
               <div className="titles"><nobr><p className="item1">●</p><span id="title">企画区分について</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
               <p>企画区分の説明は下のボタンから</p>
-              <div className="ocean-link-button"><Link to="./sections">企画区分を知る</Link></div>
+              <div className="ocean-link-button"><Link to="./sections" onClick={PageChange}>企画区分を知る</Link></div>
             </div>
             <div className="ocean-card schedule">
               <div className="subtitle">
@@ -225,33 +232,33 @@ export default function Home() {
           <div className="ocean-card lab">
             <div className="titles"><nobr><p className="item1">●</p><span id="title">研究室紹介</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
             <p>研究室の企画は、以下のリンクからご覧ください。</p>
-            <div className="ocean-link-button"><Link to="/lab-open" >詳細はこちら</Link></div>
+            <div className="ocean-link-button"><Link to="/lab-open" onClick={PageChange}>詳細はこちら</Link></div>
             </div>
 
           <div className="ocean-card" id="pickup">
             <div className="pickup-titles"><nobr><p className="item1">●</p><span id="title">PICKUP</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
             <div className="pickup-box">
-                <Link to="/project-search" ><div className="pickup-button">
+                <Link to="/project-search" onClick={PageChange}><div className="pickup-button">
                   <div className="pickup-icon"><img src={search} alt="search"></img></div>
                   <div className="pickup-title">企画検索</div>
                 </div></Link>
-                <Link to="/goods" ><div className="pickup-button">
+                <Link to="/goods" onClick={PageChange}><div className="pickup-button">
                   <div className="pickup-icon"><img src={goods} alt="goods"></img></div>  
                   <div className="pickup-title">グッズ</div>
                 </div></Link>
-                <Link to="/official-project" ><div className="pickup-button">
+                <Link to="/official-project" onClick={PageChange}><div className="pickup-button">
                   <div className="pickup-icon"><img src={recommend} alt="recommend"></img></div>  
                   <div className="pickup-title">委員会企画</div>
                 </div></Link><br/>
-                <Link to="/access" ><div className="pickup-button">
+                <Link to="/access" onClick={PageChange}><div className="pickup-button">
                   <div className="pickup-icon"><img src={access} alt="access"></img></div>
                   <div className="pickup-title">アクセス</div>
                 </div></Link>
-                <Link to="/map" ><div className="pickup-button">
+                <Link to="/map" onClick={PageChange}><div className="pickup-button">
                   <div className="pickup-icon"><img src={map} alt="map"></img></div>  
                   <div className="pickup-title">マップ</div>
                 </div></Link>
-                <Link to="/timetable" ><div className="pickup-button">
+                <Link to="/timetable" onClick={PageChange}><div className="pickup-button">
                   <div className="pickup-icon"><img src={timetable} alt="timetable"></img></div> 
                   <div className="pickup-title">ステージタイムテーブル</div>
                 </div></Link>
@@ -264,7 +271,7 @@ export default function Home() {
               <div className="theme-context">
                 <p>2023年度まちかね祭のテーマは「阪燦々」（はんさんさん）に決定いたしました。</p>
                 <p>このテーマには、まちかね祭において阪大生の個性が燦々と輝きますように、との思いが込められています。</p>
-                <div className="ocean-link-button"><Link to="/theme" >もっと見る</Link></div>
+                <div className="ocean-link-button"><Link to="/theme" onClick={PageChange}>もっと見る</Link></div>
               </div>
             </div>
           </div>

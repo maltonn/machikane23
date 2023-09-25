@@ -40,6 +40,7 @@ import SponsorEn from './En-pages/machikane/SponsorEn';
 
 import SectionsEn from './En-pages/project/SectionsEn';
 import ProjectEn from './En-pages/project/ProjectEn';
+import DetailEn from './En-pages/project/DetailEn';
 import TimetableEn from './En-pages/project/TimetableEn';
 import RalleyEn from './En-pages/project/RalleyEn';
 import OfficialProjectEn from './En-pages/project/OfficialProjectEn';
@@ -55,8 +56,6 @@ import MapEn from './En-pages/access-map/MapEn';
 
 
 import Error404 from './pages/Error404';
-
-
 
 function AppContents() {
   const location = useLocation();
@@ -87,6 +86,7 @@ function AppContents() {
 
               <Route path="/sections/" element={<SectionsEn />} />
               <Route path="/project-search/" element={<ProjectEn />} />
+              <Route path="/project-search/:id" element={<DetailEn />} />
               <Route path="/timetable/" element={<TimetableEn />} />
               <Route path="/ralley/" element={<RalleyEn />} />
               <Route path="/official-project/" element={<OfficialProjectEn />} />
@@ -120,6 +120,7 @@ function AppContents() {
                 <Route path="/timetable/" element={<Timetable />} />
                 <Route path="/ralley/" element={<Ralley />} />
                 <Route path="/official-project/" element={<OfficialProject />} />
+                <Route path="/talent-project/" element={<TalentProject />} />
                 <Route path="/lab-open/" element={<LabOpen />} />
 
                 <Route path="/notes/" element={<Notes />} />

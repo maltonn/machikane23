@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-// import {Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 import "../../css/Common.css"
 import "../../css/Access.css"
 import Bubble from "../../components/Bubble";
@@ -7,6 +7,12 @@ import PageTitles from "../../components/PageTitles";
 import guide from "../../imgs/map/2023年度まちかね祭駐輪場案内.png"
 
 export default function Access() {
+    function PageChange(){
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    }
     return(
         <div className="main">
             <Helmet>
@@ -42,7 +48,7 @@ export default function Access() {
                         <div className="access-naiyou">
                         <li>まちかね祭会場及び会場付近に駐車場はありませんので、公共交通機関をご利用ください。
                             ただし、歩行が困難であるなどやむを得ない事情をお持ちの方は、事前に当委員会までご連絡ください。
-                            <div className="link-button"><a className="access-inquiry" href="./inquiry">お問い合わせ</a>
+                            <div className="link-button"><Link className="access-inquiry" to="./inquiry" onClick={PageChange}>お問い合わせ</Link>
                             </div>{/* お問い合わせボタンで飛べるようにする */}
                         </li>
                         <li>自転車でお越しの方は図に記載の駐輪場をご利用くださいますようお願いいたします。

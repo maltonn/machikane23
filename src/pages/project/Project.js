@@ -159,8 +159,15 @@ export default function Project() {
         }
     }
 
+    function PageChange(){
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    }
+
     function detail(project){
-        return <Link className="toDetail" to={"/project-search/"+project.id}>▷Show more</Link>
+        return <Link className="toDetail" to={"/project-search/"+project.id} onClick={PageChange}>▷Show more</Link>
     }
 
     return (
@@ -255,7 +262,7 @@ export default function Project() {
                         <button onClick={()=>setLoadingNum(loadingNum+20)}>もっと見る</button>
                     }
                 </div>
-                <Link className="toTheTop" to="/" >トップページへ戻る</Link>
+                <Link className="toTheTop" to="/" onClick={PageChange}>トップページへ戻る</Link>
             </div>
             <div className="ocean">
                 <div className="bottom">

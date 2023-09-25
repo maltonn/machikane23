@@ -33,6 +33,10 @@ export default function Header() {
         setIsMenuOpenB(false)
         setIsMenuOpenC(false)
         setIsMenuOpenD(false)
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
     }
     
     useEffect(() =>{
@@ -48,7 +52,7 @@ export default function Header() {
             </Link>
             <div className={`toggle-sp ${isHamburgerOpen?"menu-opend":"menu-closed"}`}>
                 <label className="toggle-button">
-                    <input type="checkbox" id="toggle-sp" checked={lang=="en"} onChange={()=>{lang=="en"?setLang("ja"):setLang("en")}} />
+                    <input type="checkbox" id="toggle-sp" checked={lang=="en"} onClick={PageChange} onChange={()=>{lang=="en"?setLang("ja"):setLang("en")}} />
                 </label>
             </div>
 
@@ -57,7 +61,7 @@ export default function Header() {
                     <Link to="/" className="top-link" onClick={PageChange}><img className="machikane_logo-pc" src={machikane_logo} alt="まちかね祭ロゴ"></img></Link>
                     <div className="toggle-pc">
                         <label className="toggle-button">
-                            <input type="checkbox" id="toggle-pc" checked={lang=="en"} onChange={()=>{lang=="en"?setLang("ja"):setLang("en")}} />
+                            <input type="checkbox" id="toggle-pc" checked={lang=="en"} onClick={PageChange} onChange={()=>{lang=="en"?setLang("ja"):setLang("en")}} />
                         </label>
                     </div>
                     <ul className="menu-grandparent" id="ja-menu">
@@ -77,6 +81,7 @@ export default function Header() {
                                 <li><Link to="./timetable" onClick={PageChange}>ステージタイムテーブル</Link></li>
                                 <li><Link to="./ralley" onClick={PageChange}>ラリー企画一覧</Link></li>
                                 <li><Link to="./official-project" onClick={PageChange}>実行委員会企画</Link></li>
+                                <li><Link to="./talent-project" onClick={PageChange}>お笑いライブ</Link></li>
                                 <li><Link to="./lab-open" onClick={PageChange}>研究室紹介</Link></li>
                             </ul>
                         </li>
