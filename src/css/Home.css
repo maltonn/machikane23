@@ -1224,7 +1224,7 @@ schedule,stage,lab
     display: block;
   }
   .mainpage1{
-    bottom: 20rem;
+    bottom: 18rem;
   }
   .top-backCard{
     font-size: 1.6rem;
@@ -1349,8 +1349,21 @@ schedule,stage,lab
     bottom:116vw;
     right:30vw;
   }
+  .mainpage1{
+    bottom: 5rem;
+  }
+  .top-backCard{
+    font-size: 1rem;
+  }
 }
-
+@media (min-width: 600px) and (max-width: 800px){
+  .mainpage1{
+    bottom: 2rem;
+  }
+  .top-backCard{
+    font-size: 1rem;
+  }
+}
 @media (min-width: 600px) and (max-width: 990px){
   #loader{
     width: 100%;
