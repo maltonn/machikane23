@@ -65,38 +65,38 @@ export default function Header() {
                         </label>
                     </div>
                     <ul className="menu-grandparent" id="ja-menu">
-                        <li className="menu-parent"><span className={`menu-title ${isMenuOpenA?"is-opend":"is-closed"}`} onClick={menuOpenA}>まちかね祭について</span>
-                            <ul className={`menu-child ${isMenuOpenA?"is-opend":"is-closed"}`}>
-                                <li><Link to="./about" onClick={PageChange}>まちかね祭とは</Link></li>
-                                <li><Link to="./adresses" onClick={PageChange}>ご挨拶</Link></li>
-                                <li><Link to="./theme" onClick={PageChange}>テーマ</Link></li>
-                                <li><Link to="./goods" onClick={PageChange}>グッズ</Link></li>
-                                <li><Link to="./sponsor" onClick={PageChange}>ご協賛</Link></li>
+                        <li className="menu-parent"><span className={`menu-title ${isMenuOpenA?"is-opend":"is-closed"}`} onClick={menuOpenA}>{lang=="en"?"About":"まちかね祭について"}</span>
+                            <ul className={`menu-child ${lang=="en" && "en-longTitle"} ${isMenuOpenA?"is-opend":"is-closed"}`}>
+                                <li><Link to="./about" onClick={PageChange}>{lang=="en"?"What is Machikane Festival?":"まちかね祭とは"}</Link></li>
+                                <li><Link to="./adresses" onClick={PageChange}>{lang=="en"?"Adresses":"ご挨拶"}</Link></li>
+                                <li><Link to="./theme" onClick={PageChange}>{lang=="en"?"Theme":"テーマ"}</Link></li>
+                                <li><Link to="./goods" onClick={PageChange}>{lang=="en"?"Official Goods":"グッズ"}</Link></li>
+                                <li><Link to="./sponsor" onClick={PageChange}>{lang=="en"?"Our Sponsors":"ご協賛"}</Link></li>
                             </ul>
                         </li>
-                        <li className="menu-parent"><span className={`menu-title ${isMenuOpenB?"is-opend":"is-closed"}`} onClick={menuOpenB}>企画について</span>
-                            <ul className={`menu-child ${isMenuOpenB?"is-opend":"is-closed"}`}>
-                                <li><Link to="./sections" onClick={PageChange}>企画区分について</Link></li>
-                                <li><Link to="./project-search" onClick={PageChange}>企画検索</Link></li>
-                                <li><Link to="./timetable" onClick={PageChange}>ステージタイムテーブル</Link></li>
-                                <li><Link to="./ralley" onClick={PageChange}>ラリー企画一覧</Link></li>
-                                <li><Link to="./official-project" onClick={PageChange}>実行委員会企画</Link></li>
-                                <li><Link to="./talent-project" onClick={PageChange}>お笑いライブ</Link></li>
-                                <li><Link to="./lab-open" onClick={PageChange}>研究室紹介</Link></li>
+                        <li className="menu-parent"><span className={`menu-title ${isMenuOpenB?"is-opend":"is-closed"}`} onClick={menuOpenB}>{lang=="en"?"Projects":"企画について"}</span>
+                            <ul className={`menu-child ${lang=="en" && "en-longTitle"} ${isMenuOpenB?"is-opend":"is-closed"}`}>
+                                <li><Link to="./sections" onClick={PageChange}>{lang=="en"?"Project Category":"企画区分について"}</Link></li>
+                                <li><Link to="./project-search" onClick={PageChange}>{lang=="en"?"Project Search":"企画検索"}</Link></li>
+                                <li><Link to="./timetable" onClick={PageChange}>{lang=="en"?"Stage Performance Schedule":"ステージタイムテーブル"}</Link></li>
+                                <li><Link to="./ralley" onClick={PageChange}>{lang=="en"?"Rally Projects":"ラリー企画一覧"}</Link></li>
+                                <li><Link to="./official-project" onClick={PageChange}>{lang=="en"?"Projects by Festival Committee":"実行委員会企画"}</Link></li>
+                                <li><Link to="./talent-project" onClick={PageChange}>{lang=="en"?"Live":"お笑いライブ"}</Link></li>
+                                <li><Link to="./lab-open" onClick={PageChange}>{lang=="en"?"Introduce Our Lab":"研究室紹介"}</Link></li>
                             </ul>
                         </li>
-                        <li className="menu-parent"><span className={`menu-title ${isMenuOpenC?"is-opend":"is-closed"}`} onClick={menuOpenC}>来場者の方へ</span>
+                        <li className="menu-parent"><span className={`menu-title ${isMenuOpenC?"is-opend":"is-closed"}`} onClick={menuOpenC}>{lang=="en"?"To the visitors":"ご来場の方へ"}</span>
                             <ul className={`menu-child ${isMenuOpenC?"is-opend":"is-closed"}`}>
-                                <li><Link to="./notes" onClick={PageChange}>注意事項</Link></li>
-                                <li><Link to="./pamphlet" onClick={PageChange}>公式パンフレット</Link></li>
-                                <li><Link to="./FAQ" onClick={PageChange}>よくあるご質問</Link></li>
-                                <li><Link to="./inquiry" onClick={PageChange}>お問い合わせ</Link></li>
+                                <li><Link to="./notes" onClick={PageChange}>{lang=="en"?"Notes":"注意事項"}</Link></li>
+                                <li><Link to="./pamphlet" onClick={PageChange}>{lang=="en"?"Official Pamphlet":"公式パンフレット"}</Link></li>
+                                <li><Link to="./FAQ" onClick={PageChange}>{lang=="en"?"FAQs":"よくあるご質問"}</Link></li>
+                                <li><Link to="./inquiry" onClick={PageChange}>{lang=="en"?"Inquiry":"お問い合わせ"}</Link></li>
                             </ul>
                         </li>
-                        <li className="menu-parent"><span className={`menu-title ${isMenuOpenD?"is-opend":"is-closed"}`} onClick={menuOpenD}>アクセス・マップ</span>
+                        <li className="menu-parent"><span className={`menu-title ${isMenuOpenD?"is-opend":"is-closed"}`} onClick={menuOpenD}>{lang=="en"?"Information":"アクセス・マップ"}</span>
                             <ul className={`menu-child ${isMenuOpenD?"is-opend":"is-closed"}`}>
-                                <li><Link to="./access" onClick={PageChange}>アクセス</Link></li>
-                                <li><Link to="./map" onClick={PageChange}>マップ</Link></li>
+                                <li><Link to="./access" onClick={PageChange}>{lang=="en"?"Access":"アクセス"}</Link></li>
+                                <li><Link to="./map" onClick={PageChange}>{lang=="en"?"Map":"マップ"}</Link></li>
                             </ul>
                         </li>
                     </ul>
