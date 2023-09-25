@@ -33,6 +33,10 @@ export default function Header() {
         setIsMenuOpenB(false)
         setIsMenuOpenC(false)
         setIsMenuOpenD(false)
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
     }
     
     useEffect(() =>{
