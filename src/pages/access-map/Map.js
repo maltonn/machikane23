@@ -34,7 +34,8 @@ export default function Map() {
                 <PageTitles titles="マップ"></PageTitles>
                 </div>
                 <h1>全体マップ・学内店舗の営業時間</h1>
-                <div className="map-notes">
+                <div className="access-mainpage"> 
+                    <div className="map-notes">
                         <div className="map-content">
                             <div className="map-ul">
                             <li>全体マップ</li>
@@ -45,7 +46,7 @@ export default function Map() {
                             <div className="map-ul">
                             <li>学内店舗の営業時間</li><br></br>
                             </div>
-                            <div className="time">
+                            <div className="map-time">
                                 <div className="map-tables">
                                     <tr>
                                         <th>店舗名</th> <th>11/3(金)</th> <th>11/4(土)</th> <th>11/5(日)</th>
@@ -66,145 +67,160 @@ export default function Map() {
                             </div>
                         </div>
                     </div>
+                </div>
                 <h1>館内マップ</h1>
                 {/* AB棟マップ */}
-                <div className="map-notes">
-                    <div className="map-content">
-                        <div className="map-ul">
-                            <li>AB棟</li>
-                        </div>
-                        <div className="map-item">
-                                <div className="map-AB"> 
-                                    <p>1階</p>
-                                    <img src={AB1} alt="AB棟1階"></img>
-                                </div>
-                                <div className="map-AB">
-                                    <p>2階</p>
-                                    <img src={AB2} alt="AB棟2階"></img>
-                                </div>
-                                <div className="map-AB">
-                                        <p>3階</p>
-                                        <img src={AB3} alt="AB棟3階"></img>
-                                </div>
+                <div className="access-mainpage"> 
+                    <div className="map-notes">
+                        <div className="map-content">
+                            <div className="map-ul">
+                                <li>AB棟</li>
+                            </div>
+                            <div className="map-item">
+                                    <div className="map-AB"> 
+                                        <p>1階</p>
+                                        <img src={AB1} alt="AB棟1階"></img>
+                                    </div>
+                                    <div className="map-AB">
+                                        <p>2階</p>
+                                        <img src={AB2} alt="AB棟2階"></img>
+                                    </div>
+                                    <div className="map-AB">
+                                            <p>3階</p>
+                                            <img src={AB3} alt="AB棟3階"></img>
+                                    </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 {/* C棟マップ */}
-                <div className="map-notes">
-                    <div className="map-content">
-                        <div className="map-ul">
-                            <li>C棟</li>
-                        </div>
-                        <div className="map-item">
-                                <div className="map-C"> 
-                                    <p>1階</p>
-                                    <img src={C1} alt="C棟1階"></img>
-                                </div>
-                                <div className="map-C">
-                                    <p>2階</p>
-                                    <img src={C2} alt="C棟2階"></img>
-                                </div>
-                                <div className="map-C">
-                                        <p>3階</p>
-                                        <img src={C3} alt="C棟3階"></img>
-                                </div>
-                                <div className="map-C">
-                                        <p>4階</p>
-                                        <img src={C4} alt="C棟4階"></img>
-                                </div>
+                <div className="access-mainpage"> 
+                    <div className="map-notes">
+                        <div className="map-content">
+                            <div className="map-ul">
+                                <li>C棟</li>
+                            </div>
+                            <div className="map-item">
+                                    <div className="map-C"> 
+                                        <p>1階</p>
+                                        <img src={C1} alt="C棟1階"></img>
+                                    </div>
+                                    <div className="map-C">
+                                        <p>2階</p>
+                                        <img src={C2} alt="C棟2階"></img>
+                                    </div>
+                                    <div className="map-C">
+                                            <p>3階</p>
+                                            <img src={C3} alt="C棟3階"></img>
+                                    </div>
+                                    <div className="map-C">
+                                            <p>4階</p>
+                                            <img src={C4} alt="C棟4階"></img>
+                                    </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 {/* 法経マップ */}
-                <div className="map-notes">
-                    <div className="map-content">
-                        <div className="map-ul">
-                            <li>法経講義棟</li>
-                        </div>
-                        <div className="map-item">
-                                <div className="map-H"> 
-                                    <p>1階</p>
-                                    <img src={H1} alt="法経1階"></img>
-                                </div>
-                                <div className="map-H">
-                                    <p>2階</p>
-                                    <img src={H2} alt="法経2階"></img>
-                                </div>
-                                <div className="map-H">
-                                        <p>3階</p>
-                                        <img src={H3} alt="法経3階"></img>
-                                </div>
+                <div className="access-mainpage"> 
+                    <div className="map-notes">
+                        <div className="map-content">
+                            <div className="map-ul">
+                                <li>法経講義棟</li>
+                            </div>
+                            <div className="map-item">
+                                    <div className="map-H"> 
+                                        <p>1階</p>
+                                        <img src={H1} alt="法経1階"></img>
+                                    </div>
+                                    <div className="map-H">
+                                        <p>2階</p>
+                                        <img src={H2} alt="法経2階"></img>
+                                    </div>
+                                    <div className="map-H">
+                                            <p>3階</p>
+                                            <img src={H3} alt="法経3階"></img>
+                                    </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 {/* 文法経マップ */}
-                <div className="map-notes">
-                    <div className="map-content">
-                        <div className="map-ul">
-                            <li>文法経講義棟</li>
-                        </div>
-                        <div className="map-item">
-                                <div className="map-B"> 
-                                    <p>1階</p>
-                                    <img src={B1} alt="文法経1階"></img>
-                                </div>
-                                <div className="map-B">
-                                    <p>2階</p>
-                                    <img src={B2} alt="文法経2階"></img>
-                                </div>
-                                <div className="map-B">
-                                        <p>3階</p>
-                                        <img src={B3} alt="文法経3階"></img>
-                                </div>
-                                <div className="map-B">
-                                        <p>4階</p>
-                                        <img src={B4} alt="文法経4階"></img>
-                                </div>
+                <div className="access-mainpage"> 
+                    <div className="map-notes">
+                        <div className="map-content">
+                            <div className="map-ul">
+                                <li>文法経講義棟</li>
+                            </div>
+                            <div className="map-item">
+                                    <div className="map-B"> 
+                                        <p>1階</p>
+                                        <img src={B1} alt="文法経1階"></img>
+                                    </div>
+                                    <div className="map-B">
+                                        <p>2階</p>
+                                        <img src={B2} alt="文法経2階"></img>
+                                    </div>
+                                    <div className="map-B">
+                                            <p>3階</p>
+                                            <img src={B3} alt="文法経3階"></img>
+                                    </div>
+                                    <div className="map-B">
+                                            <p>4階</p>
+                                            <img src={B4} alt="文法経4階"></img>
+                                    </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 {/* 学生会館 */}
-                <div className="map-notes">
-                    <div className="map-content">
-                        <div className="map-ul">
-                            <li>学生会館</li>
-                        </div>
-                        <div className="map-item">
-                                <div className="map-G"> 
-                                    <p>2階</p>
-                                    <img src={G2} alt="学生会館2階"></img>
-                                </div>
-                                <div className="map-G">
-                                    <p>3階</p>
-                                    <img src={G3} alt="学生会館3階"></img>
-                                </div>
+                <div className="access-mainpage"> 
+                    <div className="map-notes">
+                        <div className="map-content">
+                            <div className="map-ul">
+                                <li>学生会館</li>
+                            </div>
+                            <div className="map-item">
+                                    <div className="map-G"> 
+                                        <p>2階</p>
+                                        <img src={G2} alt="学生会館2階"></img>
+                                    </div>
+                                    <div className="map-G">
+                                        <p>3階</p>
+                                        <img src={G3} alt="学生会館3階"></img>
+                                    </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 {/* 屋外模擬店 */}
                 <h1>模擬店・屋外マップ</h1>
-                <div className="map-notes">
-                    <div className="map-content">
-                        <div className="map-item">
-                                <div className="map-M">
-                                    <img src={M} alt="屋外模擬店"></img>
-                                </div>
+                <div className="access-mainpage"> 
+                    <div className="map-notes">
+                        <div className="map-content">
+                            <div className="map-item">
+                                    <div className="map-M">
+                                        <img src={M} alt="屋外模擬店"></img>
+                                    </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 {/* ステージ */}
                 <h1>ステージマップ</h1>
-                <div className="map-notes">
-                    <div className="map-content">
-                        <div className="map-item">
-                                <div className="map-stage">
-                                    <p>ステージ奏</p>
-                                    <img src={kanade} alt="ステージ奏"></img>
-                                </div>
-                                <div className="map-stage">
-                                    <p>ステージ宙</p>
-                                    <img src={sora} alt="ステージ宙"></img>
-                                </div>
+                <div className="access-mainpage"> 
+                    <div className="map-notes">
+                        <div className="map-content">
+                            <div className="map-item">
+                                    <div className="map-stage">
+                                        <p>ステージ奏</p>
+                                        <img src={kanade} alt="ステージ奏"></img>
+                                    </div>
+                                    <div className="map-stage">
+                                        <p>ステージ宙</p>
+                                        <img src={sora} alt="ステージ宙"></img>
+                                    </div>
+                            </div>
                         </div>
                     </div>
                 </div>

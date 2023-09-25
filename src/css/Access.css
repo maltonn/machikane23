@@ -10,8 +10,9 @@ body{
       background: linear-gradient( #15c1f6 0%,#b5e5f4 40%, #fff 100%)
   }
   .access-mainpage{
-    width: 100%;
+    width: 92%;
     padding-bottom: 80px;
+    margin:0 auto;
   }
   .access-notes{
     font-size: 22px;
