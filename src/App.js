@@ -120,6 +120,7 @@ function AppContents() {
                 <Route path="/timetable/" element={<Timetable />} />
                 <Route path="/ralley/" element={<Ralley />} />
                 <Route path="/official-project/" element={<OfficialProject />} />
+                <Route path="/talent-project/" element={<TalentProject />} />
                 <Route path="/lab-open/" element={<LabOpen />} />
 
                 <Route path="/notes/" element={<Notes />} />
