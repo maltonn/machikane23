@@ -147,19 +147,21 @@
     margin: 0 auto;
 }
 
-.pancakeInfor{
+.pancakeInfor ul{
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  width: 70vw;
+  flex-wrap: nowrap;
+  width: 100%;
   /* position: relative; */
   /* left: 15vw; */
   /* top: -5vh; */
 }
+.pancakeInfor li{
+  list-style: none;
+  display: flexbox;
+}
 .pancakePlace,.pancakeGenre,.pancakeMoney,.pancakeTime{
   display: flexbox;
-  margin: 0 4vw;
+  margin: 0 1vw;
 }
 
 .pancakeDetail{
@@ -168,10 +170,11 @@
 
 .IconAround{
   display: flexbox;
-  width: 10vw;
+  /* width: 10vw; */
+  flex-basis: 10vw;
 }
 .detailIcon{
-  width: 100%;
+  width: 50%;
 }
 
 .pancakeBoxs{
@@ -226,6 +229,19 @@
   margin-bottom: 30vh;
 }
 
+.nepleageBar img {
+  width: 75%;
+  margin: 0 10vw;
+}
+
+.O-1DetailIcon{
+  /* margin: 0 auto; */
+}
+.O-1DetailIcon img {
+  width: 75%;
+  margin: 0 10vw;
+}
+
 @media screen and (max-width:490px){
   .officialProAll{
     align-items: center;
@@ -245,6 +261,9 @@
   .officialProject .O-1card{
     margin-bottom: 15vw;
   }
+  .inforAll{
+    display: block;
+  }
 }
 
 @media screen and (min-width:490px) and (max-width: 1090px){
@@ -252,7 +271,10 @@
     margin-top: 0;
 
   }
-  .officialProject .O-1card{
+  .officialProject .O-1card ,.officialProject .nepleageCard{
     margin-bottom: 15vw;
+  }
+  .inforAll{
+    display: block;
   }
 }

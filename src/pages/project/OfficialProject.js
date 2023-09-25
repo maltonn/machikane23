@@ -31,11 +31,11 @@ export default function OfficialProject() {
                         <div className="inforAll">
                             <img className="officialIcon" src={pancakeLogo} alt="ぱんけえき焼きた亭のアイコン"></img>
                             <div className="information">
-                                時間:10:00-18:00<br></br>
-                                場所:メインストリート テント40<br></br>
-                                整理券:なし<br></br>
-                                おすすめ:全年齢（お子様にも）<br></br>
-                                有料<br></br>
+                                <p>・時間:10:00-18:00</p>
+                                <p>・場所:メインストリート テント40</p>
+                                <p>・整理券:なし</p>
+                                <p>・おすすめ:全年齢（お子様にも）</p>
+                                <p>・有料</p>
                             </div>
                         </div>
                     </div> 
@@ -44,11 +44,11 @@ export default function OfficialProject() {
                         <div className="inforAll">
                             <img className="officialIcon" src={machikaneForestLogo} alt="まちかねの森のアイコン"></img>
                             <div className="information">
-                            時間:10:00-12:00,13:00-17:00<br></br>
-                            場所:C106<br></br>
-                            整理券:あり<br></br>
-                            おすすめ:全年齢（お子様にも）<br></br>
-                            無料<br></br>
+                                <p>・時間:10:00-12:00,13:00-17:00</p>
+                                <p>・場所:C106</p>
+                                <p>・整理券:あり</p>
+                                <p>・おすすめ:全年齢（お子様にも）</p>
+                                <p>・無料</p>
                             </div>
                         </div>
                     </div> 
@@ -57,11 +57,11 @@ export default function OfficialProject() {
                         <div className="inforAll">
                             <img className="officialIcon" src={nepleage} alt="マチカネプリーグのアイコン"></img>
                             <div className="information">
-                                時間:10:00-12:00 13:00-17:00<br></br>
-                                場所:C105<br></br>
-                                整理券:あり<br></br>
-                                おすすめ:高校生、大学生<br></br>
-                                無料<br></br>
+                                <p>・時間:10:00-12:00 13:00-17:00</p>
+                                <p>・場所:C105</p>
+                                <p>・整理券:あり</p>
+                                <p>・おすすめ:高校生、大学生</p>
+                                <p>・無料</p>
                             </div>
                         </div>
                     </div> 
@@ -70,11 +70,11 @@ export default function OfficialProject() {
                         <div className="inforAll">
                             <img className="officialIcon" src={O1Logo} alt="O-1GrandPrixのアイコン"></img>
                             <div className="information">
-                                時間:11/05（企画日3日目） 17:00-19:00<br></br>
-                                場所:ステージ奏<br></br>
-                                整理券:なし<br></br>
-                                おすすめ:全年齢<br></br>
-                                無料<br></br>
+                                <p>・時間:11/05（企画日3日目） 17:00-19:00</p>
+                                <p>・場所:ステージ奏</p>
+                                <p>・整理券:なし</p>
+                                <p>・おすすめ:全年齢</p>
+                                <p>・無料</p>
                             </div>
                         </div>
                     </div>
@@ -89,10 +89,12 @@ export default function OfficialProject() {
                                 <div className="rateNumber">5.0</div>
                             </div>
                             <div className="pancakeInfor">
-                                <div className="pancakePlace">場所：メインストリート テント40</div>
-                                <div className="pancakeGenre">ジャンル：パンケーキ</div>
-                                <div className="pancakeTime">営業時間：11月3、4、5日<br></br>     10:00～18:00</div>
-                                <div className="pancakeMoney">予算：300－350</div>
+                                <ul>
+                                    <li className="pancakePlace">場所：メインストリート テント40</li>
+                                    <li className="pancakeGenre">ジャンル：パンケーキ</li>
+                                    <li className="pancakeTime">営業時間：11月3、4、5日<br></br>     10:00～18:00</li>
+                                    <li className="pancakeMoney">予算：350－400</li>
+                                </ul>
                             </div>
                             <div className="pancakeDetail">
                                 <div className="iconAround"><img className="detailIcon" src={pancakeLogo} alt="ぱんけえき焼きた亭のアイコン"></img></div>
@@ -161,12 +163,14 @@ export default function OfficialProject() {
                             <div className="nepleageInfor">
                                 <div className="nepleagePlace">C105</div>
                                 <div className="nepleageFree">無料</div>
-                                <div className="nepleageTicket"></div>
-                                <div className="nepleageFor"></div>
+                                <div className="nepleageTicket">整理券あり</div>
+                                <div className="nepleageFor">高校生・大学生向け</div>
                             </div>
                         </div>
                         <div className="detail">
-                            <div className=""></div>
+                            <div className="O-1Title"></div>
+                            <div className="O-1DetailIcon"><img src={O1Logo}></img></div>
+                            <div className="O-1Preparetion">Coming soon</div>
                         </div>
                     </div>
                 </div>
