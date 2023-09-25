@@ -77,6 +77,7 @@ export default function Header() {
                                 <li><Link to="./timetable" onClick={PageChange}>ステージタイムテーブル</Link></li>
                                 <li><Link to="./ralley" onClick={PageChange}>ラリー企画一覧</Link></li>
                                 <li><Link to="./official-project" onClick={PageChange}>実行委員会企画</Link></li>
+                                <li><Link to="./talent-project" onClick={PageChange}>お笑いライブ</Link></li>
                                 <li><Link to="./lab-open" onClick={PageChange}>研究室紹介</Link></li>
                             </ul>
                         </li>
