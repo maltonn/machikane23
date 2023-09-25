@@ -50,14 +50,11 @@ header > h1{
 .menu-grandparent{
     margin-right: 5px;
 }
-.menu-grandparent li:first-child:not(#en-menu li:first-child){
+.menu-grandparent li:first-child{
     margin-right: 65px;
 }
-.menu-grandparent li:not(#en-menu li){
+.menu-grandparent li{
     margin-right: 20px;
-}
-#en-menu li:nth-child(3){
-    margin-right: 40px;
 }
 .menu-child{
     display: none;
@@ -74,12 +71,6 @@ header > h1{
     border-radius: 20px;
     width: 90%;
 }
-#en-menu .menu-parent:hover .menu-child{
-    width: 115%;
-}
-#en-menu .menu-parent:hover .menu-child.short{
-    width: 80%;
-}
 .menu-child a{
     color:black;
     display: block;
@@ -93,6 +84,14 @@ header > h1{
     border: 0.5px solid rgba(179, 229, 237, 1);
     border-radius: 5px 20px 20px 5px;
     width: 99%;
+}
+.menu-parent:hover .menu-child.en-longTitle{
+    display: block;
+    background : rgba(179, 229, 237, 1);
+	border-color : #72c3f8;
+    animation: FadeIn 0.8s;
+    border-radius: 20px;
+    width: 125%;
 }
 .toggle-button {
     display: flex;
