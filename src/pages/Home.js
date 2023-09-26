@@ -11,7 +11,7 @@ import access from "../imgs/pickup_icon/icon_access.png"
 import map from "../imgs/pickup_icon/icon_map.png"
 import timetable from "../imgs/pickup_icon/icon_stage.png"
 import { Helmet } from "react-helmet";
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import { Link } from "react-router-dom";
 
 

@@ -13,7 +13,6 @@ export default function Footer() {
         });
     }
     const { lang } = useGlobalContext()
-    const { setLang } =useGlobalContext()
     return(
         <footer id="footer">
             <div className="logo"><Link to="/" onClick={PageChange}><img className="machikane_logo" src={machikane_logo} alt="まちかね祭ロゴ"></img></Link></div>
@@ -22,13 +21,13 @@ export default function Footer() {
                     <Link to="https://www.instagram.com/ou_machikanesai/" target="_blank" rel="noreferrer" ><img className="insta" src={insta} alt="instaIcon"></img></Link>
             </div>
             <div className="external-site">
-                <Link to="/" onClick={PageChange}>{lang=="en"?"Top":"トップ"}</Link>|
-                <Link to="https://tyuujitu.com/privacy-policy.html" >{lang=="en"?"Privacy Policy":"プライバシーポリシー"}</Link>
+                <Link to="/" onClick={PageChange}>{lang==="en"?"Top":"トップ"}</Link>|
+                <Link to="https://tyuujitu.com/privacy-policy.html" >{lang==="en"?"Privacy Policy":"プライバシーポリシー"}</Link>
                 {/* |
-                <Link to="/inquiry" onClick={PageChange}>{lang=="en"?"Inquiry":"お問い合わせ"}</Link> */}
+                <Link to="/inquiry" onClick={PageChange}>{lang==="en"?"Inquiry":"お問い合わせ"}</Link> */}
             </div>
             <div className="tyuujitu">
-                <span>&copy;{lang=="en"?"Osaka University Festival Committee":"大阪大学大学祭中央実行委員会"}</span>
+                <span>&copy;{lang==="en"?"Osaka University Festival Committee":"大阪大学大学祭中央実行委員会"}</span>
             </div>
         </footer>
     )

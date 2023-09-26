@@ -13,11 +13,11 @@ export default function Adresses() {
             <title>ご挨拶|まちかね祭2023</title>
             </Helmet>
             <div className="greeting-sky">
-                <PageTitles titles="まちかね祭について"></PageTitles>
+                <PageTitles titles="ご挨拶" kame={true}></PageTitles>
                 <div className="president">
                     <div className="greeting-titles">総長挨拶</div>
                     <div className="greeting-card">
-                        <img src={president}></img>
+                        <img src={president} alt="president"></img>
                         <div className="sentences">
                             <p>
                                 今年も「まちかね祭」の季節が巡ってきました。「まちかね祭」は、毎年、メインテーマを掲げ、大学祭中央実行委員会を中心とした学生の皆さんが、自らの手によって企画・運営する大阪大学の恒例行事です。今年で64回目を迎えます。これまで培ってきた長い歴史と、その伝統を継承してこられた学生の皆さんのご尽力に深く敬意を表します。<br></br>
@@ -37,7 +37,7 @@ export default function Adresses() {
                     <div className="chairperson">
                         <div className="greeting-titles">委員長挨拶</div>
                         <div className="greeting-card">
-                            <img src={chairperson}></img>
+                            <img src={chairperson} alt="chairperson"></img>
                             <div className="sentences">
                                 <p>
                                     ご来場の皆様、本日はまちかね祭にお越しいただきありがとうございます。突然ですが、皆様にとって学祭とはどんなものでしょう。小学生から大学生までの人生を振り返り、皆様の脳裏にはどんな学祭が再生されるでしょうか。一人一人に違った学祭があったのではないかと思います。私は、それぞれ違った学祭にも共通したものがあるとおもいます。それは「一瞬を全力で楽しむこと」です。抱えるものが違っても、学祭期間の一瞬だけは目の前で起こっていることを全力で楽しむことができる。それが学祭だと私は思います。今年のまちかね祭メインテーマは「阪燦々」です。学祭にかかわるすべての人が、笑顔で輝く学祭になるようにという思いが込められています。まちかね祭であふれんばかりの笑顔が咲き誇る光景をみることができれば望外の喜びです。さて、今年はどんなまちかね祭になるのでしょうか。どうか、この一瞬を最高の笑顔で、友達やご家族と楽しんでいただけますと幸いです。最後になりましたが、開催にあたりお力添えいただいた皆様に深く御礼申し上げます。

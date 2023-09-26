@@ -11,7 +11,7 @@ export default function About() {
           <title>まちかね祭とは|まちかね祭2023</title>
         </Helmet>
         <div className="about-sky">
-            <PageTitles titles="まちかね祭について"></PageTitles>
+            <PageTitles titles="まちかね祭について" kame={true}></PageTitles>
             <div className="about-mainpage"> 
               <div className="back-card">
                 <p> まちかね祭」は、11月に開催される大阪大学の大学祭です。

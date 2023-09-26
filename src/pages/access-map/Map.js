@@ -31,7 +31,7 @@ export default function Map() {
             </Helmet>
             <div className="map-sky">
                 <div className="map-top">
-                <PageTitles titles="マップ"></PageTitles>
+                <PageTitles titles="マップ" kame={true}></PageTitles>
                 </div>
                 <div className="map-miniTitles map-titleLong">全体マップ・学内店舗の営業時間</div>
                 <div className="map-mainpage"> 
