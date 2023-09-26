@@ -20,7 +20,7 @@ export default function Access() {
             </Helmet>
             <div className="access-sky">
                 
-                <PageTitles titles="アクセス"></PageTitles>
+                <PageTitles titles="アクセス" kame={true}></PageTitles>
                 
                 <div className="sponsor-miniTitles">開催場所</div>
                 <div className="access-mainpage"> 

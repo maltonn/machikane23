@@ -17,7 +17,6 @@ import 'swiper/css/pagination';
 
 export default function Detail() {
     const { id } = useParams();
-    console.log(id)
     const [project, setProject] = useState(null);
     useEffect(() => {
         fetch(`https://app.tyuujitu-system.net/api/machikane23/website/${id}.json`).then((res) => {
@@ -28,7 +27,7 @@ export default function Detail() {
             console.log(res)
             setProject(res)
         })
-    }, [])
+    }, [id])
     function eventPlace(project){
         if(project.section==="mogiten"){
             return "テント" + project.eventPlace

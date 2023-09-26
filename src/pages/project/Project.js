@@ -177,7 +177,7 @@ export default function Project() {
             </Helmet>
             <div className="sky-project">
                 <div className="search-header">
-                    <PageTitles titles="企画検索"></PageTitles>
+                    <PageTitles titles="企画検索" kame={true}></PageTitles>
                     <div className="search-mainpage"> 
                         <div>
                             <input
