@@ -33,49 +33,43 @@ export default function Map() {
                 <div className="map-top">
                 <PageTitles titles="マップ"></PageTitles>
                 </div>
-                <h1>全体マップ・学内店舗の営業時間</h1>
-                <div className="access-mainpage"> 
+                <div className="map-miniTitles map-titleLong">全体マップ・学内店舗の営業時間</div>
+                <div className="map-mainpage"> 
                     <div className="map-notes">
                         <div className="map-content">
-                            <div className="map-ul">
-                            <li>全体マップ</li>
-                            </div>
+                            <div className="map-ul">全体マップ</div>
                             <div className="map-map"> 
                                 <img src={map} alt="全体マップ"></img>
                             </div>
-                            <div className="map-ul">
-                            <li>学内店舗の営業時間</li><br></br>
-                            </div>
+                            <div className="map-ul">学内店舗の営業時間</div>
                             <div className="map-time">
                                 <div className="map-tables">
                                     <tr>
-                                        <th>店舗名</th> <th>11/3(金)</th> <th>11/4(土)</th> <th>11/5(日)</th>
+                                        <th className="map-tableName">店舗名</th> <th>11/3(金)</th> <th>11/4(土)</th> <th>11/5(日)</th>
                                     </tr>
                                     <tr>
-                                        <td>図書館下コンビニ</td> <td colspan="3">11:00~15:00</td> 
+                                        <td className="map-tableName">図書館下{((window.innerWidth>620&&window.innerWidth<660)||(window.innerWidth<405))&&<br></br>}コンビニ</td> <td colspan="3">11:00~15:00</td> 
                                     </tr>
                                     <tr>
-                                        <td>ローソン</td> <td>9:00~16:00</td> <td>8:00~21:00</td> <td>9:00~16:00</td>
+                                        <td className="map-tableName">ローソン</td> <td>9:00~16:00</td> <td>8:00~21:00</td> <td>9:00~16:00</td>
                                     </tr>
                                     <tr>
-                                        <td>阪大グッズ臨時販売場所(かさね前)</td> <td>ー</td> <td>ー</td> <td>11:00~14:00</td>
+                                        <td className="map-tableName">阪大グッズ{((window.innerWidth>620&&window.innerWidth<720)||(window.innerWidth<440))&&<br></br>}臨時{window.innerWidth<380&&<br></br>}販売場所<br></br>(かさね前)</td> <td>ー</td> <td>ー</td> <td>11:00~14:00</td>
                                     </tr>
                                     <tr>
-                                        <td>カフェ坂</td> <td colspan="3">11:00~14:00</td>
+                                        <td className="map-tableName">カフェ坂</td> <td colspan="3">11:00~14:00</td>
                                     </tr>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <h1>館内マップ</h1>
+                <div className="map-miniTitles map-titleShort">館内マップ</div>
                 {/* AB棟マップ */}
                 <div className="access-mainpage"> 
                     <div className="map-notes">
                         <div className="map-content">
-                            <div className="map-ul">
-                                <li>AB棟</li>
-                            </div>
+                            <div className="map-ul">AB棟</div>
                             <div className="map-item">
                                     <div className="map-AB"> 
                                         <p>1階</p>
@@ -97,9 +91,7 @@ export default function Map() {
                 <div className="access-mainpage"> 
                     <div className="map-notes">
                         <div className="map-content">
-                            <div className="map-ul">
-                                <li>C棟</li>
-                            </div>
+                            <div className="map-ul">C棟</div>
                             <div className="map-item">
                                     <div className="map-C"> 
                                         <p>1階</p>
@@ -125,9 +117,7 @@ export default function Map() {
                 <div className="access-mainpage"> 
                     <div className="map-notes">
                         <div className="map-content">
-                            <div className="map-ul">
-                                <li>法経講義棟</li>
-                            </div>
+                            <div className="map-ul">法経講義棟</div>
                             <div className="map-item">
                                     <div className="map-H"> 
                                         <p>1階</p>
@@ -138,8 +128,8 @@ export default function Map() {
                                         <img src={H2} alt="法経2階"></img>
                                     </div>
                                     <div className="map-H">
-                                            <p>3階</p>
-                                            <img src={H3} alt="法経3階"></img>
+                                        <p>3階</p>
+                                        <img src={H3} alt="法経3階"></img>
                                     </div>
                             </div>
                         </div>
@@ -149,9 +139,7 @@ export default function Map() {
                 <div className="access-mainpage"> 
                     <div className="map-notes">
                         <div className="map-content">
-                            <div className="map-ul">
-                                <li>文法経講義棟</li>
-                            </div>
+                            <div className="map-ul">文法経講義棟</div>
                             <div className="map-item">
                                     <div className="map-B"> 
                                         <p>1階</p>
@@ -162,12 +150,12 @@ export default function Map() {
                                         <img src={B2} alt="文法経2階"></img>
                                     </div>
                                     <div className="map-B">
-                                            <p>3階</p>
-                                            <img src={B3} alt="文法経3階"></img>
+                                        <p>3階</p>
+                                        <img src={B3} alt="文法経3階"></img>
                                     </div>
                                     <div className="map-B">
-                                            <p>4階</p>
-                                            <img src={B4} alt="文法経4階"></img>
+                                        <p>4階</p>
+                                        <img src={B4} alt="文法経4階"></img>
                                     </div>
                             </div>
                         </div>
@@ -177,9 +165,7 @@ export default function Map() {
                 <div className="access-mainpage"> 
                     <div className="map-notes">
                         <div className="map-content">
-                            <div className="map-ul">
-                                <li>学生会館</li>
-                            </div>
+                            <div className="map-ul">学生会館</div>
                             <div className="map-item">
                                     <div className="map-G"> 
                                         <p>2階</p>
@@ -194,7 +180,7 @@ export default function Map() {
                     </div>
                 </div>
                 {/* 屋外模擬店 */}
-                <h1>模擬店・屋外マップ</h1>
+                <div className="map-miniTitles">模擬店・屋外マップ</div>
                 <div className="access-mainpage"> 
                     <div className="map-notes">
                         <div className="map-content">
@@ -207,7 +193,7 @@ export default function Map() {
                     </div>
                 </div>
                 {/* ステージ */}
-                <h1>ステージマップ</h1>
+                <div className="map-miniTitles">ステージマップ</div>
                 <div className="access-mainpage"> 
                     <div className="map-notes">
                         <div className="map-content">
