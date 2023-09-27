@@ -9,6 +9,14 @@ export default function ContactForm() {
   const [category,setCategory]=useState('一般')
 
   const handleSubmit = () => {
+    if(email===''){
+      setWarnMessage('メールアドレスを入力してください')
+      return
+    }
+    if(contents===''){
+      setWarnMessage('お問い合わせ内容を入力してください')
+      return
+    }
     fetch(`https://wwlza1v509.execute-api.ap-northeast-1.amazonaws.com/default/SendEmail?email=${email}&body=${contents}&category=${category}`).then((res) => {
       return res.json()
   }
