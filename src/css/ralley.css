@@ -70,6 +70,7 @@
 .ralley2 img{
     position: relative;
     width: 30%;
+    border-radius: 50px;
     max-width:180px;
     max-height: 180px;
     margin: 1%;
