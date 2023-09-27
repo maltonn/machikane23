@@ -4,9 +4,9 @@ import "../../css/Common.css"
 import { useEffect } from "react" 
 import PageTitles from "../../components/PageTitles";
 import Bubble from "../../components/Bubble";
-import ralley1_icon from "../../imgs/ralley/ralley1_icon.png"
-import ralley2_icon from "../../imgs/ralley/ralley2_icon.png"
-import ralley3_icon from "../../imgs/ralley/ralley3_icon.png"
+import ralley1_icon from "../imgs/ralley/ralley1_icon.png"
+import ralley2_icon from "../imgs/ralley/ralley2_icon.png"
+import ralley3_icon from "../imgs/ralley/ralley3_icon.png"
 
 
 export default function Ralley() {
