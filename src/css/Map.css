@@ -4,15 +4,34 @@ body{
     font-style: normal;
     margin:0;
   }
+  .map-content{
+    font-size: 2rem;
+  }
+  .map-miniTitles{
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    background-color: rgba(255,255,255,0.85);
+    width: 16rem;
+    border-radius: 0 50px 50px 0px;
+    margin-bottom: 15px;
+    color: black;
+}
+.map-titleShort{
+  width: 11rem;
+}
+.map-titleLong{
+  width: 25rem;
+}
   .map-sky{
       color: #233192;
       width:100%;
-      background: linear-gradient( #15c1f6 0%,#b5e5f4 40%, #fff 100%)
+      background: linear-gradient( #15c1f6 0%,#b5e5f4 95%, #fff 100%);
+      padding-bottom: 20rem;
   }
   .map-mainpage{
-    width: 100%;
+    width: 90%;
     padding-bottom: 80px;
-    margin:0 auto;
+    margin:0 auto 0;
   }
   .map-notes{
     font-size: 22px;
@@ -48,16 +67,17 @@ body{
   /* 生協営業時間 */
   .map-time{
     font-size: 15pt;
-    margin: 10px auto;
+    margin: 0 auto 0;
     display: inline-block;
+    margin: 0 auto 0;
   }
   .map-tables {
     border-collapse: collapse;
     text-align: center;
-    position: relative;
     font-size: 20px;
+    margin: 0 auto 0;
   }
-  .map-tables th, tables td {
+  .map-tables th, .map-tables td {
     border: solid  1px #adb3c1;
     padding: 10px;
   }
@@ -70,8 +90,20 @@ body{
   }
   .map-ul{
     list-style-type: none;
-    font-size: 30px;
   }
+  .map-item p{
+    font-size: 1.6rem;
+  }
+  .map-tables{
+    font-size: 1.4rem;
+  }
+  .map-tableName{
+    width: 280px;
+  }
+  .map-ul, .map-stage p{
+    font-size: 1.8rem;
+  }
+
   /* AB棟マップ */
   .map-item{
     display: flex;
@@ -167,7 +199,30 @@ body{
     スマホ用
   ======================*/
 
-  @media (max-width:767px){
+  @media (max-width:500px){
+  /* 生協営業時間 */
+  .map-time{
+    font-size: 15pt;
+    margin: 0 auto 0;
+    display: inline-block;
+  }
+  .map-tables {
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 auto 0;
+  }
+  .map-tables th, map-tables td {
+    border: solid  1px #adb3c1;
+    padding: 10px;
+  }
+  .map-tables td {
+    border: solid  1px #adb3c1;
+    padding:1px 8px;
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+  }
   /* 全体マップ */
   .map-map{
     width:5000px;
@@ -198,6 +253,18 @@ body{
     position: relative;
     vertical-align: middle;
   }
+  .map-miniTitles{
+    padding-left: 2rem;
+    font-size: 1rem;
+    width: 12rem;
+    margin-bottom: 15px;
+}
+.map-titleShort{
+  width: 8rem;
+}
+.map-titleLong{
+  width: 18rem;
+}
 }
 /*======================
     タブレット用
@@ -209,4 +276,89 @@ body{
       font-size: 19px;
       text-decoration: none;
     }
+    .map-item p{
+      font-size: 1.2rem;
+    }
+    .map-tables{
+      font-size: 1rem;
+    }
+    .map-tableName{
+      width: 210px;
+    }
+    .map-ul, .map-stage p{
+      font-size: 1.4rem;
+    }
+    .map-miniTitles{
+      padding-left: 1.5rem;
+      font-size: 1.5rem;
+      width: 16rem;
+      margin-bottom: 15px;
+  }
+  .map-titleShort{
+    width: 11rem;
+  }
+  .map-titleLong{
+    width: 25rem;
+  }
+  }
+
+  /* テーブルの調整 */
+  @media (min-width:620px) and (max-width: 800px){
+    .map-item p{
+      font-size: 1.2rem;
+    }
+    .map-tables{
+      font-size: 0.9rem;
+    }
+    .map-tableName{
+      width: 210px;
+    }
+    .map-ul, .map-stage p{
+      font-size: 1.4rem;
+    }
+  }
+  @media (min-width:550px) and (max-width: 620px){
+    .map-item p{
+      font-size: 1.2rem;
+    }
+    .map-tables{
+      font-size: 0.7rem;
+    }
+    .map-ul, .map-stage p{
+      font-size: 1.4rem;
+    }
+  }
+  @media (min-width:380px) and (max-width: 550px){
+    .map-item p{
+      font-size: 1.2rem;
+    }
+    .map-tables{
+      font-size: 0.6rem;
+    }
+    .map-ul, .map-stage p{
+      font-size: 1.4rem;
+    }
+  }
+  @media (max-width:380px){
+    .map-item p{
+      font-size: 1.2rem;
+    }
+    .map-tables{
+      font-size: 0.6rem;
+    }
+    .map-ul, .map-stage p{
+      font-size: 1.4rem;
+    }
+    .map-miniTitles{
+      padding-left: 2rem;
+      font-size: 0.8rem;
+      width: 9rem;
+      margin-bottom: 15px;
+  }
+  .map-titleShort{
+    width: 6rem;
+  }
+  .map-titleLong{
+    width: 14rem;
+  }
   }

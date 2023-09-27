@@ -6,7 +6,6 @@ import Bubble from "../../components/Bubble";
 import "../../css/Common.css"
 import "../../css/Theme.css"
 import "../../css/About.css"
-import machikame1 from "../../imgs/animal/machikame1.png"
 export default function Theme() {
     return(
         <div className="main">
@@ -14,7 +13,7 @@ export default function Theme() {
             <title>テーマ|まちかね祭2023</title>
             </Helmet>
           <div className ="theme-sky">
-            <PageTitles titles="テーマ"></PageTitles>
+            <PageTitles titles="テーマ" kame={true}></PageTitles>
               <div className = "themep-mainpage">
                 <div className="themep-name">
                   "<ruby>阪燦々<rt>はんさんさん</rt></ruby>"

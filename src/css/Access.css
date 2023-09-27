@@ -7,10 +7,11 @@ body{
   .access-sky{
       color: #233192;
       width:100%;
-      background: linear-gradient( #15c1f6 0%,#b5e5f4 40%, #fff 100%)
+      background: linear-gradient( #15c1f6 0%,#b5e5f4 80%, #fff 100%);
+      padding-bottom: 80px;
   }
   .access-mainpage{
-    width: 100%;
+    width: 92%;
     padding-bottom: 80px;
     margin:0 auto;
   }
@@ -39,16 +40,33 @@ body{
     display:block;
     background-color: rgba(255,255,255,0.58);
     border-radius: 50px;
-    text-align: center;
+    text-align: left;
     box-sizing: border-box;
     width: 100%;
     padding: 25px;
+  }
+  .access-holdingPlace{
+    text-align: center;
+  }
+  .access-inquiry{
+    font-size: 1.2rem;
+  }
+  .access-center{
+    margin: 15px auto;
   }
  /*======================
     スマホ用
   ======================*/
 
     @media (max-width:767px){
+      .access-content{
+        font-size: 0.8rem;
+        padding: 15px;
+        margin: 0;
+      }
+      .access-inquiry{
+        font-size: 0.8rem;
+      }
       /* 四角の大きさ調整 */
       .access-notes{
         box-sizing: contents-box;
@@ -71,6 +89,13 @@ body{
     タブレット用
   ======================*/
   @media (min-width:500px) and (max-width: 1070px){
+    .access-content{
+      font-size: 1rem;
+      padding: 15px;
+    }
+    .access-inquiry{
+      font-size: 1rem;
+    }
     .access-notes{
       box-sizing: contents-box;
       width: 80%;

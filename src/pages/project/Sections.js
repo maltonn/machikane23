@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
 import PageTitles from "../../components/PageTitles";
 import Bubble from "../../components/Bubble";
 
@@ -11,7 +11,7 @@ export default function Sections() {
             <title>企画区分について|まちかね祭2023</title>
             </Helmet>
             <div className="notes-sky">
-                <PageTitles titles="企画区分について"></PageTitles>
+                <PageTitles titles="企画区分について" kame={true}></PageTitles>
                 <div className="notes-mainpage">
                     <div className="notes-all">
                         <div className="notes-naiyou">

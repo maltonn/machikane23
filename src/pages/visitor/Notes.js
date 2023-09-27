@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet";
-import machikame1 from "../../imgs/animal/machikame1.png"
 import {Link} from "react-router-dom";
 import "../../css/Common.css"
 import "../../css/Notes.css"
@@ -18,7 +17,7 @@ export default function Notes() {
             <title>注意事項|まちかね祭2023</title>
             </Helmet>
             <div className="notes-sky">
-                <PageTitles titles="注意事項"></PageTitles>
+                <PageTitles titles="注意事項" kame={true}></PageTitles>
                 <div className="notes-mainpage">
                     <div className="notes-all">
                         <div className="notes-naiyou">
