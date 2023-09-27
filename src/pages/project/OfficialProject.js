@@ -12,7 +12,7 @@ import free from "../../imgs/official_project/free.png"
 import ticket from "../../imgs/official_project/ticket.png"
 import house from "../../imgs/official_project/house.png"
 import clock from "../../imgs/official_project/clock.png"
-import leaf from "../../imgs/official_project/leaf.png"
+import leaf from "../../imgs/official_project/leaf1.png"
 import bonber from "../../imgs/official_project/bonber.png"
 
 import PageTitles from "../../components/PageTitles";
@@ -29,7 +29,9 @@ export default function OfficialProject() {
                     <div className="offiProCard">
                         <div className="offiProCard-title">ぱんけえき焼きた亭</div>
                         <div className="inforAll">
-                            <img className="officialIcon" src={pancakeLogo} alt="ぱんけえき焼きた亭のアイコン"></img>
+                            <div className="IconBox">
+                                <img className="officialIcon" src={pancakeLogo} alt="ぱんけえき焼きた亭のアイコン"></img>
+                            </div>
                             <div className="information">
                                 <p>・時間:10:00-18:00</p>
                                 <p>・場所:メインストリート テント40</p>
@@ -42,7 +44,9 @@ export default function OfficialProject() {
                     <div className="offiProCard">
                         <div className="offiProCard-title">まちかねの森</div>
                         <div className="inforAll">
-                            <img className="officialIcon" src={machikaneForestLogo} alt="まちかねの森のアイコン"></img>
+                            <div className="IconBox">
+                                <img className="officialIcon" src={machikaneForestLogo} alt="まちかねの森のアイコン"></img>
+                            </div>
                             <div className="information">
                                 <p>・時間:10:00-12:00,13:00-17:00</p>
                                 <p>・場所:C106</p>
@@ -55,7 +59,9 @@ export default function OfficialProject() {
                     <div className="offiProCard nepleageCard">
                         <div className="offiProCard-title">マチカネプリーグ</div>
                         <div className="inforAll">
-                            <img className="officialIcon" src={nepleage} alt="マチカネプリーグのアイコン"></img>
+                            <div className="IconBox">
+                                <img className="officialIcon" src={nepleage} alt="マチカネプリーグのアイコン"></img>
+                            </div>
                             <div className="information">
                                 <p>・時間:10:00-12:00 13:00-17:00</p>
                                 <p>・場所:C105</p>
@@ -68,7 +74,9 @@ export default function OfficialProject() {
                     <div className="offiProCard O-1card">
                         <div className="offiProCard-title">O-1GrandPrix</div>
                         <div className="inforAll">
-                            <img className="officialIcon" src={O1Logo} alt="O-1GrandPrixのアイコン"></img>
+                            <div className="IconBox">
+                                <img className="officialIcon" src={O1Logo}  alt="O-1GrandPrixのアイコン"></img>
+                            </div>
                             <div className="information">
                                 <p>・時間:11/05（企画日3日目） 17:00-19:00</p>
                                 <p>・場所:ステージ奏</p>
@@ -101,19 +109,19 @@ export default function OfficialProject() {
                                 <div className="pancakeBoxs">
                                     <div className="pancakeBoxAround">
                                         <p className="pancakeBox">
-                                            <div>1．焼きた亭のパンケーキはいつでも「焼きたて」を提供!</div>
+                                            <div><strong>1．焼きた亭のパンケーキはいつでも「焼きたて」を提供!</strong></div>
                                             注文を受けてから作るのでパンケーキはいつでも焼きたて! 好きなトッピングをかけてできあがったホクホクパンケーキはうまいこと間違いなし!
                                         </p>
                                         <p className="pancakeBox">
-                                            <div className="pancakeBoxTitle">2．パンケーキ以外のメニューも豊富</div>
+                                            <div className="pancakeBoxTitle"><strong>2．パンケーキ以外のメニューも豊富</strong></div>
                                             焼きた亭ではドリンクも提供しています。みんなだいすきラムネジュース! 学祭で飲むラムネは青春の味! シュワっとはじけてさらにまちかね祭へのモチベを上げちゃいませんか?!
                                         </p>
                                         <p className="pancakeBox">
-                                            <div className="pancakeBoxTitle">3．おいしいパンケーキに種類豊富なトッピング</div>
+                                            <div className="pancakeBoxTitle"><strong>3．おいしいパンケーキに種類豊富なトッピング</strong></div>
                                             選べるトッピングは、①パンケーキの王道！「メイプルシロップ」②甘党さんにおすすめ！「塩キャラメル」③深みのある味！「黒蜜きなこ」④食べたことない組み合わせ？！「はちみつレモン」皆さんの推しトッピングを見つけてくださいね
                                         </p>
                                         <p className="pancakeBox">
-                                            <div className="pancakeBoxTitle">4．甘いもの苦手さんにはこちら</div>
+                                            <div className="pancakeBoxTitle"><strong>4．甘いもの苦手さんにはこちら</strong></div>
                                             パンケーキに何かトッピングはしたいけど、甘いものは苦手だなあという方には「ベーコンケチャップ」がおすすめ！他のお店ではあまり見ないパンケーキとベーコンのコラボ！ぜひご賞味あれ～
                                         </p>
                                     </div>
@@ -123,33 +131,67 @@ export default function OfficialProject() {
                         <div className="detail">
                             <h2 className="projectTitle">まちかねの森</h2>
                             <ul className="forestSimpleInfor">
-                                <li className="forestPlace"><img src={house}></img>C-106</li>
-                                <li className="forestMoney"><img src={free}></img>無料</li>
-                                <li className="forestTicket"><img src={ticket}></img>なくなり次第終了</li>
-                                <li className="forestTime"><img src={clock}></img><p>10：00～12：00</p><p>13:00～17:00（全日）</p></li>
+                                <li className="forestPlace">
+                                    <table>
+                                        <tr>
+                                            <td><img src={house} alt="まちかねの森企画場所"></img></td>
+                                            <td>C-106</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li className="forestMoney">
+                                    <table>
+                                        <tr>
+                                            <td><img src={free} alt="まちかねの森"></img></td>
+                                            <td>無料</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li className="forestTicket">
+                                    <table>
+                                        <tr>
+                                            <td><img src={ticket} alt="整理券"></img>
+                                            </td>
+                                            <td>なくなり次第終了</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li className="forestTime">
+                                    <table>
+                                        <tr>
+                                            <td><img src={clock} alt="開催時間"></img>
+                                            </td>
+                                            <td><p>10：00～12：00</p><p>13:00～17:00（全日）</p></td>
+                                        </tr>
+                                    </table>
+                                </li>
                             </ul>
                             <div className="pointAll">
                                 <div className="pointBox">
-                                    <p className="pointTitle">Point1</p>
+                                    <img src={leaf} alt="葉っぱ"></img>
                                     <p className="pointContent">
+                                    Point1
                                     どうぶつの森のようにフルーツ狩りや魚釣りができます！（丁寧にルール説明をするのでどうぶつの森を知らなくても楽しめます！）
                                     </p>
                                 </div>
                                 <div className="pointBox">
-                                    <p className="pointTitle">Point2</p>
+                                    <img src={leaf} alt="葉っぱ"></img>
                                     <p className="pointContent">
+                                    Point2
                                     小さなお子様大歓迎！どなたにでも楽しんでいただけるゲームをご用意しています！
                                     </p>
                                 </div>
                                 <div className="pointBox">
-                                    <p className="pointTitle">Point3</p>
+                                    <img src={leaf} alt="葉っぱ"></img>
                                     <p className="pointContent">
+                                    Point3
                                     どうぶつの森の世界観を再現しつつ実行委員のオリジナルも盛り込まれた素敵な空間です
                                     </p>
                                 </div>
                                 <div className="pointBox">
-                                    <p className="pointTitle">Point4</p>
+                                    <img src={leaf} alt="葉っぱ"></img>
                                     <p className="pointContent">
+                                    Point4
                                     各ゲームでポイントをゲットできます！沢山ポイントを集められた人には豪華な景品があるかも！？
                                     </p>
                                 </div>
@@ -157,19 +199,21 @@ export default function OfficialProject() {
                         </div>
                         <div className="detail">
                             <div className="nepleageQuestion">
-                                Q．マチカネプリーグの特徴4つ答えろ
+                                <p>
+                                    Q．マチカネプリーグの特徴4つ答えろ
+                                </p>
                             </div>
-                            <div className="nepleageBar"><img src={bonber}></img></div>
-                            <div className="nepleageInfor">
-                                <div className="nepleagePlace">C105</div>
-                                <div className="nepleageFree">無料</div>
-                                <div className="nepleageTicket">整理券あり</div>
-                                <div className="nepleageFor">高校生・大学生向け</div>
-                            </div>
+                            <div className="nepleageBar"><img src={bonber} alt="ネプリーグのバー"></img></div>
+                            <ul className="nepleageInfor">
+                                <li className="nepleagePlace"> C105 </li>
+                                <li className="nepleageFree"> 無料 </li>
+                                <li className="nepleageTicket">整理券あり</li>
+                                <li className="nepleageFor">高校生・大学生向け</li>
+                            </ul>
                         </div>
                         <div className="detail">
                             <div className="O-1Title"></div>
-                            <div className="O-1DetailIcon"><img src={O1Logo}></img></div>
+                            <div className="O-1DetailIcon"><img src={O1Logo} alt="O-1アイコン"></img></div>
                             <div className="O-1Preparetion">Coming soon</div>
                         </div>
                     </div>

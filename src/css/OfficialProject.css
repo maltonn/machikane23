@@ -1,32 +1,10 @@
-/* .pageTitle{
-    margin-top: 3em;
-    position: relative;
-    display: inline-block;
-    margin-left: 30px;
-    /* padding: 1rem 2rem 1rem 3rem; */
-    /* color: #fff;
-    background: #233192;
-    font-size: 3vw; */
-/* } */
-/* .pageTitle::before{
-  position: absolute;
-  top: 0;
-  left: -30px;
-  content: '';
-  border-width: 32px 30px 32px 0;
-  border-style: solid;
-  border-color: transparent #233192 transparent transparent;
+.officialProject{
+  position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0px;
+    z-index: 1000;
 }
-.pageTitle::after{
-  position: absolute;
-  top: calc(50% - 7px);
-  left: -10px;
-  width: 14px;
-  height: 14px;
-  content: '';
-  border-radius: 50%;
-  background: #fff; */
-/* }  */
 
 .offiProCard {
     display: flexbox;
@@ -197,12 +175,14 @@
 .forestSimpleInfor{
   display: flex;
   flex-wrap: nowrap;
+  padding-left: 0;
 }
 .forestSimpleInfor img{
-  width: 100%;
+  width: 10vw;
 }
 .forestSimpleInfor li{
   list-style: none;
+  width: 100%;
 }
 .pointAll{
   display: flex;
@@ -211,35 +191,72 @@
   justify-content: space-around;
 }
 .pointBox{
+  position: relative;
   justify-content: center;
   align-items: center;
-  background: url("../imgs/official_project/leaf.png") no-repeat center center / cover;
-  width: 38vw;
-  height: 40vh;
-  padding: 2vw;
+}
+.pointBox img{
+  width: 100%;
 }
 .pointBox .pointTitle{
   text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
 }
 .pointBox .pointContent{
-  padding: 0 15vw;
+  /* padding: 1vh 10vw; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .officialProject .O-1card, .officialProject .nepleageCard{
   margin-bottom: 30vh;
 }
 
+.nepleageQuestion{
+  border: double 4px rgb(184, 6, 6);
+  background-color: rgb(249, 215, 27);
+  border-radius: 1vw;
+  padding-left: 1vw;
+  margin-bottom: 2vh;
+}
+.nepleageQuestion p{
+  font-size: 3vw;
+}
 .nepleageBar img {
   width: 75%;
-  margin: 0 10vw;
+  margin: 0 12.5%;
+}
+.nepleageInfor{
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+  justify-content: space-around;
+  border: 3px solid #000;
+  width: 80%;
+  margin: 0 10%;
+  padding: 3vh 0;
+  background-color: #dad8d8;
+}
+.nepleageInfor li{
+  list-style: none;
+  border: #000 solid 3px;
+  padding: 2vh 1vw;
+  width: 100%;
+  margin: 0 2vw;
+  background-color: #233192;
+  color: #fff;
 }
 
 .O-1DetailIcon{
-  /* margin: 0 auto; */
+  text-align: center; 
 }
 .O-1DetailIcon img {
-  width: 75%;
-  margin: 0 10vw;
+  height: 90vh;
 }
 
 @media screen and (max-width:490px){
@@ -259,10 +276,47 @@
     margin: 0 1em;
   }
   .officialProject .O-1card{
-    margin-bottom: 15vw;
+    margin-bottom: 15vh;
+  }
+  .officialProject .nepleageCard{
+    margin-bottom: 0;
   }
   .inforAll{
     display: block;
+  }
+
+  .pancakeInfor ul{
+    display: block;
+    padding-left: 0;
+  }
+  .IconAround{
+    width: 0 10vw;
+  }
+  .IconBox{
+    margin: 0 10vw;
+  }
+  .pancakeBox{
+    width: 100%;
+  }
+  .pancakeDetail{
+    display: block;
+  }
+  .pancakeBoxAround{
+    display: block;
+  }
+
+  .forestSimpleInfor{
+    display: block;
+  }
+  .forestPlace img, .forestMoney img, .forestTicket img, .forestTime img{
+    width: 40vw;
+  }
+
+  .pointAll{
+    display: block;
+  }
+  .pointBox{
+    width: 100%;
   }
 }
 
