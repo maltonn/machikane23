@@ -8,8 +8,6 @@ import Bubble from "../../components/Bubble";
 import ralley1_icon from "../../imgs/ralley/ralley1_icon.png"
 import ralley2_icon from "../../imgs/ralley/ralley2_icon.jpg"
 import ralley3_icon from "../../imgs/ralley/ralley3_icon.jpg"
-import startbooth from "../../imgs/ralley/startbooth.png"
-
 
 export default function Ralley() {
     return(
@@ -25,11 +23,9 @@ export default function Ralley() {
                     <p>
                     メインストリート上、ピロティ付近のテントがスタートです。ぜひお越しください！！
                     </p>
-                    <img src={startbooth} alt="スタートブース"></img>
+                    {/* <img src={startbooth} alt="スタートブース"></img> */}
                 </div>
-                <div classname="ralley-intro">
-                    <div className="ralley-subtitle">ラリー企画紹介</div>
-                    
+                <div className="ralley-intro">
                     <div className="ralley1">
                         <img src={ralley1_icon}></img>
                         <div className="ralley1-content">
@@ -39,7 +35,6 @@ export default function Ralley() {
                             </div>
                         </div>
                     </div>
-
                     <div className="ralley2">
                         <img src={ralley2_icon}></img>
                         <div className="ralley2-content">
