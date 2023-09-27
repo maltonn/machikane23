@@ -1,0 +1,120 @@
+/* カード */
+.lab-container{
+    border: 1px solid black;
+    margin: 10px;
+    width: 98%;
+    display: inline-flex;
+    font-size: 1rem;
+}
+.labCard-content{
+    padding: 0 5px;
+    width: calc(100% - 115px);
+    margin-bottom: 10px;
+}
+.labProjectName{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.labCard-contentTitle{
+    font-size: 1.2rem;
+}
+.labCard-organizer{
+    text-align: right;
+}
+.labCard-secondContent{
+    margin: 15px 0;
+    border: thick double #32a1ce;
+    padding: 3px;
+}
+.labCard-thirdContent{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.labCard-thirdContent div{
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+/*======================
+  スマホ用
+======================*/
+@media  (max-width: 430px){
+    .lab-container{
+        margin: 10px;
+        width: 95%;
+        font-size: 0.6rem;
+    }
+    .labCard-content{
+        padding: 0 5px;
+        width: calc(100% - 115px);
+        margin-bottom: 10px;
+    }
+    .labProjectName{
+        font-size: 1rem;
+    }
+    .labCard-contentTitle{
+        font-size: 0.8rem;
+    }
+    .labCard-secondContent{
+        margin: 15px 0;
+        padding: 3px;
+    }
+    .labCard-thirdContent div{
+        margin-right: 15px;
+    }
+}
+    
+    
+/*======================
+    タブレット用
+======================*/
+@media (min-width: 560px) and (max-width: 1070px){
+    .lab-container{
+        margin: 10px;
+        width: 95%;
+        font-size: 1rem;
+    }
+    .labCard-content{
+        padding: 0 5px;
+        width: calc(100% - 115px);
+        margin-bottom: 10px;
+    }
+    .labProjectName{
+        font-size: 1.5rem;
+    }
+    .labCard-contentTitle{
+        font-size: 1.2rem;
+    }
+    .labCard-secondContent{
+        margin: 15px 0;
+        padding: 3px;
+    }
+    .labCard-thirdContent div{
+        margin-right: 15px;
+    }
+}
+@media (min-width: 430px) and (max-width: 560px){
+    .lab-container{
+        margin: 10px;
+        width: 95%;
+        font-size: 0.8rem;
+    }
+    .labCard-content{
+        padding: 0 5px;
+        width: calc(100% - 115px);
+        margin-bottom: 10px;
+    }
+    .labProjectName{
+        font-size: 1.2rem;
+    }
+    .labCard-contentTitle{
+        font-size: 1rem;
+    }
+    .labCard-secondContent{
+        margin: 15px 0;
+        padding: 3px;
+    }
+    .labCard-thirdContent div{
+        margin-right: 15px;
+    }
+}

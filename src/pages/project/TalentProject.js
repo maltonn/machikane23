@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet"
+import PageTitles from "../../components/PageTitles"
 import "../../css/TalentProject.css"
 
 import tombrown from "../../imgs/talentProject/tombrown.png"
@@ -13,9 +14,12 @@ export default function TalentProject(){
                 <title>タレント企画|まちかね祭2023</title>
             </Helmet>
             <div className="talentTop">
-                <h1 className="talentTitle"><span className="ribon">阪大にトム・ブラウンがやってくる！</span></h1>
-                <div className="machikame1"><img src={machikame1}></img></div>
-                <div className="tombrown"><img src={tombrown} className="tombrownImg"></img></div>
+                <PageTitles titles="お笑いライブ" kame={true}></PageTitles>
+                <div className="talentBox">
+                    <h1 className="talentTitle"><span className="ribon">阪大にトム・ブラウンがやってくる！</span></h1>
+                    <div className="machikame1"><img src={machikame1}></img></div>
+                    <div className="tombrown"><img src={tombrown} className="tombrownImg"></img></div>
+                </div>
                 <div className="autographBlock">
                     <div className="machikani1"><img src={machikani}></img></div>
                     <p className="autograph">サインがもらえるかも!?</p>
