@@ -8,6 +8,7 @@ import Bubble from "../../components/Bubble";
 import ralley1_icon from "../../imgs/ralley/ralley1_icon.png"
 import ralley2_icon from "../../imgs/ralley/ralley2_icon.jpg"
 import ralley3_icon from "../../imgs/ralley/ralley3_icon.jpg"
+import startbooth from "../../imgs/ralley/startbooth.png"
 
 export default function Ralley() {
     return(
@@ -23,11 +24,11 @@ export default function Ralley() {
                     <p>
                     メインストリート上、ピロティ付近のテントがスタートです。ぜひお越しください！！
                     </p>
-                    {/* <img src={startbooth} alt="スタートブース"></img> */}
+                    <img src={startbooth} alt="スタートブース"></img>
                 </div>
                 <div className="ralley-intro">
                     <div className="ralley1">
-                        <img src={ralley1_icon}></img>
+                        <img src={ralley1_icon} alt="アイコン１"></img>
                         <div className="ralley1-content">
                             <div className="ralley1-title">再履バス同好会</div>
                             <div classname="ralley1-intro">
@@ -36,7 +37,7 @@ export default function Ralley() {
                         </div>
                     </div>
                     <div className="ralley2">
-                        <img src={ralley2_icon}></img>
+                        <img src={ralley2_icon} alt="アイコン２"></img>
                         <div className="ralley2-content">
                             <div className="ralley2-title">阪大言語サークルGGC</div>
                             <div className="ralley2-intro">
@@ -46,7 +47,7 @@ export default function Ralley() {
                     </div>
 
                     <div className="ralley3">
-                        <img src={ralley3_icon}></img>
+                        <img src={ralley3_icon} alt="アイコン３"></img>
                         <div className="ralley3-content">
                             <div className="ralley3-title">阪大謎解きサークル OUtfoX</div>
                             <div className="ralley3-intro">
