@@ -7,7 +7,7 @@
       #fff 100%);
   }
   .ralley-mainpage{
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     background-color: rgba(255,255,255,0.58);
     border-radius: 50px;
     width: 92%;
@@ -27,34 +27,33 @@
     margin-top :10%;
 }
 .ralley1{
-    font-size: 1.3rem;
     border: solid 3px #fff;
     border-radius: 50px;
     width: 92%;
-    box-sizing: border-box;
-    padding: 30px 80px ;
-    margin:10% auto 5px;
+    display:inline-flex;
+    margin:38px;
 
 }
 .ralley1-title{
-    font-size: 1.6rem;
-    position: relative;
-    left: 40%;
-    bottom: 15rem;
+    font-size: 2rem;
+
 }
 .ralley1 img{
     position: relative;
     width: 30%;
+    margin:1%;
+    max-width: 180px;
+    max-height: 180px;
+    border-radius: 50px;
 }
 .ralley1-content{
     position: relative;
-    width: 50%;
-    left:40%;
-    bottom: 15rem;
+    margin-left:5%;
+    font-size: 1.6rem;
 }
+
 .ralley1-linkbutton{
     position:relative;
-    bottom: 19rem;
 }
 
 .ralley2{
@@ -62,58 +61,53 @@
     border: solid 3px #fff;
     border-radius: 50px;
     width: 92%;
-    box-sizing: border-box;
-    padding: 30px 80px ;
-    margin:10% auto 5px;
-
+    display: inline-flex;
+    margin: 38px;
 }
 .ralley2-title{
-    font-size: 1.6rem;
-    position: relative;
-    left: 40%;
-    bottom: 15rem;
+    font-size: 2rem;
 }
 .ralley2 img{
     position: relative;
     width: 30%;
+    max-width:180px;
+    max-height: 180px;
+    margin: 1%;
 }
 .ralley2-content{
     position: relative;
-    width: 50%;
-    left:40%;
-    bottom: 15rem;
+    margin-left:5%;
+    font-size: 1.6rem;
 }
 .ralley2-linkbutton{
     position:relative;
-    bottom: 19rem;
 }
 .ralley3{
     font-size: 1.3rem;
     border: solid 3px #fff;
     border-radius: 50px;
     width: 92%;
-    box-sizing: border-box;
-    padding: 30px 80px ;
-    margin:10% auto 5px;
-
+    display: inline-flex;
+    margin: 38px;
 }
 .ralley3-title{
-    font-size: 1.6rem;
+    font-size: 2rem;
     position: relative;
-    left: 40%;
-    bottom: 15rem;
 }
 .ralley3 img{
     position: relative;
     width: 30%;
+    max-width: 180px;
+    max-height: 180px;
+    margin: 1%;
+    border-radius: 50px;
+
 }
 .ralley3-content{
     position: relative;
-    width: 50%;
-    left:40%;
-    bottom: 15rem;
+    margin-left: 5%;
+    font-size: 1.6rem;
 }
 .ralley3-linkbutton{
     position:relative;
-    bottom: 19rem;
 }
