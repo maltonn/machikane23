@@ -22,7 +22,7 @@
     width: 50%;
 }
 .ralley-subtitle{
-    font-size: 1.6rem;
+    font-size: 2rem;
     text-align: center;
     margin-top :10%;
 }
@@ -36,7 +36,7 @@
 }
 .ralley1-title{
     font-size: 2rem;
-
+    text-decoration: underline 2px #fff;
 }
 .ralley1 img{
     position: relative;
@@ -45,6 +45,7 @@
     max-width: 180px;
     max-height: 180px;
     border-radius: 50px;
+    border:solid 2px #fff;
 }
 .ralley1-content{
     position: relative;
@@ -66,6 +67,7 @@
 }
 .ralley2-title{
     font-size: 2rem;
+    text-decoration: underline 2px #fff;
 }
 .ralley2 img{
     position: relative;
@@ -74,6 +76,7 @@
     max-width:180px;
     max-height: 180px;
     margin: 1%;
+    border:solid 2px #fff;
 }
 .ralley2-content{
     position: relative;
@@ -94,6 +97,7 @@
 .ralley3-title{
     font-size: 2rem;
     position: relative;
+    text-decoration: underline 2px #fff;
 }
 .ralley3 img{
     position: relative;
@@ -102,6 +106,7 @@
     max-height: 180px;
     margin: 1%;
     border-radius: 50px;
+    border:solid 2px #fff;
 
 }
 .ralley3-content{
