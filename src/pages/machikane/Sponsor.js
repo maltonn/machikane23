@@ -22,7 +22,7 @@ export default function Sponsor() {
             <div className="sponsor-sky">
                 <PageTitles titles="ご協賛"></PageTitles>
                 <div className="companies goods">
-                    <div className="sponsor-miniTitles">物品協賛</div>
+                    <div className="sponsor-miniTitles">物品協賛（順不同）</div>
                     <div className="sponsor-imgs">
                         <a href="https://solaniwa.com/"><img src={solaniwaonsen}></img></a>
                         <a href="https://www.sudio.com/jp/"><img src={sudio}></img></a>
