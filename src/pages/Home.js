@@ -83,7 +83,7 @@ export default function Home() {
             <span id="title">ご来場の皆様へ</span>
             <div className="content">まちかね祭に車でご来場いただくことはできません。<br/>ご来場の際は公共交通機関をご利用ください。<br/>来場予約は不要です。</div>
             <p>お笑いライブは予約必須です。下のボタンから予約サイトへアクセスください。</p>
-            <div className="top-linkButton live-reservation"><a href="https://app.tyuujiu-system.net/machikane23/visotor/talent-live/reservation">お笑いライブ<br></br>予約サイト</a></div>
+            <div className="top-linkButton live-reservation"><a href="https://app.tyuujitu-system.net/machikane23/visotor/talent-live/reservation">お笑いライブ<br></br>予約サイト</a></div>
             <p>お笑いライブ詳細は<Link to="./talent-project" onClick={PageChange}>こちら</Link></p>
             <p>企画検索はこちら</p>
             <p>その他注意事項がございますので、下のボタンからご覧ください。</p>
@@ -99,7 +99,7 @@ export default function Home() {
 
             <div className="ocean-card">
               <div className="titles"><nobr><p className="item1">●</p><span id="title">企画区分について</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
-              <p>企画区分の説明は下のボタンから</p>
+              <p>企画区分の説明は、下のボタンからどうぞ</p>
               <div className="ocean-link-button"><Link to="./sections" onClick={PageChange}>企画区分を知る</Link></div>
             </div>
             <div className="ocean-card schedule">
@@ -133,9 +133,9 @@ export default function Home() {
             </div>
 
           <div className="ocean-card lab">
-            <div className="titles"><nobr><p className="item1">●</p><span id="title">研究室紹介</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
-            <p>研究室の企画は、以下のリンクからご覧ください。</p>
-            <div className="ocean-link-button"><Link to="/lab-open" onClick={PageChange}>詳細はこちら</Link></div>
+            <div className="titles"><nobr><p className="item1">●</p><span id="title">研究室公開</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
+            <p>研究室の企画は、下のボタンからどうぞ</p>
+            <div className="ocean-link-button"><Link to="/lab-open" onClick={PageChange}>研究室公開</Link></div>
             </div>
 
           <div className="ocean-card" id="pickup">

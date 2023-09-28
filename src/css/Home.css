@@ -60,7 +60,7 @@ body{
   font-size: 1.2rem;
 }
 .ocean-link-button{
-  background-color: #e8bf6e;
+  background-color: #e8886e;
   border-radius: 50px;
   width: 30%;
   margin: 0 auto;
@@ -286,6 +286,7 @@ body{
 }
 .top-linkButton{
   margin: 0 auto 0;
+  font-size: 1.2rem;
 }
 .live-reservation{
   background: #fff;
@@ -294,6 +295,7 @@ body{
   font-size: 1.2rem;
   justify-content: center;
   display: flex;
+  border-radius: 5px;
 }
 .live-reservation a{
   text-decoration: none;

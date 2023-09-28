@@ -167,7 +167,7 @@ export default function Project() {
     }
 
     function detail(project){
-        return <Link className="toDetail" to={"/project-search/"+project.id} onClick={PageChange}>▷Show more</Link>
+        return <Link className="toDetail" to={"/project-search/"+project.id} onClick={PageChange}>▷もっと見る</Link>
     }
 
     return (
@@ -239,6 +239,7 @@ export default function Project() {
                             return null
                         }
                         return (
+                            <Link className="card-detailLink" to={"/project-search/"+project.id} onClick={PageChange}>
                             <div key={project.id} className="project-container">
                                 <img src={project.icon} className="project-card-icon" alt="icon"></img>
                                 <div className="card-content">
@@ -254,6 +255,7 @@ export default function Project() {
                                     <div className="toDetailParent">{detail(project)}</div>
                                 </div>
                             </div>
+                            </Link>
                         )
                     })}
                 </div>
