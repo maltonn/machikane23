@@ -9,7 +9,7 @@ import allstickers from "../../imgs/goods/stickers_line.png"
 // import stickers2 from "../../imgs/goods/stickers2.png"
 import pendetail from "../../imgs/goods/pen-detail.png"
 // import pen1 from "../../imgs/goods/pen1.jpg"
-import tote from "../../imgs/goods/tote.png"
+import tote from "../../imgs/goods/totebag.png"
 import allgoods from "../../imgs/goods/allgoods.png"
 import PageTitles from "../../components/PageTitles";
 import Bubble from "../../components/Bubble";
@@ -20,7 +20,7 @@ export default function GoodsEn() {
             <title>Goods|Machikane2023</title>
             </Helmet>
             <div className="goods-sky">
-                <PageTitles titles="グッズ" kame={false}></PageTitles>
+                <PageTitles titles="Goods" kame={false}></PageTitles>
                 <div className="goods-mainpage">
                     <div className="goods-back-card">
                         <p>今年のまちかね祭では、ステッカー、ボールペン、トートバッグを総合案内所にて販売します。</p>
