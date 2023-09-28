@@ -21,7 +21,7 @@ export default function Sponsor() {
             </Helmet>
             <div className="sponsor-sky">
                 <PageTitles titles="ご協賛"></PageTitles>
-                <p>この度ご支援・ご協力いただいた皆様に厚く御礼申し上げます。</p>
+                <p>まちかね祭開催にあたって、多くのご協賛・ご協力をいただきました。ここに深く御礼申し上げます。</p>
                 <div className="companies goods">
                     <div className="sponsor-miniTitles">物品協賛（順不同）</div>
                     <div className="sponsor-imgs">
