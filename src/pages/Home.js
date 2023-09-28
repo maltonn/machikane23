@@ -98,7 +98,7 @@ export default function Home() {
 
             <div className="ocean-card">
               <div className="titles"><nobr><p className="item1">●</p><span id="title">企画区分について</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
-              <p>企画区分の説明は下のボタンから</p>
+              <p>企画区分の説明は、下のボタンからどうぞ</p>
               <div className="ocean-link-button"><Link to="./sections" onClick={PageChange}>企画区分を知る</Link></div>
             </div>
             <div className="ocean-card schedule">
@@ -133,7 +133,7 @@ export default function Home() {
 
           <div className="ocean-card lab">
             <div className="titles"><nobr><p className="item1">●</p><span id="title">研究室公開</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
-            <p>研究室の企画は、以下のボタンから</p>
+            <p>研究室の企画は、下のボタンからどうぞ</p>
             <div className="ocean-link-button"><Link to="/lab-open" onClick={PageChange}>研究室公開</Link></div>
             </div>
 
