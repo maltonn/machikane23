@@ -17,22 +17,22 @@ export default function TalentProject(){
                 <PageTitles titles="お笑いライブ" kame={true}></PageTitles>
                 <div className="talentBox">
                     <h1 className="talentTitle"><span className="ribon">阪大にトム・ブラウンがやってくる！</span></h1>
-                    <div className="machikame1"><img src={machikame1}></img></div>
-                    <div className="tombrown"><img src={tombrown} className="tombrownImg"></img></div>
+                    <div className="machikame1"><img src={machikame1} alt="まちかめ"></img></div>
+                    <div className="tombrown"><img src={tombrown} className="tombrownImg"　alt="トム・ブラウン"></img></div>
                 </div>
                 <div className="autographBlock">
-                    <div className="machikani1"><img src={machikani}></img></div>
+                    <div className="machikani1"><img src={machikani} alt="まちかに"></img></div>
                     <p className="autograph">サインがもらえるかも!?</p>
-                    <div className="machikani2"><img src={machikani}></img></div>
+                    <div className="machikani2"><img src={machikani} alt="まちかに"></img></div>
                 </div>
                 <div className="talentInfor">
                     <p className="talentDay">日時：11月4日(土) 14:00～15:00</p>
                     <p className="talentPlace">場所：大学会館 講堂</p>
                     <p className="startCaution">開場は13時からです。早めにお越しください。</p>
                 </div>
-                <h2 className="caution">注意事項</h2>
+                <h2 className="caution greeting-titles">注意事項</h2>
                 <ul className="cautionAll">
-                    <li className="caution1">この企画は事前予約制なので、以下のリンクからご予約お願いします。<br></br><a href="https://app.tyuujiu-system.net/machikane23/visotor/talent-live/reservation">https://app.tyuujiu-system.net/machikane23/visotor/talent-live/reservation</a></li>
+                    <li className="caution1">この企画は事前予約制なので、以下のリンクからご予約お願いします。<br></br><a href="https://app.tyuujitu-system.net/machikane23/visotor/talent-live/reservation">https://app.tyuujitu-system.net/machikane23/visotor/talent-live/reservation</a></li>
                     <br></br>
                     <li className="caution2">当日キャンセルが出た場合は大学会館前で12:45から当日券を配布します。</li>
                     <br></br>

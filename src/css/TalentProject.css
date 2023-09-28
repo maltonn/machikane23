@@ -3,6 +3,7 @@
     width: 100%;
     overflow: hidden;
     margin-top: 0px;
+    padding-bottom: 0;
     z-index: 1000;
 }
 /* .talentBox{
@@ -52,7 +53,7 @@
 .talentTop {
     /* width: 100%; */
     /* height: 150vw; */
-    background-image:linear-gradient(#fff 10%, #00B2E9 50%,#b5e5f4 90%);
+    background-image:linear-gradient(#15c1f6 0%,#b5e5f4 80%, #fff 100%);
     background-repeat: no-repeat, no-repeat;
     background-position:center 42%,center;
 }
@@ -96,12 +97,11 @@
 }
 
 .caution{
-    margin-left: 15vw;
     font-size: 2.5vw;
 }
 
 .cautionAll{
-    margin-left: 15vw;
+    margin-bottom: 0;
 }
 .caution li{
     font-size: 2vw;
