@@ -85,6 +85,7 @@ export default function Home() {
             <p>お笑いライブは予約必須です。下のボタンから予約サイトへアクセスください。</p>
             <div className="top-linkButton live-reservation"><a href="https://app.tyuujiu-system.net/machikane23/visotor/talent-live/reservation">お笑いライブ<br></br>予約サイト</a></div>
             <p>お笑いライブ詳細は<Link to="./talent-project" onClick={PageChange}>こちら</Link></p>
+            <p>企画検索はこちら</p>
             <p>その他注意事項がございますので、下のボタンからご覧ください。</p>
             <div className="link-button top-linkButton"><Link to="./notes" onClick={PageChange}>注意事項</Link></div>
           </div>

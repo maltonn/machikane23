@@ -19,7 +19,7 @@ export default function Ralley() {
             <div className="ralley-sky">
                 <PageTitles titles="ラリー企画一覧" kam={false}></PageTitles>
                 <div className="ralley-mainpage">
-                    <p>ラリー企画で来場者の皆さん自身が大学校内を移動しながら楽しんでいただけます。企画を楽しみながら、まちかね祭全体をぐるっと回ることができます。
+                    <p>ラリー企画で来場者の皆さん自身が大学構内を移動しながら楽しんでいただけます。企画を楽しみながら、まちかね祭全体をぐるっと回ることができます。
                     </p>
                     <p>
                     メインストリート上、ピロティ付近のテントがスタートです。ぜひお越しください！！
