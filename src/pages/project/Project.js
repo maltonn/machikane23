@@ -189,7 +189,7 @@ export default function Project() {
                         </div>
 
                         {/* おすすめキーワード */}
-                        <div className="pickup-keyword-container">
+                        <div className="pickup-keyword-container">例:
                             {
                                 ["ダンス", "ライブ", "お昼ごはん"].map((keyword) => {
                                     return (
