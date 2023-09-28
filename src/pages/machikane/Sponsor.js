@@ -34,7 +34,7 @@ export default function Sponsor() {
                     </div>
                 </div>
                 <div className="companies advertise">
-                    <div className="sponsor-miniTitles">広告協賛</div>
+                    <div className="sponsor-miniTitles">広告協賛（順不同）</div>
                     <div className="sponsor-imgs">
                         <a href="https://ou2023hcd.alumni.osaka-u.ac.jp/"><img src={homecomingday}></img></a>
                         <a href="https://ou2023hcd.alumni.osaka-u.ac.jp/"><img src={homecomingday}></img></a>
