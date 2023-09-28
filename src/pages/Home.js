@@ -132,9 +132,9 @@ export default function Home() {
             </div>
 
           <div className="ocean-card lab">
-            <div className="titles"><nobr><p className="item1">●</p><span id="title">研究室紹介</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
-            <p>研究室の企画は、以下のリンクからご覧ください。</p>
-            <div className="ocean-link-button"><Link to="/lab-open" onClick={PageChange}>詳細はこちら</Link></div>
+            <div className="titles"><nobr><p className="item1">●</p><span id="title">研究室公開</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
+            <p>研究室の企画は、以下のボタンから</p>
+            <div className="ocean-link-button"><Link to="/lab-open" onClick={PageChange}>研究室公開</Link></div>
             </div>
 
           <div className="ocean-card" id="pickup">
