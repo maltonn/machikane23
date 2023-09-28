@@ -9,6 +9,11 @@
     background-size: 100%,contain;
     color:#fff;
 }
+
+.sponsor-sky>p{
+    font-size: 25px;
+}
+
 .sponsor-imgs{
     text-align: center;
     width: 100%;
