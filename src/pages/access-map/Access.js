@@ -25,7 +25,9 @@ export default function Access() {
                 <div className="sponsor-miniTitles">開催場所</div>
                 <div className="access-mainpage"> 
                     <div className="access-notes">
-                        <div className="access-content access-holdingPlace">大阪大学豊中キャンパス
+                        <div className="access-content access-holdingPlace">
+                            <p>大阪大学豊中キャンパス</p>
+                            <p>〒560-0043 大阪府豊中市待兼山町１</p>
                         </div>
                     </div>
                 </div>
@@ -34,10 +36,10 @@ export default function Access() {
                     <div className="access-notes">
                         <div className="access-content">
                             <li>阪急電車宝塚線 石橋阪大前駅より徒歩約15分<br></br>
-                                阪大坂を上り、総合案内所までお越しください
+                                　　阪大坂を上り、総合案内所までお越しください。
                             </li>
                             <li>大阪モノレール 柴原阪大前駅より徒歩約15分<br></br>
-                                正門を通ってまっすぐ進み、総合案内所までお越しください
+                                　　正門を通ってまっすぐ進み、総合案内所までお越しください。
                             </li>
                         </div>
                     </div>
