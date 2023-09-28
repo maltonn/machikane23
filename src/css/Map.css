@@ -56,9 +56,10 @@ body{
   }
   /* 全体マップ */
   .map-map{
-    width:5000px;
+    width:700px;
     max-width: 100%;
     border-style: none;
+    margin: 0 auto 0;
   }
   .map-map img{
     width: 100%;
@@ -173,10 +174,11 @@ body{
   /* 屋外メインストリート */
   .map-M{
     font-size: 18pt;
-    width:800px;
+    width:550px;
     max-width: 100%;
     border-style: none;
     box-sizing: border-box;
+    margin: 0 auto 0;
   }
   .map-M img{
     width: 100%;
