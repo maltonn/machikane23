@@ -54,6 +54,9 @@ body{
     width: 100%;
     padding: 25px;
   }
+  .floorname{
+    margin-top:15%;
+  }
   /* 全体マップ */
   .map-map{
     width:700px;
@@ -121,8 +124,9 @@ body{
   }
   .map-AB img{
     width: 100%;
-    margin:50px 0px 0px;
+    margin:-30px 0px 0px;
   }
+
 /* C棟 */
   .map-C{
     font-size: 18pt;
@@ -133,7 +137,7 @@ body{
   }
   .map-C img{
     width: 80%;
-    margin:50px 0px 0px;
+    margin:-30px 0px 0px;
   }
 /* 法経 */
   .map-H{
@@ -145,7 +149,7 @@ body{
   }
   .map-H img{
     width: 70%;
-    margin:50px 0px 0px;
+    margin:-30px 0px 0px;
   }
  /* 文法経 */
   .map-B{
@@ -157,7 +161,7 @@ body{
   }
   .map-B img{
     width: 55%;
-    margin:50px 0px 0px;
+    margin:-30px 0px 0px;
   }
 /* 学生会館 */
   .map-G{
@@ -169,7 +173,7 @@ body{
   }
   .map-G img{
     width: 80%;
-    margin:50px 0px 0px;
+    margin:-50px 0px 0px;
   }
   /* 屋外メインストリート */
   .map-M{
@@ -182,7 +186,7 @@ body{
   }
   .map-M img{
     width: 100%;
-    margin:50px 0px 0px;
+    margin: 50px 0px 0px;
   }
   /* ステージ */
   .map-stage{
@@ -191,10 +195,11 @@ body{
     max-width: 100%;
     border-style: none;
     box-sizing: border-box;
+    margin-bottom: 10%;
   }
   .map-stage img{
     width: 100%;
-    margin:50px 0px 0px;
+    margin:-30px 0px 0px;
   }
 
   /*======================
