@@ -216,7 +216,7 @@ export default function Project() {
                             <div>
                                 <label htmlFor="checkbox2">
                                     <input type="checkbox" id="checkbox2" checked={forChildFilterCheck} onChange={() => setForChildFilterCheck(prev => !prev)} />
-                                    <span>子ども向け</span>
+                                    <span>子ども向けの企画に絞る</span>
                                 </label>
                             </div>
                             <div>
@@ -225,6 +225,22 @@ export default function Project() {
                                     <span>混雑している企画を除く</span>
                                 </label>
                             </div>
+                        </div>
+                        <div style={{marginTop: '15px'}}>▷企画区分で絞る</div>
+                        <div className="pickup-keyword-container">
+                            {
+                                ["館内", "屋外", "ステージ", "模擬店"].map((keyword) => {
+                                    return (
+                                        <div
+                                            onClick={() => onPickupKeywordClick(keyword)}
+                                            key={keyword}
+                                            className="pickup-keyword"
+                                        >
+                                            {keyword}
+                                        </div>
+                                    )
+                                })
+                            }
                         </div>
                         <button onClick={onClickSearchBtn}>検索</button>
                         <button onClick={onClickClearBtn}>クリア</button>
