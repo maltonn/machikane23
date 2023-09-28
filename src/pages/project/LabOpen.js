@@ -119,7 +119,7 @@ export default function LabOpen() {
                         </div>
 
                         {/* おすすめキーワード */}
-                        <div className="pickup-keyword-container">
+                        <div className="pickup-keyword-container">例:
                             {
                                 ["基礎工学", "理学", "センター"].map((keyword) => {
                                     return (
