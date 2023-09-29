@@ -1,0 +1,42 @@
+
+.FAQ-card-Q{
+    font-size: 25px;
+    margin: 10px 5px;
+    
+        padding: 20px;
+        margin: 10px 0;
+        font-weight: bold;
+        color: #6091d3;
+        background: #FFF;
+        border: solid 3px #6091d3;
+        border-radius: 10px;
+        width:100%
+}
+.FAQ-card{
+    padding-right: 50px;
+    padding-left: 5px;
+}
+
+@media screen and (max-width:1070px) {
+    .FAQ-card{
+        padding:  0.5em 6px;
+}
+}
+
+
+
+.FAQ-card-A{
+    font-size:  20px; 
+    margin: 10px 5px 35px; 
+    
+    
+
+}
+table, th, td{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+.FAQ-map{
+    width: 400px;
+    display:block;
+}
