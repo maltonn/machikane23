@@ -24,7 +24,7 @@ export default function OfficialProject() {
             <title>委員会企画|まちかね祭2023</title>
             </Helmet>
             <div className="sky">
-            <PageTitles titles="委員会企画|まちかね祭2023"></PageTitles>
+            <PageTitles titles="委員会企画|まちかね祭2023" kame={true}></PageTitles>
                 <div className="officialProAll">
                     <div className="offiProCard">
                         <div className="offiProCard-title">ぱんけえき焼きた亭</div>
@@ -33,6 +33,7 @@ export default function OfficialProject() {
                                 <img className="officialIcon" src={pancakeLogo} alt="ぱんけえき焼きた亭のアイコン"></img>
                             </div>
                             <div className="information">
+                                <br></br>
                                 <p>・時間 : 10:00-18:00</p>
                                 <p>・場所 : メインストリート テント40</p>
                                 <p>・整理券 : なし</p>
@@ -48,6 +49,7 @@ export default function OfficialProject() {
                                 <img className="officialIcon" src={machikaneForestLogo} alt="まちかねの森のアイコン"></img>
                             </div>
                             <div className="information">
+                                <br></br>
                                 <p>・時間 : 10:00-12:00,13:00-17:00</p>
                                 <p>・場所 : C106</p>
                                 <p>・整理券 : あり</p>
@@ -63,6 +65,7 @@ export default function OfficialProject() {
                                 <img className="officialIcon" src={nepleage} alt="マチカネプリーグのアイコン"></img>
                             </div>
                             <div className="information">
+                                <br></br>
                                 <p>・時間 : 10:00-12:00 13:00-17:00</p>
                                 <p>・場所 : C105</p>
                                 <p>・整理券 : あり</p>
@@ -78,6 +81,7 @@ export default function OfficialProject() {
                                 <img className="officialIcon" src={O1Logo}  alt="O-1GrandPrixのアイコン"></img>
                             </div>
                             <div className="information">
+                                <br></br>
                                 <p>・時間 : 11/05（企画日3日目） 17:00-19:00</p>
                                 <p>・場所 : ステージ奏</p>
                                 <p>・整理券 : なし</p>
@@ -220,7 +224,7 @@ export default function OfficialProject() {
                                 <li className="nepleageFor">高校生・大学生向け</li>
                             </ul>
                         </div>
-                        <div className="detail">
+                        <div className="detail O-1Detail">
                             <div className="O-1Title"></div>
                             <div className="O-1DetailIcon"><img src={O1Logo} alt="O-1アイコン"></img></div>
                             <div className="O-1Preparetion">Coming soon</div>
