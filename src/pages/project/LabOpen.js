@@ -103,11 +103,11 @@ export default function LabOpen() {
     return(
         <div className="main">
             <Helmet>
-            <title>研究室紹介|まちかね祭2023</title>
+            <title>研究室公開|まちかね祭2023</title>
             </Helmet>
             <div className="sky-project">
                 <div className="search-header">
-                    <PageTitles titles="研究室紹介" kame={true}></PageTitles>
+                    <PageTitles titles="研究室公開" kame={true}></PageTitles>
                     <div className="search-mainpage"> 
                         <div>
                             <input
@@ -119,7 +119,7 @@ export default function LabOpen() {
                         </div>
 
                         {/* おすすめキーワード */}
-                        <div className="pickup-keyword-container">
+                        <div className="pickup-keyword-container">例:
                             {
                                 ["基礎工学", "理学", "センター"].map((keyword) => {
                                     return (
@@ -149,7 +149,7 @@ export default function LabOpen() {
                         }
                         return (
                             <div key={project.id} className="lab-container">
-                                <img src={lab_icon} className="project-card-icon" alt="icon"></img>
+                                <img src={lab_icon} className="lab-card-icon" alt="icon"></img>
                                 <div className="labCard-content">
                                     <div className="labCard-head">
                                         <div className="labProjectName">{project.projectName}</div>

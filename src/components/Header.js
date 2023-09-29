@@ -82,7 +82,7 @@ export default function Header() {
                                 <li><Link to="./ralley" onClick={PageChange}>{lang==="en"?"Rally Projects":"ラリー企画一覧"}</Link></li>
                                 <li><Link to="./official-project" onClick={PageChange}>{lang==="en"?"Projects by Festival Committee":"実行委員会企画"}</Link></li>
                                 <li><Link to="./talent-project" onClick={PageChange}>{lang==="en"?"Live":"お笑いライブ"}</Link></li>
-                                <li><Link to="./lab-open" onClick={PageChange}>{lang==="en"?"Introduce Our Lab":"研究室紹介"}</Link></li>
+                                <li><Link to="./lab-open" onClick={PageChange}>{lang==="en"?"Introduce Our Lab":"研究室公開"}</Link></li>
                             </ul>
                         </li>
                         <li className="menu-parent"><span className={`menu-title ${isMenuOpenC?"is-opend":"is-closed"}`} onClick={menuOpenC}>{lang==="en"?"To the visitors":"ご来場の方へ"}</span>

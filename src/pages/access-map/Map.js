@@ -69,18 +69,24 @@ export default function Map() {
                 <div className="access-mainpage"> 
                     <div className="map-notes">
                         <div className="map-content">
-                            <div className="map-ul">AB棟</div>
+                            <div className="map-ul">全学教育管理・講義AB棟</div>
                             <div className="map-item">
                                     <div className="map-AB"> 
+                                        <div className="floorname">
                                         <p>1階</p>
+                                        </div>
                                         <img src={AB1} alt="AB棟1階"></img>
                                     </div>
                                     <div className="map-AB">
+                                        <div className="floorname">
                                         <p>2階</p>
+                                        </div>
                                         <img src={AB2} alt="AB棟2階"></img>
                                     </div>
                                     <div className="map-AB">
+                                            <div className="floorname">
                                             <p>3階</p>
+                                            </div>
                                             <img src={AB3} alt="AB棟3階"></img>
                                     </div>
                             </div>
@@ -94,19 +100,27 @@ export default function Map() {
                             <div className="map-ul">C棟</div>
                             <div className="map-item">
                                     <div className="map-C"> 
+                                        <div className="floorname">
                                         <p>1階</p>
+                                        </div>
                                         <img src={C1} alt="C棟1階"></img>
                                     </div>
                                     <div className="map-C">
+                                        <div className="floorname">
                                         <p>2階</p>
+                                        </div>
                                         <img src={C2} alt="C棟2階"></img>
                                     </div>
                                     <div className="map-C">
+                                            <div className="floorname">
                                             <p>3階</p>
+                                            </div>
                                             <img src={C3} alt="C棟3階"></img>
                                     </div>
                                     <div className="map-C">
+                                            <div clasName="floorname">
                                             <p>4階</p>
+                                            </div>
                                             <img src={C4} alt="C棟4階"></img>
                                     </div>
                             </div>
@@ -120,15 +134,21 @@ export default function Map() {
                             <div className="map-ul">法経講義棟</div>
                             <div className="map-item">
                                     <div className="map-H"> 
+                                        <div className="floorname">
                                         <p>1階</p>
+                                        </div>
                                         <img src={H1} alt="法経1階"></img>
                                     </div>
                                     <div className="map-H">
+                                        <div className="floorname">
                                         <p>2階</p>
+                                        </div>
                                         <img src={H2} alt="法経2階"></img>
                                     </div>
                                     <div className="map-H">
+                                        <div className="floorname">
                                         <p>3階</p>
+                                        </div>
                                         <img src={H3} alt="法経3階"></img>
                                     </div>
                             </div>
@@ -142,22 +162,24 @@ export default function Map() {
                             <div className="map-ul">文法経講義棟</div>
                             <div className="map-item">
                                     <div className="map-B"> 
+                                        <div classname="floorname">
                                         <p>1階</p>
+                                        </div>
                                         <img src={B1} alt="文法経1階"></img>
                                     </div>
                                     <div className="map-B">
+                                        <div className="floorname">
                                         <p>2階</p>
+                                        </div>
                                         <img src={B2} alt="文法経2階"></img>
                                     </div>
                                     <div className="map-B">
+                                        <div className="floorname">
                                         <p>3階</p>
+                                        </div>
                                         <img src={B3} alt="文法経3階"></img>
                                     </div>
-                                    <div className="map-B">
-                                        <p>4階</p>
-                                        <img src={B4} alt="文法経4階"></img>
-                                    </div>
-                            </div>
+                           </div>
                         </div>
                     </div>
                 </div>
@@ -168,11 +190,15 @@ export default function Map() {
                             <div className="map-ul">学生会館</div>
                             <div className="map-item">
                                     <div className="map-G"> 
+                                        <div className="floorname">
                                         <p>2階</p>
+                                        </div>
                                         <img src={G2} alt="学生会館2階"></img>
                                     </div>
                                     <div className="map-G">
+                                        <div className="floorname">
                                         <p>3階</p>
+                                        </div>
                                         <img src={G3} alt="学生会館3階"></img>
                                     </div>
                             </div>

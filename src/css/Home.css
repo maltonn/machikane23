@@ -60,7 +60,7 @@ body{
   font-size: 1.2rem;
 }
 .ocean-link-button{
-  background-color: #e8bf6e;
+  background-color: #e8886e;
   border-radius: 50px;
   width: 30%;
   margin: 0 auto;
@@ -286,6 +286,7 @@ body{
 }
 .top-linkButton{
   margin: 0 auto 0;
+  font-size: 1.2rem;
 }
 .live-reservation{
   background: #fff;
@@ -294,6 +295,7 @@ body{
   font-size: 1.2rem;
   justify-content: center;
   display: flex;
+  border-radius: 5px;
 }
 .live-reservation a{
   text-decoration: none;
@@ -442,7 +444,7 @@ schedule,stage,lab
   /* font-size: 37px; */
   color: #fff;
   position: relative;
-  /* right: 0vw; */
+  right: 2vw;
 }
 .item1{
   display: inline-block;
@@ -450,7 +452,7 @@ schedule,stage,lab
   opacity: 0.30;
   position: relative;
   top:9px;
-  left:4vw;
+  left:3vw;
   margin: 50px 0px 0px 0px;
 }
 .item2{
@@ -459,7 +461,7 @@ schedule,stage,lab
   opacity: 0.30;
   position: relative;
   top:9px;
-  right:1vw;
+  right:2vw;
   margin: 0;
 }
 .item3{
@@ -468,7 +470,7 @@ schedule,stage,lab
   opacity: 0.30;
   position: relative;
   top:9px;
-  right:1vw;
+  right:2vw;
   margin-bottom: 1.2vw;
 }
 
@@ -818,7 +820,7 @@ schedule,stage,lab
       opacity: 0.30;
       position: relative; 
       top:9px;
-      left:3vw;
+      left:5vw;
       margin: 50px 0px 0px 0px;
     }
     .item2{
@@ -827,7 +829,7 @@ schedule,stage,lab
       opacity: 0.30;
       position: relative;
       top:9px;
-      right:9vw;
+      right:8vw;
     }
     .item3{
       display: inline-block;
@@ -835,7 +837,7 @@ schedule,stage,lab
       opacity: 0.30;
       position: relative; 
       top:9px;
-      right:9vw;
+      right:8vw;
     }
     #move img:nth-child(1){
       width: 200%;
@@ -872,6 +874,9 @@ schedule,stage,lab
   }
   #title{
     font-size: 1.6rem;
+  }
+  .ocean span#title{
+    right:4vw;
   }
   .pickup-button{
     padding: 5px 10px 0;

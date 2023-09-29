@@ -167,7 +167,7 @@ export default function Project() {
     }
 
     function detail(project){
-        return <Link className="toDetail" to={"/project-search/"+project.id} onClick={PageChange}>▷Show more</Link>
+        return <Link className="toDetail" to={"/project-search/"+project.id} onClick={PageChange}>▷もっと見る</Link>
     }
 
     return (
@@ -189,7 +189,7 @@ export default function Project() {
                         </div>
 
                         {/* おすすめキーワード */}
-                        <div className="pickup-keyword-container">
+                        <div className="pickup-keyword-container">例:
                             {
                                 ["ダンス", "ライブ", "お昼ごはん"].map((keyword) => {
                                     return (
@@ -216,7 +216,7 @@ export default function Project() {
                             <div>
                                 <label htmlFor="checkbox2">
                                     <input type="checkbox" id="checkbox2" checked={forChildFilterCheck} onChange={() => setForChildFilterCheck(prev => !prev)} />
-                                    <span>子ども向け</span>
+                                    <span>子ども向けの企画に絞る</span>
                                 </label>
                             </div>
                             <div>
@@ -225,6 +225,22 @@ export default function Project() {
                                     <span>混雑している企画を除く</span>
                                 </label>
                             </div>
+                        </div>
+                        <div style={{marginTop: '15px'}}>▷企画区分で絞る</div>
+                        <div className="pickup-keyword-container">
+                            {
+                                ["館内", "屋外", "ステージ", "模擬店"].map((keyword) => {
+                                    return (
+                                        <div
+                                            onClick={() => onPickupKeywordClick(keyword)}
+                                            key={keyword}
+                                            className="pickup-keyword"
+                                        >
+                                            {keyword}
+                                        </div>
+                                    )
+                                })
+                            }
                         </div>
                         <button onClick={onClickSearchBtn}>検索</button>
                         <button onClick={onClickClearBtn}>クリア</button>
@@ -239,6 +255,7 @@ export default function Project() {
                             return null
                         }
                         return (
+                            <Link className="card-detailLink" to={"/project-search/"+project.id} onClick={PageChange}>
                             <div key={project.id} className="project-container">
                                 <img src={project.icon} className="project-card-icon" alt="icon"></img>
                                 <div className="card-content">
@@ -254,6 +271,7 @@ export default function Project() {
                                     <div className="toDetailParent">{detail(project)}</div>
                                 </div>
                             </div>
+                            </Link>
                         )
                     })}
                 </div>
