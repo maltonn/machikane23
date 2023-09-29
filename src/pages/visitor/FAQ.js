@@ -1,6 +1,10 @@
 import { Helmet } from "react-helmet";
 // import {Link} from "react-router-dom";
 import "../../css/Common.css"
+import "../../css/FAQ.css"
+import PageTitle from "../../components/PageTitles"
+import Bubble from "../../components/Bubble"
+import map from "../../imgs/map/屋外メインストリート.png"
 export default function FAQ() {
     return(
         <div className="main">
@@ -8,48 +12,45 @@ export default function FAQ() {
             <title>よくあるご質問|まちかね祭2023</title>
             </Helmet>
             <div className="FAQ">
+                <PageTitle titles="FAQ" ></PageTitle>
                 <div className="FAQ-card">
                     <div className="FAQ-card-Q">企画時間を教えてください。</div>
-                    <div className="FAQ- card-A">
+                    <div className="FAQ-card-A">
                         <table>
                             <tr>
-                                <th colSpan={2}>場所</th>
-                                <th>時間</th>
+                                <th>場所</th>
+                                <th>11/3(金)</th>
+                                <th>11/4(土)</th>
+                                <th>11/5(日)</th>
                             </tr>
                             <tr>
-                                <td colSpan={2}>館内</td>
-                                <td>全日とも10:00~18:20</td>
+                                <td >館内</td>
+                                <td colSpan={3}>10:00~18:20</td>
                             </tr>
                             <tr>
-                                <td colSpan={2}>屋外・模擬店</td>
-                                <td>全日とも10:00~18:00</td>
+                                <td >屋外・模擬店</td>
+                                <td colSpan={3}>10:00~18:00</td>
                             </tr>
                             <tr>
-                                <td colSpan={2}>ステージ奏</td>
-                                <td>全日とも10:00~19:00</td>
+                                <td>ステージ奏</td>
+                                <td colSpan={3}>10:00~19:00</td>
                             </tr>
                             <tr>
-                                <td rowSpan={3}>ステージ宙</td>
-                                <td>1日目</td>
+                                <td>ステージ宙</td>
                                 <td>10:00~17:20</td>
-                            </tr>
-                            <tr>
-                                <td>2日目</td>
                                 <td>10:00~17:00</td>
-                            </tr>
-                            <tr>
-                                <td>3日目</td>
                                 <td>10:00~16:20</td>
                             </tr>
                         </table>
                     </div>
                 <div className="FAQ-card">
                     <div className="FAQ-card-Q">購入したものを食べられる場所はありますか？</div>
-                    <div className="FAQ- card-A">食事席</div>   
+                    <div className="FAQ- card-A">食事スペースにあります。</div>   
                 </div>
                 <div className="FAQ-card">
                     <div className="FAQ-card-Q">食事席はどこですか？</div>
-                    <div className="FAQ- card-A">地図を貼りたい。</div>
+                    <div className="FAQ- card-A">以下の地図を参照してください
+                    <img  src={map} alt="map"className="FAQ-map"></img></div>
                 </div>
                 <div className="FAQ-card">
                     <div className="FAQ-card-Q">自販機はどこにありますか？</div>
@@ -79,7 +80,7 @@ export default function FAQ() {
                 </div>
                 <div className="FAQ-card">
                     <div className="FAQ-card-Q">総合案内所はどこですか？</div>
-                    <div className="FAQ-card-A">メインストリート付近のテント。</div>
+                    <div className="FAQ-card-A">メインストリート付近のテントに</div>
                 </div>
                 <div className="FAQ-card">
                     <div className="FAQ-card-Q">阪大グッズ（ワニ博士など）はどこで買えますか？</div>
@@ -88,7 +89,7 @@ export default function FAQ() {
                 </div>
                 <div className="FAQ-card">
                     <div className="FAQ-card-Q">まちかね祭のグッズはどこで買えますか？</div>
-                    <div className="FAQ-card-A">総合案内所です。</div>
+                    <div className="FAQ-card-A">総合案内所でご購入可能です。</div>
                 </div>
                 <div className="FAQ-card">
                     <div className="FAQ-card-Q">パンフレットはどこで配っていますか？</div>
