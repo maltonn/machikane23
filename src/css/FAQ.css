@@ -32,10 +32,15 @@
     
 
 }
-table, th, td{
+.FAQ-table{
     border: 1px solid;
     border-collapse: collapse;
 }
+.FAQ-table tr,th,td{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
 .FAQ-map{
     width: 400px;
     display:block;

@@ -16,7 +16,7 @@ export default function FAQ() {
                 <div className="FAQ-card">
                     <div className="FAQ-card-Q">企画時間を教えてください。</div>
                     <div className="FAQ-card-A">
-                        <table>
+                        <table className="FAQ-table">
                             <tr>
                                 <th>場所</th>
                                 <th>11/3(金)</th>
