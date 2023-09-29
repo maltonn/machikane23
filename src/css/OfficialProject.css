@@ -5,6 +5,9 @@
     margin-top: 0px;
     z-index: 1000;
 }
+.officialProject .sky{
+  background: linear-gradient(#15c1f6 0%,#b5e5f4 80%, #fff 100%)
+}
 
 .offiProCard {
     display: flexbox;
@@ -54,7 +57,6 @@
     justify-content: space-around;
     color: #233192;
     width:100%;
-    background: linear-gradient( #b5e5f4 50%, #fff 100%)
   }
   .inforAll{
     display: flex;
@@ -64,6 +66,7 @@
   }
   .officialIcon{
     width: 15vw;
+    height: 15vw;
   }
   .officialProDeatil{
     width:100%;
@@ -85,8 +88,8 @@
     background: #fefdfc;
     /* color: #fcb1b1; */
     /* margin: 2em 0; */
-    font-weight: bold;
-    color: #000;
+    /* font-weight: bold; */
+    color: #000;    
   }
 
   .grade{
@@ -129,6 +132,7 @@
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
+  padding: 0;
   /* position: relative; */
   /* left: 15vw; */
   /* top: -5vh; */
@@ -141,37 +145,41 @@
   display: flexbox;
   margin: 0 1vw;
 }
-
 .pancakeDetail{
   display: flex;
 }
 
-.IconAround{
-  display: flexbox;
-  /* width: 10vw; */
-  flex-basis: 10vw;
+.iconAround{
+  width: 25vw;
+  margin-right: 2vw;
+}
+.iconAround img{
+  width: 100%;
+}
+.pancakeBoxs{
+  display: flex;
 }
 .detailIcon{
   width: 50%;
-}
-
-.pancakeBoxs{
-  display: flexbox;
 }
 
 .pancakeBoxAround{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
 }
 
 .pancakeBox{
-  display: flexbox;
-  width: 35vw;
+  width: 33vw;
+  margin: 15px 1vw;
+}
+.pancakeBox strong{
+  font-weight: bold;
 }
 
-
+.machikaneForestDetail{
+  background-color: rgb(229, 245, 212);
+}
 .forestSimpleInfor{
   display: flex;
   flex-wrap: nowrap;
@@ -183,6 +191,7 @@
 .forestSimpleInfor li{
   list-style: none;
   width: 100%;
+  font-weight: bold;
 }
 .pointAll{
   display: flex;
@@ -194,6 +203,13 @@
   position: relative;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+.pointBox p{
+  margin: 0;
+}
+.pointBox span{
+  font-weight: bold;
 }
 .pointBox img{
   width: 100%;
@@ -256,7 +272,15 @@
   text-align: center; 
 }
 .O-1DetailIcon img {
-  height: 90vh;
+  width: 65%;
+}
+.O-1Preparetion{
+  border: double 2px #233192;
+  width: 50%;
+  padding: 2vw;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width:490px){
@@ -318,6 +342,14 @@
   .pointBox{
     width: 100%;
   }
+  .nepleageInfor{
+    margin: 0 auto;
+    width: 90%;
+  }
+  .nepleageInfor li{
+    font-size: 0.01em;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width:490px) and (max-width: 1090px){
@@ -330,5 +362,18 @@
   }
   .inforAll{
     display: block;
+  }
+  .pancakeDetail{
+    /* display: block; */
+  }
+  .iconAround{
+   margin: 0 auto; 
+  }
+  .pancakeBoxAround{
+    justify-content: space-around;
+  }
+  .pancakeBox{
+    width: 35vw;
+    margin: 0 0 1vh 0;
   }
 }

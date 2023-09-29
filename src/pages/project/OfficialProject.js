@@ -24,7 +24,7 @@ export default function OfficialProject() {
             <title>委員会企画|まちかね祭2023</title>
             </Helmet>
             <div className="sky">
-                <PageTitles titles="委員会企画|まちかね祭2023"></PageTitles>
+            <PageTitles titles="委員会企画|まちかね祭2023"></PageTitles>
                 <div className="officialProAll">
                     <div className="offiProCard">
                         <div className="offiProCard-title">ぱんけえき焼きた亭</div>
@@ -33,10 +33,10 @@ export default function OfficialProject() {
                                 <img className="officialIcon" src={pancakeLogo} alt="ぱんけえき焼きた亭のアイコン"></img>
                             </div>
                             <div className="information">
-                                <p>・時間:10:00-18:00</p>
-                                <p>・場所:メインストリート テント40</p>
-                                <p>・整理券:なし</p>
-                                <p>・おすすめ:全年齢（お子様にも）</p>
+                                <p>・時間 : 10:00-18:00</p>
+                                <p>・場所 : メインストリート テント40</p>
+                                <p>・整理券 : なし</p>
+                                <p>・おすすめ : 全年齢（お子様にも）</p>
                                 <p>・有料</p>
                             </div>
                         </div>
@@ -48,10 +48,10 @@ export default function OfficialProject() {
                                 <img className="officialIcon" src={machikaneForestLogo} alt="まちかねの森のアイコン"></img>
                             </div>
                             <div className="information">
-                                <p>・時間:10:00-12:00,13:00-17:00</p>
-                                <p>・場所:C106</p>
-                                <p>・整理券:あり</p>
-                                <p>・おすすめ:全年齢（お子様にも）</p>
+                                <p>・時間 : 10:00-12:00,13:00-17:00</p>
+                                <p>・場所 : C106</p>
+                                <p>・整理券 : あり</p>
+                                <p>・おすすめ : 全年齢（お子様にも）</p>
                                 <p>・無料</p>
                             </div>
                         </div>
@@ -63,10 +63,10 @@ export default function OfficialProject() {
                                 <img className="officialIcon" src={nepleage} alt="マチカネプリーグのアイコン"></img>
                             </div>
                             <div className="information">
-                                <p>・時間:10:00-12:00 13:00-17:00</p>
-                                <p>・場所:C105</p>
-                                <p>・整理券:あり</p>
-                                <p>・おすすめ:高校生、大学生</p>
+                                <p>・時間 : 10:00-12:00 13:00-17:00</p>
+                                <p>・場所 : C105</p>
+                                <p>・整理券 : あり</p>
+                                <p>・おすすめ : 高校生、大学生</p>
                                 <p>・無料</p>
                             </div>
                         </div>
@@ -78,10 +78,10 @@ export default function OfficialProject() {
                                 <img className="officialIcon" src={O1Logo}  alt="O-1GrandPrixのアイコン"></img>
                             </div>
                             <div className="information">
-                                <p>・時間:11/05（企画日3日目） 17:00-19:00</p>
-                                <p>・場所:ステージ奏</p>
-                                <p>・整理券:なし</p>
-                                <p>・おすすめ:全年齢</p>
+                                <p>・時間 : 11/05（企画日3日目） 17:00-19:00</p>
+                                <p>・場所 : ステージ奏</p>
+                                <p>・整理券 : なし</p>
+                                <p>・おすすめ : 全年齢</p>
                                 <p>・無料</p>
                             </div>
                         </div>
@@ -106,6 +106,7 @@ export default function OfficialProject() {
                             </div>
                             <div className="pancakeDetail">
                                 <div className="iconAround"><img className="detailIcon" src={pancakeLogo} alt="ぱんけえき焼きた亭のアイコン"></img></div>
+                                
                                 <div className="pancakeBoxs">
                                     <div className="pancakeBoxAround">
                                         <p className="pancakeBox">
@@ -128,7 +129,7 @@ export default function OfficialProject() {
                                 </div>
                             </div>
                         </div>
-                        <div className="detail">
+                        <div className="detail machikaneForestDetail">
                             <h2 className="projectTitle">まちかねの森</h2>
                             <ul className="forestSimpleInfor">
                                 <li className="forestPlace">
@@ -170,29 +171,37 @@ export default function OfficialProject() {
                                 <div className="pointBox">
                                     <img src={leaf} alt="葉っぱ"></img>
                                     <p className="pointContent">
-                                    Point1
-                                    どうぶつの森のようにフルーツ狩りや魚釣りができます！（丁寧にルール説明をするのでどうぶつの森を知らなくても楽しめます！）
+                                    <span>Point1</span>
+                                        <p>
+                                            どうぶつの森のようにフルーツ狩りや魚釣りができます！（丁寧にルール説明をするのでどうぶつの森を知らなくても楽しめます！）
+                                        </p>
                                     </p>
                                 </div>
                                 <div className="pointBox">
                                     <img src={leaf} alt="葉っぱ"></img>
                                     <p className="pointContent">
-                                    Point2
-                                    小さなお子様大歓迎！どなたにでも楽しんでいただけるゲームをご用意しています！
+                                    <span>Point2</span>
+                                        <p>
+                                            小さなお子様大歓迎！どなたにでも楽しんでいただけるゲームをご用意しています！
+                                        </p>
                                     </p>
                                 </div>
                                 <div className="pointBox">
                                     <img src={leaf} alt="葉っぱ"></img>
                                     <p className="pointContent">
-                                    Point3
-                                    どうぶつの森の世界観を再現しつつ実行委員のオリジナルも盛り込まれた素敵な空間です
+                                    <span>Point3</span>
+                                        <p>
+                                            どうぶつの森の世界観を再現しつつ実行委員のオリジナルも盛り込まれた素敵な空間です
+                                        </p>
                                     </p>
                                 </div>
                                 <div className="pointBox">
                                     <img src={leaf} alt="葉っぱ"></img>
                                     <p className="pointContent">
-                                    Point4
-                                    各ゲームでポイントをゲットできます！沢山ポイントを集められた人には豪華な景品があるかも！？
+                                    <span>Point4</span>
+                                        <p>
+                                            各ゲームでポイントをゲットできます！沢山ポイントを集められた人には豪華な景品があるかも！？
+                                        </p>
                                     </p>
                                 </div>
                             </div>
