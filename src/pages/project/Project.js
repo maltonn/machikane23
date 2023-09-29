@@ -5,6 +5,7 @@ import "../../css/About.css"
 import "../../css/Common.css"
 import { Helmet } from "react-helmet";
 import PageTitles from "../../components/PageTitles";
+import { async } from "q";
 
 const shuffleArray = (array) => {
     return array.slice().sort(() => Math.random() - Math.random())
@@ -16,6 +17,11 @@ export default function Project() {
 
     //フォームのデータが入る変数
     const [inputValue, setInputValue] = useState("")
+    const inputValueRef = useRef(inputValue)
+    useEffect(() => {//inputValueが変わったらinputValueRefも変わる
+        inputValueRef.current = inputValue
+    }, [inputValue])
+
     // const [nowBuildingFilterCheck, setNowBuildingFilterCheck] = useState(false)
     const [forChildFilterCheck, setForChildFilterCheck] = useState(false)
     const [avoidCrowdFilterCheck, setAvoidCrowdFilterCheck] = useState(false)
@@ -37,9 +43,9 @@ export default function Project() {
         }
         ).then((res) => {
             let lst = Object.values(res)
-            lst=lst.filter((project)=>project!=null)
-            projectLst.current = lst 
-            setDisplayLst(shuffleArray(lst)) 
+            lst = lst.filter((project) => project != null)
+            projectLst.current = lst
+            setDisplayLst(shuffleArray(lst))
         })
     }, [])
 
@@ -49,125 +55,130 @@ export default function Project() {
     }
 
     const onPickupKeywordClick = (keyword) => {
-        setInputValue(keyword)
+        setInputValue(keyword);
+        setTimeout(() => {
+            onClickSearchBtn()
+        },10)
     }
 
     // 検索ボタンが押された時の処理
     const onClickSearchBtn = () => {
-        const keyScoreLst={
-            "projectName":15,
-            "projectNameEn":15,
-            "groupName":10,
-            "groupNameEn":10,
+        const keyScoreLst = {
+            "projectName": 15,
+            "projectNameEn": 15,
+            "groupName": 10,
+            "groupNameEn": 10,
 
-            "keyword":10,
-            "additionalKeyword":9,
+            "keyword": 10,
+            "additionalKeyword": 9,
 
-            "groupNameKana":5,
-            "pamphletText":5,
-            "webText":4,
+            "groupNameKana": 5,
+            "pamphletText": 5,
+            "webText": 4,
 
-            "projectGenre":3,
+            "projectGenre": 3,
 
-            "eventPlace":2,
-            "cost":2,
+            "eventPlace": 2,
+            "cost": 2,
         }
 
-        let scoreLst= projectLst.current.map((project) => {
-            project.additionalKeyword=""
+        const keywords = inputValueRef.current.replace("　", " ").split(" ")
+        
+        let scoreLst = projectLst.current.map((project) => {
+            project.additionalKeyword = ""
 
-            project.additionalKeyword+={//模擬店　みたいな検索にたいしてキーワード検索が引っかかるように
-                "kannai":"館内",
-                "mogiten":"模擬店、屋台、昼食、お昼ごはん、eat",
-                "stage":"ステージ、stage",
-                "okugai":"屋外",
+            project.additionalKeyword += {//模擬店　みたいな検索にたいしてキーワード検索が引っかかるように
+                "kannai": "館内",
+                "mogiten": "模擬店、屋台、昼食、お昼ごはん、eat",
+                "stage": "ステージ、stage",
+                "okugai": "屋外",
             }[project.section]
 
             // if(nowBuildingFilterCheck && nowStayingBuilding !== project.building && nowStayingBuilding!=="all"){
             //     return -1
             // }
-            if(forChildFilterCheck && !project.age){
+            if (forChildFilterCheck && !project.age) {
                 return -1
             }
-            if(avoidCrowdFilterCheck && project.congestion==="混雑"){
+            if (avoidCrowdFilterCheck && project.congestion === "混雑") {
                 return -1
             }
-            let score=0
-            const keywords=inputValue.replace("　"," ").split(" ")
-            for(let keyword of keywords){
-                for(let key of Object.keys(keyScoreLst)){
-                    if((""+project[key]).includes(keyword)){
-                        score+=keyScoreLst[key]
+
+            let score = 0
+            for (let keyword of keywords) {
+                for (let key of Object.keys(keyScoreLst)) {
+                    if (("" + project[key]).includes(keyword)) {
+                        score = Math.max(keyScoreLst[key], score)
                     }
                 }
             }
             return score
         })
-        scoreLst=scoreLst.map((score)=>score>0?score+Math.random()*5:score)//ランダム要素を強めに入れたい
+        scoreLst = scoreLst.map((score) => score > 0 ? score + Math.random() * 2 : score)//ランダム要素
 
-        const dic={}
-        for(let i=0;i<scoreLst.length;i++){
-            dic[projectLst.current[i].id]=scoreLst[i]
+        const dic = {}
+        for (let i = 0; i < scoreLst.length; i++) {
+            dic[projectLst.current[i].id] = scoreLst[i]
         }
 
-        projectLst.current.sort((a,b)=>{
-            return dic[b.id]-dic[a.id]
+        projectLst.current.sort((a, b) => {
+            return dic[b.id] - dic[a.id]
         })
-        const under_zero_count=scoreLst.filter((score)=>score<=0).length
-        setDisplayLst(projectLst.current.slice(0,projectLst.current.length-under_zero_count))
-        
+        const under_zero_count = scoreLst.filter((score) => score <= 0).length
+        setDisplayLst(projectLst.current.slice(0, projectLst.current.length - under_zero_count))
+
     }
 
     const onClickClearBtn = () => {
-        document.getElementById("serch_word").value=""
+        document.getElementById("serch_word").value = ""
         setInputValue("")
-        var children=document.getElementById("checkbox2").checked
-        if(children){
-            children=!children
+        var children = document.getElementById("checkbox2").checked
+        if (children) {
+            children = !children
             setForChildFilterCheck(prev => !prev)
         }
-        var crowd=document.getElementById("checkbox3").checked
-        if(crowd){
-            crowd=!crowd
+        var crowd = document.getElementById("checkbox3").checked
+        if (crowd) {
+            crowd = !crowd
             setAvoidCrowdFilterCheck(prev => !prev)
         }
     }
 
-    function eventPlace(project){
-        if(project.section==="mogiten"){
+    function eventPlace(project) {
+        if (project.section === "mogiten") {
             return "テント" + project.eventPlace
-        }else if(project.section==="stage"){
+        } else if (project.section === "stage") {
             return "ステージ" + project.eventPlace
-        }else{
+        } else {
             return project.eventPlace
         }
     }
 
-    function visitorPhoto(project){
-        if(project.visitorPhoto){
+    function visitorPhoto(project) {
+        if (project.visitorPhoto) {
             return "撮影可"
-        }else{
+        } else {
             return "撮影禁止"
         }
     }
 
-    function children(project){
-        if(project.age){
+    function children(project) {
+        if (project.age) {
             return <div>子ども向け</div>
-        }else{
+        } else {
             return null
         }
     }
 
-    function PageChange(){
+    function PageChange() {
         window.scrollTo({
             top: 0,
             behavior: "smooth",
         });
     }
 
-    function detail(project){
-        return <Link className="toDetail" to={"/project-search/"+project.id} onClick={PageChange}>▷もっと見る</Link>
+    function detail(project) {
+        return <Link className="toDetail" to={"/project-search/" + project.id} onClick={PageChange}>▷もっと見る</Link>
     }
 
     return (
@@ -178,7 +189,7 @@ export default function Project() {
             <div className="sky-project">
                 <div className="search-header">
                     <PageTitles titles="企画検索" kame={true}></PageTitles>
-                    <div className="search-mainpage"> 
+                    <div className="search-mainpage">
                         <div>
                             <input
                                 placeholder="フリーワード"
@@ -226,7 +237,7 @@ export default function Project() {
                                 </label>
                             </div>
                         </div>
-                        <div style={{marginTop: '15px'}}>▷企画区分で絞る</div>
+                        <div style={{ marginTop: '15px' }}>▷企画区分で絞る</div>
                         <div className="pickup-keyword-container">
                             {
                                 ["館内", "屋外", "ステージ", "模擬店"].map((keyword) => {
@@ -250,34 +261,34 @@ export default function Project() {
                 {/* 検索結果 */}
                 <div className="search-result">{displayLst.length}件 ヒットしました。</div>
                 <div>
-                    {displayLst.slice(0,loadingNum).map((project) => {
-                        if(!project){
+                    {displayLst.slice(0, loadingNum).map((project) => {
+                        if (!project) {
                             return null
                         }
                         return (
-                            <Link className="card-detailLink" to={"/project-search/"+project.id} onClick={PageChange}>
-                            <div key={project.id} className="project-container">
-                                <img src={project.icon} className="project-card-icon" alt="icon"></img>
-                                <div className="card-content">
-                                    <div className="projectName">{project.projectName}</div>
-                                    <div>{project.groupName}</div>
-                                    <div>▷{eventPlace(project)}</div>
-                                    <div className="card-tags">
-                                        <div>{project.projectGenre}</div>
-                                        <div>{project.cost}</div>
-                                        <div>{visitorPhoto(project)}</div>
-                                        {children(project)}
+                            <Link className="card-detailLink" to={"/project-search/" + project.id} onClick={PageChange}>
+                                <div key={project.id} className="project-container">
+                                    <img src={project.icon} className="project-card-icon" alt="icon"></img>
+                                    <div className="card-content">
+                                        <div className="projectName">{project.projectName}</div>
+                                        <div>{project.groupName}</div>
+                                        <div>▷{eventPlace(project)}</div>
+                                        <div className="card-tags">
+                                            <div>{project.projectGenre}</div>
+                                            <div>{project.cost}</div>
+                                            <div>{visitorPhoto(project)}</div>
+                                            {children(project)}
+                                        </div>
+                                        <div className="toDetailParent">{detail(project)}</div>
                                     </div>
-                                    <div className="toDetailParent">{detail(project)}</div>
                                 </div>
-                            </div>
                             </Link>
                         )
                     })}
                 </div>
                 <div className="more-load">
-                    {loadingNum<displayLst.length&& 
-                        <button onClick={()=>setLoadingNum(loadingNum+20)}>もっと見る</button>
+                    {loadingNum < displayLst.length &&
+                        <button onClick={() => setLoadingNum(loadingNum + 20)}>もっと見る</button>
                     }
                 </div>
                 <Link className="toTheTop" to="/" onClick={PageChange}>トップページへ戻る</Link>
