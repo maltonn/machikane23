@@ -5,7 +5,6 @@ import "../../css/About.css"
 import "../../css/Common.css"
 import { Helmet } from "react-helmet";
 import PageTitles from "../../components/PageTitles";
-import { async } from "q";
 
 const shuffleArray = (array) => {
     return array.slice().sort(() => Math.random() - Math.random())
