@@ -20,10 +20,10 @@ export default function Sponsor() {
             <title>Our sponsors|Machikane2023</title>
             </Helmet>
             <div className="sponsor-sky">
-                <PageTitles titles="ご協賛"></PageTitles>
-                <p>まちかね祭開催にあたって、多くのご協賛・ご協力をいただきました。ここに深く御礼申し上げます。</p>
+                <PageTitles titles="Our sponsors"></PageTitles>
+                <p>We would like to express our sincere appreciation toward all the sponsors for the 2023 Machikane Festival.</p>
                 <div className="companies goods">
-                    <div className="sponsor-miniTitles">物品協賛（順不同）</div>
+                    <div className="sponsor-miniTitles-En1">Goods Sponsoring&nbsp;(without honorifics and order)</div>
                     <div className="sponsor-imgs">
                         <a href="https://solaniwa.com/"><img src={solaniwaonsen}></img></a>
                         <a href="https://www.sudio.com/jp/"><img src={sudio}></img></a>
@@ -35,7 +35,7 @@ export default function Sponsor() {
                     </div>
                 </div>
                 <div className="companies advertise">
-                    <div className="sponsor-miniTitles">広告協賛（順不同）</div>
+                    <div className="sponsor-miniTitles-En2">Ad Sponsoring&nbsp;(without honorifics and order)</div>
                     <div className="sponsor-imgs">
                         <a href="https://ou2023hcd.alumni.osaka-u.ac.jp/"><img src={homecomingday}></img></a>
                         <a href="https://ou2023hcd.alumni.osaka-u.ac.jp/"><img src={homecomingday}></img></a>
@@ -46,7 +46,7 @@ export default function Sponsor() {
             </div>
             <div className="sponsor-ocean">
                 <div className="companies special">
-                    <div className="sponsor-miniTitles">特別協賛</div>
+                    <div className="sponsor-miniTitles-En3">Special Sponsoring&nbsp;(without honorifics and order)</div>
                     <div className="sponsor-imgs">
                         <a href="https://ou2023hcd.alumni.osaka-u.ac.jp/"><img src={homecomingday}></img></a>
                     </div>

@@ -10,12 +10,12 @@ export default function Adresses() {
     return(
         <div className="main">
             <Helmet>
-            <title>Adresses|Machikane2023</title>
+            <title>Address|Machikane2023</title>
             </Helmet>
             <div className="greeting-sky">
-                <PageTitles titles="About"></PageTitles>
+                <PageTitles titles="Address"></PageTitles>
                 <div className="president">
-                    <div className="greeting-titles">Address by the university president</div>
+                    <div className="greeting-titles-En1">Address by the university president</div>
                     <div className="greeting-card">
                         <img src={president}></img>
                         <div className="sentences">
@@ -35,7 +35,7 @@ export default function Adresses() {
             <div className="greeting-ocean">
                 <div className="greeting-contents">
                     <div className="chairperson">
-                        <div className="greeting-titles">Address by the chairperson of Festival Committee</div>
+                        <div className="greeting-titles-En2">Address by the chairperson of Festival Committee</div>
                         <div className="greeting-card">
                             <img src={chairperson}></img>
                             <div className="sentences">

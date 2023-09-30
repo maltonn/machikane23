@@ -13,7 +13,7 @@ export default function Adresses() {
             <title>ご挨拶|まちかね祭2023</title>
             </Helmet>
             <div className="greeting-sky">
-                <PageTitles titles="まちかね祭について"></PageTitles>
+                <PageTitles titles="ご挨拶"></PageTitles>
                 <div className="president">
                     <div className="greeting-titles">総長挨拶</div>
                     <div className="greeting-card">
