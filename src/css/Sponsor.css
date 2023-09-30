@@ -9,6 +9,12 @@
     background-size: 100%,contain;
     color:#fff;
 }
+
+.sponsor-sky>p{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
 .sponsor-imgs{
     text-align: center;
     width: 100%;
@@ -22,7 +28,34 @@
     padding-left: 2rem;
     font-size: 1.5rem;
     background-color: rgba(255,255,255,0.85);
-    width: 9rem;
+    width: 15rem;
+    border-radius: 0 50px 50px 0px;
+    margin-bottom: 15px;
+    color: black;
+}
+.sponsor-miniTitles-En1{
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    background-color: rgba(255,255,255,0.85);
+    width: 35rem;
+    border-radius: 0 50px 50px 0px;
+    margin-bottom: 15px;
+    color: black;
+}
+.sponsor-miniTitles-En2{
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    background-color: rgba(255,255,255,0.85);
+    width: 33rem;
+    border-radius: 0 50px 50px 0px;
+    margin-bottom: 15px;
+    color: black;
+}
+.sponsor-miniTitles-En3{
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    background-color: rgba(255,255,255,0.85);
+    width: 36rem;
     border-radius: 0 50px 50px 0px;
     margin-bottom: 15px;
     color: black;
