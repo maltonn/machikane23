@@ -49,7 +49,7 @@ export default function Sponsor() {
                 <div className="companies special">
                     <div className="sponsor-miniTitles">特別協賛</div>
                     <div className="sponsor-imgs">
-                        <a href="https://ou2023hcd.alumni.osaka-u.ac.jp/"><img src={homecomingday alt="homecomingday"}></img></a>
+                        <a href="https://ou2023hcd.alumni.osaka-u.ac.jp/"><img src={homecomingday} alt="homecomingday"></img></a>
                         <a href="http://www.rokkosai-kobe-univ.site/"><img src={rokkosai} alt="rokkosai"></img></a>
                     </div>
                 </div>
