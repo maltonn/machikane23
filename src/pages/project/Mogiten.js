@@ -2,7 +2,9 @@ import { Helmet } from "react-helmet";
 import {Link} from "react-router-dom";
 import "../../css/Common.css"
 import "../../css/Mogiten.css"
-import { useEffect } from "react" 
+import { useEffect } from "react"
+import PageTitles from "../../components/PageTitles";
+import Bubble from "../../components/Bubble";
 
 export default function Mogiten() {
     return (
