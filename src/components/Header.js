@@ -78,6 +78,7 @@ export default function Header() {
                             <ul className={`menu-child ${lang==="en" && "en-longTitle"} ${isMenuOpenB?"is-opend":"is-closed"}`}>
                                 <li><Link to="./sections" onClick={PageChange}>{lang==="en"?"Project Category":"企画区分について"}</Link></li>
                                 <li><Link to="./project-search" onClick={PageChange}>{lang==="en"?"Project Search":"企画検索"}</Link></li>
+                                <li><Link to="./mogiten" onClick={PageChange}>{lang==="en"?"Mogiten":"模擬店企画一覧"}</Link></li>
                                 <li><Link to="./timetable" onClick={PageChange}>{lang==="en"?"Stage Performance Schedule":"ステージタイムテーブル"}</Link></li>
                                 <li><Link to="./ralley" onClick={PageChange}>{lang==="en"?"Rally Projects":"ラリー企画一覧"}</Link></li>
                                 <li><Link to="./official-project" onClick={PageChange}>{lang==="en"?"Projects by Festival Committee":"実行委員会企画"}</Link></li>

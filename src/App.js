@@ -17,6 +17,7 @@ import Sponsor from './pages/machikane/Sponsor';
 import Sections from './pages/project/Sections';
 import Project from './pages/project/Project';
 import Detail from './pages/project/Detail';
+import Mogiten from './pages/project/Mogiten';
 import Timetable from './pages/project/Timetable';
 import Ralley from './pages/project/Ralley';
 import OfficialProject from './pages/project/OfficialProject';
@@ -41,6 +42,7 @@ import SponsorEn from './En-pages/machikane/SponsorEn';
 import SectionsEn from './En-pages/project/SectionsEn';
 import ProjectEn from './En-pages/project/ProjectEn';
 import DetailEn from './En-pages/project/DetailEn';
+import MogitenEn from './En-pages/project/MogitenEn';
 import TimetableEn from './En-pages/project/TimetableEn';
 import RalleyEn from './En-pages/project/RalleyEn';
 import OfficialProjectEn from './En-pages/project/OfficialProjectEn';
@@ -87,6 +89,7 @@ function AppContents() {
               <Route path="/sections/" element={<SectionsEn />} />
               <Route path="/project-search/" element={<ProjectEn />} />
               <Route path="/project-search/:id" element={<DetailEn />} />
+              <Route path="/mogiten/" element={<MogitenEn />} />
               <Route path="/timetable/" element={<TimetableEn />} />
               <Route path="/ralley/" element={<RalleyEn />} />
               <Route path="/official-project/" element={<OfficialProjectEn />} />
@@ -117,6 +120,7 @@ function AppContents() {
                 <Route path="/sections/" element={<Sections />} />
                 <Route path="/project-search/" element={<Project />} />
                 <Route path="/project-search/:id" element={<Detail />} />
+                <Route path="/mogiten/" element={<Mogiten />} />
                 <Route path="/timetable/" element={<Timetable />} />
                 <Route path="/ralley/" element={<Ralley />} />
                 <Route path="/official-project/" element={<OfficialProject />} />
