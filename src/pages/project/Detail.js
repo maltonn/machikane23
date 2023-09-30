@@ -17,7 +17,6 @@ import 'swiper/css/pagination';
 
 export default function Detail() {
     const { id } = useParams();
-    console.log(id)
     const [project, setProject] = useState(null);
     useEffect(() => {
         fetch(`https://app.tyuujitu-system.net/api/machikane23/website/${id}.json`).then((res) => {
@@ -28,16 +27,7 @@ export default function Detail() {
             console.log(res)
             setProject(res)
         })
-    }, [])
-    function eventPlace(project){
-        if(project.section==="mogiten"){
-            return "テント" + project.eventPlace
-        }else if(project.section==="stage"){
-            return "ステージ" + project.eventPlace
-        }else{
-            return project.eventPlace
-        }
-    }
+    }, [id])
     function visitorPhoto(project){
         if(project.visitorPhoto){
             return "撮影可"
@@ -50,6 +40,22 @@ export default function Detail() {
             return <div>子ども向け</div>
         }else{
             return null
+        }
+    }
+    function eventPlace(project){
+        if(project.section==="mogiten"){
+            return "テント" + project.eventPlace
+        }else if(project.section==="stage"){
+            return "ステージ" + project.eventPlace
+        }else{
+            return project.eventPlace
+        }
+    }
+    function numberedTickets(project){
+        if(project.numberedTickets){
+            return "あり"
+        }else{
+            return "なし"
         }
     }
     function projectTime(project){
@@ -93,6 +99,7 @@ export default function Detail() {
                         </div>
                         <div className="detail-content">
                             <div className="detail-content-kind">▷企画場所：{eventPlace(project)}</div>
+                            <div className="detail-content-kind">▷整理券配布：{numberedTickets(project)}</div>
                             <div className="detail-content-kind">▷SNSなど<br/>
                                 <div className="sns-imgs">
                                     {project.twitter1 && 
@@ -121,7 +128,12 @@ export default function Detail() {
                                     }
                                     {project.link3 && 
                                     <a href={project.link3} target="_blank" rel="noreferrer"><img className="insta" src={link} alt="link"></img></a>
-                                    }                                    
+                                    }
+                                    {(!project.twitter1 && !project.twitter2 && !project.twitter3 &&
+                                      !project.insta1 && !project.insta2 && !project.insta3 &&
+                                      !project.link1 && !project.link2 && !project.link3)
+                                      && <div>なし</div>
+                                      }                                 
                                 </div>
                             </div>
                             <div className="detail-content-kind">{projectTime(project)}</div>
@@ -147,7 +159,8 @@ export default function Detail() {
                     <p>読み込み中</p>
                 )
             }
-            <Link className="toTheTop" to="/" onClick={PageChange}>トップページへ戻る</Link>
+            <div><Link className="toTheTop" to="/project-search" onClick={PageChange}>企画検索へ戻る</Link></div>
+            <div><Link className="toTheTop" to="/" onClick={PageChange}>トップページへ戻る</Link></div>
         </div>
     )
 }

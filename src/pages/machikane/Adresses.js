@@ -13,11 +13,11 @@ export default function Adresses() {
             <title>ご挨拶|まちかね祭2023</title>
             </Helmet>
             <div className="greeting-sky">
-                <PageTitles titles="ご挨拶"></PageTitles>
+                <PageTitles titles="ご挨拶" kame={true}></PageTitles>
                 <div className="president">
                     <div className="greeting-titles">総長挨拶</div>
                     <div className="greeting-card">
-                        <img src={president}></img>
+                        <img src={president} alt="president"></img>
                         <div className="sentences">
                             <p>
                                 今年も「まちかね祭」の季節が巡ってきました。「まちかね祭」は、毎年、メインテーマを掲げ、大学祭中央実行委員会を中心とした学生の皆さんが、自らの手によって企画・運営する大阪大学の恒例行事です。今年で64回目を迎えます。これまで培ってきた長い歴史と、その伝統を継承してこられた学生の皆さんのご尽力に深く敬意を表します。<br></br>
@@ -37,7 +37,7 @@ export default function Adresses() {
                     <div className="chairperson">
                         <div className="greeting-titles">委員長挨拶</div>
                         <div className="greeting-card">
-                            <img src={chairperson}></img>
+                            <img src={chairperson} alt="chairperson"></img>
                             <div className="sentences">
                                 <p>
                                     ご来場の皆様、本日はまちかね祭にお越しいただきありがとうございます。<br></br>
