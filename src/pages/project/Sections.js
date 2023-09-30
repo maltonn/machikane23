@@ -17,7 +17,7 @@ export default function Sections() {
                         <div className="notes-naiyou">
                             <div className="notes-miniTitle">館内区分</div>
                             <div className="notes-miniContent">
-                                <p>館内区分では、様々なサークル、部活による個性豊かな演奏、販売、体験、展示などの企画が行われます。これらはその名の通り、全学教育共通棟、文法経講義棟、法経講義棟、学生会館の教室内で実施されております。ぜひお立ち寄りください。</p>
+                                <p>館内区分では、様々なサークル、部活による個性豊かな演奏、販売、体験、展示などの企画が行われます。これらはその名の通り、全学教育共通棟、文法経講義棟、法経講義棟、学生会館の教室内、大学会館内の懐徳堂で実施されております。ぜひお立ち寄りください。</p>
                             </div>
                         </div>
                         <div className="notes-naiyou">

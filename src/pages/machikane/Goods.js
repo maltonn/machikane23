@@ -9,7 +9,7 @@ import allstickers from "../../imgs/goods/stickers_line.png"
 // import stickers2 from "../../imgs/goods/stickers2.png"
 import pendetail from "../../imgs/goods/pen-detail.png"
 // import pen1 from "../../imgs/goods/pen1.jpg"
-import tote from "../../imgs/goods/tote.png"
+import tote from "../../imgs/goods/totebag.png"
 import allgoods from "../../imgs/goods/allgoods.png"
 import PageTitles from "../../components/PageTitles";
 import Bubble from "../../components/Bubble";
@@ -37,7 +37,7 @@ export default function Goods() {
                                 </div>
                                 <div className="stickers-content">
                                     <div className="goods-subtitle">ステッカー２枚セット　300円</div>
-                                    <p>前回好評いただいたステッカーが今回も登場です。かわいいデザインからカッコイイデザインまで、様々なステッカをご用意しました。</p>
+                                    <p>前回好評いただいたステッカーが今回も登場です。かわいいデザインからカッコイイデザインまで、様々なステッカーをご用意しました。</p>
                                 </div>
                                 <div className="pen">
                                     <img src={pendetail} alt="pendetail"></img>
