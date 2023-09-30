@@ -19,7 +19,7 @@ export default function ThemeEn() {
                   "Han-Sun-<nobr>Sun. "</nobr>
                 </div>
                 <div className="themep-context">
-                    <p>The theme for Machikane Festival 2023 is ─── "Han-Sun-Sun. "</p>
+                    <p>The theme for Machikane Festival 2023 is ─── "Han-Sun-<nobr>Sun. "</nobr></p>
                     <p>We hope that every student of Osaka University will shine their characteristics as brightly as the sunlight.</p>
                     <p>Machikane Festival is the place where students can show off their accomplishments through everyday studies.  And those outcomes don’t have so many opportunities that can see the light of day.  Their efforts will be recognized only by being shown to the world.</p>
                     <p>Interactions with foreigners will make students’ characteristics more bright —- as the golden ginkgo trees glow under the autumn sunshine.  The brightness of students’ characteristics will inspire others —- as the ginkgo leaves turn to bright yellow pleasing people’s eyes.  In this unstable society and depressing world, young generations will surely be the light of hope for the future.</p>
