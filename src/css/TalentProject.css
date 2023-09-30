@@ -71,6 +71,7 @@
     display: flex;
     position: relative;
     left: 60vw;
+    z-index: 100;
 }
 .autographBlock img{
     width: 5vw;
@@ -91,14 +92,19 @@
     margin: 0;
 }
 .talentInfor{
-    margin-left: 15vw;
     position: relative;
     top: -14vh;
     font-size: 2vw;
+    background-color: rgba(255,255,255,0.78);
+    border-radius: 50px;
+    margin: 0 auto;
+    width: 90%;
+    box-sizing: border-box;
+    padding: 20px 15px 30px;
 }
 
 .talentProjectCaution{
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 20px 15px 30px;
     text-align: left;
     margin: 0 auto;
@@ -109,7 +115,8 @@
     width: 90%;
 }
 .caution{
-    font-size: 2.5vw;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .cautionAll{

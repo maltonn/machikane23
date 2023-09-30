@@ -32,7 +32,7 @@ export default function TalentProject(){
                     <p className="startCaution">開場は13時からです。早めにお越しください。</p>
                 </div>
                 <div className="talentProjectCaution">
-                    <h2 className="caution notes-miniTitle">注意事項</h2>
+                    <h2 className="caution">注意事項</h2>
                     <ul className="cautionAll">
                         <li className="caution1">この企画は<strong>事前予約</strong>制なので、以下のリンクからご予約お願いします。
                         <p className="reservationUrl">
