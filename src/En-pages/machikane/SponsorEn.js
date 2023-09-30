@@ -11,6 +11,7 @@ import solaniwaonsen from "../../imgs/sponsor/solaniwa-onsen.jpg"
 import sorakakeru from "../../imgs/sponsor/sorakakeru.png"
 import sudio from "../../imgs/sponsor/sudio.png"
 import homecomingday from "../../imgs/sponsor/home-coming-day.jpg"
+import rokkosai from "../../imgs/sponsor/rokkosai.jpeg"
 import PageTitles from "../../components/PageTitles";
 
 export default function Sponsor() {
@@ -49,6 +50,7 @@ export default function Sponsor() {
                     <div className="sponsor-miniTitles-En3">Special Sponsoring&nbsp;(without honorifics and order)</div>
                     <div className="sponsor-imgs">
                         <a href="https://ou2023hcd.alumni.osaka-u.ac.jp/"><img src={homecomingday}></img></a>
+                        <a href="http://www.rokkosai-kobe-univ.site/"><img src={rokkosai}></img></a>
                     </div>
                 </div>
             </div>      
