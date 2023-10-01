@@ -38,7 +38,7 @@
     border: 1px solid;
     border-collapse: collapse;
 }
-.FAQ-table tr,th,td{
+.FAQ-table tr, .FAQ-table th,.FAQ-table td{
     border: 1px solid;
     border-collapse: collapse;
 }
