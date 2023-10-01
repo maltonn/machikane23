@@ -3,10 +3,10 @@
   }
 .top-component{
     background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
-    background-size: 150px,250px,100px;
+    background-size: 180px,250px,120px;
     background-repeat: no-repeat,no-repeat,no-repeat;
-    background-position: 25% 8vh,right bottom,5% 30vh;
-    height: 350px;
+    background-position: 72% 88px,right bottom,5% bottom;
+    height: 400px;
 }
 .page-titles{
     font-size: 2rem;
@@ -14,7 +14,7 @@
     background-color: rgba(255,255,255,0.75);
     border-radius: 0px 50px 50px 0px;
     position: relative;
-    top: 17vh;
+    top: 168px;
     width: calc(var(--base-pageLength)*2.2);
 }
 .machikame-default{
@@ -32,16 +32,17 @@
 @media  (max-width: 500px){
     .top-component{
         background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
-        background-size: 25%,calc(200px + 3vw),80px;
+        background-size: 0,calc(200px + 3vw),80px;
         background-repeat: no-repeat,no-repeat,no-repeat;
-        background-position: 4vw 3vh,right bottom,6vw 180px;
-        height: 280px;
+        background-position: 4vw 3vh,right bottom,6vw 155px;
+        height: 240px;
+        margin-bottom: 17px;
     } 
     .page-titles{
         font-size: 1.4rem;
         padding: 5px 25px;
         border-radius: 0px 50px 50px 0px;
-        top: 12vh;
+        top: 85px;
         width: calc(var(--base-pageLength)*1.5);
     }
     .machikame-default img{
@@ -58,16 +59,16 @@
 @media (min-width: 500px) and (max-width: 1070px){
     .top-component{
         background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
-        background-size: 17vh,calc(50px + 30vw),20%;
+        background-size: 180px,calc(50px + 30vw),20%;
         background-repeat: no-repeat,no-repeat,no-repeat;
-        background-position: 5% 0vh,right bottom,4% 20vh;
-        height: 360px;
+        background-position: 70% 0vh,right bottom,4% 250px;
+        height: 410px;
     }
     .page-titles{
         font-size: 2rem;
         padding: 5px 30px;
         border-radius: 0px 50px 50px 0px;
-        top: 12vh;
+        top: 145px;
         width: calc(var(--base-pageLength)*2.2);
     }
     .machikame-default img{
