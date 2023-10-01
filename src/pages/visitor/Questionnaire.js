@@ -135,7 +135,19 @@ export default function Questionnaire() {
                                             question.option.map((opt, index) => {
                                                 return (
                                                     <div className="option" key={index}>
-                                                        <input type="checkbox" name={question.id} id={question.id + "-" + index} value={opt} />
+                                                        <input 
+                                                        type="checkbox" 
+                                                        name={question.id} 
+                                                        id={question.id + "-" + index} 
+                                                        value={opt}
+                                                        onChange={(e) => { 
+                                                            console.log(e.target.value);
+                                                            // if(!QuestionLst[Idx(question.id)]["answer"].includes(e.target.value)){
+                                                            //     QuestionLst[Idx(question.id)]["answer"]+=(","+e.target.value);
+                                                            //     setQuestionLst([...QuestionLst])
+                                                            // }
+                                                        }}
+                                                        />
                                                         <label htmlFor={question.id + "-" + index}>{opt}</label>
                                                     </div>
                                                 )
@@ -148,7 +160,12 @@ export default function Questionnaire() {
                                 return (
                                     <div className="question" key={index}>
                                         <h2>{question.question}</h2>
-                                        <textarea name={question.id} id={question.id} cols="30" rows="10"></textarea>
+                                        <textarea 
+                                        name={question.id} 
+                                        id={question.id} cols="30" rows="10"
+                                        onChange={(e) => {console.log(e.target.value)}}
+                                        
+                                        ></textarea>
                                     </div>
                                 )
                             }
