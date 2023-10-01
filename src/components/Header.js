@@ -8,7 +8,7 @@ import { useGlobalContext } from "../contexts/globalContext";
 export default function Header() {
     const [isHamburgerOpen, setIsHamburgerOpen] = useState(false)
 
-    function onHamburgerClick() { //ハンバーガーがクリックされた時の処理
+    const onHamburgerClick=()=>{ //ハンバーガーがクリックされた時の処理
         setIsHamburgerOpen(prev => !prev)
     }
     const [isMenuOpenA, setIsMenuOpenA] = useState(false)
@@ -38,10 +38,6 @@ export default function Header() {
             behavior: "smooth",
         });
     }
-    
-    useEffect(() =>{
-
-    })
 
     const { lang } = useGlobalContext()
     const { setLang } =useGlobalContext()
