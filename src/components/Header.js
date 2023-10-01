@@ -27,7 +27,7 @@ export default function Header() {
     function menuOpenD() {
         setIsMenuOpenD(prev => !prev)
     }
-    function PageChange(){
+    const PageChange=()=>{
         setIsHamburgerOpen(false)
         setIsMenuOpenA(false)
         setIsMenuOpenB(false)
