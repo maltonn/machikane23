@@ -9,7 +9,7 @@ export default function FAQEn() {
             </Helmet>
             <div className="preparation">
                 <p>Coming soon! Now preparing.</p>
-                <span>Current page：FAQ</span><br></br>
+                <span>Current page:FAQ</span><br></br>
                 <Link to="/" >Back to the TOP</Link>
             </div>
         </div>
