@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import { useState, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import "../../css/Common.css"
 import "../../css/About.css"
 
@@ -34,6 +34,34 @@ export default function Questionnaire() {
         }
         )
     }
+
+    const [isDoneSubmit, setIsDoneSubmit] = useState(false);//送信済みかどうか
+    const handleSubmit = () => {
+        QuestionLst.forEach((question) => {
+            if (question.answer != "") {
+                ReqToDB(question.id, question.answer);
+            }
+        })
+        setIsDoneSubmit(true);
+    }
+
+    useEffect(() => {//閉じるときに途中までの結果を送信
+        const beforeunloadEvent = (e) => {
+            if (isDoneSubmit) {
+                return;
+            }
+            QuestionLst.forEach((question) => {
+                if (question.answer != "") {
+                    ReqToDB(question.id, question.answer);
+                }
+            })
+        }
+        window.addEventListener("beforeunload", beforeunloadEvent)
+        return () => {
+            window.removeEventListener("beforeunload", beforeunloadEvent)
+        }
+    }, [isDoneSubmit])
+
 
     const Idx = (id) => {
         let idx = 0;
@@ -135,18 +163,18 @@ export default function Questionnaire() {
                                             question.option.map((opt, index) => {
                                                 return (
                                                     <div className="option" key={index}>
-                                                        <input 
-                                                        type="checkbox" 
-                                                        name={question.id} 
-                                                        id={question.id + "-" + index} 
-                                                        value={opt}
-                                                        onChange={(e) => { 
-                                                            console.log(e.target.value);
-                                                            // if(!QuestionLst[Idx(question.id)]["answer"].includes(e.target.value)){
-                                                            //     QuestionLst[Idx(question.id)]["answer"]+=(","+e.target.value);
-                                                            //     setQuestionLst([...QuestionLst])
-                                                            // }
-                                                        }}
+                                                        <input
+                                                            type="checkbox"
+                                                            name={question.id}
+                                                            id={question.id + "-" + index}
+                                                            value={opt}
+                                                            onChange={(e) => {
+                                                                console.log(e.target.value);
+                                                                // if(!QuestionLst[Idx(question.id)]["answer"].includes(e.target.value)){
+                                                                //     QuestionLst[Idx(question.id)]["answer"]+=(","+e.target.value);
+                                                                //     setQuestionLst([...QuestionLst])
+                                                                // }
+                                                            }}
                                                         />
                                                         <label htmlFor={question.id + "-" + index}>{opt}</label>
                                                     </div>
@@ -160,11 +188,11 @@ export default function Questionnaire() {
                                 return (
                                     <div className="question" key={index}>
                                         <h2>{question.question}</h2>
-                                        <textarea 
-                                        name={question.id} 
-                                        id={question.id} cols="30" rows="10"
-                                        onChange={(e) => {console.log(e.target.value)}}
-                                        
+                                        <textarea
+                                            name={question.id}
+                                            id={question.id} cols="30" rows="10"
+                                            onChange={(e) => { console.log(e.target.value) }}
+
                                         ></textarea>
                                     </div>
                                 )
@@ -173,20 +201,23 @@ export default function Questionnaire() {
                     }
                 </div>
             </div>
-            <div className="ocean">
-                <div className="bottom">
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                </div>
-            </div>
+            {
+                QuestionLst.every((question, index) => {
+                    if (question["visible-if"]) {
+                        const qid = question["visible-if"].split("==")[0];
+                        const ans = question["visible-if"].split("==")[1];
+                        if (QuestionLst[Idx(qid)].answer != ans) {
+                            return true
+                        }
+                    }
+                    if (question.answer != "") {
+                        return true
+                    }
+                    return false
+                }) && (
+                    <button onClick={handleSubmit}>送信</button>
+                )
+            }
         </div>
     )
 }
