@@ -1,3 +1,6 @@
+:root{
+    --base-height: 2300px;
+}
 .ocean-bubbles{
     display: block;
     width:100%;
@@ -20,6 +23,7 @@
     border-radius: 50%;
     animation: bubble 10s linear infinite;
     z-index: 0;
+    position: fixed;
 }
 .bubble-component:nth-child(1) {
     width: 8px;
@@ -83,7 +87,7 @@
 }
 @keyframes bubble {
     0% {
-      bottom: -15px;
+      bottom: 0px;
       transform: translateX(0);
     }
     50% {
@@ -93,3 +97,19 @@
       bottom: var(--base-height);
     }
   }
+  /*======================
+  スマホ用
+======================*/
+@media  (max-width: 500px){
+    .bottom-bubbles{
+        height:110px;
+    }
+}
+/*======================
+  タブレット用
+======================*/
+@media (min-width: 500px) and (max-width: 1070px){
+    .bottom-bubbles{
+        height:230px;
+    }
+}

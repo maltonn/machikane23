@@ -11,6 +11,7 @@ import solaniwaonsen from "../../imgs/sponsor/solaniwa-onsen.jpg"
 import sorakakeru from "../../imgs/sponsor/sorakakeru.png"
 import sudio from "../../imgs/sponsor/sudio.png"
 import homecomingday from "../../imgs/sponsor/home-coming-day.jpg"
+import rokkosai from "../../imgs/sponsor/rokkosai.jpeg"
 import PageTitles from "../../components/PageTitles";
 
 export default function Sponsor() {
@@ -21,8 +22,9 @@ export default function Sponsor() {
             </Helmet>
             <div className="sponsor-sky">
                 <PageTitles titles="ご協賛" kame={true}></PageTitles>
+                <p>以下の企業・団体の皆さまより、本まちかね祭の企画・運営へ多大なるご支援を賜りました。ここに深く御礼申し上げます。</p>
                 <div className="companies goods">
-                    <div className="sponsor-miniTitles">物品協賛</div>
+                    <div className="sponsor-miniTitles">物品協賛（順不同）</div>
                     <div className="sponsor-imgs">
                         <a href="https://solaniwa.com/"><img src={solaniwaonsen} alt="solaniwaonsen"></img></a>
                         <a href="https://www.sudio.com/jp/"><img src={sudio} alt="sudio"></img></a>
@@ -34,7 +36,7 @@ export default function Sponsor() {
                     </div>
                 </div>
                 <div className="companies advertise">
-                    <div className="sponsor-miniTitles">広告協賛</div>
+                    <div className="sponsor-miniTitles">広告協賛（順不同）</div>
                     <div className="sponsor-imgs">
                         <a href="https://ou2023hcd.alumni.osaka-u.ac.jp/"><img src={homecomingday} alt="homecomingday"></img></a>
                         <a href="https://ou2023hcd.alumni.osaka-u.ac.jp/"><img src={homecomingday} alt="homecomingday"></img></a>
@@ -48,6 +50,7 @@ export default function Sponsor() {
                     <div className="sponsor-miniTitles">特別協賛</div>
                     <div className="sponsor-imgs">
                         <a href="https://ou2023hcd.alumni.osaka-u.ac.jp/"><img src={homecomingday} alt="homecomingday"></img></a>
+                        <a href="http://www.rokkosai-kobe-univ.site/"><img src={rokkosai} alt="rokkosai"></img></a>
                     </div>
                 </div>
             </div>      

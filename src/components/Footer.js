@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 import { useGlobalContext } from "../contexts/globalContext";
 
 export default function Footer() {
-    function PageChange(){
+    const PageChange=()=>{
         window.scrollTo({
             top: 0,
             behavior: "smooth",

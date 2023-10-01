@@ -1,15 +1,17 @@
 import { Helmet } from "react-helmet";
 import {Link} from "react-router-dom";
+
 import "../../css/Common.css"
-export default function FAQEn() {
+import "../../css/Mogiten.css"
+export default function MogitenEn() {
     return(
         <div className="main">
             <Helmet>
-            <title>FAQ|Machikane2023</title>
+            <title>Mogiten|Machikane2023</title>
             </Helmet>
             <div className="preparation">
                 <p>Coming soon! Now preparing.</p>
-                <span>Current page:FAQ</span><br></br>
+                <span>Current page：Mogiten</span><br></br>
                 <Link to="/" >Back to the TOP</Link>
             </div>
         </div>
