@@ -18,6 +18,24 @@
     margin-bottom: 15px;
     color: black;
 }
+.greeting-titles-En1{
+    padding-left: 32px;
+    font-size: 30px;
+    background-color: rgba(255,255,255,0.85);
+    width: 32rem;
+    border-radius: 0 50px 50px 0px;
+    margin-bottom: 15px;
+    color: black;
+}
+.greeting-titles-En2{
+    padding-left: 32px;
+    font-size: 30px;
+    background-color: rgba(255,255,255,0.85);
+    width: 45rem;
+    border-radius: 0 50px 50px 0px;
+    margin-bottom: 15px;
+    color: black;
+}
 .greeting-contents{ /*委員長挨拶の位置調整*/
     padding-top: 15rem;
 }
@@ -55,6 +73,24 @@
         font-size: 1.2rem;
         width: 8rem;
     }
+    .greeting-titles-En1{
+        padding-left: 32px;
+        font-size: 1.2rem;
+        background-color: rgba(255,255,255,0.85);
+        width: 21rem;
+        border-radius: 0 50px 50px 0px;
+        margin-bottom: 15px;
+        color: black;
+    }
+    .greeting-titles-En2{
+        padding-left: 32px;
+        font-size: 1.1rem;
+        background-color: rgba(255,255,255,0.85);
+        width: 26rem;
+        border-radius: 0 50px 50px 0px;
+        margin-bottom: 15px;
+        color: black;
+    }
     .greeting-contents{ /*委員長挨拶の位置調整*/
         padding-top: 8rem;
     }
@@ -78,5 +114,23 @@
     .sentences{
         padding: 0 20px;
         font-size: 1rem;
+    }
+    .greeting-titles-En1{
+        padding-left: 32px;
+        font-size: 1.2rem;
+        background-color: rgba(255,255,255,0.85);
+        width: 20rem;
+        border-radius: 0 50px 50px 0px;
+        margin-bottom: 15px;
+        color: black;
+    }
+    .greeting-titles-En2{
+        padding-left: 32px;
+        font-size: 1.2rem;
+        background-color: rgba(255,255,255,0.85);
+        width: 28rem;
+        border-radius: 0 50px 50px 0px;
+        margin-bottom: 15px;
+        color: black;
     }
 }

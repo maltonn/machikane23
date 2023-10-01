@@ -52,8 +52,8 @@
     display: inline-flex;
 }
 .project-card-icon{
-    width: auto;
-    height: auto;
+    width: 150px;
+    height: 150px;
     max-width: 150px;
     max-height: 150px;
     margin: 5px;
@@ -147,8 +147,8 @@
     font-size: 0.7rem;
 }
 .project-card-icon{
-    width: auto;
-    height: auto;
+    width: 100px;
+    height: 100px;
     max-width: 100px;
     max-height: 100px;
     margin: 5px;

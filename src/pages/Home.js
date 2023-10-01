@@ -30,7 +30,7 @@ export default function Home() {
 
   }, [])
 
-  function PageChange(){
+  const PageChange=()=>{
     window.scrollTo({
         top: 0,
         behavior: "smooth",

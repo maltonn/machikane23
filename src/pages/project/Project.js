@@ -169,7 +169,7 @@ export default function Project() {
         }
     }
 
-    function PageChange() {
+    const PageChange=()=> {
         window.scrollTo({
             top: 0,
             behavior: "smooth",

@@ -93,7 +93,7 @@ export default function LabOpen() {
         setInputValue("")
     }
 
-    function PageChange(){
+    const PageChange=()=>{
         window.scrollTo({
             top: 0,
             behavior: "smooth",

@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 import "../css/Common.css"
 export default function Error404() {
-    function PageChange(){
+    const PageChange=()=>{
         window.scrollTo({
             top: 0,
             behavior: "smooth",
