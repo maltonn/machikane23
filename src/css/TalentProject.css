@@ -3,19 +3,27 @@
     width: 100%;
     overflow: hidden;
     margin-top: 0px;
+    padding-bottom: 0;
     z-index: 1000;
 }
+/* .talentBox{
+    border: #233192 solid 3px;
+    width: 75vw;
+    margin: 0 auto;
+} */
 .talentTitle{
     font-size: 2em;
-    line-height: 60px;
+    line-height: 10vh;
     position: relative;
-    height: 60px;
-    width: 60vw;
-    margin: 2em auto 1em;
+    height: 10vh;
+    width: 70vw;
+    height: 100%;
+    margin: 0 auto 1em;
     padding: 0 2rem;
     text-align: center;
     color: #fff;
     background: #233192;
+    white-space: nowrap;
 }
 .talentTitle::before,
 .talentTitle::after{
@@ -23,7 +31,7 @@
     top: 0;
     display: block;
     content: '';
-    border: 30px solid #233192;
+    border: 5vh solid #233192;
 }
 .talentTitle::before{
     left: -40px;
@@ -45,8 +53,8 @@
 }
 .talentTop {
     /* width: 100%; */
-    /* height: 125vh; */
-    background-image:linear-gradient(#fff 5%, #00B2E9 50%,#b5e5f4 90%);
+    /* height: 150vw; */
+    background-image:linear-gradient(#15c1f6 0%,#b5e5f4 80%, #fff 100%);
     background-repeat: no-repeat, no-repeat;
     background-position:center 42%,center;
 }
@@ -63,6 +71,7 @@
     display: flex;
     position: relative;
     left: 60vw;
+    z-index: 100;
 }
 .autographBlock img{
     width: 5vw;
@@ -83,19 +92,45 @@
     margin: 0;
 }
 .talentInfor{
-    margin-left: 15vw;
     position: relative;
     top: -14vh;
     font-size: 2vw;
+    background-color: rgba(255,255,255,0.78);
+    border-radius: 50px;
+    margin: 0 auto;
+    width: 90%;
+    box-sizing: border-box;
+    padding: 20px 15px 30px;
 }
 
+.talentProjectCaution{
+    font-size: 1.5rem;
+    padding: 20px 15px 30px;
+    text-align: left;
+    margin: 0 auto;
+    display: block;
+    background-color: rgba(255,255,255,0.78);
+    border-radius: 50px;
+    box-sizing: border-box;
+    width: 90%;
+}
 .caution{
-    margin-left: 15vw;
-    font-size: 2.5vw;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .cautionAll{
-    margin-left: 15vw;
+    margin-bottom: 0;
+}
+.reservationUrl{
+    border: double 3px #2E3192;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 30%;
+    text-align: center;
+}
+.reservationUrl a{
+    text-decoration: none;
 }
 .caution li{
     font-size: 2vw;
@@ -106,6 +141,25 @@
         margin: 0em auto 1em;
         font-size: 3.5vw;
         padding: 0;
+        line-height: 6vh;
+    }
+    .talentTitle::before,
+    .talentTitle::after{
+        position: absolute;
+        top: 0;
+        display: block;
+        content: '';
+        border: 3vh solid #233192;
+    }
+    .talentTitle::before{
+        left: -5vw;
+        border-left-width: 15px;
+        border-left-color: transparent;
+    }
+    .talentTitle::after{
+        right: -5vw;
+        border-right-width: 15px;
+        border-right-color: transparent;
     }
     .tombrown{
         margin-top: 5vh;
@@ -125,13 +179,15 @@
     }
     .caution{
         font-size: 5vw;
-        position: relative;
+        /* position: relative; */
         top: -13vh;
     }
     .cautionAll{
         margin-left: 2vw;
-        position: relative;
+        /* position: relative; */
         top: -13vh;
+        font-size: 0.5rem;
+        padding: 0;
     }
 }
 

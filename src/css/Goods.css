@@ -1,141 +1,185 @@
-.goods-mainpage{
-    width: 92%;
-    padding-bottom: 80px;
-    margin:0 auto;
-}
-.goodsp-top{
-    background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png"),url("../imgs/circlecloud3.png");
-    background-size: 435px,408px,119px;
-    background-repeat: no-repeat,no-repeat,no-repeat;
-    background-position: 90% 8vh,290px bottom,4% bottom;
-    height: 427px;
-    position: relative;
+.goods-sky {
+    color: #233192;
+    width: 100%;
+    background: linear-gradient( 
+      #15c1f6 0%,
+      #b5e5f4 80%, 
+      #fff 100%);
   }
-.goodsp-title{
-    top: 45%;
-    position: absolute;
-}
-h1{
-    font-size: 32px;
-    padding: 10px 40px;
-    background-color: rgba(255,255,255,0.75);
-     border-radius: 0px 50px 50px 0px; 
-    /* border-radius: 50px; */
-    /* border:solid 1.2px rgba(30, 187, 255, 0.8); */
-    display: inline-block ;
-    /*margin-bottom: 150px;*/
-    position: relative;
-    top:0vh;
+  .goods-mainpage{
+      position: relative;
+      bottom:5rem;
   }
-.goods-intro{
-    background-color: rgb(255, 255, 255, 0.38);
-    font-size: 22px;
-    display: block;
-    padding: 10px 20px;
-    width: 100%;
-    border-radius: 20px;
-    box-sizing: border-box;
-    margin-bottom: 0 auto 10px;
-}
-.goods-name{
-    background-color: rgb(255, 255, 255, 0.7);
-    font-size: 40px;
-    display: block;
-    width: fit-content;
-    padding: 0 20px 0 15px;
-    margin: 50px 0 20px;
-    border-radius: 50px;
-}
-.goods-content{
-    background-color: rgb(255, 255, 255, 0.38);
-    font-size: 22px;
-    display: block;
-    padding: 15px 20px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-}
-.goods-images1{
-    display: block;
-    padding: 10px;
-    background-color: rgb(255, 255, 255, 0.38);
-    margin: 0 10px 15px;
-    width: 45%;
-}
-.goods-images1 img{
-    width: 100%;
-    height: auto;
-}
-.goods-images2{
-    display: block;
-    padding: 10px;
-    background-color: rgb(255, 255, 255, 0.38);
-    width: 37%;
-    margin: 0 10px 10px;
-}
-.goods-images2 img{
-    width: 100%;
-    height: auto;
-}
-.goods-box{
-    width: 100%;
-}
-.goods-images3{
-    display: inline-block;
-    padding: 10px;
-    background-color: rgb(255, 255, 255, 0.38);
-    width: 45%;
-    margin: 0 10px 10px;
-    vertical-align: middle;
-}
-.goods-images3 img{
-    width: 100%;
-    height: auto;
-    vertical-align: middle;
-}
-.goods-accesstitle{
-    background-color: rgb(255, 255, 255, 0.38);
-    font-size: 40px;
-    display: block;
-    padding: 10px 25px;
-    margin: 15px 0;
-    border-radius: 50px;
-    width: fit-content;
-}
-  /*======================
-    スマホ用
-  ======================*/
-
-@media (max-width:767px){
-    .goods-intro{
-        font-size: 18px;
-    }
-    .goods-name{
-        font-size: 28px;
-        border-radius: 30px;
-    }
-    .goods-content{
-        font-size: 16px;
-    }
-    .goods-accesstitle{
-        font-size: 30px;
-    }
-}
-  /*======================
-    タブレット用
-  ======================*/
-@media (min-width:768px) and (max-width: 1090px){
-    .goods-name{
-        font-size: 35px;
-    }
-    .goods-content{
-        font-size: 23px;
-    }
-}
-@media (min-width:1090px) and (max-width: 1280px){
-    .goods-name{
-        font-size: 35px;
-    }
-    .goods-content{
-        font-size: 23px;
-    }
-}
+  .goods-back-card{
+      font-size: 1.3rem;
+      margin: 2rem auto 80px;
+      display:block;
+      background-color: rgba(255, 255, 255, 0.58);
+      border-radius: 50px;
+      text-align: center;
+      box-sizing: border-box;
+      width: 90%;
+      padding: 25px;
+      position:relative;
+      top:50%;
+  }
+  .goods-image img{
+      position: relative;
+      width:100%;
+  }
+  
+  .goods-detail{
+      padding-bottom: 10px;
+  }
+  .goods-title{
+      font-size:2rem;
+      display:block;
+      text-align: center;
+      position:relative;
+      top:-5rem;
+  }
+  
+  .goods-subtitle{
+      display:block;
+      font-size: 1.6rem;
+  }
+  .stickers{
+      margin: 0% 5% 5%;
+  }
+  .stickers img{
+      position:relative;
+      width:100%;
+  }
+  .stickers-content{
+      font-size:1.3rem;
+      padding: 5px 15px;
+      display:block;
+      background-color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      box-sizing: border-box;
+      width:40%;
+      position: relative;
+      top:-3rem;
+      left: 55%;
+  }
+  .pen{
+      margin: 3% 10% 5%;
+  }
+  .pen img{
+      position: relative;
+      right:-50%;
+      top:-2rem;
+      left:2%;
+  }
+  .pen-content{
+      font-size:1.3rem;
+      padding: 5px 15px;
+      display:block;
+      background-color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      box-sizing: border-box;
+      width:30%;
+      position: relative;
+      top:-16rem;
+      left: 54%;
+  
+  }
+  
+  .totebag img{
+      position:relative;
+      width:50%;
+      right:-45%;
+      top:-25rem;
+  }
+  .totebag-content{
+      font-size:1.3rem;
+      padding: 5px 15px;
+      display:block;
+      background-color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      box-sizing: border-box;
+      width:45%;
+      position: relative;
+      left: 8%;
+      top:-6rem;
+  }
+  
+  /*スマホ用*/
+  @media(max-width:500px){
+  .goods-back-card{
+      font-size: 1rem;
+  }
+  .goods-title{
+      font-size: 1.6rem;
+  }
+  .goods-subtitle{
+      font-size: 1rem;
+  }
+  
+  .stickers-content{
+      font-size: 1rem;
+      width: 80%;
+      left:10%;
+      top:-1rem;
+  }
+  .pen img{
+      width:50%;
+      top:8rem;
+      left:-3%;
+  }
+  .pen-content{
+      font-size: 1rem;
+      width:40%;
+      left: 53%;
+      top:-4.5rem;
+  }
+  .totebag img{
+      width:70%;
+      top:-13rem;
+      left:37%;
+  }
+  .totebag-content{
+      font-size: 1rem;
+      width:40%;
+      top:2rem;
+  }
+  }
+  /*タブレット用*/
+  @media (min-width: 500px) and (max-width: 1070px){
+      .goods-subtitle{
+          font-size: 1.2rem;
+      }
+      .stickers-content{
+          font-size: 1.2rem;
+          width: 50%;
+          left:46%;
+          top:-2rem;
+      }
+      .pen img{
+          width:60%;
+          top:-0.5rem;
+          left:-10%;
+      }
+      .pen-content{
+          font-size: 1.2rem;
+          width:40%;
+          left:53%;
+          top:-10rem;
+      }
+      .totebag img{
+          width:60%;
+          top:-22rem;
+          left:38%;
+      }
+      .totebag-content{
+          font-size: 1.2rem;
+          width:40%;
+          top:-5rem;
+          left:7%;
+      }
+  
+  }
+  

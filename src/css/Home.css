@@ -18,34 +18,31 @@ body{
 
 /* トップページ　開催日程など */
 .holding-parent{
-  position: relative;
+  top: 0vh;
+  position: absolute;
   z-index: 0;
-  height: 0vh;
 }
 .holding{
-  position: absolute;
-  top: 23rem;
-  left: 42rem;
+  position: relative;
   background-image:url("../imgs/cloud/right_cloud.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 100%;
-  height: 24rem;
+  background-size: 24rem;
+  background-position: right bottom;
+  width: 100vw;
+  height: 100vh;
 }
 .sub-holding{
   text-align: center;
   position: relative;
-  width: 100%;
-  top: 7.5rem;
-  right: 2.5rem
+  margin: 0 0 0 65vw;
+  padding-top: calc(100vh - 13rem);
 }
 .holding-title, .holding-content{
   margin: 0;
   -webkit-text-stroke: 0.5px #233192;
 }
 .holding-title{
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 .holding-title::before{
   content: "";
@@ -60,367 +57,98 @@ body{
   top: 4px;
 }
 .holding-content{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
-@media (min-width: 1800px) and (max-width: 1900px){
+.ocean-link-button{
+  background-color: #e8886e;
+  border-radius: 50px;
+  width: 30%;
+  margin: 0 auto;
+}
+.ocean-link-button a{
+  text-decoration: none;
+  display: block;
+}
+
+@media (min-width: 550px) and (max-width: 990px){
+  .holding-parent{
+    top: 0vh;
+  }
   .holding{
-    top: 23rem;
-    left: 40rem;
-    width: 100%;
-    height: 22rem;
+    background-size: 24rem;
+    background-position: right bottom;
+    width: 100vw;
+    height: 100vh;
   }
   .sub-holding{
-    width: 100%;
-    top: 7rem;
-    right: 2rem
-  }
-  .holding-title{
-    font-size: 1.6rem;
-  }
-  .holding-content{
-    font-size: 1.4rem;
-  }
-}
-@media (min-width: 1700px) and (max-width: 1800px){
-  .holding{
-    top: 21rem;
-    left: 38rem;
-    width: 100%;
-    height: 22rem;
-  }
-  .sub-holding{
-    width: 100%;
-    top: 7rem;
-    right: 2rem
-  }
-  .holding-title{
-    font-size: 1.6rem;
-  }
-  .holding-content{
-    font-size: 1.4rem;
-  }
-}
-@media (min-width: 1600px) and (max-width: 1700px){
-  .holding{
-    top: 20rem;
-    left: 35rem;
-    width: 100%;
-    height: 22rem;
-  }
-  .sub-holding{
-    width: 100%;
-    top: 7rem;
-    right: 2rem
-  }
-  .holding-title{
-    font-size: 1.6rem;
-  }
-  .holding-content{
-    font-size: 1.4rem;
-  }
-}
-@media (min-width: 1500px) and (max-width: 1600px){
-  .holding{
-    top: 16rem;
-    left: 35rem;
-    width: 100%;
-    height: 22rem;
-  }
-  .sub-holding{
-    width: 100%;
-    top: 8rem;
-    right: 2rem
-  }
-  .holding-title{
-    font-size: 1.6rem;
-  }
-  .holding-content{
-    font-size: 1.4rem;
-  }
-}
-@media (min-width: 1400px) and (max-width: 1500px){
-  .holding{
-    top: 18rem;
-    left: 33rem;
-    width: 100%;
-    height: 20rem;
-  }
-  .sub-holding{
-    width: 100%;
-    top: 6rem;
-    right: 2rem
-  }
-  .holding-title{
-    font-size: 1.4rem;
-  }
-  .holding-content{
-    font-size: 1.2rem;
-  }
-}
-@media (min-width: 1300px) and (max-width: 1400px){
-  .holding{
-    top: 16rem;
-    left: 31rem;
-    width: 100%;
-    height: 20rem;
-  }
-  .sub-holding{
-    width: 100%;
-    top: 6rem;
-    right: 2rem
-  }
-  .holding-title{
-    font-size: 1.4rem;
-  }
-  .holding-content{
-    font-size: 1.2rem;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1300px){
-  .holding{
-    top: 16rem;
-    left: 26rem;
-    width: 100%;
-    height: 17rem;
-  }
-  .sub-holding{
-    width: 100%;
-    top: 5rem;
-    right: 1rem
-  }
-  .holding-title{
-    font-size: 1.4rem;
-  }
-  .holding-content{
-    font-size: 1.2rem;
-  }
-}
-@media (min-width: 1110px) and (max-width: 1200px){
-  .holding{
-    top: 14rem;
-    left: 24rem;
-    width: 100%;
-    height: 15rem;
-  }
-  .sub-holding{
-    width: 100%;
-    top: 5rem;
-    right: 1rem
-  }
-  .holding-title{
-    font-size: 1rem;
-  }
-  .holding-content{
-    font-size: 1rem;
-  }
-}
-@media (min-width: 1090px) and (max-width: 1100px){
-  .holding{
-    top: 14rem;
-    left: 22rem;
-    width: 100%;
-    height: 15rem;
-  }
-  .sub-holding{
-    width: 100%;
-    top: 5rem;
-    right: 1rem
-  }
-  .holding-title{
-    font-size: 1rem;
-  }
-  .holding-content{
-    font-size: 1rem;
-  }
-}
-@media (min-width: 990px) and (max-width: 1090px){
-  .holding{
-    top: 14rem;
-    left: 23rem;
-    width: 100%;
-    height: 15rem;
-  }
-  .sub-holding{
-    width: 100%;
-    top: 5rem;
-    right: 1rem
-  }
-  .holding-title{
-    font-size: 1rem;
-  }
-  .holding-content{
-    font-size: 1rem;
-  }
-}
-@media (min-width: 900px) and (max-width: 990px){
-  .holding{
-    top: 72rem;
-    left: 18rem;
-    width: 100%;
-    height: 20rem;
-  }
-  .sub-holding{
-    width: 100%;
-    top: 5.5rem;
-    right: 1.5rem
+    margin: 0 0 0 40vh;
+    padding-top: calc(100vh - 13rem);
   }
   .holding-title{
     font-size: 1.5rem;
   }
-  .holding-content{
-    font-size: 1.2rem;
-  }
-}
-@media (min-width: 800px) and (max-width: 900px){
-  .holding{
-    top: 60rem;
-    left: 15rem;
-    width: 100%;
-    height: 20rem;
-  }
-  .sub-holding{
-    width: 100%;
-    top: 5.5rem;
-    right: 1.5rem
-  }
-  .holding-title{
-    font-size: 1.5rem;
+  .holding-title::before{
+    width: 5px;
+    height: 5px;
+    right: -1px;
+    top: 0px;
   }
   .holding-content{
     font-size: 1.2rem;
   }
 }
-@media (min-width: 690px) and (max-width: 800px){
+@media  (max-width: 550px){
+  .holding-parent{
+    top: 0vh;
+  }
   .holding{
-    top: 53rem;
-    left: 15rem;
-    width: 100%;
-    height: 20rem;
+    background-size: 16rem;
+    background-position: right bottom;
+    width: 100vw;
+    height: 100vh;
   }
   .sub-holding{
-    width: 100%;
-    top: 5.5rem;
-    right: 1.5rem
-  }
-  .holding-title{
-    font-size: 1.5rem;
-  }
-  .holding-content{
-    font-size: 1.2rem;
-  }
-}
-@media (min-width: 600px) and (max-width: 690px){
-  .holding{
-    top: 60rem;
-    left: 12rem;
-    width: 100%;
-    height: 18rem;
-  }
-  .sub-holding{
-    width: 100%;
-    top: 5.5rem;
-    right: 1.5rem
-  }
-  .holding-title{
-    font-size: 1.2rem;
-  }
-  .holding-content{
-    font-size: 1rem;
-  }
-}
-@media (min-width: 500px) and (max-width: 600px){
-  .holding{
-    top: 20rem;
-    left: 12.5rem;
-    width: 100%;
-    height: 16rem;
-  }
-  .sub-holding{
-    width: 100%;
-    top: 5rem;
-    right: 2rem
+    margin: 0 0 0 35vh;
+    padding-top: calc(100vh - 9rem);
   }
   .holding-title{
     font-size: 1rem;
+  }
+  .holding-title::before{
+    width: 3px;
+    height: 3px;
+    right: -2px;
+    top: 2px;
   }
   .holding-content{
     font-size: 0.8rem;
   }
 }
-@media (min-width: 400px) and (max-width: 500px){
+@media  (max-width: 490px){
+  .holding-parent{
+    top: 0vh;
+  }
   .holding{
-    top: 27rem;
-    left: 11rem;
-    width: 100%;
-    height: 16rem;
+    background-size: 16rem;
+    background-position: right bottom;
+    width: 115vw;
+    height: 100vh;
   }
   .sub-holding{
-    width: 100%;
-    top: 5.5rem;
-    right: 3.5rem
+    margin: 0 0 0 19vh;
+    padding-top: calc(100vh - 9rem);
   }
   .holding-title{
-    font-size: 0.9rem;
+    font-size: 1rem;
+  }
+  .holding-title::before{
+    width: 3px;
+    height: 3px;
+    right: -2px;
+    top: 2px;
   }
   .holding-content{
-    font-size: 0.7rem;
-  }
-}
-@media (min-width: 385px) and (max-width: 400px){
-  .holding{
-    top: 25rem;
-    left: 10rem;
-    width: 100%;
-    height: 16rem;
-  }
-  .sub-holding{
-    width: 100%;
-    top: 5.5rem;
-    right: 3.5rem
-  }
-  .holding-title{
-    font-size: 0.9rem;
-  }
-  .holding-content{
-    font-size: 0.7rem;
-  }
-}
-@media (min-width: 350px) and (max-width: 385px){
-  .holding{
-    top: 19rem;
-    left: 10rem;
-    width: 100%;
-    height: 16rem;
-  }
-  .sub-holding{
-    width: 100%;
-    top: 5.5rem;
-    right: 3.5rem
-  }
-  .holding-title{
-    font-size: 0.9rem;
-  }
-  .holding-content{
-    font-size: 0.7rem;
-  }
-}
-@media  (max-width: 350px){
-  .holding{
-    top: 15rem;
-    left: 7rem;
-    width: 100%;
-    height: 16rem;
-  }
-  .sub-holding{
-    width: 100%;
-    top: 5.8rem;
-    right: 2.5rem
-  }
-  .holding-title{
-    font-size: 0.7rem;
-  }
-  .holding-content{
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -514,12 +242,21 @@ body{
     width:100%;
     background: linear-gradient( #b5e5f4 50%, #fff 100%)
 }
-
-.mainpage1{
-  width: 92%;
-  padding-top:60px;
-  padding-bottom: 80px;
-  margin:0 auto;
+.top-backCard{
+  font-size: 1.6rem;
+  margin: 0rem auto 80px;
+  display:block;
+  background-color: rgba(255,255,255,0.58);
+  border-radius: 50px;
+  text-align: center;
+  box-sizing: border-box;
+  width: 85%;
+  padding: 25px;
+}
+.news-date, .news-content{
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 25px;
 }
 .ocean{
     width:100%;
@@ -530,7 +267,7 @@ body{
 }
 .mainpage2{
   width: 92%;
-  margin:0 auto;
+  margin:0 auto 15rem;
   padding-top: 100px;
   }
 .ocean-card{
@@ -541,11 +278,27 @@ body{
   width: 150px;
   rotate: -6deg;
   position: relative;
-  bottom:-95px;
+  bottom:0px;
   right: -10%;
 }
 .machikani-1 img{
   width: 80%;
+}
+.top-linkButton{
+  margin: 0 auto 0;
+  font-size: 1.2rem;
+}
+.live-reservation{
+  background: #fff;
+  border: double 3px #2E3192;
+  width: 15rem;
+  font-size: 1.2rem;
+  justify-content: center;
+  display: flex;
+  border-radius: 5px;
+}
+.live-reservation a{
+  text-decoration: none;
 }
 
 /*pickup-bubble*/
@@ -630,21 +383,6 @@ sky2 お知らせ欄(news)、来場者の方へ(notes)内部
 .section-item span{
   font-size: 1.5rem;
 }
-.news,.notes{
-  font-size: 1.7rem;
-  margin: 20px 0px 80px;
-  display:block;
-  background-color: rgba(255,255,255,0.38);
-  border-radius: 50px;
-  text-align: center;
-  box-sizing: border-box;
-  width: 100%;
-}
-.news-date, .news-content{
-  text-align: left;
-  vertical-align: top;
-  padding: 10px 25px;
-}
 /*空の小見出しのスタイル*/
 .sky2 span{
   max-width: 90%;
@@ -706,7 +444,7 @@ schedule,stage,lab
   /* font-size: 37px; */
   color: #fff;
   position: relative;
-  /* right: 0vw; */
+  right: 2vw;
 }
 .item1{
   display: inline-block;
@@ -714,7 +452,7 @@ schedule,stage,lab
   opacity: 0.30;
   position: relative;
   top:9px;
-  left:4vw;
+  left:3vw;
   margin: 50px 0px 0px 0px;
 }
 .item2{
@@ -723,7 +461,7 @@ schedule,stage,lab
   opacity: 0.30;
   position: relative;
   top:9px;
-  right:1vw;
+  right:2vw;
   margin: 0;
 }
 .item3{
@@ -732,14 +470,14 @@ schedule,stage,lab
   opacity: 0.30;
   position: relative;
   top:9px;
-  right:1vw;
+  right:2vw;
   margin-bottom: 1.2vw;
 }
 
 #pickup{
   font-size: 22px;
   text-align: center;
-  margin: 0 auto 180px;
+  margin: 0 auto 0px;
 }
 .titles{
    display:flex;
@@ -1010,18 +748,6 @@ schedule,stage,lab
   スマホ用
 ======================*/
   @media  (max-width: 490px){
-    /*title修正*/
-    .news, .notes{
-      box-sizing: content-box;
-      width: 100%;
-      font-size: 0.8rem;
-    }
-    .news-date{
-      padding: 5px 5px 10px 15px;
-    }
-    .news-content{
-      padding: 5px 5px 5px 0px;
-    }
     .section-schedule{
       font-size: 1rem;
     }
@@ -1039,12 +765,32 @@ schedule,stage,lab
     .pre-ocean, .pre-sky{
       font-size: 1rem;
     }
+    .top-backCard{
+      font-size: 1rem;
+      margin: 0rem auto 80px;
+      border-radius: 50px;
+      width: 85%;
+      padding: 25px;
+    }
+    .news-date{
+      padding: 5px 5px 10px 15px;
+    }
+    .news-content{
+      padding: 5px 5px 5px 0px;
+    }
+    .live-reservation{
+      width: 7rem;
+    }
     .machikani-1{
       width: 85px;
       rotate: -6deg;
       position: relative;
-      bottom:-60px;
-      right: 0px;
+      bottom:20px;
+      right: -15px;
+    }
+    .live-reservation{
+      font-size: 0.9rem;
+      width: 7rem;
     }
     /*------------------------
     イラストの位置調整
@@ -1063,6 +809,7 @@ schedule,stage,lab
     .ocean-card{
       box-sizing: content-box;
       font-size: 16px;
+      margin: 0 auto 0;
     }
     .ocean span{
       right:7vw;
@@ -1073,7 +820,7 @@ schedule,stage,lab
       opacity: 0.30;
       position: relative; 
       top:9px;
-      left:3vw;
+      left:5vw;
       margin: 50px 0px 0px 0px;
     }
     .item2{
@@ -1082,7 +829,7 @@ schedule,stage,lab
       opacity: 0.30;
       position: relative;
       top:9px;
-      right:9vw;
+      right:8vw;
     }
     .item3{
       display: inline-block;
@@ -1090,7 +837,7 @@ schedule,stage,lab
       opacity: 0.30;
       position: relative; 
       top:9px;
-      right:9vw;
+      right:8vw;
     }
     #move img:nth-child(1){
       width: 200%;
@@ -1128,6 +875,9 @@ schedule,stage,lab
   #title{
     font-size: 1.6rem;
   }
+  .ocean span#title{
+    right:4vw;
+  }
   .pickup-button{
     padding: 5px 10px 0;
     margin-bottom: 40px;
@@ -1159,6 +909,10 @@ schedule,stage,lab
   .theme-title rt{
     font-size: 1rem;
   }
+
+  .ocean-link-button{
+    width: 45%;
+  }
 }
 
 /*======================
@@ -1179,19 +933,21 @@ schedule,stage,lab
   .swim-kame1 img{
     width: 250%;
   }
-  .news, .notes{
-    box-sizing: content-box;
-    width: 100%;
-    font-size: 1.1rem;
-  }
-  .news-date, .news-content{
-    padding: 10px 25px;
-  }
   .pre-sky,.pre-ocean{
     font-size: 1.6rem;
   }
   .ocean{
     display: block;
+  }
+  .top-backCard{
+    font-size: 1.6rem;
+    margin: 0rem auto 80px;
+    border-radius: 50px;
+    width: 85%;
+    padding: 25px;
+  }
+  .news-date, .news-content{
+    padding: 10px 25px;
   }
   
   .section-schedule {
@@ -1209,7 +965,7 @@ schedule,stage,lab
   }
   .machikani-1{
     /*margin: 0px -22px -71px;*/
-    width: 110px;
+    width: 210px;
     rotate: -6deg;
     position: relative;
     bottom:-95px;
@@ -1267,6 +1023,9 @@ schedule,stage,lab
   .pickup-icon img{
     width: 60px;
   }
+  .ocean-link-button{
+    width: 30%;
+  }
 }
 @media (min-width:800px) and (max-width:990px){
   #move img:nth-child(1){
@@ -1303,8 +1062,15 @@ schedule,stage,lab
     bottom:116vw;
     right:30vw;
   }
+  .top-backCard{
+    font-size: 1rem;
+  }
 }
-
+@media (min-width: 600px) and (max-width: 800px){
+  .top-backCard{
+    font-size: 1rem;
+  }
+}
 @media (min-width: 600px) and (max-width: 990px){
   #loader{
     width: 100%;

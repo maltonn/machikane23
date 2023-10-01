@@ -1,103 +1,65 @@
 import { Helmet } from "react-helmet";
+// import {Link} from "react-router-dom";
+
 import "../../css/Common.css"
 import "../../css/About.css"
 import "../../css/Goods.css"
-import machikame1 from "../../imgs/animal/machikame1.png"
-import sticker1 from "../../imgs/goods/sticker1.png"
-import sticker2 from "../../imgs/goods/sticker2.jpg"
-import sticker3 from "../../imgs/goods/sticker3.jpg"
-import sticker4 from "../../imgs/goods/sticker4.png"
-import sticker5 from "../../imgs/goods/sticker5.png"
-import pen1 from "../../imgs/goods/pen1.jpg"
-import pen2 from "../../imgs/goods/pen2.png"
-import pen3 from "../../imgs/goods/pen3.png"
-import totebag from "../../imgs/goods/totebag.png"
+// import stickers from "../../imgs/goods/stickers.png"
+import allstickers from "../../imgs/goods/stickers_line.png"
+// import stickers2 from "../../imgs/goods/stickers2.png"
+import pendetail from "../../imgs/goods/pen-detail.png"
+// import pen1 from "../../imgs/goods/pen1.jpg"
+import tote from "../../imgs/goods/totebag.png"
+import allgoods from "../../imgs/goods/allgoods.png"
+import PageTitles from "../../components/PageTitles";
+import Bubble from "../../components/Bubble";
 export default function Goods() {
     return(
+
         <div className="main">
             <Helmet>
             <title>グッズ|まちかね祭2023</title>
             </Helmet>
-            <div className="sky">
-                <div className="goodsp-top">
-                    <div className="goodsp-title">
-                        <h1>グッズ</h1>
-                    </div>
-                </div>
+            <div className="goods-sky">
+                <PageTitles titles="グッズ" kame={false}></PageTitles>
                 <div className="goods-mainpage">
-                    {/* <div className="goods-intro">
-                        ここに『グッズ販売をすること』を書く。
-                        <p>ここに『グッズ販売をすること』を書く。</p>
-                    </div> */}
-                    <div className="goods-name">
-                        ・ステッカー　300円（二枚セット）
-                    </div>
-                    {/* <div className="goods-content">                    
-                        グッズ紹介を入れる
-                        <p>グッズ紹介を入れる</p>
-                    </div> */}
-                    <div className="goods-images1">
-                        <img src={sticker1} alt="ステッカー1"></img>
-                    </div>
-                    <div className="goods-images1">
-                        <img src={sticker2} alt="ステッカー2"></img>
-                    </div>
-                    <div className="goods-images1">
-                        <img src={sticker3} alt="ステッカー3"></img>
-                    </div>
-                    <div className="goods-images1">
-                        <img src={sticker4} alt="ステッカー4"></img>
-                    </div>
-                    <div className="goods-images2">
-                        <img src={sticker5} alt="ステッカー5"></img>
-                    </div>
-
-                    <div className="goods-name">
-                        ・ボールペン　300円
-                    </div>
-                    {/* <div className="goods-content">                    
-                        グッズ紹介を入れる
-                        <p>グッズ紹介を入れる</p>
-                    </div> */}
-                    <div className="goods-box">
-                        <div className="goods-images3">
-                            <img src={pen1} alt="ボールペン1"></img>
-                        </div>
-                        <div className="goods-images3">
-                            <img src={pen2} alt="ボールペン2"></img>
+                    <div className="goods-back-card">
+                        <p>今年のまちかね祭では、ステッカー、ボールペン、トートバッグを総合案内所にて販売します。</p>
+                        <div className="goods-image">
+                            <img src={allgoods} alt="ステッカー、ボールペン、トートバッグ"></img>
                         </div>
                     </div>
-                    <div className="goods-name">
-                        ・トートバッグ　500円
-                    </div>
-                    {/* <div className="goods-content">                    
-                        グッズ紹介を入れる
-                        <p>グッズ紹介を入れる</p>
-                    </div> */}
-                    <div className="goods-images1">
-                        <img src={totebag} alt="トートバッグ"></img>
-                    </div>
-                    {/* <div className="goods-accesstitle">
-                        販売場所
-                    </div> */}
                 </div>
-            </div>
+                    <div className="goods-detail">
+                        <div className="goods-title">グッズ紹介</div>
+                                <div className="stickers">
+                                    <img src={allstickers} alt="allstickers"></img>
+                                </div>
+                                <div className="stickers-content">
+                                    <div className="goods-subtitle">ステッカー２枚セット　300円</div>
+                                    <p>前回好評いただいたステッカーが今回も登場です。かわいいデザインからカッコイイデザインまで、様々なステッカーをご用意しました。</p>
+                                </div>
+                                <div className="pen">
+                                    <img src={pendetail} alt="pendetail"></img>
+                                </div>
+                                <div className="pen-content">
+                                    <div className="goods-subtitle">ボールペン　300円</div>
+                                    <p>メタリックでかっこいいデザインにしました。ロゴの「阪燦々」は今回のまちかね祭のメインテーマです。</p>
+                                </div>
+                                <div className="totebag-content">
+                                    <div className="goods-subtitle">トートバッグ　500円</div>
+                                    <p>A4サイズのものがしっかり入る便利な仕様です。学祭を回る際にぜひご活用ください。</p>
+                                </div>
+                                <div className="totebag">
+                                    <img src={tote} alt="tote"></img>
+                                </div>
 
-            <div className="ocean">      
-                <div className="bottom">
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                </div>
-            </div>
+                    </div>
 
+                
+            </div>
+            <Bubble></Bubble>
         </div>
     )
+
 }
