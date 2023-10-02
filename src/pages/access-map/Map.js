@@ -104,7 +104,7 @@ export default function Map() {
                 <div className="access-mainpage"> 
                     <div className="map-notes">
                         <div className="map-content">
-                            <div className="map-ul">C棟</div>
+                            <div className="map-ul">全学教育講義C棟</div>
                             <div className="map-item">
                                     <div className="map-C"> 
                                         <div className="floorname">
