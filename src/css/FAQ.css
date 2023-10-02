@@ -2,6 +2,7 @@
 .FAQ-card-Q{
     font-size: 25px;
     margin: 10px 5px;
+    margin-left: 10px;
     
         padding: 20px;
         margin: 10px 0;
@@ -10,7 +11,7 @@
         background: #FFF;
         border: solid 3px #6091d3;
         border-radius: 10px;
-        width:90%
+        width: 95%;
 }
 .FAQ-card{
     padding-right: 50px;
@@ -38,7 +39,7 @@
     border: 1px solid;
     border-collapse: collapse;
 }
-.FAQ-table tr,th,td{
+.FAQ-table tr, .FAQ-table th,.FAQ-table td{
     border: 1px solid;
     border-collapse: collapse;
 }
@@ -51,4 +52,43 @@
 }
 .FAQ-table{
     text-align: center;
+}
+.FAQEn-table{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+.FAQEn-table tr, .FAQEn-table th,.FAQEn-table td{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+.FAQEn-table{
+    text-align: center;
+}
+.FAQEn-card-Q{
+    font-size: 25px;
+    margin: 10px 5px;
+    
+        padding: 20px;
+        margin: 10px 0;
+        font-weight: bold;
+        color: #6091d3;
+        background: #FFF;
+        border: solid 3px #6091d3;
+        border-radius: 10px;
+        width:90%
+}
+.FAQEn-card{
+    padding-right: 50px;
+    padding-left: 5px;
+}
+@media screen and (max-width:1070px) {
+    .FAQEn-card{
+        padding:  0.5em 6px;
+        padding-left: 0.5px;
+        padding-left: 0.5px;
+}
+}
+.FAQEn-card-A{
+    font-size:  20px; 
+    margin: 10px 5px 35px;
 }

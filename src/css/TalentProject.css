@@ -129,6 +129,9 @@
     width: 30%;
     text-align: center;
 }
+.reservationUrl a{
+    text-decoration: none;
+}
 .caution li{
     font-size: 2vw;
 }
@@ -138,6 +141,25 @@
         margin: 0em auto 1em;
         font-size: 3.5vw;
         padding: 0;
+        line-height: 6vh;
+    }
+    .talentTitle::before,
+    .talentTitle::after{
+        position: absolute;
+        top: 0;
+        display: block;
+        content: '';
+        border: 3vh solid #233192;
+    }
+    .talentTitle::before{
+        left: -5vw;
+        border-left-width: 15px;
+        border-left-color: transparent;
+    }
+    .talentTitle::after{
+        right: -5vw;
+        border-right-width: 15px;
+        border-right-color: transparent;
     }
     .tombrown{
         margin-top: 5vh;
@@ -157,13 +179,15 @@
     }
     .caution{
         font-size: 5vw;
-        position: relative;
+        /* position: relative; */
         top: -13vh;
     }
     .cautionAll{
         margin-left: 2vw;
-        position: relative;
+        /* position: relative; */
         top: -13vh;
+        font-size: 0.5rem;
+        padding: 0;
     }
 }
 
