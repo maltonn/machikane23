@@ -17,12 +17,41 @@
 .another-inquiry{
     background: #fff;
     border: double 3px #2E3192;
-    width: 80%;
+    width: 20%;
     justify-content: center;
     display: flex;
     border-radius: 5px;
-    margin: 20px auto 0;
+    margin: 20px 0 0;
 }
 .inqury-warn{
     color: red;
 }
+/*======================
+  スマホ用
+======================*/
+@media  (max-width: 500px){
+    .another-inquiry{
+        background: #fff;
+        border: double 3px #2E3192;
+        width: 80%;
+        justify-content: center;
+        display: flex;
+        border-radius: 5px;
+        margin: 20px auto 0;
+    }
+    }
+      
+  /*======================
+    タブレット用
+  ======================*/
+  @media (min-width: 500px) and (max-width: 1070px){
+    .another-inquiry{
+        background: #fff;
+        border: double 3px #2E3192;
+        width: 40%;
+        justify-content: center;
+        display: flex;
+        border-radius: 5px;
+        margin: 20px 0 0;
+    }
+  }
