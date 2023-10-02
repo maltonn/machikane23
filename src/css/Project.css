@@ -45,6 +45,9 @@
 .card-detailLink:active {
     color: inherit;
 }
+.card-detailLink{
+    text-decoration: none;
+}
 .project-container{
     border: 1px solid black;
     margin: 10px;
