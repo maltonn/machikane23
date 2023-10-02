@@ -18,7 +18,7 @@
     height: 10vh;
     width: 70vw;
     height: 100%;
-    margin: 0 auto 1em;
+    margin: 0 auto 3em;
     padding: 0 2rem;
     text-align: center;
     color: #fff;
@@ -57,11 +57,12 @@
     background-image:linear-gradient(#15c1f6 0%,#b5e5f4 80%, #fff 100%);
     background-repeat: no-repeat, no-repeat;
     background-position:center 42%,center;
+    padding-bottom: 15vh;
 }
-.tombrown{
+/* .tombrown{
     position: relative;
     top: -20vh;
-}
+} */
 .tombrownImg{
     width: 50%;
     margin: 0 25vw;
@@ -69,45 +70,50 @@
 
 .autographBlock{
     display: flex;
-    position: relative;
-    left: 60vw;
+    margin-left: 60%;
     z-index: 100;
 }
-.autographBlock img{
+.autographBlockEn{
+    display: flex;
+    z-index: 100;
+    margin-left: 50%;
+}
+.autographBlock img,.autographBlockEn img{
     width: 5vw;
 }
-.autographBlock .machikani1{
+.autographBlock .machikani1, .autographBlockEn .machikani1{
     position: relative;
     left: 0vw;
     top: -1vw;
 }
-.autographBlock .machikani2{
+.autographBlock .machikani2,.autographBlockEn .machikani2{
     position: relative;
     left: 0;
     top: -1vw;
 }
 
-.autographBlock .autograph{
+.autographBlock .autograph,.autographBlockEn .autograph{
     display: flex;
     margin: 0;
 }
 .talentInfor{
-    position: relative;
+    /* position: relative;
     top: -14vh;
-    font-size: 2vw;
+    font-size: 2vw; */
     background-color: rgba(255,255,255,0.78);
     border-radius: 50px;
     margin: 0 auto;
     width: 90%;
     box-sizing: border-box;
     padding: 20px 15px 30px;
+    font-size: 1.5rem;
 }
 
 .talentProjectCaution{
     font-size: 1.5rem;
     padding: 20px 15px 30px;
     text-align: left;
-    margin: 0 auto;
+    margin: 5em auto 0;
     display: block;
     background-color: rgba(255,255,255,0.78);
     border-radius: 50px;
@@ -168,6 +174,10 @@
         left: 40vw;
         top: -20vh;
         font-size: 4vw;
+        margin-left: 40%;
+    }
+    .autographBlockEn{
+        margin-left: 40%;
     }
     .talent .machikame1{
         position: relative;
@@ -186,7 +196,7 @@
         margin-left: 2vw;
         /* position: relative; */
         top: -13vh;
-        font-size: 0.5rem;
+        font-size: 1rem;
         padding: 0;
     }
 }
@@ -200,7 +210,10 @@
         top: -13vh;
     }
     .autographBlock{
-        top: -10vh;
+        margin-left: 50%;
+    }
+    .autographBlockEn{
+        margin-left: 40%;
     }
     .talent .machikame1{
         position: relative;
