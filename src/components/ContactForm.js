@@ -60,7 +60,7 @@ export default function ContactForm() {
         ) : (
           <div className='after-submit'>
             ◆送信完了
-            <div onClick={()=>{setIsSubmitted(false)}} className='link-button another-inquiry'>別のお問い合わせを送る</div>
+            <div onClick={()=>{setIsSubmitted(false)}} className='another-inquiry'>別のお問い合わせを送る</div>
           </div>
         )
       }

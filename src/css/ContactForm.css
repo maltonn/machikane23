@@ -15,5 +15,11 @@
     margin-top: 20px;
 }
 .another-inquiry{
-    margin-top: 20px;
+    background: #fff;
+    border: double 3px #2E3192;
+    width: 80%;
+    justify-content: center;
+    display: flex;
+    border-radius: 5px;
+    margin: 20px auto 0;
 }
