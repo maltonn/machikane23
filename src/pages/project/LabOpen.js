@@ -21,6 +21,11 @@ export default function LabOpen() {
     useEffect(() => {//inputValueが変わったらinputValueRefも変わる
         inputValueRef.current = inputValue
     }, [inputValue])
+    
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
 
     const [loadingNum, setLoadingNum] = useState(10)
 

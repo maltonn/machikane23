@@ -5,7 +5,14 @@ import "../../css/FAQ.css"
 import PageTitle from "../../components/PageTitles"
 import Bubble from "../../components/Bubble"
 import map from "../../imgs/map/屋外メインストリート.png"
+import { useEffect } from "react";
 export default function FAQ() {
+    useEffect(()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    },[])
     return(
         <div className="main">
             <Helmet>

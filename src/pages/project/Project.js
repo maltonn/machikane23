@@ -37,6 +37,10 @@ export default function Project() {
     const [loadingNum, setLoadingNum] = useState(10)
 
     useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
         fetch("https://app.tyuujitu-system.net/api/machikane23/website/pr.json").then((res) => {
             return res.json()
         }

@@ -7,8 +7,15 @@ import machikame1 from "../../imgs/animal/machikame1.png"
 import machikame2 from "../../imgs/animal/machikame2.png"
 import machikani from "../../imgs/animal/machikani.png"
 import Bubble from "../../components/Bubble"
+import { useEffect } from "react"
 
 export default function TalentProject(){
+    useEffect(()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    },[])
     return(
         <div className="talent">
             <Helmet>

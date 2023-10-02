@@ -4,7 +4,14 @@ import PageTitles from "../../components/PageTitles";
 import Bubble from "../../components/Bubble";
 
 import "../../css/Common.css"
+import { useEffect } from "react";
 export default function Sections() {
+    useEffect(()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    },[])
     return(
         <div className="main">
             <Helmet>

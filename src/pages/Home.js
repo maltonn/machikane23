@@ -17,6 +17,10 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+  });
     var move = document.getElementById('move').children;
     setTimeout(function () {
       for (var i = 0; i < move.length; i++) {
