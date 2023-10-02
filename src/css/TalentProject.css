@@ -57,6 +57,7 @@
     background-image:linear-gradient(#15c1f6 0%,#b5e5f4 80%, #fff 100%);
     background-repeat: no-repeat, no-repeat;
     background-position:center 42%,center;
+    padding-bottom: 15vh;
 }
 .tombrown{
     position: relative;
