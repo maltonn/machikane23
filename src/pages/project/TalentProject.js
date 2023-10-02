@@ -43,7 +43,7 @@ export default function TalentProject(){
                         <ul className="cautionAll">
                             <li className="caution1">この企画は<strong>事前予約</strong>制なので、以下のリンクからご予約お願いします。
                             <p className="reservationUrl">
-                                <a href="https://app.tyuujitu-system.net/machikane23/visitor/talent-live">予約</a>
+                                <a href="https://app.tyuujitu-system.net/machikane23/visitor/talent-live" target="_blank" rel="noreferrer">予約</a>
                             </p>
                             </li>
                             <br></br>
