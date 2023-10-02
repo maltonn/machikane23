@@ -16,8 +16,15 @@ import leaf from "../../imgs/official_project/leaf1.png"
 import bonber from "../../imgs/official_project/bonber.png"
 
 import PageTitles from "../../components/PageTitles";
+import { useEffect } from "react";
 
 export default function OfficialProject() {
+    useEffect(()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    },[])
     return(
         <div className="officialProject">
             <Helmet>

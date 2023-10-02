@@ -13,8 +13,15 @@ import sudio from "../../imgs/sponsor/sudio.png"
 import homecomingday from "../../imgs/sponsor/home-coming-day.jpg"
 import rokkosai from "../../imgs/sponsor/rokkosai.jpeg"
 import PageTitles from "../../components/PageTitles";
+import { useEffect } from "react";
 
 export default function Sponsor() {
+    useEffect(()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    },[])
     return(
         <div className="main">
             <Helmet>

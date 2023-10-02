@@ -4,8 +4,15 @@ import "../../css/About.css"
 import ContactForm from "../../components/ContactForm";
 import PageTitles from "../../components/PageTitles";
 import Bubble from "../../components/Bubble";
+import { useEffect } from "react";
 
 export default function Inquiry() {
+    useEffect(()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    },[])
     return(
         <div className="main">
             <Helmet>
