@@ -17,6 +17,10 @@ export default function LabOpen() {
 
     //フォームのデータが入る変数
     const [inputValue, setInputValue] = useState("")
+    const inputValueRef = useRef(inputValue)
+    useEffect(() => {//inputValueが変わったらinputValueRefも変わる
+        inputValueRef.current = inputValue
+    }, [inputValue])
 
     const [loadingNum, setLoadingNum] = useState(10)
 
@@ -35,6 +39,9 @@ export default function LabOpen() {
 
     const onPickupKeywordClick = (keyword) => {
         setInputValue(keyword)
+        setTimeout(() => {
+            onClickSearchBtn()
+        },20)
     }
 
     // 検索ボタンが押された時の処理
@@ -89,8 +96,10 @@ export default function LabOpen() {
     }
 
     const onClickClearBtn = () => {
-        document.getElementById("serch_word").value=""
         setInputValue("")
+        setTimeout(() => {
+            onClickSearchBtn()
+        },10)
     }
 
     const PageChange=()=>{

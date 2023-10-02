@@ -57,7 +57,7 @@ export default function Project() {
         setInputValue(keyword);
         setTimeout(() => {
             onClickSearchBtn()
-        },10)
+        },1000)
     }
 
     // 検索ボタンが押された時の処理
@@ -129,18 +129,12 @@ export default function Project() {
     }
 
     const onClickClearBtn = () => {
-        document.getElementById("serch_word").value = ""
         setInputValue("")
-        var children = document.getElementById("checkbox2").checked
-        if (children) {
-            children = !children
-            setForChildFilterCheck(prev => !prev)
-        }
-        var crowd = document.getElementById("checkbox3").checked
-        if (crowd) {
-            crowd = !crowd
-            setAvoidCrowdFilterCheck(prev => !prev)
-        }
+        setForChildFilterCheck(false)
+        setAvoidCrowdFilterCheck(false)
+        setTimeout(() => {
+            onClickSearchBtn()
+        },1000)
     }
 
     function eventPlace(project) {
