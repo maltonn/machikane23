@@ -68,7 +68,7 @@ export default function Detail() {
             return null
         }
     }
-    function PageChange(){
+    const PageChange=()=>{
         window.scrollTo({
             top: 0,
             behavior: "smooth",

@@ -5,7 +5,7 @@ import "../../css/Notes.css"
 import PageTitles from "../../components/PageTitles";
 import Bubble from "../../components/Bubble";
 export default function Notes() {
-    function PageChange(){
+    const PageChange=()=>{
         window.scrollTo({
             top: 0,
             behavior: "smooth",

@@ -7,7 +7,7 @@ import PageTitles from "../../components/PageTitles";
 import guide from "../../imgs/map/2023年度まちかね祭駐輪場案内.png"
 
 export default function Access() {
-    function PageChange(){
+    const PageChange=()=>{
         window.scrollTo({
             top: 0,
             behavior: "smooth",
