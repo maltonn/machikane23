@@ -32,7 +32,7 @@ export default function ContactForm() {
     if (email === '' || !email.match(/.+@.+\..+/)) {
       newWarnMessages.email = "メールアドレスを入力してください"
     }
-    if (category === '') {
+    if (!category) {
       newWarnMessages.category = "種類を選択してください"
     }
     if (contents === '') {
@@ -70,10 +70,10 @@ export default function ContactForm() {
             <p>種類（必須）</p>
             <div className='inqury-warn'>{warnMessages.category}</div>
             <p>
-              <input type="radio" value={category} onChange={(e) => { setCategory('まちかね祭へのご来場について') }} /><label>まちかね祭へのご来場について</label><br></br>
-              <input type="radio" value={category} onChange={(e) => { setCategory('協賛について') }} /><label>協賛について</label><br></br>
-              <input type="radio" value={category} onChange={(e) => { setCategory('取材について') }} /><label>取材について</label><br></br>
-              <input type="radio" value={category} onChange={(e) => { setCategory('その他') }} /><label>その他</label>
+              <input type="radio" id="cat1" name="category" value={category} onChange={(e) => { setCategory('まちかね祭へのご来場について') }} /><label for="cat1">まちかね祭へのご来場について</label><br></br>
+              <input type="radio" id="cat2" name="category" value={category} onChange={(e) => { setCategory('協賛について') }} /><label for="cat2">協賛について</label><br></br>
+              <input type="radio" id="cat3" name="category" value={category} onChange={(e) => { setCategory('取材について') }} /><label for="cat3">取材について</label><br></br>
+              <input type="radio" id="cat4" name="category" value={category} onChange={(e) => { setCategory('その他') }} /><label for="cat4">その他</label>
             </p>
             <p>お問い合わせ内容（必須）</p>
             <div className='inqury-warn'>{warnMessages.contents}</div>
