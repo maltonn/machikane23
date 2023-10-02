@@ -19,9 +19,13 @@
     font-size: 1.2rem;
     width: 100%;
     border-collapse: collapse;
+    border: double 3px #2E3192;
 }
 .mogiten-project td{
     padding: 3px;
+}
+.mogiten-project th,.mogiten-project td{
+    border: solid 1px #2E3192;
 }
 .mogiten-project td:nth-child(1){
     text-align: center;
