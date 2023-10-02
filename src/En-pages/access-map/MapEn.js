@@ -23,7 +23,7 @@ import M from "../../imgs/map/屋外メインストリート.png"
 import kanade from "../../imgs/map/ステージ奏.png"
 import sora from "../../imgs/map/ステージ宙.png"
 
-export default function Map() {
+export default function MapEn() {
     return(
         <div className="main">
             <Helmet>

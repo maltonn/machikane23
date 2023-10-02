@@ -6,7 +6,7 @@ import Bubble from "../../components/Bubble";
 import PageTitles from "../../components/PageTitles";
 import guide from "../../imgs/map/2023年度まちかね祭駐輪場案内.png"
 
-export default function Access() {
+export default function AccessEn() {
     function PageChange(){
         window.scrollTo({
             top: 0,
