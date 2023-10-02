@@ -19,7 +19,6 @@ export default function TalentProject(){
                     <PageTitles titles="お笑いライブ" kame={true}></PageTitles>
                     <div className="talentBox">
                         <h1 className="talentTitle"><span className="ribon">阪大にトム・ブラウンがやってくる！</span></h1>
-                        <div className="machikame1"><img src={machikame1} alt="まちかめ"></img></div>
                         <div className="tombrown"><img src={tombrown} className="tombrownImg" alt="トム・ブラウン"></img></div>
                     </div>
                     <div className="autographBlock">

@@ -15,11 +15,10 @@ export default function TalentProjectEn(){
             <div className="talentTop">
                 <PageTitles titles="Comedy LIVE Show" kame={true}></PageTitles>
                 <div className="talentBox">
-                    <h1 className="talentTitle"><span className="ribon">“   ” comes to Osaka University!</span></h1>
-                    <div className="machikame1"><img src={machikame1} alt="まちかめ"></img></div>
+                    <h1 className="talentTitle"><span className="ribon">“Tombrown” comes to Osaka University!</span></h1>
                     <div className="tombrown"><img src={tombrown} className="tombrownImg"　alt="トム・ブラウン"></img></div>
                 </div>
-                <div className="autographBlock">
+                <div className="autographBlockEn">
                     <div className="machikani1"><img src={machikani} alt="まちかに"></img></div>
                     <p className="autograph">You may have a chance to get an autograph!?</p>
                     <div className="machikani2"><img src={machikani} alt="まちかに"></img></div>
