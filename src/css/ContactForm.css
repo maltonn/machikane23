@@ -1,5 +1,19 @@
 .contactForm-sky{
     color: #233192;
     width: 100%;
-    background: linear-gradient( #15c1f6 0%,#b5e5f4 90%, #fff 100%);
+    background: linear-gradient( #15c1f6 0%,#b5e5f4 80%, #fff 100%);
+    padding-bottom: 100px;
+}
+.contactForm, .after-submit{
+    margin-left: 20px;
+}
+.inquiry-content{
+    width: 80%;
+    height: 200px;
+}
+.contact-submit-button{
+    margin-top: 20px;
+}
+.another-inquiry{
+    margin-top: 20px;
 }
