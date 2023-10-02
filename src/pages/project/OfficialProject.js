@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import {Link} from "react-router-dom";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import "../../css/Common.css"
 import "../../css/OfficialProject.css"
@@ -24,76 +25,80 @@ export default function OfficialProject() {
             <title>委員会企画|まちかね祭2023</title>
             </Helmet>
             <div className="sky">
-            <PageTitles titles="委員会企画|まちかね祭2023" kame={true}></PageTitles>
+            <PageTitles titles="委員会企画" kame={true}></PageTitles>
                 <div className="officialProAll">
-                    <div className="offiProCard">
-                        <div className="offiProCard-title">ぱんけえき焼きた亭</div>
-                        <div className="inforAll">
-                            <div className="IconBox">
-                                <img className="officialIcon" src={pancakeLogo} alt="ぱんけえき焼きた亭のアイコン"></img>
+                    <AnchorLink href="#pancake" className="officialProject-link">
+                        <div className="offiProCard">
+                            <div className="offiProCard-title">ぱんけえき焼きた亭</div>
+                            <div className="inforAll">
+                                <div className="IconBox">
+                                    <img className="officialIcon" src={pancakeLogo} alt="ぱんけえき焼きた亭のアイコン"></img>
+                                </div>
+                                <div className="information">
+                                    <p>・時間 : 10:00-18:00</p>
+                                    <p>・場所 : メインストリート テント40</p>
+                                    <p>・整理券 : なし</p>
+                                    <p>・おすすめ : 全年齢（お子様にも）</p>
+                                    <p>・有料</p>
+                                </div>
                             </div>
-                            <div className="information">
-                                <br></br>
-                                <p>・時間 : 10:00-18:00</p>
-                                <p>・場所 : メインストリート テント40</p>
-                                <p>・整理券 : なし</p>
-                                <p>・おすすめ : 全年齢（お子様にも）</p>
-                                <p>・有料</p>
+                        </div> 
+                    </AnchorLink>
+                    <AnchorLink href="#machikaneForest" className="officialProject-link">
+                        <div className="offiProCard">
+                            <div className="offiProCard-title">まちかねの森</div>
+                            <div className="inforAll">
+                                <div className="IconBox">
+                                    <img className="officialIcon" src={machikaneForestLogo} alt="まちかねの森のアイコン"></img>
+                                </div>
+                                <div className="information">
+                                    <p>・時間 : 10:00-12:00,13:00-17:00</p>
+                                    <p>・場所 : C106</p>
+                                    <p>・整理券 : あり</p>
+                                    <p>・おすすめ : 全年齢（お子様にも）</p>
+                                    <p>・無料</p>
+                                </div>
+                            </div>
+                        </div> 
+                    </AnchorLink>
+                    <AnchorLink href="#nepleage" className="officialProject-link">
+                        <div className="offiProCard nepleageCard">
+                            <div className="offiProCard-title">マチカネプリーグ</div>
+                            <div className="inforAll">
+                                <div className="IconBox">
+                                    <img className="officialIcon" src={nepleage} alt="マチカネプリーグのアイコン"></img>
+                                </div>
+                                <div className="information">
+                                    <p>・時間 : 10:00-12:00 13:00-17:00</p>
+                                    <p>・場所 : C105</p>
+                                    <p>・整理券 : あり</p>
+                                    <p>・おすすめ : 高校生、大学生</p>
+                                    <p>・無料</p>
+                                </div>
+                            </div>
+                        </div> 
+                    </AnchorLink>
+                    <AnchorLink href="#O-1" className="officialProject-link">
+                        <div className="offiProCard O-1card">
+                            <div className="offiProCard-title">O-1GrandPrix</div>
+                            <div className="inforAll">
+                                <div className="IconBox">
+                                    <img className="officialIcon" src={O1Logo}  alt="O-1GrandPrixのアイコン"></img>
+                                </div>
+                                <div className="information">
+                                    <p>・時間 : 11/05（企画日3日目） 17:00-19:00</p>
+                                    <p>・場所 : ステージ奏</p>
+                                    <p>・整理券 : なし</p>
+                                    <p>・おすすめ : 全年齢</p>
+                                    <p>・無料</p>
+                                </div>
                             </div>
                         </div>
-                    </div> 
-                    <div className="offiProCard">
-                        <div className="offiProCard-title">まちかねの森</div>
-                        <div className="inforAll">
-                            <div className="IconBox">
-                                <img className="officialIcon" src={machikaneForestLogo} alt="まちかねの森のアイコン"></img>
-                            </div>
-                            <div className="information">
-                                <br></br>
-                                <p>・時間 : 10:00-12:00,13:00-17:00</p>
-                                <p>・場所 : C106</p>
-                                <p>・整理券 : あり</p>
-                                <p>・おすすめ : 全年齢（お子様にも）</p>
-                                <p>・無料</p>
-                            </div>
-                        </div>
-                    </div> 
-                    <div className="offiProCard nepleageCard">
-                        <div className="offiProCard-title">マチカネプリーグ</div>
-                        <div className="inforAll">
-                            <div className="IconBox">
-                                <img className="officialIcon" src={nepleage} alt="マチカネプリーグのアイコン"></img>
-                            </div>
-                            <div className="information">
-                                <br></br>
-                                <p>・時間 : 10:00-12:00 13:00-17:00</p>
-                                <p>・場所 : C105</p>
-                                <p>・整理券 : あり</p>
-                                <p>・おすすめ : 高校生、大学生</p>
-                                <p>・無料</p>
-                            </div>
-                        </div>
-                    </div> 
-                    <div className="offiProCard O-1card">
-                        <div className="offiProCard-title">O-1GrandPrix</div>
-                        <div className="inforAll">
-                            <div className="IconBox">
-                                <img className="officialIcon" src={O1Logo}  alt="O-1GrandPrixのアイコン"></img>
-                            </div>
-                            <div className="information">
-                                <br></br>
-                                <p>・時間 : 11/05（企画日3日目） 17:00-19:00</p>
-                                <p>・場所 : ステージ奏</p>
-                                <p>・整理券 : なし</p>
-                                <p>・おすすめ : 全年齢</p>
-                                <p>・無料</p>
-                            </div>
-                        </div>
-                    </div>
+                    </AnchorLink>
                 </div>
                 <div className="officialProDetail">
                     <div className="detailCard">
-                        <div className="detail">
+                        <div className="detail" id="pancake">
                             <h2 className="projectTitle">ぱんけえき焼きた亭</h2>
                             <div className="grade">
                                 <div className="rate rate5">
@@ -133,7 +138,7 @@ export default function OfficialProject() {
                                 </div>
                             </div>
                         </div>
-                        <div className="detail machikaneForestDetail">
+                        <div className="detail machikaneForestDetail" id="machikaneForest">
                             <h2 className="projectTitle">まちかねの森</h2>
                             <ul className="forestSimpleInfor">
                                 <li className="forestPlace">
@@ -210,7 +215,7 @@ export default function OfficialProject() {
                                 </div>
                             </div>
                         </div>
-                        <div className="detail">
+                        <div className="detail" id="nepleage">
                             <div className="nepleageQuestion">
                                 <p>
                                     Q．マチカネプリーグの特徴4つ答えろ
@@ -224,7 +229,7 @@ export default function OfficialProject() {
                                 <li className="nepleageFor">高校生・大学生向け</li>
                             </ul>
                         </div>
-                        <div className="detail O-1Detail">
+                        <div className="detail O-1Detail" id="O-1">
                             <div className="O-1Title"></div>
                             <div className="O-1DetailIcon"><img src={O1Logo} alt="O-1アイコン"></img></div>
                             <div className="O-1Preparetion">Coming soon</div>

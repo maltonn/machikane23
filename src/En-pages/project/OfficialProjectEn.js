@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import {Link} from "react-router-dom";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import "../../css/TalentProject.css"
 
 import PageTitles from "../../components/PageTitles";
@@ -24,74 +25,78 @@ export default function OfficialProjectEn() {
             <div className="sky">
             <PageTitles titles="Official Projects" kame={true}></PageTitles>
                 <div className="officialProAll">
-                    <div className="offiProCard">
-                        <div className="offiProCard-title">“Freshy Fluffy Pancake”</div>
-                        <div className="inforAll">
-                            <div className="IconBox">
-                                <img className="officialIcon" src={pancakeLogo} alt="ぱんけえき焼きた亭のアイコン"></img>
+                    <AnchorLink href="#pancake" className="officialProject-link">
+                        <div className="offiProCard">
+                            <div className="offiProCard-title">“Freshy Fluffy Pancake”</div>
+                            <div className="inforAll">
+                                <div className="IconBox">
+                                    <img className="officialIcon" src={pancakeLogo} alt="ぱんけえき焼きた亭のアイコン"></img>
+                                </div>
+                                <div className="information">
+                                    <p>・Time: 10:00~18:00</p>
+                                    <p>・Place: Tent No.40, Main street</p>
+                                    <p>・Zone ticket: ✖</p>
+                                    <p>・Recommended to: All</p>
+                                    <p>・Paid</p>
+                                </div>
                             </div>
-                            <div className="information">
-                                <br></br>
-                                <p>・Time: 10:00~18:00</p>
-                                <p>・Place: Tent No.40, Main street</p>
-                                <p>・Zone ticket: ✖</p>
-                                <p>・Recommended to: All</p>
-                                <p>・Paid</p>
+                        </div> 
+                    </AnchorLink>
+                    <AnchorLink href="#machikaneForest" className="officialProject-link">
+                        <div className="offiProCard">
+                            <div className="offiProCard-title">“Machikane Forest”</div>
+                            <div className="inforAll">
+                                <div className="IconBox">
+                                    <img className="officialIcon" src={machikaneForestLogo} alt="まちかねの森のアイコン"></img>
+                                </div>
+                                <div className="information">
+                                    <p>・Time: 10:00-12:00,13:00-17:00</p>
+                                    <p>・Place: CELAS C106</p>
+                                    <p>・Zone ticket: 〇</p>
+                                    <p>・Recommended to: All</p>
+                                    <p>・Free</p>
+                                </div>
+                            </div>
+                        </div> 
+                    </AnchorLink>
+                    <AnchorLink href="#nepleage" className="officialProject-link">
+                        <div className="offiProCard nepleageCard">
+                            <div className="offiProCard-title">Machikaneprigu</div>
+                            <div className="inforAll">
+                                <div className="IconBox">
+                                    <img className="officialIcon" src={nepleage} alt="マチカネプリーグのアイコン"></img>
+                                </div>
+                                <div className="information">
+                                    <p>・Time: 10:00-12:00 13:00-17:00</p>
+                                    <p>・Place: CELAS C105</p>
+                                    <p>・Zone ticket: 〇</p>
+                                    <p>・Recommended to: High school / College students</p>
+                                    <p>・Free</p>
+                                </div>
+                            </div>
+                        </div> 
+                    </AnchorLink>
+                    <AnchorLink href="#O-1" className="officialProject-link">
+                        <div className="offiProCard O-1card">
+                            <div className="offiProCard-title">O-1grand prix</div>
+                            <div className="inforAll">
+                                <div className="IconBox">
+                                    <img className="officialIcon" src={O1Logo}  alt="O-1GrandPrixのアイコン"></img>
+                                </div>
+                                <div className="information">
+                                    <p>・Time: Nov. 5th (Day3) 17:00-19:00</p>
+                                    <p>・Place: Stage Kanad</p>
+                                    <p>・Zone ticket: ✖</p>
+                                    <p>・Recommended to: All</p>
+                                    <p>・Free</p>
+                                </div>
                             </div>
                         </div>
-                    </div> 
-                    <div className="offiProCard">
-                        <div className="offiProCard-title">“Machikane Forest”</div>
-                        <div className="inforAll">
-                            <div className="IconBox">
-                                <img className="officialIcon" src={machikaneForestLogo} alt="まちかねの森のアイコン"></img>
-                            </div>
-                            <div className="information">
-                                <br></br>
-                                <p>・Time: 10:00-12:00,13:00-17:00</p>
-                                <p>・Place: CELAS C106</p>
-                                <p>・Zone ticket: 〇</p>
-                                <p>・Recommended to: All</p>
-                                <p>・Free</p>
-                            </div>
-                        </div>
-                    </div> 
-                    <div className="offiProCard nepleageCard">
-                        <div className="offiProCard-title">Machikaneprigu</div>
-                        <div className="inforAll">
-                            <div className="IconBox">
-                                <img className="officialIcon" src={nepleage} alt="マチカネプリーグのアイコン"></img>
-                            </div>
-                            <div className="information">
-                                <br></br>
-                                <p>・Time: 10:00-12:00 13:00-17:00</p>
-                                <p>・Place: CELAS C105</p>
-                                <p>・Zone ticket: 〇</p>
-                                <p>・Recommended to: High school / College students</p>
-                                <p>・Free</p>
-                            </div>
-                        </div>
-                    </div> 
-                    <div className="offiProCard O-1card">
-                        <div className="offiProCard-title">O-1grand prix</div>
-                        <div className="inforAll">
-                            <div className="IconBox">
-                                <img className="officialIcon" src={O1Logo}  alt="O-1GrandPrixのアイコン"></img>
-                            </div>
-                            <div className="information">
-                                <br></br>
-                                <p>・Time: Nov. 5th (Day3) 17:00-19:00</p>
-                                <p>・Place: Stage Kanad</p>
-                                <p>・Zone ticket: ✖</p>
-                                <p>・Recommended to: All</p>
-                                <p>・Free</p>
-                            </div>
-                        </div>
-                    </div>
+                    </AnchorLink>
                 </div>
                 <div className="officialProDetail">
                     <div className="detailCard">
-                        <div className="detail">
+                        <div className="detail" id="pancake">
                             <h2 className="projectTitle">“Freshy Fluffy Pancake”</h2>
                             <div className="grade">
                                 <div className="rate rate5">
@@ -131,7 +136,7 @@ export default function OfficialProjectEn() {
                                 </div>
                             </div>
                         </div>
-                        <div className="detail machikaneForestDetail">
+                        <div className="detail machikaneForestDetail" id="machikaneForest">
                             <h2 className="projectTitle">Machikane Forest</h2>
                             <ul className="forestSimpleInfor">
                                 <li className="forestPlace">
@@ -208,7 +213,7 @@ export default function OfficialProjectEn() {
                                 </div>
                             </div>
                         </div>
-                        <div className="detail">
+                        <div className="detail" id="nepleage">
                             <div className="nepleageQuestion">
                                 <p>
                                 Q.Answer 4 characteristics of Machikanepurigu.
@@ -222,7 +227,7 @@ export default function OfficialProjectEn() {
                                 <li className="nepleageFor">For Highschool and College students</li>
                             </ul>
                         </div>
-                        <div className="detail O-1Detail">
+                        <div className="detail O-1Detail" id="O-1">
                             <div className="O-1Title"></div>
                             <div className="O-1DetailIcon"><img src={O1Logo} alt="O-1アイコン"></img></div>
                             <div className="O-1Preparetion">Coming soon</div>
