@@ -12,19 +12,19 @@ export default function Header() {
         setIsHamburgerOpen(prev => !prev)
     }
     const [isMenuOpenA, setIsMenuOpenA] = useState(false)
-    function menuOpenA() {
+    const menuOpenA=()=> {
         setIsMenuOpenA(prev => !prev)
     }
     const [isMenuOpenB, setIsMenuOpenB] = useState(false)
-    function menuOpenB() {
+    const menuOpenB=()=> {
         setIsMenuOpenB(prev => !prev)
     }
     const [isMenuOpenC, setIsMenuOpenC] = useState(false)
-    function menuOpenC() {
+    const menuOpenC=()=> {
         setIsMenuOpenC(prev => !prev)
     }
     const [isMenuOpenD, setIsMenuOpenD] = useState(false)
-    function menuOpenD() {
+    const menuOpenD=()=> {
         setIsMenuOpenD(prev => !prev)
     }
     const PageChange=()=>{
