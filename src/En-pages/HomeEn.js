@@ -15,8 +15,14 @@ import access from "../imgs/pickup_icon/icon_access.png"
 import map from "../imgs/pickup_icon/icon_map.png"
 import timetable from "../imgs/pickup_icon/icon_stage.png"
 import { useEffect } from "react"
+
 export default function Home() {
   useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+  });
+
     var move = document.getElementById('move').children;
     setTimeout(function () {
       for (var i = 0; i < move.length; i++) {
