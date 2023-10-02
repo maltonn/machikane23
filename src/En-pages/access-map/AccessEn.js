@@ -13,6 +13,12 @@ export default function AccessEn() {
             behavior: "smooth",
         });
     }
+    useEffect(()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    },[])
     return(
         <div className="main">
             <Helmet>
