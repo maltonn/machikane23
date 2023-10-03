@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet";
-import {Link} from "react-router-dom";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import "../../css/Common.css"

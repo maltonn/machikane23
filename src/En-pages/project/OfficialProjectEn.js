@@ -17,6 +17,12 @@ import bonber from "../../imgs/official_project/bonber.png"
 
 
 export default function OfficialProjectEn() {
+    useEffect(()=>{
+        window.scrollTo({
+            top:0,
+            behavior: "smooth",
+        })
+    })
     return(
         <div className="officialProject">
             <Helmet>

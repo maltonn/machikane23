@@ -3,8 +3,6 @@ import PageTitles from "../../components/PageTitles"
 import "../../css/TalentProject.css"
 
 import tombrown from "../../imgs/talentProject/tombrown.png"
-import machikame1 from "../../imgs/animal/machikame1.png"
-import machikame2 from "../../imgs/animal/machikame2.png"
 import machikani from "../../imgs/animal/machikani.png"
 import Bubble from "../../components/Bubble"
 import { useEffect } from "react"
