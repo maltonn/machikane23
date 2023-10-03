@@ -10,6 +10,11 @@ import senrihankyuhotel from "../../imgs/sponsor/senri-hankyu-hotel.png"
 import solaniwaonsen from "../../imgs/sponsor/solaniwa-onsen.jpg"
 import sorakakeru from "../../imgs/sponsor/sorakakeru.png"
 import sudio from "../../imgs/sponsor/sudio.png"
+import kasugai from "../../imgs/sponsor/kasugai.png"
+import milksoap from "../../imgs/sponsor/milk-soap.png"
+import osakaseika from "../../imgs/sponsor/osakaseika.png"
+import tondemi from "../../imgs/sponsor/tondemi.jpg"
+import VSPARK from "../../imgs/sponsor/VSPARK.jpg"
 import homecomingday from "../../imgs/sponsor/home-coming-day.jpg"
 import rokkosai from "../../imgs/sponsor/rokkosai.jpeg"
 import PageTitles from "../../components/PageTitles";
@@ -33,6 +38,11 @@ export default function Sponsor() {
                         <a href="https://big-echo.jp/"><img src={bigecho}></img></a>
                         <a href="https://www.cornedbeef.jp/"><img src={kawashofoods}></img></a>
                         <a href="https://www.hankyu-hotel.com/hotel/hh/senrihh"><img src={senrihankyuhotel}></img></a>
+                        <a href="https://www.kasugai.co.jp/"><img src={kasugai}></img></a>
+                        <a href="https://www.cow-soap.co.jp/"><img src={milksoap}></img></a>
+                        <a href="https://www.osaka-toka.co.jp/"><img src={osakaseika}></img></a>
+                        <a href="https://bandainamco-am.co.jp/others/tondemi/"><img src={tondemi}></img></a>
+                        <a href="https://bandainamco-am.co.jp/others/vspark/"><img src={VSPARK}></img></a>
                     </div>
                 </div>
                 <div className="companies advertise">
