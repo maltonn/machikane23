@@ -15,7 +15,7 @@ export default function ThemeEn() {
             <div className ="theme-sky">
             <PageTitles titles="Theme" kame={true}></PageTitles>
               <div className = "themep-mainpage">
-                <div className="themepen-name">
+                <div className="themepen-nameEn">
                   "Han-Sun-<nobr>Sun. "</nobr>
                 </div>
                 <div className="themep-context">
