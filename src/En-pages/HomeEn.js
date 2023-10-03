@@ -53,10 +53,10 @@ export default function Home() {
         <div className="holding-parent">
           <div className="holding">
             <div className="sub-holding">
-              <p className="holding-title">開催場所</p>
-              <p className="holding-content">大阪大学 豊中キャンパス</p>
-              <p className="holding-title">開催日程</p>
-              <p className="holding-content">11/3(金),4(土),5(日)</p>
+              <p className="holding-title">Venue</p>
+              <p className="holding-content">Osaka University, Toyonaka Campus</p>
+              <p className="holding-title">Date</p>
+              <p className="holding-content">November 3rd(Fri.)~5th (Sun.),2023</p>
             </div>
           </div>
         </div>
@@ -69,30 +69,30 @@ export default function Home() {
       <div className="sky2">
         <div className="mainpage1">
           <div className="top-backCard">
-            <span id="title">お知らせ</span>
+            <span id="title">Updates</span>
             <table className="news-table">
               <tbody>
                 <tr>
-                  <td className="news-date">10/3(火)</td>
-                  <td className="news-content">まちかね祭2023公式サイトが完成しました。</td>
+                  <td className="news-date">Oct.3(Tue.)</td>
+                  <td className="news-content">The official website is now open!</td>
                 </tr>
                 <tr>
-                  <td className="news-date">9/10(日)</td>
-                  <td className="news-content">まちかね祭2023公式サイトのトップページが完成しました。</td>
+                  <td className="news-date">Sep.10(Sun.)</td>
+                  <td className="news-content">The TOP page is now available!</td>
                 </tr>
               </tbody>
             </table>
           </div>     
           <div className="top-backCard">
-            <span id="title">ご来場の皆様へ</span>
-            <div className="content">まちかね祭に車でご来場いただくことはできません。<br/>ご来場の際は公共交通機関をご利用ください。<br/>来場予約は不要です。</div>
-            <p>お笑いライブは予約必須です。下のボタンから予約サイトへアクセスください。</p>
-            <div className="top-linkButton live-reservation"><a href="https://app.tyuujitu-system.net/machikane23/visitor/talent-live">お笑いライブ<br></br>予約サイト</a></div>
-            <p>お笑いライブ詳細は<Link to="./talent-project" onClick={PageChange}>こちら</Link></p>
-            <p>今年のまちかね祭の企画を検索できます。<br></br>あなたのお気に入りの企画を見つけましょう！<br></br>下のボタンからご覧ください。</p>
-            <div className="link-button top-linkButton top-buttonblank"><Link to="./project-search" onClick={PageChange}>企画検索</Link></div> 
-            <p>その他注意事項がございますので、下のボタンからご覧ください。</p>
-            <div className="link-button top-linkButton top-buttonblank"><Link to="./notes" onClick={PageChange}>注意事項</Link></div>
+            <span id="title">TO all the visitors</span>
+            <div className="content">Cars are not allowed on campus.<br/>Please use public transportation when you come to the Toyonaka Campus.<br/>You do not need to make a visit reservation.</div>
+            <p>Reservation is required for the Comedy LIVE Show. Please move on to the reservation site from the button below.</p>
+            <div className="top-linkButton live-reservation"><a href="https://app.tyuujitu-system.net/machikane23/visitor/talent-live">Reserve for<br/>the Comedy LIVE Show<br/></a></div>
+            <p>Click <Link to="./talent-project" onClick={PageChange}>Here</Link> for more details.</p>
+            <p>You can look up the projects of the festival.<br></br>Click the button below <br></br>and find your favorite projects!</p>
+            <div className="link-button top-linkButton top-buttonblank"><Link to="./project-search" onClick={PageChange}>Project Search</Link></div> 
+            <p>Click the button below and please check the notes.</p>
+            <div className="link-button top-linkButton top-buttonblank"><Link to="./notes" onClick={PageChange}>Notes</Link></div>
           </div>
           <div className="machikani-1"><img src={machikani} alt="まちかに"></img></div>
         </div>
@@ -103,30 +103,30 @@ export default function Home() {
           <div className="mainpage2">
 
             <div className="ocean-card">
-              <div className="titles"><nobr><p className="item1">●</p><span id="title">企画区分について</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
-              <p>企画区分の説明は、下のボタンからどうぞ</p>
+              <div className="titles"><nobr><p className="item1">●</p><span id="title">In-Facility Projects</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
+              <p>For more information, please click the button below.</p>
               <div className="ocean-link-button"><Link to="./sections" onClick={PageChange}>企画区分を知る</Link></div>
             </div>
             <div className="ocean-card schedule">
               <div className="subtitle">
-                <div className="titles"><nobr><p className="item1">●</p><span id="title">企画時間</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
+                <div className="titles"><nobr><p className="item1">●</p><span id="title">Event Hours</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
               </div>
               <table className="section-schedule">
                 <tbody>
                   <tr>
-                    <td className="section">館内</td>
+                    <td className="section">In-Facility</td>
                     <td className="section-time">10:00〜18:20</td>
                   </tr>
                   <tr>
-                    <td className="section">屋外</td>
+                    <td className="section">Outdoor</td>
                     <td className="section-time">10:00〜18:00</td>
                   </tr>
                   <tr>
-                    <td className="section"><nobr>ステージ</nobr></td>
+                    <td className="section"><nobr>Stage</nobr></td>
                     <td className="section-time">10:00〜19:00</td>
                   </tr>
                   <tr>
-                    <td className="section">模擬店</td>
+                    <td className="section">Food Stalls</td>
                     <td className="section-time">10:00〜18:00</td>
                   </tr>
                 </tbody>
@@ -138,9 +138,9 @@ export default function Home() {
             </div>
 
           <div className="ocean-card lab">
-            <div className="titles"><nobr><p className="item1">●</p><span id="title">研究室公開</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
-            <p>研究室の企画は、下のボタンからどうぞ</p>
-            <div className="ocean-link-button"><Link to="/lab-open" onClick={PageChange}>研究室公開</Link></div>
+            <div className="titles"><nobr><p className="item1">●</p><span id="title">Open Lab</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
+            <p>For more information, please click the button below.</p>
+            <div className="ocean-link-button"><Link to="/lab-open" onClick={PageChange}>Open Lab</Link></div>
             </div>
 
           <div className="ocean-card" id="pickup">
@@ -148,38 +148,38 @@ export default function Home() {
             <div className="pickup-box">
                 <Link to="/project-search" onClick={PageChange}><div className="pickup-button">
                   <div className="pickup-icon"><img src={search} alt="search"></img></div>
-                  <div className="pickup-title">企画検索</div>
+                  <div className="pickup-title">Project Search</div>
                 </div></Link>
                 <Link to="/goods" onClick={PageChange}><div className="pickup-button">
                   <div className="pickup-icon"><img src={goods} alt="goods"></img></div>  
-                  <div className="pickup-title">グッズ</div>
+                  <div className="pickup-title">Official Goods</div>
                 </div></Link>
                 <Link to="/official-project" onClick={PageChange}><div className="pickup-button">
                   <div className="pickup-icon"><img src={recommend} alt="recommend"></img></div>  
-                  <div className="pickup-title">委員会企画</div>
+                  <div className="pickup-title">Official Projects</div>
                 </div></Link><br/>
                 <Link to="/access" onClick={PageChange}><div className="pickup-button">
                   <div className="pickup-icon"><img src={access} alt="access"></img></div>
-                  <div className="pickup-title">アクセス</div>
+                  <div className="pickup-title">Access</div>
                 </div></Link>
                 <Link to="/map" onClick={PageChange}><div className="pickup-button">
                   <div className="pickup-icon"><img src={map} alt="map"></img></div>  
-                  <div className="pickup-title">マップ</div>
+                  <div className="pickup-title">Map</div>
                 </div></Link>
                 <Link to="/timetable" onClick={PageChange}><div className="pickup-button">
                   <div className="pickup-icon"><img src={timetable} alt="timetable"></img></div> 
-                  <div className="pickup-title">ステージタイムテーブル</div>
+                  <div className="pickup-title">Stage Performance Schedule</div>
                 </div></Link>
             </div>
           </div>
 
             <div className="ocean-card top-about">
               <div className="titles"><nobr><p className="item1">●</p><span id="title">テーマ</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
-              <div className="theme-title">"<ruby>阪燦々<rt>はんさんさん</rt></ruby>"</div>
+              <div className="theme-title">"<ruby>阪燦々<rt>Han-Sun-Sun</rt></ruby>"</div>
               <div className="theme-context">
-                <p>2023年度まちかね祭のテーマは「阪燦々」（はんさんさん）に決定いたしました。</p>
-                <p>このテーマには、まちかね祭において阪大生の個性が燦々と輝きますように、との思いが込められています。</p>
-                <div className="ocean-link-button"><Link to="/theme" onClick={PageChange}>もっと見る</Link></div>
+                <p>The theme for Machikane Festival 2023 is ─── "Han-Sun-Sun. "</p>
+                <p>We hope that every student of Osaka University will shine their characteristics as brightly as the sunlight.</p>
+                <div className="ocean-link-button"><Link to="/theme" onClick={PageChange}>Message behind the theme</Link></div>
               </div>
             </div>
           </div>
