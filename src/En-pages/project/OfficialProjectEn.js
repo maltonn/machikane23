@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import {Link} from "react-router-dom";
+import { useEffect } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import "../../css/TalentProject.css"
 
