@@ -18,7 +18,7 @@ export default function Sections() {
             <title>Project Category|2023 Machikane Festival</title>
             </Helmet>
             <div className="notes-sky">
-                <PageTitles titles="企画区分について" kame={true}></PageTitles>
+                <PageTitles titles="Project Category" kame={true}></PageTitles>
                 <div className="notes-mainpage">
                     <div className="notes-all">
                         <div className="notes-naiyou">
@@ -44,13 +44,13 @@ export default function Sections() {
                         <div className="notes-naiyou">
                             <div className="notes-miniTitle">Stage Performances</div>
                             <div className="notes-miniContent">
-                                <p>　We have two stages, <ruby>奏<rt>“Kanade”</rt></ruby>which is in front of cafeteria Quartier and<ruby>宙<rt>"Sora"</rt></ruby>which is in front of cafeteria Kasane.You will be impressed by powerful dance and band performances! Please come and let’s share the passion!</p>
+                                <p>　We have two stages, <ruby>奏<rt>“Kanade”</rt></ruby> which is in front of cafeteria Quartier and <ruby>宙<rt>"Sora"</rt></ruby> which is in front of cafeteria Kasane. You will be impressed by powerful dance and band performances! Please come and let’s share the passion!</p>
                             </div>
                         </div>
                         <div className="notes-naiyou">
                             <div className="notes-miniTitle">Food Stalls</div>
                             <div className="notes-miniContent">
-                                <p>　At this 2023 Machikane Festial, we set up food stalls on Main street(<ruby>浪高庭園<rt>なみこうていえん</rt></ruby>side)and in front of Osaka University Hall. We expect more liveliness than during the covid. We also prepare seats and tents to eat in.。Come by and enjoy our food!
+                                <p>　At this 2023 Machikane Festial, we set up food stalls on Main street (<ruby>浪高庭園<rt>Namikou Garden</rt></ruby>side) and in front of Osaka University Hall. We expect more liveliness than during the covid. We also prepare seats and tents to eat in. Come by and enjoy our food!
 </p>
                             </div>
                         </div>

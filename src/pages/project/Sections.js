@@ -41,13 +41,13 @@ export default function Sections() {
                             </div>
                         </div>
                         <div className="notes-naiyou">
-                            <div className="notes-miniTitle">Stage Performances</div>
+                            <div className="notes-miniTitle"> ステージ区分</div>
                             <div className="notes-miniContent">
                                 <p>ステージ区分では、カルチエ前のステージ<ruby>奏<rt>“かなで”</rt></ruby>とかさね前のステージ<ruby>宙<rt>"そら"</rt></ruby>の2つのステージで様々な企画が行われます。バンド演奏からダンスパフォーマンスまで、迫力あるステージをぜひお楽しみください。</p>
                             </div>
                         </div>
                         <div className="notes-naiyou">
-                            <div className="notes-miniTitle">Food Stalls</div>
+                            <div className="notes-miniTitle">模擬店区分</div>
                             <div className="notes-miniContent">
                                 <p>模擬店区分では、食品の提供などが行われます。食事席もご用意しております。2023年度まちかね祭では、大阪大学会館(旧イ号館)前及びメインストリート南側(<ruby>浪高庭園<rt>なみこうていえん</rt></ruby>側)のテントで行われます。ぜひお越しください。
                                 </p>
