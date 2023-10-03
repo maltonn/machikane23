@@ -115,7 +115,7 @@ export default function OfficialProject() {
                                 <ul>
                                     <li className="pancakePlace">場所：メインストリート テント40</li>
                                     <li className="pancakeGenre">ジャンル：パンケーキ</li>
-                                    <li className="pancakeTime">営業時間：11月3、4、5日<br></br>     10:00～18:00</li>
+                                    <li className="pancakeTime">営業時間：11月3、4、5日  10:00～18:00</li>
                                     <li className="pancakeMoney">予算：350－400</li>
                                 </ul>
                             </div>
