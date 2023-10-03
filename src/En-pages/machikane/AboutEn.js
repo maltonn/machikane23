@@ -15,7 +15,7 @@ export default function AboutEn() {
             <PageTitles titles="What is Machikane Festival?" kame={true}></PageTitles>
             <div className="about-mainpage"> 
                 <p> ”Machikane Festival” is the festival we hold every November. 
-                    This time will be our 63th, since its former “Sports & Culture Festival” turned into “Machikane Festival” in 1960. 
+                    This time will be our 64th, since its former “Sports & Culture Festival” turned into “Machikane Festival” in 1960. 
                     The name of the festival was elected from public submission in 1963.
                 </p>
                 <p>
