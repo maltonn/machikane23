@@ -7,6 +7,7 @@
     background-repeat: no-repeat,no-repeat,no-repeat;
     background-position: 72% 88px,right bottom,5% bottom;
     height: 400px;
+    margin-bottom: 40px;
 }
 .page-titles{
     font-size: 2rem;
@@ -36,7 +37,7 @@
         background-repeat: no-repeat,no-repeat,no-repeat;
         background-position: 4vw 3vh,right bottom,6vw 155px;
         height: 240px;
-        margin-bottom: 17px;
+        margin-bottom: 20px;
     } 
     .page-titles{
         font-size: 1.4rem;
@@ -63,6 +64,7 @@
         background-repeat: no-repeat,no-repeat,no-repeat;
         background-position: 70% 0vh,right bottom,4% 250px;
         height: 410px;
+        margin-bottom: 30px;
     }
     .page-titles{
         font-size: 2rem;
