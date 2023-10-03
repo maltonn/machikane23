@@ -380,6 +380,9 @@
   .inforAll{
     display: block;
   }
+  .information{
+    margin-left: 0;
+  }
   .iconAround{
    margin: 0 auto; 
   }

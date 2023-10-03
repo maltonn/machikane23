@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import {Link} from "react-router-dom";
+import { useEffect } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import "../../css/TalentProject.css"
 
@@ -17,6 +18,12 @@ import bonber from "../../imgs/official_project/bonber.png"
 
 
 export default function OfficialProjectEn() {
+    useEffect(()=>{
+        window.scrollTo({
+            top:0,
+            behavior: "smooth",
+        })
+    })
     return(
         <div className="officialProject">
             <Helmet>
