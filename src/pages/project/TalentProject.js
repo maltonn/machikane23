@@ -34,12 +34,12 @@ export default function TalentProject(){
                     <div className="talentInfor">
                         <p className="talentDay">日時：11月4日(土) 14:00～15:00</p>
                         <p className="talentPlace">場所：大学会館 講堂</p>
-                        <p className="startCaution">開場は13時からです。早めにお越しください。</p>
+                        <p className="startCaution">開場は13時からです。お早めにお越しください。</p>
                     </div>
                     <div className="talentProjectCaution">
                         <h2 className="caution">注意事項</h2>
                         <ul className="cautionAll">
-                            <li className="caution1">この企画は<strong>事前予約</strong>制なので、以下のリンクからご予約お願いします。
+                            <li className="caution1">この企画は<strong>事前予約</strong>制なので、以下のリンクからご予約お願いします。応募者多数の場合は、抽選を行います。予めご了承ください。
                             <p className="reservationUrl">
                                 <a href="https://app.tyuujitu-system.net/machikane23/visitor/talent-live" target="_blank" rel="noreferrer">予約</a>
                             </p>
