@@ -4,8 +4,15 @@ import "../../css/Common.css"
 import "../../css/Notes.css"
 import PageTitles from "../../components/PageTitles";
 import Bubble from "../../components/Bubble";
+import { useEffect } from "react";
 export default function Notes() {
-    function PageChange(){
+    useEffect(()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    },[])
+    const PageChange=()=>{
         window.scrollTo({
             top: 0,
             behavior: "smooth",

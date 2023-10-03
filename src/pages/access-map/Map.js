@@ -16,14 +16,21 @@ import H3 from "../../imgs/map/法経3階.png"
 import B1 from "../../imgs/map/文法経1階.png"
 import B2 from "../../imgs/map/文法経2階.png"
 import B3 from "../../imgs/map/文法経3階.png"
-import B4 from "../../imgs/map/文法経4階.png"
+// import B4 from "../../imgs/map/文法経4階.png"
 import G2 from "../../imgs/map/学生会館2階.png"
 import G3 from "../../imgs/map/学生会館3階.png"
 import M from "../../imgs/map/屋外メインストリート.png"
 import kanade from "../../imgs/map/ステージ奏.png"
 import sora from "../../imgs/map/ステージ宙.png"
+import { useEffect } from "react";
 
 export default function Map() {
+    useEffect(()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    },[])
     return(
         <div className="main">
             <Helmet>
@@ -97,7 +104,7 @@ export default function Map() {
                 <div className="access-mainpage"> 
                     <div className="map-notes">
                         <div className="map-content">
-                            <div className="map-ul">C棟</div>
+                            <div className="map-ul">全学教育講義C棟</div>
                             <div className="map-item">
                                     <div className="map-C"> 
                                         <div className="floorname">

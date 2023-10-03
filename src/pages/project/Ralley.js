@@ -11,6 +11,12 @@ import ralley3_icon from "../../imgs/ralley/ralley3_icon.jpg"
 import startbooth from "../../imgs/ralley/startbooth.png"
 
 export default function Ralley() {
+    useEffect(()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    },[])
     return(
         <div className="main">
             <Helmet>

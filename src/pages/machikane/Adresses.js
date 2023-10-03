@@ -6,7 +6,14 @@ import "../../css/Adresses.css"
 import PageTitles from "../../components/PageTitles"
 import president from "../../imgs/NISHIO-Shojiro.jpg"
 import chairperson from "../../imgs/chairperson.jpg"
+import { useEffect } from "react";
 export default function Adresses() {
+    useEffect(()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    },[])
     return(
         <div className="main">
             <Helmet>

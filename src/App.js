@@ -46,6 +46,7 @@ import MogitenEn from './En-pages/project/MogitenEn';
 import TimetableEn from './En-pages/project/TimetableEn';
 import RalleyEn from './En-pages/project/RalleyEn';
 import OfficialProjectEn from './En-pages/project/OfficialProjectEn';
+import TalentProjectEn from './En-pages/project/TalentProjectEn';
 import LabOpenEn from './En-pages/project/LabOpenEn';
 
 import NotesEn from './En-pages/visitor/NotesEn';
@@ -93,6 +94,7 @@ function AppContents() {
               <Route path="/timetable/" element={<TimetableEn />} />
               <Route path="/ralley/" element={<RalleyEn />} />
               <Route path="/official-project/" element={<OfficialProjectEn />} />
+              <Route path="/talent-project/" element={<TalentProjectEn />} />
               <Route path="/lab-open/" element={<LabOpenEn />} />
 
               <Route path="/notes/" element={<NotesEn />} />

@@ -19,6 +19,10 @@ export default function Detail() {
     const { id } = useParams();
     const [project, setProject] = useState(null);
     useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
         fetch(`https://app.tyuujitu-system.net/api/machikane23/website/${id}.json`).then((res) => {
             console.log(res)
             return res.json()
@@ -68,7 +72,7 @@ export default function Detail() {
             return null
         }
     }
-    function PageChange(){
+    const PageChange=()=>{
         window.scrollTo({
             top: 0,
             behavior: "smooth",
