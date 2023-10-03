@@ -84,7 +84,7 @@ export default function Home() {
             </table>
           </div>     
           <div className="top-backCard">
-            <span id="title">TO all the visitors</span>
+            <span id="title">To all the visitors</span>
             <div className="content">Cars are not allowed on campus.<br/>Please use public transportation when you come to the Toyonaka Campus.<br/>You do not need to make a visit reservation.</div>
             <p>Reservation is required for the Comedy LIVE Show. Please move on to the reservation site from the button below.</p>
             <div className="top-linkButton live-reservation"><a href="https://app.tyuujitu-system.net/machikane23/visitor/talent-live">Reserve for<br/>the Comedy LIVE Show<br/></a></div>
@@ -174,7 +174,7 @@ export default function Home() {
           </div>
 
             <div className="ocean-card top-about">
-              <div className="titles"><nobr><p className="item1">●</p><span id="title">テーマ</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
+              <div className="titles"><nobr><p className="item1">●</p><span id="title">Theme</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
               <div className="theme-title">"<ruby>阪燦々<rt>Han-Sun-Sun</rt></ruby>"</div>
               <div className="theme-context">
                 <p>The theme for Machikane Festival 2023 is ─── "Han-Sun-Sun. "</p>
