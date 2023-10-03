@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 import "../../css/Common.css"
-import {Link} from "react-router-dom";
+/*import {Link} from "react-router-dom";*/
 import "../../css/About.css"
 import PageTitles from "../../components/PageTitles";
 import Bubble from "../../components/Bubble";

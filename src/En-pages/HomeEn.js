@@ -44,7 +44,7 @@ export default function Home() {
   return (
     <div className="top-main">
       <Helmet>
-        <title>トップページ|まちかね祭2023</title>
+        <title>TOP|2023　Machikane Festival</title>
       </Helmet>
       <div id="loader">
         <div className="machikame1">
@@ -105,7 +105,7 @@ export default function Home() {
             <div className="ocean-card">
               <div className="titles"><nobr><p className="item1">●</p><span id="title">In-Facility Projects</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
               <p>For more information, please click the button below.</p>
-              <div className="ocean-link-button"><Link to="./sections" onClick={PageChange}>企画区分を知る</Link></div>
+              <div className="ocean-link-button"><Link to="./sections" onClick={PageChange}>Project Category</Link></div>
             </div>
             <div className="ocean-card schedule">
               <div className="subtitle">
