@@ -39,84 +39,84 @@ export default function NotesEn() {
                             <div className="notes-miniContent">
                                 <ul>
                                     <li>You cannot use ordinary bins.</li>
-                                    <li>ごみは「ゴミステーション」にて分別して捨ててください。</li>
-                                    <li>ステージ宙付近にも臨時のゴミ箱を設置しておりますが、基本的に「ゴミステーション」にて捨てていただくようにお願いいたします。</li>
+                                    <li>Please sort the garbage following the signs at the designated bins, called “Gomi-Station.”</li>
+                                    <li>We also have bins near Stage Sora, but please try to use the station bins basically.</li>
                                 </ul>
                             </div>
                         </div>
                         <div className="notes-naiyou">
-                            <div className="notes-miniTitle">酒類について</div>
+                            <div className="notes-miniTitle">Alcohol</div>
                             <div className="notes-miniContent">
                                 <ul>
-                                    <li>本まちかね祭において、酒類の販売はいたしません。</li>
-                                    <li>飲酒、酒類の持ち込み、泥酔状態でのご来場は禁止いたします。ご協力の程よろしくお願いいたします。</li>
+                                    <li>We do not offer any alcohol at this Machikane Festival.</li>
+                                    <li>You are not allowed to drink and bring alcoholic beverages and enter university when you are  heavily drunk.</li>
                                 </ul>
                             </div>
                         </div>
                         <div className="notes-naiyou">
-                            <div className="notes-miniTitle">喫煙について</div>
+                            <div className="notes-miniTitle">Smoking</div>
                             <div className="notes-miniContent">
-                                <p>まちかね祭の会場である大阪大学豊中キャンパスでは、喫煙ブース（卒煙支援ブース）以外での喫煙が禁止されております。</p>
-                                <p>卒煙支援ブースの場所はキャンパスマップをご覧ください。</p>
-                                <p>なお、指定された場所以外での喫煙を発見した場合には大学当局への通報を含めた厳しい処分を行う場合がございます。</p>
+                                <p>At Osaka University Toyonaka Campus, smoking is banned at all the places except designated smoking areas.</p>
+                                <p>Please refer to the map for the smoking area.</p>
+                                <p>Once we discover someone smoking against the rules, we may report to the authority for severe punishment.</p>
                             </div>
                         </div>
                         <div className="notes-naiyou">
-                            <div className="notes-miniTitle">落とし物について</div>
+                            <div className="notes-miniTitle">Lost items</div>
                             <div className="notes-miniContent">
                                 <ul>
-                                    <li>11月3日(金)から11月5日(日)のまちかね祭期間中の落とし物は当委員会の本部受付（ピロティ）にて管理いたします。</li>
-                                    <li>大学祭期間中、構内で落とし物を発見した場合、または構内で落とし物をしてしまった場合は本部受付（ピロティ）までお越しください。</li>
-                                    <li>ただし、大学祭期間後（11月6日以降）の落とし物の管理は豊中学生センター（豊中キャンパス 学生交流棟2階）に移されます。</li>
-                                    <li>それ以降の拾得物、紛失物についての確認などは、豊中学生センターにて行ってください。</li>
+                                    <li>All lost items we found during the Machikane Festival (Nov.3, 4 and 5) will be taken care of by us.</li>
+                                    <li>When you lose something or you find lost items, please come to the main reception desk at the piloti.</li>
+                                    <li>Caution:After the festival(5/2～), lost items will be organized by Toyonaka Student Center (2nd floor of Student Union, Toyonaka Campus )</li>
+                                    <li>If you have any questions about lost items, please go to the Toyonaka Student Center.</li>
                                 </ul>
                             </div>
                         </div>
                         <div className="notes-naiyou">
-                            <div className="notes-miniTitle">迷子について</div>
+                            <div className="notes-miniTitle">Lost child</div>
                             <div className="notes-miniContent">
-                            大学祭期間中に迷子を発見した場合、本部受付（ピロティ）まで連れてくるようにお願いします。
+                            When you find lost children, please take them to the main reception desk at the piloti.
                             </div>
                         </div>
                         <div className="notes-naiyou">
-                            <div className="notes-miniTitle">ペット連れでのご来場について</div>
-                            <div className="notes-miniContent">
-                                <ul>
-                                    <li>まちかね祭は非常に混雑することが予想されますので、ペットを連れてのご来場はお控えください。</li>
-                                    <li>特にメインストリートは、食品を扱う企画を行っているため、全面的にペットの通行を禁止します。</li>
-                                    <li>ステージ企画、館内企画、屋外企画はケージに入れた状態であればご来場していただくことが可能です。</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="notes-naiyou">
-                            <div className="notes-miniTitle">感染症対策について</div>
+                            <div className="notes-miniTitle">Pets</div>
                             <div className="notes-miniContent">
                                 <ul>
-                                    <li>2023年度まちかね祭では、原則入場制限を行いません。事前予約なしで、自由にご来場いただけます。ただし、混雑時は一時的に入場制限をすることがございます。</li>
-                                    <li>体調不良の場合はご来場をお控えください。</li>
-                                    <p>※本学の感染症対策指針の変更に伴い、上記注意事項も変更となる場合がございます。</p>
+                                    <li>We expect full visitors, so please refrain from taking your pets to the festival.</li>
+                                    <li>Pets are severely not allowed on the Main street.</li>
+                                    <li>Pets in the cage are available at In-Facility, Outdoor projects and Stage Performances.</li>
                                 </ul>
                             </div>
                         </div>
                         <div className="notes-naiyou">
-                            <div className="notes-miniTitle">ビラ配り・勧誘行為について</div>
+                            <div className="notes-miniTitle">Covid-19 Countermeasures</div>
+                            <div className="notes-miniContent">
+                                <ul>
+                                    <li>We do not place any restrictions on the admission at this Machikane Festival. No reservation in advance is required.However, please note that we may conduct admission constriction when it gets too crowded.</li>
+                                    <li>Please refrain from coming to the festival if you are not feeling well.</li>
+                                    <p>※According to the change of the Osaka University infection control measures, we may alter these measures.</p>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="notes-naiyou">
+                            <div className="notes-miniTitle">Leafleting & Soliciting</div>
                             <div className="notes-miniContent">
                                 <ul>
                                     <li>
-                                    企画エリア内でのビラ配りは事前許可制となっております。事前に許可を得ていないビラ配りは全て禁止です。
+                                    Pre-permission is required for leafleting in the festival areas. All leafleting without a permission will be banned.
                                     </li>
                                     <li>
-                                    特に、メインストリートでビラ配りをすることは出来ません（一部区間を除く）。
+                                    Leafleting on the Main street is not allowed.(Except for some area)
                                     </li><li>
-                                    不審なビラ配り・勧誘行為にご注意ください。
+                                    Please be careful to suspicious leafleting or soliciting
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div className="notes-naiyou">
-                            <div className="notes-miniTitle">お困りの際は</div>
-                            <div className="notes-miniContent">まちかね祭期間中、何か困ったことがございましたらお近くの実行委員にお声掛けください。
-                            実行委員は左腕にオレンジの腕章をつけています。</div>
+                            <div className="notes-miniTitle">If you are in trouble</div>
+                            <div className="notes-miniContent">Please feel free to ask your nearest committee members, if you have any troubles.All the committee members are wearing ORANGE armbands.We appreciate your understanding and cooperation. Thank you.
+</div>
                         </div>
                     </div>
                 </div>
