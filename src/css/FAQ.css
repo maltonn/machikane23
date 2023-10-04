@@ -11,29 +11,15 @@
         background: #FFF;
         border: solid 3px #6091d3;
         border-radius: 10px;
-        width: 95%;
+        box-sizing: border-box;
+        width: 100%;
 }
 .FAQ-card{
-    padding-right: 50px;
-    padding-left: 5px;
+    padding: 20px 50px 20px 5px;
 }
-
-@media screen and (max-width:1070px) {
-    .FAQ-card{
-        padding:  0.5em 6px;
-        padding-left: 0.5px;
-        padding-left: 0.5px;
-}
-}
-
-
-
 .FAQ-card-A{
     font-size:  20px; 
     margin: 10px 5px 35px; 
-    
-    
-
 }
 .FAQ-table{
     border: 1px solid;
@@ -49,10 +35,41 @@
     display:block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
 }
 .FAQ-table{
     text-align: center;
 }
+@media (min-width:500px) and (max-width:1070px) {
+    .FAQ-card-A{
+        font-size: 18px;
+    }
+    .FAQ-card-Q{
+        font-size: 22px;
+    }
+    .FAQ-card{
+        padding:  0.5em 6px;
+        padding-left: 2px;
+}
+}
+@media screen and (max-width:500px) {
+    .FAQ-card-A{
+        font-size: 16px;
+        margin: 10px 5px 25px;
+    }
+    .FAQ-card-Q{
+        font-size: 19px;
+    }
+    .FAQ-card{
+        padding:  5px 2.5px;
+    }
+    .FAQ-table{
+        font-size: 14px;
+    }
+}
+
+
+/*以下英語ページ用css*/
 .FAQEn-table{
     border: 1px solid;
     border-collapse: collapse;
@@ -75,20 +92,39 @@
         background: #FFF;
         border: solid 3px #6091d3;
         border-radius: 10px;
-        width:90%
+        width:100%
 }
 .FAQEn-card{
-    padding-right: 50px;
-    padding-left: 5px;
-}
-@media screen and (max-width:1070px) {
-    .FAQEn-card{
-        padding:  0.5em 6px;
-        padding-left: 0.5px;
-        padding-left: 0.5px;
-}
+    padding:20px 50px 20px 5px;
 }
 .FAQEn-card-A{
     font-size:  20px; 
     margin: 10px 5px 35px;
+}
+@media (min-width:500px) and (max-width:1070px) {
+    .FAQEn-card-A{
+        font-size: 18px;
+    }
+    .FAQEn-card-Q{
+        font-size: 22px;
+    }
+    .FAQEn-card{
+        padding:  0.5em 6px;
+        padding-left: 2px;
+}
+}
+@media screen and (max-width:500px) {
+    .FAQEn-card-A{
+        font-size: 16px;
+        margin: 10px 5px 25px;
+    }
+    .FAQEn-card-Q{
+        font-size: 19px;
+    }
+    .FAQEn-card{
+        padding:  5px 2.5px;
+    }
+    .FAQEn-table{
+        font-size: 13px;
+    }
 }
