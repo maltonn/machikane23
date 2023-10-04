@@ -12,6 +12,17 @@
     justify-content: center;
     align-items: center;
 }
+.pickup-keywordEn{
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 3px;
+    padding: 0px 5px;
+    width: min(calc((100% - 80px)/3),100px);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #serch_word{
     width: 45%;
     height: 20px;
@@ -20,6 +31,12 @@
 /* ページ構成 */
 .search-mainpage {
     font-size: 1rem;
+    width: 92%;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+.search-mainpageEn {
+    font-size: 0.5rem;
     width: 92%;
     padding-bottom: 30px;
     margin: 0 auto;
