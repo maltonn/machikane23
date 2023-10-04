@@ -6,7 +6,7 @@
     cursor: pointer;
     margin: 3px;
     height: 30px;
-    width: min(calc((100% - 20px)/3),150px);
+    width: min(calc((100% - 80px)/3),100px);
     text-align: center;
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@
 
 /* ページ構成 */
 .search-mainpage {
-    font-size: 1.2rem;
+    font-size: 1rem;
     width: 92%;
     padding-bottom: 30px;
     margin: 0 auto;
@@ -39,6 +39,12 @@
 }
 
 /* カード */
+.card-detailLink:link, 
+.card-detailLink:visited, 
+.card-detailLink:hover, 
+.card-detailLink:active {
+    color: inherit;
+}
 .project-container{
     border: 1px solid black;
     margin: 10px;
@@ -46,8 +52,8 @@
     display: inline-flex;
 }
 .project-card-icon{
-    width: auto;
-    height: auto;
+    width: 150px;
+    height: 150px;
     max-width: 150px;
     max-height: 150px;
     margin: 5px;
@@ -141,8 +147,8 @@
     font-size: 0.7rem;
 }
 .project-card-icon{
-    width: auto;
-    height: auto;
+    width: 100px;
+    height: 100px;
     max-width: 100px;
     max-height: 100px;
     margin: 5px;

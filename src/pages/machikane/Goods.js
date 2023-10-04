@@ -4,12 +4,12 @@ import { Helmet } from "react-helmet";
 import "../../css/Common.css"
 import "../../css/About.css"
 import "../../css/Goods.css"
-import stickers from "../../imgs/goods/stickers.png"
+// import stickers from "../../imgs/goods/stickers.png"
 import allstickers from "../../imgs/goods/stickers_line.png"
-import stickers2 from "../../imgs/goods/stickers2.png"
+// import stickers2 from "../../imgs/goods/stickers2.png"
 import pendetail from "../../imgs/goods/pen-detail.png"
-import pen1 from "../../imgs/goods/pen1.jpg"
-import tote from "../../imgs/goods/tote.png"
+// import pen1 from "../../imgs/goods/pen1.jpg"
+import tote from "../../imgs/goods/totebag.png"
 import allgoods from "../../imgs/goods/allgoods.png"
 import PageTitles from "../../components/PageTitles";
 import Bubble from "../../components/Bubble";
@@ -33,14 +33,14 @@ export default function Goods() {
                     <div className="goods-detail">
                         <div className="goods-title">グッズ紹介</div>
                                 <div className="stickers">
-                                    <img src={allstickers}></img>
+                                    <img src={allstickers} alt="allstickers"></img>
                                 </div>
                                 <div className="stickers-content">
                                     <div className="goods-subtitle">ステッカー２枚セット　300円</div>
-                                    <p>前回好評いただいたステッカーが今回も登場です。かわいいデザインからカッコイイデザインまで、様々なステッカをご用意しました。</p>
+                                    <p>前回好評いただいたステッカーが今回も登場です。かわいいデザインからカッコイイデザインまで、様々なステッカーをご用意しました。</p>
                                 </div>
                                 <div className="pen">
-                                    <img src={pendetail}></img>
+                                    <img src={pendetail} alt="pendetail"></img>
                                 </div>
                                 <div className="pen-content">
                                     <div className="goods-subtitle">ボールペン　300円</div>
@@ -51,7 +51,7 @@ export default function Goods() {
                                     <p>A4サイズのものがしっかり入る便利な仕様です。学祭を回る際にぜひご活用ください。</p>
                                 </div>
                                 <div className="totebag">
-                                <img src={tote}></img>
+                                    <img src={tote} alt="tote"></img>
                                 </div>
 
                     </div>

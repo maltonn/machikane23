@@ -20,35 +20,38 @@ export default function Access() {
             </Helmet>
             <div className="access-sky">
                 
-                <PageTitles titles="開催場所"></PageTitles>
+                <PageTitles titles="アクセス" kame={true}></PageTitles>
                 
+                <div className="sponsor-miniTitles">開催場所</div>
                 <div className="access-mainpage"> 
                     <div className="access-notes">
-                        <div className="access-content">大阪大学豊中キャンパス
+                        <div className="access-content access-holdingPlace">
+                            <p>大阪大学豊中キャンパス</p>
+                            <p>〒560-0043 大阪府豊中市待兼山町１</p>
                         </div>
                     </div>
                 </div>
-                <PageTitles titles="アクセス"></PageTitles>
+                <div className="sponsor-miniTitles">アクセス</div>
                 <div className="access-mainpage"> 
                     <div className="access-notes">
                         <div className="access-content">
-                            <li>阪急電車宝塚線　石橋阪大前駅より徒歩約15分<br></br>
-                                阪大坂を上り、総合案内所までお越しください
+                            <li>阪急電車宝塚線 石橋阪大前駅より徒歩約15分<br></br>
+                                　　阪大坂を上り、総合案内所までお越しください。
                             </li>
-                            <li>大阪モノレール　柴原阪大前駅より徒歩約15分<br></br>
-                                正門を通ってまっすぐ進み、総合案内所までお越しください
+                            <li>大阪モノレール 柴原阪大前駅より徒歩約15分<br></br>
+                                　　正門を通ってまっすぐ進み、総合案内所までお越しください。
                             </li>
                         </div>
                     </div>
                 </div>
-                <PageTitles titles="注意"></PageTitles>
+                <div className="sponsor-miniTitles">注意事項</div>
                 <div className="access-mainpage"> 
                     <div className="access-notes">
-                        <div className="access-naiyou">
+                        <div className="access-content">
                         <li>まちかね祭会場及び会場付近に駐車場はありませんので、公共交通機関をご利用ください。
                             ただし、歩行が困難であるなどやむを得ない事情をお持ちの方は、事前に当委員会までご連絡ください。
-                            <div className="link-button"><Link className="access-inquiry" to="./inquiry" onClick={PageChange}>お問い合わせ</Link>
-                            </div>{/* お問い合わせボタンで飛べるようにする */}
+                            <div className="link-button access-center"><Link className="access-inquiry" to="./inquiry" onClick={PageChange}>お問い合わせ</Link>
+                            </div>
                         </li>
                         <li>自転車でお越しの方は図に記載の駐輪場をご利用くださいますようお願いいたします。
                         </li>
