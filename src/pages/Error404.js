@@ -2,7 +2,14 @@ import { Helmet } from "react-helmet";
 import {Link} from "react-router-dom";
 
 import "../css/Common.css"
+import { useEffect } from "react";
 export default function Error404() {
+    useEffect(()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    },[])
     const PageChange=()=>{
         window.scrollTo({
             top: 0,
