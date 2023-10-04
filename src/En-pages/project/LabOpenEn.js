@@ -162,25 +162,25 @@ export default function LabOpen() {
                             return null
                         }
                         return (
-                            <div key={project.id} className="lab-container">
+                            <div key={project.idEn} className="lab-container">
                                 <img src={lab_icon} className="lab-card-icon" alt="icon"></img>
                                 <div className="labCard-content">
                                     <div className="labCard-head">
-                                        <div className="labProjectName">{project.projectName}</div>
+                                        <div className="labProjectName">{project.projectNameEn}</div>
                                         <div className="labCard-organizer">
-                                            <div>{project.departmentName}</div>
-                                            <div>{project.labName}</div>
+                                            <div>{project.departmentNameEn}</div>
+                                            <div>{project.labNameEn}</div>
                                         </div>
                                     </div>
                                     <div className="labCard-firstContent">
-                                        <div>Date：{project.date}</div>
-                                        <div>Place：{project.eventPlace}</div>
+                                        <div>Date：{project.dateEn}</div>
+                                        <div>Place：{project.eventPlaceEn}</div>
                                     </div>
-                                    <div className="labCard-secondContent">{project.pr}</div>
+                                    <div className="labCard-secondContent">{project.prEn}</div>
                                     <div className="labCard-contentTitle">▷Contact</div>
                                     <div className="labCard-thirdContent">
-                                        <div>{project.course}</div>
-                                        <div>{project.manager}</div>
+                                        <div>{project.courseEn}</div>
+                                        <div>{project.managerEn}</div>
                                         {project.tel &&
                                         <div><a href={'tel:'+project.tel}>{project.tel}</a></div>
                                         }
