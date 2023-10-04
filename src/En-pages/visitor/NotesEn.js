@@ -21,24 +21,24 @@ export default function NotesEn() {
                 <div className="notes-mainpage">
                     <div className="notes-all">
                         <div className="notes-naiyou">
-                            <div className="notes-miniTitle">飲食について</div>
+                            <div className="notes-miniTitle">Eating & Drinking</div>
                             <div className="notes-miniContent">
-                                <p>食事（持ち込み含む）は、食事席に限り可能であり、他の場所での飲食は禁止とします。ただし、水分補給はしていただいて構いません。</p>
-                                <p>食事席はメインストリートの周辺に設置してあります。詳しくはマップページをご覧ください。</p>
-                                <div className="link-button notes-linkButton"><Link to="/map" onClick={PageChange}>マップ</Link></div>
-                                <p>お食事の際は、以下のことをお守りください。</p>
+                                <p>All the food (including foods you brought by yourself) must be eaten at the designated eating space. You must not eat or drink outside the area.(except hydration)</p>
+                                <p>Eating space is around the Main street. Please look at the Map for details.</p>
+                                <div className="link-button notes-linkButton"><Link to="/map" onClick={PageChange}>Map</Link></div>
+                                <p>Please follow the rules below.</p>
                                 <ol>
-                                    <li>食事席の椅子を動かした際は元に戻してください。</li>
-                                    <li>ごみはごみ箱に分別して捨ててください。</li>
-                                    <li>食事席は数が限られています。食事がお済みの方は館内のソファ・椅子（食事は出来ません）に移動するなど、ご協力をお願いします。</li>
+                                    <li>Please bring back the seat to its originated place after using</li>
+                                    <li>Please sort the garbage according to the sign.</li>
+                                    <li>The number of seats are limited. Please mind not to occupy the seat and give it up to other visitors. There are some sofas and chairs inside the buildings.(No eating)</li>
                                 </ol>
                             </div>
                         </div>
                         <div className="notes-naiyou">
-                            <div className="notes-miniTitle">ごみについて</div>
+                            <div className="notes-miniTitle">Trash</div>
                             <div className="notes-miniContent">
                                 <ul>
-                                    <li>まちかね祭期間中は通常のごみ箱が使用できません。</li>
+                                    <li>You cannot use ordinary bins.</li>
                                     <li>ごみは「ゴミステーション」にて分別して捨ててください。</li>
                                     <li>ステージ宙付近にも臨時のゴミ箱を設置しておりますが、基本的に「ゴミステーション」にて捨てていただくようにお願いいたします。</li>
                                 </ul>
