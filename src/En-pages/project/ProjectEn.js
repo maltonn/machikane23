@@ -204,7 +204,7 @@ export default function Project() {
                                         <div
                                             onClick={() => onPickupKeywordClick(keyword)}
                                             key={keyword}
-                                            className="pickup-keyword"
+                                            className="pickup-keywordEn"
                                         >
                                             {keyword}
                                         </div>
