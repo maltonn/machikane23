@@ -73,7 +73,7 @@ export default function Home() {
             <table className="news-table">
               <tbody>
                 <tr>
-                  <td className="news-date">Oct.3(Tue.)</td>
+                  <td className="news-date">Oct.6(Fri.)</td>
                   <td className="news-content">The official website is now open!</td>
                 </tr>
                 <tr>

@@ -7,9 +7,7 @@ import PageTitles from "../../components/PageTitles";
 import Bubble from "../../components/Bubble";
 import MainStreet from "../../imgs/map/main-street.jpg";
 
-import "../../css/Common.css"
-import "../../css/Mogiten.css"
-export default function MogitenEn() {
+export default function Mogiten() {
     const projectLst = useRef([]) // こっちにはすべてのプロジェクトが入る
     const [displayLst, setDisplayLst] = useState([]) // 表示するプロジェクト（検索ボタンを押したときにこっちだけ書き換わる）
 
@@ -36,14 +34,13 @@ export default function MogitenEn() {
             behavior: "smooth",
         });
     }
-    
-    return(
+    return (
         <div className="main">
             <Helmet>
-            <title>Food Stalls LIST|Machikane2023</title>
+            <title>Food stalls|2023 Machikan Festival</title>
             </Helmet>
             <div className="mogiten-sky">
-                <PageTitles titles="Food Stalls LIST" kame={true}></PageTitles>
+                <PageTitles titles="Food stalls" kame={true}></PageTitles>
                 <div className="mogiten-mainpage">
                     <table className="mogiten-project">
                         <tr>
@@ -60,8 +57,8 @@ export default function MogitenEn() {
                         return (
                             <tr>
                                 <td>{project.eventPlace}</td>
-                                <td>{project.groupName}</td>
-                                <td>{project.projectName}</td>
+                                <td>{project.groupNameEn}</td>
+                                <td>{project.projectNameEn}</td>
                                 <td>{project.projectGenre}</td>
                                 <td><Link className="mogiten-link-button" to={"/project-search/" + project.id} onClick={PageChange}>Click</Link></td>
                             </tr>

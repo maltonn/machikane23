@@ -116,10 +116,6 @@ export default function FAQ() {
                     <div className="FAQ-card-A">ありません。</div>
                 </div>
                 <div className="FAQ-card">
-                    <div className="FAQ-card-Q">たばこは吸えますか？</div>
-                    <div className="FAQ-card-A">基礎工学部棟前、理学部棟前が喫煙可能場所となっております。キャンパス内は、それらの場所を除き、全面的に禁煙であることをご了承ください。</div>
-                </div>
-                <div className="FAQ-card">
                     <div className="FAQ-card-Q">お酒を飲んでも良いですか？</div>
                     <div className="FAQ-card-A">飲めません。</div>
                 </div>

@@ -72,9 +72,6 @@ export default function FAQEn() {
                                             On the third day of the festival(11/5), there's a sale in front of Kasane.</div>
                 <div className="FAQEn-card-Q">Is there any charging area?</div>
                 <div className="FAQEn-card-A">No charging area is available.</div>
-                <div className="FAQEn-card-Q"> Can we smoke?</div>
-                <div className="FAQEn-card-A">Smoking is allowed only in front of the building of Science Engineering and Science.<br></br>
-                                              Except in this area, smoking is completely prohibited.</div>
                 <div className="FAQEn-card-Q">Can we drink alcohol?</div>
                 <div className="FAQEn-card-A">Not allowed.</div>
                 <div className="FAQEn-card-Q">Can we bring our pets with us?</div>
