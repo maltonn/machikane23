@@ -82,11 +82,11 @@ export default function Detail() {
     return (
         <div className="main">
             <Helmet>
-            <title>{project?project.groupName:"企画詳細"}|まちかね祭2023</title>
+            <title>{project?project.groupNameEn:"企画詳細"}|まちかね祭2023</title>
             </Helmet>
             {
                 project ?(
-                    <div key={project.id} className="detail-card"> 
+                    <div key={project.idEn} className="detail-card"> 
                         <div className="detail-titleEn">{project.projectNameEn}</div>
                         <div className="detail-head">
                             <img src={project.icon} className="detail-icon" alt="icon"></img>
