@@ -15,7 +15,7 @@ import { useEffect } from "react"
 import { Link } from "react-router-dom";
 
 
-export default function Home() {
+export default function HomeEn() {
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -44,7 +44,7 @@ export default function Home() {
   return (
     <div className="top-main">
       <Helmet>
-        <title>TOP|2023　Machikane Festival</title>
+        <title>TOP|2023 Machikane Festival</title>
       </Helmet>
       <div id="loader">
         <div className="machikame1">

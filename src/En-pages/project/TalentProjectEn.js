@@ -15,7 +15,7 @@ export default function TalentProjectEn(){
     return(
         <div className="talent">
             <Helmet>
-                <title>タレント企画|まちかね祭2023</title>
+                <title>タレント企画|2023 Machikane Festival</title>
             </Helmet>
             <div className="talentTop">
                 <PageTitles titles="Comedy LIVE Show" kame={true}></PageTitles>

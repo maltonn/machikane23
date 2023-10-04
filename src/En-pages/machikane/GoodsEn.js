@@ -17,7 +17,7 @@ export default function GoodsEn() {
     return(
         <div className="main">
             <Helmet>
-            <title>Goods|Machikane2023</title>
+            <title>Goods|2023 Machikane Festival</title>
             </Helmet>
             <div className="goods-sky">
                 <PageTitles titles="Goods" kame={false}></PageTitles>

@@ -5,7 +5,7 @@ export default function NotesEn() {
     return(
         <div className="main">
             <Helmet>
-            <title>Notes|Machikane2023</title>
+            <title>Notes|2023 Machikane Festival</title>
             </Helmet>
             <div className="preparation">
                 <p>Coming soon! Now preparing.</p>

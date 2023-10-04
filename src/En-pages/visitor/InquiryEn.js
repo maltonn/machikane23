@@ -6,7 +6,7 @@ export default function InquiryEn() {
     return(
         <div className="main">
             <Helmet>
-            <title>Inquiry|Machikane2023</title>
+            <title>Inquiry|2023 Machikane Festival</title>
             </Helmet>
             <div className="preparation">
                 <p>Coming soon! Now preparing.</p>

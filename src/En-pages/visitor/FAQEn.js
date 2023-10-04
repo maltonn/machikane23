@@ -7,7 +7,7 @@ export default function FAQEn() {
     return(
         <div className="main">
             <Helmet>
-            <title>FAQ|Machikane2023</title>
+            <title>FAQ|2023 Machikane Festival</title>
             </Helmet>
             <PageTitles titles="FAQ"  kame={true}></PageTitles>
             <div className="FAQEn-card">

@@ -27,7 +27,7 @@ export default function OfficialProjectEn() {
     return(
         <div className="officialProject">
             <Helmet>
-            <title>Official Projects|Machikane2023</title>
+            <title>Official Projects|2023 Machikane Festival</title>
             </Helmet>
             <div className="sky">
             <PageTitles titles="Official Projects" kame={true}></PageTitles>

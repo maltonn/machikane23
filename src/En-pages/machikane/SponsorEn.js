@@ -14,11 +14,11 @@ import homecomingday from "../../imgs/sponsor/home-coming-day.jpg"
 import rokkosai from "../../imgs/sponsor/rokkosai.jpeg"
 import PageTitles from "../../components/PageTitles";
 
-export default function Sponsor() {
+export default function SponsorEn() {
     return(
         <div className="main">
             <Helmet>
-            <title>Our sponsors|Machikane2023</title>
+            <title>Our sponsors|2023 Machikane Festival</title>
             </Helmet>
             <div className="sponsor-sky">
                 <PageTitles titles="Our sponsors"></PageTitles>
