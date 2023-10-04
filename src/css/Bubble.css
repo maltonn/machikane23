@@ -23,7 +23,6 @@
     border-radius: 50%;
     animation: bubble 10s linear infinite;
     z-index: 0;
-    position: fixed;
 }
 .bubble-component:nth-child(1) {
     width: 8px;
@@ -87,11 +86,11 @@
 }
 @keyframes bubble {
     0% {
-      bottom: 0px;
+      bottom: -500px;
       transform: translateX(0);
     }
     50% {
-      transform: translateX(100px);
+      transform: translateX(20px);
     }
     100% {
       bottom: var(--base-height);
