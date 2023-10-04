@@ -86,7 +86,7 @@ export default function Detail() {
             </Helmet>
             {
                 project ?(
-                    <div key={project.idEn} className="detail-card"> 
+                    <div key={project.id} className="detail-card"> 
                         <div className="detail-titleEn">{project.projectNameEn}</div>
                         <div className="detail-head">
                             <img src={project.icon} className="detail-icon" alt="icon"></img>

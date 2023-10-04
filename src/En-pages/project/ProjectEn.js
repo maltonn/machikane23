@@ -263,8 +263,8 @@ export default function Project() {
                             return null
                         }
                         return (
-                            <Link className="card-detailLink" to={"/project-search/" + project.idEn} onClick={PageChange}>
-                                <div key={project.idEn} className="project-container">
+                            <Link className="card-detailLink" to={"/project-search/" + project.id} onClick={PageChange}>
+                                <div key={project.id} className="project-container">
                                     <img src={project.icon} className="project-card-icon" alt="icon"></img>
                                     <div className="card-content">
                                         <div className="projectName">{project.projectNameEn}</div>
