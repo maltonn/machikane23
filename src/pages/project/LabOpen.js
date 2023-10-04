@@ -162,14 +162,14 @@ export default function LabOpen() {
                             return null
                         }
                         return (
-                            <div key={project.idEn} className="lab-container">
+                            <div key={project.id} className="lab-container">
                                 <img src={lab_icon} className="lab-card-icon" alt="icon"></img>
                                 <div className="labCard-content">
                                     <div className="labCard-head">
-                                        <div className="labProjectName">{project.projectNameEn}</div>
+                                        <div className="labProjectName">{project.projectName}</div>
                                         <div className="labCard-organizer">
-                                            <div>{project.departmentNameEn}</div>
-                                            <div>{project.labNameEn}</div>
+                                            <div>{project.departmentName}</div>
+                                            <div>{project.labName}</div>
                                         </div>
                                     </div>
                                     <div className="labCard-firstContent">
