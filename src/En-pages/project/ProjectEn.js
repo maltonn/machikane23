@@ -153,15 +153,15 @@ export default function Project() {
 
     function visitorPhoto(project) {
         if (project.visitorPhoto) {
-            return "撮影可"
+            return "Photo allowed"
         } else {
-            return "撮影禁止"
+            return "No photos"
         }
     }
 
     function children(project) {
         if (project.age) {
-            return <div>子ども向け</div>
+            return <div>For children</div>
         } else {
             return null
         }
@@ -175,7 +175,7 @@ export default function Project() {
     }
 
     function detail(project) {
-        return <Link className="toDetail" to={"/project-search/" + project.id} onClick={PageChange}>▷もっと見る</Link>
+        return <Link className="toDetail" to={"/project-search/" + project.id} onClick={PageChange}>▷see more</Link>
     }
 
     return (
@@ -263,12 +263,12 @@ export default function Project() {
                             return null
                         }
                         return (
-                            <Link className="card-detailLink" to={"/project-search/" + project.id} onClick={PageChange}>
-                                <div key={project.id} className="project-container">
+                            <Link className="card-detailLink" to={"/project-search/" + project.idEn} onClick={PageChange}>
+                                <div key={project.idEn} className="project-container">
                                     <img src={project.icon} className="project-card-icon" alt="icon"></img>
                                     <div className="card-content">
-                                        <div className="projectName">{project.projectName}</div>
-                                        <div>{project.groupName}</div>
+                                        <div className="projectName">{project.projectNameEn}</div>
+                                        <div>{project.groupNameEn}</div>
                                         <div>▷{eventPlace(project)}</div>
                                         <div className="card-tags">
                                             <div>{project.projectGenre}</div>
