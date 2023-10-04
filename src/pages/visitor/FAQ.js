@@ -50,6 +50,7 @@ export default function FAQ() {
                             </tr>
                         </table>
                     </div>
+                </div>
                 <div className="FAQ-card">
                     <div className="FAQ-card-Q">購入したものを食べられるところはありますか？</div>
                     <div className="FAQ- card-A"> 食事席をご利用頂けます。</div>   
@@ -66,7 +67,7 @@ export default function FAQ() {
                 </div>
                 <div className="FAQ-card">
                     <div className="FAQ-card-Q">トイレはどこにありますか？</div>
-                    <div className="FAQ-card-A">. 全学共通棟、法経講義棟（ 1・２F）、文法経講義棟（男１・４F/女２・３F）、学生交流棟、学生会館、図書館下などにございます。</div>
+                    <div className="FAQ-card-A">全学共通棟、法経講義棟（ 1・２F）、文法経講義棟（男１・４F/女２・３F）、学生交流棟、学生会館、図書館下などにございます。</div>
                 </div>
                 <div className="FAQ-card">
                     <div className="FAQ-card-Q">多目的トイレはどこですか？</div>
@@ -150,7 +151,6 @@ export default function FAQ() {
                     <div className="FAQ-card-A">走りません。</div>
                 </div>
                 </div>
-            </div>
         </div>
     )
 }
