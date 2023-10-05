@@ -353,6 +353,9 @@
   .pointBox{
     width: 100%;
   }
+  .pointContent{
+    line-height: 25px;
+  }
   .nepleageInfor{
     margin: 0 auto;
     width: 100%;
