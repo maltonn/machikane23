@@ -26,15 +26,18 @@ background: linear-gradient(
 .FAQ-card-A{
     font-size:  20px; 
     width: 80%;
-    margin: 10px 60px 35px 30px;
+    margin: 10px 60px 35px 50px;
 }
 .FAQ-table{
+    margin:2%;
     border: 1px solid;
     border-collapse: collapse;
 }
 .FAQ-table tr, .FAQ-table th,.FAQ-table td{
     border: 1px solid;
     border-collapse: collapse;
+    padding: 1rem;
+    font-size: 13px;
 }
 
 .FAQ-map{
@@ -47,6 +50,7 @@ background: linear-gradient(
 .FAQ-table{
     text-align: center;
 }
+
 @media (min-width:500px) and (max-width:1070px) {
     .FAQ-card-A{
         font-size: 18px;
@@ -57,6 +61,12 @@ background: linear-gradient(
     .FAQ-card{
         padding:  0.5em 6px;
         padding-left: 2px;
+}
+    .FAQ-table tr, .FAQ-table th,.FAQ-table td{
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 1rem;
+    font-size: 12px;
 }
 }
 @media screen and (max-width:500px) {
@@ -70,7 +80,13 @@ background: linear-gradient(
         padding:  5px 2.5px;
     }
     .FAQ-table{
-        font-size: 14px;
+        font-size: 10px;
+    }
+    .FAQ-table tr, .FAQ-table th,.FAQ-table td{
+        border: 1px solid;
+        border-collapse: collapse;
+        padding: 0.1rem 0.5rem;
+        font-size: 12px;
     }
 }
 
@@ -83,6 +99,8 @@ background: linear-gradient(
 .FAQEn-table tr, .FAQEn-table th,.FAQEn-table td{
     border: 1px solid;
     border-collapse: collapse;
+    padding: 1rem;
+    font-size: 13px;
 }
 .FAQEn-table{
     text-align: center;
@@ -108,7 +126,7 @@ background: linear-gradient(
 .FAQEn-card-A{
     font-size:  20px; 
     width: 80%;
-    margin: 10px 60px 35px 30px;
+    margin: 10px 60px 35px 50px;
 }
 @media (min-width:500px) and (max-width:1070px) {
     .FAQEn-card-A{
@@ -120,6 +138,12 @@ background: linear-gradient(
     .FAQEn-card{
         padding:  0.5em 6px;
         padding-left: 2px;
+}
+.FAQEn-table tr, .FAQEn-table th,.FAQEn-table td{
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 0.5rem;
+    font-size: 13px;
 }
 }
 @media screen and (max-width:500px) {
@@ -134,5 +158,11 @@ background: linear-gradient(
     }
     .FAQEn-table{
         font-size: 12px;
+    }
+    .FAQEn-table tr, .FAQEn-table th,.FAQEn-table td{
+        border: 1px solid;
+        border-collapse: collapse;
+        padding: 0.1rem;
+        font-size: 10px;
     }
 }
