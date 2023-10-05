@@ -53,11 +53,11 @@ export default function FAQ() {
                 </div>
                 <div className="FAQ-card">
                     <div className="FAQ-card-Q">購入したものを食べられるところはありますか？</div>
-                    <div className="FAQ- card-A"> 食事席をご利用頂けます。</div>   
+                    <div className="FAQ-card-A"> 食事席をご利用頂けます。</div>   
                 </div>
                 <div className="FAQ-card">
                     <div className="FAQ-card-Q">食事席はどこですか？</div>
-                    <div className="FAQ- card-A">マップをご参照ください。
+                    <div className="FAQ-card-A">マップをご参照ください。
                     <img  src={map} alt="map"className="FAQ-map"></img></div>
                 </div>
                 <div className="FAQ-card">
