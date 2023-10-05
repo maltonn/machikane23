@@ -56,9 +56,7 @@ export default function NotesEn() {
                         <div className="notes-naiyou">
                             <div className="notes-miniTitle">Smoking</div>
                             <div className="notes-miniContent">
-                                <p>At Osaka University Toyonaka Campus, smoking is banned at all the places except designated smoking areas.</p>
-                                <p>Please refer to the map for the smoking area.</p>
-                                <p>Once we discover someone smoking against the rules, we may report to the authority for severe punishment.</p>
+                                <p>Smoking is prohibited at all the campus area. Please refrain from smoking.</p>
                             </div>
                         </div>
                         <div className="notes-naiyou">
