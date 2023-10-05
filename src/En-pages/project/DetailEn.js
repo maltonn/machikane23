@@ -14,6 +14,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import EventPlaceMap from "../../components/EventPlaceMap";
 
 export default function DetailEn() {
     const { id } = useParams();
@@ -254,6 +255,7 @@ export default function DetailEn() {
                         </div>
                         <div className="detail-content">
                             <div className="detail-content-kind">▷Place：{eventPlaceEn[project.eventPlace]}</div>
+                            <EventPlaceMap project={project.eventPlace}></EventPlaceMap>
                             <div className="detail-content-kind">▷Ticket：{numberedTickets(project)}</div>
                             <div className="detail-content-kind">▷SNS<br/>
                                 <div className="sns-imgs">
