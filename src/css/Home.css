@@ -287,18 +287,38 @@ body{
 .top-linkButton{
   margin: 0 auto 0;
   font-size: 1.2rem;
+  background: #fff;
+  width: 15rem;
+  font-size: 1.2rem;
+  justify-content: center;
+  display: flex;
 }
 .live-reservation{
+  background: #fff;
+  width: 15rem;
+  font-size: 1.2rem;
+  justify-content: center;
+  display: flex;
+}
+.live-reservation a{
+  text-decoration: none;
+  display: block;
   background: #fff;
   border: double 3px #2E3192;
   width: 15rem;
   font-size: 1.2rem;
   justify-content: center;
-  display: flex;
   border-radius: 5px;
 }
-.live-reservation a{
+.pretty-button{
   text-decoration: none;
+  display: block;
+  background: #fff;
+  border: double 3px #2E3192;
+  width: 15rem;
+  font-size: 1.2rem;
+  justify-content: center;
+  border-radius: 5px;
 }
 
 /*pickup-bubble*/
@@ -915,10 +935,6 @@ schedule,stage,lab
   }
 }
 
-.top-buttonblank{
-  padding-left: 10px;
-  padding-right: 10px;
-}
 
 /*======================
   タブレット用
