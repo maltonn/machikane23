@@ -23,7 +23,7 @@
   width: 90%;
 }
 .notes-miniTitle{ /*各ミニタイトル設定*/
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   text-align: center;
 }
 .notes-miniContent p{ /*コンテント内のpタグ調整*/
@@ -37,6 +37,9 @@
   スマホ用
 ======================*/
 @media  (max-width: 500px){
+  .notes-miniTitle{ 
+    font-size: 1.2rem;
+  }
   .back-card{
     font-size: 1rem;
     margin: 0px auto 3rem;
@@ -49,6 +52,9 @@
   タブレット用
 ======================*/
 @media (min-width: 500px) and (max-width: 1070px){
+  .notes-miniTitle{ 
+    font-size: 1.6rem;
+  }
   .back-card{
     font-size: 1.4rem;
     margin: 0px auto 80px;

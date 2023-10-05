@@ -5,7 +5,7 @@ import Bubble from "../../components/Bubble";
 
 import "../../css/Common.css"
 import { useEffect } from "react";
-export default function Sections() {
+export default function SectionsEn() {
     useEffect(()=>{
         window.scrollTo({
             top: 0,

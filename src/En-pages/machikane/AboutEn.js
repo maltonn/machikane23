@@ -9,7 +9,7 @@ export default function AboutEn() {
     return(
         <div className="main">
             <Helmet>
-            <title>What is Machikane Festival?|Machikane2023</title>
+            <title>What is Machikane Festival?|2023 Machikane Festival</title>
             </Helmet>
             <div className="about-sky">
             <PageTitles titles="What is Machikane Festival?" kame={true}></PageTitles>

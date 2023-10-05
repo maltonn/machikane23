@@ -16,7 +16,7 @@ export default function AccessEn() {
     return(
         <div className="main">
             <Helmet>
-            <title>Access|Machikane2023</title>
+            <title>Access|2023 Machikane Festival</title>
             </Helmet>
             <div className="access-sky">
                 
