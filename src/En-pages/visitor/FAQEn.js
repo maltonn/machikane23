@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet";
-import {Link} from "react-router-dom";
 import "../../css/Common.css"
 import "../../css/FAQ.css"
 import Bubble from "../../components/Bubble";
