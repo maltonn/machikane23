@@ -1,8 +1,6 @@
 import { Helmet } from "react-helmet";
 // import {Link} from "react-router-dom";
-
 import "../../css/Common.css"
-import "../../css/Adresses.css"
 import PageTitles from "../../components/PageTitles"
 import president from "../../imgs/NISHIO-Shojiro.jpg"
 import chairperson from "../../imgs/chairperson.jpg"
@@ -51,7 +49,7 @@ export default function AdressesEn() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>          
         </div>
     )
 }

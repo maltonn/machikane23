@@ -58,7 +58,7 @@ export default function GoodsEn() {
 
                 
             </div>
-            <Bubble></Bubble>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }

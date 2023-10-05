@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import "../../css/Common.css"
 import "../../css/Map.css"
+import Bubble from "../../components/Bubble";
 import PageTitles from "../../components/PageTitles";
 import map from "../../imgs/map/全体マップ.png"
 import AB1 from "../../imgs/map/AB棟1階.png"
@@ -237,6 +238,7 @@ export default function MapEn() {
                     </div>
                 </div>
             </div>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }
