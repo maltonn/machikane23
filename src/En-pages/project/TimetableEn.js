@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 import {Link} from "react-router-dom";
-
+import Bubble from "../../components/Bubble";
 import "../../css/Common.css"
 export default function TimetableEn() {
     return(
@@ -13,6 +13,7 @@ export default function TimetableEn() {
                 <span>Current page：TimeTable</span><br></br>
                 <Link to="/" >Back to the TOP</Link>
             </div>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }
