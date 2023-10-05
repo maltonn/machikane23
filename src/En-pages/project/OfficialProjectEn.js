@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import { useEffect } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import "../../css/TalentProject.css"
-
+import "../../css/Common.css"
 import PageTitles from "../../components/PageTitles";
 import machikaneForestLogo from "../../imgs/official_project/machikaneForest.png"
 import pancakeLogo from "../../imgs/official_project/pancake.png"
@@ -245,6 +245,7 @@ export default function OfficialProjectEn() {
             <div className="ocean">
                 
             </div>
+
         </div>
     )
 }

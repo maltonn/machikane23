@@ -75,6 +75,7 @@ export default function Ralley() {
                     </div>
                 </div>
             </div>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }

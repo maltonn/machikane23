@@ -25,7 +25,7 @@ export default function AboutEn() {
                 </p>
              </div>
           </div>
-          <Bubble></Bubble>
+          <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }

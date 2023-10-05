@@ -69,7 +69,7 @@ export default function Mogiten() {
                 </div>
                 <div className="mogitenProject-map"><img src={MainStreet} alt="mainStreet"></img></div>
             </div>
-            <Bubble></Bubble>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }

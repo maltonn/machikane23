@@ -117,11 +117,11 @@ export default function LabOpenEn() {
     return(
         <div className="main">
             <Helmet>
-            <title>OpenLab|2023 Machikane Festival</title>
+            <title>Openlab|2023 Machikane Festival</title>
             </Helmet>
             <div className="sky-project">
                 <div className="search-header">
-                    <PageTitles titles="OpenLab" kame={true}></PageTitles>
+                    <PageTitles titles="Openlab" kame={true}></PageTitles>
                     <div className="search-mainpageEn"> 
                         <div>
                             <input

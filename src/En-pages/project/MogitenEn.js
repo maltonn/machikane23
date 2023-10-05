@@ -51,10 +51,10 @@ export default function MogitenEn() {
     return (
         <div className="main">
             <Helmet>
-            <title>Food stalls|2023 Machikane Festival</title>
+            <title>Food Stalls|2023 Machikane Festival</title>
             </Helmet>
             <div className="mogiten-sky">
-                <PageTitles titles="Food stalls" kame={true}></PageTitles>
+                <PageTitles titles="Food Stalls" kame={true}></PageTitles>
                 <div className="mogiten-mainpage">
                     <table className="mogiten-project">
                         <tr>
@@ -83,7 +83,7 @@ export default function MogitenEn() {
                 </div>
                 <div className="mogitenProject-map"><img src={MainStreet} alt="mainStreet"></img></div>
             </div>
-            <Bubble></Bubble>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }

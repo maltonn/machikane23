@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import {Link} from "react-router-dom";
 import "../../css/Common.css"
 import "../../css/FAQ.css"
+import Bubble from "../../components/Bubble";
 import PageTitles from "../../components/PageTitles";
 export default function FAQEn() {
     return(
@@ -92,6 +93,7 @@ export default function FAQEn() {
                 <div className="FAQEn-card-A"> It isn't open during the festival.</div>
                 <div className="FAQEn-card-Q">Can we use the Inter-Campus Shuttle Bus Service?</div>
                 <div className="FAQEn-card-A"> No, you cannot.</div>
+                <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }

@@ -65,7 +65,7 @@ export default function Goods() {
 
                 
             </div>
-            <Bubble></Bubble>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 
