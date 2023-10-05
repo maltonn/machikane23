@@ -17,7 +17,7 @@ export default function NotesEn() {
             <title>Notes|2023 Machikane Festival</title>
             </Helmet>
             <div className="notes-sky">
-                <PageTitles titles="注意事項" kame={true}></PageTitles>
+                <PageTitles titles="Notes" kame={true}></PageTitles>
                 <div className="notes-mainpage">
                     <div className="notes-all">
                         <div className="notes-naiyou">
