@@ -4,6 +4,7 @@ import "../../css/Common.css"
 import "../../css/FAQ.css"
 import Bubble from "../../components/Bubble";
 import PageTitles from "../../components/PageTitles";
+import map from "../../imgs/map/eat-space.jpg"
 export default function FAQEn() {
     return(
         <div className="main">
@@ -46,7 +47,8 @@ export default function FAQEn() {
                 <div className="FAQEn-card-Q">Where can we eat something we bought?</div>
                 <div className="FAQEn-card-A">Please use the designated eating space.</div>
                 <div className="FAQEn-card-Q">Where is the eating space?</div>
-                <div className="FAQEn-card-A">Please refer to the Map.</div>
+                <div className="FAQEn-card-A">Please refer to the Map.
+                <img  src={map} alt="map"className="FAQ-map"></img></div>
                 <div className="FAQEn-card-Q"> Where are the vending machines?</div>
                 <div className="FAQEn-card-A"> Please refer to the Map.</div>
                 <div className="FAQEn-card-Q"> Where are the restrooms?</div>

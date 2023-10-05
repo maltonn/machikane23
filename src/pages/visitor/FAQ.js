@@ -4,7 +4,7 @@ import "../../css/Common.css"
 import "../../css/FAQ.css"
 import PageTitle from "../../components/PageTitles"
 import Bubble from "../../components/Bubble"
-import map from "../../imgs/map/屋外メインストリート.png"
+import map from "../../imgs/map/eat-space.jpg"
 import { useEffect } from "react";
 export default function FAQ() {
     useEffect(()=>{
