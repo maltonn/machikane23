@@ -63,9 +63,8 @@ export default function Notes() {
                         <div className="notes-naiyou">
                             <div className="notes-miniTitle">喫煙について</div>
                             <div className="notes-miniContent">
-                                <p>まちかね祭の会場である大阪大学豊中キャンパスでは、喫煙ブース（卒煙支援ブース）以外での喫煙が禁止されております。</p>
-                                <p>卒煙支援ブースの場所はキャンパスマップをご覧ください。</p>
-                                <p>なお、指定された場所以外での喫煙を発見した場合には大学当局への通報を含めた厳しい処分を行う場合がございます。</p>
+                                <p>キャンパス内は禁煙です。喫煙はご遠慮下さい。
+                                </p>
                             </div>
                         </div>
                         <div className="notes-naiyou">
