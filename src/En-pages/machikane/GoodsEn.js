@@ -20,7 +20,7 @@ export default function GoodsEn() {
             <title>Goods|Machikane2023</title>
             </Helmet>
             <div className="goods-sky">
-                <PageTitles titles="Goods" kame={false}></PageTitles>
+                <PageTitles titles="Official Goods" kame={false}></PageTitles>
                 <div className="goods-mainpage">
                     <div className="goods-back-card">
                         <p>At this 2023 Machikane Festival, we will offer our original stickers, ballpoint pens and tote bags!</p>
