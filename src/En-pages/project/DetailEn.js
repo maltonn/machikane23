@@ -224,9 +224,9 @@ export default function DetailEn() {
     }
 
     var congestion={
-        '混雑': 'Crowded',
-        '空いている': 'Non-crowded',
-        '普通': 'Normal',
+        '混雑': 'HIGH',
+        '空いている': 'NORMAL',
+        '普通': 'LOW',
     }
 
     return (
@@ -242,7 +242,7 @@ export default function DetailEn() {
                             <img src={project.icon} className="detail-icon" alt="icon"></img>
                             <div className="detail-head-content">
                                 <div>{project.groupNameEn}</div>
-                                <div>Congestion：{congestion[project.congestion]}</div>
+                                <div>Crowded level：{congestion[project.congestion]}</div>
                             </div>
                         </div>
                         <div className="card-tags detail-tags">
