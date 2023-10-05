@@ -226,8 +226,8 @@ export default function DetailEn() {
 
     var congestion={
         '混雑': 'HIGH',
-        '空いている': 'NORMAL',
-        '普通': 'LOW',
+        '普通': 'NORMAL',
+        '空いている': 'LOW',
     }
 
     return (
