@@ -19,7 +19,6 @@ import 共A114 from '../imgs/place/共A114.png'
 import 共A202 from '../imgs/place/共A202.png'
 import 共A214 from '../imgs/place/共A214.png'
 import 共A301 from '../imgs/place/共A301.png'
-import 共A302 from '../imgs/place/共A302.png'
 import 共A312 from '../imgs/place/共A312.png'
 import 共A313 from '../imgs/place/共A313.png'
 import 共B107 from '../imgs/place/共B107.png'
@@ -54,7 +53,6 @@ import 共C305 from '../imgs/place/共C305.png'
 import 共C306 from '../imgs/place/共C306.png'
 import 共C307 from '../imgs/place/共C307.png'
 import 共C308 from '../imgs/place/共C308.png'
-import 共C401 from '../imgs/place/共C401.png'
 import 共C402 from '../imgs/place/共C402.png'
 import 共C403 from '../imgs/place/共C403.png'
 import 共C404 from '../imgs/place/共C404.png'
@@ -62,7 +60,6 @@ import 共C405 from '../imgs/place/共C405.png'
 import 共C406 from '../imgs/place/共C406.png'
 import 共C407 from '../imgs/place/共C407.png'
 import 共C408 from '../imgs/place/共C408.png'
-import 共C409 from '../imgs/place/共C409.png'
 import 文法経文11講義室 from '../imgs/place/文法経11講義室.png'
 import 文法経文12講義室 from '../imgs/place/文法経12講義室.png'
 import 文法経文13講義室 from '../imgs/place/文法経13講義室.png'
@@ -146,7 +143,6 @@ export default function EventPlaceMap(place){
         '共A214': 共A214,
         '共B206': 共B206,
         '共B207': 共B207,
-        '共B207': 共B207,
         '共B208': 共B208,
         '共B218': 共B218,
         '共A301': 共A301,
@@ -162,19 +158,15 @@ export default function EventPlaceMap(place){
         '共C106': 共C106,
         '共C107': 共C107,
         '共C201': 共C201,
-        '共C201': 共C201,
         '共C202': 共C202,
         '共C203': 共C203,
         '共C204': 共C204,
         '共C205': 共C205,
-        '共C205': 共C205,
         '共C206': 共C206,
         '共C207': 共C207,
         '共C208': 共C208,
-        '共C208': 共C208,
         '共C301': 共C301,
         '共C302': 共C302,
-        '共C303': 共C303,
         '共C303': 共C303,
         '共C304': 共C304,
         '共C305': 共C305,
@@ -184,7 +176,6 @@ export default function EventPlaceMap(place){
         '共C402': 共C402,
         '共C403': 共C403,
         '共C404': 共C404,
-        '共C405': 共C405,
         '共C405': 共C405,
         '共C406': 共C406,
         '共C407': 共C407,
@@ -206,8 +197,6 @@ export default function EventPlaceMap(place){
         '法経2番教室': 法経2番教室,
         '法経3番教室': 法経3番教室,
         '法経4番教室': 法経4番教室,
-        '法経4番教室': 法経4番教室,
-        '法経5番教室': 法経5番教室,
         '法経5番教室': 法経5番教室,
         '法経演習室E': 法経演習室E,
         '法経第1演習室': 法経第1演習室,

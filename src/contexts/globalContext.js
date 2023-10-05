@@ -1,5 +1,5 @@
 
-import { useEffect } from "react";
+
 import { createContext, useContext, useState } from "react";
 
 const GlobalContext = createContext({});
