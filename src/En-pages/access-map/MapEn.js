@@ -22,6 +22,7 @@ import G3 from "../../imgs/map/学生会館3階.png"
 import M from "../../imgs/map/屋外メインストリート.png"
 import kanade from "../../imgs/map/ステージ奏.png"
 import sora from "../../imgs/map/ステージ宙.png"
+import { useEffect } from "react";
 
 export default function MapEn() {
     useEffect(()=>{
