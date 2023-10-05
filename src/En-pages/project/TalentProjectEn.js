@@ -49,7 +49,7 @@ export default function TalentProjectEn(){
                     </ul>
                 </div>
             </div>
-            <Bubble></Bubble>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }
