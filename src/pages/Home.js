@@ -101,7 +101,35 @@ export default function Home() {
       <div id="surface">
         <div className="ocean">
           <div className="mainpage2">
-
+          <div className="ocean-card" id="pickup">
+            <div className="pickup-titles"><nobr><p className="item1">●</p><span id="title">PICKUP</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
+            <div className="pickup-box">
+                <Link to="/project-search" onClick={PageChange}><div className="pickup-button">
+                  <div className="pickup-icon"><img src={search} alt="search"></img></div>
+                  <div className="pickup-title">企画検索</div>
+                </div></Link>
+                <Link to="/goods" onClick={PageChange}><div className="pickup-button">
+                  <div className="pickup-icon"><img src={goods} alt="goods"></img></div>  
+                  <div className="pickup-title">グッズ</div>
+                </div></Link>
+                <Link to="/official-project" onClick={PageChange}><div className="pickup-button">
+                  <div className="pickup-icon"><img src={recommend} alt="recommend"></img></div>  
+                  <div className="pickup-title">委員会企画</div>
+                </div></Link><br/>
+                <Link to="/access" onClick={PageChange}><div className="pickup-button">
+                  <div className="pickup-icon"><img src={access} alt="access"></img></div>
+                  <div className="pickup-title">アクセス</div>
+                </div></Link>
+                <Link to="/map" onClick={PageChange}><div className="pickup-button">
+                  <div className="pickup-icon"><img src={map} alt="map"></img></div>  
+                  <div className="pickup-title">マップ</div>
+                </div></Link>
+                <Link to="/timetable" onClick={PageChange}><div className="pickup-button">
+                  <div className="pickup-icon"><img src={timetable} alt="timetable"></img></div> 
+                  <div className="pickup-title">ステージタイムテーブル</div>
+                </div></Link>
+            </div>
+          </div>
             <div className="ocean-card">
               <div className="titles"><nobr><p className="item1">●</p><span id="title">企画区分について</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
               <p>企画区分の説明は、下のボタンからどうぞ</p>
@@ -142,36 +170,6 @@ export default function Home() {
             <p>研究室の企画は、下のボタンからどうぞ</p>
             <div className="ocean-link-button"><Link to="/lab-open" onClick={PageChange}>研究室公開</Link></div>
             </div>
-
-          <div className="ocean-card" id="pickup">
-            <div className="pickup-titles"><nobr><p className="item1">●</p><span id="title">PICKUP</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
-            <div className="pickup-box">
-                <Link to="/project-search" onClick={PageChange}><div className="pickup-button">
-                  <div className="pickup-icon"><img src={search} alt="search"></img></div>
-                  <div className="pickup-title">企画検索</div>
-                </div></Link>
-                <Link to="/goods" onClick={PageChange}><div className="pickup-button">
-                  <div className="pickup-icon"><img src={goods} alt="goods"></img></div>  
-                  <div className="pickup-title">グッズ</div>
-                </div></Link>
-                <Link to="/official-project" onClick={PageChange}><div className="pickup-button">
-                  <div className="pickup-icon"><img src={recommend} alt="recommend"></img></div>  
-                  <div className="pickup-title">委員会企画</div>
-                </div></Link><br/>
-                <Link to="/access" onClick={PageChange}><div className="pickup-button">
-                  <div className="pickup-icon"><img src={access} alt="access"></img></div>
-                  <div className="pickup-title">アクセス</div>
-                </div></Link>
-                <Link to="/map" onClick={PageChange}><div className="pickup-button">
-                  <div className="pickup-icon"><img src={map} alt="map"></img></div>  
-                  <div className="pickup-title">マップ</div>
-                </div></Link>
-                <Link to="/timetable" onClick={PageChange}><div className="pickup-button">
-                  <div className="pickup-icon"><img src={timetable} alt="timetable"></img></div> 
-                  <div className="pickup-title">ステージタイムテーブル</div>
-                </div></Link>
-            </div>
-          </div>
 
             <div className="ocean-card top-about">
               <div className="titles"><nobr><p className="item1">●</p><span id="title">テーマ</span><p className="item2">●</p><p className="item3">●</p></nobr></div>

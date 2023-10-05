@@ -102,8 +102,38 @@ export default function HomeEn() {
         <div className="ocean">
           <div className="mainpage2">
 
+          <div className="ocean-card" id="pickup">
+            <div className="pickup-titles"><nobr><p className="item1">●</p><span id="title">PICKUP</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
+            <div className="pickup-box">
+                <Link to="/project-search" onClick={PageChange}><div className="pickup-button">
+                  <div className="pickup-icon"><img src={search} alt="search"></img></div>
+                  <div className="pickup-title">Project Search</div>
+                </div></Link>
+                <Link to="/goods" onClick={PageChange}><div className="pickup-button">
+                  <div className="pickup-icon"><img src={goods} alt="goods"></img></div>  
+                  <div className="pickup-title">Official Goods</div>
+                </div></Link>
+                <Link to="/official-project" onClick={PageChange}><div className="pickup-button">
+                  <div className="pickup-icon"><img src={recommend} alt="recommend"></img></div>  
+                  <div className="pickup-title">Official Projects</div>
+                </div></Link><br/>
+                <Link to="/access" onClick={PageChange}><div className="pickup-button">
+                  <div className="pickup-icon"><img src={access} alt="access"></img></div>
+                  <div className="pickup-title">Access</div>
+                </div></Link>
+                <Link to="/map" onClick={PageChange}><div className="pickup-button">
+                  <div className="pickup-icon"><img src={map} alt="map"></img></div>  
+                  <div className="pickup-title">Map</div>
+                </div></Link>
+                <Link to="/timetable" onClick={PageChange}><div className="pickup-button">
+                  <div className="pickup-icon"><img src={timetable} alt="timetable"></img></div> 
+                  <div className="pickup-title">Stage Performance Schedule</div>
+                </div></Link>
+            </div>
+          </div>
+
             <div className="ocean-card">
-              <div className="titles"><nobr><p className="item1">●</p><span id="title">In-Facility Projects</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
+              <div className="titles"><nobr><p className="item1">●</p><span id="title">Project Categoly</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
               <p>For more information, please click the button below.</p>
               <div className="ocean-link-button"><Link to="./sections" onClick={PageChange}>Project Category</Link></div>
             </div>
@@ -142,36 +172,6 @@ export default function HomeEn() {
             <p>For more information, please click the button below.</p>
             <div className="ocean-link-button"><Link to="/lab-open" onClick={PageChange}>Open Lab</Link></div>
             </div>
-
-          <div className="ocean-card" id="pickup">
-            <div className="pickup-titles"><nobr><p className="item1">●</p><span id="title">PICKUP</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
-            <div className="pickup-box">
-                <Link to="/project-search" onClick={PageChange}><div className="pickup-button">
-                  <div className="pickup-icon"><img src={search} alt="search"></img></div>
-                  <div className="pickup-title">Project Search</div>
-                </div></Link>
-                <Link to="/goods" onClick={PageChange}><div className="pickup-button">
-                  <div className="pickup-icon"><img src={goods} alt="goods"></img></div>  
-                  <div className="pickup-title">Official Goods</div>
-                </div></Link>
-                <Link to="/official-project" onClick={PageChange}><div className="pickup-button">
-                  <div className="pickup-icon"><img src={recommend} alt="recommend"></img></div>  
-                  <div className="pickup-title">Official Projects</div>
-                </div></Link><br/>
-                <Link to="/access" onClick={PageChange}><div className="pickup-button">
-                  <div className="pickup-icon"><img src={access} alt="access"></img></div>
-                  <div className="pickup-title">Access</div>
-                </div></Link>
-                <Link to="/map" onClick={PageChange}><div className="pickup-button">
-                  <div className="pickup-icon"><img src={map} alt="map"></img></div>  
-                  <div className="pickup-title">Map</div>
-                </div></Link>
-                <Link to="/timetable" onClick={PageChange}><div className="pickup-button">
-                  <div className="pickup-icon"><img src={timetable} alt="timetable"></img></div> 
-                  <div className="pickup-title">Stage Performance Schedule</div>
-                </div></Link>
-            </div>
-          </div>
 
             <div className="ocean-card top-about">
               <div className="titles"><nobr><p className="item1">●</p><span id="title">Theme</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
