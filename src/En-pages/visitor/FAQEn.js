@@ -13,35 +13,34 @@ export default function FAQEn() {
             <PageTitles titles="FAQ"  kame={true}></PageTitles>
                 <div className="FAQEn-card">
                 <div className="FAQEn-card-Q">What are the event hours?</div>
-                <div className="FAQEn-card-A">
-                    <table className="FAQEn-table">
-                    <tr>
-                                <th>Places
-                                </th>
-                                <th>Day1(11/3) </th>
-                                <th>Day2(11/4)</th>
-                                <th>Day3(11/5)</th>
-                            </tr>
-                            <tr>
-                                <td >In-Facility</td>
-                                <td colSpan={3}className="FAQ-table">10:00~18:20</td>
-                            </tr>
-                            <tr>
-                                <td>Food Stalls & Outdoor </td>
-                                <td colSpan={3}className="FAQ-table">10:00~18:00</td>
-                            </tr>
-                            <tr>
-                                <td> Stage Kanade</td>
-                                <td colSpan={3}className="FAQ-table">10:00~19:00</td>
-                            </tr>
-                            <tr>
-                                <td>Stage Sora</td>
-                                <td>10:00~17:20</td>
-                                <td>10:00~17:00</td>
-                                <td>10:00~16:20</td>
-                            </tr>
-                    </table>
-                </div>
+                <div className="FAQ-table-parent">
+                            <table className="FAQ-table">
+                                <tr>
+                                    <th>Places</th>
+                                    <th>Day1(11/3)</th>
+                                    <th>Day2(11/4)</th>
+                                    <th>Day3(11/5)</th>
+                                </tr>
+                                <tr>
+                                    <td >In-Facility</td>
+                                    <td colSpan={3}className="FAQ-table">10:00~18:20</td>
+                                </tr>
+                                <tr>
+                                    <td className="FAQblank">Outdoor & Food Stalls</td>
+                                    <td colSpan={3}className="FAQ-table">10:00~18:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Stage Kanade</td>
+                                    <td colSpan={3}className="FAQ-table">10:00~19:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Stage Sora</td>
+                                    <td className="FAQblank">10:00~17:20</td>
+                                    <td className="FAQblank">10:00~17:00</td>
+                                    <td className="FAQblank">10:00~16:20</td>
+                                </tr>
+                            </table>
+                        </div>
                 </div>
                 <div className="FAQEn-card-Q">Where can we eat something we bought?</div>
                 <div className="FAQEn-card-A">Please use the designated eating space.</div>

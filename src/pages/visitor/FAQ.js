@@ -19,37 +19,37 @@ export default function FAQ() {
             <title>よくあるご質問|まちかね祭2023</title>
             </Helmet>
             <div className="FAQ FAQ-sky">
-                <PageTitle titles="FAQ" ></PageTitle>
+                <PageTitle titles="よくあるご質問" ></PageTitle>
                 <div className="FAQ-card">
                     <div className="FAQ-card-Q">企画時間を教えてください。</div>
-                    <div className="FAQ-card-A">
-                        <table className="FAQ-table">
-                            <tr>
-                                <th>場所</th>
-                                <th>11/3(金)</th>
-                                <th>11/4(土)</th>
-                                <th>11/5(日)</th>
-                            </tr>
-                            <tr>
-                                <td >館内</td>
-                                <td colSpan={3}className="FAQ-table">10:00~18:20</td>
-                            </tr>
-                            <tr>
-                                <td >屋外・模擬店</td>
-                                <td colSpan={3}className="FAQ-table">10:00~18:00</td>
-                            </tr>
-                            <tr>
-                                <td>ステージ奏</td>
-                                <td colSpan={3}className="FAQ-table">10:00~19:00</td>
-                            </tr>
-                            <tr>
-                                <td>ステージ宙</td>
-                                <td>10:00~17:20</td>
-                                <td>10:00~17:00</td>
-                                <td>10:00~16:20</td>
-                            </tr>
-                        </table>
-                    </div>
+                        <div className="FAQ-table-parent">
+                            <table className="FAQ-table">
+                                <tr>
+                                    <th>場所</th>
+                                    <th>11/3(金)</th>
+                                    <th>11/4(土)</th>
+                                    <th>11/5(日)</th>
+                                </tr>
+                                <tr>
+                                    <td >館内</td>
+                                    <td colSpan={3}className="FAQ-table">10:00~18:20</td>
+                                </tr>
+                                <tr>
+                                    <td className="FAQblank">屋外・模擬店</td>
+                                    <td colSpan={3}className="FAQ-table">10:00~18:00</td>
+                                </tr>
+                                <tr>
+                                    <td>ステージ奏</td>
+                                    <td colSpan={3}className="FAQ-table">10:00~19:00</td>
+                                </tr>
+                                <tr>
+                                    <td>ステージ宙</td>
+                                    <td className="FAQblank">10:00~17:20</td>
+                                    <td className="FAQblank">10:00~17:00</td>
+                                    <td className="FAQblank">10:00~16:20</td>
+                                </tr>
+                            </table>
+                        </div>
                 </div>
                 <div className="FAQ-card">
                     <div className="FAQ-card-Q">購入したものを食べられるところはありますか？</div>
