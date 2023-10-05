@@ -31,7 +31,7 @@ export default function About() {
                 </p>
              </div>
           </div>
-          <Bubble></Bubble>
+          <Bubble bubbleSwitch={false}></Bubble>
       </div>
     )
 }

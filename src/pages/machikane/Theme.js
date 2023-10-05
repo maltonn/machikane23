@@ -33,7 +33,7 @@ export default function Theme() {
                 </div>
               </div>
             </div>
-            <Bubble></Bubble>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }
