@@ -39,7 +39,7 @@ export default function TalentProject(){
                     <div className="talentProjectCaution">
                         <h2 className="caution">注意事項</h2>
                         <ul className="cautionAll">
-                            <li className="caution1">この企画は<strong>事前予約</strong>制なので、以下のリンクからご予約お願いします。応募者多数の場合は、抽選を行います。予めご了承ください。
+                            <li className="caution1">この企画は<strong>事前予約</strong>制なので、以下のリンクからご予約お願いします。予約受付期間は、10月1日〜13日23時59分までです。応募者多数の場合は、抽選を行います。予めご了承ください。
                             </li>
                         </ul>    
                             <div className="reservationUrl">
