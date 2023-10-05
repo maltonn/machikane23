@@ -40,10 +40,13 @@ export default function TalentProject(){
                         <h2 className="caution">注意事項</h2>
                         <ul className="cautionAll">
                             <li className="caution1">この企画は<strong>事前予約</strong>制なので、以下のリンクからご予約お願いします。応募者多数の場合は、抽選を行います。予めご了承ください。
-                            <p className="reservationUrl">
-                                <a href="https://app.tyuujitu-system.net/machikane23/visitor/talent-live" target="_blank" rel="noreferrer">予約</a>
-                            </p>
                             </li>
+                        </ul>    
+                            <div className="reservationUrl">
+                                <a href="https://app.tyuujitu-system.net/machikane23/visitor/talent-live" target="_blank" rel="noreferrer">予約</a>
+                            </div>
+                        <ul className="cautionAll"> 
+            
                             <br></br>
                             <li className="caution2">当日キャンセルが出た場合は大学会館前で12:45から当日券を配布します。</li>
                             <br></br>

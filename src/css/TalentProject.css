@@ -129,14 +129,19 @@
     margin-bottom: 0;
 }
 .reservationUrl{
-    border: double 3px #2E3192;
-    border-radius: 5px;
-    margin: 0 auto;
+    margin: 3rem auto;
     width: 30%;
     text-align: center;
 }
 .reservationUrl a{
+    margin-top: 3rem;
     text-decoration: none;
+    border: double 3px #2E3192;
+    border-radius: 5px;
+
+    padding: 0.5rem 1rem;
+
+
 }
 .caution li{
     font-size: 2vw;
@@ -221,8 +226,7 @@
         top: 40vh;
     }
     .caution{
-        position: relative;
-        top: -10vh;
+        margin-bottom: 7rem;
     }
     .cautionAll{
         position: relative;
