@@ -74,10 +74,10 @@ export default function Header() {
                             <ul className={`menu-child ${lang==="en" && "en-longTitle"} ${isMenuOpenB?"is-opend":"is-closed"}`}>
                                 <li><Link to="./sections" onClick={PageChange}>{lang==="en"?"Project Category":"企画区分について"}</Link></li>
                                 <li><Link to="./project-search" onClick={PageChange}>{lang==="en"?"Project Search":"企画検索"}</Link></li>
-                                <li><Link to="./mogiten" onClick={PageChange}>{lang==="en"?"Food stalls List":"模擬店企画一覧"}</Link></li>
+                                <li><Link to="./mogiten" onClick={PageChange}>{lang==="en"?"Food Salls List":"模擬店企画一覧"}</Link></li>
                                 <li><Link to="./timetable" onClick={PageChange}>{lang==="en"?"Stage Performance Schedule":"ステージタイムテーブル"}</Link></li>
                                 <li><Link to="./ralley" onClick={PageChange}>{lang==="en"?"Rally Project":"ラリー企画一覧"}</Link></li>
-                                <li><Link to="./official-project" onClick={PageChange}>{lang==="en"?"Official projects":"実行委員会企画"}</Link></li>
+                                <li><Link to="./official-project" onClick={PageChange}>{lang==="en"?"Official Projects":"実行委員会企画"}</Link></li>
                                 <li><Link to="./talent-project" onClick={PageChange}>{lang==="en"?"Comedy LIVE Show":"お笑いライブ"}</Link></li>
                                 <li><Link to="./lab-open" onClick={PageChange}>{lang==="en"?"Openlab":"研究室公開"}</Link></li>
                             </ul>
