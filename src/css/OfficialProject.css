@@ -364,7 +364,7 @@
   .nepleageInfor li{
     font-size: 0.01em;
     text-align: center;
-    margin: 0;
+    margin: 2vw;
     border: #000 solid 1px;
   }
 }
