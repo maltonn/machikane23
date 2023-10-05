@@ -17,6 +17,7 @@ import bonber from "../../imgs/official_project/bonber.png"
 
 import PageTitles from "../../components/PageTitles";
 import { useEffect } from "react";
+import Bubble from "../../components/Bubble";
 
 export default function OfficialProject() {
     useEffect(()=>{
@@ -243,9 +244,7 @@ export default function OfficialProject() {
                     </div>
                 </div>
             </div>
-            <div className="ocean">
-                
-            </div>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }

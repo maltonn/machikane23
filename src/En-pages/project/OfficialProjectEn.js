@@ -15,6 +15,7 @@ import house from "../../imgs/official_project/house.png"
 import clock from "../../imgs/official_project/clock.png"
 import leaf from "../../imgs/official_project/leaf1.png"
 import bonber from "../../imgs/official_project/bonber.png"
+import Bubble from "../../components/Bubble";
 
 
 export default function OfficialProjectEn() {
@@ -242,10 +243,7 @@ export default function OfficialProjectEn() {
                     </div>
                 </div>
             </div>
-            <div className="ocean">
-                
-            </div>
-
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }
