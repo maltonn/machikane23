@@ -24,7 +24,7 @@ export default function Inquiry() {
                     <ContactForm></ContactForm>
                 </div>
             </div>
-            <Bubble></Bubble>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }
