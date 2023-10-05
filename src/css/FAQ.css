@@ -26,7 +26,7 @@ background: linear-gradient(
 .FAQ-card-A{
     font-size:  20px; 
     width: 80%;
-    margin: 10px 60px 35px 30px;
+    margin: 10px 60px 35px 50px;
 }
 .FAQ-table{
     margin:2%;
@@ -126,7 +126,7 @@ background: linear-gradient(
 .FAQEn-card-A{
     font-size:  20px; 
     width: 80%;
-    margin: 10px 60px 35px 30px;
+    margin: 10px 60px 35px 50px;
 }
 @media (min-width:500px) and (max-width:1070px) {
     .FAQEn-card-A{
