@@ -34,7 +34,9 @@ export default function Sponsor() {
             </Helmet>
             <div className="sponsor-sky">
                 <PageTitles titles="ご協賛" kame={true}></PageTitles>
-                <p>以下の企業・団体の皆さまより、本まちかね祭の企画・運営へ多大なるご支援を賜りました。ここに深く御礼申し上げます。</p>
+                <div class="thanks">
+                以下の企業・団体の皆さまより、本まちかね祭の企画・運営へ多大なるご支援を賜りました。ここに深く御礼申し上げます。
+                </div>
                 <div className="companies goods">
                     <div className="sponsor-miniTitles">物品協賛（敬称略 / 順不同）</div>
                     <div className="sponsor-imgs">

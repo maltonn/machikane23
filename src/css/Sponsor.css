@@ -9,12 +9,24 @@
     background-size: 100%,contain;
     color:#fff;
 }
-
+/*
 .sponsor-sky>p{
     font-size: 20px;
     margin-left: 20px;
 }
-
+*/
+.thanks{
+    background-color: rgba(255,255,255,0.58);
+    border-radius: 50px;
+    width: 92%;
+    box-sizing: border-box;
+    padding: 30px 80px;
+    margin: 0 auto;
+    position:relative;
+    bottom:5rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
 .sponsor-imgs{
     text-align: center;
     width: 100%;

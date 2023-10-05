@@ -27,7 +27,7 @@ export default function SponsorEn() {
             </Helmet>
             <div className="sponsor-sky">
                 <PageTitles titles="Our sponsors"></PageTitles>
-                <p>We would like to express our sincere appreciation toward all the sponsors for the 2023 Machikane Festival.</p>
+                <div class="thanks">We would like to express our sincere appreciation toward all the sponsors for the 2023 Machikane Festival.</div>
                 <div className="companies goods">
                     <div className="sponsor-miniTitles-En1">Goods Sponsoring<br className="smartphone"></br>&nbsp;(without honorifics and order)</div>
                     <div className="sponsor-imgs">
