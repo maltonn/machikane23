@@ -11,8 +11,8 @@ import solaniwaonsen from "../../imgs/sponsor/solaniwa-onsen.jpg"
 import sorakakeru from "../../imgs/sponsor/sorakakeru.png"
 import sudio from "../../imgs/sponsor/sudio.png"
 import kasugai from "../../imgs/sponsor/kasugai.png"
-import milksoap from "../../imgs/sponsor/milk-soap.png"
-import osakaseika from "../../imgs/sponsor/osakaseika.png"
+import cowsoap from "../../imgs/sponsor/cow-soap.png"
+import osakatoka from "../../imgs/sponsor/osakatoka.png"
 import tondemi from "../../imgs/sponsor/tondemi.jpg"
 import VSPARK from "../../imgs/sponsor/VSPARK.jpg"
 import homecomingday from "../../imgs/sponsor/home-coming-day.jpg"
@@ -31,18 +31,18 @@ export default function Sponsor() {
                 <div className="companies goods">
                     <div className="sponsor-miniTitles-En1">Goods Sponsoring<br className="smartphone"></br>&nbsp;(without honorifics and order)</div>
                     <div className="sponsor-imgs">
-                        <a href="https://solaniwa.com/"><img src={solaniwaonsen}></img></a>
-                        <a href="https://www.sudio.com/jp/"><img src={sudio}></img></a>
-                        <a href="https://www.sorakakeru.com/"><img src={sorakakeru}></img></a>
-                        <a href="https://jankara.ne.jp/index.html"><img src={jankara}></img></a>
-                        <a href="https://big-echo.jp/"><img src={bigecho}></img></a>
-                        <a href="https://www.cornedbeef.jp/"><img src={kawashofoods}></img></a>
-                        <a href="https://www.hankyu-hotel.com/hotel/hh/senrihh"><img src={senrihankyuhotel}></img></a>
-                        <a href="https://www.kasugai.co.jp/"><img src={kasugai}></img></a>
-                        <a href="https://www.cow-soap.co.jp/"><img src={milksoap}></img></a>
-                        <a href="https://www.osaka-toka.co.jp/"><img src={osakaseika}></img></a>
-                        <a href="https://bandainamco-am.co.jp/others/tondemi/"><img src={tondemi}></img></a>
-                        <a href="https://bandainamco-am.co.jp/others/vspark/"><img src={VSPARK}></img></a>
+                    <a href="https://solaniwa.com/"><img src={solaniwaonsen} alt="solaniwa"></img></a>
+                        <a href="https://www.sudio.com/jp/"><img src={sudio} alt="sudio"></img></a>
+                        <a href="https://www.sorakakeru.com/"><img src={sorakakeru} alt="sorakakeru"></img></a>
+                        <a href="https://jankara.ne.jp/index.html"><img src={jankara} alt="jankara"></img></a>
+                        <a href="https://big-echo.jp/"><img src={bigecho} alt="big-echo"></img></a>
+                        <a href="https://www.cornedbeef.jp/"><img src={kawashofoods} alt="cornedbeef"></img></a>
+                        <a href="https://www.hankyu-hotel.com/hotel/hh/senrihh"><img src={senrihankyuhotel} alt="senri-hankyu-hotel"></img></a>
+                        <a href="https://www.kasugai.co.jp/"><img src={kasugai} alt="kasugai"></img></a>
+                        <a href="https://www.cow-soap.co.jp/"><img src={cowsoap} alt="cow-soap"></img></a>
+                        <a href="https://www.osaka-toka.co.jp/"><img src={osakatoka} alt="osaka-toka"></img></a>
+                        <a href="https://bandainamco-am.co.jp/others/tondemi/"><img src={tondemi} alt="tondemi"></img></a>
+                        <a href="https://bandainamco-am.co.jp/others/vspark/"><img src={VSPARK} alt="VSPARK"></img></a>
                     </div>
                 </div>
                 <div className="companies advertise">
