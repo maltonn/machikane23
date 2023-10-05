@@ -87,12 +87,12 @@ export default function HomeEn() {
             <span id="title">To all the visitors</span>
             <div className="content">Cars are not allowed on campus.<br/>Please use public transportation when you come to the Toyonaka Campus.<br/>You do not need to make a visit reservation.</div>
             <p>Reservation is required for the Comedy LIVE Show. Please move on to the reservation site from the button below.</p>
-            <div className="top-linkButton live-reservation"><a href="https://app.tyuujitu-system.net/machikane23/visitor/talent-live">Reserve for<br/>the Comedy LIVE Show<br/></a></div>
+            <div className="top-linkButton live-reservation"><a href="https://app.tyuujitu-system.net/machikane23/visitor/talent-live" target="_blank" rel="noreferrer">Reserve for<br/>the Comedy LIVE Show</a></div>
             <p>Click <Link to="./talent-project" onClick={PageChange}>Here</Link> for more details.</p>
             <p>You can look up the projects of the festival.<br></br>Click the button below <br></br>and find your favorite projects!</p>
-            <div className="link-button top-linkButton top-buttonblank"><Link to="./project-search" onClick={PageChange}>Project Search</Link></div> 
+            <div className="top-linkButton"><Link to="./project-search" className="pretty-button" onClick={PageChange}>Project Search</Link></div> 
             <p>Click the button below and please check the notes.</p>
-            <div className="link-button top-linkButton top-buttonblank"><Link to="./notes" onClick={PageChange}>Notes</Link></div>
+            <div className="top-linkButton"><Link to="./notes" className="pretty-button" onClick={PageChange}>Notes</Link></div>
           </div>
           <div className="machikani-1"><img src={machikani} alt="まちかに"></img></div>
         </div>
