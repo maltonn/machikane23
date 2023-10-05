@@ -1,6 +1,6 @@
 import "../css/Bubble.css"
 
-export default function Bubble(bubbleSwitch){
+export default function Bubble({bubbleSwitch}){
     if(bubbleSwitch){
         return (
             <div className="ocean-bubbles">
