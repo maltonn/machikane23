@@ -11,7 +11,7 @@ const shuffleArray = (array) => {
     return array.slice().sort(() => Math.random() - Math.random())
 }
 
-export default function LabOpen() {
+export default function LabOpenEn() {
     const projectLst = useRef([]) // こっちにはすべてのプロジェクトが入る
     const [displayLst, setDisplayLst] = useState([]) // 表示するプロジェクト（検索ボタンを押したときにこっちだけ書き換わる）
 

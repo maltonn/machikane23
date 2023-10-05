@@ -6,11 +6,11 @@ import "../../css/Adresses.css"
 import PageTitles from "../../components/PageTitles"
 import president from "../../imgs/NISHIO-Shojiro.jpg"
 import chairperson from "../../imgs/chairperson.jpg"
-export default function Adresses() {
+export default function AdressesEn() {
     return(
         <div className="main">
             <Helmet>
-            <title>Address|Machikane2023</title>
+            <title>Address|2023 Machikane Festival</title>
             </Helmet>
             <div className="greeting-sky">
                 <PageTitles titles="Address"></PageTitles>

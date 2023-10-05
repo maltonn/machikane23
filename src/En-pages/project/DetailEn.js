@@ -15,7 +15,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-export default function Detail() {
+export default function DetailEn() {
     const { id } = useParams();
     const [project, setProject] = useState(null);
     useEffect(() => {
@@ -82,7 +82,7 @@ export default function Detail() {
     return (
         <div className="main">
             <Helmet>
-            <title>{project?project.groupNameEn:"企画詳細"}|まちかね祭2023</title>
+            <title>{project?project.groupNameEn:"企画詳細"}|2023 Machikane Festival</title>
             </Helmet>
             {
                 project ?(

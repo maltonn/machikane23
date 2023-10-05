@@ -7,7 +7,7 @@ import PageTitles from "../../components/PageTitles";
 import Bubble from "../../components/Bubble";
 import MainStreet from "../../imgs/map/main-street.jpg";
 
-export default function Mogiten() {
+export default function MogitenEn() {
     const projectLst = useRef([]) // こっちにはすべてのプロジェクトが入る
     const [displayLst, setDisplayLst] = useState([]) // 表示するプロジェクト（検索ボタンを押したときにこっちだけ書き換わる）
 
@@ -37,7 +37,7 @@ export default function Mogiten() {
     return (
         <div className="main">
             <Helmet>
-            <title>Food stalls|2023 Machikan Festival</title>
+            <title>Food stalls|2023 Machikane Festival</title>
             </Helmet>
             <div className="mogiten-sky">
                 <PageTitles titles="Food stalls" kame={true}></PageTitles>

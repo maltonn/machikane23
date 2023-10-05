@@ -7,7 +7,7 @@ import "../../css/Goods.css"
 // import stickers from "../../imgs/goods/stickers.png"
 import allstickers from "../../imgs/goods/stickers_line.png"
 // import stickers2 from "../../imgs/goods/stickers2.png"
-import pendetail from "../../imgs/goods/pen-detail.png"
+import pendetail from "../../imgs/goods/pen.png"
 // import pen1 from "../../imgs/goods/pen1.jpg"
 import tote from "../../imgs/goods/totebag.png"
 import allgoods from "../../imgs/goods/allgoods.png"
@@ -17,10 +17,10 @@ export default function GoodsEn() {
     return(
         <div className="main">
             <Helmet>
-            <title>Goods|Machikane2023</title>
+            <title>Goods|2023 Machikane Festival</title>
             </Helmet>
             <div className="goods-sky">
-                <PageTitles titles="Goods" kame={false}></PageTitles>
+                <PageTitles titles="Official Goods" kame={false}></PageTitles>
                 <div className="goods-mainpage">
                     <div className="goods-back-card">
                         <p>At this 2023 Machikane Festival, we will offer our original stickers, ballpoint pens and tote bags!</p>

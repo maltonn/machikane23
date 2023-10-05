@@ -27,7 +27,7 @@ export default function MapEn() {
     return(
         <div className="main">
             <Helmet>
-            <title>Map|Machikane2023</title>
+            <title>Map|2023 Machikane Festival</title>
             </Helmet>
             <div className="map-sky">
                 <div className="map-top">
