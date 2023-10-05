@@ -18,7 +18,7 @@ import Sections from './pages/project/Sections';
 import Project from './pages/project/Project';
 import Detail from './pages/project/Detail';
 import Mogiten from './pages/project/Mogiten';
-import Timetable from './pages/project/Timetable';
+import Timetable from './pages/project/timetable/Timetable';
 import Ralley from './pages/project/Ralley';
 import OfficialProject from './pages/project/OfficialProject';
 import TalentProject from './pages/project/TalentProject';
