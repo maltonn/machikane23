@@ -18,7 +18,7 @@ export default function FAQ() {
             <Helmet>
             <title>よくあるご質問|まちかね祭2023</title>
             </Helmet>
-            <div className="FAQ">
+            <div className="FAQ FAQ-sky">
                 <PageTitle titles="FAQ" ></PageTitle>
                 <div className="FAQ-card">
                     <div className="FAQ-card-Q">企画時間を教えてください。</div>
@@ -147,6 +147,7 @@ export default function FAQ() {
                     <div className="FAQ-card-A">走りません。</div>
                 </div>
                 </div>
+                <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }
