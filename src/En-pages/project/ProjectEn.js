@@ -396,6 +396,10 @@ export default function ProjectEn() {
                         </div>
                         <button onClick={onClickSearchBtn}>Search</button>
                         <button onClick={onClickClearBtn}>Clear</button>
+                        <div>
+                            <p>※Lect①：Lecture Building (Let. Law. Econ)</p>
+                            <p>※Lect②：Lecture Building (Law. Econ)</p>
+                        </div>
                     </div>
                 </div>
 

@@ -81,7 +81,7 @@ export default function Notes() {
                         <div className="notes-naiyou">
                             <div className="notes-miniTitle">迷子について</div>
                             <div className="notes-miniContent">
-                            大学祭期間中に迷子を発見した場合、本部受付（ピロティ）まで連れてくるようにお願いします。
+                            大学祭期間中に迷子を発見した場合、本部受付（ピロティ）までお連れいただきますようお願いします。
                             </div>
                         </div>
                         <div className="notes-naiyou">
