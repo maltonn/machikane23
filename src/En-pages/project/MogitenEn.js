@@ -51,7 +51,7 @@ export default function MogitenEn() {
     return (
         <div className="main">
             <Helmet>
-            <title>Food Stalls|2023 Machikane Festival</title>
+            <title>Food Stalls List|2023 Machikane Festival</title>
             </Helmet>
             <div className="mogiten-sky">
                 <PageTitles titles="Food Stalls" kame={true}></PageTitles>
