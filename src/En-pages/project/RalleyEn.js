@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet";
-import {Link} from "react-router-dom";
 import "../../css/Common.css"
 import "../../css/ralley.css"
 import "../../css/Project.css"
@@ -10,10 +9,7 @@ import ralley1_icon from "../../imgs/ralley/ralley1_icon.png"
 import ralley2_icon from "../../imgs/ralley/ralley2_icon.jpg"
 import ralley3_icon from "../../imgs/ralley/ralley3_icon.jpg"
 import startbooth from "../../imgs/ralley/startbooth.png"
-import { useState } from "react";
 import { useParams } from "react-router-dom";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -21,7 +17,6 @@ import 'swiper/css/pagination';
 
 export default function RalleyEn() {
     const { id } = useParams();
-    const [project, setProject] = useState(null);
     useEffect(() => {
         window.scrollTo({
             top: 0,
