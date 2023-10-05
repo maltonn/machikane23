@@ -34,9 +34,9 @@ export default function DetailEn() {
     }, [id])
     function visitorPhoto(project){
         if(project.visitorPhoto){
-            return "撮影可"
+            return "Photo allowed"
         }else{
-            return "撮影禁止"
+            return "No photos"
         }
     }
     function children(project){
@@ -48,18 +48,18 @@ export default function DetailEn() {
     }
     function eventPlace(project){
         if(project.section==="mogiten"){
-            return "テント" + project.eventPlace
+            return "Tent No." + project.eventPlace
         }else if(project.section==="stage"){
-            return "ステージ" + project.eventPlace
+            return "Stage" + project.eventPlace
         }else{
             return project.eventPlace
         }
     }
     function numberedTickets(project){
         if(project.numberedTickets){
-            return "あり"
+            return "Need"
         }else{
-            return "なし"
+            return "NO"
         }
     }
     function projectTime(project){
@@ -92,7 +92,7 @@ export default function DetailEn() {
                             <img src={project.icon} className="detail-icon" alt="icon"></img>
                             <div className="detail-head-content">
                                 <div>{project.groupNameEn}</div>
-                                <div>混雑状況：{project.congestion}</div>
+                                <div>Congestion：{project.congestion}</div>
                             </div>
                         </div>
                         <div className="card-tags detail-tags">
