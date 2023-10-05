@@ -21,16 +21,15 @@ export default function LabOpen() {
     useEffect(() => {//inputValueが変わったらinputValueRefも変わる
         inputValueRef.current = inputValue
     }, [inputValue])
-    
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-    });
 
     const [loadingNum, setLoadingNum] = useState(10)
 
     
     useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
         let lst = Object.values(lab_json)
         lst=lst.filter((project)=>project!=null)
         projectLst.current = lst 
@@ -44,9 +43,6 @@ export default function LabOpen() {
 
     const onPickupKeywordClick = (keyword) => {
         setInputValue(keyword)
-        setTimeout(() => {
-            onClickSearchBtn()
-        },20)
     }
 
     // 検索ボタンが押された時の処理
