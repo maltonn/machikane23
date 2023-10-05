@@ -128,7 +128,7 @@ export default function Notes() {
                     </div>
                 </div>
             </div>
-            <Bubble></Bubble>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }
