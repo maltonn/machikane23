@@ -60,8 +60,15 @@ body{
   .access-inquiry{
     font-size: 1.2rem;
   }
-  .access-center{
-    margin: 15px auto;
+  .access-linkButton{
+    background: #fff;
+    width: 9rem;
+    justify-content: center;
+    display: flex;
+    margin: 5px auto;
+  }
+  .access-linkButton a{
+    font-size: 1rem;
   }
   .access-guide{
     width:700px;
