@@ -34,7 +34,7 @@ export default function RalleyEn() {
             <title>Rally Project|2023 Machikane Festival</title>
             </Helmet>
             <div className="ralley-sky">
-                <PageTitles titles="ralley" kam={false}></PageTitles>
+                <PageTitles titles="Ralley Project" kam={false}></PageTitles>
                 <div className="ralley-mainpage">
                     <p> At this Rally Project, visitors yourselves are going to go around the campus area. You can look around the whole Machikane Festival while enjoying our special project!
                     </p>
@@ -77,6 +77,7 @@ We are looking forward to you coming!
                     </div>
                 </div>
             </div>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }
