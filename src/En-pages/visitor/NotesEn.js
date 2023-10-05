@@ -25,7 +25,7 @@ export default function NotesEn() {
                             <div className="notes-miniContent">
                                 <p>All the food (including foods you brought by yourself) must be eaten at the designated eating space. You must not eat or drink outside the area.(except hydration)</p>
                                 <p>Eating space is around the Main street. Please look at the Map for details.</p>
-                                <div className="link-button notes-linkButton"><Link to="/map" onClick={PageChange}>Map</Link></div>
+                                <div className="notes-linkButton"><Link to="/map" className="pretty-button" onClick={PageChange}>Map</Link></div>
                                 <p>Please follow the rules below.</p>
                                 <ol>
                                     <li>Please bring back the seat to its originated place after using</li>
