@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet";
-import {Link} from "react-router-dom";
 import "../../css/Common.css"
 import "../../css/FAQ.css"
 import Bubble from "../../components/Bubble";
@@ -8,9 +7,10 @@ export default function FAQEn() {
     return(
         <div className="main">
             <Helmet>
-            <title>FAQ|2023 Machikane Festival</title>
+            <title>FAQs|2023 Machikane Festival</title>
             </Helmet>
-            <PageTitles titles="FAQ"  kame={true}></PageTitles>
+            <div className="FAQ-sky">
+            <PageTitles titles="FAQs"  kame={true}></PageTitles>
                 <div className="FAQEn-card">
                 <div className="FAQEn-card-Q">What are the event hours?</div>
                 <div className="FAQ-table-parent">
@@ -93,6 +93,7 @@ export default function FAQEn() {
                 <div className="FAQEn-card-Q">Can we use the Inter-Campus Shuttle Bus Service?</div>
                 <div className="FAQEn-card-A"> No, you cannot.</div>
                 <Bubble bubbleSwitch={false}></Bubble>
+            </div>
         </div>
     )
 }
