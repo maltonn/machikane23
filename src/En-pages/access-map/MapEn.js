@@ -24,6 +24,12 @@ import kanade from "../../imgs/map/ステージ奏.png"
 import sora from "../../imgs/map/ステージ宙.png"
 
 export default function MapEn() {
+    useEffect(()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    },[])
     return(
         <div className="main">
             <Helmet>
