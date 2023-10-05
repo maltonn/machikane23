@@ -10,7 +10,7 @@ export default function ThemeEn() {
     return(
         <div className="main">
             <Helmet>
-            <title>Theme|Machikane2023</title>
+            <title>Theme|2023 Machikane Festival</title>
             </Helmet>
             <div className ="theme-sky">
             <PageTitles titles="Theme" kame={true}></PageTitles>

@@ -6,7 +6,7 @@ export default function TimetableEn() {
     return(
         <div className="main">
             <Helmet>
-            <title>TimeTable|Machikane2023</title>
+            <title>TimeTable|2023 Machikane Festival</title>
             </Helmet>
             <div className="preparation">
                 <p>Coming soon! Now preparing.</p>

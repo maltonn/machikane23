@@ -7,10 +7,10 @@ export default function FAQEn() {
     return(
         <div className="main">
             <Helmet>
-            <title>FAQ|Machikane2023</title>
+            <title>FAQ|2023 Machikane Festival</title>
             </Helmet>
             <PageTitles titles="FAQ"  kame={true}></PageTitles>
-            <div className="FAQEn-card">
+                <div className="FAQEn-card">
                 <div className="FAQEn-card-Q">What are the event hours?</div>
                 <div className="FAQEn-card-A">
                     <table className="FAQEn-table">
@@ -40,6 +40,7 @@ export default function FAQEn() {
                                 <td>10:00~16:20</td>
                             </tr>
                     </table>
+                </div>
                 </div>
                 <div className="FAQEn-card-Q">Where can we eat something we bought?</div>
                 <div className="FAQEn-card-A">Please use the designated eating space.</div>
@@ -91,7 +92,6 @@ export default function FAQEn() {
                 <div className="FAQEn-card-A"> It isn't open during the festival.</div>
                 <div className="FAQEn-card-Q">Can we use the Inter-Campus Shuttle Bus Service?</div>
                 <div className="FAQEn-card-A"> No, you cannot.</div>
-            </div>
         </div>
     )
 }

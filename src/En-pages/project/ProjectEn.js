@@ -10,7 +10,7 @@ const shuffleArray = (array) => {
     return array.slice().sort(() => Math.random() - Math.random())
 }
 
-export default function Project() {
+export default function ProjectEn() {
     const projectLst = useRef([]) // こっちにはすべてのプロジェクトが入る
     const [displayLst, setDisplayLst] = useState([]) // 表示するプロジェクト（検索ボタンを押したときにこっちだけ書き換わる）
 

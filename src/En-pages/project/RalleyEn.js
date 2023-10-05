@@ -19,7 +19,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-export default function Ralley() {
+export default function RalleyEn() {
     const { id } = useParams();
     const [project, setProject] = useState(null);
     useEffect(() => {
