@@ -53,7 +53,7 @@ export default function ContactForm() {
       setIsSubmitted(true)
     }).catch((e) => {
       console.log(e.toString())
-      setWarnMessages({...warnMessages, "other": "送信に失敗しました。時間をおいて再度お試しください。"})
+      setWarnMessages({...warnMessages, "other": "Failed.送信に失敗しました。時間をおいて再度お試しください。"})
     })
   }
   const { lang } = useGlobalContext()
