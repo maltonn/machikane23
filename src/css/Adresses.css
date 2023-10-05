@@ -57,6 +57,9 @@
 .name{
     text-align: right;
 }
+.smartphone{
+    display: none;
+}
 
 /*======================
   スマホ用
@@ -84,9 +87,9 @@
     }
     .greeting-titles-En2{
         padding-left: 32px;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         background-color: rgba(255,255,255,0.85);
-        width: 26rem;
+        width: 17rem;
         border-radius: 0 50px 50px 0px;
         margin-bottom: 15px;
         color: black;
@@ -97,6 +100,9 @@
     .sentences{
         padding: 0 20px;
         font-size: 0.9rem;
+    }
+    .smartphone{
+        display: block;
     }
 }
       
@@ -132,5 +138,8 @@
         border-radius: 0 50px 50px 0px;
         margin-bottom: 15px;
         color: black;
+    }
+    .smartphone{
+        display: none;
     }
 }

@@ -35,7 +35,7 @@ export default function AdressesEn() {
             <div className="greeting-ocean">
                 <div className="greeting-contents">
                     <div className="chairperson">
-                        <div className="greeting-titles-En2">Address by the chairperson of Festival Committee</div>
+                        <div className="greeting-titles-En2">Address by the chairperson<br className="smartphone"></br> of Festival Committee</div>
                         <div className="greeting-card">
                             <img src={chairperson}></img>
                             <div className="sentences">

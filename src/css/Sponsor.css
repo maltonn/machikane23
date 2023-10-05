@@ -28,7 +28,7 @@
     padding-left: 2rem;
     font-size: 1.5rem;
     background-color: rgba(255,255,255,0.85);
-    width: 15rem;
+    width: 20rem;
     border-radius: 0 50px 50px 0px;
     margin-bottom: 15px;
     color: black;
@@ -74,6 +74,9 @@
 .special{
     padding-top: 8rem;
 }
+.smartphone{
+    display: none;
+}
 
 /*======================
   スマホ用
@@ -85,7 +88,34 @@
     .sponsor-miniTitles{
         padding-left: 1rem;
         font-size: 1rem;
-        width: 6rem;
+        width: 14rem;
+    }
+    .sponsor-miniTitles-En1{
+        padding-left: 2rem;
+        font-size: 1.2rem;
+        background-color: rgba(255,255,255,0.85);
+        width: 19rem;
+        border-radius: 0 50px 50px 0px;
+        margin-bottom: 15px;
+        color: black;
+    }
+    .sponsor-miniTitles-En2{
+        padding-left: 2rem;
+        font-size: 1.2rem;
+        background-color: rgba(255,255,255,0.85);
+        width: 19rem;
+        border-radius: 0 50px 50px 0px;
+        margin-bottom: 15px;
+        color: black;
+    }
+    .sponsor-miniTitles-En3{
+        padding-left: 2rem;
+        font-size: 1.2rem;
+        background-color: rgba(255,255,255,0.85);
+        width: 19rem;
+        border-radius: 0 50px 50px 0px;
+        margin-bottom: 15px;
+        color: black;
     }
     .companies{
         padding-bottom: 5rem;
@@ -96,6 +126,9 @@
     .companies img{
         width: 70%;
         margin: 0 auto 20px;
+    }
+    .smartphone{
+        display: block;
     }
 }
       
@@ -109,7 +142,7 @@
     .sponsor-miniTitles{
         padding-left: 1.2rem;
         font-size: 1.5rem;
-        width: 8rem;
+        width: 20rem;
     }
     .companies{
         padding-bottom: 5rem;
@@ -120,5 +153,8 @@
     .companies img{
         width: 80%;
         margin: 0 auto 20px;
+    }
+    .smartphone{
+        display: none;
     }
 }
