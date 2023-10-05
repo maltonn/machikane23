@@ -14,7 +14,22 @@ import allgoods from "../../imgs/goods/allgoods.png"
 import PageTitles from "../../components/PageTitles";
 import Bubble from "../../components/Bubble";
 import { useEffect } from "react";
-export default function Goods() {
+import cloud from "../../imgs/circlecloud3.png"
+import machikame1 from "../../imgs/animal/machikame1.png"
+import { useGlobalContext } from "../../contexts/globalContext";
+export default function Goods({titles,kame}) {
+    const { lang } = useGlobalContext()
+        useEffect(() => {
+            const $ = el => document.querySelector(el);
+            var titleLength = document.getElementById('pageTitles').textContent.length;
+            if(lang==='en'){
+                titleLength=titleLength/2.1;
+            }
+            $(':root').style.setProperty('--base-pageLength', `${titleLength}rem`);
+            if(kame!==true){
+                document.getElementById('machikameNone').style.display='none';
+            }
+          }, [titles,kame,lang])
     useEffect(()=>{
         window.scrollTo({
             top: 0,
@@ -28,7 +43,12 @@ export default function Goods() {
             <title>グッズ|まちかね祭2023</title>
             </Helmet>
             <div className="goods-sky">
-                <PageTitles titles="グッズ" kame={false}></PageTitles>
+                <div className="top-component-2">
+                    <div className="page-titles" id="pageTitles">グッズ</div>
+                    <div className="machikame-default" id="machikameNone">
+                        <img src={machikame1} alt="まちかめ1"></img>
+                    </div>
+                </div>
                 <div className="goods-mainpage">
                     <div className="goods-back-card">
                         <p>今年のまちかね祭では、ステッカー、ボールペン、トートバッグを総合案内所にて販売します。</p>
@@ -36,6 +56,9 @@ export default function Goods() {
                             <img src={allgoods} alt="ステッカー、ボールペン、トートバッグ"></img>
                         </div>
                     </div>
+                </div>
+                <div className="cloud-1">
+                    <img src={cloud} alt="丸雲"></img>
                 </div>
                     <div className="goods-detail">
                         <div className="goods-title">グッズ紹介</div>
