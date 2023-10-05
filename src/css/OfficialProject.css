@@ -356,12 +356,12 @@
   .nepleageInfor{
     margin: 0 auto;
     width: 100%;
-    padding: 1em 0;
+    padding: 0;
   }
   .nepleageInfor li{
     font-size: 0.01em;
     text-align: center;
-    margin: 10em;
+    margin: 0;
     border: #000 solid 1px;
   }
 }
