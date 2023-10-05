@@ -149,6 +149,7 @@ export default function DetailEn() {
         '学生会館集会室６': 'Student Union Assembly-room 6',
         '学生会館集会室７': 'Student Union Assembly-room 7',
         '学生会館大集会室': 'Student Union Main-Assembly-room',
+        '大学会館21世紀懐徳堂': 'University Hall (Kaitoku-dou)',
         '1': 'Tent No.1',
         '2': 'Tent No.2',
         '3': 'Tent No.3',
