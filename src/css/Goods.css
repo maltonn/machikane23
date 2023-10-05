@@ -70,7 +70,8 @@
       position: relative;
       right:-50%;
       top:-2rem;
-      left:2%;
+      left:0%;
+      width: 50%;
   }
   .pen-content{
       font-size:1.3rem;
@@ -89,8 +90,8 @@
   
   .totebag img{
       position:relative;
-      width:50%;
-      right:-45%;
+      width:40%;
+      right:-55%;
       top:-25rem;
   }
   .totebag-content{
@@ -126,9 +127,9 @@
       top:-1rem;
   }
   .pen img{
-      width:50%;
+      width:55%;
       top:8rem;
-      left:-3%;
+      left:-5%;
   }
   .pen-content{
       font-size: 1rem;
@@ -137,9 +138,9 @@
       top:-4.5rem;
   }
   .totebag img{
-      width:70%;
+      width:55%;
       top:-13rem;
-      left:37%;
+      left:44%;
   }
   .totebag-content{
       font-size: 1rem;
@@ -159,9 +160,9 @@
           top:-2rem;
       }
       .pen img{
-          width:60%;
+          width:55%;
           top:-0.5rem;
-          left:-10%;
+          left:-5%;
       }
       .pen-content{
           font-size: 1.2rem;
@@ -170,9 +171,9 @@
           top:-10rem;
       }
       .totebag img{
-          width:60%;
+          width:48%;
           top:-22rem;
-          left:38%;
+          left:47%;
       }
       .totebag-content{
           font-size: 1.2rem;

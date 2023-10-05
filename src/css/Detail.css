@@ -7,6 +7,11 @@
     margin-bottom: 20px;
     text-align: center;
 }
+.detail-titleEn{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
 .detail-head{
     display: flex;
     flex-wrap: wrap;
@@ -58,6 +63,10 @@
     }
     .detail-title{
         font-size: 2rem;
+        text-align: center;
+    }
+    .detail-titleEn{
+        font-size: 1.5rem;
         text-align: center;
     }
     .detail-tags div{

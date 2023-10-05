@@ -9,7 +9,7 @@ export default function PageTitles({titles,kame}){
         const $ = el => document.querySelector(el);
         var titleLength = document.getElementById('pageTitles').textContent.length;
         if(lang==='en'){
-            titleLength=titleLength/2;
+            titleLength=titleLength/2.1;
         }
         $(':root').style.setProperty('--base-pageLength', `${titleLength}rem`);
         if(kame!==true){
