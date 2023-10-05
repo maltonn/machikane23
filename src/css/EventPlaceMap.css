@@ -3,7 +3,7 @@
 }
 .detail-eventPlace{
     width: min(80%,auto);
-    height: 500px;
+    max-width: 80%;
 }
 
 /*======================
@@ -12,7 +12,7 @@
 @media  (max-width: 500px){
     .detail-eventPlace{
         width: min(80%,auto);
-        height: 200px;
+        max-width: 80%;
     }
 }
 /*======================
@@ -21,6 +21,6 @@
 @media (min-width: 500px) and (max-width: 1070px){
     .detail-eventPlace{
         width: min(80%,auto);
-        height: 400px;
+        max-width: 80%;
     }
 }
