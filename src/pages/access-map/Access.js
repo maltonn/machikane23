@@ -30,7 +30,7 @@ export default function Access() {
                 
                 <PageTitles titles="アクセス" kame={true}></PageTitles>
                 
-                <div className="sponsor-miniTitles">開催場所</div>
+                <div className="access-subtitles">開催場所</div>
                 <div className="access-mainpage"> 
                     <div className="access-notes">
                         <div className="access-content access-holdingPlace">
@@ -39,7 +39,7 @@ export default function Access() {
                         </div>
                     </div>
                 </div>
-                <div className="sponsor-miniTitles">アクセス</div>
+                <div className="access-subtitles">アクセス</div>
                 <div className="access-mainpage"> 
                     <div className="access-notes">
                         <div className="access-content">
@@ -52,7 +52,7 @@ export default function Access() {
                         </div>
                     </div>
                 </div>
-                <div className="sponsor-miniTitles">注意事項</div>
+                <div className="access-subtitles">注意事項</div>
                 <div className="access-mainpage"> 
                     <div className="access-notes">
                         <div className="access-content">
