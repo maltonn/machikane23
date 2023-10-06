@@ -15,6 +15,8 @@ import cowsoap from "../../imgs/sponsor/cow-soap.png"
 import osakatoka from "../../imgs/sponsor/osakatoka.png"
 import tondemi from "../../imgs/sponsor/tondemi.jpg"
 import VSPARK from "../../imgs/sponsor/VSPARK.jpg"
+import nakamura from "../../imgs/sponsor/nakamura.jpg"
+import heiwaonsen from "../../imgs/sponsor/heiwaonsen.png"
 import homecomingday from "../../imgs/sponsor/home-coming-day.jpg"
 import rokkosai from "../../imgs/sponsor/rokkosai.jpeg"
 import { useEffect } from "react";
@@ -62,27 +64,39 @@ export default function Sponsor({titles,kame}) {
                 <div className="companies goods">
                     <div className="sponsor-miniTitles">物品協賛（敬称略 / 順不同）</div>
                     <div className="sponsor-imgs">
-                        <a href="https://solaniwa.com/"><img src={solaniwaonsen} alt="solaniwa"></img></a>
-                        <a href="https://www.sudio.com/jp/"><img src={sudio} alt="sudio"></img></a>
-                        <a href="https://www.sorakakeru.com/"><img src={sorakakeru} alt="sorakakeru"></img></a>
-                        <a href="https://jankara.ne.jp/index.html"><img src={jankara} alt="jankara"></img></a>
-                        <a href="https://big-echo.jp/"><img src={bigecho} alt="big-echo"></img></a>
-                        <a href="https://www.cornedbeef.jp/"><img src={kawashofoods} alt="cornedbeef"></img></a>
-                        <a href="https://www.hankyu-hotel.com/hotel/hh/senrihh"><img src={senrihankyuhotel} alt="senri-hankyu-hotel"></img></a>
-                        <a href="https://www.kasugai.co.jp/"><img src={kasugai} alt="kasugai"></img></a>
-                        <a href="https://www.cow-soap.co.jp/"><img src={cowsoap} alt="cow-soap"></img></a>
-                        <a href="https://www.osaka-toka.co.jp/"><img src={osakatoka} alt="osaka-toka"></img></a>
-                        <a href="https://bandainamco-am.co.jp/others/tondemi/"><img src={tondemi} alt="tondemi"></img></a>
-                        <a href="https://bandainamco-am.co.jp/others/vspark/"><img src={VSPARK} alt="VSPARK"></img></a>
+                        <a href="https://solaniwa.com/" target="_blank" rel="noreferrer"><img src={solaniwaonsen} alt="solaniwa"></img></a>
+                        <a href="https://www.sudio.com/jp/" target="_blank" rel="noreferrer"><img src={sudio} alt="sudio"></img></a>
+                        <a href="https://www.sorakakeru.com/" target="_blank" rel="noreferrer"><img src={sorakakeru} alt="sorakakeru"></img></a>
+                        <a href="https://jankara.ne.jp/index.html" target="_blank" rel="noreferrer"><img src={jankara} alt="jankara"></img></a>
+                        <a href="https://big-echo.jp/" target="_blank" rel="noreferrer"><img src={bigecho} alt="big-echo"></img></a>
+                        <a href="https://www.cornedbeef.jp/" target="_blank" rel="noreferrer"><img src={kawashofoods} alt="cornedbeef"></img></a>
+                        <a href="https://www.hankyu-hotel.com/hotel/hh/senrihh" target="_blank" rel="noreferrer"><img src={senrihankyuhotel} alt="senri-hankyu-hotel"></img></a>
+                        <a href="https://www.kasugai.co.jp/" target="_blank" rel="noreferrer"><img src={kasugai} alt="kasugai"></img></a>
+                        <a href="https://www.cow-soap.co.jp/" target="_blank" rel="noreferrer"><img src={cowsoap} alt="cow-soap"></img></a>
+                        <a href="https://www.osaka-toka.co.jp/" target="_blank" rel="noreferrer"><img src={osakatoka} alt="osaka-toka"></img></a>
+                        <a href="https://bandainamco-am.co.jp/others/tondemi/" target="_blank" rel="noreferrer"><img src={tondemi} alt="tondemi"></img></a>
+                        <a href="https://bandainamco-am.co.jp/others/vspark/" target="_blank" rel="noreferrer"><img src={VSPARK} alt="VSPARK"></img></a>
+                        <div>
+                            <a href="http://sone.ps-vega.com" target="_blank" rel="noreferrer">VEGA曽根ボウル</a>
+                            <br></br>
+                            <a href="http://atoa-kobe.jp" target="_blank" rel="noreferrer">株式会社アクアメント　AQUARIUM×ART átoa</a>
+                            <br></br>
+                            <a href="https://www.award-style.com" target="_blank" rel="noreferrer">株式会社Award Style</a>
+                            <br></br>
+                            <a href="https://www.yojiya.co.jp/" target="_blank" rel="noreferrer">よーじやグループ</a>
+                            <br></br>
+                            <span>リーガロイヤルホテル</span>
+                            <br></br>
+                            <span>株式会社マンナンライフ</span>
+                        </div>
                     </div>
                 </div>
                 <div className="companies advertise">
                     <div className="sponsor-miniTitles">広告協賛（敬称略 / 順不同）</div>
                     <div className="sponsor-imgs">
-                        <a href="https://ou2023hcd.alumni.osaka-u.ac.jp/"><img src={homecomingday} alt="homecomingday"></img></a>
-                        <a href="https://ou2023hcd.alumni.osaka-u.ac.jp/"><img src={homecomingday} alt="homecomingday"></img></a>
-                        <a href="https://ou2023hcd.alumni.osaka-u.ac.jp/"><img src={homecomingday} alt="homecomingday"></img></a>
-                        <a href="https://ou2023hcd.alumni.osaka-u.ac.jp/"><img src={homecomingday} alt="homecomingday"></img></a>
+                        <a href="https://heiwaonsen.com/" target="_blank" rel="noreferrer"><img src={heiwaonsen} alt="heiwaonsen"></img></a>
+                        <a href="https://amzn.asia/d/5zzuKa0" target="_blank" rel="noreferrer"><img src={nakamura} alt="nakamura"></img></a>
+                        <a href="https://www.seito-jp.com/minimini/ishibashi" target="_blank" rel="noreferrer">株式会社成都賃貸ホームズミニミニFC石橋店</a>
                     </div>
                 </div>
             </div>
@@ -90,8 +104,8 @@ export default function Sponsor({titles,kame}) {
                 <div className="companies special">
                     <div className="sponsor-miniTitles">特別協賛（敬称略 / 順不同）</div>
                     <div className="sponsor-imgs">
-                        <a href="https://ou2023hcd.alumni.osaka-u.ac.jp/"><img src={homecomingday} alt="homecomingday"></img></a>
-                        <a href="http://www.rokkosai-kobe-univ.site/"><img src={rokkosai} alt="rokkosai"></img></a>
+                        <a href="https://ou2023hcd.alumni.osaka-u.ac.jp/" target="_blank" rel="noreferrer"><img src={homecomingday} alt="homecomingday"></img></a>
+                        <a href="http://www.rokkosai-kobe-univ.site/" target="_blank" rel="noreferrer"><img src={rokkosai} alt="rokkosai"></img></a>
                     </div>
                 </div>
             </div>      
