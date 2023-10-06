@@ -12,7 +12,7 @@
   }
   .goods-back-card{
       font-size: 1.3rem;
-      margin: 2rem auto 80px;
+      margin: 0 auto;
       display:block;
       background-color: rgba(255, 255, 255, 0.58);
       border-radius: 50px;
@@ -37,6 +37,7 @@
       text-align: center;
       position:relative;
       top:-5rem;
+      margin-bottom: -30px;
   }
   
   .goods-subtitle{
@@ -107,6 +108,104 @@
       left: 8%;
       top:-6rem;
   }
+
+  .top-component-2{
+    background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png");
+    background-size: 180px,calc(180px + 10vw);
+    background-repeat: no-repeat,no-repeat;
+    background-position: 72% 88px,right bottom;
+    height: 400px;
+}
+.page-titles{
+    font-size: 2rem;
+    padding: 10px 40px;
+    background-color: rgba(255,255,255,0.75);
+    border-radius: 0px 50px 50px 0px;
+    position: relative;
+    top: 168px;
+    width: calc(var(--base-pageLength)*2.2);
+}
+.machikame-default{
+    text-align: right;
+}
+.machikame-default img{
+    width: 100px;
+    position: relative;
+    top: 20vh;
+}
+.cloud-1 img{
+    position: relative;
+    bottom:113px;
+    left:20px;
+    rotate:15deg;
+    width:220px;
+}
+.cloud-1{
+    height: 220px;
+}
+/*======================
+  top スマホ用
+======================*/
+@media  (max-width: 500px){
+    .top-component-2{
+        background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png");
+        background-size: 0,calc(180px + 3vw);
+        background-repeat: no-repeat,no-repeat;
+        background-position: 4vw 3vh,right bottom;
+        height: 240px;
+        margin-bottom: 20px;
+    } 
+    .page-titles{
+        font-size: 1.4rem;
+        padding: 5px 25px;
+        border-radius: 0px 50px 50px 0px;
+        top: 85px;
+        width: calc(var(--base-pageLength)*1.5);
+    }
+    .machikame-default img{
+        width: 20%;
+        position: relative;
+        top: 12vh;
+    }
+    .cloud-1 img{
+        width:140px;
+        bottom:103px;
+        left: 0px;
+    }
+    .cloud-1{
+        height: 130px;
+    }
+}
+    
+    
+/*======================
+  top タブレット用
+======================*/
+@media (min-width: 500px) and (max-width: 1070px){
+    .top-component-2{
+        background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png");
+        background-size: 180px,calc(50px + 30vw);
+        background-repeat: no-repeat,no-repeat;
+        background-position: 70% 0vh,right bottom;
+        height: 360px;
+        margin-bottom: 30px;
+    }
+    .page-titles{
+        font-size: 2rem;
+        padding: 5px 30px;
+        border-radius: 0px 50px 50px 0px;
+        top: 145px;
+        width: calc(var(--base-pageLength)*2.2);
+    }
+    .machikame-default img{
+        width: 15%;
+        position: relative;
+        top: 10vh;
+    }  
+    .cloud-1{
+        height: 188px;
+    }
+}
   
   /*スマホ用*/
   @media(max-width:500px){

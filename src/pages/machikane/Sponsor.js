@@ -17,10 +17,24 @@ import tondemi from "../../imgs/sponsor/tondemi.jpg"
 import VSPARK from "../../imgs/sponsor/VSPARK.jpg"
 import homecomingday from "../../imgs/sponsor/home-coming-day.jpg"
 import rokkosai from "../../imgs/sponsor/rokkosai.jpeg"
-import PageTitles from "../../components/PageTitles";
 import { useEffect } from "react";
+import cloud from "../../imgs/circlecloud3.png"
+import machikame1 from "../../imgs/animal/machikame1.png"
+import { useGlobalContext } from "../../contexts/globalContext";
 
-export default function Sponsor() {
+export default function Sponsor({titles,kame}) {
+    const { lang } = useGlobalContext()
+    useEffect(() => {
+        const $ = el => document.querySelector(el);
+        var titleLength = document.getElementById('pageTitles').textContent.length;
+        if(lang==='en'){
+            titleLength=titleLength/2.1;
+        }
+        $(':root').style.setProperty('--base-pageLength', `${titleLength}rem`);
+        if(kame!==true){
+            document.getElementById('machikameNone').style.display='none';
+        }
+      }, [titles,kame,lang])
     useEffect(()=>{
         window.scrollTo({
             top: 0,
@@ -33,9 +47,17 @@ export default function Sponsor() {
             <title>ご協賛|まちかね祭2023</title>
             </Helmet>
             <div className="sponsor-sky">
-                <PageTitles titles="ご協賛" kame={false}></PageTitles>
+                <div className="top-component-1">
+                    <div className="page-titles" id="pageTitles">ご協賛</div>
+                    <div className="machikame-default" id="machikameNone">
+                        <img src={machikame1} alt="まちかめ1"></img>
+                    </div>
+                </div>
                 <div class="thanks">
                 以下の企業・団体の皆さまより、本まちかね祭の企画・運営へ多大なるご支援を賜りました。ここに深く御礼申し上げます。
+                </div>
+                <div className="cloud">
+                    <img src={cloud} alt="丸雲"></img>
                 </div>
                 <div className="companies goods">
                     <div className="sponsor-miniTitles">物品協賛（敬称略 / 順不同）</div>

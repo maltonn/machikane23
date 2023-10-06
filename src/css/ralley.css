@@ -4,16 +4,16 @@
     background: linear-gradient( 
       #15c1f6 0%,
       #b5e5f4 80%, 
-      #fff 100%);
+      #fff 92%);
+      text-align: center;
   }
   .ralley-mainpage{
     font-size: 1.6rem;
     background-color: rgba(255,255,255,0.58);
     border-radius: 50px;
-    width: 92%;
     box-sizing: border-box;
-    padding: 30px 80px ;
-    margin:0 auto ;
+    padding: 30px 40px ;
+    margin:0 30px;
     text-align: center;
   }
 
@@ -31,7 +31,8 @@
     border-radius: 50px;
     width: 92%;
     display:inline-flex;
-    margin:38px;
+    margin-top: 20px;
+
 
 }
 .ralley1-title{
@@ -63,7 +64,8 @@
     border-radius: 50px;
     width: 92%;
     display: inline-flex;
-    margin: 38px;
+    margin-top: 20px;
+
 }
 .ralley2-title{
     font-size: 2rem;
@@ -92,7 +94,8 @@
     border-radius: 50px;
     width: 92%;
     display: inline-flex;
-    margin: 38px;
+    margin-top: 20px;
+
 }
 .ralley3-title{
     font-size: 2rem;
@@ -128,50 +131,53 @@
       }
     .ralley1{
         width:80%;
+        border-radius: 30px;
     }
     .ralley1 img{
-        max-width: 100px;
-        max-height: 100px;
-        border-radius: 40px;
+        max-width: 90px;
+        max-height: 90px;
+        border-radius: 30px;
     
     }
     .ralley1-content{
-        font-size:1rem;
+        font-size:0.8rem;
     }
     .ralley1-title{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .ralley2{
         width:80%;
+        border-radius: 30px;
     }
     .ralley2 img{
-        max-width: 100px;
-        max-height: 100px;
-        border-radius: 40px;
+        max-width: 90px;
+        max-height: 90px;
+        border-radius: 30px;
     
     }
     .ralley2-content{
-        font-size:1rem;
+        font-size:0.8rem;
     }
     .ralley2-title{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .ralley3{
         width:80%;
+        border-radius: 30px;
     }
     .ralley3 img{
-        max-width: 100px;
-        max-height: 100px;
-        border-radius: 40px;
+        max-width: 90px;
+        max-height: 90px;
+        border-radius: 30px;
     
     }
     .ralley3-content{
-        font-size:1rem;
+        font-size:0.8rem;
     }
     .ralley3-title{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     }
 

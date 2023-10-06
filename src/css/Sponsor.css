@@ -9,12 +9,103 @@
     background-size: 100%,contain;
     color:#fff;
 }
-/*
-.sponsor-sky>p{
-    font-size: 20px;
-    margin-left: 20px;
+.top-component-1{
+    background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png");
+    background-size: 180px,calc(160px + 10vw);
+    background-repeat: no-repeat,no-repeat;
+    background-position: 72% 88px,right bottom;
+    height: 400px;
+    margin-bottom: 40px;
 }
-*/
+.page-titles{
+    font-size: 2rem;
+    padding: 10px 40px;
+    background-color: rgba(255,255,255,0.75);
+    border-radius: 0px 50px 50px 0px;
+    position: relative;
+    top: 168px;
+    width: calc(var(--base-pageLength)*2.2);
+}
+.machikame-default{
+    text-align: right;
+}
+.machikame-default img{
+    width: 100px;
+    position: relative;
+    top: 20vh;
+}
+.cloud img{
+    position: relative;
+    bottom:113px;
+    left:20px;
+    rotate:15deg;
+    width:220px;
+}
+/*======================
+  top スマホ用
+======================*/
+@media  (max-width: 500px){
+    .top-component-1{
+        background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png");
+        background-size: 0,calc(180px + 3vw);
+        background-repeat: no-repeat,no-repeat;
+        background-position: 4vw 3vh,right bottom;
+        height: 240px;
+        margin-bottom: 20px;
+    } 
+    .page-titles{
+        font-size: 1.4rem;
+        padding: 5px 25px;
+        border-radius: 0px 50px 50px 0px;
+        top: 85px;
+        width: calc(var(--base-pageLength)*1.5);
+    }
+    .machikame-default img{
+        width: 20%;
+        position: relative;
+        top: 12vh;
+    }
+    .cloud img{
+        width:140px;
+        bottom:80px;
+        left: 0px;
+    }
+    .cloud{
+        height: 70px;
+    }
+}
+    
+    
+/*======================
+  top タブレット用
+======================*/
+@media (min-width: 500px) and (max-width: 1070px){
+    .top-component-1{
+        background-image:url("../imgs/circlecloud1.png"),url("../imgs/circlecloud2.png");
+        background-size: 180px,calc(50px + 30vw);
+        background-repeat: no-repeat,no-repeat;
+        background-position: 70% 0vh,right bottom;
+        height: 360px;
+        margin-bottom: 30px;
+    }
+    .page-titles{
+        font-size: 2rem;
+        padding: 5px 30px;
+        border-radius: 0px 50px 50px 0px;
+        top: 145px;
+        width: calc(var(--base-pageLength)*2.2);
+    }
+    .machikame-default img{
+        width: 15%;
+        position: relative;
+        top: 10vh;
+    }  
+    .cloud{
+        height: 120px;
+    }
+}
+
+
 .thanks{
     background-color: rgba(255,255,255,0.58);
     border-radius: 50px;
@@ -146,6 +237,7 @@
         font-size:1rem;
         text-align: center;
         width:97%;
+        bottom:3.3rem;
     }
 }
       
@@ -173,5 +265,8 @@
     }
     .smartphone{
         display: none;
+    }
+    .thanks{
+        bottom:4.4rem;
     }
 }
