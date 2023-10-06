@@ -60,6 +60,8 @@ import MapEn from './En-pages/access-map/MapEn';
 
 
 import Error404 from './pages/Error404';
+import AdressesTmp from './pages/machikane/AdressesTmp';
+import AdressesEnTmp from './En-pages/machikane/AdressesEnTmp';
 
 function AppContents() {
   const location = useLocation();
@@ -83,7 +85,8 @@ function AppContents() {
             <Routes>
               <Route path="/" element={<HomeEn />} />
               <Route path="/about/" element={<AboutEn />} />
-              <Route path="/adresses/" element={<AdressesEn />} />
+              {/* <Route path="/adresses/" element={<AdressesEn />} /> */}
+              <Route path="/adresses/" element={<AdressesEnTmp />} />
               <Route path="/theme/" element={<ThemeEn />} />
               <Route path="/goods/" element={<GoodsEn />} />
               <Route path="/sponsor/" element={<SponsorEn />} />
@@ -115,7 +118,8 @@ function AppContents() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about/" element={<About />} />
-                <Route path="/adresses/" element={<Adresses />} />
+                {/* <Route path="/adresses/" element={<Adresses />} /> */}
+                <Route path="/adresses/" element={<AdressesTmp />} />
                 <Route path="/theme/" element={<Theme />} />
                 <Route path="/goods/" element={<Goods />} />
                 <Route path="/sponsor/" element={<Sponsor />} />
