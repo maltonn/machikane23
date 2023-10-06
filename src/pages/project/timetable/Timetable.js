@@ -1,13 +1,8 @@
 import { Helmet } from "react-helmet";
 import {Link} from "react-router-dom";
-
-import "../../../css/Timetable.css"
-
+import "../../../css/Common.css"
 import { useEffect } from "react";
-import WeeklyCalendar from "./WeeklyCalender.js";
-import PageTitles from "../../../components/PageTitles";
-
-export default function Timetable() {
+export default function Pamphlet() {
     useEffect(()=>{
         window.scrollTo({
             top: 0,
@@ -15,12 +10,16 @@ export default function Timetable() {
         });
     },[])
     return(
-        <div className="timetable">
+        <div className="main">
             <Helmet>
-            <title>ステージタイムテーブル|まちかね祭2023</title>
+            <title>公式パンフレット|まちかね祭2023</title>
             </Helmet>
-            <PageTitles titles="ステージタイムテーブル"></PageTitles>
-            <WeeklyCalendar/>
+            <div className="preparation">
+                <p>ただいまページ作成中です。しばらくお待ちください。</p>
+                <span>現在のページ：タイムテーブル</span><br></br>
+                <Link to="/" >トップページへ戻る</Link>
+            </div>
+            
         </div>
     )
 }

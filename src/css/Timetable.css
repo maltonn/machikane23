@@ -1,14 +1,19 @@
-.App {
+/*.App {
     font-family: sans-serif;
     text-align: center;
-  }
+  }*/
   
   .timeslotsContainer {
     height: 100%;
     overflow-y: scroll;
     display: flex;
   }
-  
+  .timetable-sky{
+    background: linear-gradient( 
+      #9fe7fd 0%,
+      #b5e5f4 80%, 
+      #fff 100%);
+  }
   .calendarContainer {
     height: 256%;
     width: 100%;
