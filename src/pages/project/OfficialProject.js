@@ -127,19 +127,19 @@ export default function OfficialProject() {
                                     <div className="pancakeBoxAround">
                                         <p className="pancakeBox">
                                             <div><strong>1．焼きた亭のパンケーキはいつでも「焼きたて」を提供!</strong></div>
-                                            注文を受けてから作るのでパンケーキはいつでも焼きたて! 好きなトッピングをかけてできあがったホクホクパンケーキはうまいこと間違いなし!
+                                            注文を受けてから作るのでパンケーキはいつでも焼きたて! 好きなトッピングをかけてできあがったホクホクパンケーキは美味しいこと間違いなし!
                                         </p>
                                         <p className="pancakeBox">
-                                            <div className="pancakeBoxTitle"><strong>2．パンケーキ以外のメニューも豊富</strong></div>
+                                            <div className="pancakeBoxTitle"><strong>2．パンケーキ以外のメニューも！</strong></div>
                                             焼きた亭ではドリンクも提供しています。みんなだいすきラムネジュース! 学祭で飲むラムネは青春の味! シュワっとはじけてさらにまちかね祭へのモチベを上げちゃいませんか?!
                                         </p>
                                         <p className="pancakeBox">
                                             <div className="pancakeBoxTitle"><strong>3．おいしいパンケーキに種類豊富なトッピング</strong></div>
-                                            選べるトッピングは、①パンケーキの王道！「メイプルシロップ」②甘党さんにおすすめ！「塩キャラメル」③深みのある味！「黒蜜きなこ」④食べたことない組み合わせ？！「はちみつレモン」皆さんの推しトッピングを見つけてくださいね
+                                            選べるトッピングは、①パンケーキの王道！「メイプルシロップ」②甘党さんにおすすめ！「塩キャラメル」③深みのある味！「黒蜜きなこ」④食べたことない組み合わせ？！「はちみつレモン」皆さんの推しトッピングを見つけてくださいね！
                                         </p>
                                         <p className="pancakeBox">
                                             <div className="pancakeBoxTitle"><strong>4．甘いもの苦手さんにはこちら</strong></div>
-                                            パンケーキに何かトッピングはしたいけど、甘いものは苦手だなあという方には「ベーコンケチャップ」がおすすめ！他のお店ではあまり見ないパンケーキとベーコンのコラボ！ぜひご賞味あれ～
+                                            パンケーキに何かトッピングはしたいけど、甘いものは苦手だなあという方には「ベーコンケチャップ」がおすすめ！他のお店ではあまり見ないパンケーキとベーコンのコラボ！ぜひご賞味あれ～！
                                         </p>
                                     </div>
                                 </div>
@@ -207,7 +207,7 @@ export default function OfficialProject() {
                                     <p className="pointContent">
                                     <span>Point3</span>
                                         <p>
-                                            どうぶつの森の世界観を再現しつつ実行委員のオリジナルも盛り込まれた素敵な空間です
+                                            どうぶつの森の世界観を再現しつつ実行委員のオリジナルも盛り込まれた素敵な空間です！
                                         </p>
                                     </p>
                                 </div>
