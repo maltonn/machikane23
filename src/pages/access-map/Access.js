@@ -44,10 +44,10 @@ export default function Access() {
                     <div className="access-notes">
                         <div className="access-content">
                             <li>阪急電車宝塚線 石橋阪大前駅より徒歩約15分<br></br>
-                                　　阪大坂を上り、総合案内所までお越しください。
+                                阪大坂を上り、総合案内所までお越しください。
                             </li>
                             <li>大阪モノレール 柴原阪大前駅より徒歩約15分<br></br>
-                                　　正門を通ってまっすぐ進み、総合案内所までお越しください。
+                                正門を通ってまっすぐ進み、総合案内所までお越しください。
                             </li>
                         </div>
                     </div>
