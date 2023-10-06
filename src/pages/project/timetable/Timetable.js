@@ -15,9 +15,11 @@ export default function Timetable() {
             <title>公式パンフレット|まちかね祭2023</title>
             </Helmet>
             <div className="preparation">
+                <div className="preparation-children">
                 <p>ただいまページ作成中です。しばらくお待ちください。</p>
                 <span>現在のページ：ステージタイムテーブル</span><br></br>
                 <Link to="/" >トップページへ戻る</Link>
+                </div>
             </div>
         </div>
     )
