@@ -3,7 +3,7 @@ import "../../css/Common.css"
 import "../../css/Map.css"
 import Bubble from "../../components/Bubble";
 import PageTitles from "../../components/PageTitles";
-import map from "../../imgs/map/全体マップ.png"
+import map from "../../imgs/map/全体マップ英語.png"
 import AB1 from "../../imgs/map/AB棟1階.png"
 import AB2 from "../../imgs/map/AB棟2階.png"
 import AB3 from "../../imgs/map/AB棟3階.png"
