@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import {Link} from "react-router-dom";
 import "../../../css/Common.css"
 import { useEffect } from "react";
+import Bubble from "../../../components/Bubble";
 export default function Pamphlet() {
     useEffect(()=>{
         window.scrollTo({
@@ -19,7 +20,7 @@ export default function Pamphlet() {
                 <span>現在のページ：タイムテーブル</span><br></br>
                 <Link to="/" >トップページへ戻る</Link>
             </div>
-            
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }
