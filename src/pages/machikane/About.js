@@ -12,6 +12,7 @@ export default function About() {
           behavior: "smooth",
       });
     },[])
+    
     return(
       <div className="main">
         <Helmet>
