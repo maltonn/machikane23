@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import {Link} from "react-router-dom";
 import "../../css/Common.css"
+import Bubble from "../../components/Bubble";
 import { useEffect } from "react";
 export default function Pamphlet() {
     useEffect(()=>{
@@ -19,6 +20,7 @@ export default function Pamphlet() {
                 <span>現在のページ：公式パンフレット</span><br></br>
                 <Link to="/" >トップページへ戻る</Link>
             </div>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }
