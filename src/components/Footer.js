@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 import { useGlobalContext } from "../contexts/globalContext";
 
 export default function Footer() {
-    function PageChange(){
+    const PageChange=()=>{
         window.scrollTo({
             top: 0,
             behavior: "smooth",
@@ -21,10 +21,11 @@ export default function Footer() {
                     <Link to="https://www.instagram.com/ou_machikanesai/" target="_blank" rel="noreferrer" ><img className="insta" src={insta} alt="instaIcon"></img></Link>
             </div>
             <div className="external-site">
-                <Link to="/" onClick={PageChange}>{lang==="en"?"Top":"トップ"}</Link>|
+                <Link to="/" onClick={PageChange}>{lang==="en"?"Top":"トップ"}</Link>
+                |
                 <Link to="https://tyuujitu.com/privacy-policy.html" >{lang==="en"?"Privacy Policy":"プライバシーポリシー"}</Link>
-                {/* |
-                <Link to="/inquiry" onClick={PageChange}>{lang==="en"?"Inquiry":"お問い合わせ"}</Link> */}
+                |
+                <Link to="/inquiry" onClick={PageChange}>{lang==="en"?"Inquiry":"お問い合わせ"}</Link>
             </div>
             <div className="tyuujitu">
                 <span>&copy;{lang==="en"?"Osaka University Festival Committee":"大阪大学大学祭中央実行委員会"}</span>

@@ -1,0 +1,26 @@
+.detail-eventPlace-parent{
+    text-align: center;
+}
+.detail-eventPlace{
+    width: min(65%,auto);
+    max-width: 65%;
+}
+
+/*======================
+  スマホ用
+======================*/
+@media  (max-width: 500px){
+    .detail-eventPlace{
+        width: min(80%,auto);
+        max-width: 80%;
+    }
+}
+/*======================
+  タブレット用
+======================*/
+@media (min-width: 500px) and (max-width: 1070px){
+    .detail-eventPlace{
+        width: min(80%,auto);
+        max-width: 80%;
+    }
+}

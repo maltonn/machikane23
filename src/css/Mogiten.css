@@ -1,0 +1,123 @@
+.mogiten-mainpage{
+    background-color: rgba(255,255,255,0.58);
+    border-radius: 50px;
+    width: 92%;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    margin:30px auto 0;
+}
+.mogiten-sky {
+    color: #233192;
+    width: 100%;
+    background: linear-gradient( 
+      #15c1f6 0%,
+      #b5e5f4 80%, 
+      #fff 100%);
+    padding-bottom: 80px;
+}
+.mogiten-project{
+    font-size: 1.2rem;
+    width: 100%;
+    border-collapse: collapse;
+    border: double 3px #2E3192;
+}
+.mogiten-project td{
+    padding: 3px;
+}
+.mogiten-project th,.mogiten-project td{
+    border: solid 1px #2E3192;
+}
+.mogiten-project td:nth-child(1){
+    text-align: center;
+}
+.mogiten-project td:nth-child(5){
+    padding: 8px;
+}
+.mogiten-link-button{
+    background: #fff;
+    border: double 3px #2E3192;
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 auto 0;
+}
+.mogitenProject-map{
+    text-align: center;
+    margin-top: 30px;
+}
+.mogitenProject-map img{
+    width: 1000px;
+    border: double 3px #2E3192;
+}
+
+/*======================
+  スマホ用
+======================*/
+@media  (max-width: 500px){
+    .mogiten-mainpage{
+        width: 95%;
+        padding: 30px 10px;
+        margin:0 auto;
+    }
+    .mogiten-project{
+        font-size: 0.6rem;
+        width: 100%;
+    }
+    .mogiten-project td{
+        padding: 0 2px;
+    }
+    .mogiten-project td:nth-child(1){
+        width: 55px;
+    }
+    .mogiten-project td:nth-child(4){
+        width: 55px;
+    }
+    .mogiten-project td:nth-child(5){
+        width: 25px;
+    }
+    .mogitenProject-map img{
+        width: 80%;
+    }
+}
+      
+/*======================
+    タブレット用
+======================*/
+@media (min-width: 500px) and (max-width: 1070px){
+    .mogiten-mainpage{
+        width: 95%;
+        padding: 30px 10px;
+        margin:0 auto;
+    }
+    .mogiten-project{
+        font-size: 0.7rem;
+        width: 100%;
+    }
+    .mogiten-link-button{
+        width: 60%;
+    }
+    .mogiten-project td{
+        padding: 2px;
+    }
+    .mogiten-project td:nth-child(1){
+        width: 18px;
+    }
+    .mogiten-project td:nth-child(2){
+        width: 88px;
+    }
+    .mogiten-project td:nth-child(3){
+        width: 72px;
+    }
+    .mogiten-project td:nth-child(4){
+        width: 22px;
+    }
+    .mogiten-project td:nth-child(5){
+        width: 16px;
+        padding: 2px;
+    }
+    .mogitenProject-map img{
+        width: 80%;
+    }
+}

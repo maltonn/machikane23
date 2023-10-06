@@ -5,6 +5,7 @@ import "../../css/About.css"
 import "../../css/Common.css"
 import { Helmet } from "react-helmet";
 import PageTitles from "../../components/PageTitles";
+import Bubble from "../../components/Bubble";
 
 const shuffleArray = (array) => {
     return array.slice().sort(() => Math.random() - Math.random())
@@ -37,6 +38,10 @@ export default function Project() {
     const [loadingNum, setLoadingNum] = useState(10)
 
     useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
         fetch("https://app.tyuujitu-system.net/api/machikane23/website/pr.json").then((res) => {
             return res.json()
         }
@@ -57,7 +62,7 @@ export default function Project() {
         setInputValue(keyword);
         setTimeout(() => {
             onClickSearchBtn()
-        },10)
+        },1000)
     }
 
     // 検索ボタンが押された時の処理
@@ -129,18 +134,12 @@ export default function Project() {
     }
 
     const onClickClearBtn = () => {
-        document.getElementById("serch_word").value = ""
         setInputValue("")
-        var children = document.getElementById("checkbox2").checked
-        if (children) {
-            children = !children
-            setForChildFilterCheck(prev => !prev)
-        }
-        var crowd = document.getElementById("checkbox3").checked
-        if (crowd) {
-            crowd = !crowd
-            setAvoidCrowdFilterCheck(prev => !prev)
-        }
+        setForChildFilterCheck(false)
+        setAvoidCrowdFilterCheck(false)
+        setTimeout(() => {
+            onClickSearchBtn()
+        },1000)
     }
 
     function eventPlace(project) {
@@ -169,7 +168,7 @@ export default function Project() {
         }
     }
 
-    function PageChange() {
+    const PageChange=()=> {
         window.scrollTo({
             top: 0,
             behavior: "smooth",
@@ -296,6 +295,7 @@ export default function Project() {
                 <div className="bottom">
                 </div>
             </div>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }

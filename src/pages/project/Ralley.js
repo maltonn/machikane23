@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import {Link} from "react-router-dom";
 import "../../css/Common.css"
 import "../../css/ralley.css"
+import "../../css/Project.css"
 import { useEffect } from "react" 
 import PageTitles from "../../components/PageTitles";
 import Bubble from "../../components/Bubble";
@@ -9,8 +10,24 @@ import ralley1_icon from "../../imgs/ralley/ralley1_icon.png"
 import ralley2_icon from "../../imgs/ralley/ralley2_icon.jpg"
 import ralley3_icon from "../../imgs/ralley/ralley3_icon.jpg"
 import startbooth from "../../imgs/ralley/startbooth.png"
+import { useState } from "react";
+import { useParams } from "react-router-dom";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 export default function Ralley() {
+    const { id } = useParams();
+    const [project, setProject] = useState(null);
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    },[id])
     return(
         <div className="main">
             <Helmet>
@@ -19,7 +36,7 @@ export default function Ralley() {
             <div className="ralley-sky">
                 <PageTitles titles="ラリー企画一覧" kam={false}></PageTitles>
                 <div className="ralley-mainpage">
-                    <p>ラリー企画で来場者の皆さん自身が大学構内を移動しながら楽しんでいただけます。企画を楽しみながら、まちかね祭全体をぐるっと回ることができます。
+                    <p>ラリー企画では、来場者の皆さん自身が大学構内を移動しながら楽しんでいただけます。企画を楽しみながら、まちかね祭全体をぐるっと回ることができます。
                     </p>
                     <p>
                     メインストリート上、ピロティ付近のテントがスタートです。ぜひお越しください！！
@@ -58,6 +75,7 @@ export default function Ralley() {
                     </div>
                 </div>
             </div>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }

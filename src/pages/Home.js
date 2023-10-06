@@ -17,6 +17,10 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+  });
     var move = document.getElementById('move').children;
     setTimeout(function () {
       for (var i = 0; i < move.length; i++) {
@@ -30,7 +34,7 @@ export default function Home() {
 
   }, [])
 
-  function PageChange(){
+  const PageChange=()=>{
     window.scrollTo({
         top: 0,
         behavior: "smooth",
@@ -69,7 +73,7 @@ export default function Home() {
             <table className="news-table">
               <tbody>
                 <tr>
-                  <td className="news-date">10/3(火)</td>
+                  <td className="news-date">10/6(金)</td>
                   <td className="news-content">まちかね祭2023公式サイトが完成しました。</td>
                 </tr>
                 <tr>
@@ -83,12 +87,12 @@ export default function Home() {
             <span id="title">ご来場の皆様へ</span>
             <div className="content">まちかね祭に車でご来場いただくことはできません。<br/>ご来場の際は公共交通機関をご利用ください。<br/>来場予約は不要です。</div>
             <p>お笑いライブは予約必須です。下のボタンから予約サイトへアクセスください。</p>
-            <div className="top-linkButton live-reservation"><a href="https://app.tyuujitu-system.net/machikane23/visotor/talent-live/reservation">お笑いライブ<br></br>予約サイト</a></div>
+            <div className="top-linkButton live-reservation"><a href="https://app.tyuujitu-system.net/machikane23/visitor/talent-live" target="_blank" rel="noreferrer">お笑いライブ<br></br>予約サイト</a></div>
             <p>お笑いライブ詳細は<Link to="./talent-project" onClick={PageChange}>こちら</Link></p>
             <p>今年のまちかね祭の企画を検索できます。<br></br>あなたのお気に入りの企画を見つけましょう！<br></br>下のボタンからご覧ください。</p>
-            <div className="link-button top-linkButton"><Link to="./project-search" onClick={PageChange}>企画検索</Link></div> 
+            <div className="top-linkButton"><Link to="./project-search" className="pretty-button" onClick={PageChange}>企画検索</Link></div> 
             <p>その他注意事項がございますので、下のボタンからご覧ください。</p>
-            <div className="link-button top-linkButton"><Link to="./notes" onClick={PageChange}>注意事項</Link></div>
+            <div className="top-linkButton"><Link to="./notes" className="pretty-button" onClick={PageChange}>注意事項</Link></div>
           </div>
           <div className="machikani-1"><img src={machikani} alt="まちかに"></img></div>
         </div>
@@ -97,7 +101,35 @@ export default function Home() {
       <div id="surface">
         <div className="ocean">
           <div className="mainpage2">
-
+          <div className="ocean-card" id="pickup">
+            <div className="pickup-titles"><nobr><p className="item1">●</p><span id="title">PICKUP</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
+            <div className="pickup-box">
+                <Link to="/project-search" onClick={PageChange}><div className="pickup-button">
+                  <div className="pickup-icon"><img src={search} alt="search"></img></div>
+                  <div className="pickup-title">企画検索</div>
+                </div></Link>
+                <Link to="/goods" onClick={PageChange}><div className="pickup-button">
+                  <div className="pickup-icon"><img src={goods} alt="goods"></img></div>  
+                  <div className="pickup-title">グッズ</div>
+                </div></Link>
+                <Link to="/official-project" onClick={PageChange}><div className="pickup-button">
+                  <div className="pickup-icon"><img src={recommend} alt="recommend"></img></div>  
+                  <div className="pickup-title">委員会企画</div>
+                </div></Link><br/>
+                <Link to="/access" onClick={PageChange}><div className="pickup-button">
+                  <div className="pickup-icon"><img src={access} alt="access"></img></div>
+                  <div className="pickup-title">アクセス</div>
+                </div></Link>
+                <Link to="/map" onClick={PageChange}><div className="pickup-button">
+                  <div className="pickup-icon"><img src={map} alt="map"></img></div>  
+                  <div className="pickup-title">マップ</div>
+                </div></Link>
+                <Link to="/timetable" onClick={PageChange}><div className="pickup-button">
+                  <div className="pickup-icon"><img src={timetable} alt="timetable"></img></div> 
+                  <div className="pickup-title">ステージタイムテーブル</div>
+                </div></Link>
+            </div>
+          </div>
             <div className="ocean-card">
               <div className="titles"><nobr><p className="item1">●</p><span id="title">企画区分について</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
               <p>企画区分の説明は、下のボタンからどうぞ</p>
@@ -138,36 +170,6 @@ export default function Home() {
             <p>研究室の企画は、下のボタンからどうぞ</p>
             <div className="ocean-link-button"><Link to="/lab-open" onClick={PageChange}>研究室公開</Link></div>
             </div>
-
-          <div className="ocean-card" id="pickup">
-            <div className="pickup-titles"><nobr><p className="item1">●</p><span id="title">PICKUP</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
-            <div className="pickup-box">
-                <Link to="/project-search" onClick={PageChange}><div className="pickup-button">
-                  <div className="pickup-icon"><img src={search} alt="search"></img></div>
-                  <div className="pickup-title">企画検索</div>
-                </div></Link>
-                <Link to="/goods" onClick={PageChange}><div className="pickup-button">
-                  <div className="pickup-icon"><img src={goods} alt="goods"></img></div>  
-                  <div className="pickup-title">グッズ</div>
-                </div></Link>
-                <Link to="/official-project" onClick={PageChange}><div className="pickup-button">
-                  <div className="pickup-icon"><img src={recommend} alt="recommend"></img></div>  
-                  <div className="pickup-title">委員会企画</div>
-                </div></Link><br/>
-                <Link to="/access" onClick={PageChange}><div className="pickup-button">
-                  <div className="pickup-icon"><img src={access} alt="access"></img></div>
-                  <div className="pickup-title">アクセス</div>
-                </div></Link>
-                <Link to="/map" onClick={PageChange}><div className="pickup-button">
-                  <div className="pickup-icon"><img src={map} alt="map"></img></div>  
-                  <div className="pickup-title">マップ</div>
-                </div></Link>
-                <Link to="/timetable" onClick={PageChange}><div className="pickup-button">
-                  <div className="pickup-icon"><img src={timetable} alt="timetable"></img></div> 
-                  <div className="pickup-title">ステージタイムテーブル</div>
-                </div></Link>
-            </div>
-          </div>
 
             <div className="ocean-card top-about">
               <div className="titles"><nobr><p className="item1">●</p><span id="title">テーマ</span><p className="item2">●</p><p className="item3">●</p></nobr></div>

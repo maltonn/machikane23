@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../../css/Project.css"
 import "../../css/Detail.css"
 import "../../css/Common.css"
+import "../../css/EventPlaceMap.css"
 import insta from "../../imgs/insta.svg"
 import Xicon from "../../imgs/X.svg"
 import link from "../../imgs/link.svg"
@@ -14,11 +15,16 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import EventPlaceMap from "../../components/EventPlaceMap";
 
 export default function Detail() {
     const { id } = useParams();
     const [project, setProject] = useState(null);
     useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
         fetch(`https://app.tyuujitu-system.net/api/machikane23/website/${id}.json`).then((res) => {
             console.log(res)
             return res.json()
@@ -68,7 +74,7 @@ export default function Detail() {
             return null
         }
     }
-    function PageChange(){
+    const PageChange=()=>{
         window.scrollTo({
             top: 0,
             behavior: "smooth",
@@ -99,6 +105,7 @@ export default function Detail() {
                         </div>
                         <div className="detail-content">
                             <div className="detail-content-kind">▷企画場所：{eventPlace(project)}</div>
+                            <EventPlaceMap project={project.eventPlace}></EventPlaceMap>
                             <div className="detail-content-kind">▷整理券配布：{numberedTickets(project)}</div>
                             <div className="detail-content-kind">▷SNSなど<br/>
                                 <div className="sns-imgs">

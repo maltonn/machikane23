@@ -6,7 +6,14 @@ import Bubble from "../../components/Bubble";
 import "../../css/Common.css"
 import "../../css/Theme.css"
 import "../../css/About.css"
+import { useEffect } from "react";
 export default function Theme() {
+    useEffect(()=>{
+      window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+      });
+    },[])
     return(
         <div className="main">
             <Helmet>
@@ -26,7 +33,7 @@ export default function Theme() {
                 </div>
               </div>
             </div>
-            <Bubble></Bubble>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }

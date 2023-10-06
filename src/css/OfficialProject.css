@@ -1,0 +1,399 @@
+.officialProject{
+  position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0px;
+    z-index: 1000;
+}
+.officialProject .sky{
+  background: linear-gradient(#15c1f6 0%,#b5e5f4 80%, #fff 100%)
+}
+.officialProject-link{
+  text-decoration: none;
+}
+.offiProCard {
+    display: flexbox;
+    width: 46vw;
+    position: relative;
+    margin: 3em 1vw 1em 1vw;
+    background: #fff6e6;
+    box-shadow: 0 2px 3px rgba(0,0,0,.22);
+    padding: 22px 8px 22px 8px;
+    background-color: #fff6e6;
+    color: #ee8992;
+    font-weight: bold;
+  }
+  .offiProCard-title {
+    background: #fff6e6;
+    font-size: 1.2em;
+    padding: 7px 0 0 16px;
+    margin: -16px -8px 16px -8px;
+    color: #ee8992;
+    font-weight:bold;
+  }
+  .offiProCard:after {
+    position: absolute;
+    content: "";
+    top: 25px;
+    width: 30%;
+    height: 35px;
+    opacity: 0.3;
+    margin: -35px auto 10px 35%;
+    background: #db7093;
+    transform: rotate(-2deg);
+    left: 10px;
+    right: 10px;
+  }
+  .offiProCard p {
+    margin: 0;
+    padding: 0;
+  }
+  .officialProAll{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    color: #233192;
+    width:100%;
+  }
+  .inforAll{
+    display: flex;
+  }
+  .information{
+    margin-left: 2vw;
+    background-image:
+    linear-gradient(90deg, rgba(237, 119, 128, 0) 0%, rgba(237, 119, 128, 0) 50%, #fff6e6 0%, #fff6e6 100%), linear-gradient(180deg, rgba(237, 119, 128, 0) 0%, rgba(237, 119, 128, 0) 95%, #ed7780 100%);
+    background-size: 8px 100%,100% 2em;
+    line-height: 2;
+    width: 100%;
+  }
+  .officialIcon{
+    width: 15vw;
+    height: 15vw;
+  }
+  .officialProDeatil{
+    width:100%;
+    background-image: url("../imgs/inthesea/surface1.png"), linear-gradient( #fff 0%, #01579E 6%, #2E3192 100%);
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain;
+    color:#fff;
+  }
+  .detailCard{
+    width: 92%;
+    margin:0 auto;
+    padding-top: 100px;
+  }
+  .detail{
+    padding: 0.7em;
+    margin-bottom: 2em;
+    border: solid 2px #000000;
+    border-radius: 7px;
+    background: #fefdfc;
+    /* color: #fcb1b1; */
+    /* margin: 2em 0; */
+    /* font-weight: bold; */
+    color: #000;    
+  }
+
+  .grade{
+    display: flex;
+  }
+  /*パンケーキの☆の部分*/
+.rate {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 16px;
+    font-size: 16px;
+}
+.rate:before, .rate:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '★★★★★';
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+}
+.rate:before {
+    color: #ddd;
+}
+.rate:after {
+    color: #ffa500;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.rate5 :after {
+  width: 80px;
+}
+.wrap {
+    width: 80px;
+    margin: 0 auto;
+}
+
+.pancakeInfor ul{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 0;
+  /* position: relative; */
+  /* left: 15vw; */
+  /* top: -5vh; */
+}
+.pancakeInfor li{
+  list-style: none;
+  display: flexbox;
+}
+.pancakePlace,.pancakeGenre,.pancakeMoney,.pancakeTime{
+  display: flexbox;
+  margin: 0 1vw;
+}
+.pancakeDetail{
+  display: flex;
+}
+
+.iconAround{
+  width: 25vw;
+  margin-right: 2vw;
+}
+.iconAround img{
+  width: 100%;
+}
+.pancakeBoxs{
+  display: flex;
+}
+.detailIcon{
+  width: 50%;
+}
+
+.pancakeBoxAround{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.pancakeBox{
+  width: 33vw;
+  margin: 15px 1vw;
+}
+.pancakeBox strong{
+  font-weight: bold;
+}
+
+.machikaneForestDetail{
+  background-color: rgb(229, 245, 212);
+}
+.forestSimpleInfor{
+  display: flex;
+  flex-wrap: nowrap;
+  padding-left: 0;
+}
+.forestSimpleInfor img{
+  width: 10vw;
+}
+.forestSimpleInfor li{
+  list-style: none;
+  width: 100%;
+  font-weight: bold;
+}
+.pointAll{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.pointBox{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.pointBox p{
+  margin: 0;
+}
+.pointBox span{
+  font-weight: bold;
+}
+.pointBox img{
+  width: 100%;
+}
+.pointBox .pointTitle{
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.pointBox .pointContent{
+  /* padding: 1vh 10vw; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.officialProject .O-1card, .officialProject .nepleageCard{
+  margin-bottom: 30vh;
+}
+
+.nepleageQuestion{
+  border: double 4px rgb(184, 6, 6);
+  background-color: rgb(249, 215, 27);
+  border-radius: 1vw;
+  padding-left: 1vw;
+  margin-bottom: 2vh;
+}
+.nepleageQuestion p{
+  font-size: 3vw;
+}
+.nepleageBar img {
+  width: 75%;
+  margin: 0 12.5%;
+}
+.nepleageInfor{
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+  justify-content: space-around;
+  border: 3px solid #000;
+  width: 80%;
+  margin: 0 10%;
+  padding: 3vh 0;
+  background-color: #dad8d8;
+}
+.nepleageInfor li{
+  list-style: none;
+  border: #000 solid 3px;
+  padding: 2vh 1vw;
+  width: 100%;
+  margin: 0 2vw;
+  background-color: #233192;
+  color: #fff;
+}
+
+.O-1Detail{
+  background-color: rgb(229 241 249 / 78%);
+}
+.O-1DetailIcon{
+  text-align: center; 
+}
+.O-1DetailIcon img {
+  width: 65%;
+}
+.O-1Preparetion{
+  border: double 2px #233192;
+  border-radius: 3em;
+  width: 50%;
+  padding: 2vw;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width:490px){
+  .officialProAll{
+    align-items: center;
+  }
+
+  .offiProCard{
+    width: 75vw;
+  }
+  .inforAll{
+    display: block;
+  }
+  .IconBox{
+    text-align: center;
+  }
+  .officialIcon{
+    width:87%;
+    height: auto;
+    margin: 0 1em;
+  }
+  .officialProject .O-1card{
+    margin-bottom: 15vh;
+  }
+  .officialProject .nepleageCard{
+    margin-bottom: 0;
+  }
+  .inforAll{
+    display: block;
+  }
+
+  .pancakeInfor ul{
+    display: block;
+    padding-left: 0;
+  }
+  .IconAround{
+    width: 0 10vw;
+  }
+  .IconBox{
+    margin: 0 10vw;
+  }
+  .pancakeBox{
+    width: 100%;
+  }
+  .pancakeDetail{
+    display: block;
+  }
+  .pancakeBoxAround{
+    display: block;
+  }
+
+  .forestSimpleInfor{
+    display: block;
+  }
+  .forestPlace img, .forestMoney img, .forestTicket img, .forestTime img{
+    width: 40vw;
+  }
+
+  .pointAll{
+    display: block;
+  }
+  .pointBox{
+    width: 100%;
+  }
+  .pointContent{
+    line-height: 25px;
+  }
+  .nepleageInfor{
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+  }
+  .nepleageInfor li{
+    font-size: 0.01em;
+    text-align: center;
+    margin: 2vw;
+    border: #000 solid 1px;
+  }
+}
+
+@media screen and (min-width:490px) and (max-width: 1090px){
+  .pageTitle{
+    margin-top: 0;
+
+  }
+  .officialProject .O-1card ,.officialProject .nepleageCard{
+    margin-bottom: 15vw;
+  }
+  .IconBox{
+    text-align: center;
+  }
+  .inforAll{
+    display: block;
+  }
+  .information{
+    margin-left: 0;
+  }
+  .iconAround{
+   margin: 0 auto; 
+  }
+  .pancakeBoxAround{
+    justify-content: space-around;
+  }
+  .pancakeBox{
+    width: 35vw;
+    margin: 0 0 1vh 0;
+  }
+}

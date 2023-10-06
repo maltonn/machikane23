@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { Link } from "react-router-dom"
 
 import "../css/Header.css"
@@ -8,26 +8,26 @@ import { useGlobalContext } from "../contexts/globalContext";
 export default function Header() {
     const [isHamburgerOpen, setIsHamburgerOpen] = useState(false)
 
-    function onHamburgerClick() { //ハンバーガーがクリックされた時の処理
+    const onHamburgerClick=()=>{ //ハンバーガーがクリックされた時の処理
         setIsHamburgerOpen(prev => !prev)
     }
     const [isMenuOpenA, setIsMenuOpenA] = useState(false)
-    function menuOpenA() {
+    const menuOpenA=()=> {
         setIsMenuOpenA(prev => !prev)
     }
     const [isMenuOpenB, setIsMenuOpenB] = useState(false)
-    function menuOpenB() {
+    const menuOpenB=()=> {
         setIsMenuOpenB(prev => !prev)
     }
     const [isMenuOpenC, setIsMenuOpenC] = useState(false)
-    function menuOpenC() {
+    const menuOpenC=()=> {
         setIsMenuOpenC(prev => !prev)
     }
     const [isMenuOpenD, setIsMenuOpenD] = useState(false)
-    function menuOpenD() {
+    const menuOpenD=()=> {
         setIsMenuOpenD(prev => !prev)
     }
-    function PageChange(){
+    const PageChange=()=>{
         setIsHamburgerOpen(false)
         setIsMenuOpenA(false)
         setIsMenuOpenB(false)
@@ -38,10 +38,6 @@ export default function Header() {
             behavior: "smooth",
         });
     }
-    
-    useEffect(() =>{
-
-    })
 
     const { lang } = useGlobalContext()
     const { setLang } =useGlobalContext()
@@ -78,11 +74,12 @@ export default function Header() {
                             <ul className={`menu-child ${lang==="en" && "en-longTitle"} ${isMenuOpenB?"is-opend":"is-closed"}`}>
                                 <li><Link to="./sections" onClick={PageChange}>{lang==="en"?"Project Category":"企画区分について"}</Link></li>
                                 <li><Link to="./project-search" onClick={PageChange}>{lang==="en"?"Project Search":"企画検索"}</Link></li>
+                                <li><Link to="./mogiten" onClick={PageChange}>{lang==="en"?"Food Salls List":"模擬店企画一覧"}</Link></li>
                                 <li><Link to="./timetable" onClick={PageChange}>{lang==="en"?"Stage Performance Schedule":"ステージタイムテーブル"}</Link></li>
-                                <li><Link to="./ralley" onClick={PageChange}>{lang==="en"?"Rally Projects":"ラリー企画一覧"}</Link></li>
-                                <li><Link to="./official-project" onClick={PageChange}>{lang==="en"?"Projects by Festival Committee":"実行委員会企画"}</Link></li>
-                                <li><Link to="./talent-project" onClick={PageChange}>{lang==="en"?"Live":"お笑いライブ"}</Link></li>
-                                <li><Link to="./lab-open" onClick={PageChange}>{lang==="en"?"Introduce Our Lab":"研究室公開"}</Link></li>
+                                <li><Link to="./ralley" onClick={PageChange}>{lang==="en"?"Rally Project":"ラリー企画一覧"}</Link></li>
+                                <li><Link to="./official-project" onClick={PageChange}>{lang==="en"?"Official Projects":"実行委員会企画"}</Link></li>
+                                <li><Link to="./talent-project" onClick={PageChange}>{lang==="en"?"Comedy LIVE Show":"お笑いライブ"}</Link></li>
+                                <li><Link to="./lab-open" onClick={PageChange}>{lang==="en"?"Openlab":"研究室公開"}</Link></li>
                             </ul>
                         </li>
                         <li className="menu-parent"><span className={`menu-title ${isMenuOpenC?"is-opend":"is-closed"}`} onClick={menuOpenC}>{lang==="en"?"To the visitors":"ご来場の方へ"}</span>

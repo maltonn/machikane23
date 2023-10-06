@@ -34,6 +34,15 @@ body{
     margin: 0 auto;
     text-decoration: none;
   }
+  .access-subtitles{
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    background-color: rgba(255,255,255,0.85);
+    width: 10rem;
+    border-radius: 0 50px 50px 0px;
+    margin-bottom: 15px;
+    color: #233192;
+  }
   .access-content{
     font-size: 1.6rem;
     margin: 2rem auto 80px;
@@ -51,8 +60,15 @@ body{
   .access-inquiry{
     font-size: 1.2rem;
   }
-  .access-center{
-    margin: 15px auto;
+  .access-linkButton{
+    background: #fff;
+    width: 9rem;
+    justify-content: center;
+    display: flex;
+    margin: 5px auto;
+  }
+  .access-linkButton a{
+    font-size: 1rem;
   }
   .access-guide{
     width:700px;

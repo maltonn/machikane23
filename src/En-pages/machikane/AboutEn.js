@@ -1,18 +1,38 @@
 import { Helmet } from "react-helmet";
 import "../../css/Common.css"
-import {Link} from "react-router-dom";
+/*import {Link} from "react-router-dom";*/
+import "../../css/About.css"
+import PageTitles from "../../components/PageTitles";
+import Bubble from "../../components/Bubble";
+import { useEffect } from "react";
 
 export default function AboutEn() {
+    useEffect(()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+      },[])
     return(
         <div className="main">
             <Helmet>
-            <title>About Machikanesai|Machikane2023</title>
+            <title>What is Machikane Festival?|2023 Machikane Festival</title>
             </Helmet>
-            <div className="preparation">
-                <p>Coming soon! Now preparing.</p>
-                <span>Current page：About Machikanesai</span><br></br>
-                <Link to="/" >Back to the TOP</Link>
-            </div>
+            <div className="about-sky">
+            <PageTitles titles="What is Machikane Festival?" kame={true}></PageTitles>
+            <div className="about-mainpage"> 
+                <p> ”Machikane Festival” is the festival we hold every November. 
+                    This time will be our 64th, since its former “Sports & Culture Festival” turned into “Machikane Festival” in 1960. 
+                    The name of the festival was elected from public submission in 1963.
+                </p>
+                <p>
+                Over 170 projects will be held this year and it is the biggest number after the pandemic. 
+                Also, food stalls and stage performances will come back to the main street, so you can feel more of Osaka University students’ passion. 
+                 Please come and enjoy our updated Machikane Festival!
+                </p>
+             </div>
+          </div>
+          <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }

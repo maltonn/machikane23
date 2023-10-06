@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 import lab_icon from "../../imgs/lab_icon.svg";
 import lab_json from "../../data/openLab.json";
 import PageTitles from "../../components/PageTitles";
-
+import Bubble from "../../components/Bubble";
 const shuffleArray = (array) => {
     return array.slice().sort(() => Math.random() - Math.random())
 }
@@ -17,11 +17,19 @@ export default function LabOpen() {
 
     //フォームのデータが入る変数
     const [inputValue, setInputValue] = useState("")
+    const inputValueRef = useRef(inputValue)
+    useEffect(() => {//inputValueが変わったらinputValueRefも変わる
+        inputValueRef.current = inputValue
+    }, [inputValue])
 
     const [loadingNum, setLoadingNum] = useState(10)
 
     
     useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
         let lst = Object.values(lab_json)
         lst=lst.filter((project)=>project!=null)
         projectLst.current = lst 
@@ -89,11 +97,13 @@ export default function LabOpen() {
     }
 
     const onClickClearBtn = () => {
-        document.getElementById("serch_word").value=""
         setInputValue("")
+        setTimeout(() => {
+            onClickSearchBtn()
+        },10)
     }
 
-    function PageChange(){
+    const PageChange=()=>{
         window.scrollTo({
             top: 0,
             behavior: "smooth",
@@ -196,6 +206,7 @@ export default function LabOpen() {
                 <div className="bottom">
                 </div>
             </div>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }

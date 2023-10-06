@@ -19,17 +19,46 @@ import nakamura from "../../imgs/sponsor/nakamura.jpg"
 import heiwaonsen from "../../imgs/sponsor/heiwaonsen.png"
 import homecomingday from "../../imgs/sponsor/home-coming-day.jpg"
 import rokkosai from "../../imgs/sponsor/rokkosai.jpeg"
-import PageTitles from "../../components/PageTitles";
+import { useEffect } from "react";
+import cloud from "../../imgs/circlecloud3.png"
+import machikame1 from "../../imgs/animal/machikame1.png"
+import { useGlobalContext } from "../../contexts/globalContext";
 
-export default function Sponsor() {
+export default function SponsorEn({titles,kame}) {
+    const { lang } = useGlobalContext()
+    useEffect(() => {
+        const $ = el => document.querySelector(el);
+        var titleLength = document.getElementById('pageTitles').textContent.length;
+        if(lang==='en'){
+            titleLength=titleLength/2.1;
+        }
+        $(':root').style.setProperty('--base-pageLength', `${titleLength}rem`);
+        if(kame!==true){
+            document.getElementById('machikameNone').style.display='none';
+        }
+      }, [titles,kame,lang])
+    useEffect(()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    },[])
     return(
         <div className="main">
             <Helmet>
-            <title>Our sponsors|Machikane2023</title>
+            <title>Our sponsors|2023 Machikane Festival</title>
             </Helmet>
             <div className="sponsor-sky">
-                <PageTitles titles="Our sponsors"></PageTitles>
-                <p>We would like to express our sincere appreciation toward all the sponsors for the 2023 Machikane Festival.</p>
+                <div className="top-component-1">
+                    <div className="page-titles" id="pageTitles">Our sponsors</div>
+                    <div className="machikame-default" id="machikameNone">
+                        <img src={machikame1} alt="まちかめ1"></img>
+                    </div>
+                </div>
+                <div class="thanks">We would like to express our sincere appreciation toward all the sponsors for the 2023 Machikane Festival.</div>
+                <div className="cloud">
+                    <img src={cloud} alt="丸雲"></img>
+                </div>
                 <div className="companies goods">
                     <div className="sponsor-miniTitles-En1">Goods Sponsoring<br className="smartphone"></br>&nbsp;(without honorifics and order)</div>
                     <div className="sponsor-imgs">
