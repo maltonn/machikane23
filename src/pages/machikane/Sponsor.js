@@ -76,6 +76,19 @@ export default function Sponsor({titles,kame}) {
                         <a href="https://www.osaka-toka.co.jp/" target="_blank" rel="noreferrer"><img src={osakatoka} alt="osaka-toka"></img></a>
                         <a href="https://bandainamco-am.co.jp/others/tondemi/" target="_blank" rel="noreferrer"><img src={tondemi} alt="tondemi"></img></a>
                         <a href="https://bandainamco-am.co.jp/others/vspark/" target="_blank" rel="noreferrer"><img src={VSPARK} alt="VSPARK"></img></a>
+                        <div>
+                            <a href="http://sone.ps-vega.com" target="_blank" rel="noreferrer">VEGA曽根ボウル</a>
+                            <br></br>
+                            <a href="http://atoa-kobe.jp" target="_blank" rel="noreferrer">株式会社アクアメント　AQUARIUM×ART átoa</a>
+                            <br></br>
+                            <a href="https://www.award-style.com" target="_blank" rel="noreferrer">株式会社Award Style</a>
+                            <br></br>
+                            <a href="https://www.yojiya.co.jp/" target="_blank" rel="noreferrer">よーじやグループ</a>
+                            <br></br>
+                            <span>リーガロイヤルホテル</span>
+                            <br></br>
+                            <span>株式会社マンナンライフ</span>
+                        </div>
                     </div>
                 </div>
                 <div className="companies advertise">
@@ -83,6 +96,7 @@ export default function Sponsor({titles,kame}) {
                     <div className="sponsor-imgs">
                         <a href="https://heiwaonsen.com/" target="_blank" rel="noreferrer"><img src={heiwaonsen} alt="heiwaonsen"></img></a>
                         <a href="https://amzn.asia/d/5zzuKa0" target="_blank" rel="noreferrer"><img src={nakamura} alt="nakamura"></img></a>
+                        <a href="https://www.seito-jp.com/minimini/ishibashi" target="_blank" rel="noreferrer">株式会社成都賃貸ホームズミニミニFC石橋店</a>
                     </div>
                 </div>
             </div>
