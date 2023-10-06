@@ -2,8 +2,7 @@ import { Helmet } from "react-helmet";
 import {Link} from "react-router-dom";
 import "../../../css/Common.css"
 import { useEffect } from "react";
-import Bubble from "../../../components/Bubble";
-export default function Pamphlet() {
+export default function Timetable() {
     useEffect(()=>{
         window.scrollTo({
             top: 0,
@@ -17,10 +16,9 @@ export default function Pamphlet() {
             </Helmet>
             <div className="preparation">
                 <p>ただいまページ作成中です。しばらくお待ちください。</p>
-                <span>現在のページ：タイムテーブル</span><br></br>
+                <span>現在のページ：ステージタイムテーブル</span><br></br>
                 <Link to="/" >トップページへ戻る</Link>
             </div>
-            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }
