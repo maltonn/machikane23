@@ -11,7 +11,6 @@ import pendetail from "../../imgs/goods/pen.png"
 // import pen1 from "../../imgs/goods/pen1.jpg"
 import tote from "../../imgs/goods/totebag.png"
 import allgoods from "../../imgs/goods/allgoods.png"
-import PageTitles from "../../components/PageTitles";
 import Bubble from "../../components/Bubble";
 import { useEffect } from "react";
 import cloud from "../../imgs/circlecloud3.png"
