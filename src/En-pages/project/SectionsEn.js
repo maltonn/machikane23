@@ -38,7 +38,7 @@ export default function SectionsEn() {
                         <div className="notes-naiyou">
                             <div className="notes-miniTitle">Outdoor Projects</div>
                             <div className="notes-miniContent">
-                                <p>　Street performances and exhibitionswill be held outside the buildings. You can find them around the Student Service Center(Kasane), Student Union and Cybermedia Center or in front of CELAS building C and graduate school of language. Walk around the campus and enjoy the show!</p>
+                                <p>　Street performances and exhibitions will be held outside the buildings. You can find them around the Student Union and Cyber Media Center or in front of the CELAS building C, Graduate School of Language and Graduate School of Literature. Walk around the campus and enjoy the show!</p>
                             </div>
                         </div>
                         <div className="notes-naiyou">
