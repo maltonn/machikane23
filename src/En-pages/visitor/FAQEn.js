@@ -4,7 +4,15 @@ import "../../css/FAQ.css"
 import Bubble from "../../components/Bubble";
 import PageTitles from "../../components/PageTitles";
 import map from "../../imgs/map/eat-space.jpg"
+import { useEffect } from "react";
+
 export default function FAQEn() {
+    useEffect(()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+      },[])
     return(
         <div className="main">
             <Helmet>
