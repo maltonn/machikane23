@@ -32,6 +32,7 @@ background: linear-gradient(
     margin:auto;
     border-collapse: collapse;
     font-size:20px;
+    background-color: #fff;
 
 }
 .FAQ-table tr{
