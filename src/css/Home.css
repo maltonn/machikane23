@@ -306,7 +306,7 @@ body{
   background: #fff;
   border: double 3px #2E3192;
   width: 15rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   justify-content: center;
   border-radius: 5px;
 }
@@ -385,6 +385,10 @@ loader 雲のアニメション
   100% {
     transform: translateX(170vw);
   }
+}
+.top-sponsor a{
+  margin:0 auto;
+  width:40%;
 }
 
 /*======================
@@ -769,6 +773,9 @@ schedule,stage,lab
   スマホ用
 ======================*/
   @media  (max-width: 490px){
+    .top-sponsor a{
+      width:80%;
+    }
     .section-schedule{
       font-size: 1rem;
     }
@@ -941,6 +948,9 @@ schedule,stage,lab
   タブレット用
 ======================*/
 @media (min-width: 490px) and (max-width: 990px){
+  .top-sponsor a{
+    width:80%;
+  }
   #loader{
     width: 100%;
     height: 120vh;
