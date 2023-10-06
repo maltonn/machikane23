@@ -15,6 +15,8 @@ import cowsoap from "../../imgs/sponsor/cow-soap.png"
 import osakatoka from "../../imgs/sponsor/osakatoka.png"
 import tondemi from "../../imgs/sponsor/tondemi.jpg"
 import VSPARK from "../../imgs/sponsor/VSPARK.jpg"
+import nakamura from "../../imgs/sponsor/nakamura.jpg"
+import heiwaonsen from "../../imgs/sponsor/heiwaonsen.png"
 import homecomingday from "../../imgs/sponsor/home-coming-day.jpg"
 import rokkosai from "../../imgs/sponsor/rokkosai.jpeg"
 import PageTitles from "../../components/PageTitles";
@@ -48,10 +50,8 @@ export default function Sponsor() {
                 <div className="companies advertise">
                     <div className="sponsor-miniTitles-En2">Ad Sponsoring<br className="smartphone"></br>&nbsp;(without honorifics and order)</div>
                     <div className="sponsor-imgs">
-                        <a href="https://ou2023hcd.alumni.osaka-u.ac.jp/"><img src={homecomingday}></img></a>
-                        <a href="https://ou2023hcd.alumni.osaka-u.ac.jp/"><img src={homecomingday}></img></a>
-                        <a href="https://ou2023hcd.alumni.osaka-u.ac.jp/"><img src={homecomingday}></img></a>
-                        <a href="https://ou2023hcd.alumni.osaka-u.ac.jp/"><img src={homecomingday}></img></a>
+                        <a href="https://heiwaonsen.com/"><img src={heiwaonsen} alt="heiwaonsen"></img></a>
+                        <a href="https://amzn.asia/d/5zzuKa0"><img src={nakamura} alt="nakamura"></img></a>
                     </div>
                 </div>
             </div>
