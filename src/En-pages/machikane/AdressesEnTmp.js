@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import {Link} from "react-router-dom";
 import Bubble from "../../components/Bubble";
 import "../../css/Common.css"
+import { useEffect } from "react";
 export default function AdressesEnTmp() {
     useEffect(()=>{
         window.scrollTo({
