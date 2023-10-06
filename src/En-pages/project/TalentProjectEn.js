@@ -36,7 +36,7 @@ export default function TalentProjectEn(){
                 <div className="talentProjectCaution">
                     <h2 className="caution">Notice</h2>
                     <ul className="cautionAll">
-                        <li className="caution1">The show requires an advance reservation. Please make a <strong>reservation</strong> from the link below.
+                        <li className="caution1">The show requires an advance reservation. In the case of a great number of applicants, please note that we will chose by a lottery. Please make sure that the reservation acceptance period is Oct. 1st~13th 23:59. <br></br>Please make a <strong>reservation</strong> from the link below.
                         </li>
                     </ul>
                         <div className="reservationUrl">
