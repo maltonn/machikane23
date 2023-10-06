@@ -5,6 +5,7 @@ import "../../css/About.css"
 import "../../css/Common.css"
 import { Helmet } from "react-helmet";
 import PageTitles from "../../components/PageTitles";
+import Bubble from "../../components/Bubble";
 
 const shuffleArray = (array) => {
     return array.slice().sort(() => Math.random() - Math.random())
@@ -442,6 +443,7 @@ export default function ProjectEn() {
                 <div className="bottom">
                 </div>
             </div>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }

@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 import lab_icon from "../../imgs/lab_icon.svg";
 import lab_json from "../../data/openLab.json";
 import PageTitles from "../../components/PageTitles";
-
+import Bubble from "../../components/Bubble";
 const shuffleArray = (array) => {
     return array.slice().sort(() => Math.random() - Math.random())
 }
@@ -206,6 +206,7 @@ export default function LabOpen() {
                 <div className="bottom">
                 </div>
             </div>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }
