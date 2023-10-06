@@ -57,9 +57,10 @@ export default function FAQ() {
                 </div>
                 <div className="FAQ-card">
                     <div className="FAQ-card-Q">食事席はどこですか？</div>
-                    <div className="FAQ-card-A">マップをご参照ください。
-                    <img  src={map} alt="map"className="FAQ-map"></img></div>
-                </div>
+                    <div className="FAQ-card-A">マップをご参照ください。</div>
+                    <div className="FAQmap-parent">
+                        <img  src={map} alt="map"className="FAQ-map"></img></div>
+                    </div>
                 <div className="FAQ-card">
                     <div className="FAQ-card-Q">自販機はどこにありますか？</div>
                     <div className="FAQ-card-A"> 全学教育共通A･B棟間ピロティ、図書館下食堂前、豊中総合学館横、学生交流棟横(かさね出口付近)、学生会館横、サイバーメディアセンター(CMC)横などにございます。
@@ -150,4 +151,5 @@ export default function FAQ() {
                 <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
-}
+    }
+    

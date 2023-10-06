@@ -54,7 +54,8 @@ export default function FAQEn() {
                 <div className="FAQEn-card-Q">Where can we eat something we bought?</div>
                 <div className="FAQEn-card-A">Please use the designated eating space.</div>
                 <div className="FAQEn-card-Q">Where is the eating space?</div>
-                <div className="FAQEn-card-A">Please refer to the Map.
+                <div className="FAQEn-card-A">Please refer to the Map.</div>
+                <div className="FAQmap-parent">
                 <img  src={map} alt="map"className="FAQ-map"></img></div>
                 <div className="FAQEn-card-Q"> Where are the vending machines?</div>
                 <div className="FAQEn-card-A"> Please refer to the Map.</div>

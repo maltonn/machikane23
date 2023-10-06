@@ -53,6 +53,9 @@ background: linear-gradient(
 .FAQblank{
     padding: 0 1rem;
 }
+.FAQmap-parent{
+    text-align: center;
+}
 /*
 .FAQ-table{
     margin:2%;
