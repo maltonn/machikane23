@@ -19,6 +19,10 @@ const Timeline = ({ dayList }) => {
       </>
     );
   };
+  const STAGES = [
+    { id: 'stage_sou', name: 'ステージ奏' },
+    { id: 'stage_chuu', name: 'ステージ宙' },
+  ];
 
   return (
     <div className="timeslotsContainer">
@@ -44,7 +48,7 @@ const Timeline = ({ dayList }) => {
               </div>
             ))}
           </div>
-          <div className="eventContainer">
+          {/* <div className="eventContainer">
             {dayList.map((dayItem, index) => {
               return (
                 <div
@@ -60,6 +64,14 @@ const Timeline = ({ dayList }) => {
                 </div>
               );
             })}
+          </div> */}
+          <div className="eventContainer">
+            {STAGES.map((stage) => (
+              <div key={stage.id} className="calendarColumn">
+                <div className="stageName">{stage.name}</div>
+                {/* ステージに対応するイベントを表示するロジックを追加 */}
+              </div>
+            ))}
           </div>
         </div>
         <div></div>
