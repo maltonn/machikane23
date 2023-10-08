@@ -17,11 +17,12 @@ const Timeline = ({ stageDate }) => {
     { id: 'stage_kanade', name: 'ステージ奏' },
     { id: 'stage_sora', name: 'ステージ宙' },
   ];
-  function calculateTopPosition(eventStartTime, stageDate){
-    const hourHeight = 60;
-    const tableStart = new Date('2023/'+stageDate+'10:00')
 
-    const timeDiff = eventStartTime - tableStart;
+  let curIndex=1,preIndex;
+  function calculateTopPosition(eventStartTime,preEventEndTime){
+    const hourHeight = 60;
+
+    const timeDiff = eventStartTime - preEventEndTime;
     const topPosition = (timeDiff/3600000) * hourHeight;
     
     return topPosition;
@@ -42,7 +43,8 @@ const Timeline = ({ stageDate }) => {
         let lst = Object.values(res)
         lst = lst.filter((project) => project != null)
         lst = lst.filter((project) => project.section === 'stage')
-        lst.sort((a, b) => new Date('2023/'+a.startAt) - new Date('2023/'+b.startAt));
+        lst.sort((a, b) => new Date('2023/'+a.stageDate+a.startAt) - new Date('2023/'+b.stageDate+b.startAt));
+        lst.sort((a,b) => a.eventPlace - b.eventPlace);
         projectLst.current = lst
         setDisplayLst(lst)
     })
@@ -79,12 +81,19 @@ const Timeline = ({ stageDate }) => {
               <div key={stage.id} className="calendarColumn">
                 <div className="stageName">{stage.name}</div>
                 {/* ステージに対応するイベントを表示するロジックを追加 */}
-                {displayLst.map((event) => {
+                {displayLst.map((event,eventIndex) => {
                     // イベントの開始日時と終了日時をもとに描画
                     const eventStartTime = new Date('2023/'+event.stageDate+'/'+event.startAt);
                     const eventEndTime = new Date('2023/'+event.stageDate+'/'+event.endAt);
+                    let preIndex = curIndex;
+                    let preEventEndTime = new Date('2023/'+event.stageDate+'/10:00');
+                    if(preIndex > 0){
+                      preEventEndTime = new Date('2023/'+event.stageDate+'/'+displayLst[preIndex].endAt);
+                    }
+
                     if(event.stageDate==stageDate){
                       if(event.eventPlace=='奏' && stageIndex==0){
+                        curIndex=eventIndex;
                           // イベントを表示
                         return (
                           <Link className="timetableLink" to={"/project-search/" +event.id} onClick={PageChange}>
@@ -92,7 +101,7 @@ const Timeline = ({ stageDate }) => {
                               key={event.id}
                               className="timetableEvent"
                               style={{
-                                top: calculateTopPosition(eventStartTime,event.stageDate), // 適切な位置に配置
+                                marginTop: calculateTopPosition(eventStartTime,preEventEndTime), // 適切な位置に配置
                                 height: calculateHeight(eventStartTime, eventEndTime,), // 適切な高さに設定
                               }}
                             >
@@ -101,18 +110,21 @@ const Timeline = ({ stageDate }) => {
                           </Link>
                         );
                       } else if(event.eventPlace=='宙'&&stageIndex==1) {
+                        curIndex=eventIndex;
                           // イベントを表示
                         return (
-                          <div
-                            key={event.id}
-                            className="timetableEvent"
-                            style={{
-                              margin: calculateTopPosition(eventStartTime,event.stageDate), // 適切な位置に配置
-                              height: calculateHeight(eventStartTime, eventEndTime), // 適切な高さに設定
-                            }}
-                          >
-                            {event.groupName}
-                          </div>
+                          <Link className="timetableLink" to={"/project-search/" +event.id} onClick={PageChange}>
+                            <div
+                              key={event.id}
+                              className="timetableEvent"
+                              style={{
+                                marginTop: calculateTopPosition(eventStartTime,preEventEndTime), // 適切な位置に配置
+                                height: calculateHeight(eventStartTime, eventEndTime), // 適切な高さに設定
+                              }}
+                            >
+                              {event.groupName}
+                            </div>
+                          </Link>
                         );
                       } 
                     }
