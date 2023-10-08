@@ -62,6 +62,7 @@ const Timeline = ({ dayList }) => {
             })}
           </div>
         </div>
+        <div></div>
       </div>
     </div>
   );
