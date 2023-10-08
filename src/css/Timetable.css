@@ -65,7 +65,7 @@
 }
 .horizontalHeight::after {
   content: "";
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid #233192;
   position: absolute;
   width: 100%;
   margin-top: 1px;
@@ -74,7 +74,7 @@
 }
 
 .timesolotsBorderRight {
-  border-right: 1px solid #e6e6e6;
+  border-right: 1px solid #233192;
   position: relative;
   top: 2px;
 }
@@ -84,13 +84,13 @@
   grid-template-columns: repeat(2, 1fr);
   /* grid-template-rows: repeat(36, 1fr); */
   width: 100%;
-  border-left: 1px solid #e6e6e6;
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
+  border-left: 1px solid #233192;
+  border-top: 1px solid #233192;
+  border-bottom: 1px solid #233192;
 }
 
 .calendarColumn {
-  border-right: 1px solid #e6e6e6;
+  border-right: 1px solid #233192;
   width: 45vw;
   z-index: 1;
   position: relative;
@@ -121,4 +121,6 @@
   font-size: 12px;
   min-height: 10px;
 }
-  
+.tiemtableEvent{
+  text-align: center;
+}
