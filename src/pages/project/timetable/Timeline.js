@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { TIME_LIST, HOUR_LIST } from "./index.js";
 
+
 const Timeline = ({ dayList }) => {
+  const projectLst = useRef([]) 
+  const [displayLst, setDisplayLst] = useState([]) 
+
   const EmptyCell = (date) => {
     return (
       <>
@@ -20,9 +24,21 @@ const Timeline = ({ dayList }) => {
     );
   };
   const STAGES = [
-    { id: 'stage_sou', name: 'ステージ奏' },
-    { id: 'stage_chuu', name: 'ステージ宙' },
+    { id: 'stage_kanade', name: 'ステージ奏' },
+    { id: 'stage_sora', name: 'ステージ宙' },
   ];
+  useEffect(()=>{
+    fetch("https://app.tyuujitu-system.net/api/machikane23/website/pr.json").then((res) => {
+      return res.json()
+    }
+    ).then((res) => {
+        let lst = Object.values(res)
+        lst = lst.filter((project) => project != null)
+        lst = lst.filter((project) => project.section === 'stage')
+        projectLst.current = lst
+        setDisplayLst(lst)
+    })
+  })
 
   return (
     <div className="timeslotsContainer">
