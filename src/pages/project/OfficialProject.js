@@ -29,10 +29,10 @@ export default function OfficialProject() {
     return(
         <div className="officialProject">
             <Helmet>
-            <title>委員会企画|まちかね祭2023</title>
+            <title>実行委員企画|まちかね祭2023</title>
             </Helmet>
             <div className="sky">
-            <PageTitles titles="委員会企画" kame={true}></PageTitles>
+            <PageTitles titles="実行委員企画" kame={true}></PageTitles>
                 <div className="officialProAll">
                     <AnchorLink href="#pancake" className="officialProject-link">
                         <div className="offiProCard">
