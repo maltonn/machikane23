@@ -48,23 +48,7 @@ const Timeline = ({ dayList }) => {
               </div>
             ))}
           </div>
-          {/* <div className="eventContainer">
-            {dayList.map((dayItem, index) => {
-              return (
-                <div
-                  key={dayItem.date}
-                  style={{ gridColumn: index + 1 }}
-                  className="calendarColumn"
-                >
-                  <div className="date">
-                    {dayItem.date.split("-")[1]}-
-                    {dayItem.date.split("-")[2]}
-                  </div>
-                  {EmptyCell(dayItem.date)}
-                </div>
-              );
-            })}
-          </div> */}
+        
           <div className="eventContainer">
             {STAGES.map((stage) => (
               <div key={stage.id} className="calendarColumn">
