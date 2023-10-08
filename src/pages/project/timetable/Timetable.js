@@ -33,13 +33,13 @@ export default function Timetable() {
                         <Tab>11月5日</Tab>
                     </TabList>
                     <TabPanel>
-                        <WeeklyCalendar/>
+                        <WeeklyCalendar stageDate={'11/03'}/>
                     </TabPanel>
                     <TabPanel>
-                        <h1>Aboutです</h1>
+                        <WeeklyCalendar stageDate={'11/04'}/>
                     </TabPanel>
                     <TabPanel>
-                        <h1>Contactです</h1>
+                        <WeeklyCalendar stageDate={'11/05'}/>
                     </TabPanel>
                 </Tabs>
             </div>

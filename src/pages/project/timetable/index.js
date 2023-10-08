@@ -8,7 +8,6 @@ export const TIME_LIST = [
     { id: 16, time: "16:00" },
     { id: 17, time: "17:00" },
     { id: 18, time: "18:00" },
-    { id: 19, time: "19:00" },
   ];
   
   export const HOUR_LIST = [

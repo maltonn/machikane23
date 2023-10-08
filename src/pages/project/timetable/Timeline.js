@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { TIME_LIST, HOUR_LIST } from "./index.js";
 
 
-const Timeline = ({ dayList }) => {
+const Timeline = ({ stageDate }) => {
   const projectLst = useRef([]) 
   const [displayLst, setDisplayLst] = useState([]) 
 
@@ -27,11 +27,22 @@ const Timeline = ({ dayList }) => {
     { id: 'stage_kanade', name: 'ステージ奏' },
     { id: 'stage_sora', name: 'ステージ宙' },
   ];
-  function calculateTopPosition(){
+  function calculateTopPosition(eventStartTime, stageDate){
+    const hourHeight = 60;
+    const tableStart = new Date('2023/'+stageDate+'10:00')
 
+    const timeDiff = eventStartTime - tableStart;
+    const topPosition = (timeDiff/3600000) * hourHeight;
+    
+    return topPosition;
   }
-  function calculateHeight(){
+  function calculateHeight(eventStartTime, eventEndTime,stageDate){
+    const hourHeight = 60;
+    const timeDiff = eventEndTime - eventStartTime;
 
+    const height = (timeDiff/3600000) * hourHeight;
+
+    return height;
   }
   useEffect(()=>{
     fetch("https://app.tyuujitu-system.net/api/machikane23/website/pr.json").then((res) => {
@@ -41,7 +52,7 @@ const Timeline = ({ dayList }) => {
         let lst = Object.values(res)
         lst = lst.filter((project) => project != null)
         lst = lst.filter((project) => project.section === 'stage')
-        lst.sort((a, b) => a.eventPlace - b.eventPlace);
+        lst.sort((a, b) => new Date('2023/'+a.startAt) - new Date('2023/'+b.startAt));
         projectLst.current = lst
         setDisplayLst(lst)
     })
@@ -73,31 +84,46 @@ const Timeline = ({ dayList }) => {
           </div>
         
           <div className="eventContainer">
-            {STAGES.map((stage) => (
+            {STAGES.map((stage,stageIndex) => (
               <div key={stage.id} className="calendarColumn">
                 <div className="stageName">{stage.name}</div>
                 {/* ステージに対応するイベントを表示するロジックを追加 */}
                 {displayLst.map((event) => {
-                  console.log(event.groupName)
-                  if (event.eventPlace === stage.name) {
                     // イベントの開始日時と終了日時をもとに描画
-                    const eventStartTime = new Date(event.startAt);
-                    const eventEndTime = new Date(event.endAt);
-                      // イベントを表示
-                    return (
-                      <div
-                        key={event.id}
-                        className="event"
-                        style={{
-                          top: calculateTopPosition(eventStartTime), // 適切な位置に配置
-                          height: calculateHeight(eventStartTime, eventEndTime), // 適切な高さに設定
-                        }}
-                      >
-                        {event.groupName}
-                      </div>
-                    );
-                  }
-                  return null;
+                    const eventStartTime = new Date('2023/'+event.stageDate+'/'+event.startAt);
+                    const eventEndTime = new Date('2023/'+event.stageDate+'/'+event.endAt);
+                    if(event.stageDate==stageDate){
+                      if(event.eventPlace=='奏' && stageIndex==0){
+                          // イベントを表示
+                        return (
+                          <div
+                            key={event.id}
+                            className="timetableEvent"
+                            style={{
+                              top: calculateTopPosition(eventStartTime,stageDate), // 適切な位置に配置
+                              height: calculateHeight(eventStartTime, eventEndTime,stageDate), // 適切な高さに設定
+                            }}
+                          >
+                            {event.groupName}
+                          </div>
+                        );
+                      } else if(event.eventPlace=='宙'&&stageIndex==1) {
+                          // イベントを表示
+                        return (
+                          <div
+                            key={event.id}
+                            className="timetableEvent"
+                            style={{
+                              position : "relative",
+                              top: calculateTopPosition(eventStartTime), // 適切な位置に配置
+                              height: calculateHeight(eventStartTime, eventEndTime), // 適切な高さに設定
+                            }}
+                          >
+                            {event.groupName}
+                          </div>
+                        );
+                      } 
+                    }
                 })}
               </div>
             ))}

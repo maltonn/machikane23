@@ -2,7 +2,7 @@ import dayjs from "dayjs";
 import React from "react";
 import Timeline from "./Timeline.js";
 
-const WeeklyCalendar = () => {
+const WeeklyCalendar = ({ stageDate}) => {
   const weekStartDayOffset = 0;
   const _date = dayjs();
   const _day = _date.day();
@@ -17,7 +17,7 @@ const WeeklyCalendar = () => {
 
   return (
     <div className="calendarContainer">
-      <Timeline dayList={dayList} />
+      <Timeline stageDate={stageDate} />
     </div>
   );
 };
