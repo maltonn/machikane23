@@ -27,6 +27,12 @@ const Timeline = ({ dayList }) => {
     { id: 'stage_kanade', name: 'ステージ奏' },
     { id: 'stage_sora', name: 'ステージ宙' },
   ];
+  function calculateTopPosition(){
+
+  }
+  function calculateHeight(){
+
+  }
   useEffect(()=>{
     fetch("https://app.tyuujitu-system.net/api/machikane23/website/pr.json").then((res) => {
       return res.json()
@@ -35,6 +41,7 @@ const Timeline = ({ dayList }) => {
         let lst = Object.values(res)
         lst = lst.filter((project) => project != null)
         lst = lst.filter((project) => project.section === 'stage')
+        lst.sort((a, b) => a.eventPlace - b.eventPlace);
         projectLst.current = lst
         setDisplayLst(lst)
     })
@@ -70,6 +77,28 @@ const Timeline = ({ dayList }) => {
               <div key={stage.id} className="calendarColumn">
                 <div className="stageName">{stage.name}</div>
                 {/* ステージに対応するイベントを表示するロジックを追加 */}
+                {displayLst.map((event) => {
+                  console.log(event.groupName)
+                  if (event.eventPlace === stage.name) {
+                    // イベントの開始日時と終了日時をもとに描画
+                    const eventStartTime = new Date(event.startAt);
+                    const eventEndTime = new Date(event.endAt);
+                      // イベントを表示
+                    return (
+                      <div
+                        key={event.id}
+                        className="event"
+                        style={{
+                          top: calculateTopPosition(eventStartTime), // 適切な位置に配置
+                          height: calculateHeight(eventStartTime, eventEndTime), // 適切な高さに設定
+                        }}
+                      >
+                        {event.groupName}
+                      </div>
+                    );
+                  }
+                  return null;
+                })}
               </div>
             ))}
           </div>

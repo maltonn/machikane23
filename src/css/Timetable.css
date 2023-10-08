@@ -12,6 +12,9 @@
     background-position:center 42%,center;
     padding-bottom: 15vh;
 }
+.react-tabs__tab-panel--selected{
+  padding: 5vh 2vw 10vh;
+}
 .timeslotsContainer {
   height: 100%;
   display: flex;
@@ -21,7 +24,7 @@
   height: 256%;
   width: 100%;
   display: flex;
-  min-width: 1080px;
+  /* min-width: 1080px; */
 }
 
 .timeslotList {
@@ -45,7 +48,7 @@
 }
 
 .calendarWrapper {
-  min-width: 99.95%;
+  width: 100%;
   display: flex;
   position: relative;
   top: 10px;
@@ -81,13 +84,14 @@
   grid-template-columns: repeat(2, 1fr);
   /* grid-template-rows: repeat(36, 1fr); */
   width: 100%;
-  border: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .calendarColumn {
   border-right: 1px solid #e6e6e6;
-  width: 100%;
-  /* overflow-y: hidden; */
+  width: 45vw;
   z-index: 1;
   position: relative;
 }
@@ -97,14 +101,10 @@
   width: 100%;
   display: block;
 }
-.empty:hover {
-  cursor: pointer;
-  background: rgba(0, 162, 106, 0.04);
-}
 
 .stageName {
   position: absolute;
-  top: -16px;
+  top: -37px;
   left: 37%;
 }
 
@@ -114,8 +114,6 @@
 }
 .item {
   position: relative;
-  overflow-y: hidden;
-  overflow-x: hidden;
   margin-left: 2px;
   padding: 3px;
   border-radius: 5px;
