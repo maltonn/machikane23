@@ -1,28 +1,18 @@
 import React, { useEffect, useRef, useState } from "react";
 import { TIME_LIST, HOUR_LIST } from "./index.js";
+import { Link } from "react-router-dom";
 
 
 const Timeline = ({ stageDate }) => {
   const projectLst = useRef([]) 
   const [displayLst, setDisplayLst] = useState([]) 
 
-  const EmptyCell = (date) => {
-    return (
-      <>
-        {HOUR_LIST.map((hourList, index) => {
-          return (
-            <div
-              key={hourList.hour}
-              onClick={() => {
-                console.log(date, `${hourList.hour}時`);
-              }}
-              className="empty"
-            />
-          );
-        })}
-      </>
-    );
-  };
+  const PageChange=()=> {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+}
   const STAGES = [
     { id: 'stage_kanade', name: 'ステージ奏' },
     { id: 'stage_sora', name: 'ステージ宙' },
@@ -36,7 +26,7 @@ const Timeline = ({ stageDate }) => {
     
     return topPosition;
   }
-  function calculateHeight(eventStartTime, eventEndTime,stageDate){
+  function calculateHeight(eventStartTime, eventEndTime){
     const hourHeight = 60;
     const timeDiff = eventEndTime - eventStartTime;
 
@@ -71,6 +61,7 @@ const Timeline = ({ stageDate }) => {
               </li>
             );
           })}
+          <li className="timeslotItem">19:00</li>
         </ul>
       </div>
       <div className="calendarContainer">
@@ -96,16 +87,18 @@ const Timeline = ({ stageDate }) => {
                       if(event.eventPlace=='奏' && stageIndex==0){
                           // イベントを表示
                         return (
-                          <div
-                            key={event.id}
-                            className="timetableEvent"
-                            style={{
-                              top: calculateTopPosition(eventStartTime,stageDate), // 適切な位置に配置
-                              height: calculateHeight(eventStartTime, eventEndTime,stageDate), // 適切な高さに設定
-                            }}
-                          >
-                            {event.groupName}
-                          </div>
+                          <Link className="timetableLink" to={"/project-search/" +event.id} onClick={PageChange}>
+                            <div
+                              key={event.id}
+                              className="timetableEvent"
+                              style={{
+                                top: calculateTopPosition(eventStartTime,event.stageDate), // 適切な位置に配置
+                                height: calculateHeight(eventStartTime, eventEndTime,), // 適切な高さに設定
+                              }}
+                            >
+                              {event.groupName}
+                            </div>
+                          </Link>
                         );
                       } else if(event.eventPlace=='宙'&&stageIndex==1) {
                           // イベントを表示
@@ -114,8 +107,7 @@ const Timeline = ({ stageDate }) => {
                             key={event.id}
                             className="timetableEvent"
                             style={{
-                              position : "relative",
-                              top: calculateTopPosition(eventStartTime), // 適切な位置に配置
+                              margin: calculateTopPosition(eventStartTime,event.stageDate), // 適切な位置に配置
                               height: calculateHeight(eventStartTime, eventEndTime), // 適切な高さに設定
                             }}
                           >
