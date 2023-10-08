@@ -17,24 +17,6 @@ export default function Timetable() {
             behavior: "smooth",
         });
     },[])
-    const buttonClick1=()=>{
-        console.log("first")
-        document.getElementById('first').checked=true;
-        document.getElementById('second').checked=false;
-        document.getElementById('third').checked=false;        
-    }
-    const buttonClick2=()=>{
-        console.log("second")
-        document.getElementById('first').checked=false;
-        document.getElementById('second').checked=true;
-        document.getElementById('third').checked=false;
-    }
-    const buttonClick3=()=>{
-        console.log("third")
-        document.getElementById('third').checked=true;
-        document.getElementById('second').checked=false;
-        document.getElementById('first').checked=false;
-    }
 
     return(
         <div className="timetable">
