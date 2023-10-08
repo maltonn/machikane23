@@ -121,6 +121,10 @@
   font-size: 12px;
   min-height: 10px;
 }
-.tiemtableEvent{
+.timetableEvent{
   text-align: center;
+  color: #000;
+}
+.timetableLink{
+  text-decoration: none;
 }
