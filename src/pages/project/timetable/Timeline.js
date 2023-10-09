@@ -106,7 +106,7 @@ const Timeline = ({ stageDate }) => {
                                 height: calculateHeight(eventStartTime, eventEndTime,), // 適切な高さに設定
                               }}
                             >
-                              {event.groupName}
+                              {event.groupName} {event.startAt}～{event.endAt}
                             </div>
                           </Link>
                         );
@@ -127,7 +127,7 @@ const Timeline = ({ stageDate }) => {
                                 height: calculateHeight(eventStartTime, eventEndTime), // 適切な高さに設定
                               }}
                             >
-                              {event.groupName}
+                              {event.groupName}　{event.startAt}～{event.endAt}
                             </div>
                           </Link>
                         );
