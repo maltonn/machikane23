@@ -18,7 +18,7 @@ const Timeline = ({ stageDate }) => {
     { id: 'stage_sora', name: 'ステージ宙' },
   ];
 
-  let curIndex=1,preIndex;
+  let curIndex=1,preIndex,sora_times=0,kanade_times=0;
   function calculateTopPosition(eventStartTime,preEventEndTime){
     const hourHeight = 60;
 
@@ -43,6 +43,7 @@ const Timeline = ({ stageDate }) => {
         let lst = Object.values(res)
         lst = lst.filter((project) => project != null)
         lst = lst.filter((project) => project.section === 'stage')
+        lst = lst.filter((project) => project.stageDate === stageDate)
         lst.sort((a, b) => new Date('2023/'+a.stageDate+'/'+a.startAt) - new Date('2023/'+b.stageDate+'/'+b.startAt));
         projectLst.current = lst
         setDisplayLst(lst)
@@ -86,13 +87,14 @@ const Timeline = ({ stageDate }) => {
                     const eventEndTime = new Date('2023/'+event.stageDate+'/'+event.endAt);
                     preIndex = curIndex;
                     let preEventEndTime = new Date('2023/'+event.stageDate+'/10:00');
-                    if((eventStartTime-preEventEndTime)>0){
-                      preEventEndTime = new Date('2023/'+event.stageDate+'/'+displayLst[preIndex].endAt);
-                    }
 
                     if(event.stageDate===stageDate){
                       if(event.eventPlace=='奏' && stageIndex==0){
+                        if(kanade_times>0){
+                          preEventEndTime = new Date('2023/'+event.stageDate+'/'+displayLst[preIndex].endAt);
+                        }
                         curIndex=eventIndex;
+                        kanade_times++;
                           // イベントを表示
                         return (
                           <Link className="timetableLink" to={"/project-search/" +event.id} onClick={PageChange}>
@@ -109,7 +111,11 @@ const Timeline = ({ stageDate }) => {
                           </Link>
                         );
                       } else if(event.eventPlace=='宙'&&stageIndex==1) {
+                        if(sora_times>0){
+                          preEventEndTime = new Date('2023/'+event.stageDate+'/'+displayLst[preIndex].endAt);
+                        }
                         curIndex=eventIndex;
+                        sora_times++;
                           // イベントを表示
                         return (
                           <Link className="timetableLink" to={"/project-search/" +event.id} onClick={PageChange}>
