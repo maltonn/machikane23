@@ -6,9 +6,9 @@ import 'react-tabs/style/react-tabs.css';
 import "../../../css/Timetable.css"
 
 import { useEffect } from "react";
-import WeeklyCalendar from "./WeeklyCalender.js";
 import PageTitles from "../../../components/PageTitles";
 import Bubble from "../../../components/Bubble";
+import Tableformat from "./Tableformat.js";
 
 export default function Timetable() {
     useEffect(()=>{
@@ -33,13 +33,13 @@ export default function Timetable() {
                         <Tab>11月5日</Tab>
                     </TabList>
                     <TabPanel>
-                        <WeeklyCalendar stageDate={'11/03'}/>
+                        <Tableformat stageDate={'11/03'}/>
                     </TabPanel>
                     <TabPanel>
-                        <WeeklyCalendar stageDate={'11/04'}/>
+                        <Tableformat stageDate={'11/04'}/>
                     </TabPanel>
                     <TabPanel>
-                        <WeeklyCalendar stageDate={'11/05'}/>
+                        <Tableformat stageDate={'11/05'}/>
                     </TabPanel>
                 </Tabs>
             </div>

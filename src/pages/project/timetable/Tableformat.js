@@ -2,7 +2,7 @@ import dayjs from "dayjs";
 import React from "react";
 import Timeline from "./Timeline.js";
 
-const WeeklyCalendar = ({ stageDate}) => {
+const Tableformat = ({ stageDate }) => {
   const weekStartDayOffset = 0;
   const _date = dayjs();
   const _day = _date.day();
@@ -22,4 +22,4 @@ const WeeklyCalendar = ({ stageDate}) => {
   );
 };
 
-export default WeeklyCalendar;
+export default Tableformat;
