@@ -1,8 +1,9 @@
 import { Helmet } from "react-helmet";
 import "../../css/Common.css"
 import "../../css/Map.css"
+import Bubble from "../../components/Bubble";
 import PageTitles from "../../components/PageTitles";
-import map from "../../imgs/map/全体マップ.png"
+import map from "../../imgs/map/全体マップ英語.png"
 import AB1 from "../../imgs/map/AB棟1階.png"
 import AB2 from "../../imgs/map/AB棟2階.png"
 import AB3 from "../../imgs/map/AB棟3階.png"
@@ -16,14 +17,20 @@ import H3 from "../../imgs/map/法経3階.png"
 import B1 from "../../imgs/map/文法経1階.png"
 import B2 from "../../imgs/map/文法経2階.png"
 import B3 from "../../imgs/map/文法経3階.png"
-import B4 from "../../imgs/map/文法経4階.png"
 import G2 from "../../imgs/map/学生会館2階.png"
 import G3 from "../../imgs/map/学生会館3階.png"
 import M from "../../imgs/map/屋外メインストリート.png"
 import kanade from "../../imgs/map/ステージ奏.png"
 import sora from "../../imgs/map/ステージ宙.png"
+import { useEffect } from "react";
 
 export default function MapEn() {
+    useEffect(()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    },[])
     return(
         <div className="main">
             <Helmet>
@@ -237,6 +244,7 @@ export default function MapEn() {
                     </div>
                 </div>
             </div>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }

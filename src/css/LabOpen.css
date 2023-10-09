@@ -5,6 +5,7 @@
     width: 98%;
     display: inline-flex;
     font-size: 1rem;
+    background-color: rgba(255,255,255,0.5);
 }
 .labCard-content{
     padding: 0 5px;

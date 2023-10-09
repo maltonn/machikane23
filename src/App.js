@@ -9,7 +9,6 @@ import Footer from './components/Footer';
 
 import Home from "./pages/Home";
 import About from "./pages/machikane/About";
-import Adresses from './pages/machikane/Adresses';
 import Theme from './pages/machikane/Theme';
 import Goods from './pages/machikane/Goods';
 import Sponsor from './pages/machikane/Sponsor';
@@ -28,13 +27,13 @@ import Notes from './pages/visitor/Notes';
 import Pamphlet from './pages/visitor/Pamphlet';
 import FAQ from './pages/visitor/FAQ';
 import Inquiry from './pages/visitor/Inquiry';
+import Questionnaire from './pages/visitor/Questionnaire';
 
 import Access from './pages/access-map/Access';
 import Map from './pages/access-map/Map';
 
 import HomeEn from './En-pages/HomeEn';
 import AboutEn from './En-pages/machikane/AboutEn';
-import AdressesEn from './En-pages/machikane/AdressesEn';
 import ThemeEn from './En-pages/machikane/ThemeEn';
 import GoodsEn from './En-pages/machikane/GoodsEn';
 import SponsorEn from './En-pages/machikane/SponsorEn';
@@ -59,6 +58,8 @@ import MapEn from './En-pages/access-map/MapEn';
 
 
 import Error404 from './pages/Error404';
+import AdressesTmp from './pages/machikane/AdressesTmp';
+import AdressesEnTmp from './En-pages/machikane/AdressesEnTmp';
 
 function AppContents() {
   const location = useLocation();
@@ -82,7 +83,8 @@ function AppContents() {
             <Routes>
               <Route path="/" element={<HomeEn />} />
               <Route path="/about/" element={<AboutEn />} />
-              <Route path="/adresses/" element={<AdressesEn />} />
+              {/* <Route path="/adresses/" element={<AdressesEn />} /> */}
+              <Route path="/adresses/" element={<AdressesEnTmp />} />
               <Route path="/theme/" element={<ThemeEn />} />
               <Route path="/goods/" element={<GoodsEn />} />
               <Route path="/sponsor/" element={<SponsorEn />} />
@@ -114,7 +116,8 @@ function AppContents() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about/" element={<About />} />
-                <Route path="/adresses/" element={<Adresses />} />
+                {/* <Route path="/adresses/" element={<Adresses />} /> */}
+                <Route path="/adresses/" element={<AdressesTmp />} />
                 <Route path="/theme/" element={<Theme />} />
                 <Route path="/goods/" element={<Goods />} />
                 <Route path="/sponsor/" element={<Sponsor />} />
@@ -136,6 +139,11 @@ function AppContents() {
 
                 <Route path="/access/" element={<Access />} />
                 <Route path="/map/" element={<Map />} />
+
+                <Route path="/questionnaire/mogiten/" element={<Questionnaire />} /> 
+                <Route path="/questionnaire/stage/" element={<Questionnaire />} />
+                <Route path="/questionnaire/" element={<Questionnaire />} />
+                
 
                 <Route path="*" element={<Error404 />} />
 

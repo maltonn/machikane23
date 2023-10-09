@@ -32,7 +32,7 @@ export default function Notes() {
                             <div className="notes-miniContent">
                                 <p>食事（持ち込み含む）は、食事席に限り可能であり、他の場所での飲食は禁止とします。ただし、水分補給はしていただいて構いません。</p>
                                 <p>食事席はメインストリートの周辺に設置してあります。詳しくはマップページをご覧ください。</p>
-                                <div className="link-button notes-linkButton"><Link to="/map" onClick={PageChange}>マップ</Link></div>
+                                <div className="notes-linkButton"><Link to="/map" className="pretty-button" onClick={PageChange}>マップ</Link></div>
                                 <p>お食事の際は、以下のことをお守りください。</p>
                                 <ol>
                                     <li>食事席の椅子を動かした際は元に戻してください。</li>
@@ -63,9 +63,8 @@ export default function Notes() {
                         <div className="notes-naiyou">
                             <div className="notes-miniTitle">喫煙について</div>
                             <div className="notes-miniContent">
-                                <p>まちかね祭の会場である大阪大学豊中キャンパスでは、喫煙ブース（卒煙支援ブース）以外での喫煙が禁止されております。</p>
-                                <p>卒煙支援ブースの場所はキャンパスマップをご覧ください。</p>
-                                <p>なお、指定された場所以外での喫煙を発見した場合には大学当局への通報を含めた厳しい処分を行う場合がございます。</p>
+                                <p>キャンパス内は禁煙です。喫煙はご遠慮下さい。
+                                </p>
                             </div>
                         </div>
                         <div className="notes-naiyou">
@@ -82,7 +81,7 @@ export default function Notes() {
                         <div className="notes-naiyou">
                             <div className="notes-miniTitle">迷子について</div>
                             <div className="notes-miniContent">
-                            大学祭期間中に迷子を発見した場合、本部受付（ピロティ）まで連れてくるようにお願いします。
+                            大学祭期間中に迷子を発見した場合、本部受付（ピロティ）までお連れいただきますようお願いします。
                             </div>
                         </div>
                         <div className="notes-naiyou">
@@ -128,7 +127,7 @@ export default function Notes() {
                     </div>
                 </div>
             </div>
-            <Bubble></Bubble>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }

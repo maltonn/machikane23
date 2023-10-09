@@ -15,7 +15,7 @@ export default function PageTitles({titles,kame}){
         if(kame!==true){
             document.getElementById('machikameNone').style.display='none';
         }
-      }, [titles,kame])
+      }, [titles,kame,lang])
     return (
         <div className="top-component">
             <div className="page-titles" id="pageTitles">{titles}</div>

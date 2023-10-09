@@ -15,7 +15,7 @@ export default function TalentProjectEn(){
     return(
         <div className="talent">
             <Helmet>
-                <title>タレント企画|2023 Machikane Festival</title>
+                <title>Comedy LIVE Show|2023 Machikane Festival</title>
             </Helmet>
             <div className="talentTop">
                 <PageTitles titles="Comedy LIVE Show" kame={true}></PageTitles>
@@ -36,11 +36,14 @@ export default function TalentProjectEn(){
                 <div className="talentProjectCaution">
                     <h2 className="caution">Notice</h2>
                     <ul className="cautionAll">
-                        <li className="caution1">The show requires an advance reservation. Please make a <strong>reservation</strong> from the link below.
-                        <p className="reservationUrl">
-                            <a href="https://app.tyuujitu-system.net/machikane23/visotor/talent-live/reservation">reservation</a>
-                        </p>
+                        <li className="caution1">The show requires an advance reservation. In the case of a great number of applicants, please note that we will chose by a lottery. Please make sure that the reservation acceptance period is Oct. 1st~13th 23:59. <br></br>Please make a <strong>reservation</strong> from the link below.
                         </li>
+                    </ul>
+                        <div className="reservationUrl">
+                            <a href="https://app.tyuujitu-system.net/machikane23/visotor/talent-live/reservation">reservation</a>
+                        </div>
+  
+                    <ul className="cautionAll">
                         <br></br>
                         <li className="caution2">If a cancellation happens on a day, we  will distribute walk-up tickets in front of the Osaka University Hall.</li>
                         <br></br>
@@ -49,7 +52,7 @@ export default function TalentProjectEn(){
                     </ul>
                 </div>
             </div>
-            <Bubble></Bubble>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }

@@ -12,6 +12,7 @@ export default function About() {
           behavior: "smooth",
       });
     },[])
+    
     return(
       <div className="main">
         <Helmet>
@@ -31,7 +32,7 @@ export default function About() {
                 </p>
              </div>
           </div>
-          <Bubble></Bubble>
+          <Bubble bubbleSwitch={false}></Bubble>
       </div>
     )
 }

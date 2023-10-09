@@ -4,8 +4,15 @@ import "../../css/Common.css"
 import "../../css/About.css"
 import PageTitles from "../../components/PageTitles";
 import Bubble from "../../components/Bubble";
+import { useEffect } from "react";
 
 export default function AboutEn() {
+    useEffect(()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+      },[])
     return(
         <div className="main">
             <Helmet>
@@ -25,7 +32,7 @@ export default function AboutEn() {
                 </p>
              </div>
           </div>
-          <Bubble></Bubble>
+          <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }

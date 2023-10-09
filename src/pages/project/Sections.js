@@ -37,7 +37,7 @@ export default function Sections() {
                         <div className="notes-naiyou">
                             <div className="notes-miniTitle">屋外区分</div>
                             <div className="notes-miniContent">
-                                <p>屋外区分では、パフォーマンスを中心として、展示など多様な企画が行われます。2023年度まちかね祭では、学生交流棟・学生会館横・C棟前・文学研究棟前・サイバーメディアセンター横など建物外かつ模擬店のテント以外の場所で行われます。ぜひお越しください。</p>
+                                <p>屋外区分では、パフォーマンスを中心として、展示など多様な企画が行われます。2023年度まちかね祭では、学生会館横・言語文化研究棟前・C棟前・文学研究棟前・サイバーメディアセンター横といった、建物外かつ模擬店のテント以外の場所で行われます。ぜひお越しください。</p>
                             </div>
                         </div>
                         <div className="notes-naiyou">
@@ -56,7 +56,7 @@ export default function Sections() {
                     </div>
                 </div>
             </div>
-            <Bubble></Bubble>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }

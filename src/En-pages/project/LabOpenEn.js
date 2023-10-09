@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet";
 import lab_icon from "../../imgs/lab_icon.svg";
 import lab_json from "../../data/openLab.json";
 import PageTitles from "../../components/PageTitles";
+import Bubble from "../../components/Bubble";
 
 const shuffleArray = (array) => {
     return array.slice().sort(() => Math.random() - Math.random())
@@ -21,16 +22,15 @@ export default function LabOpenEn() {
     useEffect(() => {//inputValueが変わったらinputValueRefも変わる
         inputValueRef.current = inputValue
     }, [inputValue])
-    
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-    });
 
     const [loadingNum, setLoadingNum] = useState(10)
 
     
     useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
         let lst = Object.values(lab_json)
         lst=lst.filter((project)=>project!=null)
         projectLst.current = lst 
@@ -44,9 +44,6 @@ export default function LabOpenEn() {
 
     const onPickupKeywordClick = (keyword) => {
         setInputValue(keyword)
-        setTimeout(() => {
-            onClickSearchBtn()
-        },20)
     }
 
     // 検索ボタンが押された時の処理
@@ -117,11 +114,11 @@ export default function LabOpenEn() {
     return(
         <div className="main">
             <Helmet>
-            <title>OpenLab|2023 Machikane Festival</title>
+            <title>Openlab|2023 Machikane Festival</title>
             </Helmet>
             <div className="sky-project">
                 <div className="search-header">
-                    <PageTitles titles="OpenLab" kame={true}></PageTitles>
+                    <PageTitles titles="Openlab" kame={true}></PageTitles>
                     <div className="search-mainpageEn"> 
                         <div>
                             <input
@@ -210,6 +207,7 @@ export default function LabOpenEn() {
                 <div className="bottom">
                 </div>
             </div>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }

@@ -1,12 +1,17 @@
 import { Helmet } from "react-helmet";
 // import {Link} from "react-router-dom";
-
 import "../../css/Common.css"
-import "../../css/Adresses.css"
 import PageTitles from "../../components/PageTitles"
 import president from "../../imgs/NISHIO-Shojiro.jpg"
 import chairperson from "../../imgs/chairperson.jpg"
+import { useEffect } from "react";
 export default function AdressesEn() {
+    useEffect(()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+      },[])
     return(
         <div className="main">
             <Helmet>
@@ -17,7 +22,7 @@ export default function AdressesEn() {
                 <div className="president">
                     <div className="greeting-titles-En1">Address by the university president</div>
                     <div className="greeting-card">
-                        <img src={president}></img>
+                        <img src={president} alt="総長"></img>
                         <div className="sentences">
                             <p>
                                 　The "Machikane Festival" season has arrived again!  Every year, setting an original theme for each festival, Osaka University students organize the entire festival centering the members of the Festival Committee.  This year, it is our 64th Machikane Festival in its history.  I will show my sincere respect to all the students for making great efforts to inherit its long history and tradition.<br></br>
@@ -37,7 +42,7 @@ export default function AdressesEn() {
                     <div className="chairperson">
                         <div className="greeting-titles-En2">Address by the chairperson<br className="smartphone"></br> of Festival Committee</div>
                         <div className="greeting-card">
-                            <img src={chairperson}></img>
+                            <img src={chairperson} alt="委員長(林)"></img>
                             <div className="sentences">
                                 <p>
                                     Firstly, I really appreciate all of you visiting us today.  Welcome to our Machikane Festival!<br></br>
@@ -51,7 +56,7 @@ export default function AdressesEn() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>          
         </div>
     )
 }

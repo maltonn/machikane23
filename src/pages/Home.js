@@ -90,9 +90,9 @@ export default function Home() {
             <div className="top-linkButton live-reservation"><a href="https://app.tyuujitu-system.net/machikane23/visitor/talent-live" target="_blank" rel="noreferrer">お笑いライブ<br></br>予約サイト</a></div>
             <p>お笑いライブ詳細は<Link to="./talent-project" onClick={PageChange}>こちら</Link></p>
             <p>今年のまちかね祭の企画を検索できます。<br></br>あなたのお気に入りの企画を見つけましょう！<br></br>下のボタンからご覧ください。</p>
-            <div className="link-button top-linkButton top-buttonblank"><Link to="./project-search" onClick={PageChange}>企画検索</Link></div> 
+            <div className="top-linkButton"><Link to="./project-search" className="pretty-button" onClick={PageChange}>企画検索</Link></div> 
             <p>その他注意事項がございますので、下のボタンからご覧ください。</p>
-            <div className="link-button top-linkButton top-buttonblank"><Link to="./notes" onClick={PageChange}>注意事項</Link></div>
+            <div className="top-linkButton"><Link to="./notes" className="pretty-button" onClick={PageChange}>注意事項</Link></div>
           </div>
           <div className="machikani-1"><img src={machikani} alt="まちかに"></img></div>
         </div>
@@ -180,6 +180,11 @@ export default function Home() {
                 <div className="ocean-link-button"><Link to="/theme" onClick={PageChange}>もっと見る</Link></div>
               </div>
             </div>
+          </div>
+
+          <div className="top-sponsor">
+            <div className="titles"><nobr><p className="item1">●</p><span id="title">ご協賛</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
+            <a href="https://ewha-yifu.com/" className="link-button" style={{color:"blue"}}target="_blank" rel="noreferrer">Trip Farm株式会社</a>
           </div>
 
           <div className="bottoms">

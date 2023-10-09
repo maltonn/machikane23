@@ -34,13 +34,27 @@ export default function MogitenEn() {
             behavior: "smooth",
         });
     }
+    var genre={
+        '物販': 'Goods sales',
+        '展示': 'Exhibition',
+        '演奏': 'Music',
+        'ダンス': 'Dance',
+        'ゲーム・体験': 'Game&Experience',
+        'その他パフォーマンス': 'Other performances',
+        '麺、丼、カレー': 'Rice&Noodles',
+        'おかず': 'Side dish',
+        '揚げ物': 'Fried',
+        'スイーツ・スナック': 'Sweets&Snacks',
+        '汁物': 'Soup',
+        'その他': 'Other foods',
+    }
     return (
         <div className="main">
             <Helmet>
-            <title>Food stalls|2023 Machikane Festival</title>
+            <title>Food Stalls List|2023 Machikane Festival</title>
             </Helmet>
             <div className="mogiten-sky">
-                <PageTitles titles="Food stalls" kame={true}></PageTitles>
+                <PageTitles titles="Food Stalls List" kame={true}></PageTitles>
                 <div className="mogiten-mainpage">
                     <table className="mogiten-project">
                         <tr>
@@ -59,7 +73,7 @@ export default function MogitenEn() {
                                 <td>{project.eventPlace}</td>
                                 <td>{project.groupNameEn}</td>
                                 <td>{project.projectNameEn}</td>
-                                <td>{project.projectGenre}</td>
+                                <td>{genre[project.projectGenre]}</td>
                                 <td><Link className="mogiten-link-button" to={"/project-search/" + project.id} onClick={PageChange}>Click</Link></td>
                             </tr>
                         )
@@ -69,7 +83,7 @@ export default function MogitenEn() {
                 </div>
                 <div className="mogitenProject-map"><img src={MainStreet} alt="mainStreet"></img></div>
             </div>
-            <Bubble></Bubble>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }

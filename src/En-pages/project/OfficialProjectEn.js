@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import { useEffect } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import "../../css/TalentProject.css"
-
+import "../../css/Common.css"
 import PageTitles from "../../components/PageTitles";
 import machikaneForestLogo from "../../imgs/official_project/machikaneForest.png"
 import pancakeLogo from "../../imgs/official_project/pancake.png"
@@ -15,6 +15,7 @@ import house from "../../imgs/official_project/house.png"
 import clock from "../../imgs/official_project/clock.png"
 import leaf from "../../imgs/official_project/leaf1.png"
 import bonber from "../../imgs/official_project/bonber.png"
+import Bubble from "../../components/Bubble";
 
 
 export default function OfficialProjectEn() {
@@ -242,9 +243,7 @@ export default function OfficialProjectEn() {
                     </div>
                 </div>
             </div>
-            <div className="ocean">
-                
-            </div>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }

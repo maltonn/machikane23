@@ -17,7 +17,7 @@ export default function NotesEn() {
             <title>Notes|2023 Machikane Festival</title>
             </Helmet>
             <div className="notes-sky">
-                <PageTitles titles="注意事項" kame={true}></PageTitles>
+                <PageTitles titles="Notes" kame={true}></PageTitles>
                 <div className="notes-mainpage">
                     <div className="notes-all">
                         <div className="notes-naiyou">
@@ -25,7 +25,7 @@ export default function NotesEn() {
                             <div className="notes-miniContent">
                                 <p>All the food (including foods you brought by yourself) must be eaten at the designated eating space. You must not eat or drink outside the area.(except hydration)</p>
                                 <p>Eating space is around the Main street. Please look at the Map for details.</p>
-                                <div className="link-button notes-linkButton"><Link to="/map" onClick={PageChange}>Map</Link></div>
+                                <div className="notes-linkButton"><Link to="/map" className="pretty-button" onClick={PageChange}>Map</Link></div>
                                 <p>Please follow the rules below.</p>
                                 <ol>
                                     <li>Please bring back the seat to its originated place after using</li>
@@ -56,9 +56,7 @@ export default function NotesEn() {
                         <div className="notes-naiyou">
                             <div className="notes-miniTitle">Smoking</div>
                             <div className="notes-miniContent">
-                                <p>At Osaka University Toyonaka Campus, smoking is banned at all the places except designated smoking areas.</p>
-                                <p>Please refer to the map for the smoking area.</p>
-                                <p>Once we discover someone smoking against the rules, we may report to the authority for severe punishment.</p>
+                                <p>Smoking is prohibited at all the campus area. Please refrain from smoking.</p>
                             </div>
                         </div>
                         <div className="notes-naiyou">
@@ -121,7 +119,7 @@ export default function NotesEn() {
                     </div>
                 </div>
             </div>
-            <Bubble></Bubble>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }

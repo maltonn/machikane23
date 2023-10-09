@@ -5,6 +5,8 @@ import "../../css/Access.css"
 import Bubble from "../../components/Bubble";
 import PageTitles from "../../components/PageTitles";
 import guide from "../../imgs/map/2023年度まちかね祭駐輪場案内.png"
+import { useEffect } from "react";
+
 
 export default function AccessEn() {
     function PageChange(){
@@ -13,6 +15,12 @@ export default function AccessEn() {
             behavior: "smooth",
         });
     }
+    useEffect(()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    },[])
     return(
         <div className="main">
             <Helmet>
@@ -22,7 +30,7 @@ export default function AccessEn() {
                 
                 <PageTitles titles="Access" kame={true}></PageTitles>
                 
-                <div className="sponsor-miniTitles">Venue</div>
+                <div className="access-subtitles">Venue</div>
                 <div className="access-mainpage"> 
                     <div className="access-notes">
                         <div className="access-content access-holdingPlace">
@@ -31,7 +39,7 @@ export default function AccessEn() {
                         </div>
                     </div>
                 </div>
-                <div className="sponsor-miniTitles">Access</div>
+                <div className="access-subtitles">Access</div>
                 <div className="access-mainpage"> 
                     <div className="access-notes">
                         <div className="access-content">
@@ -44,14 +52,13 @@ export default function AccessEn() {
                         </div>
                     </div>
                 </div>
-                <div className="sponsor-miniTitles">Notice</div>
+                <div className="access-subtitles">Notice</div>
                 <div className="access-mainpage"> 
                     <div className="access-notes">
                         <div className="access-content">
                         <li>There is no parking lot in and around Toyonaka Campus, so please try to use public transportations when you come.
                         However, whoever has any disabilities should contact us in advance.
-                            <div className="link-button access-center"><Link className="access-inquiry" to="./inquiry" onClick={PageChange}>Inquiry</Link>
-                            </div>
+                            <div className="access-linkButton"><Link to="/inquiry" className="pretty-button" onClick={PageChange}>Inquiry</Link></div>
                         </li>
                         <li>When you come by bicycle, please use the parking lot on the map below.
                         </li>
@@ -66,7 +73,7 @@ export default function AccessEn() {
                     </div>
                 </div>
             </div>
-            <Bubble></Bubble>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }

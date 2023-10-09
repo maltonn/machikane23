@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet";
-import {Link} from "react-router-dom";
 import "../../css/Common.css"
 import "../../css/ralley.css"
 import "../../css/Project.css"
@@ -10,10 +9,7 @@ import ralley1_icon from "../../imgs/ralley/ralley1_icon.png"
 import ralley2_icon from "../../imgs/ralley/ralley2_icon.jpg"
 import ralley3_icon from "../../imgs/ralley/ralley3_icon.jpg"
 import startbooth from "../../imgs/ralley/startbooth.png"
-import { useState } from "react";
 import { useParams } from "react-router-dom";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -21,7 +17,6 @@ import 'swiper/css/pagination';
 
 export default function RalleyEn() {
     const { id } = useParams();
-    const [project, setProject] = useState(null);
     useEffect(() => {
         window.scrollTo({
             top: 0,
@@ -34,7 +29,7 @@ export default function RalleyEn() {
             <title>Rally Project|2023 Machikane Festival</title>
             </Helmet>
             <div className="ralley-sky">
-                <PageTitles titles="ralley" kam={false}></PageTitles>
+                <PageTitles titles="Ralley Project" kam={false}></PageTitles>
                 <div className="ralley-mainpage">
                     <p> At this Rally Project, visitors yourselves are going to go around the campus area. You can look around the whole Machikane Festival while enjoying our special project!
                     </p>
@@ -49,18 +44,18 @@ We are looking forward to you coming!
                     <div className="ralley1">
                         <img src={ralley1_icon} alt="アイコン１"></img>
                         <div className="ralley1-content">
-                            <div className="ralley1-title">再履バス同好会</div>
+                            <div className="ralley1-title">Inter Campus Shuttle Bus Club</div>
                             <div classname="ralley1-intro">
-                            大阪大学のDeepで、カオスな、通称マイナーサークル達が一堂に会するスタンプラリーです。 今回は架空のサークル「大阪大学名字同好会」になりきって各チェックポイントにあるスタンプを集めましょう！
+                            Osaka University has unique club activities that you would rarely find elsewhere - and this "Surname Research Club" is one of them (though it's fictional). Collect "Inkan" - name stamps used in Japan in place of signatures - as you visit 5 club activity classrooms  placed around the campus.
                             </div>
                         </div>
                     </div>
                     <div className="ralley2">
                         <img src={ralley2_icon} alt="アイコン２"></img>
                         <div className="ralley2-content">
-                            <div className="ralley2-title">阪大言語サークルGGC</div>
+                            <div className="ralley2-title">Handai language circle GGC</div>
                             <div className="ralley2-intro">
-                            皆さんがいつも当たり前に耳にしている言語ですが、実はその歴史を辿ったり、言語学的な視点で見たりすれば、非常に興味深い事実が見えてきます。それをクイズで実感してみませんか。
+                            Languages we often take for granted actually hold intriguing histories and linguistic perspectives. Why not delve into this with a quiz and uncover some fascinating facts?
                             </div>
                         </div>
                     </div>
@@ -68,15 +63,15 @@ We are looking forward to you coming!
                     <div className="ralley3">
                         <img src={ralley3_icon} alt="アイコン３"></img>
                         <div className="ralley3-content">
-                            <div className="ralley3-title">阪大謎解きサークル OUtfoX</div>
+                            <div className="ralley3-title">OUtfoX</div>
                             <div className="ralley3-intro">
-                            ある日、異星人から依頼が来た。彼らは宇宙に生息する生命体を研究しているらしい。
-                            しかし、その名前がわからず、特定を手伝ってほしいとのことだ。謎を解いて彼らを助けよう！
+                            A lot of riddles in the classroom. But something seems strange. Can you solve all the riddles!? Now, your “Inspiration power” will be tested!
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <Bubble bubbleSwitch={false}></Bubble>
         </div>
     )
 }

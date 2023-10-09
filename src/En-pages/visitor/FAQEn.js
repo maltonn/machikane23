@@ -1,51 +1,62 @@
 import { Helmet } from "react-helmet";
-import {Link} from "react-router-dom";
 import "../../css/Common.css"
 import "../../css/FAQ.css"
+import Bubble from "../../components/Bubble";
 import PageTitles from "../../components/PageTitles";
+import map from "../../imgs/map/eat-space.jpg"
+import { useEffect } from "react";
+
 export default function FAQEn() {
+    useEffect(()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+      },[])
     return(
         <div className="main">
             <Helmet>
-            <title>FAQ|2023 Machikane Festival</title>
+            <title>FAQs|2023 Machikane Festival</title>
             </Helmet>
-            <PageTitles titles="FAQ"  kame={true}></PageTitles>
+            <div className="FAQ-sky">
+            <PageTitles titles="FAQs"  kame={true}></PageTitles>
                 <div className="FAQEn-card">
                 <div className="FAQEn-card-Q">What are the event hours?</div>
-                <div className="FAQEn-card-A">
-                    <table className="FAQEn-table">
-                    <tr>
-                                <th>Places
-                                </th>
-                                <th>Day1(11/3) </th>
-                                <th>Day2(11/4)</th>
-                                <th>Day3(11/5)</th>
-                            </tr>
-                            <tr>
-                                <td >In-Facility</td>
-                                <td colSpan={3}className="FAQ-table">10:00~18:20</td>
-                            </tr>
-                            <tr>
-                                <td>Food Stalls & Outdoor </td>
-                                <td colSpan={3}className="FAQ-table">10:00~18:00</td>
-                            </tr>
-                            <tr>
-                                <td> Stage Kanade</td>
-                                <td colSpan={3}className="FAQ-table">10:00~19:00</td>
-                            </tr>
-                            <tr>
-                                <td>Stage Sora</td>
-                                <td>10:00~17:20</td>
-                                <td>10:00~17:00</td>
-                                <td>10:00~16:20</td>
-                            </tr>
-                    </table>
-                </div>
+                <div className="FAQ-table-parent">
+                            <table className="FAQ-table">
+                                <tr>
+                                    <th>Places</th>
+                                    <th>Day1(11/3)</th>
+                                    <th>Day2(11/4)</th>
+                                    <th>Day3(11/5)</th>
+                                </tr>
+                                <tr>
+                                    <td >In-Facility</td>
+                                    <td colSpan={3}className="FAQ-table">10:00~18:20</td>
+                                </tr>
+                                <tr>
+                                    <td className="FAQblank">Outdoor & Food Stalls</td>
+                                    <td colSpan={3}className="FAQ-table">10:00~18:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Stage Kanade</td>
+                                    <td colSpan={3}className="FAQ-table">10:00~19:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Stage Sora</td>
+                                    <td className="FAQblank">10:00~17:20</td>
+                                    <td className="FAQblank">10:00~17:00</td>
+                                    <td className="FAQblank">10:00~16:20</td>
+                                </tr>
+                            </table>
+                        </div>
                 </div>
                 <div className="FAQEn-card-Q">Where can we eat something we bought?</div>
                 <div className="FAQEn-card-A">Please use the designated eating space.</div>
                 <div className="FAQEn-card-Q">Where is the eating space?</div>
                 <div className="FAQEn-card-A">Please refer to the Map.</div>
+                <div className="FAQmap-parent">
+                <img  src={map} alt="map"className="FAQ-map"></img></div>
                 <div className="FAQEn-card-Q"> Where are the vending machines?</div>
                 <div className="FAQEn-card-A"> Please refer to the Map.</div>
                 <div className="FAQEn-card-Q"> Where are the restrooms?</div>
@@ -92,6 +103,8 @@ export default function FAQEn() {
                 <div className="FAQEn-card-A"> It isn't open during the festival.</div>
                 <div className="FAQEn-card-Q">Can we use the Inter-Campus Shuttle Bus Service?</div>
                 <div className="FAQEn-card-A"> No, you cannot.</div>
+                <Bubble bubbleSwitch={false}></Bubble>
+            </div>
         </div>
     )
 }
