@@ -139,11 +139,16 @@
   .react-tabs__tab-panel--selected{
     padding: 5vh 0 10vh;
   }
+  .calendarColumn{
+    width: 42vw;
+  }
   .timetableEvent{
     font-size: 3px;
     line-height: 15px;
   }
 }
 @media screen and (min-width:490px) and (max-width: 1090px){
-
+  .timetableEvent{
+    line-height: 16px;
+  }
 }
