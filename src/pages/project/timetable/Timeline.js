@@ -43,8 +43,7 @@ const Timeline = ({ stageDate }) => {
         let lst = Object.values(res)
         lst = lst.filter((project) => project != null)
         lst = lst.filter((project) => project.section === 'stage')
-        lst.sort((a, b) => new Date('2023/'+a.stageDate+a.startAt) - new Date('2023/'+b.stageDate+b.startAt));
-        lst.sort((a,b) => a.eventPlace - b.eventPlace);
+        lst.sort((a, b) => new Date('2023/'+a.stageDate+'/'+a.startAt) - new Date('2023/'+b.stageDate+'/'+b.startAt));
         projectLst.current = lst
         setDisplayLst(lst)
     })
@@ -85,13 +84,13 @@ const Timeline = ({ stageDate }) => {
                     // イベントの開始日時と終了日時をもとに描画
                     const eventStartTime = new Date('2023/'+event.stageDate+'/'+event.startAt);
                     const eventEndTime = new Date('2023/'+event.stageDate+'/'+event.endAt);
-                    let preIndex = curIndex;
+                    preIndex = curIndex;
                     let preEventEndTime = new Date('2023/'+event.stageDate+'/10:00');
-                    if(preIndex > 0){
+                    if((eventStartTime-preEventEndTime)>0){
                       preEventEndTime = new Date('2023/'+event.stageDate+'/'+displayLst[preIndex].endAt);
                     }
 
-                    if(event.stageDate==stageDate){
+                    if(event.stageDate===stageDate){
                       if(event.eventPlace=='奏' && stageIndex==0){
                         curIndex=eventIndex;
                           // イベントを表示
