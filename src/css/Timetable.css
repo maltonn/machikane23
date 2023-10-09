@@ -20,7 +20,7 @@
   display: flex;
 }
 
-.calendarContainer {
+.timetableContainer {
   height: 256%;
   width: 100%;
   display: flex;
@@ -41,13 +41,13 @@
   list-style: none;
 }
 
-.calendarContainer {
+.timetableContainer {
   max-height: 1535px;
   width: 100%;
   display: flex;
 }
 
-.calendarWrapper {
+.timetableWrapper {
   width: 100%;
   display: flex;
   position: relative;
@@ -108,19 +108,6 @@
   left: 37%;
 }
 
-.itemBox {
-  position: absolute;
-  cursor: pointer;
-}
-.item {
-  position: relative;
-  margin-left: 2px;
-  padding: 3px;
-  border-radius: 5px;
-  border: 1px solid #ffffff;
-  font-size: 12px;
-  min-height: 10px;
-}
 .timetableEvent{
   text-align: center;
   color: #000;

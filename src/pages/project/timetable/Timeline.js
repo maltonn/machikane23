@@ -66,8 +66,8 @@ const Timeline = ({ stageDate }) => {
           <li className="timeslotItem">19:00</li>
         </ul>
       </div>
-      <div className="calendarContainer">
-        <div className="calendarWrapper">
+      <div className="timetableContainer">
+        <div className="timetableWrapper">
           <div>
             {TIME_LIST.map((timeItem) => (
               <div key={timeItem.id}>

@@ -16,7 +16,7 @@ const Tableformat = ({ stageDate }) => {
   });
 
   return (
-    <div className="calendarContainer">
+    <div className="timetableContainer">
       <Timeline stageDate={stageDate} />
     </div>
   );
