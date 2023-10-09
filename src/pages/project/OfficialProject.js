@@ -14,6 +14,9 @@ import house from "../../imgs/official_project/house.png"
 import clock from "../../imgs/official_project/clock.png"
 import leaf from "../../imgs/official_project/leaf1.png"
 import bonber from "../../imgs/official_project/bonber.png"
+import tomosankaku from "../../imgs/official_project/98D797FC-C7EF-403E-BC42-D1E724A9F536 - 毛笠龍之介.jpeg"
+import DJcola from "../../imgs/official_project/IMG_20230930_094521 - たいち.jpg"
+import santiago from "../../imgs/official_project/IMG_3680 - まつし.jpeg"
 
 import PageTitles from "../../components/PageTitles";
 import { useEffect } from "react";
@@ -26,6 +29,73 @@ export default function OfficialProject() {
             behavior: "smooth",
         });
     },[])
+
+    const O1Participant=[
+        {
+            "name":"突き抜けた赤子",
+            "catchCopy":"伊勢神宮のアンチ",
+            "grade":"非公開",
+            "comment":"やるぞ！",
+            "image":""
+        },
+        {
+            "name":"トモサンカク",
+            "catchCopy":"お笑いエンジニアリング",
+            "grade":"工学部M2と工学部M2 ",
+            "comment":"私たちの漫才による腹痛に、トモサンカクは一切の責任を負いません。",
+            "image":tomosankaku
+        },
+        {
+            "name":"山婆",
+            "catchCopy":"香り高い隣人",
+            "grade":"人間科学部2年",
+            "comment":"俺たちについてこい",
+            "image":""
+        },
+        {
+            "name":"DJ Cola",
+            "catchCopy":"サステナブルお笑い学（再履修）",
+            "grade":"工学部環境エネルギー学科B4の２人",
+            "comment":"絶対に触るなよ、訴えるぞ！",
+            "image":DJcola
+        },
+        {
+            "name":"スッカラカン",
+            "catchCopy":"全部使い切れ！",
+            "grade":"文学部B4と外部生",
+            "comment":"中学以来の同期コンビです！ふたりとも初の舞台ですが、目標に向かってまっすぐ頑張ります",
+            "image":""
+        },
+        {
+            "name":"カマスカダイ",
+            "catchCopy":"舞台を大きく",
+            "grade":"法学部B2と法学部B2",
+            "comment":"ベストを尽くします",
+            "image":""
+        },
+        {
+            "name":"探偵ジム",
+            "catchCopy":"新感覚お笑い表現",
+            "grade":"工学部B1と人間科学部B1",
+            "comment":"心に沁みる漫才をします",
+            "image":""
+        },
+        {
+            "name":"サンティアゴ",
+            "catchCopy":"吹かせろ異国の風",
+            "grade":"二人とも工学部B2",
+            "comment":"優勝します！",
+            "image":santiago
+        },
+        {
+            "name":"七尺",
+            "catchCopy":"ファンタジー成長中",
+            "grade":"人間科学部B2と文学部B2",
+            "comment":"我々の話を是非楽しんでください！",
+            "image":""
+        },
+    ]
+
     return(
         <div className="officialProject">
             <Helmet>
