@@ -2,7 +2,7 @@ import dayjs from "dayjs";
 import React from "react";
 import Timeline from "./Timeline.js";
 
-const Tableformat = ({ stageDate }) => {
+const Tableformat = ({ stageDate,displayLst }) => {
   const weekStartDayOffset = 0;
   const _date = dayjs();
   const _day = _date.day();
@@ -17,7 +17,7 @@ const Tableformat = ({ stageDate }) => {
 
   return (
     <div className="timetableContainer">
-      <Timeline stageDate={stageDate} />
+      <Timeline stageDate={stageDate} displayLst={displayLst} />
     </div>
   );
 };

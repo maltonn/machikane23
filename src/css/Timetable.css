@@ -130,7 +130,7 @@
     width: 42vw;
   }
   .timetableEvent{
-    font-size: 3px;
+    /* font-size: 3px; */
     line-height: 15px;
   }
 }
