@@ -83,7 +83,6 @@ export default function Timetable() {
                     })
                 })
             }
-            console.log(stageProjects)
 
 
             setDisplayLst(stageProjects)
