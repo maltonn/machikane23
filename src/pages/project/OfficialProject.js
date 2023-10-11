@@ -17,6 +17,7 @@ import bonber from "../../imgs/official_project/bonber.png"
 import tomosankaku from "../../imgs/official_project/98D797FC-C7EF-403E-BC42-D1E724A9F536 - 毛笠龍之介.jpeg"
 import DJcola from "../../imgs/official_project/IMG_20230930_094521 - たいち.jpg"
 import santiago from "../../imgs/official_project/IMG_3680 - まつし.jpeg"
+import noimage from "../../imgs/official_project/noimage.png"
 
 import PageTitles from "../../components/PageTitles";
 import { useEffect } from "react";
@@ -36,7 +37,7 @@ export default function OfficialProject() {
             "catchCopy":"伊勢神宮のアンチ",
             "grade":"非公開",
             "comment":"やるぞ！",
-            "image":""
+            "image":noimage
         },
         {
             "name":"トモサンカク",
@@ -50,7 +51,7 @@ export default function OfficialProject() {
             "catchCopy":"香り高い隣人",
             "grade":"人間科学部2年",
             "comment":"俺たちについてこい",
-            "image":""
+            "image":noimage
         },
         {
             "name":"DJ Cola",
@@ -64,21 +65,21 @@ export default function OfficialProject() {
             "catchCopy":"全部使い切れ！",
             "grade":"文学部B4と外部生",
             "comment":"中学以来の同期コンビです！ふたりとも初の舞台ですが、目標に向かってまっすぐ頑張ります",
-            "image":""
+            "image":noimage
         },
         {
             "name":"カマスカダイ",
             "catchCopy":"舞台を大きく",
             "grade":"法学部B2と法学部B2",
             "comment":"ベストを尽くします",
-            "image":""
+            "image":noimage
         },
         {
             "name":"探偵ジム",
             "catchCopy":"新感覚お笑い表現",
             "grade":"工学部B1と人間科学部B1",
             "comment":"心に沁みる漫才をします",
-            "image":""
+            "image":noimage
         },
         {
             "name":"サンティアゴ",
@@ -92,7 +93,7 @@ export default function OfficialProject() {
             "catchCopy":"ファンタジー成長中",
             "grade":"人間科学部B2と文学部B2",
             "comment":"我々の話を是非楽しんでください！",
-            "image":""
+            "image":noimage
         },
     ]
 
@@ -309,7 +310,19 @@ export default function OfficialProject() {
                         <div className="detail O-1Detail" id="O-1">
                             <div className="O-1Title"></div>
                             <div className="O-1DetailIcon"><img src={O1Logo} alt="O-1アイコン"></img></div>
-                            <div className="O-1Preparetion">Coming soon</div>
+                            <div className="O-1boxAround">
+                                {O1Participant.map((data)=>{
+                                    return(
+                                        <div className="O-1box">
+                                            <div className="O1Image"><img src={data.image} alt="出場者写真"></img></div>
+                                            <p>{data.name}</p>
+                                            <p>{data.grade}</p>
+                                            <p>{data.catchCopy}</p>
+                                            <p>{data.comment}</p>
+                                        </div>
+                                    )
+                                })}
+                            </div>
                         </div>
                     </div>
                 </div>
