@@ -12,6 +12,7 @@ import About from "./pages/machikane/About";
 import Theme from './pages/machikane/Theme';
 import Goods from './pages/machikane/Goods';
 import Sponsor from './pages/machikane/Sponsor';
+import Adresses from './pages/machikane/Adresses';
 
 import Sections from './pages/project/Sections';
 import Project from './pages/project/Project';
@@ -37,6 +38,7 @@ import AboutEn from './En-pages/machikane/AboutEn';
 import ThemeEn from './En-pages/machikane/ThemeEn';
 import GoodsEn from './En-pages/machikane/GoodsEn';
 import SponsorEn from './En-pages/machikane/SponsorEn';
+import AdressesEn from './En-pages/machikane/AdressesEn';
 
 import SectionsEn from './En-pages/project/SectionsEn';
 import ProjectEn from './En-pages/project/ProjectEn';
@@ -58,8 +60,6 @@ import MapEn from './En-pages/access-map/MapEn';
 
 
 import Error404 from './pages/Error404';
-import AdressesTmp from './pages/machikane/AdressesTmp';
-import AdressesEnTmp from './En-pages/machikane/AdressesEnTmp';
 
 function AppContents() {
   const location = useLocation();
@@ -83,8 +83,7 @@ function AppContents() {
             <Routes>
               <Route path="/" element={<HomeEn />} />
               <Route path="/about/" element={<AboutEn />} />
-              {/* <Route path="/adresses/" element={<AdressesEn />} /> */}
-              <Route path="/adresses/" element={<AdressesEnTmp />} />
+              <Route path="/adresses/" element={<AdressesEn />} />
               <Route path="/theme/" element={<ThemeEn />} />
               <Route path="/goods/" element={<GoodsEn />} />
               <Route path="/sponsor/" element={<SponsorEn />} />
@@ -116,8 +115,7 @@ function AppContents() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about/" element={<About />} />
-                {/* <Route path="/adresses/" element={<Adresses />} /> */}
-                <Route path="/adresses/" element={<AdressesTmp />} />
+                <Route path="/adresses/" element={<Adresses />} />
                 <Route path="/theme/" element={<Theme />} />
                 <Route path="/goods/" element={<Goods />} />
                 <Route path="/sponsor/" element={<Sponsor />} />
