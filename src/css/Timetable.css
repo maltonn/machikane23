@@ -65,7 +65,7 @@
 }
 .horizontalHeight::after {
   content: "";
-  border-top: 1px solid #233192;
+  border-top: 1px solid #e6e6e6;
   position: absolute;
   width: 100%;
   margin-top: 1px;
@@ -84,13 +84,13 @@
   grid-template-columns: repeat(2, 1fr);
   /* grid-template-rows: repeat(36, 1fr); */
   width: 100%;
-  border-left: 1px solid #233192;
-  border-top: 1px solid #233192;
-  border-bottom: 1px solid #233192;
+  border-left: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .calendarColumn {
-  border-right: 1px solid #233192;
+  border-right: 1px solid #e6e6e6;
   width: 45vw;
   z-index: 1;
   position: relative;
@@ -112,8 +112,8 @@
   text-align: center;
   color: #000;
   background-color: #15c1f6;
-  border-top: #000 solid 1px;
-  border-bottom: #000 solid 1px;
+  /* border-top: #000 solid 1px;
+  border-bottom: #000 solid 1px; */
   line-height: 4vh;
 }
 .timetableEvent p{
