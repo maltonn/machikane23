@@ -125,10 +125,18 @@ export default function Questionnaire() {
                     {
                         QuestionLst.map((question, index) => {
                             if (question["visible-if"]) {
-                                const qid = question["visible-if"].split("==")[0];
-                                const ans = question["visible-if"].split("==")[1];
-                                if (QuestionLst[Idx(qid)].answer != ans) {
-                                    return null
+                                if(question["visible-if"].includes("==")){
+                                    const qid = question["visible-if"].split("==")[0];
+                                    const ans = question["visible-if"].split("==")[1];
+                                    if (QuestionLst[Idx(qid)].answer != ans) {
+                                        return null
+                                    }
+                                }else if(question["visible-if"].includes("!=")){
+                                    const qid = question["visible-if"].split("!=")[0];
+                                    const ans = question["visible-if"].split("!=")[1];
+                                    if (QuestionLst[Idx(qid)].answer == ans) {
+                                        return null
+                                    }
                                 }
                             }
                             if (question.type == "radio") {
