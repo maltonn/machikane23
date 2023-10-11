@@ -1,0 +1,150 @@
+.timetable{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0px;
+    padding-bottom: 0;
+    z-index: 1000;
+}
+.timetableSky{
+  background-image:linear-gradient(#15c1f6 0%,#b5e5f4 80%, #fff 100%);
+    background-repeat: no-repeat, no-repeat;
+    background-position:center 42%,center;
+    padding-bottom: 15vh;
+}
+.react-tabs__tab-list{
+  display: flex;
+}
+.react-tabs__tab{
+  width: 100%;
+  text-align: center;
+}
+.react-tabs__tab-panel--selected{
+  padding: 5vh 2vw 10vh;
+}
+.timeslotsContainer {
+  height: 100%;
+  display: flex;
+}
+
+.timetableContainer {
+  height: 256%;
+  width: 100%;
+  display: flex;
+  /* min-width: 1080px; */
+}
+
+.timeslotList {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  width: 70;
+  align-items: flex-end;
+}
+
+.timeslotList > li {
+  min-height: 60px;
+  list-style: none;
+}
+
+.timetableContainer {
+  max-height: 1535px;
+  width: 100%;
+  display: flex;
+}
+
+.timetableWrapper {
+  width: 100%;
+  display: flex;
+  position: relative;
+  top: 10px;
+}
+
+.horizontalWrapper {
+  min-width: 100%;
+  flex: none;
+  vertical-align: top;
+}
+
+.horizontalHeight {
+  height: 60px;
+}
+.horizontalHeight::after {
+  content: "";
+  border-top: 1px solid #e6e6e6;
+  position: absolute;
+  width: 100%;
+  margin-top: 1px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.timesolotsBorderRight {
+  border-right: 1px solid #233192;
+  position: relative;
+  top: 2px;
+}
+
+.eventContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: repeat(36, 1fr); */
+  width: 100%;
+  border-left: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.calendarColumn {
+  border-right: 1px solid #e6e6e6;
+  width: 45vw;
+  z-index: 1;
+  position: relative;
+}
+
+.empty {
+  height: 60px;
+  width: 100%;
+  display: block;
+}
+
+.stageName {
+  position: absolute;
+  top: -37px;
+  left: 37%;
+}
+
+.timetableEvent{
+  text-align: center;
+  color: #000;
+  background-color: #ffffff;
+  border: #02c0f9 2px solid;
+  box-sizing: border-box;
+  line-height: 4vh;
+  display: grid;
+  place-items: center;
+}
+.timetableEvent p{
+  margin: 0;
+}
+.timetableLink{
+  text-decoration: none;
+}
+@media screen and (max-width:490px){
+  .react-tabs__tab-panel--selected{
+    padding: 5vh 0 10vh;
+  }
+  .calendarColumn{
+    width: 42vw;
+  }
+  .timetableEvent{
+    font-size: 8px;
+    line-height: 15px;
+  }
+}
+@media screen and (min-width:490px) and (max-width: 1090px){
+  .timetableEvent{
+    line-height: 16px;
+  }
+}
