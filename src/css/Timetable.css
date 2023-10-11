@@ -12,6 +12,13 @@
     background-position:center 42%,center;
     padding-bottom: 15vh;
 }
+.react-tabs__tab-list{
+  display: flex;
+}
+.react-tabs__tab{
+  width: 100%;
+  text-align: center;
+}
 .react-tabs__tab-panel--selected{
   padding: 5vh 2vw 10vh;
 }
@@ -111,10 +118,12 @@
 .timetableEvent{
   text-align: center;
   color: #000;
-  background-color: #15c1f6;
-  /* border-top: #000 solid 1px;
-  border-bottom: #000 solid 1px; */
+  background-color: #ffffff;
+  border: #02c0f9 2px solid;
+  box-sizing: border-box;
   line-height: 4vh;
+  display: grid;
+  place-items: center;
 }
 .timetableEvent p{
   margin: 0;
@@ -130,7 +139,7 @@
     width: 42vw;
   }
   .timetableEvent{
-    /* font-size: 3px; */
+    font-size: 8px;
     line-height: 15px;
   }
 }
