@@ -8,11 +8,9 @@ function createUuid() {
         let r = (new Date().getTime() + Math.random() * 16) % 16 | 0, v = a == 'x' ? r : (r & 0x3 | 0x8);
         return v.toString(16);
     });
-
 }
 
 export default function Questionnaire() {
-
     const uid = useRef("");
     useEffect(() => {
         uid.current = localStorage.getItem("uid");
@@ -29,6 +27,8 @@ export default function Questionnaire() {
         }
         ).then((data) => {
             console.log(data);
+            QuestionLst[Idx(qid)]["submitted"] = true;
+            setQuestionLst([...QuestionLst])
         }).catch((err) => {
             console.log(err);
         }
@@ -37,12 +37,12 @@ export default function Questionnaire() {
 
     const [isDoneSubmit, setIsDoneSubmit] = useState(false);//送信済みかどうか
     const handleSubmit = () => {
-        QuestionLst.forEach((question) => {
-            if (question.answer != "") {
-                ReqToDB(question.id, question.answer);
-            }
-        })
         setIsDoneSubmit(true);
+        // QuestionLst.forEach((question) => {
+        //     if (question.answer != "") {
+        //         ReqToDB(question.id, question.answer);
+        //     }
+        // })
     }
 
     useEffect(() => {//閉じるときに途中までの結果を送信
@@ -108,7 +108,27 @@ export default function Questionnaire() {
             "answer": [],
         }
     ]);
+    
 
+    if(isDoneSubmit){
+        return(
+            <div className="main">
+                <Helmet>
+                    <title>アンケート|まちかね祭2023</title>
+                </Helmet>
+                <div className="sky">
+                    <div className="top">
+                        <div className="title">
+                            <h1>アンケート</h1>
+                        </div>
+                    </div>
+                    <div className="mainpage">
+                        <h2>送信しました</h2>
+                    </div>
+                </div>
+            </div>
+        )
+    }
 
     return (
         <div className="main">
@@ -125,13 +145,13 @@ export default function Questionnaire() {
                     {
                         QuestionLst.map((question, index) => {
                             if (question["visible-if"]) {
-                                if(question["visible-if"].includes("==")){
+                                if (question["visible-if"].includes("==")) {
                                     const qid = question["visible-if"].split("==")[0];
                                     const ans = question["visible-if"].split("==")[1];
                                     if (QuestionLst[Idx(qid)].answer != ans) {
                                         return null
                                     }
-                                }else if(question["visible-if"].includes("!=")){
+                                } else if (question["visible-if"].includes("!=")) {
                                     const qid = question["visible-if"].split("!=")[0];
                                     const ans = question["visible-if"].split("!=")[1];
                                     if (QuestionLst[Idx(qid)].answer == ans) {
@@ -143,6 +163,7 @@ export default function Questionnaire() {
                                 return (
                                     <div className="question" key={index}>
                                         <h2>{question.question}</h2>
+                                        <span>{question.submitted ? "✓" : ""}</span>
                                         {
                                             question.option.map((opt, index) => {
                                                 return (
@@ -153,7 +174,15 @@ export default function Questionnaire() {
                                                             id={question.id + "-" + index}
                                                             value={opt}
                                                             checked={question.answer == opt}
-                                                            onChange={(e) => { QuestionLst[Idx(question.id)]["answer"] = e.target.value; setQuestionLst([...QuestionLst]) }}
+                                                            onChange={(e) => {
+                                                                QuestionLst[Idx(question.id)]["answer"] = e.target.value;
+                                                                setQuestionLst([...QuestionLst])
+                                                                ReqToDB(question.id, e.target.value)
+
+                                                                if(Idx(question.id)-1>=0 && QuestionLst[Idx(question.id)-1].type=="textarea" ){
+                                                                    ReqToDB(QuestionLst[Idx(question.id)-1].id, QuestionLst[Idx(question.id)-1].answer)
+                                                                }
+                                                            }}
                                                         />
                                                         <label htmlFor={question.id + "-" + index}>{opt}</label>
                                                     </div>
@@ -177,11 +206,16 @@ export default function Questionnaire() {
                                                             id={question.id + "-" + index}
                                                             value={opt}
                                                             onChange={(e) => {
-                                                                console.log(e.target.value);
-                                                                // if(!QuestionLst[Idx(question.id)]["answer"].includes(e.target.value)){
-                                                                //     QuestionLst[Idx(question.id)]["answer"]+=(","+e.target.value);
-                                                                //     setQuestionLst([...QuestionLst])
-                                                                // }
+                                                                if (e.target.checked) {
+                                                                    QuestionLst[Idx(question.id)]["answer"].push(e.target.value);
+                                                                    ReqToDB(question.id, e.target.value)
+                                                                } else {
+                                                                    ReqToDB(question.id, "-" + e.target.value)
+                                                                }
+
+                                                                if(Idx(question.id)-1>=0 && QuestionLst[Idx(question.id)-1].type=="textarea" ){
+                                                                    ReqToDB(QuestionLst[Idx(question.id)-1].id, QuestionLst[Idx(question.id)-1].answer)
+                                                                }
                                                             }}
                                                         />
                                                         <label htmlFor={question.id + "-" + index}>{opt}</label>
@@ -196,11 +230,17 @@ export default function Questionnaire() {
                                 return (
                                     <div className="question" key={index}>
                                         <h2>{question.question}</h2>
+                                        <span>{question.submitted ? "✓" : ""}</span>
                                         <textarea
                                             name={question.id}
                                             id={question.id} cols="30" rows="10"
-                                            onChange={(e) => { console.log(e.target.value) }}
-
+                                            onChange={
+                                                (e) => {
+                                                    QuestionLst[Idx(question.id)]["answer"] = e.target.value;
+                                                    setQuestionLst([...QuestionLst])
+                                                }
+                                            }
+                                            value={question.answer}
                                         ></textarea>
                                     </div>
                                 )
