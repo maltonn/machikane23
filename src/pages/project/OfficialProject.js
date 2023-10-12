@@ -310,14 +310,24 @@ export default function OfficialProject() {
                         <div className="detail O-1Detail" id="O-1">
                             <div className="O-1Title"></div>
                             <div className="O-1DetailIcon"><img src={O1Logo} alt="O-1アイコン"></img></div>
+                            <p className="O1text">阪大生1面白い人は誰だ～！？</p>
+                            <p className="O1text">出場者を紹介！</p>
                             <div className="O-1boxAround">
                                 {O1Participant.map((data)=>{
                                     return(
                                         <div className="O-1box">
                                             <div className="O1Image"><img src={data.image} alt="出場者写真"></img></div>
-                                            <p>{data.name}</p>
-                                            <p>{data.grade}</p>
-                                            <p>{data.catchCopy}</p>
+                                            <table>
+                                                <tr>
+                                                    <td>コンビ名</td><td>{data.name}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>学年・学部</td><td>{data.grade}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>キャッチコピー</td><td>{data.catchCopy}</td>
+                                                </tr>
+                                            </table>
                                             <p>{data.comment}</p>
                                         </div>
                                     )
