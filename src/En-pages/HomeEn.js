@@ -73,6 +73,10 @@ export default function HomeEn() {
             <table className="news-table">
               <tbody>
                 <tr>
+                  <td className="news-date">Oct.13(Fri.)</td>
+                  <td className="news-content">"Addresses" and "Stage Performance Schedule" pages are now open.</td>
+                </tr>
+                <tr>
                   <td className="news-date">Oct.6(Fri.)</td>
                   <td className="news-content">The official website is now open!</td>
                 </tr>
