@@ -128,6 +128,7 @@ import 模擬店46 from '../imgs/place/模擬店46.png'
 import 模擬店47 from '../imgs/place/模擬店47.png'
 import 奏 from '../imgs/map/ステージ奏.png'
 import 宙 from '../imgs/map/ステージ宙.png'
+import 懐徳堂 from '../imgs/place/kaitokudo.jpeg'
 
 export default function EventPlaceMap(place){
     var eventPlace={
@@ -260,7 +261,8 @@ export default function EventPlaceMap(place){
         '言語文化研究棟前': 言語文化研究棟前,
         '文学研究棟前': 文学研究棟前,
         '奏': 奏,
-        '宙': 宙
+        '宙': 宙,
+        '大学会館21世紀懐徳堂':懐徳堂,
     }
     return (
         <div className="detail-eventPlace-parent">

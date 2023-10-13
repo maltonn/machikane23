@@ -73,6 +73,10 @@ export default function Home() {
             <table className="news-table">
               <tbody>
                 <tr>
+                  <td className="news-date">10/13(金)</td>
+                  <td className="news-content">「ご挨拶」「ステージタイムテーブル」のページを公開しました。</td>
+                </tr>
+                <tr>
                   <td className="news-date">10/6(金)</td>
                   <td className="news-content">まちかね祭2023公式サイトが完成しました。</td>
                 </tr>
@@ -180,6 +184,11 @@ export default function Home() {
                 <div className="ocean-link-button"><Link to="/theme" onClick={PageChange}>もっと見る</Link></div>
               </div>
             </div>
+          </div>
+
+          <div className="top-sponsor">
+            <div className="titles"><nobr><p className="item1">●</p><span id="title">ご協賛</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
+            <a href="https://ewha-yifu.com/" className="link-button" style={{color:"blue"}}target="_blank" rel="noreferrer">Trip Farm株式会社</a>
           </div>
 
           <div className="bottoms">

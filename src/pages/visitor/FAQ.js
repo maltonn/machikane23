@@ -53,7 +53,7 @@ export default function FAQ() {
                 </div>
                 <div className="FAQ-card">
                     <div className="FAQ-card-Q">購入したものを食べられるところはありますか？</div>
-                    <div className="FAQ-card-A"> 食事席をご利用頂けます。</div>   
+                    <div className="FAQ-card-A">食事席をご利用頂けます。</div>   
                 </div>
                 <div className="FAQ-card">
                     <div className="FAQ-card-Q">食事席はどこですか？</div>
@@ -126,11 +126,11 @@ export default function FAQ() {
 ステージ、館内、屋外：ケージに入れて頂いた場合は同伴可能です。</div></div>
                 <div className="FAQ-card">
                     <div className="FAQ-card-Q">体調が優れないときはどうすれば良いですか？</div>
-                    <div className="FAQ-card-A"> お近くの中実員へお声がけください。</div>
+                    <div className="FAQ-card-A"> お近くの実行委員へお声がけください。</div>
                 </div>
                 <div className="FAQ-card">
                     <div className="FAQ-card-Q">迷子を発見 / 落とし物を拾いました</div>
-                    <div className="FAQ-card-A">本部受付(ピロティ)までお連れ/お持ち頂くか、お近くの中実員へお声がけください。</div></div>
+                    <div className="FAQ-card-A">本部受付(ピロティ)までお連れ/お持ち頂くか、お近くの実行委員へお声がけください。</div></div>
                 <div className="FAQ-card">
                     <div className="FAQ-card-Q"> 迷子/落とし物を探しています</div>
                     <div className="FAQ-card-A">本部受付(ピロティ)へお越しください。</div></div>

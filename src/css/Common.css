@@ -11,7 +11,15 @@
 }
 .preparation p{
     margin: 0;
-    padding-top: 110px;
+}
+.preparation-children{
+    background-color: #fff;
+    position: relative;
+    top:5.2rem;
+    color: blue;
+}
+.preparation-children p{
+    padding: 0
 }
 .link-button{
     background: #fff;
@@ -35,10 +43,15 @@
     }
     .preparation p{
         margin: 0;
-        padding-top: 7rem;
     }
-    .preparation p,.preparation span{
-        font-size: 0.8rem;
+    .preparation-children{
+        background-color: #fff;
+        position: relative;
+        top:3.5rem;
+        color: blue;
+    }
+    .preparation-children p{
+        padding: 0
     }
     .link-button{
         width: 5rem;
@@ -57,7 +70,15 @@
     }
     .preparation p{
         margin: 0;
-        padding-top: 12rem;
+    }
+    .preparation-children{
+        background-color: #fff;
+        position: relative;
+        top:30.2rem;
+        color: blue;
+    }
+    .preparation-children p{
+        padding: 0
     }
     .link-button{
         width: 30%;
@@ -74,9 +95,5 @@
       background-size: 40% auto,100% auto,100%;
       background-position:center,center;
       margin-top:-35vh;
-    }
-    .preparation p{
-        margin: 0;
-        padding-top: 25rem;
     }
 }
