@@ -16,6 +16,10 @@ import clock from "../../imgs/official_project/clock.png"
 import leaf from "../../imgs/official_project/leaf1.png"
 import bonber from "../../imgs/official_project/bonber.png"
 import Bubble from "../../components/Bubble";
+import tomosankaku from "../../imgs/official_project/98D797FC-C7EF-403E-BC42-D1E724A9F536 - 毛笠龍之介.jpeg"
+import DJcola from "../../imgs/official_project/IMG_20230930_094521 - たいち.jpg"
+import santiago from "../../imgs/official_project/IMG_3680 - まつし.jpeg"
+import noimage from "../../imgs/official_project/noimage.png"
 
 
 export default function OfficialProjectEn() {
@@ -25,6 +29,71 @@ export default function OfficialProjectEn() {
             behavior: "smooth",
         })
     })
+    const O1Participant=[
+        {
+            "name":"DOPPYUN Baby Boy",
+            "catchCopy":"Enemies of Ise Jingu",
+            "grade":"Non-public",
+            "comment":"Do my best!",
+            "image":noimage
+        },
+        {
+            "name":"Tri-Tip",
+            "catchCopy":"Comedy Engineering",
+            "grade":"department of engineering (2-year graduate students)",
+            "comment":"Tri-Tip is not responsible for any abdominal pain caused by our comedy.",
+            "image":tomosankaku
+        },
+        {
+            "name":"The Devil Grandma in the Mountain",
+            "catchCopy":"Good smell neighborhood",
+            "grade":"department of Human Sciences 2-year university students",
+            "comment":"Follow us",
+            "image":noimage
+        },
+        {
+            "name":"DJ Cola",
+            "catchCopy":"SDGs Cmedy science（retake）",
+            "grade":"department of engineering / 4-year university students",
+            "comment":"Don't touch us, I'll sue you!",
+            "image":DJcola
+        },
+        {
+            "name":"All Out",
+            "catchCopy":"Run it out for the win!",
+            "grade":"department of literature / external student   4-year university students",
+            "comment":"We have been working together since junior high school! This is the first time for both of us to perform on stage, but we will do our best to achieve our goals.",
+            "image":noimage
+        },
+        {
+            "name":"Kamasukadai",
+            "catchCopy":"Big Teeth",
+            "grade":"department of law /2-year university students",
+            "comment":"We will do the best thing",
+            "image":noimage
+        },
+        {
+            "name":"Tantei gym",
+            "catchCopy":"A new sense of comedy expression",
+            "grade":"department of engineering/department of Human Sciences  1-year university student",
+            "comment":"We will perform manzai that will touch your heart.",
+            "image":noimage
+        },
+        {
+            "name":"Santiago",
+            "catchCopy":"Let the foreign wind blow",
+            "grade":"department of engineering 2-year university student",
+            "comment":"Let’s fight",
+            "image":santiago
+        },
+        {
+            "name":"Nana-Shaku",
+            "catchCopy":"improving fantasy",
+            "grade":"department of Human Sciences /department of literature  2-year university student",
+            "comment":"We do our best to entertain you",
+            "image":noimage
+        },
+    ]
     return(
         <div className="officialProject">
             <Helmet>
@@ -238,7 +307,29 @@ export default function OfficialProjectEn() {
                         <div className="detail O-1Detail" id="O-1">
                             <div className="O-1Title"></div>
                             <div className="O-1DetailIcon"><img src={O1Logo} alt="O-1アイコン"></img></div>
-                            <div className="O-1Preparetion">Coming soon</div>
+                            <p className="O1text">Who's gonna be the funniest in Osaka University!?</p>
+                            <p className="O1text">Here's the introductions of all the competitors!</p>
+                            <div className="O-1boxAround">
+                                {O1Participant.map((data)=>{
+                                    return(
+                                        <div className="O-1box">
+                                            <div className="O1Image"><img src={data.image} alt="出場者写真"></img></div>
+                                            <table>
+                                                <tr>
+                                                    <td>Duo name</td><td>{data.name}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>profile</td><td>{data.grade}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>slogan</td><td>{data.catchCopy}</td>
+                                                </tr>
+                                            </table>
+                                            <p>{data.comment}</p>
+                                        </div>
+                                    )
+                                })}
+                            </div>
                         </div>
                     </div>
                 </div>
