@@ -73,6 +73,10 @@ export default function Home() {
             <table className="news-table">
               <tbody>
                 <tr>
+                  <td className="news-date">10/13(金)</td>
+                  <td className="news-content">「ご挨拶」「ステージタイムテーブル」のページを公開しました。</td>
+                </tr>
+                <tr>
                   <td className="news-date">10/6(金)</td>
                   <td className="news-content">まちかね祭2023公式サイトが完成しました。</td>
                 </tr>
