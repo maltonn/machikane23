@@ -95,7 +95,7 @@ export default function Timetable() {
                 <Helmet>
                     <title>ステージタイムテーブル|まちかね祭2023</title>
                 </Helmet>
-                <PageTitles titles="ステージタイムテーブル" kame={true}></PageTitles>
+                <PageTitles titles="Stage Performance Schedule" kame={true}></PageTitles>
 
                 <Tabs>
                     <TabList>
