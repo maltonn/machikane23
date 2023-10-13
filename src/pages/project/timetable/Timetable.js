@@ -21,7 +21,7 @@ export default function Timetable() {
     }, [])
 
     const calculateTopPosition=(eventStartTime, preEventEndTime)=> {
-        const hourHeight = 60;
+        const hourHeight = 90;
 
         const timeDiff = eventStartTime - preEventEndTime;
         const topPosition = (timeDiff / 3600000) * hourHeight;
@@ -29,7 +29,7 @@ export default function Timetable() {
         return topPosition;
     }
     const calculateHeight=(eventStartTime, eventEndTime)=> {
-        const hourHeight = 60;
+        const hourHeight = 90;
         const timeDiff = eventEndTime - eventStartTime;
 
         const height = (timeDiff / 3600000) * hourHeight;

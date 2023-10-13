@@ -58,7 +58,7 @@ const Timeline = ({ stageDate,displayLst }) => {
                           marginTop: event.topMargin,
                           height: event.height,
                         }}
-                      >{event.groupName}　{window.innerWidth > 490 && `${event.startAt}～${event.endAt}`}
+                      >{event.groupName} {event.startAt}～{event.endAt}
                       
                       </div>
                     </Link>
