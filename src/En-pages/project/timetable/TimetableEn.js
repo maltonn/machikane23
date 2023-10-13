@@ -21,7 +21,7 @@ export default function Timetable() {
     }, [])
 
     const calculateTopPosition=(eventStartTime, preEventEndTime)=> {
-        const hourHeight = 60;
+        const hourHeight = 90;
 
         const timeDiff = eventStartTime - preEventEndTime;
         const topPosition = (timeDiff / 3600000) * hourHeight;
@@ -29,7 +29,7 @@ export default function Timetable() {
         return topPosition;
     }
     const calculateHeight=(eventStartTime, eventEndTime)=> {
-        const hourHeight = 60;
+        const hourHeight = 90;
         const timeDiff = eventEndTime - eventStartTime;
 
         const height = (timeDiff / 3600000) * hourHeight;
@@ -99,9 +99,9 @@ export default function Timetable() {
 
                 <Tabs>
                     <TabList>
-                        <Tab>11月3日</Tab>
-                        <Tab>11月4日</Tab>
-                        <Tab>11月5日</Tab>
+                        <Tab>Nov. 3rd</Tab>
+                        <Tab>Nov. 4th</Tab>
+                        <Tab>Nov. 5th</Tab>
                     </TabList>
                     <TabPanel>
                         <Tableformat stageDate={'11/03'} displayLst={displayLst} />
