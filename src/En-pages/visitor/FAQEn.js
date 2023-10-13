@@ -21,7 +21,7 @@ export default function FAQEn() {
             <div className="FAQ-sky">
             <PageTitles titles="FAQs"  kame={true}></PageTitles>
                 <div className="FAQEn-card">
-                <div className="FAQEn-card-Q">What are the event hours?</div>
+                <div className="FAQEn-card-Q">When are the event hours?</div>
                 <div className="FAQ-table-parent">
                             <table className="FAQ-table">
                                 <tr>
