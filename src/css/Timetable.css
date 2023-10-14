@@ -138,6 +138,9 @@
   .calendarColumn{
     width: 42vw;
   }
+  .stageName{
+    left: 35px;
+  }
   .timetableEvent{
     font-size: 8px;
     line-height: 15px;
