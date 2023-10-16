@@ -9,7 +9,7 @@ import "../../../css/Timetable.css"
 import { useEffect } from "react";
 import PageTitles from "../../../components/PageTitles";
 import Bubble from "../../../components/Bubble";
-import Tableformat from "./Tableformat.js";
+import Tableformat from "./TableformatEn.js";
 
 export default function Timetable() {
     const [displayLst, setDisplayLst] = useState({})
@@ -95,13 +95,13 @@ export default function Timetable() {
                 <Helmet>
                     <title>ステージタイムテーブル|まちかね祭2023</title>
                 </Helmet>
-                <PageTitles titles="ステージタイムテーブル" kame={true}></PageTitles>
+                <PageTitles titles="Stage Performance Schedule" kame={true}></PageTitles>
 
                 <Tabs>
                     <TabList>
-                        <Tab>11月3日</Tab>
-                        <Tab>11月4日</Tab>
-                        <Tab>11月5日</Tab>
+                        <Tab>Nov. 3rd</Tab>
+                        <Tab>Nov. 4th</Tab>
+                        <Tab>Nov. 5th</Tab>
                     </TabList>
                     <TabPanel>
                         <Tableformat stageDate={'11/03'} displayLst={displayLst} />

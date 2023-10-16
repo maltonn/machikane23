@@ -44,7 +44,7 @@ import SectionsEn from './En-pages/project/SectionsEn';
 import ProjectEn from './En-pages/project/ProjectEn';
 import DetailEn from './En-pages/project/DetailEn';
 import MogitenEn from './En-pages/project/MogitenEn';
-import TimetableEn from './En-pages/project/TimetableEn';
+import TimetableEn from './En-pages/project/timetable/TimetableEn';
 import RalleyEn from './En-pages/project/RalleyEn';
 import OfficialProjectEn from './En-pages/project/OfficialProjectEn';
 import TalentProjectEn from './En-pages/project/TalentProjectEn';

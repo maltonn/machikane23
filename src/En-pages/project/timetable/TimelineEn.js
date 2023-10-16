@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { TIME_LIST, HOUR_LIST } from "./index.js";
+import { TIME_LIST, HOUR_LIST } from "./indexEn.js";
 import { Link } from "react-router-dom";
 
 
@@ -13,8 +13,8 @@ const Timeline = ({ stageDate,displayLst }) => {
     });
   }
   const STAGES = [
-    { id: 'stage_kanade', name: 'ステージ奏', shortName: '奏' },
-    { id: 'stage_sora', name: 'ステージ宙', shortName: '宙' },
+    { id: 'stage_kanade', name: 'Stage Kanade', shortName: '奏' },
+    { id: 'stage_sora', name: 'Stage Sora', shortName: '宙' },
   ];
 
 
@@ -58,7 +58,7 @@ const Timeline = ({ stageDate,displayLst }) => {
                           marginTop: event.topMargin,
                           height: event.height,
                         }}
-                      >{event.groupName} {event.startAt}～{event.endAt}
+                      >{event.groupNameEn} {event.startAt}～{event.endAt}
                       
                       </div>
                     </Link>
