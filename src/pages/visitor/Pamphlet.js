@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
-// import {Link} from "react-router-dom";
 import "../../css/Common.css"
+import "../../css/Pamphlet.css"
 import PageTitles from "../../components/PageTitles";
 import Bubble from "../../components/Bubble";
 import { useEffect } from "react";
@@ -20,9 +20,10 @@ export default function Pamphlet() {
             </Helmet>
             <div className="about-sky">
                 <PageTitles titles="公式パンフレット" kame={true}></PageTitles>
-                <div className='pdf'>
-                    <a href={pamphlet} target="_blank" rel="noreferrer">
-                        <div style={{display:"flex",justifyContent:"center"}}><img src={pamphletTop} style={{width:"80%"}}></img></div>
+                <div>
+                    <p style={{margin:"10px"}}>以下の表紙をクリックすると電子版パンフレットをご覧いただけます。</p>
+                    <a href={pamphlet} className="pamphImg_A" target="_blank" rel="noreferrer">
+                        <img src={pamphletTop} class="pamphTop"></img>
                     </a>
                 </div>
             </div>

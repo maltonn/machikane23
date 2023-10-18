@@ -1,0 +1,28 @@
+.pamphImg_A{
+  display: flex;
+  margin: 0 auto;
+  width: 30%;
+  height: auto;
+  justify-content: center;
+}
+.pamphTop{
+    width: 100%;
+    height: auto;
+}
+/*======================
+    スマホ用
+ ======================*/
+
+  @media (max-width:490px){
+    .pamphImg_A{
+      width: 80%;
+    }
+  }
+    /*======================
+    タブレット用
+  ======================*/
+  @media (min-width:490px) and (max-width: 720px){
+    .pamphImg_A{
+      width: 80%;
+    }
+  }
