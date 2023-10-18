@@ -19,6 +19,7 @@ import nakamura from "../../imgs/sponsor/nakamura.jpg"
 import heiwaonsen from "../../imgs/sponsor/heiwaonsen.png"
 import homecomingday from "../../imgs/sponsor/home-coming-day.jpg"
 import rokkosai from "../../imgs/sponsor/rokkosai.jpeg"
+import maizou from "../../imgs/sponsor/maizou.jpg"
 import { useEffect } from "react";
 import cloud from "../../imgs/circlecloud3.png"
 import machikame1 from "../../imgs/animal/machikame1.png"
@@ -106,6 +107,7 @@ export default function Sponsor({titles,kame}) {
                     <div className="sponsor-imgs">
                         <a href="https://ou2023hcd.alumni.osaka-u.ac.jp/" target="_blank" rel="noreferrer"><img src={homecomingday} alt="homecomingday"></img></a>
                         <a href="http://www.rokkosai-kobe-univ.site/" target="_blank" rel="noreferrer"><img src={rokkosai} alt="rokkosai"></img></a>
+                        <a href="https://www.osaka-u.ac.jp/ja/event/2023/11/10510" target="_blank" rel="noreferrer"><img src={maizou} alt="maizoubunnkatyousa"></img></a>
                     </div>
                 </div>
             </div>      
