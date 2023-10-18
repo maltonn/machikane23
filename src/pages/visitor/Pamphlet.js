@@ -1,8 +1,11 @@
 import { Helmet } from "react-helmet";
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
 import "../../css/Common.css"
+import PageTitles from "../../components/PageTitles";
 import Bubble from "../../components/Bubble";
 import { useEffect } from "react";
+import pamphlet from "../../data/machikane23pamphlet.pdf";
+import pamphletTop from "../../data/pamphletTop.jpg";
 export default function Pamphlet() {
     useEffect(()=>{
         window.scrollTo({
@@ -15,10 +18,13 @@ export default function Pamphlet() {
             <Helmet>
             <title>公式パンフレット|まちかね祭2023</title>
             </Helmet>
-            <div className="preparation">
-                <p>ただいまページ作成中です。しばらくお待ちください。</p>
-                <span>現在のページ：公式パンフレット</span><br></br>
-                <Link to="/" >トップページへ戻る</Link>
+            <div className="about-sky">
+                <PageTitles titles="公式パンフレット" kame={true}></PageTitles>
+                <div className='pdf'>
+                    <a href={pamphlet} target="_blank" rel="noreferrer">
+                        <div style={{display:"flex",justifyContent:"center"}}><img src={pamphletTop} style={{width:"80%"}}></img></div>
+                    </a>
+                </div>
             </div>
             <Bubble bubbleSwitch={false}></Bubble>
         </div>
