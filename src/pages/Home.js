@@ -10,6 +10,7 @@ import recommend from "../imgs/pickup_icon/icon_recommend.png"
 import access from "../imgs/pickup_icon/icon_access.png"
 import map from "../imgs/pickup_icon/icon_map.png"
 import timetable from "../imgs/pickup_icon/icon_stage.png"
+import tripfarm from "../imgs/sponsor/tripfarm.png"
 import { Helmet } from "react-helmet";
 import { useEffect } from "react"
 import { Link } from "react-router-dom";
@@ -188,7 +189,9 @@ export default function Home() {
 
           <div className="top-sponsor">
             <div className="titles"><nobr><p className="item1">●</p><span id="title">ご協賛</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
-            <a href="https://ewha-yifu.com/" className="link-button" style={{color:"blue"}}target="_blank" rel="noreferrer">Trip Farm株式会社</a>
+            <div className="sponsor-imgs">
+              <a href="https://ewha-yifu.com/" target="_blank" rel="noreferrer"><img src={tripfarm}></img></a>
+            </div>
           </div>
 
           <div className="bottoms">
