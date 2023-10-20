@@ -89,7 +89,7 @@ export default function HomeEn() {
           </div>     
           <div className="top-backCard">
             <span id="title">To all the visitors</span>
-            <div className="content">Cars are not allowed on campus.<br/>Please use public transportation when you come to the Toyonaka Campus.<br/>You do not need to make a visit reservation.</div>
+            <div className="content"><div className="noreserve">You do not need to make a visit reservation.</div>Cars are not allowed on campus.<br/>Please use public transportation when you come to the Toyonaka Campus.</div>
             <p>Reservation is required for the Comedy LIVE Show. Please move on to the reservation site from the button below.</p>
             <div className="top-linkButton live-reservation"><a href="https://app.tyuujitu-system.net/machikane23/visitor/talent-live" target="_blank" rel="noreferrer">Reserve for<br/>the Comedy LIVE Show</a></div>
             <p>Click <Link to="./talent-project" onClick={PageChange}>Here</Link> for more details.</p>
