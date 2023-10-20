@@ -19,7 +19,7 @@ import nakamura from "../../imgs/sponsor/nakamura.jpg"
 import tripfarm from "../../imgs/sponsor/tripfarm.png"
 import heiwaonsen from "../../imgs/sponsor/heiwaonsen.png"
 import homecomingday from "../../imgs/sponsor/home-coming-day.jpg"
-import rokkosai from "../../imgs/sponsor/rokkosai.jpeg"
+import rokkosai from "../../imgs/sponsor/rokkosai.jpg"
 import maizou from "../../imgs/sponsor/maizou.jpg"
 import { useEffect } from "react";
 import cloud from "../../imgs/circlecloud3.png"
