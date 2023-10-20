@@ -98,7 +98,7 @@ export default function Sponsor({titles,kame}) {
                     <div className="sponsor-imgs">
                         <a href="https://heiwaonsen.com/" target="_blank" rel="noreferrer"><img src={heiwaonsen} alt="heiwaonsen"></img></a>
                         <a href="https://amzn.asia/d/5zzuKa0" target="_blank" rel="noreferrer"><img src={nakamura} alt="nakamura"></img></a>
-                        <a href="https://ewha-yifu.com/" target="_blank" rel="noreferrer"><img src={tripfarm}></img></a>
+                        <a href="https://ewha-yifu.com/" target="_blank" rel="noreferrer"><img src={tripfarm} alt="tripfarm"></img></a>
                         <a href="https://www.seito-jp.com/minimini/ishibashi" target="_blank" rel="noreferrer">株式会社成都賃貸ホームズミニミニFC石橋店</a>
                     </div>
                 </div>
