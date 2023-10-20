@@ -1,0 +1,104 @@
+.pamphImg_A{
+  display: flex;
+  margin: 0 auto;
+  width: 30%;
+  height: auto;
+  justify-content: center;
+}
+.sorry-pamph{
+  text-align: center;
+  margin: 10px 20px;
+}
+.correction{
+  width: 65%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  border: double 3px #2E3192;
+  margin: 30px auto;
+}
+.correction th:nth-child(1){
+  width: 70px;
+}
+.correction td,.correction th{
+  border: solid 1px #2E3192;
+  text-align: center;
+  padding: 0 5px;
+}
+.boolean{
+  width: 200px;
+}
+.pamphTop{
+    width: 100%;
+    height: auto;
+}
+/*======================
+    スマホ用
+ ======================*/
+
+  @media (max-width:490px){
+    .pamphImg_A{
+      width: 80%;
+    }
+    .sorry-pamph{
+      font-size: 0.8rem;
+    }
+    .correction{
+      width: 90%;
+      font-size: 0.6rem;
+      margin: 30px auto;
+    }
+    .correction th:nth-child(1){
+      width: 30px;
+    }
+    .boolean{
+      width: 85px;
+    }
+  }
+    /*======================
+    タブレット用
+  ======================*/
+  @media (min-width:490px) and (max-width: 670px){
+    .sorry-pamph{
+      font-size: 0.8rem;
+    }
+    .correction{
+      width: 97%;
+      font-size: 0.8rem;
+      margin: 30px auto;
+    }
+    .correction th:nth-child(1){
+      width: 50px;
+    }
+    .boolean{
+      width: 150px;
+    }
+  }
+  @media (min-width:670px) and (max-width: 720px){
+    .pamphImg_A{
+      width: 80%;
+    }
+    .correction{
+      width: 97%;
+      font-size: 1rem;
+      margin: 30px auto;
+    }
+    .correction th:nth-child(1){
+      width: 70px;
+    }
+    .boolean{
+      width: 200px;
+    }
+  }
+  @media (min-width:720px) and (max-width: 1000px){
+    .correction{
+      width: 90%;
+      font-size: 1rem;
+      margin: 30px auto;
+    }
+    .correction th:nth-child(1){
+      width: 70px;
+    }
+    .boolean{
+      width: 200px;
+    }
+  }
