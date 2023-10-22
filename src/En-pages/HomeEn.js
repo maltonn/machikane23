@@ -82,7 +82,7 @@ export default function HomeEn() {
                 </tr>
                 <tr>
                   <td className="news-date">Oct.13(Fri.)</td>
-                  <td className="news-content">"Addresses" and "Stage Performance Schedule" pages are now open.</td>
+                  <td className="news-content"><Link to="./adresses" onClick={PageChange}>"Addresses"</Link>and <Link to="./timetable" onClick={PageChange}>"Stage Performance Schedule"</Link> pages are now open.</td>
                 </tr>
                 <tr>
                   <td className="news-date">Oct.6(Fri.)</td>
