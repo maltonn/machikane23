@@ -15,7 +15,7 @@ export default function AdressesEn() {
     return(
         <div className="main">
             <Helmet>
-            <title>Address|2023 Machikane Festival</title>
+            <title>Addresses|2023 Machikane Festival</title>
             </Helmet>
             <div className="greeting-sky">
                 <PageTitles titles="Address"></PageTitles>
