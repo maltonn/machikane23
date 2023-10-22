@@ -87,11 +87,11 @@ export default function Home() {
                 </tr>
                 <tr>
                   <td className="news-date">10/22(日)</td>
-                  <td className="news-content">実行委員企画のページを更新しました。</td>
+                  <td className="news-content"><Link to="./official-project" onClick={PageChange}>実行委員企画</Link>のページを更新しました。</td>
                 </tr>
                 <tr>
                 <td className="news-date"></td>
-                  <td className="news-content">パンフレットのページが完成しました。</td>
+                  <td className="news-content"><Link to="./pamphlet" onClick={PageChange}>パンフレット</Link>のページが完成しました。</td>
                 </tr> 
               </tbody>
             </table>
