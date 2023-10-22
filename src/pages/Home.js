@@ -73,6 +73,14 @@ export default function Home() {
             <span id="title">お知らせ</span>
             <table className="news-table">
               <tbody>
+              <tr>
+                  <td className="news-date">10/22(日)</td>
+                  <td className="news-content"><Link to="./official-project" onClick={PageChange}>実行委員企画</Link>のページを更新しました。</td>
+                </tr>
+                <tr>
+                <td className="news-date"></td>
+                  <td className="news-content"><Link to="./pamphlet" onClick={PageChange}>パンフレット</Link>のページが完成しました。</td>
+                </tr>
                 <tr>
                   <td className="news-date">10/13(金)</td>
                   <td className="news-content">「ご挨拶」「ステージタイムテーブル」のページを公開しました。</td>
@@ -84,14 +92,6 @@ export default function Home() {
                 <tr>
                   <td className="news-date">9/10(日)</td>
                   <td className="news-content">まちかね祭2023公式サイトのトップページが完成しました。</td>
-                </tr>
-                <tr>
-                  <td className="news-date">10/22(日)</td>
-                  <td className="news-content"><Link to="./official-project" onClick={PageChange}>実行委員企画</Link>のページを更新しました。</td>
-                </tr>
-                <tr>
-                <td className="news-date"></td>
-                  <td className="news-content"><Link to="./pamphlet" onClick={PageChange}>パンフレット</Link>のページが完成しました。</td>
                 </tr>
               </tbody>
             </table>

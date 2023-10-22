@@ -73,6 +73,14 @@ export default function HomeEn() {
             <table className="news-table">
               <tbody>
                 <tr>
+                  <td className="news-date">Oct.22(Sun.)</td>
+                  <td className="news-content">Uploaded the page of <Link to="./official-project" onClick={PageChange}>"Official Projects"</Link>.</td>
+                </tr>
+                <tr>
+                <td className="news-date"></td>
+                  <td className="news-content">The <Link to="./pamphlet" onClick={PageChange}>"Official Pamphlet"</Link> page is now available.</td>
+                </tr>
+                <tr>
                   <td className="news-date">Oct.13(Fri.)</td>
                   <td className="news-content">"Addresses" and "Stage Performance Schedule" pages are now open.</td>
                 </tr>
@@ -83,14 +91,6 @@ export default function HomeEn() {
                 <tr>
                   <td className="news-date">Sep.10(Sun.)</td>
                   <td className="news-content">The TOP page is now available!</td>
-                </tr>
-                <tr>
-                  <td className="news-date">Oct.22(Sun.)</td>
-                  <td className="news-content">Uploaded the page of <Link to="./official-project" onClick={PageChange}>"Official Projects"</Link>.</td>
-                </tr>
-                <tr>
-                <td className="news-date"></td>
-                  <td className="news-content">The <Link to="./pamphlet" onClick={PageChange}>"Official Pamphlet"</Link> page is now available.</td>
                 </tr>
               </tbody>
             </table>
