@@ -98,7 +98,7 @@ export default function Home() {
           </div>     
           <div className="top-backCard">
             <span id="title">ご来場の皆様へ</span>
-            <div className="content"><div className="noreserve">来場予約は不要です！</div>まちかね祭に車でご来場いただくことはできません。<br/>ご来場の際は公共交通機関をご利用ください。</div>
+            <div className="content"><div className="noreserve">来場予約は不要です！</div>ただし、一部の企画や研究室公開には予約が必要である可能性がございます。詳しくは<Link to="/project-search" onClick={PageChange}>各出展団体</Link>・<Link to="/lab-open" onClick={PageChange}>研究室</Link>のページをご確認ください。<br/>まちかね祭に車でご来場いただくことはできません。<br/>ご来場の際は公共交通機関をご利用ください。</div>
             <p>お笑いライブは予約必須です。下のボタンから予約サイトへアクセスください。</p>
             <div className="top-linkButton live-reservation"><a href="https://app.tyuujitu-system.net/machikane23/visitor/talent-live" target="_blank" rel="noreferrer">お笑いライブ<br></br>予約サイト</a></div>
             <p>お笑いライブ詳細は<Link to="./talent-project" onClick={PageChange}>こちら</Link></p>
