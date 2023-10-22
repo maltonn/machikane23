@@ -92,7 +92,7 @@ export default function Home() {
                 <tr>
                 <td className="news-date"></td>
                   <td className="news-content"><Link to="./pamphlet" onClick={PageChange}>パンフレット</Link>のページが完成しました。</td>
-                </tr> 
+                </tr>
               </tbody>
             </table>
           </div>     

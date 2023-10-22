@@ -84,12 +84,20 @@ export default function HomeEn() {
                   <td className="news-date">Sep.10(Sun.)</td>
                   <td className="news-content">The TOP page is now available!</td>
                 </tr>
+                <tr>
+                  <td className="news-date">Oct.22(Sun.)</td>
+                  <td className="news-content">Uploaded the page of <Link to="./official-project" onClick={PageChange}>"Official Projects"</Link>.</td>
+                </tr>
+                <tr>
+                <td className="news-date"></td>
+                  <td className="news-content">The <Link to="./pamphlet" onClick={PageChange}>"Official Pamphlet"</Link> page is now available.</td>
+                </tr>
               </tbody>
             </table>
           </div>     
           <div className="top-backCard">
             <span id="title">To all the visitors</span>
-            <div className="content"><div className="noreserve">You do not need to make a visit reservation.</div>Cars are not allowed on campus.<br/>Please use public transportation when you come to the Toyonaka Campus.</div>
+            <div className="content"><div className="noreserve">You do not need to make a visit reservation.</div>However, reservations may be required for <Link to="/project-search" onClick={PageChange}>some part of the projects</Link> or <Link to="/lab-open" onClick={PageChange}>Openlab projects</Link>.Please check each detail page for more information.<br/>Cars are not allowed on campus.<br/>Please use public transportation when you come to the Toyonaka Campus.</div>
             <p>Reservation is required for the Comedy LIVE Show. Please move on to the reservation site from the button below.</p>
             <div className="top-linkButton live-reservation"><a href="https://app.tyuujitu-system.net/machikane23/visitor/talent-live" target="_blank" rel="noreferrer">Reserve for<br/>the Comedy LIVE Show</a></div>
             <p>Click <Link to="./talent-project" onClick={PageChange}>Here</Link> for more details.</p>
