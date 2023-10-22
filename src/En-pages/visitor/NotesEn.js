@@ -64,7 +64,7 @@ export default function NotesEn() {
                             <div className="notes-miniContent">
                                 <ul>
                                     <li>All lost items we found during the Machikane Festival (Nov.3, 4 and 5) will be taken care of by us.</li>
-                                    <li>When you lose something or you find lost items, please come to the main reception desk at the piloti.</li>
+                                    <li>When you lose something or you find lost items, please come to the Main info. desk at the piloti.</li>
                                     <li>Caution:After the festival(5/2～), lost items will be organized by Toyonaka Student Center (2nd floor of Student Union, Toyonaka Campus )</li>
                                     <li>If you have any questions about lost items, please go to the Toyonaka Student Center.</li>
                                 </ul>
@@ -73,7 +73,7 @@ export default function NotesEn() {
                         <div className="notes-naiyou">
                             <div className="notes-miniTitle">Lost child</div>
                             <div className="notes-miniContent">
-                            When you find lost children, please take them to the main reception desk at the piloti.
+                            When you find lost children, please take them to the Main info. desk at the piloti.
                             </div>
                         </div>
                         <div className="notes-naiyou">
