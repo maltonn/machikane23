@@ -92,9 +92,9 @@ export default function FAQEn() {
                 <div className="FAQEn-card-Q"> I don't feel well…</div>
                 <div className="FAQEn-card-A">Please let your nearest committee staff know.</div>
                 <div className="FAQEn-card-Q">I found a lost child / picked up lost items.</div>
-                <div className="FAQEn-card-A">Please take them to the Main reception or let your nearest committee staff know.</div>
+                <div className="FAQEn-card-A">Please take them to the Main info. or let your nearest committee staff know.</div>
                 <div className="FAQEn-card-Q">I'm looking for a lost child / lost items.</div>
-                <div className="FAQEn-card-A">Please come to the Main reception.</div>
+                <div className="FAQEn-card-A">Please come to the Main info.</div>
                 <div className="FAQEn-card-Q">Where can we find Outdoor Projects?</div>
                 <div className="FAQEn-card-A">Next to Student Union and Cyber Media Center, and in front of CELAS buildingC, Graduate School of language & Culture and Graduate School of Letters.</div>
                 <div className="FAQEn-card-Q">Are there any projects at the playground?</div>

@@ -73,8 +73,16 @@ export default function HomeEn() {
             <table className="news-table">
               <tbody>
                 <tr>
+                  <td className="news-date">Oct.22(Sun.)</td>
+                  <td className="news-content">Uploaded the page of <Link to="./official-project" onClick={PageChange}>"Official Projects"</Link>.</td>
+                </tr>
+                <tr>
+                <td className="news-date"></td>
+                  <td className="news-content">The <Link to="./pamphlet" onClick={PageChange}>"Official Pamphlet"</Link> page is now available.</td>
+                </tr>
+                <tr>
                   <td className="news-date">Oct.13(Fri.)</td>
-                  <td className="news-content">"Addresses" and "Stage Performance Schedule" pages are now open.</td>
+                  <td className="news-content"><Link to="./adresses" onClick={PageChange}>"Addresses"</Link>and <Link to="./timetable" onClick={PageChange}>"Stage Performance Schedule"</Link> pages are now open.</td>
                 </tr>
                 <tr>
                   <td className="news-date">Oct.6(Fri.)</td>
@@ -89,7 +97,7 @@ export default function HomeEn() {
           </div>     
           <div className="top-backCard">
             <span id="title">To all the visitors</span>
-            <div className="content"><div className="noreserve">You do not need to make a visit reservation.</div>Cars are not allowed on campus.<br/>Please use public transportation when you come to the Toyonaka Campus.</div>
+            <div className="content"><div className="noreserve">You do not need to make a visit reservation.</div>However, reservations may be required for <Link to="/project-search" onClick={PageChange}>some part of the projects</Link> or <Link to="/lab-open" onClick={PageChange}>Openlab projects</Link>.Please check each detail page for more information.<br/>Cars are not allowed on campus.<br/>Please use public transportation when you come to the Toyonaka Campus.</div>
             <p>Reservation is required for the Comedy LIVE Show. Please move on to the reservation site from the button below.</p>
             <div className="top-linkButton live-reservation"><a href="https://app.tyuujitu-system.net/machikane23/visitor/talent-live" target="_blank" rel="noreferrer">Reserve for<br/>the Comedy LIVE Show</a></div>
             <p>Click <Link to="./talent-project" onClick={PageChange}>Here</Link> for more details.</p>

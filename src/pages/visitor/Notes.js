@@ -72,7 +72,7 @@ export default function Notes() {
                             <div className="notes-miniContent">
                                 <ul>
                                     <li>11月3日(金)から11月5日(日)のまちかね祭期間中の落とし物は当委員会の本部受付（ピロティ）にて管理いたします。</li>
-                                    <li>大学祭期間中、構内で落とし物を発見した場合、または構内で落とし物をしてしまった場合は本部受付（ピロティ）までお越しください。</li>
+                                    <li>大学祭期間中、構内で落とし物を発見した場合、または構内で落とし物をしてしまった場合は、まず総合案内所までお越しください。</li>
                                     <li>ただし、大学祭期間後（11月6日以降）の落とし物の管理は豊中学生センター（豊中キャンパス 学生交流棟2階）に移されます。</li>
                                     <li>それ以降の拾得物、紛失物についての確認などは、豊中学生センターにて行ってください。</li>
                                 </ul>
@@ -81,7 +81,7 @@ export default function Notes() {
                         <div className="notes-naiyou">
                             <div className="notes-miniTitle">迷子について</div>
                             <div className="notes-miniContent">
-                            大学祭期間中に迷子を発見した場合、本部受付（ピロティ）までお連れいただきますようお願いします。
+                            大学祭期間中に迷子を発見した場合、まず総合案内所までお越しください。
                             </div>
                         </div>
                         <div className="notes-naiyou">

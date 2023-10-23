@@ -130,10 +130,10 @@ export default function FAQ() {
                 </div>
                 <div className="FAQ-card">
                     <div className="FAQ-card-Q">迷子を発見 / 落とし物を拾いました</div>
-                    <div className="FAQ-card-A">本部受付(ピロティ)までお連れ/お持ち頂くか、お近くの実行委員へお声がけください。</div></div>
+                    <div className="FAQ-card-A">総合案内所までお連れ/お持ち頂くか、お近くの実行委員へお声がけください。</div></div>
                 <div className="FAQ-card">
                     <div className="FAQ-card-Q"> 迷子/落とし物を探しています</div>
-                    <div className="FAQ-card-A">本部受付(ピロティ)へお越しください。</div></div>
+                    <div className="FAQ-card-A">まず総合案内所へお越しください。</div></div>
                 <div className="FAQ-card">
                     <div className="FAQ-card-Q">屋外の企画場所はどこですか？</div>
                     <div className="FAQ-card-A">学生会館横、共通棟C棟前、サイバーメディアセンター(CMC)横、文学研究棟前、言語文化研究棟前の計５ヶ所です。</div></div>
