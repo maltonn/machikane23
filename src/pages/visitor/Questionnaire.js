@@ -21,28 +21,31 @@ export default function Questionnaire() {
     }, [])
 
 
-    const ReqToDB = (qid, ans) => {
-        fetch(`https://78dxhy83s3.execute-api.ap-northeast-1.amazonaws.com/default/ConnectDB?uid=${uid}&qid=${qid}&ans=${ans}}`).then((res) => {
-            return res.json();
+    const ReqToDB = () => {
+        const answerLst=QuestionLst.map((question,index)=>{
+            return {
+                "id":question.id,
+                "answer":question.answer
+            }
+        })
+        console.log(answerLst)
+        const url=`https://78dxhy83s3.execute-api.ap-northeast-1.amazonaws.com/default/ConnectDB?uid=${uid.current}&body=${JSON.stringify(answerLst)}`
+        console.log(url)
+        //post
+        fetch(url).then((res) => {
+            console.log(res);
+            setIsDoneSubmit(true);
         }
-        ).then((data) => {
-            console.log(data);
-            QuestionLst[Idx(qid)]["submitted"] = true;
-            setQuestionLst([...QuestionLst])
-        }).catch((err) => {
-            console.log(err);
-        }
-        )
+        ).catch((error) => {
+            console.error('Error:', error);
+            window.alert("ネットワークエラー")
+        });
     }
 
     const [isDoneSubmit, setIsDoneSubmit] = useState(false);//送信済みかどうか
     const handleSubmit = () => {
-        setIsDoneSubmit(true);
-        // QuestionLst.forEach((question) => {
-        //     if (question.answer != "") {
-        //         ReqToDB(question.id, question.answer);
-        //     }
-        // })
+        
+        ReqToDB();
     }
 
     useEffect(() => {//閉じるときに途中までの結果を送信
@@ -50,11 +53,8 @@ export default function Questionnaire() {
             if (isDoneSubmit) {
                 return;
             }
-            QuestionLst.forEach((question) => {
-                if (question.answer != "") {
-                    ReqToDB(question.id, question.answer);
-                }
-            })
+            ReqToDB();
+
         }
         window.addEventListener("beforeunload", beforeunloadEvent)
         return () => {
@@ -177,11 +177,6 @@ export default function Questionnaire() {
                                                             onChange={(e) => {
                                                                 QuestionLst[Idx(question.id)]["answer"] = e.target.value;
                                                                 setQuestionLst([...QuestionLst])
-                                                                ReqToDB(question.id, e.target.value)
-
-                                                                if(Idx(question.id)-1>=0 && QuestionLst[Idx(question.id)-1].type=="textarea" ){
-                                                                    ReqToDB(QuestionLst[Idx(question.id)-1].id, QuestionLst[Idx(question.id)-1].answer)
-                                                                }
                                                             }}
                                                         />
                                                         <label htmlFor={question.id + "-" + index}>{opt}</label>
@@ -208,14 +203,10 @@ export default function Questionnaire() {
                                                             onChange={(e) => {
                                                                 if (e.target.checked) {
                                                                     QuestionLst[Idx(question.id)]["answer"].push(e.target.value);
-                                                                    ReqToDB(question.id, e.target.value)
                                                                 } else {
-                                                                    ReqToDB(question.id, "-" + e.target.value)
+                                                                    QuestionLst[Idx(question.id)]["answer"].splice(QuestionLst[Idx(question.id)]["answer"].indexOf(e.target.value), 1);
                                                                 }
 
-                                                                if(Idx(question.id)-1>=0 && QuestionLst[Idx(question.id)-1].type=="textarea" ){
-                                                                    ReqToDB(QuestionLst[Idx(question.id)-1].id, QuestionLst[Idx(question.id)-1].answer)
-                                                                }
                                                             }}
                                                         />
                                                         <label htmlFor={question.id + "-" + index}>{opt}</label>
@@ -252,13 +243,21 @@ export default function Questionnaire() {
             {
                 QuestionLst.every((question, index) => {
                     if (question["visible-if"]) {
-                        const qid = question["visible-if"].split("==")[0];
-                        const ans = question["visible-if"].split("==")[1];
-                        if (QuestionLst[Idx(qid)].answer != ans) {
-                            return true
+                        if (question["visible-if"].includes("==")) {
+                            const qid = question["visible-if"].split("==")[0];
+                            const ans = question["visible-if"].split("==")[1];
+                            if (QuestionLst[Idx(qid)].answer != ans) {
+                                return true
+                            }
+                        } else if (question["visible-if"].includes("!=")) {
+                            const qid = question["visible-if"].split("!=")[0];
+                            const ans = question["visible-if"].split("!=")[1];
+                            if (QuestionLst[Idx(qid)].answer == ans) {
+                                return true
+                            }
                         }
                     }
-                    if (question.answer != "") {
+                    if (question.answer) {
                         return true
                     }
                     return false
