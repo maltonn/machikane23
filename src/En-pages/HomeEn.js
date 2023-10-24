@@ -10,6 +10,7 @@ import recommend from "../imgs/pickup_icon/icon_recommend.png"
 import access from "../imgs/pickup_icon/icon_access.png"
 import map from "../imgs/pickup_icon/icon_map.png"
 import timetable from "../imgs/pickup_icon/icon_stage.png"
+import tripfarm from "../imgs/sponsor/tripfarm.png"
 import { Helmet } from "react-helmet";
 import { useEffect } from "react"
 import { Link } from "react-router-dom";
@@ -73,11 +74,11 @@ export default function HomeEn() {
             <table className="news-table">
               <tbody>
                 <tr>
-                  <td className="news-date">Oct.22(Sun.)</td>
+                  <td className="news-date">Oct.24(Tue.)</td>
                   <td className="news-content">Uploaded the page of <Link to="./official-project" onClick={PageChange}>"Official Projects"</Link>.</td>
                 </tr>
                 <tr>
-                <td className="news-date"></td>
+                  <td className="news-date"></td>
                   <td className="news-content">The <Link to="./pamphlet" onClick={PageChange}>"Official Pamphlet"</Link> page is now available.</td>
                 </tr>
                 <tr>
@@ -193,6 +194,13 @@ export default function HomeEn() {
                 <p>We hope that every student of Osaka University will shine their characteristics as brightly as the sunlight.</p>
                 <div className="ocean-link-button"><Link to="/theme" onClick={PageChange}>Message behind the theme</Link></div>
               </div>
+            </div>
+          </div>
+
+          <div className="top-sponsor">
+            <div className="titles"><nobr><p className="item1">●</p><span id="title">Sponsor</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
+            <div className="sponsor-imgs">
+              <a href="https://ewha-yifu.com/" target="_blank" rel="noreferrer"><img src={tripfarm}></img></a>
             </div>
           </div>
 
