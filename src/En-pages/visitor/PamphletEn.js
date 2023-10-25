@@ -37,7 +37,7 @@ export default function Pamphlet() {
                             </tr>
                             <tr>
                                 <td>P.31</td>
-                                <td>大阪大学体育会()<br></br>Project locations</td>
+                                <td>大阪大学体育会(Osaka University Sports Union)<br></br>Project locations</td>
                                 <td className="boolean">文法経講義棟 文13講義室<br></br>(Lect① Let.Lecture13)</td>
                                 <td className="boolean">第一体育館<br></br>(Gymnasium1)</td>
                             </tr>
