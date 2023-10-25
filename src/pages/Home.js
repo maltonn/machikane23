@@ -74,7 +74,7 @@ export default function Home() {
             <table className="news-table">
               <tbody>
               <tr>
-                  <td className="news-date">10/24(火)</td>
+                  <td className="news-date">10/25(水)</td>
                   <td className="news-content"><Link to="./official-project" onClick={PageChange}>「実行委員企画」</Link>のページを更新しました。</td>
                 </tr>
                 <tr>

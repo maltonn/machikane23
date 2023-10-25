@@ -74,7 +74,7 @@ export default function HomeEn() {
             <table className="news-table">
               <tbody>
                 <tr>
-                  <td className="news-date">Oct.24(Tue.)</td>
+                  <td className="news-date">Oct.25(Wed.)</td>
                   <td className="news-content">Uploaded the page of <Link to="./official-project" onClick={PageChange}>"Official Projects"</Link>.</td>
                 </tr>
                 <tr>
