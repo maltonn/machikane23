@@ -75,16 +75,15 @@ export default function Questionnaire() {
     const [QuestionLst, setQuestionLst] = useState([
         {
             "id": "Q1",//一意に特定できればなんでもよい　逆に、他ページとかで同じ内容の質問をするなら同じIDが良い
-            "question": "総合案内所に行きましたか",
-            "type": "radio", //radio,checkbox,textarea
-            "option": ["はい", "いいえ"], //typeがradio,checkboxの時のみ
+            "question": "あなたに最も当てはまるものを選択してください。",
+            "type": "radio", //radio,checkbox,textarea,text
+            "option": ["阪大生", "阪大院生", "阪大教職員","他大学生","高校生","出展団体関係者の保護者","大阪大学豊中キャンパス周辺在住者","近畿圏在住者","その他"], //typeがradio,checkboxの時のみ
             "answer": "",
         }, {
             "id": "Q1-1",
-            "question": "パンフは受け取りましたか",
-            "type": "radio",
-            "option": ["はい", "いいえ"],
-            "visible-if": "Q1==はい", //現状使えるのは==のみ
+            "question": "その他(自由記述)",
+            "type": "textarea",
+            "visible-if": "Q1==その他", //現状使えるのは==のみ
             "answer": "",
         }, {
             "id": "Q1-2",
@@ -133,12 +132,12 @@ export default function Questionnaire() {
     return (
         <div className="main">
             <Helmet>
-                <title>アンケート|まちかね祭2023</title>
+                <title>来場者アンケート|まちかね祭2023</title>
             </Helmet>
             <div className="sky">
                 <div className="top">
                     <div className="title">
-                        <h1>アンケート</h1>
+                        <h1>来場者アンケート</h1>
                     </div>
                 </div>
                 <div className="mainpage">
@@ -162,7 +161,7 @@ export default function Questionnaire() {
                             if (question.type == "radio") {
                                 return (
                                     <div className="question" key={index}>
-                                        <h2>{question.question}</h2>
+                                        <h2>{question.id + '. ' + question.question}</h2>
                                         <span>{question.submitted ? "✓" : ""}</span>
                                         {
                                             question.option.map((opt, index) => {
@@ -190,7 +189,7 @@ export default function Questionnaire() {
                             if (question.type == "checkbox") {
                                 return (
                                     <div className="question" key={index}>
-                                        <h2>{question.question}</h2>
+                                        <h2>{question.id + '. ' + question.question}</h2>
                                         {
                                             question.option.map((opt, index) => {
                                                 return (
@@ -220,7 +219,7 @@ export default function Questionnaire() {
                             if (question.type == "textarea") {
                                 return (
                                     <div className="question" key={index}>
-                                        <h2>{question.question}</h2>
+                                        <h2>{question.id + '. ' + question.question}</h2>
                                         <span>{question.submitted ? "✓" : ""}</span>
                                         <textarea
                                             name={question.id}
@@ -233,6 +232,34 @@ export default function Questionnaire() {
                                             }
                                             value={question.answer}
                                         ></textarea>
+                                    </div>
+                                )
+                            }
+                            if (question.type == "text") {
+                                return (
+                                    <div className="question" key={index}>
+                                        <h2>{question.id + '. ' + question.question}</h2>
+                                        <span>{question.submitted ? "✓" : ""}</span>
+                                        {
+                                            question.option.map((opt, index) => {
+                                                return (
+                                                    <div className="option" key={index}>
+                                                        <input
+                                                            type="text"
+                                                            name={question.id}
+                                                            id={question.id}
+                                                            onChange={
+                                                                (e) => {
+                                                                    QuestionLst[Idx(question.id)]["answer"] = e.target.value;
+                                                                    setQuestionLst([...QuestionLst])
+                                                                }
+                                                            }
+                                                            value={question.answer}
+                                                        />
+                                                    </div>
+                                                )
+                                            })
+                                        }
                                     </div>
                                 )
                             }
