@@ -22,14 +22,14 @@ export default function Questionnaire() {
 
 
     const ReqToDB = () => {
-        const answerLst=QuestionLst.map((question,index)=>{
+        const answerLst = QuestionLst.map((question, index) => {
             return {
-                "id":question.id,
-                "answer":question.answer
+                "id": question.id,
+                "answer": question.answer
             }
         })
         console.log(answerLst)
-        const url=`https://78dxhy83s3.execute-api.ap-northeast-1.amazonaws.com/default/ConnectDB?uid=${uid.current}&body=${JSON.stringify(answerLst)}`
+        const url = `https://78dxhy83s3.execute-api.ap-northeast-1.amazonaws.com/default/ConnectDB?uid=${uid.current}&body=${JSON.stringify(answerLst)}`
         console.log(url)
         //post
         fetch(url).then((res) => {
@@ -44,7 +44,7 @@ export default function Questionnaire() {
 
     const [isDoneSubmit, setIsDoneSubmit] = useState(false);//送信済みかどうか
     const handleSubmit = () => {
-        
+
         ReqToDB();
     }
 
@@ -77,13 +77,13 @@ export default function Questionnaire() {
             "id": "Q1",//一意に特定できればなんでもよい　逆に、他ページとかで同じ内容の質問をするなら同じIDが良い
             "question": "あなたに最も当てはまるものを選択してください。",
             "type": "radio", //radio,checkbox,textarea,text
-            "option": ["阪大生", "阪大院生", "阪大教職員","他大学生","高校生","出展団体関係者の保護者","大阪大学豊中キャンパス周辺在住者","近畿圏在住者","その他"], //typeがradio,checkboxの時のみ
+            "option": ["阪大生", "阪大院生", "阪大教職員", "他大学生", "高校生", "出展団体関係者の保護者", "大阪大学豊中キャンパス周辺在住者", "近畿圏在住者", "その他"], //typeがradio,checkboxの時のみ
             "answer": "",
         }, {
             "id": "Q1-1",
             "question": "その他(自由記述)",
-            "type": "textarea",
-            "visible-if": "Q1==その他", //現状使えるのは==のみ
+            "type": "text",
+            "visible-if": "Q1==その他", //現状使えるのは== or != のみ
             "answer": "",
         }, {
             "id": "Q1-2",
@@ -107,10 +107,10 @@ export default function Questionnaire() {
             "answer": [],
         }
     ]);
-    
 
-    if(isDoneSubmit){
-        return(
+
+    if (isDoneSubmit) {
+        return (
             <div className="main">
                 <Helmet>
                     <title>アンケート|まちかね祭2023</title>
@@ -240,26 +240,20 @@ export default function Questionnaire() {
                                     <div className="question" key={index}>
                                         <h2>{question.id + '. ' + question.question}</h2>
                                         <span>{question.submitted ? "✓" : ""}</span>
-                                        {
-                                            question.option.map((opt, index) => {
-                                                return (
-                                                    <div className="option" key={index}>
-                                                        <input
-                                                            type="text"
-                                                            name={question.id}
-                                                            id={question.id}
-                                                            onChange={
-                                                                (e) => {
-                                                                    QuestionLst[Idx(question.id)]["answer"] = e.target.value;
-                                                                    setQuestionLst([...QuestionLst])
-                                                                }
-                                                            }
-                                                            value={question.answer}
-                                                        />
-                                                    </div>
-                                                )
-                                            })
-                                        }
+                                        <div className="option" key={index}>
+                                            <input
+                                                type="text"
+                                                name={question.id}
+                                                id={question.id}
+                                                onChange={
+                                                    (e) => {
+                                                        QuestionLst[Idx(question.id)]["answer"] = e.target.value;
+                                                        setQuestionLst([...QuestionLst])
+                                                    }
+                                                }
+                                                value={question.answer}
+                                            />
+                                        </div>
                                     </div>
                                 )
                             }
