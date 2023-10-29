@@ -409,7 +409,7 @@ export default function Questionnaire() {
                         </div>
                     </div>
                     <div className="mainpage">
-                        <h2>送信しました</h2>
+                        <h2>送信しました。ご協力ありがとうございました。</h2>
                     </div>
                 </div>
             </div>
