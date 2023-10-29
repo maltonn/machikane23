@@ -423,6 +423,7 @@ export default function Questionnaire() {
             </Helmet>
             <div className="questionnaire-sky">
                 <PageTitles titles="来場者アンケート" kame={true}></PageTitles>
+                <div className="questionnaire_comment">今後の大学祭運営のため、来場者アンケートの回答にご協力をお願いいたします。皆様のご回答を心よりお待ちしております。</div>
                 <div className="questionnaire">
                     {
                         QuestionLst.map((question, index) => {
