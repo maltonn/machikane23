@@ -17,6 +17,7 @@ import tondemi from "../../imgs/sponsor/tondemi.jpg"
 import VSPARK from "../../imgs/sponsor/VSPARK.jpg"
 import nakamura from "../../imgs/sponsor/nakamura.jpg"
 import tripfarm from "../../imgs/sponsor/tripfarm.png"
+import minimini from "../../imgs/sponsor/minimini.jpg"
 import heiwaonsen from "../../imgs/sponsor/heiwaonsen.png"
 import homecomingday from "../../imgs/sponsor/home-coming-day.jpg"
 import rokkosai from "../../imgs/sponsor/rokkosai.jpg"
@@ -97,7 +98,7 @@ export default function SponsorEn({titles,kame}) {
                         <a href="https://heiwaonsen.com/" target="_blank" rel="noreferrer"><img src={heiwaonsen} alt="heiwaonsen"></img></a>
                         <a href="https://amzn.asia/d/5zzuKa0" target="_blank" rel="noreferrer"><img src={nakamura} alt="nakamura"></img></a>
                         <a href="https://ewha-yifu.com/" target="_blank" rel="noreferrer"><img src={tripfarm}></img></a>
-                        <a href="https://www.seito-jp.com/minimini/ishibashi" target="_blank" rel="noreferrer">株式会社成都賃貸ホームズミニミニFC石橋店</a>
+                        <a href="https://www.seito-jp.com/minimini/ishibashi" target="_blank" rel="noreferrer"><img src={minimini} alt="minimini"></img></a>
                     </div>
                 </div>
             </div>
