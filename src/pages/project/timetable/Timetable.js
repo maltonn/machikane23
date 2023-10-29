@@ -89,6 +89,22 @@ export default function Timetable() {
         })
     }, [])
 
+    function setDefaultTab(){
+        var dateNow = new Date();
+        var day1 = new Date(2023,10,3,23,59,59);
+        var day2 = new Date(2023,10,4,23,59,59);
+        var day3 = new Date(2023,10,5,23,59,59);
+        
+        if (dateNow<day1){
+            return 0;
+        } else if (dateNow<day2){
+           return 1;
+        } else if (dateNow<day3){
+           return 2;
+        }
+        return 0;
+    }
+    const [tabIndex, setTabIndex] = useState(setDefaultTab);
     return (
         <div className="timetable">
             <div className="timetableSky">
@@ -97,7 +113,7 @@ export default function Timetable() {
                 </Helmet>
                 <PageTitles titles="ステージタイムテーブル" kame={true}></PageTitles>
 
-                <Tabs>
+                <Tabs selectedIndex={tabIndex} onSelect={(tabIndex)=>setTabIndex(tabIndex)}>
                     <TabList>
                         <Tab>11月3日</Tab>
                         <Tab>11月4日</Tab>
