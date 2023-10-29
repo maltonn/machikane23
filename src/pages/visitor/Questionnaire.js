@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 import { useState, useRef, useEffect } from "react";
-import Q from "./QuestionContens.js"
+import Q from "./QuestionContents.js"
 import "../../css/Common.css"
 import "../../css/Questionnaire.css"
 import PageTitles from "../../components/PageTitles";
