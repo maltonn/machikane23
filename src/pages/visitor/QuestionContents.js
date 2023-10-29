@@ -98,7 +98,7 @@ const Q = [
         "question": "どこから来ましたか(大阪府)",
         "type": "radio",
         "option": ["豊中市", "箕面市", "池田市", "その他(自由記述)"],
-        "visible-if": "Q3-3==大阪府",
+        "visible-if": "Q3-3E==大阪府",
         "answer": "",
     }, {
         "id": "Q3-5",
