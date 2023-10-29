@@ -39,6 +39,20 @@
     height: 200px;
     width: 100%;
 }
+.questionnaire_machikame{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+.questionnaire_machikame p{
+    font-size: 2rem;
+    margin-left: 0px;
+    margin-top: 12rem;
+}
+.questionnaire_machikame img{
+    width: 20%;
+    margin-left: 10rem;
+}
 /*======================
   スマホ用
 ======================*/
@@ -61,6 +75,20 @@
         height: 100px;
         width: 100%;
     }
+    .questionnaire_machikame{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+    }
+    .questionnaire_machikame p{
+        font-size: 1rem;
+        margin-left: 0px;
+        margin-top: 5rem;
+    }
+    .questionnaire_machikame img{
+        width: 45%;
+        margin-left: 0rem;
+    }
 }
       
 /*======================
@@ -82,5 +110,26 @@
     .questionnaire textarea{
         height: 100px;
         width: 100%;
+    }
+    .questionnaire_machikame{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+    }
+    .questionnaire_machikame p{
+        font-size: 1.8rem;
+        margin-left: 0px;
+        margin-top: 12rem;
+    }
+    .questionnaire_machikame img{
+        width: 45%;
+        margin-left: 0rem;
+    }
+}
+@media (min-width: 500px) and (max-width: 600px){
+    .questionnaire_machikame p{
+        font-size: 1.4rem;
+        margin-left: 0px;
+        margin-top: 8rem;
     }
 }

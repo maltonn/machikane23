@@ -1,9 +1,11 @@
 import { Helmet } from "react-helmet";
 import { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Q from "./QuestionContents.js"
 import "../../css/Common.css"
 import "../../css/Questionnaire.css"
 import PageTitles from "../../components/PageTitles";
+import machikame2 from "../../imgs/animal/machikame2.png"
 
 function createUuid() {
     return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (a) {
@@ -78,6 +80,13 @@ export default function Questionnaire() {
     }
     const [QuestionLst, setQuestionLst] = useState(Q);
 
+    const PageChange=()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    }
+
 
     if (isDoneSubmit) {
         return (
@@ -85,14 +94,15 @@ export default function Questionnaire() {
                 <Helmet>
                     <title>アンケート|まちかね祭2023</title>
                 </Helmet>
-                <div className="sky">
-                    <div className="top">
-                        <div className="title">
-                            <h1>アンケート</h1>
-                        </div>
-                    </div>
+                <div className="questionnaire-sky">
+                    <PageTitles titles="来場者アンケート" kame={true}></PageTitles>
                     <div className="mainpage">
-                        <h2>送信しました。ご協力ありがとうございました。</h2>
+                        <h2 style={{margin:20}}>送信しました。ご協力ありがとうございました。</h2>
+                        <div className="questionnaire_machikame">
+                            <img src={machikame2} alt="まちかめ2"></img>
+                            <p>ありがとう！また来てね！</p>
+                        </div>
+                        <Link className="toTheTop" to="/" onClick={PageChange}>トップページへ戻る</Link>
                     </div>
                 </div>
             </div>
@@ -106,7 +116,7 @@ export default function Questionnaire() {
             </Helmet>
             <div className="questionnaire-sky">
                 <PageTitles titles="来場者アンケート" kame={true}></PageTitles>
-                <div className="questionnaire_comment">今後の大学祭運営のため、来場者アンケートの回答にご協力をお願いいたします。皆様のご回答を心よりお待ちしております。</div>
+                <div className="questionnaire_comment"><p>今後の大学祭運営のため、来場者アンケートの回答にご協力をお願いいたします。皆様のご回答を心よりお待ちしております。</p><p><strong style={{color:"red"}}> * </strong>は必須回答項目です。</p></div>
                 <div className="questionnaire">
                     {
                         QuestionLst.map((question, index) => {
@@ -136,7 +146,7 @@ export default function Questionnaire() {
                             if (question.type == "radio") {
                                 return (
                                     <div className="question" key={index}>
-                                        <h2>{question.id + '. ' + question.question}</h2>     
+                                        <h2>{question.id + '. ' + question.question}<strong style={{color:"red"}}> *</strong></h2>   
                                         {
                                             question.option.map((opt, index) => {
                                                 return (
@@ -163,7 +173,7 @@ export default function Questionnaire() {
                             if (question.type == "checkbox") {
                                 return (
                                     <div className="question" key={index}>
-                                        <h2>{question.id + '. ' + question.question}</h2>
+                                        <h2>{question.id + '. ' + question.question}<strong style={{color:"red"}}> *</strong></h2>
                                         {
                                             question.option.map((opt, index) => {
                                                 return (
@@ -233,7 +243,7 @@ export default function Questionnaire() {
                             if (question.type == "pulldown") {
                                 return (
                                     <div className="question" key={index}>
-                                        <h2>{question.id + '. ' + question.question}</h2>
+                                        <h2>{question.id + '. ' + question.question}<strong style={{color:"red"}}> *</strong></h2>
                                         <select 
                                             name={question.id}
                                             className="option"
@@ -250,7 +260,6 @@ export default function Questionnaire() {
                                                         <option
                                                             id={question.id + "-" + index}
                                                             value={opt}
-                                                            // checked={question.answer == opt}
                                                         >{opt}</option>
                                                 )
                                             })
@@ -269,9 +278,10 @@ export default function Questionnaire() {
                         })
                     }
                 </div>
-            </div>
+            
             {
                 QuestionLst.every((question, index) => {
+                    let notAnswer=[]
                     if (question["visible-if"]) {
                         if (question["visible-if"].includes("==")) {
                             const qid = question["visible-if"].split("==")[0];
@@ -295,6 +305,13 @@ export default function Questionnaire() {
                             }
                         }
                     }
+                    if(Array.isArray(question.answer)){
+                        if(question.answer.length != 0){
+                            return true
+                        }else{
+                            return false
+                        }
+                    }
                     if(question.type=="section"){
                         return true
                     }
@@ -304,12 +321,16 @@ export default function Questionnaire() {
                     if (question.answer) {
                         return true
                     }
-                    console.log(question)
                     return false
-                }) && (
-                    <button onClick={handleSubmit}>送信</button>
+                }) ? (
+                    <button onClick={handleSubmit} style={{margin:20}}>送信する</button>
+                ) : (
+                    <div style={{margin:20}}>
+                        <p>まだ答えていない項目があります。</p>
+                    </div>
                 )
             }
+            </div>
         </div>
     )
 }
