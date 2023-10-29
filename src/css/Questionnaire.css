@@ -8,18 +8,18 @@
     padding-bottom: 80px;
 }
 .questionnaire{
-    margin: 0 30px;
+    margin: 0 20px;
 }
 .title{
     font-size: 1.5rem;
     padding: 5px 0px;
     text-align: center;
-    margin: 0 auto 20px;
+    margin: 80px auto 20px;
     display: block;
     background-color: rgba(255,255,255,0.78);
     border-radius: 50px;
     box-sizing: border-box;
-    width: 90%;
+    width: 80%;
 }
 .question{
     font-size: 1.2rem;
@@ -40,9 +40,11 @@
 ======================*/
 @media  (max-width: 500px){
     .title{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         border-radius: 20px;
         padding: 5px 5px;
+        width: 90%;
+        margin: 60px auto 20px;
     }
     .question{
         font-size: 0.7rem;

@@ -95,22 +95,116 @@ export default function Questionnaire() {
             "option": ["11/3(金)", "11/4(土)", "11/5(日)"],
             "answer": [],
         },{
-            "id": "Q3",
+            "id": "Q3-1",
             "question": "来場回数をお聞かせください。",
             "type": "radio",
             "option": ["初めて", "2回", "3回", "4回以上"],
             "answer": "",
         },{
+            "id": "Q3-2",
+            "question": "どこから来ましたか(地方)",
+            "type": "pulldown",
+            "option": ["北海道地方", "東北地方", "関東地方", "中部地方", "近畿地方", "中国地方", "四国地方", "九州地方", "その他(自由記述)"],
+            "answer": "",
+        },{
+            "id": "Q3-3",
+            "question": "どこから来ましたか(都道府県)",
+            "type": "pulldown",
+            "option": ["北海道"],
+            "visible-if": "Q3-2==北海道地方",
+            "answer": "",
+        },{
+            "id": "Q3-3",
+            "question": "どこから来ましたか(都道府県)",
+            "type": "pulldown",
+            "option": ["青森県", "岩手県", "宮城県", "秋田県", "山形県", "福島県"],
+            "visible-if": "Q3-2==東北地方",
+            "answer": "",
+        },{
+            "id": "Q3-3",
+            "question": "どこから来ましたか(都道府県)",
+            "type": "pulldown",
+            "option": ["茨城県", "栃木県", "群馬県", "埼玉県", "千葉県", "東京都", "神奈川県"],
+            "visible-if": "Q3-2==関東地方",
+            "answer": "",
+        },{
+            "id": "Q3-3",
+            "question": "どこから来ましたか(都道府県)",
+            "type": "pulldown",
+            "option": ["新潟県", "富山県", "石川県", "福井県", "山梨県", "長野県", "岐阜県", "静岡県", "愛知県"],
+            "visible-if": "Q3-2==中部地方",
+            "answer": "",
+        },{
+            "id": "Q3-3",
+            "question": "どこから来ましたか(都道府県)",
+            "type": "pulldown",
+            "option": ["三重県", "滋賀県", "京都府", "大阪府", "兵庫県", "奈良県", "和歌山県"],
+            "visible-if": "Q3-2==近畿地方",
+            "answer": "",
+        },{
+            "id": "Q3-3",
+            "question": "どこから来ましたか(都道府県)",
+            "type": "pulldown",
+            "option": ["鳥取県", "島根県", "岡山県", "広島県", "山口県"],
+            "visible-if": "Q3-2==中国地方",
+            "answer": "",
+        },{
+            "id": "Q3-3",
+            "question": "どこから来ましたか(都道府県)",
+            "type": "pulldown",
+            "option": ["徳島県", "香川県", "愛媛県", "高知県"],
+            "visible-if": "Q3-2==四国地方",
+            "answer": "",
+        },{
+            "id": "Q3-3",
+            "question": "どこから来ましたか(都道府県)",
+            "type": "pulldown",
+            "option": ["福岡県", "佐賀県", "長崎県", "熊本県", "大分県", "宮崎県", "鹿児島県", "沖縄県"],
+            "visible-if": "Q3-2==九州地方",
+            "answer": "",
+        },{
+            "id": "Q3-3",
+            "question": "その他(自由記述)",
+            "type": "text",
+            "visible-if": "Q3-2==その他(自由記述)",
+            "answer": "",
+        },{
+            "id": "Q3-4",
+            "question": "どこから来ましたか(大阪府)",
+            "type": "radio",
+            "option": ["豊中市", "箕面市", "池田市", "その他(自由記述)"],
+            "visible-if": "Q3-3==大阪府",
+            "answer": "",
+        },{
+            "id": "Q3-5",
+            "question": "その他(自由記述)",
+            "type": "text",
+            "visible-if": "Q3-4==その他(自由記述)",
+            "answer": "",
+        },{
             "id": "Q4",
             "question": "まちかね祭にご来場の際、どのような方法で来場されましたか。",
             "type": "radio",
-            "option": ["電車（使用駅：阪急宝塚線・石橋阪大前駅）", "電車（使用駅：大阪モノレール・柴原阪大前駅）", "バス", "タクシー", "徒歩", "その他公共交通機関", "自家用車", "その他(自由記述)"],
+            "option": ["電車", "バス", "タクシー", "その他公共交通機関", "徒歩", "自転車", "自家用車", "その他(自由記述)"],
             "answer": "",
         },{
             "id": "Q4-1",
             "question": "その他(自由記述)",
             "type": "text",
             "visible-if": "Q4==その他(自由記述)",
+            "answer": "",
+        },{
+            "id": "Q4-1",
+            "question": "(電車と答えた方へ)どの駅を利用しましたか",
+            "type": "radio",
+            "option": ["石橋阪大前駅(阪急宝塚線等)", "柴原阪大前(大阪モノレール)", "その他(自由記述)"],
+            "visible-if": "Q4==電車",
+            "answer": "",
+        },{
+            "id": "Q4-2",
+            "question": "その他(自由記述)",
+            "type": "text",
+            "visible-if": "Q4-1==その他(自由記述)",
             "answer": "",
         },{
             "id": "Q5",
@@ -182,8 +276,8 @@ export default function Questionnaire() {
             "id": "Q10-1",
             "question": "当委員会作成のパンフレットはご覧になりましたか？(複数回答可)",
             "type": "checkbox",
-            "option": ["当日配布の紙のパンフレットを見た", "Web サイトで公開されていたパンフレットを見た", "見ていない"],
-            "answer": "",
+            "option": ["当日配布の紙のパンフレットを見た", "Webサイトで公開されていたパンフレットを見た", "見ていない"],
+            "answer": [],
         },{
             "id": "Q10-2",
             "question": "パンフレットについて何かご要望・ご意見があれば、ご自由にお書きください。",
@@ -336,13 +430,21 @@ export default function Questionnaire() {
                                 if (question["visible-if"].includes("==")) {
                                     const qid = question["visible-if"].split("==")[0];
                                     const ans = question["visible-if"].split("==")[1];
-                                    if (QuestionLst[Idx(qid)].answer != ans) {
+                                    if(Array.isArray(QuestionLst[Idx(qid)].answer)){
+                                        if(!QuestionLst[Idx(qid)].answer.includes(ans)){
+                                            return null
+                                        }
+                                    }else if(QuestionLst[Idx(qid)].answer != ans) {
                                         return null
                                     }
                                 } else if (question["visible-if"].includes("!=")) {
                                     const qid = question["visible-if"].split("!=")[0];
                                     const ans = question["visible-if"].split("!=")[1];
-                                    if (QuestionLst[Idx(qid)].answer == ans) {
+                                    if(Array.isArray(QuestionLst[Idx(qid)].answer)){
+                                        if(QuestionLst[Idx(qid)].answer.includes(ans)){
+                                            return null
+                                        }
+                                    }else if(QuestionLst[Idx(qid)].answer == ans) {
                                         return null
                                     }
                                 }
@@ -390,10 +492,11 @@ export default function Questionnaire() {
                                                             onChange={(e) => {
                                                                 if (e.target.checked) {
                                                                     QuestionLst[Idx(question.id)]["answer"].push(e.target.value);
+                                                                    setQuestionLst([...QuestionLst])
                                                                 } else {
                                                                     QuestionLst[Idx(question.id)]["answer"].splice(QuestionLst[Idx(question.id)]["answer"].indexOf(e.target.value), 1);
+                                                                    setQuestionLst([...QuestionLst])
                                                                 }
-
                                                             }}
                                                         />
                                                         <label htmlFor={question.id + "-" + index}>{opt}</label>
@@ -443,6 +546,35 @@ export default function Questionnaire() {
                                     </div>
                                 )
                             }
+                            if (question.type == "pulldown") {
+                                return (
+                                    <div className="question" key={index}>
+                                        <h2>{question.id + '. ' + question.question}</h2>
+                                        <select 
+                                            name={question.id}
+                                            className="option"
+                                            key={index}
+                                            onChange={(e) => {
+                                                QuestionLst[Idx(question.id)]["answer"] = e.target.value;
+                                                setQuestionLst([...QuestionLst])
+                                            }}
+                                        >    
+                                            <option hidden value="">選択してください</option>
+                                        {
+                                            question.option.map((opt, index) => {
+                                                return (
+                                                        <option
+                                                            id={question.id + "-" + index}
+                                                            value={opt}
+                                                            // checked={question.answer == opt}
+                                                        >{opt}</option>
+                                                )
+                                            })
+                                        }
+                                        </select>
+                                    </div>
+                                )
+                            }
                             if (question.type == "section") {
                                 return (
                                     <div className="title">
@@ -460,16 +592,30 @@ export default function Questionnaire() {
                         if (question["visible-if"].includes("==")) {
                             const qid = question["visible-if"].split("==")[0];
                             const ans = question["visible-if"].split("==")[1];
-                            if (QuestionLst[Idx(qid)].answer != ans) {
+                            if(Array.isArray(QuestionLst[Idx(qid)].answer)){
+                                if(!QuestionLst[Idx(qid)].answer.includes(ans)){
+                                    return true
+                                }
+                            }else if(QuestionLst[Idx(qid)].answer != ans) {
                                 return true
                             }
                         } else if (question["visible-if"].includes("!=")) {
                             const qid = question["visible-if"].split("!=")[0];
                             const ans = question["visible-if"].split("!=")[1];
-                            if (QuestionLst[Idx(qid)].answer == ans) {
+                            if(Array.isArray(QuestionLst[Idx(qid)].answer)){
+                                if(QuestionLst[Idx(qid)].answer.includes(ans)){
+                                    return true
+                                }
+                            }else if(QuestionLst[Idx(qid)].answer == ans) {
                                 return true
                             }
                         }
+                    }
+                    if(question.type=="section"){
+                        return true
+                    }
+                    if(question.type=="text" || question.type=="textarea"){
+                        return true
                     }
                     if (question.answer) {
                         return true
