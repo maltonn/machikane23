@@ -339,6 +339,13 @@ body{
   border-radius: 5px;
 }
 
+.answersheet{
+  position:fixed;
+  bottom:20%;
+}
+.answersheet img{
+  width:35%;
+}
 /*pickup-bubble*/
 .bottoms{
   bottom:0px;

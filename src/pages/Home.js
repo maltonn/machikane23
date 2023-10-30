@@ -4,6 +4,7 @@ import machikame2 from "../imgs/animal/machikame2.png"
 import left_cloud from "../imgs/cloud/left_cloud.png"
 import right_cloud from "../imgs/cloud/right_cloud.png"
 import machikani from "../imgs/animal/machikani.png"
+import answersheet from "../imgs/animal/answersheet.png"
 import search from "../imgs/pickup_icon/icon_search.png"
 import goods from "../imgs/pickup_icon/icon_goods.png"
 import recommend from "../imgs/pickup_icon/icon_recommend.png"
@@ -69,6 +70,7 @@ export default function Home() {
 
       <div className="sky2">
         <div className="mainpage1">
+        <div className="answersheet"><Link to="./Questionnaire" onClick={PageChange}><img src={answersheet} alt="アンケート"></img></Link></div>
           <div className="top-backCard">
             <span id="title">お知らせ</span>
             <table className="news-table">
