@@ -26,19 +26,17 @@ export default function Questionnaire() {
 
 
     const ReqToDB = () => {
-        const answerLst = QuestionLst.map((question, index) => {
+        let answerLst = QuestionLst.map((question, index) => {
             return {
                 "id": question.id,
                 "answer": question.answer
             }
         })
-        let lst = Object.values(answerLst)
-        lst=lst.filter((question) => question.answer !== 'none')
-        answerLst.current=lst
+        answerLst=answerLst.filter((question) => question.answer != 'none')
         console.log(answerLst)
         const url = `https://78dxhy83s3.execute-api.ap-northeast-1.amazonaws.com/default/ConnectDB?uid=${uid.current}&body=${JSON.stringify(answerLst)}`
         console.log(url)
-        //post
+        //get
         fetch(url).then((res) => {
             console.log(res);
             setIsDoneSubmit(true);
