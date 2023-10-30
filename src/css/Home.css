@@ -346,6 +346,9 @@ body{
 .answersheet img{
   width:35%;
 }
+.timerHidden{ display: none;}
+.timerVisible{ display: block;}
+
 /*pickup-bubble*/
 .bottoms{
   bottom:0px;

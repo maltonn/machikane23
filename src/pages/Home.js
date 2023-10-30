@@ -41,6 +41,23 @@ export default function Home() {
         top: 0,
         behavior: "smooth",
     });
+
+    var myClass = document.getElementsByClassName("timerHidden");
+  for (var i = 0; i < myClass.length; i++){
+    var appearTime = myClass[i].getAttribute("data-appear_time");
+    var disappearTime = myClass[i].getAttribute("data-disappear_time");
+    var threshould_start = Date.parse(appearTime);
+    var threshould_end = Date.parse(disappearTime);
+    var current = new Date();
+    if (threshould_start < current && threshould_end > current) {
+      // HTMLで設定した期間
+      myClass[i].classList.add("timerVisible");
+    } else {
+      // 上の期間外の場合
+      myClass[i].classList.remove("timerVisivle");
+    }
+}
+
 }
 
   return (
@@ -70,7 +87,7 @@ export default function Home() {
 
       <div className="sky2">
         <div className="mainpage1">
-        <div className="answersheet"><Link to="./Questionnaire" onClick={PageChange}><img src={answersheet} alt="アンケート"></img></Link></div>
+        <div className="answersheet timerHidden" data-appear_time="2023/11/03 00:00:00" data-disappear_time="2024/11/03 00:00:00"><Link to="./Questionnaire" onClick={PageChange}><img src={answersheet} alt="アンケート"></img></Link></div>
           <div className="top-backCard">
             <span id="title">お知らせ</span>
             <table className="news-table">
