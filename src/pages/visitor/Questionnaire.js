@@ -32,7 +32,7 @@ export default function Questionnaire() {
                 "answer": question.answer
             }
         })
-        answerLst=answerLst.filter((question) => question.answer !== 'none')
+        answerLst=answerLst.filter((question) => question.answer != 'none')
         console.log(answerLst)
         const url = `https://78dxhy83s3.execute-api.ap-northeast-1.amazonaws.com/default/ConnectDB?uid=${uid.current}&body=${JSON.stringify(answerLst)}`
         console.log(url)
