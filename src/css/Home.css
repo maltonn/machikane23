@@ -346,8 +346,14 @@ body{
 .answersheet img{
   width:35%;
 }
+/*
+#timerVisible{ display: none;}
+#timerHidden{ display: block;}
+
 .timerHidden{ display: none;}
-.timerVisible{ display: block;}
+#timerVisible{ display: none;}
+
+*/
 
 /*pickup-bubble*/
 .bottoms{
