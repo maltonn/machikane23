@@ -339,16 +339,17 @@ body{
   border-radius: 5px;
 }
 
-.answersheet{
+#answersheet{
   position:fixed;
   bottom:20%;
 }
-.answersheet img{
+#answersheet img{
   width:35%;
 }
+
 /*
-#timerVisible{ display: none;}
-#timerHidden{ display: block;}
+#timerVisible { visibility: visible;}
+#timerHidden { visibility: hidden;}
 
 .timerHidden{ display: none;}
 #timerVisible{ display: none;}

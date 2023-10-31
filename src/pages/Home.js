@@ -42,33 +42,19 @@ export default function Home() {
         behavior: "smooth",
     });
 
-    var deadLine = new Date(2023,(11-1),3,0,0);
-    var today = new Date();
-    console.log(deadLine);
-    console.log(today);
-    var answersheet = document.getElementsByClassName('answersheet');
-    if(today > deadLine){
-      answersheet.style.display="block";
-    }else{
-      answersheet.style.display="none";
-    }
+    var myClass = document.getElementById("answersheet");
+        var appearTime = new Date(2023,(11-1),3,0,0);
+        var today = new Date();
+        var startTime = appearTime.getTime();
+        var current = today.getTime();
+        console.log(appearTime);
+        console.log(current);
+        if (startTime < current ) {
+          myClass.style.display= "block";
+        }else{
+          myClass.style.display= "none";
+        }
 
-  {/*
-    var dead = new Date(2022, (11-1), 3, 0, 0);
-    var deadLine = parseInt(dead / 1000);
-    var dateCurrent =parseInt(new Date() / 1000 );
-    var timerVisible = document.getElementById('timerVisible');
-    var timerHidden = document.getElementById('timerHidden');
-    console.log(dead);
-    console.log(dateCurrent);
-    if(dateCurrent > deadLine){
-      timerVisible.style.display = "block";
-      timerHidden.style.display = "none";
-    }
-    else{
-      timerVisible.style.display = "none";
-      timerHidden.style.display = "block";
-    }*/}
 
 }
 
@@ -99,8 +85,7 @@ export default function Home() {
 
       <div className="sky2">
         <div className="mainpage1">
-        <div className="answersheet"><Link to="./Questionnaire" onClick={PageChange}><img src={answersheet} alt="アンケート"></img></Link></div>
-        <div className="answersheet" id="timerHidden"></div>
+        <div id="answersheet"><Link to="./Questionnaire" onClick={PageChange}><img src={answersheet} alt="アンケート"></img></Link></div>
           <div className="top-backCard">
             <span id="title">お知らせ</span>
             <table className="news-table">
@@ -230,7 +215,7 @@ export default function Home() {
           <div className="top-sponsor">
             <div className="titles"><nobr><p className="item1">●</p><span id="title">ご協賛</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
             <div className="sponsor-imgs">
-              <a href="https://ewha-yifu.com/" target="_blank" rel="noreferrer"><img src={tripfarm}></img></a>
+              <a href="https://ewha-yifu.com/" target="_blank" rel="noreferrer"><img src={tripfarm} alt="tripfarm"></img></a>
             </div>
           </div>
 
