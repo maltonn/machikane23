@@ -2,6 +2,8 @@ import { useState, useRef, useEffect } from "react";
 import ExcelJS from "exceljs";
 import { Helmet } from "react-helmet";
 import Bubble from "../../components/Bubble";
+import PageTitles from "../../components/PageTitles";
+import "../../css/QuestionnaireResult.css"
 
 export default function QuestionnaireResult() {
   const [displayLst, setDisplayLst] = useState([]);
@@ -201,11 +203,12 @@ export default function QuestionnaireResult() {
   ];
 
   return (
-    <div className="main">
+    <div className="questionnaireResult">
       <Helmet>
-        <title>来場者アンケート結果出力</title>
+        <title>来場者アンケート結果</title>
       </Helmet>
-      <div>
+      <PageTitles titles="来場者アンケート結果" kame={true}></PageTitles>
+      <div className="outputButton">
         <button onClick={(e) => handlerClickDownloadButton(e,"xlsx")}>
           Excel形式
         </button>
@@ -213,26 +216,28 @@ export default function QuestionnaireResult() {
            CSV形式
        </button>
       </div>
-      <table>
-        <tr>
-          {fieldNames.map((field)=>{
+      <div className="resultBody">
+        <table className="resultTable">
+          <tr className="result-field">
+            {fieldNames.map((field)=>{
+              return(
+                <th>{field}</th>
+              )
+            })}
+          </tr>
+          {displayLst.map((answers)=>{
             return(
-              <th>{field}</th>
+              <tr className="result-answer">
+                {fieldNames.map((field)=>{
+                  return(
+                    <td>{answers[field]}</td>
+                  )
+                })}
+              </tr>
             )
           })}
-        </tr>
-        {displayLst.map((answers)=>{
-          return(
-            <tr>
-              {fieldNames.map((field)=>{
-                return(
-                  <th>{answers[field]}</th>
-                )
-              })}
-            </tr>
-          )
-        })}
-      </table>
+        </table>
+      </div>
       <Bubble></Bubble>
     </div>
   );
