@@ -93,7 +93,7 @@ export default function Timetable() {
         <div className="timetable">
             <div className="timetableSky">
                 <Helmet>
-                    <title>ステージタイムテーブル|まちかね祭2023</title>
+                    <title>Stage Performance Schedule|2023 Machikane Festival</title>
                 </Helmet>
                 <PageTitles titles="Stage Performance Schedule" kame={true}></PageTitles>
 

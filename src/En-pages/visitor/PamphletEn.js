@@ -36,6 +36,12 @@ export default function Pamphlet() {
                                 <th>Correct</th>
                             </tr>
                             <tr>
+                                <td>P.10</td>
+                                <td>Stage Performance Schedule<br></br>11/3(Day1) GroupName</td>
+                                <td className="boolean">フォークダンス同好会<br></br>(13:40~15:35)</td>
+                                <td className="boolean">フォークソング同好会<br></br>(13:40~15:35)</td>
+                            </tr>
+                            <tr>
                                 <td>P.31</td>
                                 <td>大阪大学体育会(Osaka University Sports Union)<br></br>Project locations</td>
                                 <td className="boolean">文法経講義棟 文13講義室<br></br>(Lect① Let.Lecture13)</td>

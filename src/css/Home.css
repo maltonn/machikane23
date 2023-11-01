@@ -339,15 +339,22 @@ body{
   border-radius: 5px;
 }
 
-.answersheet{
+#answersheet{
   position:fixed;
   bottom:20%;
 }
-.answersheet img{
+#answersheet img{
   width:35%;
 }
+
+
+#timerVisible { visibility: visible;}
+#timerHidden { visibility: hidden;}
+/*
 .timerHidden{ display: none;}
-.timerVisible{ display: block;}
+.timerVisible{ display: none;}
+
+*/
 
 /*pickup-bubble*/
 .bottoms{
@@ -1201,4 +1208,9 @@ schedule,stage,lab
   #stage-title .item3{
     font-size: 12px;
   }
+}
+
+
+.none{
+  display: none;
 }
