@@ -15,10 +15,10 @@ export default function QuestionnaireResult() {
       .then((data) => {
         console.log(data)
         let formattedData = []
-        formattedData = Object.keys(data).forEach(function (key) {
+        Object.keys(data).forEach(function (key) {
             console.log(data[key])
             console.log(data[key] && data[key]['Q2'] ? data[key]['Q2'].toString() : "")
-            return {
+            formattedData.push( {
               "ID": key,
               "Q1": data[key] && data[key]['Q1'] !== undefined ? data[key]['Q1'].toString() : "",
               "Q1-1": data[key] && data[key]['Q1-1'] !== undefined ? data[key]['Q1-1'].toString() : "",
@@ -66,7 +66,7 @@ export default function QuestionnaireResult() {
               "Q17-1": data[key] && data[key]['Q17-1'] !== undefined ? data[key]['Q17-1'].toString() : "",
               "Q17-2": data[key] && data[key]['Q17-2'] !== undefined ? data[key]['Q17-2'].toString() : "",
               "Q18": data[key] && data[key]['Q18'] !== undefined ? data[key]['Q18'].toString() : "",
-            };          
+            })         
           })
         console.log(formattedData)
         // let lst = Object.values(res)
