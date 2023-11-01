@@ -32,7 +32,7 @@ export default function Questionnaire() {
                 "answer": question.answer
             }
         })
-        answerLst=answerLst.filter((question) => question.answer != 'none')
+        answerLst = answerLst.filter((question) => question.answer != 'none')
         console.log(answerLst)
         const url = `https://78dxhy83s3.execute-api.ap-northeast-1.amazonaws.com/default/ConnectDB?uid=${uid.current}&body=${JSON.stringify(answerLst)}`
         console.log(url)
@@ -78,13 +78,62 @@ export default function Questionnaire() {
     }
     const [QuestionLst, setQuestionLst] = useState(Q);
 
-    const PageChange=()=>{
+    const PageChange = () => {
         window.scrollTo({
             top: 0,
             behavior: "smooth",
         });
     }
 
+    const [notAnsweredId, setNotAnsweredId] = useState(new Array(QuestionLst.length).fill(true));//未回答の質問のidリスト
+    useEffect(() => {
+        const tmp = QuestionLst.map((question, index) => {
+            let notAnswer = []
+            if (question["visible-if"]) {
+                if (question["visible-if"].includes("==")) {
+                    const qid = question["visible-if"].split("==")[0];
+                    const ans = question["visible-if"].split("==")[1];
+                    if (Array.isArray(QuestionLst[Idx(qid)].answer)) {
+                        if (!QuestionLst[Idx(qid)].answer.includes(ans)) {
+                            return true
+                        }
+                    } else if (QuestionLst[Idx(qid)].answer != ans) {
+                        return true
+                    }
+                } else if (question["visible-if"].includes("!=")) {
+                    const qid = question["visible-if"].split("!=")[0];
+                    const ans = question["visible-if"].split("!=")[1];
+                    if (Array.isArray(QuestionLst[Idx(qid)].answer)) {
+                        if (QuestionLst[Idx(qid)].answer.includes(ans)) {
+                            return true
+                        }
+                    } else if (QuestionLst[Idx(qid)].answer == ans) {
+                        return true
+                    }
+                }
+            }
+            if (Array.isArray(question.answer)) {
+                if (question.answer.length != 0) {
+                    return true
+                } else {
+                    return question.id
+                }
+            }
+            if (question.type == "section") {
+                return true
+            }
+            if (question.type == "text" || question.type == "textarea") {
+                return true
+            }
+            if (question.answer) {
+                return true
+            }
+            return question.id
+        });
+        console.log(tmp)
+        setNotAnsweredId(tmp);
+
+    }, [QuestionLst])
 
     if (isDoneSubmit) {
         return (
@@ -95,7 +144,7 @@ export default function Questionnaire() {
                 <div className="questionnaire-sky">
                     <PageTitles titles="来場者アンケート" kame={true}></PageTitles>
                     <div className="mainpage">
-                        <h2 style={{margin:20}}>送信しました。ご協力ありがとうございました。</h2>
+                        <h2 style={{ margin: 20 }}>送信しました。ご協力ありがとうございました。</h2>
                         <div className="questionnaire_machikame">
                             <img src={machikame2} alt="まちかめ2"></img>
                             <p>ありがとう！また来てね！</p>
@@ -114,7 +163,7 @@ export default function Questionnaire() {
             </Helmet>
             <div className="questionnaire-sky">
                 <PageTitles titles="来場者アンケート" kame={true}></PageTitles>
-                <div className="questionnaire_comment"><p>今後の大学祭運営のため、来場者アンケートの回答にご協力をお願いいたします。皆様のご回答を心よりお待ちしております。</p><p><strong style={{color:"red"}}> * </strong>は必須回答項目です。</p></div>
+                <div className="questionnaire_comment"><p>今後の大学祭運営のため、来場者アンケートの回答にご協力をお願いいたします。皆様のご回答を心よりお待ちしております。</p><p><strong style={{ color: "red" }}> * </strong>は必須回答項目です。</p></div>
                 <div className="questionnaire">
                     {
                         QuestionLst.map((question, index) => {
@@ -122,21 +171,21 @@ export default function Questionnaire() {
                                 if (question["visible-if"].includes("==")) {
                                     const qid = question["visible-if"].split("==")[0];
                                     const ans = question["visible-if"].split("==")[1];
-                                    if(Array.isArray(QuestionLst[Idx(qid)].answer)){
-                                        if(!QuestionLst[Idx(qid)].answer.includes(ans)){
+                                    if (Array.isArray(QuestionLst[Idx(qid)].answer)) {
+                                        if (!QuestionLst[Idx(qid)].answer.includes(ans)) {
                                             return null
                                         }
-                                    }else if(QuestionLst[Idx(qid)].answer != ans) {
+                                    } else if (QuestionLst[Idx(qid)].answer != ans) {
                                         return null
                                     }
                                 } else if (question["visible-if"].includes("!=")) {
                                     const qid = question["visible-if"].split("!=")[0];
                                     const ans = question["visible-if"].split("!=")[1];
-                                    if(Array.isArray(QuestionLst[Idx(qid)].answer)){
-                                        if(QuestionLst[Idx(qid)].answer.includes(ans)){
+                                    if (Array.isArray(QuestionLst[Idx(qid)].answer)) {
+                                        if (QuestionLst[Idx(qid)].answer.includes(ans)) {
                                             return null
                                         }
-                                    }else if(QuestionLst[Idx(qid)].answer == ans) {
+                                    } else if (QuestionLst[Idx(qid)].answer == ans) {
                                         return null
                                     }
                                 }
@@ -144,7 +193,7 @@ export default function Questionnaire() {
                             if (question.type == "radio") {
                                 return (
                                     <div className="question" key={index}>
-                                        <h2>{question.id + '. ' + question.question}<strong style={{color:"red"}}> *</strong></h2>   
+                                        <h2>{question.id + '. ' + question.question}<strong style={{ color: "red" }}> *</strong></h2>
                                         {
                                             question.option.map((opt, index) => {
                                                 return (
@@ -171,7 +220,7 @@ export default function Questionnaire() {
                             if (question.type == "checkbox") {
                                 return (
                                     <div className="question" key={index}>
-                                        <h2>{question.id + '. ' + question.question}<strong style={{color:"red"}}> *</strong></h2>
+                                        <h2>{question.id + '. ' + question.question}<strong style={{ color: "red" }}> *</strong></h2>
                                         {
                                             question.option.map((opt, index) => {
                                                 return (
@@ -241,8 +290,8 @@ export default function Questionnaire() {
                             if (question.type == "pulldown") {
                                 return (
                                     <div className="question" key={index}>
-                                        <h2>{question.id + '. ' + question.question}<strong style={{color:"red"}}> *</strong></h2>
-                                        <select 
+                                        <h2>{question.id + '. ' + question.question}<strong style={{ color: "red" }}> *</strong></h2>
+                                        <select
                                             name={question.id}
                                             className="option"
                                             key={index}
@@ -250,18 +299,18 @@ export default function Questionnaire() {
                                                 QuestionLst[Idx(question.id)]["answer"] = e.target.value;
                                                 setQuestionLst([...QuestionLst])
                                             }}
-                                        >    
+                                        >
                                             <option hidden value="">選択してください</option>
-                                        {
-                                            question.option.map((opt, index) => {
-                                                return (
+                                            {
+                                                question.option.map((opt, index) => {
+                                                    return (
                                                         <option
                                                             id={question.id + "-" + index}
                                                             value={opt}
                                                         >{opt}</option>
-                                                )
-                                            })
-                                        }
+                                                    )
+                                                })
+                                            }
                                         </select>
                                     </div>
                                 )
@@ -276,58 +325,30 @@ export default function Questionnaire() {
                         })
                     }
                 </div>
-            
-            {
-                QuestionLst.every((question, index) => {
-                    let notAnswer=[]
-                    if (question["visible-if"]) {
-                        if (question["visible-if"].includes("==")) {
-                            const qid = question["visible-if"].split("==")[0];
-                            const ans = question["visible-if"].split("==")[1];
-                            if(Array.isArray(QuestionLst[Idx(qid)].answer)){
-                                if(!QuestionLst[Idx(qid)].answer.includes(ans)){
-                                    return true
-                                }
-                            }else if(QuestionLst[Idx(qid)].answer != ans) {
-                                return true
+
+                {
+                    notAnsweredId.every(x=>x==true) ? (
+                        <button onClick={handleSubmit} style={{ margin: 20 }}>送信する</button>
+                    ) : (
+                        <div>
+                            まだ答えていない質問：
+                            {
+                                notAnsweredId.map((x) => {
+                                    if (x == true) {
+                                        return null
+                                    } else {
+                                        return (
+                                            <div style={{ margin: 20 }}>
+                                                <p>{x}</p>
+                                            </div>
+                                        )
+                                    }
+                                })
                             }
-                        } else if (question["visible-if"].includes("!=")) {
-                            const qid = question["visible-if"].split("!=")[0];
-                            const ans = question["visible-if"].split("!=")[1];
-                            if(Array.isArray(QuestionLst[Idx(qid)].answer)){
-                                if(QuestionLst[Idx(qid)].answer.includes(ans)){
-                                    return true
-                                }
-                            }else if(QuestionLst[Idx(qid)].answer == ans) {
-                                return true
-                            }
-                        }
-                    }
-                    if(Array.isArray(question.answer)){
-                        if(question.answer.length != 0){
-                            return true
-                        }else{
-                            return false
-                        }
-                    }
-                    if(question.type=="section"){
-                        return true
-                    }
-                    if(question.type=="text" || question.type=="textarea"){
-                        return true
-                    }
-                    if (question.answer) {
-                        return true
-                    }
-                    return false
-                }) ? (
-                    <button onClick={handleSubmit} style={{margin:20}}>送信する</button>
-                ) : (
-                    <div style={{margin:20}}>
-                        <p>まだ答えていない項目があります。</p>
-                    </div>
-                )
-            }
+                        </div>
+
+                    )
+                }
             </div>
         </div>
     )
