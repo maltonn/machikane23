@@ -13,11 +13,13 @@ import map from "../imgs/pickup_icon/icon_map.png"
 import timetable from "../imgs/pickup_icon/icon_stage.png"
 import tripfarm from "../imgs/sponsor/tripfarm.png"
 import { Helmet } from "react-helmet";
-import { useEffect } from "react"
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 
 export default function Home() {
+  const [answerVisible,setAnswerVisible] = useState(true)
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -34,29 +36,36 @@ export default function Home() {
     var surfaceHeight = document.getElementById('surface').getBoundingClientRect().bottom - document.getElementById('surface').getBoundingClientRect().top;
     $(':root').style.setProperty('--base-height', `${surfaceHeight}px`);
 
-  }, [])
+      var appearTime = new Date(2023,(11-1),3,0,0);
+      var today = new Date();
+      var startTime = appearTime.getTime();
+      var current = today.getTime();
+      console.log('現れる時間は'+ appearTime);
+      console.log('現在の時間は'+ today);
+      console.log('現れる時間は'+ startTime);
+      console.log('現在の時間は'+ current);
+      if(startTime < current){
+        setAnswerVisible(true)
+      }else{
+        setAnswerVisible(false)
+      }
+    }, [])
 
-  const PageChange=()=>{
+
+    const PageChange=()=>{
     window.scrollTo({
         top: 0,
         behavior: "smooth",
     });
 
-    var myClass = document.getElementsByClassName("timerHidden");
-  for (var i = 0; i < myClass.length; i++){
-    var appearTime = myClass[i].getAttribute("data-appear_time");
-    var disappearTime = myClass[i].getAttribute("data-disappear_time");
-    var threshould_start = Date.parse(appearTime);
-    var threshould_end = Date.parse(disappearTime);
-    var current = new Date();
-    if (threshould_start < current && threshould_end > current) {
-      // HTMLで設定した期間
-      myClass[i].classList.add("timerVisible");
-    } else {
-      // 上の期間外の場合
-      myClass[i].classList.remove("timerVisivle");
-    }
-}
+    // setAnswerVisible(function(judge){
+    //   if(judge === 'true'){
+    //     answerVisible.style.display="block";
+    //   }else{
+    //     answerVisible.style.display="none";
+    //   }
+
+    // })
 
 }
 
@@ -87,7 +96,10 @@ export default function Home() {
 
       <div className="sky2">
         <div className="mainpage1">
-        <div className="answersheet timerHidden" data-appear_time="2023/11/03 00:00:00" data-disappear_time="2024/11/03 00:00:00"><Link to="./Questionnaire" onClick={PageChange}><img src={answersheet} alt="アンケート"></img></Link></div>
+        <div 
+          id="answersheet"
+          className={answerVisible?"":"none"}
+        ><Link to="./Questionnaire" onClick={PageChange}><img src={answersheet} alt="アンケート"></img></Link></div>
           <div className="top-backCard">
             <span id="title">お知らせ</span>
             <table className="news-table">
@@ -217,7 +229,7 @@ export default function Home() {
           <div className="top-sponsor">
             <div className="titles"><nobr><p className="item1">●</p><span id="title">ご協賛</span><p className="item2">●</p><p className="item3">●</p></nobr></div>
             <div className="sponsor-imgs">
-              <a href="https://ewha-yifu.com/" target="_blank" rel="noreferrer"><img src={tripfarm}></img></a>
+              <a href="https://ewha-yifu.com/" target="_blank" rel="noreferrer"><img src={tripfarm} alt="tripfarm"></img></a>
             </div>
           </div>
 
