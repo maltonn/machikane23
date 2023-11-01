@@ -1,0 +1,17 @@
+.resultBody{
+    overflow-y: scroll;
+}
+.resultTable{
+    width: 300vw;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: 2vw;
+}
+.resultTable td{
+    width: 20vw;
+    border: 1px solid black;
+}
+.resultTable th{
+    width: 20vw;
+    border: 1px solid black;
+}
