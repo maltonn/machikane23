@@ -17,6 +17,10 @@ function createUuid() {
 export default function Questionnaire() {
     const uid = useRef("");
     useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
         uid.current = localStorage.getItem("uid");
         if (uid.current == null) {
             uid.current = createUuid();
@@ -33,12 +37,9 @@ export default function Questionnaire() {
             }
         })
         answerLst = answerLst.filter((question) => question.answer != 'none')
-        console.log(answerLst)
         const url = `https://78dxhy83s3.execute-api.ap-northeast-1.amazonaws.com/default/ConnectDB?uid=${uid.current}&body=${JSON.stringify(answerLst)}`
-        console.log(url)
         //get
         fetch(url).then((res) => {
-            console.log(res);
             setIsDoneSubmit(true);
         }
         ).catch((error) => {
@@ -130,7 +131,6 @@ export default function Questionnaire() {
             }
             return question.id
         });
-        console.log(tmp)
         setNotAnsweredId(tmp);
 
     }, [QuestionLst])
@@ -330,17 +330,15 @@ export default function Questionnaire() {
                     notAnsweredId.every(x=>x==true) ? (
                         <button onClick={handleSubmit} style={{ margin: 20 }}>送信する</button>
                     ) : (
-                        <div>
-                            まだ答えていない質問：
+                        <div style={{margin:8}}>
+                            まだ答えていない質問：<br></br>
                             {
                                 notAnsweredId.map((x) => {
                                     if (x == true) {
                                         return null
                                     } else {
                                         return (
-                                            <div style={{ margin: 20 }}>
-                                                <p>{x}</p>
-                                            </div>
+                                            <span style={{ marginRight: 7 }}>{x},</span>
                                         )
                                     }
                                 })
