@@ -29,6 +29,7 @@ import Pamphlet from './pages/visitor/Pamphlet';
 import FAQ from './pages/visitor/FAQ';
 import Inquiry from './pages/visitor/Inquiry';
 import Questionnaire from './pages/visitor/Questionnaire';
+import QuestionnaireResult from './pages/visitor/QuestionnaireResult';
 
 import Access from './pages/access-map/Access';
 import Map from './pages/access-map/Map';
@@ -141,6 +142,7 @@ function AppContents() {
                 <Route path="/questionnaire/mogiten/" element={<Questionnaire />} /> 
                 <Route path="/questionnaire/stage/" element={<Questionnaire />} />
                 <Route path="/questionnaire/" element={<Questionnaire />} />
+                <Route path="/questionnaire/result/Webへの最高の愛を" element={<QuestionnaireResult />} />
                 
 
                 <Route path="*" element={<Error404 />} />
