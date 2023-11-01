@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 
 export default function QuestionnaireResult() {
   const [displayLst, setDisplayLst] = useState([]);
-
+  let formattedData = []
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -14,7 +14,7 @@ export default function QuestionnaireResult() {
       .then((res) => res.json())
       .then((data) => {
         console.log(data)
-        let formattedData = []
+        
         Object.keys(data).forEach(function (key) {
             console.log(data[key])
             console.log(data[key] && data[key]['Q2'] ? data[key]['Q2'].toString() : "")
@@ -78,13 +78,14 @@ export default function QuestionnaireResult() {
 
   
 
-  function handlerClickDownloadButton(format) {
+  const handlerClickDownloadButton = async(e,format)=> {
+    e.preventDefault();
     const workbook = new ExcelJS.Workbook();
     workbook.addWorksheet("sheet1");
     const worksheet = workbook.getWorksheet("sheet1");
 
     worksheet.columns = [
-        {header:"ID",key:"id"},
+        {header:"ID",key:"ID"},
         {header:"Q1",key:"Q1"},
         {header:"Q1-1",key:"Q1-1"},
         {header: "Q2",key: "Q2"},
@@ -131,14 +132,15 @@ export default function QuestionnaireResult() {
         {header:"Q17-1",key: "Q17-1"},
         {header:"Q17-2",key: "Q17-2"},
         {header:"Q18",key: "Q18"},
-    ]
+    ];
     
-    // worksheet.addRows(formattedData)
+    worksheet.addRows(displayLst)
+   
 
     const uint8Array =
       format === "xlsx"
-        ? workbook.xlsx.writeBuffer() // xlsxの場合
-        : workbook.csv.writeBuffer(); // csvの場合
+        ? await workbook.xlsx.writeBuffer() // xlsxの場合
+        : await workbook.csv.writeBuffer(); // csvの場合
     const blob = new Blob([uint8Array], { type: "application/octet-binary" });
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement("a");
@@ -147,6 +149,25 @@ export default function QuestionnaireResult() {
     a.click();
     a.remove();
   }
+  console.log(
+    [
+      {
+        id: "f001",
+        createdAt: 1629902208,
+        name: "りんご"
+      },
+      {
+        id: "f002",
+        createdAt: 1629902245,
+        name: "ぶとう"
+      },
+      {
+        id: "f003",
+        createdAt: 1629902265,
+        name: "ばなな"
+      }
+    ]
+  )
 
   return (
     <div className="main">
@@ -154,9 +175,12 @@ export default function QuestionnaireResult() {
         <title>来場者アンケート結果出力</title>
       </Helmet>
       <div>
-        <button onClick={() => handlerClickDownloadButton("xlsx")}>
+        <button onClick={(e) => handlerClickDownloadButton(e,"xlsx")}>
           Excel形式
         </button>
+        <button onClick={(e) => handlerClickDownloadButton(e, "csv")}>
+           CSV形式
+       </button>
       </div>
     </div>
   );
@@ -195,25 +219,24 @@ export default function QuestionnaireResult() {
 //         name: "ばなな"
 //       }
 //     ]);
-//     console.log(
-//       [
-//         {
-//           id: "f001",
-//           createdAt: 1629902208,
-//           name: "りんご"
-//         },
-//         {
-//           id: "f002",
-//           createdAt: 1629902245,
-//           name: "ぶとう"
-//         },
-//         {
-//           id: "f003",
-//           createdAt: 1629902265,
-//           name: "ばなな"
-//         }
-//       ]
-//     )
+//     let data = [
+//       {
+//         id: "f001",
+//         createdAt: 1629902208,
+//         name: "りんご"
+//       },
+//       {
+//         id: "f002",
+//         createdAt: 1629902245,
+//         name: "ぶとう"
+//       },
+//       {
+//         id: "f003",
+//         createdAt: 1629902265,
+//         name: "ばなな"
+//       }
+//     ]
+//     console.log(data)
 
 //     const uint8Array =
 //       format === "xlsx"
