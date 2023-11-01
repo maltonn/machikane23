@@ -13,11 +13,13 @@ import map from "../imgs/pickup_icon/icon_map.png"
 import timetable from "../imgs/pickup_icon/icon_stage.png"
 import tripfarm from "../imgs/sponsor/tripfarm.png"
 import { Helmet } from "react-helmet";
-import { useEffect } from "react"
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 
 export default function Home() {
+  const [answerVisible,setAnswerVisible] = useState(true)
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -34,27 +36,36 @@ export default function Home() {
     var surfaceHeight = document.getElementById('surface').getBoundingClientRect().bottom - document.getElementById('surface').getBoundingClientRect().top;
     $(':root').style.setProperty('--base-height', `${surfaceHeight}px`);
 
-  }, [])
+      var appearTime = new Date(2023,(11-1),3,0,0);
+      var today = new Date();
+      var startTime = appearTime.getTime();
+      var current = today.getTime();
+      console.log('現れる時間は'+ appearTime);
+      console.log('現在の時間は'+ today);
+      console.log('現れる時間は'+ startTime);
+      console.log('現在の時間は'+ current);
+      if(startTime < current){
+        setAnswerVisible(true)
+      }else{
+        setAnswerVisible(false)
+      }
+    }, [])
 
-  const PageChange=()=>{
+
+    const PageChange=()=>{
     window.scrollTo({
         top: 0,
         behavior: "smooth",
     });
 
-    var myClass = document.getElementById("answersheet");
-        var appearTime = new Date(2023,(11-1),3,0,0);
-        var today = new Date();
-        var startTime = appearTime.getTime();
-        var current = today.getTime();
-        console.log(appearTime);
-        console.log(current);
-        if (startTime < current ) {
-          myClass.style.display= "block";
-        }else{
-          myClass.style.display= "none";
-        }
+    // setAnswerVisible(function(judge){
+    //   if(judge === 'true'){
+    //     answerVisible.style.display="block";
+    //   }else{
+    //     answerVisible.style.display="none";
+    //   }
 
+    // })
 
 }
 
@@ -85,7 +96,10 @@ export default function Home() {
 
       <div className="sky2">
         <div className="mainpage1">
-        <div id="answersheet"><Link to="./Questionnaire" onClick={PageChange}><img src={answersheet} alt="アンケート"></img></Link></div>
+        <div 
+          id="answersheet"
+          className={answerVisible?"":"none"}
+        ><Link to="./Questionnaire" onClick={PageChange}><img src={answersheet} alt="アンケート"></img></Link></div>
           <div className="top-backCard">
             <span id="title">お知らせ</span>
             <table className="news-table">

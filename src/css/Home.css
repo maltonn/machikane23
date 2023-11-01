@@ -347,12 +347,12 @@ body{
   width:35%;
 }
 
-/*
+
 #timerVisible { visibility: visible;}
 #timerHidden { visibility: hidden;}
-
+/*
 .timerHidden{ display: none;}
-#timerVisible{ display: none;}
+.timerVisible{ display: none;}
 
 */
 
@@ -1208,4 +1208,9 @@ schedule,stage,lab
   #stage-title .item3{
     font-size: 12px;
   }
+}
+
+
+.none{
+  display: none;
 }
