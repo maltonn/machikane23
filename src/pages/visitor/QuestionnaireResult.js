@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import ExcelJS from "exceljs";
 import { Helmet } from "react-helmet";
+import Bubble from "../../components/Bubble";
 
 export default function QuestionnaireResult() {
   const [displayLst, setDisplayLst] = useState([]);
@@ -149,25 +150,55 @@ export default function QuestionnaireResult() {
     a.click();
     a.remove();
   }
-  console.log(
-    [
-      {
-        id: "f001",
-        createdAt: 1629902208,
-        name: "りんご"
-      },
-      {
-        id: "f002",
-        createdAt: 1629902245,
-        name: "ぶとう"
-      },
-      {
-        id: "f003",
-        createdAt: 1629902265,
-        name: "ばなな"
-      }
-    ]
-  )
+  const fieldNames = [
+    "ID",
+    "Q1",
+    "Q1_1",
+    "Q2",
+    "Q3_1",
+    "Q3_2",
+    "Q3_3A",
+    "Q3_3B",
+    "Q3_3C",
+    "Q3_3D",
+    "Q3_3E",
+    "Q3_3F",
+    "Q3_3",
+    "Q3_3H",
+    "Q3_3I",
+    "Q3_4",
+    "Q3_5",
+    "Q4",
+    "Q4_1A",
+    "Q4_1B",
+    "Q4_2",
+    "Q5",
+    "Q5_1",
+    "Q6",
+    "Q7",
+    "Q8_1",
+    "Q8_2",
+    "Q8_3",
+    "Q9_1",
+    "Q9_2",
+    "Q10_1",
+    "Q10_2",
+    "Q11_1",
+    "Q11_2",
+    "Q12_1",
+    "Q12_2",
+    "Q13_1",
+    "Q13_2",
+    "Q14_1",
+    "Q14_2",
+    "Q15_1",
+    "Q15_2",
+    "Q16_1",
+    "Q16_2",
+    "Q17_1",
+    "Q17_2",
+    "Q18"
+  ];
 
   return (
     <div className="main">
@@ -182,6 +213,27 @@ export default function QuestionnaireResult() {
            CSV形式
        </button>
       </div>
+      <table>
+        <tr>
+          {fieldNames.map((field)=>{
+            return(
+              <th>{field}</th>
+            )
+          })}
+        </tr>
+        {displayLst.map((answers)=>{
+          return(
+            <tr>
+              {fieldNames.map((field)=>{
+                return(
+                  <th>{answers[field]}</th>
+                )
+              })}
+            </tr>
+          )
+        })}
+      </table>
+      <Bubble></Bubble>
     </div>
   );
 }
