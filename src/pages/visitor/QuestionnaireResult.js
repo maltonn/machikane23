@@ -13,14 +13,14 @@ export default function QuestionnaireResult() {
       top: 0,
       behavior: "smooth",
     });
-    fetch("https://78dxhy83s3.execute-api.ap-northeast-1.amazonaws.com/default/ConnectDB?mode=fetchall")
+
+    const pass=window.location.href.split("?")[1]?.split("=")[1]
+    fetch("https://78dxhy83s3.execute-api.ap-northeast-1.amazonaws.com/default/ConnectDB?mode=fetchall&pass="+pass)
       .then((res) => res.json())
       .then((data) => {
         console.log(data)
         
         Object.keys(data).forEach(function (key) {
-            console.log(data[key])
-            console.log(data[key] && data[key]['Q2'] ? data[key]['Q2'].toString() : "")
             formattedData.push( {
               "ID": key,
               "Q1": data[key] && data[key]['Q1'] !== undefined ? data[key]['Q1'].toString() : "",
@@ -69,6 +69,7 @@ export default function QuestionnaireResult() {
               "Q17-1": data[key] && data[key]['Q17-1'] !== undefined ? data[key]['Q17-1'].toString() : "",
               "Q17-2": data[key] && data[key]['Q17-2'] !== undefined ? data[key]['Q17-2'].toString() : "",
               "Q18": data[key] && data[key]['Q18'] !== undefined ? data[key]['Q18'].toString() : "",
+              "timestamp": data[key]['timestamp'],
             })         
           })
         console.log(formattedData)
@@ -135,6 +136,7 @@ export default function QuestionnaireResult() {
         {header:"Q17-1",key: "Q17-1"},
         {header:"Q17-2",key: "Q17-2"},
         {header:"Q18",key: "Q18"},
+        {header:"timestamp",key:"timestamp"}
     ];
     
     worksheet.addRows(displayLst)
@@ -199,7 +201,8 @@ export default function QuestionnaireResult() {
     "Q16_2",
     "Q17_1",
     "Q17_2",
-    "Q18"
+    "Q18",
+    "timestamp",
   ];
 
   return (
