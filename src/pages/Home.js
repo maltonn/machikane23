@@ -104,7 +104,11 @@ export default function Home() {
             <span id="title">お知らせ</span>
             <table className="news-table">
               <tbody>
-              <tr>
+                <tr>
+                  <td className="news-date">11/3(金)</td>
+                  <td className="news-content">大阪大学からの重要なお知らせ<Link to="./important" onClick={PageChange}>「11月３日（金）まちかね祭でお配りした非常用飲料水への異物混入について」</Link></td>
+                </tr>
+                <tr>
                   <td className="news-date">10/25(水)</td>
                   <td className="news-content"><Link to="./official-project" onClick={PageChange}>「実行委員企画」</Link>のページを更新しました。</td>
                 </tr>
