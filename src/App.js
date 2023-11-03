@@ -56,6 +56,7 @@ import NotesEn from './En-pages/visitor/NotesEn';
 import PamphletEn from './En-pages/visitor/PamphletEn';
 import FAQEn from './En-pages/visitor/FAQEn';
 import InquiryEn from './En-pages/visitor/InquiryEn';
+import ImportantNoticeEn from './En-pages/visitor/ImportantNoticeEn.js'
 
 import AccessEn from './En-pages/access-map/AccessEn';
 import MapEn from './En-pages/access-map/MapEn';
@@ -104,6 +105,7 @@ function AppContents() {
               <Route path="/pamphlet/" element={<PamphletEn />} />
               <Route path="/FAQ/" element={<FAQEn />} />
               <Route path="/inquiry/" element={<InquiryEn />} />
+              <Route path="/important/" element={<ImportantNoticeEn />} />
 
               <Route path="/access/" element={<AccessEn />} />
               <Route path="/map/" element={<MapEn />} />
