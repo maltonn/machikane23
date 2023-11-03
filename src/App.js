@@ -30,6 +30,7 @@ import FAQ from './pages/visitor/FAQ';
 import Inquiry from './pages/visitor/Inquiry';
 import Questionnaire from './pages/visitor/Questionnaire';
 import QuestionnaireResult from './pages/visitor/QuestionnaireResult';
+import ImpotantNotice from './pages/visitor/ImpotantNotice';
 
 import Access from './pages/access-map/Access';
 import Map from './pages/access-map/Map';
@@ -135,6 +136,7 @@ function AppContents() {
                 <Route path="/pamphlet/" element={<Pamphlet />} />
                 <Route path="/FAQ/" element={<FAQ />} />
                 <Route path="/inquiry/" element={<Inquiry />} />
+                <Route path="/important/" element={<ImpotantNotice />} />
 
                 <Route path="/access/" element={<Access />} />
                 <Route path="/map/" element={<Map />} />
