@@ -160,6 +160,7 @@ function AppContents() {
   );
 }
 
+
 export default function App(){
   return(
     <GlobalContextProvider>
