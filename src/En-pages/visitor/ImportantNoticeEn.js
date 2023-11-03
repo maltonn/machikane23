@@ -16,10 +16,10 @@ export default function About() {
     return(
       <div className="main">
         <Helmet>
-          <title>大阪大学からの重要なお知らせ|まちかね祭2023</title>
+          <title>Important Announcement from Osaka University|2023 Machikane Festival</title>
         </Helmet>
         <div className="about-sky">
-            <PageTitles titles="大阪大学からの重要なお知らせ" kame={true}></PageTitles>
+            <PageTitles titles="Important Announcement from Osaka University" kame={true}></PageTitles>
             <div className="about-mainpage">
                 <div className="notes-miniTitle">[IMPORTANT] Regarding contamination of emergency drinking water distributed at the Machikane Festival (Friday, November 3)</div>
                 <p> On Friday, November 3, 2023, on Osaka University’s Toyonaka Campus, the Osaka University Department of Safety and Hygiene distributed emergency food and drinking water* stockpiled at the university to attendees to the Machikane Festival who wished to receive them.</p>
