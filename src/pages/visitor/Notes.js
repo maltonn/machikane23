@@ -30,7 +30,7 @@ export default function Notes() {
                         <div className="notes-naiyou">
                             <div className="notes-miniTitle">飲食について</div>
                             <div className="notes-miniContent">
-                                <p>食事（持ち込み含む）は、食事席に限り可能であり、他の場所での飲食は禁止とします。ただし、水分補給はしていただいて構いません。</p>
+                                <p>建物内（ピロティ含む）での飲食は禁止させていただいております。食事席を設けておりますのでぜひご利用ください。</p>
                                 <p>食事席はメインストリートの周辺に設置してあります。詳しくはマップページをご覧ください。</p>
                                 <div className="notes-linkButton"><Link to="/map" className="pretty-button" onClick={PageChange}>マップ</Link></div>
                                 <p>お食事の際は、以下のことをお守りください。</p>
