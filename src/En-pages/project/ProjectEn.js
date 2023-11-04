@@ -92,10 +92,10 @@ export default function ProjectEn() {
             project.additionalKeyword = ""
 
             project.additionalKeyword += {//模擬店　みたいな検索にたいしてキーワード検索が引っかかるように
-                "kannai": "館内",
-                "mogiten": "模擬店、屋台、昼食、お昼ごはん、eat、lunch",
-                "stage": "ステージ、stage",
-                "okugai": "屋外",
+                "kannai": "館内、In-Facility Projects",
+                "mogiten": "模擬店、屋台、昼食、お昼ごはん、eat、lunch、Food Stalls",
+                "stage": "ステージ、stage、Stage Performance",
+                "okugai": "屋外、Outdoor Project",
             }[project.section]
 
             // if(nowBuildingFilterCheck && nowStayingBuilding !== project.building && nowStayingBuilding!=="all"){
