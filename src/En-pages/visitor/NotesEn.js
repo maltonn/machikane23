@@ -23,7 +23,7 @@ export default function NotesEn() {
                         <div className="notes-naiyou">
                             <div className="notes-miniTitle">Eating & Drinking</div>
                             <div className="notes-miniContent">
-                                <p>All the food (including foods you brought by yourself) must be eaten at the designated eating space. You must not eat or drink outside the area.(except hydration)</p>
+                                <p>Eating is prohibited at all the area inside the building, including the piloti. Please use the designated eating seats. </p>
                                 <p>Eating space is around the Main street. Please look at the Map for details.</p>
                                 <div className="notes-linkButton"><Link to="/map" className="pretty-button" onClick={PageChange}>Map</Link></div>
                                 <p>Please follow the rules below.</p>
