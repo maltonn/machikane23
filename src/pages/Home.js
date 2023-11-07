@@ -99,11 +99,15 @@ export default function Home() {
         <div 
           id="answersheet"
           className={answerVisible?"":"none"}
-        ><Link to="./Questionnaire" onClick={PageChange}><img src={answersheet} alt="アンケート"></img></Link></div>
+        ><Link to="./questionnaire" onClick={PageChange}><img src={answersheet} alt="アンケート"></img></Link></div>
           <div className="top-backCard">
             <span id="title">お知らせ</span>
             <table className="news-table">
               <tbody>
+                <tr>
+                  <td className="news-date">11/7(火)</td>
+                  <td className="news-content">2023年度まちかね祭は終了しました。ご来場していただいた皆様ありがとうございました。まちかね祭へのご感想・ご意見をぜひ<Link to="./questionnaire" onClick={PageChange}>来場者アンケート</Link>よりお寄せください。</td>
+                </tr>
                 <tr>
                   <td className="news-date">11/3(金)</td>
                   <td className="news-content">大阪大学からの重要なお知らせ<Link to="./important" onClick={PageChange}>「11月３日（金）まちかね祭でお配りした非常用飲料水への異物混入について」</Link></td>
